@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>منهجية تحليل النظم</title>
+<meta name="description" content="تُطوَّر منهجية تحليل النظم وتُطبَّق حين يفتقر متخذو القرار إلى معرفة كافية بالموقف الإشكالي. وتُعرض في المقالة مقاربات مؤلفين مختلفين لبنية تحليل النظم ومراحله.">
+<meta name="keywords" content="منهجية تحليل النظم,حل المشكلات المعقدة,اتخاذ القرار">
+<link rel="canonical" href="https://systems-analysis.info/ar/methodology_sa.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/methodology_sa.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/methodology_sa.html">
+<link rel="alternate" hreflang="ar" href="https://systems-analysis.info/ar/methodology_sa.html">
+<meta property="og:title" content="منهجية تحليل النظم">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/ar/methodology_sa.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="تُطوَّر منهجية تحليل النظم وتُطبَّق حين يفتقر متخذو القرار إلى معرفة كافية بالموقف الإشكالي. وتُعرض في المقالة مقاربات مؤلفين مختلفين لبنية تحليل النظم ومراحله.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="ar_SA">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css?v=20261125">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;600;700&family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/ar/methodology_sa.html#article",
+    "headline": "منهجية تحليل النظم",
+    "description": "تُطوَّر منهجية تحليل النظم وتُطبَّق حين يفتقر متخذو القرار إلى معرفة كافية بالموقف الإشكالي. وتُعرض في المقالة مقاربات مؤلفين مختلفين لبنية تحليل النظم ومراحله.",
+    "url": "https://systems-analysis.info/ar/methodology_sa.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "ar",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/ar/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/ar/methodology_sa.html"
+    },
+    "keywords": [
+        "منهجية تحليل النظم",
+        "حل المشكلات المعقدة",
+        "اتخاذ القرار"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "منهجية تحليل النظم",
+        "description": "A methodology developed and applied when decision-makers lack sufficient information to construct a formalized representation of the problem situation.",
+        "sameAs": [
+            "https://systems-analysis.info/wiki/Методика_системного_анализа",
+            "https://systems-analysis.info/eng/Systems_analysis_methodology"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "الرئيسية",
+            "item": "https://systems-analysis.info/ar/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "تحليل النظم",
+            "item": "https://systems-analysis.info/ar/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "منهجية تحليل النظم"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="التنقل الرئيسي">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">القائمة</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/ar/">الرئيسية</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ar/sections.html">الأقسام</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">ويكي</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ar/books.html">الكتب</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ar/catalog.html">الفهرس</a>
+        <span aria-hidden="true">·</span>
+        <a href="/methodology_sa.html" lang="en" dir="ltr">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="تبديل المظهر"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="تبديل الخط"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">منهجية تحليل النظم</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>تُطوَّر <strong>منهجية تحليل النظم</strong> وتُطبَّق في الحالات التي يفتقر فيها متخذو القرار، في المرحلة الأولى، إلى معلومات كافية عن الموقف الإشكالي تتيح لهم اختيار طريقة لتمثيله تمثيلًا صوريًا، أو بناء نموذج رياضي، أو تطبيق إحدى المقاربات الأحدث في النمذجة التي تجمع بين الأساليب النوعية والكمية.</p>
+<p>وفي مثل هذه الحالات قد يكون من المفيد تمثيل الموضوع بوصفه <a href="/ar/system.html" class="text-link">نظامًا</a>، وتنظيم عملية جماعية لاتخاذ القرار يشارك فيها متخصصون من مجالات معرفية مختلفة، واستخدام طرائق متنوعة للنمذجة الصورية إلى جانب أساليب استخلاص حدس الخبراء، والانتقال من طريقة إلى أخرى كلما تعمّق فهم الموضوع أو الموقف.</p>
+<p>ولتنظيم مثل هذه العملية لا بدّ من تحديد تسلسل للمراحل، والتوصية بطرائق تنفيذها، والنص على إمكانية العودة إلى مراحل سابقة عند الحاجة. ومثل هذا التسلسل من المراحل المحدَّدة والمرتَّبة على نحو خاص، مع الطرائق والأساليب الموصى بها لتنفيذها، يشكّل بنية منهجية تحليل النظم.</p>
+<p><strong>وبتحليل منهجيات تحليل النظم المختلفة يمكن ملاحظة أنها جميعًا تتضمّن، بشكل أو بآخر، المراحل الآتية:</strong></p>
+<ul>
+  <li>تحديد المشكلات ووضع الأهداف؛</li>
+  <li>تطوير البدائل ونموذج اتخاذ القرار؛</li>
+  <li>تقييم البدائل، وإيجاد الحل، وتنفيذه؛</li>
+  <li>تقييم فعالية القرارات وعواقب تنفيذها؛</li>
+  <li>تصميم التنظيم اللازم لتحقيق الأهداف.</li>
+</ul>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>منهجيات تحليل النظم</h2>
+    <ul>
+      <li><a href="/ar/quade_method.html">منهجية كويد لتحليل النظم</a></li>
+      <li><a href="/ar/optner_method.html">منهجية أوبتنر لتحليل النظم</a></li>
+      <li><a href="/ar/chernyak_method.html">منهجية تشيرنياك</a></li>
+      <li><a href="/ar/golubkov_method.html">منهجية غولوبكوف</a></li>
+      <li><a href="/ar/young_method.html">طريقة يونغ</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>مقالات ذات صلة</h2>
+    <ul>
+      <li><a href="/ar/systems_analysis.html">تحليل النظم</a></li>
+      <li><a href="/ar/decision_theory.html">نظرية اتخاذ القرار</a></li>
+      <li><a href="/ar/decision_making.html">اتخاذ القرار</a></li>
+      <li><a href="/ar/choice.html">القرار والاختيار</a></li>
+      <li><a href="/ar/management.html">الإدارة</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="مسار التنقل">
+    <a href="/ar/">الرئيسية</a> <span aria-hidden="true">/</span>
+    <a href="/ar/systems_analysis.html">تحليل النظم</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">منهجية تحليل النظم</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="تبديل المظهر"></button>
+    <span class="footer-info" dir="ltr">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/methodology_sa.html" lang="en" dir="ltr">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">اللغات</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/ar/map.html">خريطة الموقع</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="تبديل المظهر"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+</body>
+</html>

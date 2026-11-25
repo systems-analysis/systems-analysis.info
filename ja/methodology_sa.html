@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>システム分析の方法論</title>
+<meta name="description" content="システム分析の方法論は、意思決定者が問題状況について十分な知識をもたない場合に作られ、適用される。システム分析の構造と段階に関する各論者のアプローチを解説する。">
+<meta name="keywords" content="システム分析の方法論,複雑な問題の解決,意思決定">
+<link rel="canonical" href="https://systems-analysis.info/ja/methodology_sa.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/methodology_sa.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/methodology_sa.html">
+<link rel="alternate" hreflang="ja" href="https://systems-analysis.info/ja/methodology_sa.html">
+<meta property="og:title" content="システム分析の方法論">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/ja/methodology_sa.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="システム分析の方法論は、意思決定者が問題状況について十分な知識をもたない場合に作られ、適用される。システム分析の構造と段階に関する各論者のアプローチを解説する。">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="ja_JP">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/ja/methodology_sa.html#article",
+    "headline": "システム分析の方法論",
+    "description": "システム分析の方法論は、意思決定者が問題状況について十分な知識をもたない場合に作られ、適用される。システム分析の構造と段階に関する各論者のアプローチを解説する。",
+    "url": "https://systems-analysis.info/ja/methodology_sa.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "ja",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/ja/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/ja/methodology_sa.html"
+    },
+    "keywords": [
+        "システム分析の方法論",
+        "複雑な問題の解決",
+        "意思決定"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-08-22",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "システム分析の方法論",
+        "description": "意思決定者が問題状況を形式的に表現するための十分な情報をもたない場合に作られ、適用される方法論。",
+        "sameAs": [
+            "https://systems-analysis.info/int/Systems_analysis_methodology_—_システム分析の方法論",
+            "https://systems-analysis.info/wiki/Методика_системного_анализа",
+            "https://systems-analysis.info/eng/Systems_analysis_methodology"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ホーム",
+            "item": "https://systems-analysis.info/ja/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "システム分析",
+            "item": "https://systems-analysis.info/ja/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "システム分析の方法論"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/ja/">ホーム</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/sections.html">セクション</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/Systems_Analysis_Wiki_Catalog_%28%E6%97%A5%E6%9C%AC%E8%AA%9E%29">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/books.html">書籍</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/catalog.html">カタログ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/methodology_sa.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Toggle theme"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Toggle font"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">システム分析の方法論</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>システム分析の方法論</strong>は、初期の段階において意思決定者が問題状況について十分な情報をもたず、その形式的な表現の方法を選ぶことも、数理モデルを構築することも、質的手法と量的手法を組み合わせた新しいモデリングのアプローチを適用することもできない場合に、作られ、適用される。</p>
+<p>そうした場合には、対象を<a href="/ja/system.html" class="text-link">システム</a>として表現すること、さまざまな知識分野の専門家が参加する集団的意思決定のプロセスを組織すること、形式的なモデリングのさまざまな手法を専門家の直観を引き出す技法とあわせて用いること、そして対象や状況についての理解が深まるにつれて手法を切り替えていくことが助けとなる。</p>
+<p>このようなプロセスを組織するには、段階の順序を定め、各段階を遂行するための方法を勧告し、必要に応じて前の段階へ立ち戻れるようにしておかなければならない。このように具体的に特定され順序づけられた段階の系列と、それを遂行するために推奨される方法および技法が、システム分析の方法論の構造をなす。</p>
+<p><strong>さまざまなシステム分析の方法論を分析すると、いずれもなんらかの形で次の段階を含んでいることがわかる。</strong></p>
+<ul>
+  <li>問題の特定と目標の設定</li>
+  <li>選択肢と意思決定モデルの作成</li>
+  <li>選択肢の評価、解の発見とその実施</li>
+  <li>決定の有効性と実施の帰結の評価</li>
+  <li>目標達成のための組織の設計</li>
+</ul>
+        </div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>システム分析の方法論</h2>
+    <ul>
+      <li><a href="/ja/quade_method.html">クエイドのシステム分析の方法論</a></li>
+      <li><a href="/ja/optner_method.html">オプトナーのシステム分析の方法論</a></li>
+      <li><a href="/ja/chernyak_method.html">チェルニャークのシステム分析の方法論</a></li>
+      <li><a href="/ja/golubkov_method.html">ゴルブコフのシステム分析の方法論</a></li>
+      <li><a href="/ja/young_method.html">ヤングのシステム分析の方法論</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>関連記事</h2>
+    <ul>
+      <li><a href="/ja/systems_analysis.html">システム分析</a></li>
+      <li><a href="/ja/decision_theory.html">意思決定理論</a></li>
+      <li><a href="/ja/decision_making.html">意思決定</a></li>
+      <li><a href="/ja/choice.html">決定と選択</a></li>
+      <li><a href="/ja/management.html">マネジメント</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/ja/">ホーム</a> <span aria-hidden="true">/</span>
+    <a href="/ja/systems_analysis.html">システム分析</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">システム分析の方法論</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Toggle theme"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/methodology_sa.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">言語</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/ja/map.html">サイトマップ</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710a8eddb8a5ce',t:'MTc4ODczNTExNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

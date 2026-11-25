@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>运筹学模型</title>
+<meta name="description" content="建立作业模型是运筹学的关键阶段。作业在此被简化和图式化，并从中识别出本质因素。本文介绍标准模型与课题分类。">
+<meta name="keywords" content="建模,模型,运筹学,目标函数,规划,课题,有效性,最优,数学,系统,分析,解">
+<link rel="canonical" href="https://systems-analysis.info/zh/operation_research_model.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_model.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_model.html">
+<link rel="alternate" hreflang="zh" href="https://systems-analysis.info/zh/operation_research_model.html">
+<meta property="og:title" content="运筹学模型">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/zh/operation_research_model.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="建立作业模型是运筹学的关键阶段。作业在此被简化和图式化，并从中识别出本质因素。本文介绍标准模型与课题分类。">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="zh_CN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/zh/operation_research_model.html#article",
+    "headline": "运筹学模型",
+    "description": "建立作业模型是运筹学的关键阶段。作业在此被简化和图式化，并从中识别出本质因素。本文介绍标准模型与课题分类。",
+    "url": "https://systems-analysis.info/zh/operation_research_model.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "zh",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/zh/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/zh/operation_research_model.html"
+    },
+    "keywords": [
+        "建模",
+        "模型",
+        "运筹学",
+        "目标函数",
+        "规划",
+        "课题",
+        "有效性",
+        "最优",
+        "数学",
+        "系统",
+        "分析",
+        "解"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "作业模型",
+        "description": "通过函数、方程、方程组和不等式表达的、对作业足够精确的数学描述。",
+        "sameAs": [
+            "https://systems-analysis.info/wiki/Модели_исследования_операций",
+            "https://systems-analysis.info/eng/Operations_research_models"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://systems-analysis.info/zh/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "运筹学",
+            "item": "https://systems-analysis.info/zh/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "运筹学模型"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/zh/">首页</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/sections.html">栏目</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">维基</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/books.html">书籍</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/catalog.html">目录</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_model.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Toggle theme"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Toggle font"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">运筹学模型</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>要运用定量研究方法，就必须建立作业的数学模型。建立模型时，通常把作业加以简化和图式化，再用数学工具描述所得到的图式。作业模型，是通过函数、方程、方程组和不等式表达的、对作业足够精确的数学描述。作业的有效性，是指它达成既定目标的程度。</p>
+
+<h2>运筹学课题的一般提法</h2>
+
+<p>在运筹学中，管理情境涵盖目标与决策。作出决策是为了达成目标。管理情境用模型来描述。模型中含有有效性度量，据以判定某一决策与目标的接近程度。有效性度量取决于影响作业的各种因素。作业描述中包含的一切因素可分为两组：无法施加影响的常量因素，以及可控因素。</p>
+
+<p>模型的概念要素表示为“黑箱”，其中首要的是确定输入与输出。输入是模型所处理的东西，输出是模型所产生的东西。可控变量与不可控变量作为输入送入模型，输出则是有效性准则。模型中含有明确的有效性度量，据以判定决策与目标的接近程度。建立模型时，重要的是规定输入参数将如何影响这一度量。</p>
+
+<p>有效性准则由某一函数表达，该函数称为目标函数，它取决于上述两组因素。有效性准则的数学表达式即称为目标函数。目标函数是以数学方式表述（形式化）的有效性度量，需要使其取极大值或极小值。</p>
+
+<p>可控变量，是由决策者掌控的那些参数。</p>
+
+<p>不可控变量，是管理者无法掌控、但对达成目标至关重要的外部因素。</p>
+
+<p>有效性准则（目标函数）是决策变量的函数，它表达接近目标的程度。</p>
+
+<p>数学模型的定义：数学模型是指这样一种算子——在建模客体输入参数与输出参数的容许取值集合内，依据相应的输入参数取值确定该客体输出参数的取值。</p>
+
+<h2>运筹学模型与决策</h2>
+
+<p>运筹学面向对合理决策作出定量论证。这类模型与决策理论中的一大类课题以及最优化课题密切交叉。</p>
+
+<p>在研制运筹学模型时，必须回答以下问题：</p>
+<ul>
+<li>在具体情形下，什么应当算作可供选择的解决方案？</li>
+<li>按什么准则在各解决方案之间进行选择？</li>
+<li>可行解必须满足哪些约束条件？</li>
+</ul>
+
+<p>运筹学的标准数学模型有如下提法：在满足约束条件的前提下，使目标函数取极大值或极小值。</p>
+
+<p>选择解时，优先取使目标函数达到极大或极小的那一个。使目标函数取极大值的例子有利润与生产率；取极小值则可能涉及成本、费用、时间等等。有效性准则的选择是研究中最核心、最关键的环节：按正确选定的准则求得一个非最优解，远胜于按错误选定的准则求得最优解。</p>
+
+<p>可行解是满足模型全部约束条件的解。可行解的数目可能是无限的。</p>
+
+<p>最优解是这样的解：它除了可行之外，还使目标函数达到极大值或极小值。</p>
+
+<p>若某些解按某一特征优于其他解，则称之为最优解。每一次对最优方案的选择都是具体的，因为它以是否符合既定准则为依据。谈到最优方案时，都要指明这些准则（“就……而言最优”）。按一个准则最优的，未必按另一个准则也最优。</p>
+
+<p>约束条件，是模型各变量必须满足的、以不等式或等式形式给出的数学表达式。</p>
+
+<p>约束条件缩小了可行解的集合。在某些情况下，给定的约束下可能根本不存在最优解。这意味着：依据课题求解所作出的最终决策，其质量取决于模型通过约束条件形式化描述现实情境时的适当程度。约束条件包括限额、运输工具载重量、计划任务量、设备的重量特性、资源限制等等。</p>
+
+<p>约束条件的配置一旦改变，最好的解可能就换成另一个。在现实世界中，约束可能具有物理的、经济的或政治的性质，并不一定能够形式化。某个具体的解只有对给定模型、在既定约束体系之下才是最好的。模型越准确地反映情境，课题的解就越接近最优。</p>
+
+<h2>运筹学模型的分类</h2>
+
+<p>运筹学的一切模型都可以依据作业的性质与属性、所解课题的特点以及所用数学方法加以分类：</p>
+<ul>
+<li>若有效性准则是线性函数，且约束体系中的各函数也是线性的，则该课题是线性规划课题。</li>
+<li>若依其实质含义，其解必须为整数，则为整数线性规划课题。</li>
+<li>若有效性准则及／或约束体系由非线性函数给定，则得到非线性规划课题。其中若上述函数具有凸性，所得课题即为凸规划课题。</li>
+<li>若数学规划课题中含有时间变量，且有效性准则并非以变量的显函数形式给出，而是间接地通过描述作业随时间推进的方程给出，则该课题是动态规划课题。</li>
+<li>若因解的方案数目过于庞大而无法用算法求得精确最优，则采用启发式规划方法：它们能够大幅减少所考察的方案数目，即便求不到最优解，也能求得从实践角度看足够好、令人满意的解。</li>
+</ul>
+
+<p>按实质性提法，运筹学其他大量典型课题可以分为若干类：</p>
+<ul>
+<li>网络计划课题（PERT/CPM）考察大型作业（任务）综合体的完成期限与该综合体中一切作业开始时刻之间的关系。这类课题在于求出作业综合体的最短工期，以及费用与完成期限之间的最优关系。</li>
+<li>排队课题致力于研究和分析带有请求或需求排队的服务系统，其内容是确定系统的运行指标及其最优特性——例如确定服务通道数目、服务时间等等。</li>
+<li>库存管理课题在于求出库存水平（订货点）与订货批量的最优值。这类课题的特点在于：库存水平提高，一方面使保管费用增加，另一方面又减少了因所储产品可能短缺而造成的损失。</li>
+<li>资源分配课题产生于这样的情形：有一组必须完成的作业（任务），而可支配的资源有限，需要求出资源在各作业之间的最优分配，或作业的最优组合。</li>
+<li>维护与更新课题与设备的磨损老化及更换需要有关。</li>
+<li>在运筹学模型中，还特别划分出用于冲突情境下作出最优决策的模型，它们由博弈论加以研究。冲突情境是指追求不同目标的两方（或多方）利益相撞的情形，其中包括经济、法律、军事等领域的许多情形。在博弈论课题中，须为冲突参与者的合理行为提出建议，并确定他们的最优策略。</li>
+</ul>
+
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div class="links">
+    <div class="links-section">
+      <h2>运筹学</h2>
+      <ul>
+        <li><a href="/zh/operation_research_caa.html">运筹学：丘奇曼、阿科夫、阿诺夫</a></li>
+        <li><a href="/zh/operation_research_as.html">运筹学基础：阿科夫、萨西尼</a></li>
+        <li><a href="/zh/operation_research_me.html">运筹学：莫德、埃尔马格拉比</a></li>
+        <li><a href="/zh/operation_research_vg.html">运筹学：瓦格纳</a></li>
+        <li><a href="/zh/operation_research_gv.html">运筹学：格维希阿尼</a></li>
+        <li><a href="/zh/operation_research_ve.html">运筹学：文采尔</a></li>
+        <li><a href="/zh/methodology_or.html">运筹学方法论</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/zh/">首页</a> <span aria-hidden="true">/</span>
+    <a href="/zh/operation_research.html">运筹学</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">运筹学模型</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Toggle theme"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_model.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">语言</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/zh/map.html">网站地图</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710f6dca131e13',t:'MTc4ODczNTMxNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

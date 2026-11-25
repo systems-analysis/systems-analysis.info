@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>数理モデリングのプロセス</title>
+<meta name="description" content="数理モデリングのプロセス——モデルの構築、ソフトウェアの開発、妥当性の検証、結果の分析。現代の計算モデルの段階と特徴を解説する。">
+<meta name="keywords" content="数理モデリング,モデル,計算法,アルゴリズム,妥当性検証,ソフトウェア,システム分析,数値解法">
+<link rel="canonical" href="https://systems-analysis.info/ja/mathmodeling_process.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/mathmodeling_process.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/mathmodeling_process.html">
+<link rel="alternate" hreflang="ja" href="https://systems-analysis.info/ja/mathmodeling_process.html">
+<meta property="og:title" content="数理モデリングのプロセス">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/ja/mathmodeling_process.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="数理モデリングのプロセス——モデルの構築、ソフトウェアの開発、妥当性の検証、結果の分析。現代の計算モデルの段階と特徴を解説する。">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="ja_JP">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/ja/mathmodeling_process.html#article",
+    "headline": "数理モデリングのプロセス",
+    "description": "数理モデリングのプロセス——モデルの構築、ソフトウェアの開発、妥当性の検証、結果の分析。現代の計算モデルの段階と特徴を解説する。",
+    "url": "https://systems-analysis.info/ja/mathmodeling_process.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "ja",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/ja/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/ja/mathmodeling_process.html"
+    },
+    "keywords": [
+        "数理モデリング",
+        "モデル",
+        "計算法",
+        "アルゴリズム",
+        "妥当性検証",
+        "ソフトウェア",
+        "システム分析",
+        "数値解法"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-08-22"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ホーム",
+            "item": "https://systems-analysis.info/ja/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "モデリング",
+            "item": "https://systems-analysis.info/ja/modelling.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "数理モデリングのプロセス"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/ja/">ホーム</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/sections.html">セクション</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/Systems_Analysis_Wiki_Catalog_%28%E6%97%A5%E6%9C%AC%E8%AA%9E%29">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/books.html">書籍</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/catalog.html">カタログ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/mathmodeling_process.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Toggle theme"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Toggle font"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">数理モデリングのプロセス</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>今日作られる数理モデルの際立った特徴は、その複雑さである。それはモデル化される対象の複雑さに由来する。そこから<a href="/ja/model.html" class="text-link">モデル</a>はますます手の込んだものになり、異なる知識領域のいくつもの理論を同時に援用し、モデリングの結果を得て分析するために現代の計算法と計算技術を用いる必要が生じる。複雑な対象の場合、単一のモデルですべての要求を満たすことは通常できない。その代わりに、同一の対象について一連のモデル（場合によっては「入れ子」になったモデルの階層的な集合）を作らなければならない。それぞれのモデルは、自らに課された特定の課題を解くのに最も適したものである。</p>
+<p>大規模にモデルを構築する必要から、モデル開発の費用を抑え、のちに取り除きにくい誤りの生じる可能性を減らす一連の規則とアプローチを練り上げることが求められる。そうした規則の集合は、数理モデルを作る技術と呼びうる。</p>
+<p><strong>いかなる数理モデルを構築する過程も、次の段階の系列として表すことができる。</strong></p>
+<ol>
+  <li>モデル化される対象の調査と、モデル開発の要求仕様の作成（内容上の課題の記述）。</li>
+  <li>問題の概念的な定式化と数学的な定式化。</li>
+  <li>質的な分析と、モデルの正しさの検証。</li>
+  <li>解法の選択と根拠づけ。</li>
+  <li>解を得ること。</li>
+  <li>解のアルゴリズムの開発とその性質の研究、およびアルゴリズムのソフトウェアとしての実装。</li>
+  <li>モデルの妥当性検証。</li>
+  <li>構築されたモデルの実務への適用。</li>
+</ol>
+<p>数理モデル——とりわけ数値解法と計算技術を用いるもの——は、その構築に多大な知的、財政的、時間的資源を必要とする。したがって新しいモデルを開発するという決定は、当面の<a href="/ja/problem.html" class="text-link">問題</a>を解くより単純な道（たとえば既存のモデルを手直しすること）がない場合にのみ下される。</p>
+<p>新しいモデルの必要は、科学研究との関連で、とりわけ異なる知識領域の境界で生じうる。新しい数理モデルを構築するという決定が下されると、依頼者はその仕事を担うチームを探す。通常、プロジェクトチームにはさまざまな専門の人が加わる。応用数学者、モデル化される対象に精通した当該分野の専門家、そしてソフトウェア開発者である。モデルを作る決定が確認されプロジェクトチームが編成されると、調査の段階が始まる。この段階の第一の目的は、モデリングの課題を内容上の形で記述することにある。内容上の課題の記述とは、依頼者が答えを得たいと考えている、モデリング対象についての主要な問いを平易な言葉で並べたものである。</p>
+<p>新しいモデルが答えるべき問いの一覧を作ることは、それ自体しばしば一つの問題であり、特定の知識と能力をもつ専門家を必要とする。彼らはモデリングの主題領域に精通し、現代の計算数学と計算技術の可能性を知っているだけでなく、人と意思を通わせられなければならない——モデリング対象とその振る舞いの機微を直観的に「体で知っている」実務の専門家から、それを引き出せなければならない。そうした専門家には、たとえばシステム分析者、システム技術者、オペレーションズ・リサーチの専門家が含まれる。</p>
+<p>集められたすべての情報の分析にもとづいて、課題を定式化する者は、将来のモデルへの要求を、一方では依頼者を満足させ、他方では与えられた期間と予算の範囲でモデルを実現しうるように定めなければならない。システム分析者（あるいはオペレーションズ・リサーチの専門家）は、モデリング対象についての構造化されていない多様な大量の情報と、依頼者の漠然と表明されたさまざまな希望と要求のなかから、実際に実現しうる本質的なものを抽出する能力をそなえていなければならない。</p>
+<p>モデリング対象について集められた情報にもとづいて、システム分析者（技術者、オペレーションズ・リサーチの専門家）は依頼者とともに内容上の課題の記述を定式化する。それは通常は最終的なものではなく、モデル開発の過程で精密化され練り直されうる。ただし内容上の記述に対するその後の調整と変更は、細かな、根本的でない性格のものであるべきである。</p>
+<p>調査の過程で集められたすべての資料——対象について蓄積された知識、内容上の課題の記述、モデルの実装と結果の提示への付加的な要求——は、モデルの設計と開発の要求仕様として文書化される。要求仕様は調査段階の締めくくりの文書である。調査の過程で対象について集められた情報が完全であるほど、内容上の課題を明確に立てられ、蓄積された経験と知識を十分に踏まえられ、モデル開発のその後の段階における困難を多く避けられる。</p>
+<p>内容上の定式化とは異なり、モデリングの課題の概念的な定式化は通常、依頼者側の代表者の関与なしに、前の段階で作られた要求仕様にもとづき、モデリング対象についての手元の知識と将来のモデルへの要求を用いて、プロジェクトチームの成員が作成する。モデリング対象についての手元の情報をすべてチームの成員が分析し共同で討議することによって、対象の概念モデル——各成員が練り上げた認知モデルの総合——を形づくることが可能になる。</p>
+<p>モデリングの課題の概念的な定式化とは、依頼者の関心を引く主要な問いを個別の学問分野の用語で並べたものであり、モデリング対象の性質と振る舞いについての一組の仮説をともなう。</p>
+<p>概念的な定式化における最大の困難は、異なる学問分野の境界に位置するモデルで生じる。同じ対象を記述するのに用いられる伝統、概念、言語の違いは、学際的なモデルを作るうえできわめて深刻な障害となる。</p>
+<p>概念的な定式化が仕上がれば、モデリングの課題の数学的な定式化を作ることができる。それは、モデリング対象の振る舞いと性質を記述する一組の数学的な関係を含む。</p>
+<p>モデリングの課題の数学的な定式化とは、モデリング対象の振る舞いと性質を記述する数学的な関係の集合である。</p>
+<p>数理モデルが正しいとみなされるのは、検証の点検がすべて肯定的な結果で行われた場合である。すなわち次元解析、桁の点検、依存関係の性質の点検、極限の場合の分析、境界条件、物理的な意味、そして数学的な閉性の点検である。数学的な定式化は概念的な定式化よりもさらに抽象的である。それは当初の課題を、十分に発達した解法の存在する純粋に数学的な課題へと帰着させるからである。</p>
+<p>数理モデルの「核」をなす課題を解くあらゆる方法は、解析的な方法とアルゴリズム的（数値的）な方法に分けられる。</p>
+<p>指摘しておくべきは、解析解を用いて数値的な結果を得る場合にも、コンピュータ上で実装される対応するアルゴリズムを開発することがしばしば必要になる、ということである。</p>
+<p>しかしこの場合、当初の解は解析的な表現（あるいは表現の集合）の形をとる。これに対しアルゴリズム的な方法にもとづく解は、当の課題の厳密な解析解へ原理的に還元しえない。</p>
+<p>どの研究方法を選ぶかは、プロジェクトチームの成員の資格と経験に大きく左右される。解析的な方法は結果をその後に分析するのに便利だが、比較的単純なモデルにしか適用できない。数学的な課題が（単純化された定式においてであれ）解析解を許すなら、その解は数値解より疑いなく望ましい。</p>
+<p>アルゴリズム的な方法は、課題を、計算技術を用いて計算実験を行うアルゴリズムへ帰着させる。そうした実験におけるモデリングの精度は、選ばれた方法とそのパラメータに決定的に左右される。アルゴリズム的な方法は一般に実装の手間が大きく、プロジェクトチームの成員に計算数学の確かな知識、専用ソフトウェアの豊富なライブラリ、そして強力な計算資源を要求する。</p>
+<p>数値解法は適切に設定された数学的課題にしか適用できず、そのことが数理モデリングにおけるその利用を大きく制限している。あらゆる数値解法に共通するのは、数学的な課題を有限次元の課題へ帰着させることである。これは多くの場合、当初の課題を離散化することによって——すなわち連続的な引数の関数を離散的な引数の関数に置き換えることによって——達成される。どの数値解法を適用しても、結果に誤差が生じることは避けられない。当初の課題を数値的に解く際に生じる誤差には、三つの主な成分を区別できる。入力データ（初期条件と境界条件、方程式の係数と右辺）の指定が不正確であることに結びついた固有誤差、当初の課題の離散的な相似物へ移ることに結びついた離散化誤差、そしてコンピュータで表現される数の精度が有限であることに結びついた丸め誤差である。</p>
+<p>どの具体的な計算アルゴリズムにも自然に求められるのは、これら三種類の誤差の大きさの桁が整合していることである。</p>
+<p>数値的な、すなわち近似的な方法は、つねに計算アルゴリズムとして実装される。したがって一般にアルゴリズムに課されるあらゆる要求は、計算アルゴリズムにも当てはまる。なによりもまずアルゴリズムは実行可能でなければならない——すなわち、受け入れうる計算時間のうちに課題を解かなければならない。アルゴリズムの重要な特性は精度である。すなわち、有限回の演算で当初の課題の解を所定の精度で得られる能力である。</p>
+<p>アルゴリズムの実行時間は、所定の精度を達成するのに必要な演算の回数に左右される。どの数学的課題についても通常、所望の精度の解をもたらすアルゴリズムをいくつも提案できるが、演算の回数は異なる。同じ精度を達成するのに必要な演算が少ないアルゴリズムを、より経済的である、あるいはより効率的であるという。</p>
+<p>計算アルゴリズムを実行する過程では、計算の各段階で一定の誤差が生じる。段階から段階へ、この誤差は増大することも増大しないこともある（場合によっては減少することさえある）。計算の過程で誤差が際限なく増大するなら、そのアルゴリズムは不安定である、あるいは発散するという。そうでなければ、アルゴリズムは安定である、あるいは収束するという。</p>
+<p>数値解法がおびただしく多様であるために、個々の場合に特定の方法を選ぶことはかなり難しい。あるモデルを実装するのにいくつもの代替的なアルゴリズム的方法を用いうるので、特定の方法の選択は、効率、安定性、結果の精度の点でどれがそのモデルに最も適しているか、そしてプロジェクトチームの成員にとってどれが最も慣れたものかを踏まえて行われる。</p>
+<p>研究、設計、管理の幅広い課題を解くために用いられるさまざまなソフトウェアシステムを作るにあたって、今日その基礎をなすのは通常、数理モデルである。ここからモデルをコンピュータプログラムとして実装する必要が生じる。信頼性が高く効率的なソフトウェアを開発する過程は、数理モデルを作るそれまでのどの段階にも劣らず複雑である。この課題をうまく解けるのは、現代のプログラミング言語と技術を確かに使いこなし、計算の可能性、手元のソフトウェア、そして計算数学の方法を実装する際の勘所を知っている場合にかぎられる。</p>
+<p><strong>ソフトウェアの開発過程は、いくつかの段階に分けられる。</strong></p>
+<ul>
+  <li>ソフトウェア開発の要求仕様の作成。</li>
+  <li>ソフトウェアシステムの構造の設計。</li>
+  <li>アルゴリズムのコーディング。</li>
+  <li>テストとデバッグ。</li>
+  <li>保守と運用。</li>
+</ul>
+<p>ソフトウェア開発の要求仕様は、仕様書として文書化される。設計の段階では、ソフトウェアシステムの全体的な構造が形づくられる。プログラム全体がソフトウェアモジュールに分けられる。各モジュールについて機能上の要求が定式化され、その機能を実装するアルゴリズムが練り上げられる。モジュール間の相互作用の図式——ソフトウェアシステムのデータフロー図と呼ばれるもの——が定められる。テスト計画が練り上げられ、個々のモジュールとシステム全体をテストするための入力データが指定される。</p>
+<p><strong>数理モデルを実装するプログラムの大半は、三つの主要な部分からなる。</strong></p>
+<ul>
+  <li>プリプロセッサ（モデルの入力データの準備と検証）。</li>
+  <li>ソルバー（課題を解き、計算実験を遂行する部分）。</li>
+  <li>ポストプロセッサ（結果の可視化と提示）。</li>
+</ul>
+<p>現代のプログラミング技術を採り入れることには、大きな意味を与えるべきである。そうした技術のいずれも、その目的はなによりもソフトウェアの信頼性を高め、開発者の生産性を上げることにある。ソフトウェアのプロジェクトが本格的で大規模であるほど、現代のプログラミング技術を適用する問題は重要になる。これらの事柄をおろそかにすれば、大幅な時間の超過とソフトウェアシステムの信頼性の低下を招きかねない。</p>
+<p>特定の類の課題を解くソフトウェアシステムの信頼性と短い開発期間を保証するうえで決定的な要因は、相互に整合するソフトウェアモジュールのよく整備されたライブラリが手元にあることである。標準的なソフトウェア部品を可能なかぎり用いれば、プログラムはより信頼性が高くなり、より速く開発できる。</p>
+<p>数理モデルの妥当性とは、練り上げられたモデルから得られる結果が、実験データあるいは基準となる課題の結果にどれだけ対応しているかの度合いである。</p>
+<p><strong>モデルの妥当性検証は二つの目的に資する。</strong></p>
+<ul>
+  <li>概念的な定式化と数学的な定式化の段階で立てられた一組の仮説の妥当性を検証すること。仮説の検証に進んでよいのは、解法が検証され、ソフトウェアが十分にデバッグされ、あらゆる誤りと不整合が取り除かれたのちにかぎられる。</li>
+  <li>結果の精度が、要求仕様に定められた精度に適合していることを確かめること。</li>
+</ul>
+<p>練り上げられた数理モデルの妥当性検証は、現実の対象についての手元の実験データと比較すること、あるいは以前に作られてよく実証されたほかのモデルの結果と比較することによって行われる。前者の場合は実験との比較による検証、後者の場合は基準課題の結果との比較という。</p>
+<p>モデリングの精度の問題は、モデルに課される要求とその用途に左右される。実験結果の精度や、基準課題の立て方の特質も考慮に入れなければならない。おおまかな計算や桁の見積もりを目的とするモデルでは、十から十五パーセントの精度で十分とみなされる。制御と監視の<a href="/ja/system.html" class="text-link">システム</a>に用いられるモデルでは、求められる精度は一から二パーセント、あるいはそれ以上になることもある。</p>
+<p>モデルの妥当性に問題が生じた場合、修正は、モデリング結果と実験結果の食い違いのありうる原因をすべて体系的に分析することから始めるべきである。まずモデルを調べ、可変パラメータ（初期条件と境界条件、モデリング対象の性質を特徴づけるパラメータ）のさまざまな値について妥当性の度合いを評価する。研究者の関心を引くパラメータの範囲でモデルが妥当でないなら、モデルの定数と初期パラメータの値を精密化してみることができる。それでも肯定的な結果が得られないなら、モデルを改善する残された唯一の道は、採用された仮説の体系を見直すことである。この決定は事実上、モデル開発過程の第二段階へ立ち戻ることを意味し、数学的な定式化の大きな変更だけでなく、解法の変更（たとえば解析的な方法から数値的な方法への移行）、ソフトウェアの全面的な作り直し、そしてモデルの妥当性検証の新しいサイクルをともないうる。したがって、採用された仮説の体系を見直すという決定は十分に吟味されなければならず、モデルの妥当性を高めるほかのあらゆる道が尽きたときにのみ下されるべきである。</p>
+<p>記述的モデルは、ある現象やプロセスにおいて研究されているパラメータを特徴づけ、それらのパラメータの変化を支配する法則性を研究するために作られる。これらのモデルは、入力データと動作条件のさまざまな組み合わせのもとで研究対象の性質と振る舞いを研究するため、最適化モデルを構築するため、そして複雑システムのシミュレーションモデルを構築するために用いうる。</p>
+<p>研究目的で練り上げられたモデルは通常、外部の利用者に配布されるソフトウェアシステムの水準にまでは仕上げられない。その寿命は通常、当該領域の研究プログラムの期間に限られる。これらのモデルの特徴は、探索的な性格、新しい計算手続きとアルゴリズムの使用、そして利用者インターフェースが整備されていないことである。</p>
+<p>のちに外部の利用者へ配布すること、あるいは商業的に販売することを目的として作られるモデルとそれにもとづくソフトウェアシステムには、よく整備された使いやすいインターフェースと、強力なプリプロセッサとポストプロセッサがそなわっている。これらのモデルは通常、実証され確立された定式と計算手続きにもとづいている。ただし忘れてはならないのは、そうしたモデルが明確に定められた類の課題を解くためにのみ作られていることである。</p>
+<p>モデルの用途がどうであれ、開発チームにはモデリング結果の質的な分析と量的な分析の双方を行う義務がある。</p>
+<p>モデルを扱う仕事を通じて、開発者はモデリング対象にかかわる領域の専門家になっていく。彼らは対象の性質について十分に深い理解を得て、その振る舞いを予測し説明できるようになる。</p>
+<p><strong>したがってモデリング結果を総合的に分析することは、次のことを可能にする。</strong></p>
+<ul>
+  <li>検討している対象を改変し、その最適な特性を見いだすこと、あるいは少なくともその振る舞いと性質を可能なかぎり最善の形で考慮に入れること。</li>
+  <li>モデルの適用範囲を画すること。</li>
+  <li>数学的な定式化の段階で採用された仮説の妥当性を検証し、必要な精度を保ちながら効率を高めるためにモデルを単純化しうるかを評価すること。</li>
+  <li>モデルを今後どの方向へ発展させるべきかを示すこと。</li>
+</ul>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>関連記事</h2>
+    <ul>
+      <li><a href="/ja/model.html">モデル</a></li>
+      <li><a href="/ja/modelling.html">モデリング</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/ja/">ホーム</a> <span aria-hidden="true">/</span>
+    <a href="/ja/modelling.html">モデリング</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">数理モデリングのプロセス</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Toggle theme"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/mathmodeling_process.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">言語</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/ja/map.html">サイトマップ</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710ab95e8ba5ce',t:'MTc4ODczNTEyMw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

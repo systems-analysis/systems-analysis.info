@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sistem Kavramı</title>
+<meta name="description" content="Sistem kavramının onlarca tanımı vardır. Bunların incelenmesi, tanımın özelliklerin sıralanmasından sistem yaklaşımının ilkelerinin kavranmasına doğru evrildiğini göstermektedir. Temel formülasyonlar sunulmaktadır.">
+<meta name="keywords" content="sistem,sistemin tanımı,sistem kavramı,sistem öğesi">
+<link rel="canonical" href="https://systems-analysis.info/tr/system_terminus.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/system_terminus.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/system_terminus.html">
+<link rel="alternate" hreflang="tr" href="https://systems-analysis.info/tr/system_terminus.html">
+<meta property="og:title" content="Sistem Kavramı">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/tr/system_terminus.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Sistem kavramının onlarca tanımı vardır. Bunların incelenmesi, tanımın özelliklerin sıralanmasından sistem yaklaşımının ilkelerinin kavranmasına doğru evrildiğini göstermektedir. Temel formülasyonlar sunulmaktadır.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="tr_TR">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/tr/system_terminus.html#article",
+    "headline": "Sistem Kavramı",
+    "description": "Sistem kavramının onlarca tanımı vardır. Bunların incelenmesi, tanımın özelliklerin sıralanmasından sistem yaklaşımının ilkelerinin kavranmasına doğru evrildiğini göstermektedir. Temel formülasyonlar sunulmaktadır.",
+    "url": "https://systems-analysis.info/tr/system_terminus.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "tr",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/tr/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/tr/system_terminus.html"
+    },
+    "keywords": [
+        "sistem",
+        "sistemin tanımı",
+        "sistem kavramı",
+        "sistem öğesi"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "Sistem Kavramı",
+        "description": "A fundamental concept whose definition has changed not only in form but also in substance as systems theory has developed.",
+        "sameAs": [
+            "https://www.wikidata.org/entity/Q58778",
+            "https://en.wikipedia.org/wiki/System",
+            "https://systems-analysis.info/wiki/Понятие_системы",
+            "https://systems-analysis.info/eng/Concept_of_a_system"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Ana Sayfa",
+            "item": "https://systems-analysis.info/tr/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Sistem Teorisi",
+            "item": "https://systems-analysis.info/tr/system.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Sistem Kavramı"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Ana gezinme">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menü</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/tr/">Ana Sayfa</a>
+        <span aria-hidden="true">·</span>
+        <a href="/tr/sections.html">Bölümler</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/tr/books.html">Kitaplar</a>
+        <span aria-hidden="true">·</span>
+        <a href="/tr/catalog.html">Katalog</a>
+        <span aria-hidden="true">·</span>
+        <a href="/system_terminus.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Temayı değiştir"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Yazı tipini değiştir"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Sistem Kavramı</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Bu kavramın birkaç düzine tanımı vardır. Bunların incelenmesi, <strong>sistem</strong> kavramının tanımının yalnızca biçim açısından değil, içerik açısından da değiştiğini göstermektedir. Sistem teorisi geliştikçe ve kavram uygulamaya girdikçe sistemin tanımında meydana gelen başlıca değişiklikleri ele alalım.</p>
+<h2>Öğeler ve ilişkiler</h2>
+<p>En eski tanımlarda, bir şekilde, bir sistemin öğelerden (parçalar, bileşenler) aᵢ ve bunlar arasındaki bağlantılardan (ilişkilerden) rⱼ oluştuğu belirtilmiştir:</p>
+<p>$$S = \{a_i,\; r_j\}$$</p>
+<p>$$S = \langle A,\; R \rangle$$</p>
+<p>$$S = A \cap R$$</p>
+<p>Bu biçimselleştirilmiş gösterimlerde farklı küme kuramsal temsiller kullanılır: ilk ikisinde kümeler, öğe kümeleri ile ilişkiler arasındaki karşılıklı bağlantılar hesaba katılmadan belirtilir; üçüncüsü ise bir sistemin bir tür öğe ve bağlantıların basit bir toplamı olmadığını, yalnızca kesişim içinde yer alan öğe ve bağlantıları içerdiğini yansıtır.</p>
+<p>Ludwig von Bertalanffy bir sistemi «birbiriyle etkileşen bileşenlerin bir bütünü» veya «birbirleriyle ve çevreyle belirli ilişkiler içinde bulunan öğeler kümesi» olarak tanımlamıştır. Büyük Sovyet Ansiklopedisi’nde sistem, Yunanca systema sözcüğünün doğrudan çevirisiyle, yani «bileşim», bir başka deyişle parçalardan bir araya getirilmiş, bileştirilmiş bir şey olarak tanımlanır.</p>
+<p>«Öğeler» ve «bileşenler», «bağlantılar» ve «ilişkiler» terimleri genellikle eşanlamlı olarak kullanılır (özellikle tanımların çevirilerinde). Ancak tam anlamıyla söylemek gerekirse, «bileşenler», öğelerin bir toplamını da ifade edebildiğinden «öğeler» kavramından daha geneldir. «Bağlantı» ve «ilişki» kavramlarına gelince, burada da farklı görüşler bulunmaktadır.</p>
+<p>Öğelerin temelden farklı türden olduğu biliniyorsa, bu, farklı öğe kümeleri ayırt edilerek tanıma hemen yansıtılabilir:</p>
+<p>$$S = \langle A,\; B,\; R \rangle$$</p>
+<p>M. Mesarovic’in tanımında, sisteme etki eden giriş nesnelerinin oluşturduğu bir X kümesi ile çıkış sonuçlarının oluşturduğu bir Y kümesi ayırt edilir ve bu ikisi arasında, yazarın kendi gösteriminde ya da başka kesişim simgeleri kullanılarak ifade edilebilecek genelleştirilmiş bir kesişim ilişkisi kurulur:</p>
+<p>$$S \subseteq X \times Y$$</p>
+<p>Belirli bir ilişki türü yalnızca farklı kümelerin öğelerine uygulanıyor ve her bir küme içinde kullanılmıyorsa, bu şu şekilde yansıtılabilir:</p>
+<p>$$S = \{a_i \; r_j \; b_k\}$$</p>
+<ul>
+  <li>$\{a_i \; r_j,\; b_k\}$ — $A$ ve $B$ özgün kümelerinin öğelerinden oluşan yeni bir sistemin öğeleri.</li>
+</ul>
+<p>Bu gösterim biçimi matematiksel dilbilimde sentagma olarak adlandırılır.</p>
+<h2>Öğelerin ve ilişkilerin özellikleri</h2>
+<p>Öğeleri ve ilişkileri netleştirmek için tanımlara özellikler eklenir. Böylece A. Hall’un tanımında, özellikler (nitelikler) Q_A, öğe (nesne) kavramını tamamlar:</p>
+<p>$$S = \langle A,\; R,\; Q_A \rangle$$</p>
+<ul>
+  <li>$Q_A$ — özellikler (nitelikler)</li>
+</ul>
+<p>A. I. Uyemov, sistemi «şeyler», «özellikler» ve «ilişkiler» kavramları üzerinden tanımlayarak ikili tanımlar önermiştir: bunlardan birinde özellikler öğeleri (şeyleri) betimlerken, diğerinde özellikler bağlantıları (ilişkileri) betimler:</p>
+<p>$$S = \langle a_i,\; r_j,\; q_i \rangle \quad \text{ve} \quad S = \langle a_i,\; r_j,\; q_j \rangle$$</p>
+<ul>
+  <li>$a_i$ — öğeler</li>
+  <li>$r_j$ — bağlantılar (ilişkiler)</li>
+  <li>$q_i$ — öğelerin özellikleri</li>
+  <li>$q_j$ — bağlantıların (ilişkilerin) özellikleri</li>
+</ul>
+<h2>Amaç</h2>
+<p>Daha sonra sistem tanımlarında <a href="/tr/goal.html" class="text-link">amaç</a> kavramı ortaya çıkmıştır. Önceleri örtük biçimde: F. E. Temnikov’un tanımında «sistem, örgütlenmiş bir kümedir» (burada «örgütlenmiş» kavramı açıldığında amaç ortaya çıkar); felsefe sözlüğünde sistem, «birbirleriyle ilişki ve bağlantı içinde bulunan ve belirli bir bütünsel birlik oluşturan öğeler kümesi» olarak tanımlanır. Daha sonra amaç, bir sonuç, sistem oluşturucu bir ölçüt ya da bir işlev biçiminde görülmüştür (bkz. V. I. Vernadsky, R. Gibson, P. K. Anokhin ve M. G. Gaaze-Rapoport’un tanımları), en sonunda ise açıkça bir amaç olarak belirtilmiştir.</p>
+<p>Bu tanımlar grubu simgesel olarak şu şekilde gösterilebilir:</p>
+<p>$$S = \langle A,\; R,\; Z \rangle$$</p>
+<ul>
+  <li>$Z$ — amaç, amaçlar kümesi veya amaçlar yapısı.</li>
+</ul>
+<p>Bazı tanımlar amacın oluşum koşullarını — çevreyi, zaman aralığını, yani sistemin ve amaçlarının var olacağı süreyi — belirtir. Bu, örneğin V. N. Sagatovsky’nin tanımında yapılmıştır; bu tanım aynı zamanda amaç yapılandırma tekniklerinden birinin temelini oluşturur: sistem, «belirli bir zaman aralığında, belirli bir amaca uygun olarak çevresinden ayırt edilen, sonlu sayıda işlevsel öğe ve bunlar arasındaki ilişkilerden oluşan sonlu bir kümedir»:</p>
+<p>$$S = \langle A,\; R,\; Z,\; S_R,\; T \rangle$$</p>
+<ul>
+  <li>$S_R$ — çevre</li>
+  <li>$T$ — sistemin var olma süresi</li>
+</ul>
+<h2>Gözlemci</h2>
+<p>Daha sonra sistem tanımları, öğeler, ilişkiler ve amaçların yanı sıra bir gözlemci N’yi de — yani araştırma ya da karar verme sürecinde bir nesneyi veya süreci sistem olarak temsil eden kişiyi — içermeye başlamıştır:</p>
+<p>$$S = \langle A,\; R,\; Z,\; N \rangle$$</p>
+<ul>
+  <li>$N$ — gözlemci, araştırmacı</li>
+</ul>
+<p>W. R. Ashby, incelenen sistem ile araştırmacı arasındaki etkileşimin hesaba katılması gerekliliğine işaret etmiştir. Ancak gözlemciyi açıkça içeren ilk tanım Yu. I. Çernyak tarafından verilmiştir: «Sistem, bir özneye (araştırmacıya, gözlemciye) araştırma ve bilme görevinde nesnelerin özelliklerinin ve bunların ilişkilerinin bilinçte yansımasıdır»:</p>
+<p>$$S = \langle A,\; R,\; Z,\; N \rangle$$</p>
+<p>Bu tanımın sonraki sürümlerinde Yu. I. Çernyak, gözlemcinin dilini de hesaba katmış ve şu formülasyonla başlamıştır: «Sistem, araştırma ve bilme görevinde nesnelerin, ilişkilerin ve bunların özelliklerinin gözlemcinin (araştırmacının, tasarımcının) dilinde bir temsilidir»:</p>
+<p>$$S = \langle A,\; R,\; Z,\; N,\; L_N \rangle$$</p>
+<ul>
+  <li>$L_N$ — gözlemcinin dili</li>
+</ul>
+<p>Sistem tanımları daha da fazla bileşen içerebilir; bu, belirli koşullar altında öğe, ilişki vb. türlerinin ayırt edilmesi gerekliliğiyle ilgilidir.</p>
+<h2>Sistem tanımının evrimi</h2>
+<p>Sistem tanımının evrimini (önce öğeler ve ilişkiler, ardından amaç, ardından gözlemci) bilgi kuramsal kategorilerin kullanımının evrimiyle karşılaştırdığımızda, bir benzerlik fark edilir: başlangıçta <a href="/tr/model.html" class="text-link">modeller</a> (özellikle biçimsel olanlar) yalnızca öğelerin ve bağlantıların, bunlar arasındaki etkileşimlerin hesaba katılmasına dayanıyordu; ardından ilgi amaca ve onun biçimsel bir temsilini bulma yöntemlerine (amaç fonksiyonu, verimlilik ölçütü vb.) yöneldi; 1960’lardan başlayarak ise gözlemciye — modellemeyi gerçekleştiren veya deneyi yürüten kişiye (fizikte bile) yani karar vericiye — giderek daha fazla ilgi gösterilmiştir.</p>
+<p>Bunu dikkate alarak ve sistem kavramının özünün daha derin bir incelemesine dayanarak, bu kavramı bilgi kuramının, yansıma teorisinin bir kategorisi olarak ele almak uygun görünmektedir.</p>
+<h2>Sistemin çalışma tanımı</h2>
+<p>Sistemin çeşitli tanımlarını ve bunların evrimini ele alırken, bunlardan hiçbirini başlıca tanım olarak öne çıkarmadan, «sistem» gibi (genellikle sezgisel olarak kavranan) kavramların kısaca tanımlanmasının ne denli zor olduğunu görebiliriz; ayrıca, bir nesnenin sistem olarak temsil edilmesinin farklı aşamalarında, farklı özgül durumlarda farklı tanımların kullanılabileceği gerçeğini de kabul etmemiz gerekir. Dahası, sisteme ilişkin anlayış derinleştikçe veya incelemenin başka bir katmanına geçildikçe, sistemin tanımı yalnızca netleştirilebilir değil, netleştirilmelidir de.</p>
+<p>Öğeleri, ilişkileri, amacı ve gözlemciyi — bazen de gözlemcinin sistemi temsil ederken kullandığı «dili» — içeren bir tanım, problemin formüle edilmesine ve bir sistem analizi metodolojisinin ana aşamalarının ortaya konmasına yardımcı olur. Örneğin örgütsel sistemlerde, karar vermeye yetkili kişi belirlenmezse, sistemin oluşturulma amacına ulaşılamayabilir. Ancak gözlemcinin apaçık olduğu sistemler de vardır. Bazen amaç kavramını açıkça kullanmaya bile gerek yoktur.</p>
+<p>Örneğin, Yu. A. Urmantsev’in bitkiler gibi nispeten düşük düzeyli biyolojik nesneleri incelemek için geliştirdiği sistem teorisi versiyonu, bu nesne sınıfı için amaç kavramını tipik bulmadığından bu kavramı içermez; bunun yerine amaçlılık ve gelişim düşüncesi, özel bir ilişki türü — bileşim yasaları — biçiminde ifade edilir.</p>
+<p>Böylece, sistem analizi yürütülürken önce durum, olabildiğince eksiksiz bir sistem tanımı kullanılarak temsil edilmeli, ardından karar vermeyi etkileyen en önemli bileşenler belirlendikten sonra, analizin akışına bağlı olarak netleştirilebilecek, genişletilebilecek veya sınırlandırılabilecek bir «çalışma» tanımı formüle edilmelidir.</p>
+<p>Sistemin «çalışma» tanımı, araştırmacının (geliştiricinin) sistemi betimlemeye başlamasına yardımcı olur. Sistemin kabul edilen «çalışma» tanımına dahil edilen gerekli öğeleri, ilişkileri, bunların özelliklerini ve diğer bileşenleri doğru biçimde seçmek için, sistemin bu ilk sözel temsilini formüle eden kişilerin bu kavramları aynı anlamda kullanmaları gerekir.</p>
+<p>Bir sistem tanımının seçimi, kabul edilen kavramsal çerçeveyi yansıtır ve esasen modellemenin başlangıcıdır. Bu nedenle, en başından itibaren tanımları simgesel biçimde sunmak tavsiye edilir; bu, sistemin geliştirilmesi veya incelenmesine katılan herkes tarafından daha kesin bir anlaşılmayı kolaylaştırır.</p>
+<p>Sistemin tanımını onun incelenmesine başlamanın bir aracı olarak görmek ve bir sistemi dönüştürürken veya tasarlarken bütünlüğü korumaya çalışmak, bu bölümün yazarını, sistemin (yukarıda aktarılan tanımlarda yapıldığı gibi) en temel parçacıklara ayrıştırılmadığı, bunun yerine incelenen veya oluşturulan sistemin var olması ve işlev görmesi için temelden gerekli olan üst düzey bileşenlerin bir toplamı olarak temsil edildiği bir tanım önermeye yöneltmiştir:</p>
+<p>$$S = \langle Z,\; \text{Str},\; \text{Tech},\; \text{Cond} \rangle$$</p>
+<ul>
+  <li>$\{Z\}$ — amaçlar kümesi veya amaçlar yapısı</li>
+  <li>$\{\text{Str}\}$ — amaçları gerçekleştiren yapılar (üretim, örgütsel vb.) kümesi</li>
+  <li>$\{\text{Tech}\}$ — sistemi gerçekleştiren teknolojiler (yöntemler, araçlar, algoritmalar vb.) kümesi</li>
+  <li>$\{\text{Cond}\}$ — sistemin var olma koşulları, yani onun oluşturulmasını, işlev görmesini ve gelişimini etkileyen etmenler</li>
+</ul>
+<p>Bu tanım, incelenen sistemi yok etmemeyi, ana yapılarını içinde koruyarak belirtilen amaçlara uygun biçimde geliştirmeyi sağlar; yeni bir sistem oluştururken ise bütünsel bir tasarım kavramı elde etmeye ve sistemin oluşturulmasına amaç odaklı bir yaklaşımı gerçekleştirmeye yardımcı olur.</p>
+<h2>Sistemin maddiliği ve maddi olmayışı</h2>
+<p>Sistem araştırmalarının oluşum döneminde, 1960’lar ve 1970’lerde, sistemlerin maddi mi yoksa gayrımaddi mi olduğuna ilişkin tartışmalar oldukça sık ortaya çıkıyordu. Bu <a href="/tr/problem.html" class="text-link">problem</a> bugün bile herkes için açık değildir.</p>
+<p>Bir yandan, sistemlerin maddiliğini vurgulamak isteyen bazı araştırmacılar, tanımlarında «öğe» terimini «şey», «nesne» veya «madde» terimleriyle değiştirmişlerdir; bu son terimler soyut nesneler veya araştırma özneleri olarak da yorumlanabilse de, bu tanımların yazarları açıkça sistemin somutluğuna ve maddiliğine dikkat çekmek istemişlerdir.</p>
+<p>Öte yandan, yukarıda aktarılan Yu. I. Çernyak’ın tanımında ve özellikle S. Optner’in tanımında, sistem yalnızca bir temsil olarak — yani sadece araştırmacının veya tasarımcının bilincinde var olan bir şey olarak — yorumlanabilir. Yansıma teorisinin düzenliliklerini anlayan herhangi bir uzman, muhtemelen şöyle itiraz edecektir: kavram (sistemin ideal temsili) sonradan maddi bir biçimde de var olacaktır ve karar problemleri için sistem kavramının bir problemin incelenmesinin ve bir görevin çözülmesinin bir aracı olarak hizmet edebileceğini vurgulamak önemlidir. Bununla birlikte, yukarıda anılan tanımlar, o dönemde özellikle filozoflar olmak üzere sistemlerin maddiliğini savunanlar tarafından eleştiriye tabi tutulmuştur.</p>
+<p>V. G. Afanasyev, bir sistemin maddi mi yoksa gayrımaddi mi olduğuna ilişkin tartışmanın anlamsızlığını göstermiştir: «…nesnel olarak var olan sistemler — ve sistem kavramı; sistemi bilmenin bir aracı olarak kullanılan sistem kavramı — ve bilgisi bizim sistemsel temsillerimizle zenginleşmiş olan gerçek sistem yeniden — bir sistemde nesnelin ve öznelin diyalektiği işte böyledir…».</p>
+<p>Ele alınan konuyla ilgili olarak belirtelim ki, Büyük Sovyet Ansiklopedisi’nde yukarıda aktarılan tanımın yanı sıra şu tanım da verilir: sistem, «yasalarla birbirine bağlı olan, doğa ve toplum hakkındaki varlıkların, olguların ve bilgilerin nesnel bir birliğidir» — yani, öğe (ve dolayısıyla sistem) kavramının hem gerçekten var olan, maddi olarak gerçekleştirilmiş nesnelere hem de bu nesneler hakkındaki bilgilere veya onların gelecekteki gerçekleştirimlerine uygulanabileceği vurgulanır.</p>
+<p>Böylece, sistem kavramında (bilginin diğer her kategorisinde olduğu gibi) nesnel ve öznel diyalektik bir birlik oluşturur ve bir sistemin maddiliğinden veya gayrımaddiliğinden söz etmek değil, incelenen nesnelere sistem olarak yaklaşmaktan, bunları bilme veya oluşturma sürecinin farklı aşamalarında farklı biçimlerde temsil etmekten söz etmek gerekir.</p>
+<h2>Sistem ele alış katmanları</h2>
+<p>Örneğin, Yu. I. Çernyak, aynı nesnenin incelenmesinin farklı aşamalarında farklı görünümlerde temsil edilebileceğini göstermekte ve buna bağlı olarak aynı sistemin farklı varlık düzeylerinde — felsefi (bilgi kuramsal), bilimsel-araştırma, tasarım, mühendislik vb. düzeylerde, maddi gerçekleşmeye kadar — tasvir edilmesini önermektedir.</p>
+<p>Bir başka deyişle, bir sistemin ele alınmasının farklı aşamalarında «sistem» terimine farklı kavramlar yerleştirilebilir; sanki sistemin farklı biçimlerde var olduğundan söz edilebilir. M. Mesarovic, sistem ele alış katmanlarının ayırt edilmesini önermektedir.</p>
+<p>Benzer katmanlar, yalnızca bir nesnenin oluşturulması sürecinde değil, aynı zamanda bilinmesi sürecinde de var olabilir — yani, gerçekten var olan nesnelerin bilinçte (veya modellerde) soyut olarak tasarlanmış sistemler olarak temsil edilmesinde de var olabilir; bu da daha sonra yeni nesnelerin oluşturulmasına ve var olan nesnelerin dönüştürülmesine (yeniden yapılandırılmasına, yeniden inşa edilmesine) ilişkin önerilerin geliştirilmesine yardımcı olabilir.</p>
+<p>Bir sistem analizi metodolojisi (veya bir sistem araştırması modeli) bir sistemin bilinme veya tasarlanma sürecinin tamamını kapsamak zorunda değildir; bu süreç, katmanlarından biri için geliştirilebilir (uygulamada genellikle böyle olur). Bir sistemin araştırmacıları veya geliştiricileri arasında terminolojik veya başka anlaşmazlıkları önlemek için önce hangi belirli sistem ele alış katmanının söz konusu olduğunun açıkça belirtilmesi gerekir.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Metodolojiler</h2>
+    <ul>
+      <li><a href="/tr/methodology_sa.html">Sistem Analizi Metodolojisi</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>İlgili makaleler</h2>
+    <ul>
+      <li><a href="/tr/system.html">Sistem</a></li>
+      <li><a href="/tr/system_def.html">Sistem Tanımları</a></li>
+      <li><a href="/tr/system_ol.html">Sistemlerin Düzenlilikleri</a></li>
+      <li><a href="/tr/systems_analysis.html">Sistem Analizi</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Gezinme yolu">
+    <a href="/tr/">Ana Sayfa</a> <span aria-hidden="true">/</span>
+    <a href="/tr/system.html">Sistem Teorisi</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Sistem Kavramı</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Temayı değiştir"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/system_terminus.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/tr/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Temayı değiştir"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- KaTeX -->
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body, {
+    delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false}
+    ]
+});
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710ecb0b8f1e13',t:'MTc4ODczNTI5MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>กระบวนการสร้างแบบจำลอง</title>
+<meta name="description" content="กระบวนการสร้างแบบจำลองอาจมองได้ว่าเป็นการเปลี่ยนผ่านจากแบบจำลองประเภทหนึ่งไปสู่อีกประเภทหนึ่ง โดยทั่วไปจะแบ่งแบบจำลองออกเป็นสามประเภทหลัก ได้แก่ แบบจำลองเชิงความคิด แบบจำลองเชิงเนื้อหา และแบบจำลองเชิงรูปนัย ทั้งสามประเภทนี้ประกอบกันเป็นระดับการสร้างแบบจำลองที่เชื่อมโยงกันสามระดับซึ่งไม่สามารถพิจารณาแยกจากกันได้">
+<meta name="keywords" content="กระบวนการสร้างแบบจำลอง,แบบจำลอง,แบบจำลองเชิงความคิด,แบบจำลองเชิงมโนทัศน์,แบบจำลองเชิงรูปนัย,การสร้างแบบจำลองทางคณิตศาสตร์,การวิเคราะห์ระบบ">
+<link rel="canonical" href="https://systems-analysis.info/th/modeling_process.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/modeling_process.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/modeling_process.html">
+<link rel="alternate" hreflang="th" href="https://systems-analysis.info/th/modeling_process.html">
+<meta property="og:title" content="กระบวนการสร้างแบบจำลอง">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/th/modeling_process.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="กระบวนการสร้างแบบจำลองอาจมองได้ว่าเป็นการเปลี่ยนผ่านจากแบบจำลองประเภทหนึ่งไปสู่อีกประเภทหนึ่ง โดยทั่วไปจะแบ่งแบบจำลองออกเป็นสามประเภทหลัก ได้แก่ แบบจำลองเชิงความคิด แบบจำลองเชิงเนื้อหา และแบบจำลองเชิงรูปนัย ทั้งสามประเภทนี้ประกอบกันเป็นระดับการสร้างแบบจำลองที่เชื่อมโยงกันสามระดับซึ่งไม่สามารถพิจารณาแยกจากกันได้">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="th_TH">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/th/modeling_process.html#article",
+    "headline": "กระบวนการสร้างแบบจำลอง",
+    "description": "กระบวนการสร้างแบบจำลองอาจมองได้ว่าเป็นการเปลี่ยนผ่านจากแบบจำลองประเภทหนึ่งไปสู่อีกประเภทหนึ่ง โดยทั่วไปจะแบ่งแบบจำลองออกเป็นสามประเภทหลัก ได้แก่ แบบจำลองเชิงความคิด แบบจำลองเชิงเนื้อหา และแบบจำลองเชิงรูปนัย ทั้งสามประเภทนี้ประกอบกันเป็นระดับการสร้างแบบจำลองที่เชื่อมโยงกันสามระดับซึ่งไม่สามารถพิจารณาแยกจากกันได้",
+    "url": "https://systems-analysis.info/th/modeling_process.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "th",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/th/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/th/modeling_process.html"
+    },
+    "keywords": [
+        "กระบวนการสร้างแบบจำลอง",
+        "แบบจำลอง",
+        "แบบจำลองเชิงความคิด",
+        "แบบจำลองเชิงมโนทัศน์",
+        "แบบจำลองเชิงรูปนัย",
+        "การสร้างแบบจำลองทางคณิตศาสตร์",
+        "การวิเคราะห์ระบบ"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "หน้าแรก",
+            "item": "https://systems-analysis.info/th/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "การสร้างแบบจำลอง",
+            "item": "https://systems-analysis.info/th/modelling.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "กระบวนการสร้างแบบจำลอง"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="การนำทางหลัก">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">เมนู</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/th/">หน้าแรก</a>
+        <span aria-hidden="true">·</span>
+        <a href="/th/sections.html">หมวดหมู่</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/th/books.html">หนังสือ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/th/catalog.html">สารบัญ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/modeling_process.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="สลับธีม"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="สลับแบบอักษร"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">กระบวนการสร้างแบบจำลอง</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>กระบวนการสร้างแบบจำลองอาจมองได้ว่าเป็นการเปลี่ยนผ่านจาก<a href="/th/model.html" class="text-link">แบบจำลอง</a>ประเภทหนึ่งไปสู่อีกประเภทหนึ่ง โดยทั่วไปจะแบ่งแบบจำลองออกเป็นสามประเภทหลัก ได้แก่ แบบจำลองเชิงความคิด แบบจำลองเชิงเนื้อหา และแบบจำลองเชิงรูปนัย ทั้งสามประเภทนี้ประกอบกันเป็นระดับการสร้างแบบจำลองที่เชื่อมโยงกันสามระดับซึ่งไม่สามารถพิจารณาแยกจากกันได้ อิทธิพลซึ่งกันและกันระหว่างระดับการสร้างแบบจำลองมีความเกี่ยวข้องกับคุณสมบัติของศักยภาพแฝงที่มีอยู่ในแบบจำลอง การสร้างแบบจำลองใดก็ตามย่อมนำมาซึ่งความรู้ใหม่เกี่ยวกับวัตถุที่ศึกษา ซึ่งนำไปสู่การประเมินและปรับปรุงแนวคิดและมุมมองที่มีต่อวัตถุของการสร้างแบบจำลองในระดับต่าง ๆ ใหม่ สถานการณ์นี้ในทางกลับกันก็นำไปสู่การปรับปรุงแบบจำลองเชิงเนื้อหาและแบบจำลองเชิงความคิดที่สอดคล้องกัน ซึ่งทำให้การพัฒนาทุกระดับของการสร้างแบบจำลองของวัตถุที่ศึกษาเป็นไปในลักษณะวนซ้ำแบบก้าวหน้า</p>
+<p>เมื่อผู้วิจัยสังเกตวัตถุต้นแบบ ภาพในจิตของวัตถุนั้น — ซึ่งเป็นแบบจำลองในอุดมคติ — จะก่อตัวขึ้นในความคิดของผู้วิจัย ในวรรณกรรมทางวิชาการมักเรียกสิ่งนี้ว่าแบบจำลองเชิงความคิด (แบบจำลองในจิต) ในการสร้างแบบจำลองดังกล่าว ผู้วิจัยมักพยายามหาคำตอบให้กับคำถามที่เจาะจง ดังนั้นสิ่งที่ไม่สำคัญทั้งหมดจึงถูกตัดออกจากโครงสร้างที่ซับซ้อนอย่างไม่สิ้นสุดของวัตถุ เพื่อให้ได้คำอธิบายที่กระชับและรวบรัดมากขึ้น การนำเสนอแบบจำลองเชิงความคิดด้วยภาษาธรรมชาติเรียกว่าแบบจำลองเชิงเนื้อหา</p>
+<p>แบบจำลองเชิงความคิดมีลักษณะเป็นอัตวิสัยโดยธรรมชาติ เนื่องจากถูกสร้างขึ้นโดยผู้วิจัยจากความรู้และประสบการณ์เดิม แบบจำลองเหล่านี้สามารถเข้าใจได้ก็ต่อผ่านคำอธิบายเชิงสัญลักษณ์เท่านั้น แบบจำลองเชิงความคิดและแบบจำลองเชิงเนื้อหาไม่เท่าเทียมกัน เนื่องจากแบบแรกอาจมีองค์ประกอบที่ผู้วิจัยไม่สามารถหรือไม่ต้องการอธิบายออกมาเป็นคำพูด ในขณะเดียวกัน หากแบบจำลองเชิงเนื้อหาถูกกำหนดขึ้นโดยผู้อื่น หรือเป็นผลผลิตของความร่วมมือกันหลายฝ่าย การตีความ ระดับความเข้าใจ และระดับความเชื่อถือก็อาจแตกต่างกันอย่างมากในหมู่ผู้ตีความ แบบจำลองเชิงเนื้อหามักถูกเรียกว่าข้อกำหนดปัญหาทางเทคนิค</p>
+<p><strong>ตามวัตถุประสงค์เชิงหน้าที่และเป้าหมาย แบบจำลองเชิงเนื้อหาแบ่งออกเป็นแบบจำลองเชิงพรรณนา แบบจำลองเชิงอธิบาย และแบบจำลองเชิงพยากรณ์:</strong></p>
+<ul>
+  <li><em>แบบจำลองเชิงพรรณนา</em> คือคำอธิบายวัตถุในลักษณะใดก็ได้</li>
+  <li><em>แบบจำลองเชิงอธิบาย</em> ตอบคำถามว่าเหตุใดสิ่งหนึ่งจึงเกิดขึ้น</li>
+  <li><em>แบบจำลองเชิงพยากรณ์</em> อธิบายพฤติกรรมในอนาคตของวัตถุ ควรสังเกตว่าแบบจำลองเชิงพยากรณ์ไม่จำเป็นต้องมีองค์ประกอบเชิงอธิบายรวมอยู่ด้วย</li>
+</ul>
+<p><em>แบบจำลองเชิงมโนทัศน์</em> คือแบบจำลองเชิงเนื้อหาที่ใช้แนวคิดและการนำเสนอของสาขาวิชาที่เกี่ยวข้องกับการศึกษาวัตถุของการสร้างแบบจำลองในการกำหนดขึ้น</p>
+<p>ในความหมายที่กว้างขึ้น แบบจำลองเชิงมโนทัศน์เข้าใจได้ว่าเป็นแบบจำลองเชิงเนื้อหาที่อยู่บนพื้นฐานของแนวคิดหรือมุมมองที่เจาะจงอย่างหนึ่ง แบ่งแบบจำลองเชิงมโนทัศน์ออกเป็นสามประเภท ได้แก่ แบบจำลองเชิงตรรกะ-อรรถศาสตร์ แบบจำลองเชิงโครงสร้าง-หน้าที่ และแบบจำลองเชิงเหตุ-ผล</p>
+<ul>
+  <li><em>แบบจำลองเชิงตรรกะ-อรรถศาสตร์</em> อธิบายวัตถุด้วยศัพท์และคำนิยามของสาขาวิชาที่เกี่ยวข้อง โดยรวมข้อความและข้อเท็จจริงที่มีความสอดคล้องเชิงตรรกะที่รู้จักทั้งหมดไว้ด้วย การวิเคราะห์แบบจำลองเหล่านี้อาศัยการให้เหตุผลเชิงตรรกะและความรู้ที่สั่งสมไว้ในสาขาวิชานั้น ๆ</li>
+  <li><em>แบบจำลองเชิงโครงสร้าง-หน้าที่</em> มองวัตถุเป็นระบบที่บูรณาการกัน ซึ่งถูกแยกย่อยออกเป็นองค์ประกอบหรือระบบย่อยแต่ละส่วน ส่วนประกอบเหล่านี้เชื่อมโยงกันด้วยความสัมพันธ์เชิงโครงสร้างที่กำหนดลำดับการขึ้นต่อกัน ลำดับเชิงตรรกะ และลำดับเวลาของการปฏิบัติงาน มักใช้แผนภาพ แผนภูมิ และแผนที่ในการนำเสนอแบบจำลองเหล่านี้</li>
+  <li><em>แบบจำลองเชิงเหตุ-ผล</em> มักใช้เพื่ออธิบายและพยากรณ์พฤติกรรมของวัตถุ แบบจำลองเหล่านี้มุ่งเน้นหลักไปที่ (1) การระบุความสัมพันธ์หลักระหว่างองค์ประกอบต่าง ๆ ของวัตถุที่ศึกษา (2) การกำหนดว่าการเปลี่ยนแปลงของปัจจัยบางอย่างส่งผลต่อสถานะขององค์ประกอบของแบบจำลองอย่างไร (3) การทำความเข้าใจว่าแบบจำลองโดยรวมจะทำงานอย่างไร และจะสามารถอธิบายพลวัตของพารามิเตอร์ที่ผู้วิจัยสนใจได้อย่างเหมาะสมหรือไม่</li>
+</ul>
+<p><em>แบบจำลองเชิงรูปนัย</em> คือการนำเสนอแบบจำลองเชิงมโนทัศน์ด้วยภาษารูปนัยหนึ่งภาษาหรือมากกว่า เช่น ทฤษฎีทางคณิตศาสตร์ ภาษาสำหรับการสร้างแบบจำลองเฉพาะทาง หรือภาษาโปรแกรม ในสาขามนุษยศาสตร์ การสร้างแบบจำลองมักสิ้นสุดลงด้วยการพัฒนาแบบจำลองเชิงมโนทัศน์ ในขณะที่ในสาขาวิทยาศาสตร์ธรรมชาติ การสร้างแบบจำลองเชิงรูปนัยมักเป็นสิ่งที่ทำได้จริง</p>
+<p>แม้ว่าความสำคัญของแบบจำลองเชิงเนื้อหาและแบบจำลองเชิงรูปนัยในการวิจัยจะได้รับการยอมรับอย่างกว้างขวาง แต่บทบาทของแบบจำลองเชิงความคิดกลับถูกประเมินค่าต่ำเกินไปบ่อยครั้ง เนื่องจากลักษณะอัตวิสัยและกระบวนการทางความคิดที่ไม่ได้แสดงออกมาอย่างชัดแจ้ง กระนั้นก็ตาม แบบจำลองเชิงความคิดมีความสำคัญเป็นพิเศษในบริบทที่ผู้ปฏิบัติงานหรือผู้ตัดสินใจต้องพึ่งพาการนำเสนอในจิตของตนเองในการควบคุมวัตถุหรือกระบวนการ แบบจำลองประเภทนี้ยังมีบทบาทสำคัญในสาขาสังคมศาสตร์ด้วย</p>
+<p>การสร้างแบบจำลองทางคณิตศาสตร์เป็นรูปแบบหนึ่งของการสร้างแบบจำลองเชิงวิทยาศาสตร์ เชิงสัญลักษณ์ และเชิงรูปนัย ซึ่งวัตถุถูกอธิบายด้วยภาษาคณิตศาสตร์และศึกษาผ่านวิธีทางคณิตศาสตร์</p>
+<p>แบบจำลองทางคณิตศาสตร์ที่ออกแบบมาเพื่อการวิจัยเชิงวิทยาศาสตร์ช่วยให้สามารถกำหนดค่าพารามิเตอร์ของวัตถุหรือปรากฏการณ์ที่สร้างแบบจำลองได้จากข้อมูลนำเข้าที่กำหนดไว้ ดังนั้น แก่นแท้ของแบบจำลองดังกล่าวคือการส่งผ่านค่าพารามิเตอร์นำเข้าไปสู่ค่าพารามิเตอร์ผลลัพธ์ มุมมองนี้ทำให้สามารถมองแบบจำลองทางคณิตศาสตร์เป็นตัวดำเนินการทางคณิตศาสตร์ ซึ่งอาจนิยามอย่างกว้าง ๆ ว่าเป็นฟังก์ชัน การส่งผ่านที่แสดงด้วยสมการเชิงพีชคณิต สมการเชิงอนุพันธ์ สมการเชิงปริพันธ์-อนุพันธ์ หรือสมการเชิงปริพันธ์ อัลกอริทึม ชุดของกฎ หรือตารางที่ช่วยในการกำหนดพารามิเตอร์ผลลัพธ์จากค่านำเข้า</p>
+<p>การนิยามแบบจำลองทางคณิตศาสตร์ผ่านแนวคิดของตัวดำเนินการมีความสร้างสรรค์มากกว่าในมุมมองของการสร้างการจัดประเภทของแบบจำลองดังกล่าว เนื่องจากครอบคลุมความหลากหลายของแบบจำลองทางคณิตศาสตร์ที่มีอยู่ในปัจจุบันได้อย่างครบถ้วน</p>
+<p><strong>ข้อได้เปรียบของการสร้างแบบจำลองทางคณิตศาสตร์เมื่อเทียบกับการทดลองทางกายภาพ:</strong></p>
+<ul>
+  <li>ความประหยัด (โดยเฉพาะการอนุรักษ์ทรัพยากรของระบบจริง)</li>
+  <li>ความสามารถในการสร้างแบบจำลองวัตถุสมมุติ — คือวัตถุที่ไม่มีอยู่จริงในธรรมชาติ</li>
+  <li>ความสามารถในการจำลองสภาวะการปฏิบัติงานที่เป็นอันตรายหรือยากที่จะจำลองในสภาพจริง</li>
+  <li>ความสามารถในการเปลี่ยนสเกลเวลา</li>
+  <li>ความสะดวกในการวิเคราะห์แบบหลายมุมมอง</li>
+  <li>อำนาจในการพยากรณ์ที่มากขึ้น เนื่องจากสามารถระบุรูปแบบทั่วไปได้</li>
+  <li>ความเป็นสากลของฮาร์ดแวร์และซอฟต์แวร์ที่ใช้ (ระบบการเขียนโปรแกรมและชุดซอฟต์แวร์ประยุกต์อเนกประสงค์)</li>
+</ul>
+<p><em>แบบจำลองสารสนเทศ</em> คือแบบจำลองของวัตถุที่นำเสนอในรูปแบบของสารสนเทศที่อธิบายพารามิเตอร์และตัวแปรที่สำคัญต่อการวิเคราะห์ที่กำหนด ความสัมพันธ์ระหว่างสิ่งเหล่านั้น และปัจจัยนำเข้าและผลลัพธ์ของวัตถุ ซึ่งช่วยให้สามารถจำลองสถานะที่เป็นไปได้ของวัตถุได้โดยการป้อนสารสนเทศเกี่ยวกับการเปลี่ยนแปลงของค่านำเข้าเข้าสู่แบบจำลอง</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>บทความที่เกี่ยวข้อง</h2>
+    <ul>
+      <li><a href="/th/model.html">แบบจำลอง</a></li>
+      <li><a href="/th/modelling.html">การสร้างแบบจำลอง</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="เส้นทางนำทาง">
+    <a href="/th/">หน้าแรก</a> <span aria-hidden="true">/</span>
+    <a href="/th/modelling.html">การสร้างแบบจำลอง</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">กระบวนการสร้างแบบจำลอง</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="สลับธีม"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/modeling_process.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/th/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="สลับธีม"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710e0848281e13',t:'MTc4ODczNTI1OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

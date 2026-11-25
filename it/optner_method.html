@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Metodologia di analisi dei sistemi di Optner</title>
+<meta name="description" content="Un problema ben formulato può rappresentare metà della battaglia per risolverlo. Per questo motivo, l’analista di sistemi dedica particolare attenzione alla valutazione il più precoce possibile dei parametri, delle proprietà e delle relazioni del problema.">
+<meta name="keywords" content="analisi dei sistemi, metodologia di Optner, problema, sistema, soluzione, alternativa, requisito">
+<link rel="canonical" href="https://systems-analysis.info/it/optner_method.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/optner_method.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/optner_method.html">
+<link rel="alternate" hreflang="it" href="https://systems-analysis.info/it/optner_method.html">
+<meta property="og:title" content="Metodologia di analisi dei sistemi di Optner">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/it/optner_method.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Un problema ben formulato può rappresentare metà della battaglia per risolverlo. Per questo motivo, l’analista di sistemi dedica particolare attenzione alla valutazione il più precoce possibile dei parametri, delle proprietà e delle relazioni del problema.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="it_IT">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/it/optner_method.html#article",
+    "headline": "Metodologia di analisi dei sistemi di Optner",
+    "description": "Un problema ben formulato può rappresentare metà della battaglia per risolverlo. Per questo motivo, l’analista di sistemi dedica particolare attenzione alla valutazione il più precoce possibile dei parametri, delle proprietà e delle relazioni del problema.",
+    "url": "https://systems-analysis.info/it/optner_method.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "it",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/it/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/it/optner_method.html"
+    },
+    "keywords": [
+        "analisi dei sistemi",
+        "metodologia di Optner",
+        "problema",
+        "sistema",
+        "soluzione",
+        "alternativa",
+        "requisito"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Systems Analysis for Business and Industrial Problem Solving",
+        "author": {
+            "@type": "Person",
+            "name": "Optner S.L."
+        },
+        "datePublished": "1965",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Prentice-Hall"
+        },
+        "inLanguage": "it"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Systems Analysis for Business and Industrial Problem Solving",
+        "author": {
+            "@type": "Person",
+            "name": "Optner S.L."
+        },
+        "datePublished": "1965",
+        "inLanguage": "it"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://systems-analysis.info/it/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Analisi dei sistemi",
+            "item": "https://systems-analysis.info/it/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Metodologia di Optner"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Navigazione principale">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/it/">Home</a>
+        <span aria-hidden="true">·</span>
+        <a href="/it/sections.html">Sezioni</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/it/books.html">Libri</a>
+        <span aria-hidden="true">·</span>
+        <a href="/it/catalog.html">Catalogo</a>
+        <span aria-hidden="true">·</span>
+        <a href="/optner_method.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Cambia tema"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Cambia carattere"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Metodologia di analisi dei sistemi di Optner</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Stanford L. Optner. Analisi dei sistemi per la risoluzione di <a href="/it/problem.html" class="text-link">problemi</a> aziendali e industriali</p>
+<p><strong>Fasi della metodologia di analisi dei sistemi di Optner</strong>:</p>
+<ol>
+  <li>Identificare i sintomi.</li>
+  <li>Determinare se il problema è rilevante.</li>
+  <li>Definire l’obiettivo.</li>
+  <li>Individuare la struttura del sistema e i suoi elementi difettosi.</li>
+  <li>Determinare la struttura delle possibilità.</li>
+  <li>Individuare le alternative.</li>
+  <li>Valutare le alternative.</li>
+  <li>Selezionare un’alternativa.</li>
+  <li>Formulare la soluzione.</li>
+  <li>Ottenere l’accettazione della soluzione da parte degli esecutori e dei dirigenti.</li>
+  <li>Avviare il processo di attuazione.</li>
+  <li>Gestire il processo di attuazione.</li>
+  <li>Valutare i risultati e le conseguenze dell’attuazione.</li>
+</ol>
+<p>Un problema è definito come una situazione che coinvolge due stati: uno denominato stato esistente e l’altro stato proposto. Lo stato esistente è rappresentato dal sistema attuale; lo stato proposto è rappresentato da un sistema ipotetico o desiderato. Ciascuno stato contiene un insieme di oggetti, proprietà e relazioni unite all’interno di un processo, e ciascuno può essere descritto come un <a href="/it/system.html" class="text-link">sistema</a>. Per passare dallo stato esistente a quello proposto, l’insieme attuale di oggetti, proprietà e relazioni deve essere modificato. Un cambiamento negli oggetti può significare la sostituzione di un’apparecchiatura piuttosto che la riorganizzazione del personale; un cambiamento nelle proprietà può assumere la forma di un aumento dell’organico; un cambiamento nelle relazioni può introdurre una nuova distribuzione delle responsabilità.</p>
+<p>Un problema è caratterizzato dalle incognite che contiene e dalle sue condizioni. Possono esservi una o più aree di incognita. Un’incognita può essere definibile in termini qualitativi ma non quantitativi. Una caratterizzazione quantitativa può assumere la forma di un intervallo di stime che rappresentano lo stato presunto dell’incognita. Nel senso classico, le incognite sono grandezze da determinare. Definire un’incognita in termini di un’altra può quindi risultare contraddittorio o ridondante. Le incognite possono essere espresse solo in termini di ciò che è noto — vale a dire, in termini di cose i cui oggetti, proprietà e relazioni sono stati stabiliti. Il noto è definito come una grandezza il cui valore è stato determinato.</p>
+<p>Lo stato esistente (il sistema attuale) può contenere sia elementi noti sia incognite; ciò significa che la presenza di incognite non impedisce necessariamente il funzionamento del sistema. Il sistema esistente è, per definizione, logicamente costituito, ma può non riuscire a soddisfare un vincolo. Pertanto, il semplice funzionamento di un sistema non costituisce la misura ultima della sua adeguatezza, poiché alcuni sistemi possono funzionare perfettamente e tuttavia non riuscire a raggiungere i propri obiettivi. Gli obiettivi possono essere definiti solo in termini di requisiti del sistema. I requisiti del sistema sono stabiliti per mezzo di una condizione che specifica oggetti e proprietà nelle loro relazioni appropriate.</p>
+<p>I requisiti del sistema fungono da mezzo per registrare affermazioni univoche che definiscono l’<a href="/it/goal.html" class="text-link">obiettivo</a>. Sebbene i requisiti del sistema siano espressi in termini di oggetti, proprietà e relazioni, gli obiettivi possono essere espressi in termini di uno stato desiderato. Per un dato insieme di requisiti del sistema, gli obiettivi e lo stato desiderato possono coincidere interamente. Se differiscono, si dice che i requisiti rappresentano il sistema desiderato. In generale, gli obiettivi sono identificati con il sistema desiderato.</p>
+<p>Il divario tra il sistema esistente e quello desiderato costituisce il problema. Lo scopo dell’azione è minimizzare questo divario. Il mantenimento o il miglioramento del funzionamento del sistema è inteso in termini di questo divario tra lo stato esistente e quello desiderato. Mantenere lo stato esistente significa mantenere l’output del sistema entro i limiti prescritti. Migliorare lo stato del sistema significa ottenere un output superiore a, o al di là di, quanto prodotto nello stato esistente.</p>
+<p>Una soluzione determina il modo in cui colmare il divario tra lo stato esistente e quello desiderato. Una soluzione è dunque il mezzo attraverso cui uno stato viene trasformato nell’altro. Essa descrive le differenze tra i due stati in termini di oggetti, proprietà e relazioni, e specifica come questa struttura di collegamento debba essere introdotta per ottenere lo stato proposto. La soluzione viene attuata mediante un controllo a retroazione costituito da un <a href="/it/model.html" class="text-link">modello</a> di output, una verifica di conformità e un modello di azione.</p>
+<p>La risoluzione dei problemi si attua attraverso un processo di apprendimento. L’apprendimento è definito come un atto cognitivo derivante da stimoli. La cognizione comprende un’ampia gamma di attività intellettuali, tra cui il riconoscimento di schemi presenti o futuri. Il riconoscimento si ottiene applicando un criterio all’output. La cognizione è una delle funzioni fondamentali necessarie per colmare il divario tra il sistema esistente e quello desiderato. Altre funzioni coinvolte nell’apprendimento includono la formulazione del mezzo attraverso cui uno stato del sistema viene trasformato in un altro, e l’idea che indica, a priori, come lo stato desiderato possa essere raggiunto mediante cambiamenti agli oggetti, alle proprietà e alle relazioni esistenti.</p>
+<p>Una formulazione riuscita del problema può equivalere a metà della sua soluzione. Per questo motivo, l’analista di sistemi presta particolare attenzione alla valutazione il più precoce possibile dei parametri, delle proprietà e delle relazioni del problema. Non è sempre possibile introdurre in un problema obiettivi «già pronti»; gli obiettivi proposti da altri possono rivelarsi insufficienti. Inoltre, l’analista di sistemi può accettare un obiettivo proposto solo dopo aver determinato, attraverso la formulazione del problema, che esso è privo di ridondanza e contraddizione. Un problema «mezzo risolto» tramite la formulazione non è un problema risolto in senso stretto, ma la sua formulazione significa che gli elementi principali del problema sono stati correttamente individuati e collegati tra loro. Per questo motivo, la formulazione del problema può essere anche chiamata definizione del problema.</p>
+<p>Le fasi iniziali nella formulazione di un problema mirano a: 1) elaborare un enunciato iniziale del problema; 2) interpretare tale enunciato in relazione alle varie parti del problema; 3) interpretare i fatti pertinenti al problema; e 4) perfezionare l’enunciato iniziale del problema. Durante l’indagine iniziale, l’analista separa il noto dall’ignoto al fine di rendere significativo l’enunciato iniziale.</p>
+<p>La controparte della formulazione del problema è lo sviluppo di una definizione dell’obiettivo. Il termine «obiettivo» descrive il risultato da conseguire. Un obiettivo può assumere la forma di un massimo (o minimo) la cui entità deve ancora essere determinata, oppure può specificare un intervallo di valori entro cui la soluzione deve rientrare. In ogni caso, un obiettivo è un risultato desiderato dell’attività.</p>
+<p>La combinazione degli obiettivi che stabiliscono la linea d’azione e delle relazioni vincolanti che li limitano forma il quadro dei vincoli entro cui inizia lo studio del problema. Un vincolo è la somma di regole, regolamenti e principi guida — imposti autonomamente o dall’esterno — che definiscono i confini del problema. Ogni problema deve avere un insieme definibile di vincoli. La compatibilità tra gli obiettivi e le relazioni vincolanti è essenziale. Senza un accordo sui vincoli, un accordo sulle soluzioni è altamente improbabile. Non ha senso parlare di «soluzione» se le parti interessate non riescono a concordare sul problema o sui vincoli che lo definiscono.</p>
+<p>Quando l’analista di sistemi stabilisce la condizione del problema, egli fissa i limiti dell’indagine e, per estensione, i confini del quadro dei vincoli. In termini matematici, le condizioni possono essere sufficienti, ridondanti o contraddittorie; non possono assumere altre forme.</p>
+<p>Una condizione è ridondante se contiene elementi non necessari — elementi che tendono a causare sprechi. Una condizione può anche contenere una contraddizione. Un elemento contraddittorio è uno così strettamente legato a un altro che, se uno è vero, l’altro deve essere falso. La conseguenza di una condizione contraddittoria è che parti del problema risultano incoerenti tra loro e quindi reciprocamente contrapposte.</p>
+<p>Una condizione sufficiente è soddisfatta quando i vincoli sono compatibili con l’obiettivo proposto e l’obiettivo è definito adeguatamente rispetto ai requisiti del sistema. La sufficienza implica esattezza: essa contiene tutto ciò che è necessario per soddisfare il requisito, senza carenze e senza eccessi.</p>
+<p>I problemi con strutture mal definite vengono generalmente «risolti» accettando valutazioni relative anziché assolute, senza dimostrazione. I problemi di portata molto ampia, i problemi le cui soluzioni dipendono da cose non ancora sviluppate, e i problemi che comportano ipotesi sulla combinazione di sistemi non ancora definibili nelle circostanze esistenti — tutti questi sono problemi con strutture mal definite.</p>
+<p>Nel formulare (o enunciare) un problema, l’analista di sistemi deve svolgere i seguenti compiti: primo, descrivere come il problema è stato scoperto; secondo, stabilire perché esso è considerato un problema; terzo, distinguerlo da un semplice «sintomo» di problemi correlati; e quarto, fornire definizioni operative delle conseguenze indesiderabili del problema. L’analista commetterà un grave errore se, durante la formulazione del problema, propone soluzioni o attribuisce cause. La preparazione di un enunciato del problema mira, soprattutto, a mettere a fuoco con precisione il problema. Nella fase di formulazione non vengono poste richieste alle ipotesi. Per mantenere il controllo sul problema, è auspicabile disporre di fatti logicamente collegati e chiaramente identificabili.</p>
+<p>Indagare gli aspetti storici di un problema presenta i propri vantaggi. Il momento in cui il problema è diventato per la prima volta evidente può costituire una prova preziosa, consentendo di collegarlo ad azioni precedenti e identificabili. A volte è importante determinare le circostanze che hanno dato origine al problema.</p>
+<p>Lo stesso fenomeno può non essere percepito da tutti come un problema. È quindi necessario stabilire la motivazione per trattare un determinato fenomeno come un problema. I fenomeni nelle istituzioni aziendali, governative e militari possono essere classificati come problemi se tendono a compromettere le aspettative di profitto o a ridurre l’efficacia operativa. Tuttavia, alcuni problemi non evidenti possono essere previsti solo mediante metodi analitici. Nei casi in cui i problemi non siano evidenti, l’interruzione del funzionamento del sistema non si verifica immediatamente, ma diventa una possibilità.</p>
+<p>Nella risoluzione di un problema, il primo compito è determinare l’insieme di oggetti da analizzare. Questo insieme di oggetti, considerato nel suo complesso, costituisce un’alternativa. La valutazione delle alternative è un mezzo per selezionare soluzioni o obiettivi. Un dato problema può essere risolto mediante molte procedure alternative diverse. Le alternative possono avere o non avere aspetti quantificabili. Ad esempio, il numero di persone o di apparecchiature in un’alternativa è quantificabile, mentre il tipo di mercato, il grado di influenza sul mercato o l’ubicazione di un mercato possono essere solo parzialmente quantificabili. L’esistenza di alternative implica la capacità di scegliere tra due o più soluzioni accettabili. La sostanza delle alternative definisce le condizioni in base alle quali può essere effettuata una scelta.</p>
+<p>Le assunzioni sono affermazioni sullo stato ritenuto di un oggetto, di una proprietà o di una relazione. Le proposizioni sono ipotesi o postulati. Se le proposizioni sono false, allora le assunzioni sono false e la condizione del problema è contraddittoria. Le assunzioni vengono utilizzate per far fronte a realtà difficili che tendono a compromettere la procedura di risoluzione del problema. Se le assunzioni non alterano il livello di rischio o il rapporto costi-efficacia di una data alternativa, esse costituiscono una parte utile ed essenziale del problema. Le assunzioni pongono sull’analista di sistemi l’onere di garantire la coerenza.</p>
+<p>Un’assunzione consente di dedurre un fatto non noto con certezza a partire dall’esistenza di altri fatti noti.</p>
+<p>Un criterio è il mezzo mediante il quale le alternative vengono misurate o selezionate. Un criterio impone all’analista di sistemi di dimostrare un ragionamento logico nella selezione delle preferenze. Un criterio indica la prestazione relativa di un’alternativa in termini di altre misure, come il tempo, il costo o l’efficacia. È uno standard in base al quale può essere espresso un giudizio sul merito relativo di una scelta.</p>
+<p>Il rischio è una misura della potenziale esposizione a carenze. Un rischio elevato può anche essere caratterizzato da una bassa probabilità statistica, sebbene la misura precisa del rischio non sia sempre quantificabile. Per descrivere il rischio nei problemi complessi che coinvolgono dimensioni sia quantitative sia qualitative, si utilizza il termine «incertezza».</p>
+<p>In questo uso, «incertezza» si riferisce alla plausibilità relativa di un evento che si è effettivamente verificato. Il rischio o l’incertezza possono manifestarsi lungo l’intero processo di risoluzione del problema. Il rischio aumenta, ad esempio, se i criteri sono intrinsecamente inadatti a misurare ciò che dovrebbero misurare. Il rischio aumenta anche se le assunzioni accettate come vere si rivelano false. Il rischio può emergere come caratteristica dominante di un’alternativa scelta a causa di errori di retroazione non rilevati dall’output all’input.</p>
+<p>Un’alternativa è una tra due o più possibilità di scelta. Perché un’alternativa possa essere presa in considerazione, deve rappresentare una potenziale soluzione accettabile al problema enunciato. Quando le alternative sono comparabili, viene stabilita la distinzione tra esse. Quando non sono comparabili, vengono individuati gli aspetti in cui differiscono. In accordo con questa definizione, le alternative possono differire per grado o per natura.</p>
+<p>Esistono due forme generali di alternative: funzionalmente diverse e operativamente diverse. La forma funzionale può essere illustrata da una barca a vela e da un aereo monomotore, entrambi considerabili come soluzioni alternative allo stesso problema. La forma operativa può essere illustrata da tre varianti della stessa automobile, ciascuna progettata per risolvere lo stesso problema. Le alternative funzionali differiscono nel modo in cui risolvono i problemi. Le alternative operative differiscono nei modi in cui oggetti, proprietà e relazioni sono assemblati in un sistema. Le alternative vengono valutate in base al fabbisogno totale di risorse e al costo, nonché al rendimento atteso. L’obiettivo nel definire le alternative può essere quello di massimizzare, minimizzare o ottimizzare l’efficacia del sistema.</p>
+<p>In matematica e in statistica vige la regola secondo cui solo una misura può logicamente essere massimizzata o minimizzata alla volta. Questa regola si applica con pari forza ai problemi misti quantitativo-qualitativi. È improbabile, ad esempio, che sia il tempo sia il costo della risoluzione di un problema possano essere minimizzati senza compromettere l’efficacia del sistema. Una variabile può essere massimizzata mentre le altre vengono ottimizzate — cioè si avvicineranno molto, senza raggiungerlo, al loro stato ideale, dato il massimo di quell’unica variabile. Ottimo significa il migliore nel senso di «tutto considerato». Non significa «il migliore in assoluto». Può significare le condizioni più favorevoli per raggiungere un dato obiettivo. Gli ottimi possono essere percepiti come così «favorevoli» che uno specialista li definirebbe «ideali», «eccellenti» o «i migliori in assoluto». Tuttavia, questa caratterizzazione è a posteriori e non fa parte della costruzione logica delle alternative.</p>
+<p>Nella maggior parte dei casi, il massimo e il minimo della soluzione di un problema possono essere sconosciuti; di conseguenza, sarà sconosciuto anche l’ottimo. Queste considerazioni mostrano che è possibile costruire un’alternativa il cui massimo o minimo è di scarsa utilità pratica. Anche quando l’analista di sistemi non comprende il valore assoluto di ciascuna alternativa, è comunque possibile stabilire un insieme di stime che consenta di descrivere la soluzione del problema.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Metodologie di analisi dei sistemi</h2>
+    <ul>
+      <li><a href="/it/methodology_sa.html">Metodologia di analisi dei sistemi</a></li>
+      <li><a href="/it/quade_method.html">Metodologia di analisi dei sistemi di Quade</a></li>
+      <li><a href="/it/chernyak_method.html">Metodologia di analisi dei sistemi di Chernyak</a></li>
+      <li><a href="/it/young_method.html">Metodologia di analisi dei sistemi di Young</a></li>
+      <li><a href="/it/golubkov_method.html">Metodologia di analisi dei sistemi di Golubkov</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Bibliografia</h2>
+    <ul>
+      <li><a href="/assets/systems_analysis_optner.pdf">Scarica il libro: Analisi dei sistemi per la risoluzione di problemi aziendali e industriali. Optner</a></li>
+      <li><a href="/it/systems_analysis_book.html">Scarica la bibliografia di analisi dei sistemi</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Articoli correlati</h2>
+    <ul>
+      <li><a href="/it/systems_analysis.html">Analisi dei sistemi</a></li>
+      <li><a href="/it/decision_theory.html">Teoria delle decisioni</a></li>
+      <li><a href="/it/decision_making.html">Presa di decisione</a></li>
+      <li><a href="/it/choice.html">Decisione e scelta</a></li>
+      <li><a href="/it/management.html">Gestione</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Percorso di navigazione">
+    <a href="/it/">Home</a> <span aria-hidden="true">/</span>
+    <a href="/it/systems_analysis.html">Analisi dei sistemi</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Metodologia di Optner</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Cambia tema"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/optner_method.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/it/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Cambia tema"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710a30bb7da5ce',t:'MTc4ODczNTEwMQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

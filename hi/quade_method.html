@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>क्वाड की प्रणाली विश्लेषण पद्धति</title>
+<meta name="description" content="प्रणाली विश्लेषण। क्वाड की पद्धति। समस्या सूत्रीकरण प्रणाली विश्लेषण का सबसे महत्वपूर्ण तत्व है और इसमें समस्या का सार बताना, अध्ययन का दायरा निर्धारित करना, प्रारंभिक आँकड़े स्थापित करना, तथा लक्ष्यों की पहचान करना शामिल है।">
+<meta name="keywords" content="प्रणाली विश्लेषण,क्वाड की पद्धति">
+<link rel="canonical" href="https://systems-analysis.info/hi/quade_method.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/quade_method.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/quade_method.html">
+<link rel="alternate" hreflang="hi" href="https://systems-analysis.info/hi/quade_method.html">
+<meta property="og:title" content="क्वाड की प्रणाली विश्लेषण पद्धति">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/hi/quade_method.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="प्रणाली विश्लेषण। क्वाड की पद्धति। समस्या सूत्रीकरण प्रणाली विश्लेषण का सबसे महत्वपूर्ण तत्व है और इसमें समस्या का सार बताना, अध्ययन का दायरा निर्धारित करना, प्रारंभिक आँकड़े स्थापित करना, तथा लक्ष्यों की पहचान करना शामिल है।">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="hi_IN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/hi/quade_method.html#article",
+    "headline": "क्वाड की प्रणाली विश्लेषण पद्धति",
+    "description": "प्रणाली विश्लेषण। क्वाड की पद्धति। समस्या सूत्रीकरण प्रणाली विश्लेषण का सबसे महत्वपूर्ण तत्व है और इसमें समस्या का सार बताना, अध्ययन का दायरा निर्धारित करना, प्रारंभिक आँकड़े स्थापित करना, तथा लक्ष्यों की पहचान करना शामिल है।",
+    "url": "https://systems-analysis.info/hi/quade_method.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "hi",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/hi/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/hi/quade_method.html"
+    },
+    "keywords": [
+        "प्रणाली विश्लेषण",
+        "क्वाड की पद्धति"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Analysis for Military Decisions",
+        "author": {
+            "@type": "Person",
+            "name": "Quade E.S."
+        },
+        "datePublished": "1964",
+        "publisher": {
+            "@type": "Organization",
+            "name": "RAND Corporation"
+        },
+        "inLanguage": "hi"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Analysis for Military Decisions",
+        "author": {
+            "@type": "Person",
+            "name": "Quade E.S."
+        },
+        "datePublished": "1964",
+        "inLanguage": "hi"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "मुख्य पृष्ठ",
+            "item": "https://systems-analysis.info/hi/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "प्रणाली विश्लेषण",
+            "item": "https://systems-analysis.info/hi/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "क्वाड की पद्धति"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="मुख्य नेविगेशन">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">मेनू</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/hi/">मुख्य पृष्ठ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/hi/sections.html">अनुभाग</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/hi/books.html">पुस्तकें</a>
+        <span aria-hidden="true">·</span>
+        <a href="/hi/catalog.html">सूचीपत्र</a>
+        <span aria-hidden="true">·</span>
+        <a href="/quade_method.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="थीम बदलें"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="फ़ॉन्ट बदलें"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">क्वाड की प्रणाली विश्लेषण पद्धति</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>प्रणाली विश्लेषण सामान्यतः निम्नलिखित क्रम में आगे बढ़ता है:</strong></p>
+<ol>
+  <li>समस्या सूत्रीकरण;</li>
+  <li>समस्या को हल करने के वैकल्पिक दृष्टिकोणों का चयन;</li>
+  <li>समस्या के समाधान पर व्यय किए जाने वाले संसाधनों की जाँच;</li>
+  <li>मॉडल का निर्माण;</li>
+  <li>मूल्यांकन मानदंडों का चयन;</li>
+  <li>विकल्पों की तुलना तथा निर्णयन।</li>
+</ol>
+<p>समस्या सूत्रीकरण प्रणाली विश्लेषण का सबसे महत्वपूर्ण तत्व है और इसमें <a href="/hi/problem.html" class="text-link">समस्या</a> का सार बताना, अध्ययन का दायरा निर्धारित करना, प्रारंभिक आँकड़े स्थापित करना, तथा लक्ष्यों की पहचान करना शामिल है।</p>
+<p>समस्याओं को हल करने के वैकल्पिक दृष्टिकोणों के चयन में उन विकल्पों (साधनों) की सूची बनाना शामिल है जिनका उपयोग, प्रारंभिक विचारों के आधार पर, बताई गई समस्या को हल करने के लिए किया जा सकता है। अध्ययन के दौरान, कुछ विकल्पों को समाप्त कर दिया जाता है और नए विकल्प जोड़े जाते हैं।</p>
+<p>समस्या के समाधान पर व्यय किए जाने वाले संसाधनों की जाँच आर्थिक विश्लेषण का एक प्रमुख चरण है, जिसमें भौतिक और मौद्रिक आवश्यकताओं का निर्धारण किया जाता है। सामान्यतः, हथियार <a href="/hi/system.html" class="text-link">प्रणालियों</a> का चयन प्रभावशीलता के दिए गए स्तर के लिए न्यूनतम लागत के आधार पर किया जाता है।</p>
+<p><a href="/hi/model.html" class="text-link">मॉडल</a> का निर्माण अध्ययन का वह चरण है जिसमें वास्तविक प्रक्रिया का एक अनुरूप विकसित किया जाता है, जिसमें सबसे आवश्यक कारकों को गणितीय संबंधों (विश्लेषणात्मक मॉडल) के माध्यम से, कंप्यूटर (कंप्यूटर मॉडल) के माध्यम से, या किसी विशेष “खेल” (गेमिंग मॉडल) के माध्यम से दर्शाया जाता है।</p>
+<p>प्रणाली विश्लेषण में मॉडलिंग का स्थान निरंतर बढ़ता जाएगा, विशेष रूप से गणितीय मॉडलिंग विधियों और कंप्यूटरों के विकास के संबंध में।</p>
+<p>मूल्यांकन मानदंडों का चयन प्रणाली विश्लेषण का एक असाधारण रूप से महत्वपूर्ण चरण है और इसमें किसी राशि (या राशियों की प्रणाली) को निर्दिष्ट करना शामिल है जिसका संख्यात्मक मान समाधान की सफलता का आकलन करने के लिए उपयोग किया जा सके। प्रणाली विश्लेषण विधियों के संतोषजनक संचालन के लिए, यह महत्वपूर्ण माना जाता है कि प्रबंधन के प्रत्येक स्तर पर अपनाए गए मानदंड एक ही तार्किक प्रणाली में जुड़े हों। सर्वोच्च स्तर (रक्षा मंत्रालय के नेतृत्व) पर सबसे महत्वपूर्ण मानदंड प्रणाली का लागत-प्रभावशीलता अनुपात है।</p>
+<p>विकल्पों की तुलना तथा निर्णयन विश्लेषण का अंतिम चरण है, जिसमें बताई गई समस्या को हल करने के साधनों का मूल्यांकन चुने गए मानदंड के आधार पर किया जाता है। विभिन्न विकल्पों के मात्रात्मक मूल्यांकन के अतिरिक्त, तार्किक निर्णय भी प्रस्तुत किए जा सकते हैं जो एक विकल्प की दूसरों की तुलना में वरीयता को दर्शाते हैं।</p>
+</div>
+      </article>
+    </div>
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>प्रणाली विश्लेषण पद्धतियाँ</h2>
+    <ul>
+      <li><a href="/hi/methodology_sa.html">प्रणाली विश्लेषण पद्धति</a></li>
+      <li><a href="/hi/optner_method.html">ऑप्टनर की प्रणाली विश्लेषण पद्धति</a></li>
+      <li><a href="/hi/chernyak_method.html">चेर्न्याक की प्रणाली विश्लेषण पद्धति</a></li>
+      <li><a href="/hi/young_method.html">यंग की प्रणाली विश्लेषण पद्धति</a></li>
+      <li><a href="/hi/golubkov_method.html">गोलुबकोव की प्रणाली विश्लेषण पद्धति</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>साहित्य</h2>
+    <ul>
+      <li><a href="/assets/systems_analysis_quaid.pdf">पुस्तक डाउनलोड करें: सैन्य निर्णयों के लिए विश्लेषण। क्वाड</a></li>
+      <li><a href="/hi/systems_analysis_book.html">प्रणाली विश्लेषण साहित्य डाउनलोड करें</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>संबंधित लेख</h2>
+    <ul>
+      <li><a href="/hi/systems_analysis.html">प्रणाली विश्लेषण</a></li>
+      <li><a href="/hi/decision_theory.html">निर्णय सिद्धांत</a></li>
+      <li><a href="/hi/decision_making.html">निर्णयन</a></li>
+      <li><a href="/hi/choice.html">निर्णय और चयन</a></li>
+      <li><a href="/hi/management.html">प्रबंधन</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="नेविगेशन पथ">
+    <a href="/hi/">मुख्य पृष्ठ</a> <span aria-hidden="true">/</span>
+    <a href="/hi/systems_analysis.html">प्रणाली विश्लेषण</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">क्वाड की पद्धति</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="थीम बदलें"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/quade_method.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/hi/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="थीम बदलें"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a37109114fe3a5ce',t:'MTc4ODczNTA1NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

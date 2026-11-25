@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Khái niệm hệ thống</title>
+<meta name="description" content="Có hàng chục định nghĩa về khái niệm “hệ thống”. Phân tích các định nghĩa này cho thấy quá trình phát triển từ việc liệt kê các thuộc tính đến việc nắm bắt các nguyên lý của tiếp cận hệ thống. Các cách diễn đạt chủ yếu được trình bày.">
+<meta name="keywords" content="hệ thống,định nghĩa hệ thống,khái niệm hệ thống,phần tử hệ thống">
+<link rel="canonical" href="https://systems-analysis.info/vi/system_terminus.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/system_terminus.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/system_terminus.html">
+<link rel="alternate" hreflang="vi" href="https://systems-analysis.info/vi/system_terminus.html">
+<meta property="og:title" content="Khái niệm hệ thống">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/vi/system_terminus.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Có hàng chục định nghĩa về khái niệm “hệ thống”. Phân tích các định nghĩa này cho thấy quá trình phát triển từ việc liệt kê các thuộc tính đến việc nắm bắt các nguyên lý của tiếp cận hệ thống. Các cách diễn đạt chủ yếu được trình bày.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="vi_VN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/vi/system_terminus.html#article",
+    "headline": "Khái niệm hệ thống",
+    "description": "Có hàng chục định nghĩa về khái niệm “hệ thống”. Phân tích các định nghĩa này cho thấy quá trình phát triển từ việc liệt kê các thuộc tính đến việc nắm bắt các nguyên lý của tiếp cận hệ thống. Các cách diễn đạt chủ yếu được trình bày.",
+    "url": "https://systems-analysis.info/vi/system_terminus.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "vi",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/vi/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/vi/system_terminus.html"
+    },
+    "keywords": [
+        "hệ thống",
+        "định nghĩa hệ thống",
+        "khái niệm hệ thống",
+        "phần tử hệ thống"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "Khái niệm hệ thống",
+        "description": "A fundamental concept whose definition has changed not only in form but also in substance as systems theory has developed.",
+        "sameAs": [
+            "https://www.wikidata.org/entity/Q58778",
+            "https://en.wikipedia.org/wiki/System",
+            "https://systems-analysis.info/wiki/Понятие_системы",
+            "https://systems-analysis.info/eng/Concept_of_a_system"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Trang chủ",
+            "item": "https://systems-analysis.info/vi/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Lý Thuyết Hệ Thống",
+            "item": "https://systems-analysis.info/vi/system.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Khái niệm hệ thống"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Điều hướng chính">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/vi/">Trang chủ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/sections.html">Chuyên mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/books.html">Sách</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/catalog.html">Danh mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/system_terminus.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Đổi giao diện"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Đổi phông chữ"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Khái niệm hệ thống</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Có vài chục định nghĩa về khái niệm này. Phân tích các định nghĩa cho thấy khái niệm <strong>hệ thống</strong> đã thay đổi không chỉ về hình thức mà còn về nội dung. Hãy xem xét những thay đổi chính đã diễn ra trong định nghĩa hệ thống khi lý thuyết hệ thống phát triển và khái niệm này được đưa vào sử dụng thực tiễn.</p>
+<h2>Các phần tử và mối quan hệ</h2>
+<p>Những định nghĩa sớm nhất, dưới hình thức này hay hình thức khác, đều khẳng định rằng hệ thống bao gồm các phần tử (bộ phận, thành phần) aᵢ và các liên kết (quan hệ) rⱼ giữa chúng:</p>
+<p>$$S = \{a_i,\; r_j\}$$</p>
+<p>$$S = \langle A,\; R \rangle$$</p>
+<p>$$S = A \cap R$$</p>
+<p>Trong các cách biểu diễn hình thức hóa này, các cách biểu diễn tập hợp khác nhau được sử dụng: trong hai cách đầu, các tập hợp được xác định mà không tính đến các mối liên hệ qua lại giữa tập các phần tử và tập các quan hệ; cách thứ ba phản ánh việc hệ thống không phải là một tập hợp đơn giản của các phần tử và liên kết thuộc loại này hay loại khác, mà chỉ bao gồm những phần tử và liên kết nằm trong phần giao.</p>
+<p>Ludwig von Bertalanffy định nghĩa hệ thống là “một phức hợp các thành phần tương tác với nhau” hoặc là “một tập hợp các phần tử có những quan hệ nhất định với nhau và với môi trường”. Trong Đại bách khoa toàn thư Liên Xô, hệ thống được định nghĩa bằng cách dịch trực tiếp từ tiếng Hy Lạp systema, có nghĩa là “sự cấu thành”, tức là cái được cấu thành, ghép lại từ các bộ phận.</p>
+<p>Các thuật ngữ “phần tử” và “thành phần”, “liên kết” và “quan hệ” thường được dùng như những từ đồng nghĩa (đặc biệt trong các bản dịch định nghĩa). Tuy nhiên, nói một cách chặt chẽ, “thành phần” là một khái niệm rộng hơn “phần tử”, vì nó có thể chỉ một tập hợp các phần tử. Còn về khái niệm “liên kết” và “quan hệ”, cũng tồn tại những quan điểm khác nhau.</p>
+<p>Nếu biết trước rằng các phần tử về cơ bản không đồng nhất, điều này có thể được tính đến ngay trong định nghĩa bằng cách phân biệt các tập phần tử khác nhau:</p>
+<p>$$S = \langle A,\; B,\; R \rangle$$</p>
+<p>Trong định nghĩa của M. Mesarovic, một tập X các đối tượng đầu vào (tác động lên hệ thống) và một tập Y các kết quả đầu ra được phân biệt, với một quan hệ giao tổng quát được xác lập giữa chúng, có thể biểu diễn theo cách ký hiệu gốc của tác giả hoặc bằng các ký hiệu giao khác:</p>
+<p>$$S \subseteq X \times Y$$</p>
+<p>Nếu một loại quan hệ nào đó chỉ áp dụng cho các phần tử thuộc các tập khác nhau và không được dùng trong nội bộ mỗi tập, điều này có thể được phản ánh như sau:</p>
+<p>$$S = \{a_i \; r_j \; b_k\}$$</p>
+<ul>
+  <li>$\{a_i \; r_j,\; b_k\}$ — các phần tử của một hệ thống mới được hình thành từ các phần tử của các tập gốc $A$ và $B$.</li>
+</ul>
+<p>Dạng ký hiệu này được gọi là cú đoạn (syntagma) trong ngôn ngữ học toán học.</p>
+<h2>Thuộc tính của các phần tử và quan hệ</h2>
+<p>Để làm rõ các phần tử và quan hệ, các định nghĩa bao gồm cả thuộc tính. Chẳng hạn, trong định nghĩa của A. Hall, các thuộc tính (đặc trưng) Q_A bổ sung cho khái niệm phần tử (đối tượng):</p>
+<p>$$S = \langle A,\; R,\; Q_A \rangle$$</p>
+<ul>
+  <li>$Q_A$ — thuộc tính (đặc trưng)</li>
+</ul>
+<p>A. I. Uyemov, khi định nghĩa hệ thống thông qua các khái niệm “sự vật”, “thuộc tính” và “quan hệ”, đã đề xuất các định nghĩa song hành: trong một định nghĩa, thuộc tính đặc trưng cho các phần tử (sự vật), còn trong định nghĩa khác, thuộc tính đặc trưng cho các liên kết (quan hệ):</p>
+<p>$$S = \langle a_i,\; r_j,\; q_i \rangle \quad \text{và} \quad S = \langle a_i,\; r_j,\; q_j \rangle$$</p>
+<ul>
+  <li>$a_i$ — các phần tử</li>
+  <li>$r_j$ — các liên kết (quan hệ)</li>
+  <li>$q_i$ — các thuộc tính của phần tử</li>
+  <li>$q_j$ — các thuộc tính của liên kết (quan hệ)</li>
+</ul>
+<h2>Mục tiêu</h2>
+<p>Sau đó, khái niệm <a href="/vi/goal.html" class="text-link">mục tiêu</a> đã xuất hiện trong các định nghĩa về hệ thống. Ban đầu là ngầm ẩn: trong định nghĩa của F. E. Temnikov, “hệ thống là một tập hợp có tổ chức” (trong đó mục tiêu xuất hiện khi giải thích khái niệm “có tổ chức”); trong từ điển triết học, hệ thống là “một tập hợp các phần tử có quan hệ và liên kết với nhau, tạo thành một thể thống nhất toàn vẹn nhất định”. Sau đó, nó xuất hiện dưới dạng kết quả cuối cùng, một tiêu chí tạo hệ thống, hoặc một hàm (xem các định nghĩa của V. I. Vernadsky, R. Gibson, P. K. Anokhin và M. G. Gaaze-Rapoport), và sau đó nữa là với sự nêu rõ trực tiếp về mục tiêu.</p>
+<p>Về mặt biểu tượng, nhóm định nghĩa này có thể được biểu diễn như sau:</p>
+<p>$$S = \langle A,\; R,\; Z \rangle$$</p>
+<ul>
+  <li>$Z$ — mục tiêu, tập hợp hoặc cấu trúc các mục tiêu.</li>
+</ul>
+<p>Một số định nghĩa nêu rõ các điều kiện hình thành mục tiêu — môi trường, khoảng thời gian, tức là khoảng thời gian trong đó hệ thống và các mục tiêu của nó sẽ tồn tại. Điều này được thực hiện, chẳng hạn, trong định nghĩa của V. N. Sagatovsky, cũng là cơ sở cho một trong các kỹ thuật cấu trúc hóa mục tiêu: hệ thống là “một tập hữu hạn các phần tử chức năng và các quan hệ giữa chúng, được phân biệt với môi trường của nó theo một mục tiêu cụ thể trong một khoảng thời gian xác định”:</p>
+<p>$$S = \langle A,\; R,\; Z,\; S_R,\; T \rangle$$</p>
+<ul>
+  <li>$S_R$ — môi trường</li>
+  <li>$T$ — thời gian tồn tại của hệ thống</li>
+</ul>
+<h2>Người quan sát</h2>
+<p>Về sau, các định nghĩa hệ thống bắt đầu bao gồm, bên cạnh các phần tử, quan hệ và mục tiêu, cả người quan sát N — tức là người biểu diễn một đối tượng hay quá trình dưới dạng hệ thống trong quá trình nghiên cứu hoặc ra quyết định:</p>
+<p>$$S = \langle A,\; R,\; Z,\; N \rangle$$</p>
+<ul>
+  <li>$N$ — người quan sát, người nghiên cứu</li>
+</ul>
+<p>W. R. Ashby đã chỉ ra sự cần thiết phải tính đến sự tương tác giữa hệ thống đang được nghiên cứu và người nghiên cứu. Nhưng định nghĩa đầu tiên nêu rõ trực tiếp người quan sát là của Yu. I. Chernyak: “Hệ thống là sự phản ánh trong ý thức của chủ thể (người nghiên cứu, người quan sát) về các thuộc tính của các đối tượng và mối quan hệ giữa chúng trong bài toán nghiên cứu và nhận thức”:</p>
+<p>$$S = \langle A,\; R,\; Z,\; N \rangle$$</p>
+<p>Trong các phiên bản sau của định nghĩa này, Yu. I. Chernyak còn tính đến ngôn ngữ của người quan sát, bắt đầu bằng cách diễn đạt: “Hệ thống là sự biểu diễn bằng ngôn ngữ của người quan sát (người nghiên cứu, người thiết kế) về các đối tượng, quan hệ và thuộc tính của chúng trong bài toán nghiên cứu và nhận thức”:</p>
+<p>$$S = \langle A,\; R,\; Z,\; N,\; L_N \rangle$$</p>
+<ul>
+  <li>$L_N$ — ngôn ngữ của người quan sát</li>
+</ul>
+<p>Các định nghĩa hệ thống có thể chứa số lượng thành phần còn lớn hơn nữa, liên quan đến nhu cầu phân biệt các loại phần tử, quan hệ, v.v. trong những điều kiện cụ thể.</p>
+<h2>Sự phát triển của định nghĩa hệ thống</h2>
+<p>Khi so sánh sự phát triển của định nghĩa hệ thống (phần tử và quan hệ, rồi mục tiêu, rồi người quan sát) với sự phát triển của việc sử dụng các phạm trù nhận thức luận, có thể nhận ra một sự tương đồng: ban đầu, các <a href="/vi/model.html" class="text-link">mô hình</a> (đặc biệt là các mô hình hình thức) chỉ dựa trên việc tính đến các phần tử và liên kết, tương tác giữa chúng; sau đó chú ý chuyển sang mục tiêu và tìm kiếm các phương pháp biểu diễn hình thức hóa nó (hàm mục tiêu, tiêu chí hiệu quả, v.v.); và từ những năm 1960 trở đi, người ta ngày càng chú ý đến người quan sát — người thực hiện việc mô hình hóa hoặc tiến hành thí nghiệm (thậm chí trong vật lý học), tức là người ra quyết định.</p>
+<p>Với suy nghĩ đó, và dựa trên một phân tích sâu hơn về bản chất của khái niệm hệ thống, có vẻ hợp lý khi coi khái niệm này là một phạm trù của nhận thức luận, của lý thuyết phản ánh.</p>
+<h2>Định nghĩa làm việc về hệ thống</h2>
+<p>Xem xét các định nghĩa khác nhau về hệ thống và sự phát triển của chúng, mà không chọn một định nghĩa nào làm định nghĩa chính, người ta không chỉ nhận thấy khó khăn trong việc định nghĩa ngắn gọn những khái niệm (thường được nắm bắt một cách trực giác) như “hệ thống”, mà còn nhận ra rằng ở các giai đoạn khác nhau khi biểu diễn một đối tượng dưới dạng hệ thống, trong các tình huống cụ thể khác nhau, có thể sử dụng các định nghĩa khác nhau. Hơn nữa, khi sự hiểu biết về hệ thống được làm rõ hơn hoặc khi chuyển sang một tầng nghiên cứu khác của nó, định nghĩa về hệ thống không chỉ có thể mà còn nên được điều chỉnh lại.</p>
+<p>Một định nghĩa bao gồm các phần tử, quan hệ, mục tiêu và người quan sát — và đôi khi cả “ngôn ngữ” của người quan sát để biểu diễn hệ thống — giúp hình thành bài toán và phác thảo các giai đoạn chính của phương pháp luận phân tích hệ thống. Chẳng hạn, trong các hệ thống tổ chức, nếu không xác định được người có thẩm quyền ra quyết định, mục tiêu mà hệ thống được tạo ra vì nó có thể không đạt được. Nhưng cũng có những hệ thống mà người quan sát là hiển nhiên. Đôi khi thậm chí không cần phải sử dụng rõ ràng khái niệm mục tiêu.</p>
+<p>Chẳng hạn, phiên bản lý thuyết hệ thống do Yu. A. Urmantsev phát triển để nghiên cứu các đối tượng sinh học tương đối cấp thấp như thực vật không bao gồm khái niệm mục tiêu, vì nó không phải là đặc trưng của loại đối tượng này; thay vào đó, khái niệm về tính mục đích và phát triển được biểu đạt dưới dạng một loại quan hệ đặc biệt — các quy luật cấu thành.</p>
+<p>Như vậy, khi thực hiện phân tích hệ thống, trước hết cần biểu diễn tình huống bằng định nghĩa đầy đủ nhất có thể về hệ thống, sau đó, sau khi xác định các thành phần thiết yếu nhất ảnh hưởng đến việc ra quyết định, cần hình thành một định nghĩa “làm việc” có thể được làm rõ, mở rộng hoặc thu hẹp tùy theo tiến trình phân tích.</p>
+<p>Định nghĩa “làm việc” về hệ thống giúp người nghiên cứu (người phát triển) bắt đầu mô tả nó. Để lựa chọn đúng các phần tử, quan hệ, thuộc tính của chúng và các thành phần khác cần thiết được đưa vào định nghĩa “làm việc” đã chọn về hệ thống, những người xây dựng biểu diễn ban đầu bằng ngôn ngữ này về hệ thống phải sử dụng các khái niệm đó theo cùng một nghĩa.</p>
+<p>Việc lựa chọn một định nghĩa về hệ thống phản ánh khung khái niệm đã được chấp nhận và về bản chất là điểm khởi đầu của việc mô hình hóa. Do đó, ngay từ đầu, nên trình bày các định nghĩa dưới dạng biểu tượng, điều này giúp tất cả những người tham gia phát triển hoặc nghiên cứu hệ thống hiểu một cách rõ ràng, thống nhất hơn.</p>
+<p>Việc coi định nghĩa hệ thống là một phương tiện để bắt đầu nghiên cứu nó, và nỗ lực bảo toàn tính toàn vẹn khi biến đổi hoặc thiết kế một hệ thống, đã dẫn tác giả của phần này đến việc đề xuất một định nghĩa trong đó hệ thống không bị phân giải thành các hạt sơ cấp nhất (như đã làm trong các định nghĩa đã trích dẫn trên), mà thay vào đó được biểu diễn như một tập hợp các thành phần cấp cao cần thiết một cách cơ bản cho sự tồn tại và hoạt động của hệ thống đang được nghiên cứu hoặc được tạo ra:</p>
+<p>$$S = \langle Z,\; \text{Str},\; \text{Tech},\; \text{Cond} \rangle$$</p>
+<ul>
+  <li>$\{Z\}$ — tập hợp hoặc cấu trúc các mục tiêu</li>
+  <li>$\{\text{Str}\}$ — tập hợp các cấu trúc (sản xuất, tổ chức, v.v.) thực hiện các mục tiêu</li>
+  <li>$\{\text{Tech}\}$ — tập hợp các công nghệ (phương pháp, công cụ, thuật toán, v.v.) thực hiện hệ thống</li>
+  <li>$\{\text{Cond}\}$ — các điều kiện tồn tại của hệ thống, tức là các yếu tố ảnh hưởng đến việc tạo lập, hoạt động và phát triển của nó</li>
+</ul>
+<p>Định nghĩa này cho phép không phá hủy hệ thống đang được nghiên cứu, mà bảo toàn các cấu trúc chính của nó, phát triển chúng theo các mục tiêu đã đề ra; khi tạo lập một hệ thống mới, nó giúp có được một ý tưởng thiết kế toàn vẹn và thực hiện một tiếp cận hướng mục tiêu đối với việc tạo lập hệ thống.</p>
+<h2>Tính vật chất và phi vật chất của hệ thống</h2>
+<p>Trong giai đoạn hình thành của nghiên cứu hệ thống vào những năm 1960 và 1970, các tranh luận về việc liệu hệ thống là vật chất hay phi vật chất nảy ra khá thường xuyên. Không phải ai cũng thấy <a href="/vi/problem.html" class="text-link">vấn đề</a> này rõ ràng ngay cả ngày nay.</p>
+<p>Một mặt, muốn nhấn mạnh tính vật chất của hệ thống, một số nhà nghiên cứu đã thay thuật ngữ “phần tử” trong các định nghĩa của họ bằng các thuật ngữ “sự vật”, “đối tượng” hoặc “vật thể”; mặc dù các thuật ngữ sau này cũng có thể được hiểu là các đối tượng hoặc chủ thể trừu tượng của nghiên cứu, các tác giả của những định nghĩa này rõ ràng có ý muốn nhấn mạnh tính hữu hình và vật chất của hệ thống.</p>
+<p>Mặt khác, trong định nghĩa của Yu. I. Chernyak đã trích dẫn trên, và đặc biệt trong định nghĩa của S. Optner, hệ thống chỉ có thể được hiểu là một sự biểu diễn — tức là như một cái chỉ tồn tại trong ý thức của người nghiên cứu hoặc người thiết kế. Bất kỳ chuyên gia nào hiểu các quy luật của lý thuyết phản ánh cũng có thể phản đối: chắc chắn khái niệm (biểu diễn lý tưởng của hệ thống) sau đó sẽ tồn tại dưới hình thức vật chất hóa, và đối với các bài toán ra quyết định, điều quan trọng là phải nhấn mạnh rằng khái niệm hệ thống có thể đóng vai trò là phương tiện nghiên cứu vấn đề và giải quyết bài toán. Tuy vậy, các định nghĩa nói trên đã bị chỉ trích trong giai đoạn đó từ những người ủng hộ tính vật chất của hệ thống, đặc biệt là các nhà triết học.</p>
+<p>V. G. Afanasyev đã cho thấy sự vô nghĩa của tranh luận về tính vật chất hay phi vật chất của hệ thống: “…các hệ thống tồn tại một cách khách quan — và khái niệm hệ thống; khái niệm hệ thống được sử dụng như một công cụ để nhận thức hệ thống — và một lần nữa là hệ thống thực, mà sự hiểu biết về nó đã được làm giàu thêm bởi các biểu diễn hệ thống của chúng ta — đó chính là phép biện chứng giữa khách thể và chủ thể trong một hệ thống…”.</p>
+<p>Liên quan đến vấn đề đang được thảo luận, xin lưu ý rằng trong Đại bách khoa toàn thư Liên Xô, bên cạnh định nghĩa đã trích dẫn trên, còn có định nghĩa sau: hệ thống là “một sự thống nhất khách quan của các thực thể, hiện tượng và tri thức về tự nhiên và xã hội, được liên kết với nhau bằng các quy luật” — tức là, người ta nhấn mạnh rằng khái niệm phần tử (và do đó khái niệm hệ thống) có thể được áp dụng cả cho các đối tượng đang tồn tại, được thực hiện hóa về vật chất, cũng như cho tri thức về những đối tượng đó hoặc việc thực hiện chúng trong tương lai.</p>
+<p>Như vậy, trong khái niệm hệ thống (như trong bất kỳ phạm trù nhận thức nào khác), khách thể và chủ thể tạo thành một thể thống nhất biện chứng, và không nên nói về tính vật chất hay phi vật chất của hệ thống, mà nên nói về cách tiếp cận các đối tượng nghiên cứu như những hệ thống, về việc biểu diễn chúng khác nhau ở các giai đoạn nhận thức hoặc tạo lập khác nhau.</p>
+<h2>Các tầng xem xét hệ thống</h2>
+<p>Chẳng hạn, Yu. I. Chernyak cho thấy rằng cùng một đối tượng ở các giai đoạn khảo sát khác nhau có thể được biểu diễn theo các khía cạnh khác nhau, và tương ứng đề xuất mô tả cùng một hệ thống ở các mức độ tồn tại khác nhau: triết học (nhận thức luận), nghiên cứu khoa học, thiết kế, kỹ thuật, v.v., cho đến sự thực hiện hóa về vật chất.</p>
+<p>Nói cách khác, ở các giai đoạn xem xét khác nhau của một hệ thống, các khái niệm khác nhau có thể được đưa vào thuật ngữ “hệ thống”; có thể nói, như là, về sự tồn tại của hệ thống dưới các hình thức khác nhau. M. Mesarovic đề xuất phân biệt các tầng xem xét hệ thống.</p>
+<p>Các tầng tương tự có thể tồn tại không chỉ trong quá trình tạo lập mà còn trong quá trình nhận thức một đối tượng — tức là trong việc biểu diễn các đối tượng thực sự tồn tại như những hệ thống được hình dung một cách trừu tượng trong ý thức (hoặc trong các mô hình), điều này sau đó có thể giúp tạo lập các đối tượng mới và phát triển các khuyến nghị cho việc biến đổi (tái cấu trúc, cải tổ) các đối tượng hiện có.</p>
+<p>Một phương pháp luận phân tích hệ thống (hay một mô hình nghiên cứu hệ thống) không nhất thiết phải bao quát toàn bộ quá trình nhận thức hoặc thiết kế một hệ thống; nó có thể được phát triển cho một trong các tầng của nó (đây thường là trường hợp trong thực tiễn). Để tránh những bất đồng về thuật ngữ hoặc các bất đồng khác giữa các nhà nghiên cứu hoặc người phát triển hệ thống, trước hết cần phải xác định rõ tầng xem xét hệ thống cụ thể nào đang được thảo luận.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Phương pháp luận</h2>
+    <ul>
+      <li><a href="/vi/methodology_sa.html">Phương Pháp Luận Phân Tích Hệ Thống</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Bài viết liên quan</h2>
+    <ul>
+      <li><a href="/vi/system.html">Hệ Thống</a></li>
+      <li><a href="/vi/system_def.html">Các Định Nghĩa Về Hệ Thống</a></li>
+      <li><a href="/vi/system_ol.html">Các Quy Luật Của Hệ Thống</a></li>
+      <li><a href="/vi/systems_analysis.html">Phân Tích Hệ Thống</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Đường dẫn điều hướng">
+    <a href="/vi/">Trang chủ</a> <span aria-hidden="true">/</span>
+    <a href="/vi/system.html">Lý Thuyết Hệ Thống</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Khái niệm hệ thống</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Đổi giao diện"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/system_terminus.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/vi/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Đổi giao diện"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- KaTeX -->
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body, {
+    delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false}
+    ]
+});
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710f2a1a871e13',t:'MTc4ODczNTMwNQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

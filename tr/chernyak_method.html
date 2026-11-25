@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Çernyak Metodolojisi</title>
+<meta name="description" content="Yu.İ. Çernyak’ın sistem analizi yöntemi, problem analizinden sistem tanımına ve kapsamlı bir gelişim programının oluşturulmasına kadar 12 ardışık aşamadan oluşur. Her aşama ayrıntılı olarak açıklanmaktadır.">
+<meta name="keywords" content="sistem analizi,Çernyak yöntemi,amaç,sistem,problem,yönetim,karar">
+<link rel="canonical" href="https://systems-analysis.info/tr/chernyak_method.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/chernyak_method.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/chernyak_method.html">
+<link rel="alternate" hreflang="tr" href="https://systems-analysis.info/tr/chernyak_method.html">
+<meta property="og:title" content="Çernyak Metodolojisi">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/tr/chernyak_method.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Yu.İ. Çernyak’ın sistem analizi yöntemi, problem analizinden sistem tanımına ve kapsamlı bir gelişim programının oluşturulmasına kadar 12 ardışık aşamadan oluşur. Her aşama ayrıntılı olarak açıklanmaktadır.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="tr_TR">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/tr/chernyak_method.html#article",
+    "headline": "Çernyak Metodolojisi",
+    "description": "Yu.İ. Çernyak’ın sistem analizi yöntemi, problem analizinden sistem tanımına ve kapsamlı bir gelişim programının oluşturulmasına kadar 12 ardışık aşamadan oluşur. Her aşama ayrıntılı olarak açıklanmaktadır.",
+    "url": "https://systems-analysis.info/tr/chernyak_method.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "tr",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/tr/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/tr/chernyak_method.html"
+    },
+    "keywords": [
+        "sistem analizi",
+        "Çernyak yöntemi",
+        "amaç",
+        "sistem",
+        "problem",
+        "yönetim",
+        "karar"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Systems Analysis in Economic Management",
+        "author": {
+            "@type": "Person",
+            "name": "Chernyak Yu.I."
+        },
+        "datePublished": "1975",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Ekonomika"
+        },
+        "inLanguage": "tr"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Systems Analysis in Economic Management",
+        "author": {
+            "@type": "Person",
+            "name": "Chernyak Yu.I."
+        },
+        "datePublished": "1975",
+        "inLanguage": "tr"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Ana Sayfa",
+            "item": "https://systems-analysis.info/tr/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Sistem Analizi",
+            "item": "https://systems-analysis.info/tr/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Çernyak Metodolojisi"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Ana gezinme">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menü</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/tr/">Ana Sayfa</a>
+        <span aria-hidden="true">·</span>
+        <a href="/tr/sections.html">Bölümler</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/tr/books.html">Kitaplar</a>
+        <span aria-hidden="true">·</span>
+        <a href="/tr/catalog.html">Katalog</a>
+        <span aria-hidden="true">·</span>
+        <a href="/chernyak_method.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Temayı değiştir"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Yazı tipini değiştir"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Çernyak Metodolojisi</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Sistem analizi yöntemleriyle çözülen problemlerin devasa ve esasen sınırsız çeşitliliği göz önüne alındığında, tüm durumlara uygun tek bir araç setinin geliştirilmesini beklemek zor olurdu. Sezgisel ve gevşek biçimde formüle edilmiş bir problem ifadesinden, katı matematiksel yöntemler kullanılarak en iyi çözümlerin seçilmesine doğru ilerleyen araştırmanın farklı aşamalarında, doğal olarak son derece çeşitli bir bilimsel araç seti kullanılmaktadır. Bu nedenle, önce sistem analizinin aşamalarının temel sırasını belirlemek uygun görünmektedir.</p>
+<p>Çeşitli yazarlar tarafından önerilen yöntemlerin analizi, incelenen nesne veya <a href="/tr/goal.html" class="text-link">amaç</a> ne olursa olsun, sistem analizinin yürütülme sırasında temel bir birlik bulunduğu sonucuna götürmektedir. Bununla birlikte, bu durumda eklektik bir yaklaşımı yeterince kabul edilebilir bulmuyor ve sistem analizi aşamalarının yeni bir sınıflandırmasını öneriyoruz. Bu sınıflandırma, çeşitli sınıflandırmaların tüm temel aşamalarını dikkate almakta, mantıksal sıra ilkesine uymakta ve sistem analizinin temelini oluşturan sistem teorisinin temel önermeleriyle bağlantılı olmaktadır. Önerilen sınıflandırmanın uygunluğu ve kullanışlılığı, tüm başlıca yönetim düzeylerinde yürütülen bir dizi sistem araştırmasında doğrulanmıştır.</p>
+<p>Sistem analizinin aşama ve görevlerinin temel sırası</p>
+<ol>
+  <li>Problem analizi.</li>
+  <li>Sistemin tanımlanması.</li>
+  <li>Sistemin yapısının analizi.</li>
+  <li>Genel amacın ve sistem ölçütünün formüle edilmesi.</li>
+  <li>Amacın ayrıştırılması, kaynak ve süreç gereksinimlerinin belirlenmesi.</li>
+  <li>Kaynak ve süreçlerin belirlenmesi; aşağıdan yukarıya amaç sentezi.</li>
+  <li>Geleceğe ilişkin koşulların öngörülmesi ve analizi.</li>
+  <li>Amaç ve araçların değerlendirilmesi.</li>
+  <li>Seçeneklerin seçimi.</li>
+  <li>Mevcut sistemin teşhisi.</li>
+  <li>Kapsamlı bir gelişim programının oluşturulması.</li>
+  <li>Amaca erişim için bir örgütün tasarlanması.</li>
+</ol>
+<p>Aşamaların açıklaması</p>
+<p>Aşama 1. <strong>Problem analizi</strong></p>
+<ul>
+  <li>Problem gerçekten var mı?</li>
+  <li>Problemin kesin olarak formüle edilmesi.</li>
+  <li>Problemin mantıksal yapısının analizi.</li>
+  <li>Problemin geçmişteki ve gelecekteki gelişimi.</li>
+  <li>Problemin diğer problemlerle dışsal bağlantıları.</li>
+  <li>Problemin temel çözülebilirliği.</li>
+</ul>
+<p><a href="/tr/problem.html" class="text-link">Problemin</a> gerçekten var olup olmadığı sorusu son derece önemlidir, çünkü var olmayan problemlerin çözümüne devasa çaba harcanması istisna değil, oldukça tipik bir durumdur. Problemin doğru ve kesin biçimde formüle edilmesi, her sistem araştırmasının ilk ve gerekli aşamasıdır. Bilindiği gibi, problemin başarılı bir şekilde formüle edilmesi çözümün yarısına eşdeğer olabilir.</p>
+<p>Aşama 2. <strong>Sistemin tanımlanması</strong></p>
+<ul>
+  <li>Görevin belirlenmesi.</li>
+  <li>Gözlemcinin konumunun belirlenmesi.</li>
+  <li>Nesnenin tanımlanması.</li>
+  <li>Elemanların belirlenmesi (sistem ayrıştırmasının sınırlarının saptanması).</li>
+  <li>Alt sistemlerin belirlenmesi.</li>
+  <li>Çevrenin tanımlanması.</li>
+</ul>
+<p>Bir <a href="/tr/system.html" class="text-link">sistem</a> oluşturmak için, problemin açıkça formüle edilmiş bir görev kümesine ayrıştırılması gerekir. Büyük bir sistemde bu görevler bir hiyerarşi oluşturur; karmaşık bir sistemde ise bir spektrum oluştururlar — bu, tek bir nesneyle ilgili olarak farklı dillerde tamamen farklı görevlerin çözüleceği anlamına gelir. Gözlemcinin konumu, problemin çözüm ölçütünü temelden belirler. Nesnenin tanımlanması ilk bakışta kolay bir görev gibi görünse de, bazı durumlarda araştırmanın en büyük zorluğunu oluşturur.</p>
+<p>Aşama 3. <strong>Sistemin yapısının analizi</strong></p>
+<ul>
+  <li>Hiyerarşi düzeylerinin belirlenmesi (büyük sistemlerde).</li>
+  <li>Yönlerin ve dillerin belirlenmesi (karmaşık sistemlerde).</li>
+  <li>Süreçlerin ve işlevlerin belirlenmesi (dinamik sistemlerde).</li>
+  <li>Yönetim süreçlerinin ve bilgi kanallarının belirlenmesi ve tanımlanması.</li>
+  <li>Alt sistemlerin tanımlanması.</li>
+  <li>Rutin süreçlerin (cari işlemler) ve gelişim süreçlerinin (amaç odaklı) tanımlanması.</li>
+</ul>
+<p>Alt sistemlerin ve bunlarla ilişkili süreçlerin gelişigüzel biçimde belirlenmesi, bir sistem araştırmasını kaçınılmaz olarak başarısızlığa mahkûm eder. Teknik sistemlerde — en azından maddi kısımlarında — alt sistemlerin yapısı açıkça görülebilirken, ekonomik yönetim sistemlerinde tüm yapısal ilişkiler yalnızca belirsiz değil, aynı zamanda idari bağımlılık ilişkilerinin ardında kuvvetle gizlenmiştir. Ekonomik yönetimin cari problemleri çözülürken, hem nesnel olarak — çabanın nicel dağılımı bakımından — hem de öznel olarak — örgüt personelinin zihninde — rutin işlemler, gelişim amaçlarını ve süreçlerini gizler. Bu amaç ve süreçlerin rutin işlemlerden ayırt edilip belirlenmesi, yalnızca titiz bir mantıksal analiz değil, aynı zamanda yönetim personeliyle etkili bir iletişim de gerektirir.</p>
+<p>Aşama 4. <strong>Genel amacın ve sistem ölçütünün formüle edilmesi</strong></p>
+<ul>
+  <li>Üst sistem tarafından dayatılan amaçların belirlenmesi.</li>
+  <li>Çevresel amaçların ve kısıtların belirlenmesi.</li>
+  <li>Genel amacın formüle edilmesi.</li>
+  <li>Ölçütün belirlenmesi.</li>
+  <li>Amaç ve ölçütlerin alt sistemler arasında ayrıştırılması.</li>
+  <li>Genel ölçütün alt sistem ölçütlerinden sentezlenmesi.</li>
+</ul>
+<p>Bir örgütün genel amacının formüle edilmesi ve özellikle sistemin etkililik ölçütünün oluşturulması, hiçbir şekilde kamuoyu anketiyle gerçekleştirilebilecek bir şey değildir; bu, sistem teorisi kavramları çerçevesinde karmaşık bir mantıksal işlemdir ve buna karşın incelenen nesnenin özgül ekonomisi ve teknolojisi hakkında ince bir bilgi gerektirir.</p>
+<p>Aşama 5. <strong>Amacın ayrıştırılması, kaynak ve süreç gereksinimlerinin belirlenmesi</strong></p>
+<ul>
+  <li>Üst düzey amaçların formüle edilmesi.</li>
+  <li>Cari süreçlere ilişkin amaçların formüle edilmesi.</li>
+  <li>Verimlilik amaçlarının formüle edilmesi.</li>
+  <li>Gelişim amaçlarının formüle edilmesi.</li>
+  <li>Dışsal amaç ve kısıtların formüle edilmesi.</li>
+  <li>Kaynak ve süreç gereksinimlerinin belirlenmesi.</li>
+</ul>
+<p>Büyük ve karmaşık ekonomik varlıklarda (ve sistem analizi tam da bu tür varlıklarla ilgilenir), sistemin genel amacı, ona ulaşmanın özgül araçlarından o denli uzaktır ki, bir çözümün seçilmesi, amacı gerçekleştirme araçlarıyla amaç ayrıştırması yoluyla ilişkilendirmek için kapsamlı ve emek yoğun bir çalışma gerektirir. Bu önemli ve emek yoğun çalışma, kural olarak sistem analizinin merkezinde yer alır. Bu çalışma, sistem analizinin başlıca — belki de tek — araçsal başarısı olan amaç ağacı yöntemini doğurmuştur.</p>
+<p>Aşama 6. <strong>Kaynak ve süreçlerin belirlenmesi; aşağıdan yukarıya amaç sentezi</strong></p>
+<ul>
+  <li>Mevcut teknoloji ve kapasitenin değerlendirilmesi.</li>
+  <li>Kaynakların mevcut durumunun değerlendirilmesi.</li>
+  <li>Uygulanmakta ve planlanmakta olan projelerin değerlendirilmesi.</li>
+  <li>Diğer sistemlerle etkileşim olanaklarının değerlendirilmesi.</li>
+  <li>Toplumsal etkenlerin değerlendirilmesi.</li>
+  <li>Aşağıdan yukarıya amaç sentezi.</li>
+</ul>
+<p>Özellikle üretim dışı ve bilhassa ekonomi dışı sistemlerle (sağlık, eğitim ve daha birçok alan) çalışılırken, önemli sayıda durumda amacı ve gelişim etkililiği ölçütünü mantıksal akıl yürütmeyle açıkça ifade etmek mümkün değildir. “Doğal insan gereksinimleri” ile başlayan analiz yolu, bu gereksinimlerin sürekli gelişimi ve değişimi nedeniyle araştırmacı için kabul edilemezdir. Bu gibi durumlarda, bir ölçüde geleneksel yol izlenmelidir: cari durumun ve ulaşılan düzeyin analizinden, ardışık öngörü yoluyla ilerlemek.</p>
+<p>Aşama 7. <strong>Geleceğe ilişkin koşulların öngörülmesi ve analizi</strong></p>
+<ul>
+  <li>Sistem gelişimindeki kararlı eğilimlerin analizi.</li>
+  <li>Çevrenin gelişim ve değişiminin öngörülmesi.</li>
+  <li>Sistemin gelişimini kuvvetle etkileyecek yeni etkenlerin ortaya çıkışının öngörülmesi.</li>
+  <li>Gelecekteki kaynakların analizi.</li>
+  <li>Gelecekteki gelişim etkenlerinin etkileşiminin kapsamlı analizi.</li>
+  <li>Amaç ve ölçütlerde olası kaymaların analizi.</li>
+</ul>
+<p>Sistem analizi, kural olarak, kimi zaman oldukça uzak olan gelişim beklentileriyle ilgilenir. Bu nedenle, gelecek hakkındaki her türlü bilgi — gelecekteki durumlar, kaynaklar, ekonomik sistemleri ve onların içinde gerçekleşen süreçleri köklü biçimde dönüştürecek bilimsel ve teknik keşif ve icatlar, ayrıca dengedeki değişimleri ve bazı durumlarda amaç ve ölçütlerin dönüşümünü önemli ölçüde etkileyecek gelecekteki toplumsal değer sistemleri hakkındaki bilgi — en büyük ilgiyi çeker. Bu nedenle, öngörü — bilimsel yöntemler kullanarak gelecek hakkında bilgi edinme — sistem analizinin en önemli ve kuşkusuz en karmaşık bölümüdür.</p>
+<p>Aşama 8. <strong>Amaç ve araçların değerlendirilmesi</strong></p>
+<ul>
+  <li>Ölçüte dayalı değerlendirmelerin hesaplanması.</li>
+  <li>Amaçlar arası bağımlılıkların değerlendirilmesi.</li>
+  <li>Amaçların bağıl öneminin değerlendirilmesi.</li>
+  <li>Kaynak kıtlığının ve maliyetinin değerlendirilmesi.</li>
+  <li>Dışsal etkenlerin etkisinin değerlendirilmesi.</li>
+  <li>Kapsamlı hesaplanmış değerlendirmelerin hesaplanması.</li>
+</ul>
+<p>Sistem analizinde göz ardı edilemeyecek toplumsal, siyasal, ahlaki, etik ve diğer birçok etken — çünkü bunlar bazen amaçların formüle edilmesi ve bunların gerçekleştirilmesi için araçların seçilmesi üzerinde, ayrıca kaynakların değerlendirilmesi üzerinde belirleyici bir etki gösterir — ilke olarak nicel biçimde ölçülemez. Bunları hesaba katmanın tek yolu, ele alınan problem hakkında ve bununla ilişkili geniş bir problem yelpazesi hakkında uzman ve uzmanların öznel değerlendirmelerini elde etmektir. Sistem analizi kural olarak yapılandırılmamış veya zayıf yapılandırılmış problemlerle — yani nicel değerlendirmelerden yoksun problemlerle — ilgilendiğinden, uzman değerlendirmelerinin elde edilmesi ve işlenmesi, çoğu problem için sistem analizinin gerekli bir aşaması olarak görünmektedir.</p>
+<p>Aşama 9. <strong>Seçeneklerin seçimi</strong></p>
+<ul>
+  <li>Amaçların uyumluluk açısından analizi.</li>
+  <li>Amaçların bütünlük açısından doğrulanması.</li>
+  <li>Gereksiz amaçların elenmesi.</li>
+  <li>Tekil amaçlara erişim için seçeneklerin planlanması.</li>
+  <li>Seçeneklerin değerlendirilmesi ve karşılaştırılması.</li>
+  <li>Birbiriyle ilişkili bir seçenekler kümesinin birleştirilmesi.</li>
+</ul>
+<p>Gereksinimler ile bunları karşılamanın araçları arasındaki uyumsuzluk, ekonomik gelişimin bir yasasını ve en önemli itici gücünü oluşturur. Amaç kavramı, ona ulaşmanın araçları kavramından ayrılamaz olduğundan, sistem analizinde karar vermenin merkezi noktası, amaç ağacının budanması — önemsiz görülen veya erişim araçlarından yoksun amaçların elenmesi — ve en önemli amaçlar kümesinin birbiriyle ilişkili biçimde erişimi için özgül seçeneklerin seçilmesidir.</p>
+<p>“Mühendislik” türü ve nispeten küçük ölçekli sistem araştırmalarında, “seçeneklerin seçimi” sistem analizinin en önemli, hatta belki de tek görevi olarak görülür. Ekonomik yönetim problemlerinde, amaç ağacının budanması ve birbiriyle ilişkili bir seçenekler kümesinin seçilmesi önemli bir görevi oluşturur; özellikle bilimsel ve teknolojik ilerlemenin, değişen çevre koşullarıyla birlikte, ekonomik amaçlar kümesine erişim için devasa sayıda alternatif tedbir yarattığı göz önüne alındığında. Bu tedbirlerin kaynak kısıtlarına uyması gerekir, çünkü ulusal ekonominin planlı gelişim yasası, ulusal ekonominin tekil alt sistemlerini desteklemek için kaynakların dağılımına sıkı sınırlar dayatır.</p>
+<p>Aşama 10. <strong>Mevcut sistemin teşhisi</strong></p>
+<ul>
+  <li>Teknolojik ve ekonomik sürecin modellenmesi.</li>
+  <li>Potansiyel ve gerçek kapasitenin hesaplanması.</li>
+  <li>Kapasite kayıplarının analizi.</li>
+  <li>Üretim ve yönetim örgütlenmesindeki eksikliklerin belirlenmesi.</li>
+  <li>Örgütlenmeyi iyileştirmeye yönelik tedbirlerin belirlenmesi ve analizi.</li>
+</ul>
+<p>Sistem analizi yöntemleriyle çözülen ulusal ekonomik yönetim problemleri bir boşlukta değil, gerçekte var olan yönetim organları içinde, genellikle bunların birbiriyle ilişkili karmaşıklarında ortaya çıkar. Sistem analizinin görevi, büyük ölçüde, yeni bir yönetim organı yaratmak değil, mevcut olanları iyileştirmek ve onları problemin çözümüne yöneltmektir. Bu gibi durumlarda, yönetim organlarının yeteneklerini, eksikliklerini ve bilgi toplama, işleme ve karar verme süreçlerindeki tıkanıklık noktalarını belirlemek için teşhis analizi gereklidir; bu, bu eksiklikleri gidermek ve sistemi daha iyi yönlendirmek amacına hizmet eder.</p>
+<p>Yeni bir sistem, yönetim organının işini kolaylaştırırsa, güncel problemlerin çözümüne yardımcı olursa ve yakın amaçlara erişimi ilerletirse etkin bir biçimde uygulanacaktır. Bu nedenle, güncel yönetim problemlerinin ve yakın amaçların belirlenmesi de yönetim organlarının teşhis anketi ve analizinin bir konusudur. Bu anket, verilen yönetim organının personeli, muadilleri, üst kuruluşları ve alt kuruluşlarının kitlesel olarak anketlenmesini içerir; bu yoluyla gerekli bilgi belirlenir ve ardından analiz edilir. Bu, yeni tasarlanan sistemin uygulanması için sağlam temelli bir örgütsel planın oluşturulmasına temel oluşturur.</p>
+<p>Aşama 11. <strong>Kapsamlı bir gelişim programının oluşturulması</strong></p>
+<ul>
+  <li>Tedbirlerin, projelerin ve programların formüle edilmesi.</li>
+  <li>Amaçların ve bunlara erişim için tedbirlerin önceliğinin belirlenmesi.</li>
+  <li>Faaliyet alanlarının dağılımı.</li>
+  <li>Yetki alanlarının dağılımı.</li>
+  <li>Kaynak ve zaman kısıtları içinde kapsamlı bir tedbir planının geliştirilmesi.</li>
+  <li>Sorumlu kuruluşlara, yöneticilere ve uygulayıcı taraflara görev tayini.</li>
+</ul>
+<p>Daha önce belirtildiği gibi, sistem analizinin sonuçları, sistemik kavramlar çerçevesinde elde edilir ve tedbirlerin pratik planlamasına geçebilmek için bu sonuçların ekonomik kategoriler diline çevrilmesi gerekir. Bilimsel araştırma, geliştirme, sermaye yatırımı ve inşaat planlarını, ayrıca sanayilerin ve bölgelerin gelişimini kapsayan, ulusal ekonominin büyük konularına ilişkin sistem analizi problemlerinin çözülmesi sonucunda kapsamlı gelişim programları oluşturulur. Bu programlar zaman içinde dağıtılır, çeşitli uygulayıcı taraflara görevlendirilir; bir yönetim ve koordinasyon yapısı kurulur ve bir hesap verebilirlik sistemi oluşturulur.</p>
+<p>Aşama 12. <strong>Amaca erişim için bir örgütün tasarlanması</strong></p>
+<ul>
+  <li>Örgütsel amaçların tanımlanması.</li>
+  <li>Örgütsel işlevlerin formüle edilmesi.</li>
+  <li>Örgütsel yapının tasarlanması.</li>
+  <li>Bilgi mekanizmalarının tasarlanması.</li>
+  <li>Çalışma biçimlerinin tasarlanması.</li>
+  <li>Maddi ve manevi teşvik mekanizmalarının tasarlanması.</li>
+</ul>
+<p>Bazı durumlarda, bu tür kapsamlı programların uygulanması sürekli veya geçici bir yönetim organının oluşturulmasını gerektirir; diğer durumlarda ise sistem analizinin amacı, verilen bir yönetim organının yeniden tasarlanmasıdır. Sistem analizi, amaç odaklı — yani ulusal ekonomi içinde belirli bir sistemin yaratılması ve kullanılmasına odaklanan — etkin yönetim organlarının tasarlanması için bir dizi özgül yöntem ve teknikye sahiptir.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Sistem Analizi Metodolojileri</h2>
+    <ul>
+      <li><a href="/tr/methodology_sa.html">Sistem Analizi Metodolojisi</a></li>
+      <li><a href="/tr/quade_method.html">Quade’in Sistem Analizi Metodolojisi</a></li>
+      <li><a href="/tr/optner_method.html">Optner’in Sistem Analizi Metodolojisi</a></li>
+      <li><a href="/tr/young_method.html">Young’ın Sistem Analizi Metodolojisi</a></li>
+      <li><a href="/tr/golubkov_method.html">Golubkov’un Sistem Analizi Metodolojisi</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Kaynakça</h2>
+    <ul>
+      <li><a href="/assets/systems_analysis_chernyak.pdf">Kitabı indir: Ekonomik Yönetimde Sistem Analizi. Çernyak</a></li>
+      <li><a href="/tr/systems_analysis_book.html">Sistem analizi üzerine literatürü indir</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>İlgili makaleler</h2>
+    <ul>
+      <li><a href="/tr/systems_analysis.html">Sistem Analizi</a></li>
+      <li><a href="/tr/decision_theory.html">Karar Teorisi</a></li>
+      <li><a href="/tr/decision_making.html">Karar Verme</a></li>
+      <li><a href="/tr/choice.html">Karar ve Seçim</a></li>
+      <li><a href="/tr/management.html">Yönetim</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Gezinme yolu">
+    <a href="/tr/">Ana Sayfa</a> <span aria-hidden="true">/</span>
+    <a href="/tr/systems_analysis.html">Sistem Analizi</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Çernyak Metodolojisi</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Temayı değiştir"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/chernyak_method.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/tr/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Temayı değiştir"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710e9f6dc21e13',t:'MTc4ODczNTI4Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

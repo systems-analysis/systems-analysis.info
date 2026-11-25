@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quade’in Sistem Analizi Metodolojisi</title>
+<meta name="description" content="Sistem analizi. Quade’in metodolojisi. Problemin formüle edilmesi, sistem analizinin en önemli unsurudur ve problemin özünü ifade etmeyi, çalışmanın kapsamını belirlemeyi, ilk verileri oluşturmayı ve amaçları tespit etmeyi içerir.">
+<meta name="keywords" content="Sistem analizi,Quade’in metodolojisi">
+<link rel="canonical" href="https://systems-analysis.info/tr/quade_method.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/quade_method.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/quade_method.html">
+<link rel="alternate" hreflang="tr" href="https://systems-analysis.info/tr/quade_method.html">
+<meta property="og:title" content="Quade’in Sistem Analizi Metodolojisi">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/tr/quade_method.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Sistem analizi. Quade’in metodolojisi. Problemin formüle edilmesi, sistem analizinin en önemli unsurudur ve problemin özünü ifade etmeyi, çalışmanın kapsamını belirlemeyi, ilk verileri oluşturmayı ve amaçları tespit etmeyi içerir.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="tr_TR">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/tr/quade_method.html#article",
+    "headline": "Quade’in Sistem Analizi Metodolojisi",
+    "description": "Sistem analizi. Quade’in metodolojisi. Problemin formüle edilmesi, sistem analizinin en önemli unsurudur ve problemin özünü ifade etmeyi, çalışmanın kapsamını belirlemeyi, ilk verileri oluşturmayı ve amaçları tespit etmeyi içerir.",
+    "url": "https://systems-analysis.info/tr/quade_method.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "tr",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/tr/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/tr/quade_method.html"
+    },
+    "keywords": [
+        "Sistem analizi",
+        "Quade’in metodolojisi"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Analysis for Military Decisions",
+        "author": {
+            "@type": "Person",
+            "name": "Quade E.S."
+        },
+        "datePublished": "1964",
+        "publisher": {
+            "@type": "Organization",
+            "name": "RAND Corporation"
+        },
+        "inLanguage": "tr"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Analysis for Military Decisions",
+        "author": {
+            "@type": "Person",
+            "name": "Quade E.S."
+        },
+        "datePublished": "1964",
+        "inLanguage": "tr"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Ana Sayfa",
+            "item": "https://systems-analysis.info/tr/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Sistem Analizi",
+            "item": "https://systems-analysis.info/tr/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Quade’in Metodolojisi"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Ana gezinme">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menü</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/tr/">Ana Sayfa</a>
+        <span aria-hidden="true">·</span>
+        <a href="/tr/sections.html">Bölümler</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/tr/books.html">Kitaplar</a>
+        <span aria-hidden="true">·</span>
+        <a href="/tr/catalog.html">Katalog</a>
+        <span aria-hidden="true">·</span>
+        <a href="/quade_method.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Temayı değiştir"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Yazı tipini değiştir"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Quade’in Sistem Analizi Metodolojisi</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>Sistem analizi genellikle şu sırayla ilerler:</strong></p>
+<ol>
+  <li>Problemin formüle edilmesi;</li>
+  <li>Problemi çözmeye yönelik alternatif yaklaşımların seçimi;</li>
+  <li>Problemin çözümü için harcanan kaynakların incelenmesi;</li>
+  <li>Bir modelin kurulması;</li>
+  <li>Değerlendirme ölçütlerinin seçimi;</li>
+  <li>Seçeneklerin karşılaştırılması ve karar verme.</li>
+</ol>
+<p>Problemin formüle edilmesi, sistem analizinin en önemli unsurudur ve <a href="/tr/problem.html" class="text-link">problemin</a> özünü ifade etmeyi, çalışmanın kapsamını belirlemeyi, ilk verileri oluşturmayı ve amaçları tespit etmeyi içerir.</p>
+<p>Problemi çözmeye yönelik alternatif yaklaşımların seçimi, ön değerlendirmelere dayanarak belirtilen problemin çözümünde kullanılabilecek seçeneklerin (araçların) sıralanmasından oluşur. Çalışma sırasında bazı seçenekler elenir ve yenileri eklenir.</p>
+<p>Problemin çözümü için harcanan kaynakların incelenmesi, ekonomik analizde önemli bir aşamadır ve bu aşamada malzeme ve para gereksinimleri belirlenir. Genellikle silah <a href="/tr/system.html" class="text-link">sistemleri</a>, belirli bir etkililik düzeyi için minimum maliyete göre seçilir.</p>
+<p>Bir <a href="/tr/model.html" class="text-link">modelin</a> kurulması, gerçek sürecin bir benzerinin, en önemli etkenlerin matematiksel bağıntılarla (analitik modeller), bilgisayar aracılığıyla (bilgisayar modelleri) veya özel bir «oyun» yoluyla (oyun modelleri) temsil edilmesiyle geliştirildiği çalışma aşamasıdır.</p>
+<p>Sistem analizinde modelleme, özellikle matematiksel modelleme yöntemlerinin ve bilgisayarların gelişmesiyle bağlantılı olarak, giderek daha büyük bir yer tutacaktır.</p>
+<p>Değerlendirme ölçütlerinin seçimi, sistem analizinin son derece kritik bir aşamasıdır ve sayısal değeri çözümün başarısını değerlendirmek için kullanılabilecek bir büyüklüğün (veya büyüklükler sisteminin) belirtilmesinden oluşur. Sistem analizi yöntemlerinin tatmin edici bir şekilde işlemesi için, her yönetim düzeyinde benimsenen ölçütlerin tek bir mantıksal sisteme bağlanmasının önemli olduğu kabul edilir. En üst düzeyde (savunma bakanlığı yönetimi) en önemli ölçüt, sistemin maliyet-etkililik oranıdır.</p>
+<p>Seçeneklerin karşılaştırılması ve karar verme, analizin son aşamasıdır; bu aşamada belirtilen problemi çözme araçları seçilen ölçüte göre değerlendirilir. Farklı seçeneklerin sayısal değerlendirmesine ek olarak, bir seçeneğin diğerlerine göre tercih edilebilirliğini gösteren mantıksal yargılar da sunulabilir.</p>
+</div>
+      </article>
+    </div>
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Sistem analizi metodolojileri</h2>
+    <ul>
+      <li><a href="/tr/methodology_sa.html">Sistem Analizi Metodolojisi</a></li>
+      <li><a href="/tr/optner_method.html">Optner’in Sistem Analizi Metodolojisi</a></li>
+      <li><a href="/tr/chernyak_method.html">Çernyak’ın Sistem Analizi Metodolojisi</a></li>
+      <li><a href="/tr/young_method.html">Young’ın Sistem Analizi Metodolojisi</a></li>
+      <li><a href="/tr/golubkov_method.html">Golubkov’un Sistem Analizi Metodolojisi</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Literatür</h2>
+    <ul>
+      <li><a href="/assets/systems_analysis_quaid.pdf">Kitabı indirin: Askeri Kararlar İçin Analiz. Quade</a></li>
+      <li><a href="/tr/systems_analysis_book.html">Sistem analizi literatürünü indirin</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>İlgili makaleler</h2>
+    <ul>
+      <li><a href="/tr/systems_analysis.html">Sistem Analizi</a></li>
+      <li><a href="/tr/decision_theory.html">Karar Teorisi</a></li>
+      <li><a href="/tr/decision_making.html">Karar Verme</a></li>
+      <li><a href="/tr/choice.html">Karar ve Seçim</a></li>
+      <li><a href="/tr/management.html">Yönetim</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Gezinme yolu">
+    <a href="/tr/">Ana Sayfa</a> <span aria-hidden="true">/</span>
+    <a href="/tr/systems_analysis.html">Sistem Analizi</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Quade’in Metodolojisi</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Temayı değiştir"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/quade_method.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/tr/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Temayı değiştir"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710ea408241e13',t:'MTc4ODczNTI4Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

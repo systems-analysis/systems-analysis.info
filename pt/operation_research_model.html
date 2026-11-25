@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Modelos de Pesquisa Operacional</title>
+<meta name="description" content="A construção de um modelo de operação é a etapa fundamental da pesquisa operacional. A operação é simplificada e esquematizada, identificando-se os fatores essenciais. Descrevem-se o modelo padrão e a classificação dos problemas.">
+<meta name="keywords" content="Modelagem,modelo,pesquisa operacional,função objetivo,programação,problemas,eficácia,ótimo,matemática,sistemas,análise,solução">
+<link rel="canonical" href="https://systems-analysis.info/pt/operation_research_model.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_model.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_model.html">
+<link rel="alternate" hreflang="pt" href="https://systems-analysis.info/pt/operation_research_model.html">
+<meta property="og:title" content="Modelos de Pesquisa Operacional">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/pt/operation_research_model.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="A construção de um modelo de operação é a etapa fundamental da pesquisa operacional. A operação é simplificada e esquematizada, identificando-se os fatores essenciais. Descrevem-se o modelo padrão e a classificação dos problemas.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="pt_BR">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/pt/operation_research_model.html#article",
+    "headline": "Modelos de Pesquisa Operacional",
+    "description": "A construção de um modelo de operação é a etapa fundamental da pesquisa operacional. A operação é simplificada e esquematizada, identificando-se os fatores essenciais. Descrevem-se o modelo padrão e a classificação dos problemas.",
+    "url": "https://systems-analysis.info/pt/operation_research_model.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "pt",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/pt/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/pt/operation_research_model.html"
+    },
+    "keywords": [
+        "Modelagem",
+        "modelo",
+        "pesquisa operacional",
+        "função objetivo",
+        "programação",
+        "problemas",
+        "eficácia",
+        "ótimo",
+        "matemática",
+        "sistemas",
+        "análise",
+        "solução"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "Modelos de Pesquisa Operacional",
+        "description": "A sufficiently precise mathematical description of an operation expressed through functions, equations, systems of equations, and inequalities.",
+        "sameAs": [
+            "https://systems-analysis.info/wiki/Модели_исследования_операций",
+            "https://systems-analysis.info/eng/Operations_research_models"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://systems-analysis.info/pt/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Pesquisa Operacional",
+            "item": "https://systems-analysis.info/pt/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Modelos de Pesquisa Operacional"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Navegação principal">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/pt/">Início</a>
+        <span aria-hidden="true">·</span>
+        <a href="/pt/sections.html">Seções</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/pt/books.html">Livros</a>
+        <span aria-hidden="true">·</span>
+        <a href="/pt/catalog.html">Catálogo</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_model.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Alternar tema"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Alternar fonte"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Modelos de Pesquisa Operacional</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Para aplicar métodos quantitativos de pesquisa, é necessário construir um modelo matemático da operação. Ao construir um modelo, a operação é geralmente simplificada e esquematizada, e o esquema resultante é descrito com o uso de ferramentas matemáticas. Um modelo de operação é uma descrição matemática suficientemente precisa da operação, expressa por meio de funções, equações, sistemas de equações e inequações. A eficácia de uma operação é o grau em que ela atinge seu objetivo.</p>
+
+<h2>Formulação Geral do Problema de Pesquisa Operacional</h2>
+
+<p>Na pesquisa operacional, uma situação de gestão abrange objetivos e decisões. As decisões são tomadas para alcançar um objetivo. A situação de gestão é descrita por um modelo. O modelo contém uma medida de eficácia, pela qual se determina o quão próxima uma decisão está do objetivo. A medida de eficácia depende dos fatores que influenciam a operação. Todos os fatores incluídos na descrição de uma operação podem ser divididos em dois grupos: fatores constantes, que não podem ser influenciados, e fatores controláveis.</p>
+
+<p>Os elementos conceituais do modelo são representados como uma "caixa-preta", em que o foco principal está na definição das entradas e saídas. As entradas são o que o modelo processa; as saídas são o que o modelo produz. As variáveis controláveis e incontroláveis são fornecidas como entradas. A saída é o critério de eficácia. O modelo contém uma medida explícita de eficácia, pela qual se determina o quão próxima uma decisão está do objetivo. Ao construir um modelo, é importante especificar como os parâmetros de entrada afetarão a medida estabelecida.</p>
+
+<p>O critério de eficácia, expresso por uma determinada função denominada função objetivo, depende dos fatores de ambos os grupos. A expressão matemática do critério de eficácia é chamada de função objetivo. A função objetivo é uma medida de eficácia formulada (formalizada) matematicamente, que precisa ser maximizada ou minimizada.</p>
+
+<p>As variáveis controláveis são os parâmetros administrados pelo tomador de decisão.</p>
+
+<p>As variáveis incontroláveis são fatores externos que o gestor não pode controlar, mas que são essenciais para o alcance dos objetivos.</p>
+
+<p>O critério de eficácia, ou função objetivo, é uma função das variáveis de decisão que expressa o grau de aproximação ao objetivo.</p>
+
+<p>Definição de modelo matemático: entende-se por modelo matemático qualquer operador que, dados os valores correspondentes dos parâmetros de entrada, estabelece os valores de saída dos parâmetros do objeto modelado dentro do conjunto de valores admissíveis dos parâmetros de entrada e saída do objeto modelado.</p>
+
+<h2>Modelos de Pesquisa Operacional e Tomada de Decisão</h2>
+
+<p>A pesquisa operacional está orientada para a justificativa quantitativa da tomada de decisão racional. Tais modelos se cruzam estreitamente com uma grande classe de problemas da teoria da decisão e problemas de otimização.</p>
+
+<p>Ao desenvolver um modelo de pesquisa operacional, é necessário responder às seguintes perguntas:</p>
+<ul>
+<li>o que, no caso específico, deve ser considerado como soluções alternativas?</li>
+<li>por qual critério as soluções alternativas são selecionadas?</li>
+<li>quais restrições as soluções viáveis devem satisfazer?</li>
+</ul>
+
+<p>O modelo matemático padrão da pesquisa operacional é apresentado na seguinte formulação: maximização ou minimização da função objetivo, sujeita ao cumprimento de restrições.</p>
+
+<p>Ao escolher uma solução, prefere-se aquela que maximiza ou minimiza a função objetivo. Exemplos de maximização da função objetivo incluem lucro e produtividade. A minimização da função objetivo pode referir-se a custos, despesas, tempo, e assim por diante. A escolha do critério de eficácia é o momento central e mais crítico do estudo. É muito melhor encontrar uma solução não ótima para um critério corretamente escolhido do que uma solução ótima para um critério incorretamente escolhido.</p>
+
+<p>Uma solução viável é aquela que satisfaz todas as restrições do modelo. Pode haver um número infinito de soluções viáveis.</p>
+
+<p>Uma solução ótima é aquela que, além de ser viável, faz com que a função objetivo alcance seu valor máximo ou mínimo.</p>
+
+<p>As soluções são chamadas de ótimas se, por um atributo ou outro, forem preferíveis às demais. Toda escolha da melhor alternativa é específica, pois se baseia na conformidade com critérios estabelecidos. Ao falar de uma alternativa ótima, especificam-se esses critérios ("ótima em relação a…"). O que é ótimo sob um critério não é necessariamente assim sob outro.</p>
+
+<p>Uma restrição é uma expressão matemática na forma de uma inequação ou igualdade que as variáveis do modelo devem satisfazer.</p>
+
+<p>As restrições reduzem o conjunto de soluções viáveis. Em alguns casos, pode não haver nenhuma solução ótima dado o conjunto de restrições estabelecido. Isso significa que a qualidade da decisão final, tomada com base na solução do problema, depende de quão adequadamente o modelo representa a situação real que ele descreve formalmente por meio de restrições. As restrições incluem cotas, capacidade de carga de veículos, volume da tarefa planejada, características de peso do equipamento, limitações de recursos, e assim por diante.</p>
+
+<p>Quando a configuração das restrições se altera, uma solução diferente pode se tornar a melhor. No mundo real, as restrições podem ter natureza física, econômica ou política, e nem sempre são passíveis de formalização. Uma solução específica será a melhor apenas para o modelo dado, sujeita ao sistema de restrições estabelecido. Quanto mais precisamente o modelo reflete a situação, mais próxima a solução do problema estará da solução ótima.</p>
+
+<h2>Classificação dos Modelos de Pesquisa Operacional</h2>
+
+<p>Todos os modelos de pesquisa operacional podem ser classificados de acordo com a natureza e as propriedades da operação, o caráter dos problemas a serem resolvidos e os métodos matemáticos empregados:</p>
+<ul>
+<li>Se o critério de eficácia for uma função linear e as funções no sistema de restrições também forem lineares, então o problema é um problema de programação linear.</li>
+<li>Se, com base em seu significado substantivo, suas soluções devem ser números inteiros, então trata-se de um problema de programação linear inteira.</li>
+<li>Se o critério de eficácia e/ou o sistema de restrições forem especificados por funções não lineares, então temos um problema de programação não linear. Em particular, se as funções mencionadas possuírem propriedades de convexidade, o problema resultante é um problema de programação convexa.</li>
+<li>Se um problema de programação matemática incluir uma variável de tempo e o critério de eficácia for expresso não explicitamente como função das variáveis, mas indiretamente — por meio de equações que descrevem a progressão das operações ao longo do tempo —, então o problema é um problema de programação dinâmica.</li>
+<li>Se for impossível encontrar algoritmicamente o ótimo exato devido a um número excessivamente grande de variantes de solução, então são empregados métodos de programação heurística, que permitem reduzir significativamente o número de variantes examinadas e encontrar, se não a solução ótima, uma solução suficientemente boa e satisfatória do ponto de vista prático.</li>
+</ul>
+
+<p>Por sua formulação substantiva, uma multiplicidade de outros problemas típicos de pesquisa operacional pode ser dividida em diversas classes:</p>
+<ul>
+<li>Os problemas de programação de projetos (PERT/CPM) examinam as relações entre as datas de conclusão de um grande e complexo conjunto de operações (tarefas) e os horários de início de todas as operações do conjunto. Esses problemas consistem em encontrar as durações mínimas do conjunto de operações e a relação ótima entre custos e prazos de conclusão.</li>
+<li>Os problemas de filas são dedicados ao estudo e à análise de sistemas de atendimento com filas de solicitações ou demandas, e consistem em determinar as medidas de desempenho dos sistemas e suas características ótimas — por exemplo, determinar o número de canais de atendimento, o tempo de atendimento, e assim por diante.</li>
+<li>Os problemas de gestão de estoques consistem em encontrar os valores ótimos do nível de estoque (ponto de reposição) e do tamanho do pedido. A característica distintiva desses problemas é que, à medida que o nível de estoque aumenta, por um lado, os custos de armazenagem aumentam, mas, por outro lado, as perdas decorrentes de possíveis faltas do produto armazenado diminuem.</li>
+<li>Os problemas de alocação de recursos surgem quando há um determinado conjunto de operações (tarefas) que devem ser executadas com recursos disponíveis limitados, sendo necessário encontrar a alocação ótima de recursos entre as operações ou a composição ótima das operações.</li>
+<li>Os problemas de manutenção e substituição são relevantes em razão do desgaste e do envelhecimento dos equipamentos e da necessidade de sua substituição.</li>
+<li>Entre os modelos de pesquisa operacional, destacam-se particularmente os modelos para a tomada de decisões ótimas em situações de conflito, estudados pela teoria dos jogos. As situações de conflito, nas quais colidem os interesses de duas (ou mais) partes que perseguem objetivos diferentes, incluem diversas situações nas áreas de economia, direito, assuntos militares, e assim por diante. Nos problemas de teoria dos jogos, é necessário desenvolver recomendações para o comportamento racional dos participantes do conflito e determinar suas estratégias ótimas.</li>
+</ul>
+
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div class="links">
+    <div class="links-section">
+      <h2>Pesquisa Operacional</h2>
+      <ul>
+        <li><a href="/pt/operation_research_caa.html">Pesquisa Operacional: Churchman, Ackoff e Arnoff</a></li>
+        <li><a href="/pt/operation_research_as.html">Fundamentos da Pesquisa Operacional: Ackoff e Sasieni</a></li>
+        <li><a href="/pt/operation_research_me.html">Pesquisa Operacional: Moder e Elmaghraby</a></li>
+        <li><a href="/pt/operation_research_vg.html">Pesquisa Operacional: Wagner</a></li>
+        <li><a href="/pt/operation_research_gv.html">Pesquisa Operacional: Gvishiani</a></li>
+        <li><a href="/pt/operation_research_ve.html">Pesquisa Operacional: Wentzel</a></li>
+        <li><a href="/pt/methodology_or.html">Metodologia da Pesquisa Operacional</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/pt/">Início</a> <span aria-hidden="true">/</span>
+    <a href="/pt/operation_research.html">Pesquisa Operacional</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Modelos de Pesquisa Operacional</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Alternar tema"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_model.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/pt/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Alternar tema"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710bc65f40a5ce',t:'MTc4ODczNTE2Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

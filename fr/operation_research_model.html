@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Modèles de recherche opérationnelle</title>
+<meta name="description" content="La construction d’un modèle d’opération est l’étape clé de la recherche opérationnelle. L’opération est simplifiée et schématisée, et les facteurs essentiels sont identifiés. Le modèle standard et la classification des problèmes sont décrits.">
+<meta name="keywords" content="Modélisation,modèle,recherche opérationnelle,fonction objectif,programmation,problèmes,efficacité,optimal,mathématique,systèmes,analyse,solution">
+<link rel="canonical" href="https://systems-analysis.info/fr/operation_research_model.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_model.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_model.html">
+<link rel="alternate" hreflang="fr" href="https://systems-analysis.info/fr/operation_research_model.html">
+<meta property="og:title" content="Modèles de recherche opérationnelle">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/fr/operation_research_model.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="La construction d’un modèle d’opération est l’étape clé de la recherche opérationnelle. L’opération est simplifiée et schématisée, et les facteurs essentiels sont identifiés. Le modèle standard et la classification des problèmes sont décrits.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="fr_FR">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/fr/operation_research_model.html#article",
+    "headline": "Modèles de recherche opérationnelle",
+    "description": "La construction d’un modèle d’opération est l’étape clé de la recherche opérationnelle. L’opération est simplifiée et schématisée, et les facteurs essentiels sont identifiés. Le modèle standard et la classification des problèmes sont décrits.",
+    "url": "https://systems-analysis.info/fr/operation_research_model.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "fr",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/fr/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/fr/operation_research_model.html"
+    },
+    "keywords": [
+        "Modélisation",
+        "modèle",
+        "recherche opérationnelle",
+        "fonction objectif",
+        "programmation",
+        "problèmes",
+        "efficacité",
+        "optimal",
+        "mathématique",
+        "systèmes",
+        "analyse",
+        "solution"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "Modèles de recherche opérationnelle",
+        "description": "A sufficiently precise mathematical description of an operation expressed through functions, equations, systems of equations, and inequalities.",
+        "sameAs": [
+            "https://systems-analysis.info/wiki/Модели_исследования_операций",
+            "https://systems-analysis.info/eng/Operations_research_models"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://systems-analysis.info/fr/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Recherche opérationnelle",
+            "item": "https://systems-analysis.info/fr/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Modèles de recherche opérationnelle"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Navigation principale">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/fr/">Accueil</a>
+        <span aria-hidden="true">·</span>
+        <a href="/fr/sections.html">Sections</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/fr/books.html">Livres</a>
+        <span aria-hidden="true">·</span>
+        <a href="/fr/catalog.html">Catalogue</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_model.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Changer de thème"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Changer de police"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Modèles de recherche opérationnelle</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Pour appliquer des méthodes de recherche quantitatives, il est nécessaire de construire un modèle mathématique de l’opération. Lors de la construction d’un modèle, l’opération est généralement simplifiée et schématisée, et le schéma obtenu est décrit à l’aide d’outils mathématiques. Un modèle d’opération est une description mathématique suffisamment précise de l’opération, exprimée par des fonctions, des équations, des systèmes d’équations et des inégalités. L’efficacité d’une opération est le degré auquel elle atteint son objectif.</p>
+
+<h2>Formulation générale du problème de recherche opérationnelle</h2>
+
+<p>En recherche opérationnelle, une situation de gestion englobe des objectifs et des décisions. Les décisions sont prises pour atteindre un objectif. La situation de gestion est décrite par un modèle. Le modèle contient une mesure d’efficacité, qui permet de déterminer à quel point une décision est proche de l’objectif. La mesure d’efficacité dépend des facteurs qui influencent l’opération. Tous les facteurs inclus dans la description d’une opération peuvent être divisés en deux groupes : les facteurs constants, sur lesquels on ne peut pas agir, et les facteurs contrôlables.</p>
+
+<p>Les éléments conceptuels du modèle sont représentés sous forme de « boîte noire », où l’attention principale porte sur la définition des entrées et des sorties. Les entrées sont ce que le modèle traite ; les sorties sont ce que le modèle produit. Les variables contrôlables et non contrôlables sont fournies en entrée. La sortie est le critère d’efficacité. Le modèle contient une mesure explicite de l’efficacité, qui permet de déterminer à quel point une décision est proche de l’objectif. Lors de la construction d’un modèle, il est important de préciser comment les paramètres d’entrée influenceront la mesure énoncée.</p>
+
+<p>Le critère d’efficacité, exprimé par une certaine fonction appelée fonction objectif, dépend des facteurs des deux groupes. L’expression mathématique du critère d’efficacité est appelée fonction objectif. La fonction objectif est une mesure d’efficacité formulée (formalisée) mathématiquement qu’il faut maximiser ou minimiser.</p>
+
+<p>Les variables contrôlables sont les paramètres qui sont gérés par le décideur.</p>
+
+<p>Les variables non contrôlables sont des facteurs externes que le gestionnaire ne peut pas contrôler, mais qui sont essentiels pour atteindre les objectifs.</p>
+
+<p>Le critère d’efficacité, ou fonction objectif, est une fonction des variables de décision qui exprime le degré d’approximation de l’objectif.</p>
+
+<p>Définition d’un modèle mathématique : on entend par modèle mathématique tout opérateur qui, pour des valeurs correspondantes des paramètres d’entrée, établit les valeurs de sortie des paramètres de l’objet modélisé, dans l’ensemble des valeurs admissibles des paramètres d’entrée et de sortie de l’objet modélisé.</p>
+
+<h2>Modèles de recherche opérationnelle et prise de décision</h2>
+
+<p>La recherche opérationnelle est orientée vers la justification quantitative d’une prise de décision rationnelle. Ces modèles se recoupent étroitement avec une large classe de problèmes de théorie de la décision et de problèmes d’optimisation.</p>
+
+<p>Lors de l’élaboration d’un modèle de recherche opérationnelle, il est nécessaire de répondre aux questions suivantes :</p>
+<ul>
+<li>que faut-il considérer, dans le cas particulier, comme solutions alternatives ?</li>
+<li>selon quel critère choisit-on les solutions alternatives ?</li>
+<li>quelles contraintes les solutions réalisables doivent-elles satisfaire ?</li>
+</ul>
+
+<p>Le modèle mathématique standard de la recherche opérationnelle se présente sous la formulation suivante : maximisation ou minimisation de la fonction objectif, sous réserve du respect des contraintes.</p>
+
+<p>Lors du choix d’une solution, on préfère celle qui maximise ou minimise la fonction objectif. Parmi les exemples de maximisation de la fonction objectif figurent le profit et la productivité. La minimisation de la fonction objectif peut concerner les coûts, les dépenses, le temps, etc. Le choix du critère d’efficacité est le point central et le plus critique de l’étude. Il vaut bien mieux trouver une solution non optimale à un critère correctement choisi qu’une solution optimale à un critère mal choisi.</p>
+
+<p>Une solution réalisable est une solution qui satisfait toutes les contraintes du modèle. Il peut exister un nombre infini de solutions réalisables.</p>
+
+<p>Une solution optimale est une solution qui, en plus d’être réalisable, fait atteindre à la fonction objectif sa valeur maximale ou minimale.</p>
+
+<p>Les solutions sont dites optimales si, selon tel ou tel critère, elles sont préférables à d’autres. Tout choix de la meilleure alternative est spécifique, car il repose sur la conformité à des critères établis. Lorsqu’on parle d’une alternative optimale, on précise ces critères (« optimale par rapport à… »). Ce qui est optimal selon un critère ne l’est pas nécessairement selon un autre.</p>
+
+<p>Une contrainte est une expression mathématique sous forme d’inégalité ou d’égalité que les variables du modèle doivent satisfaire.</p>
+
+<p>Les contraintes réduisent l’ensemble des solutions réalisables. Dans certains cas, il se peut qu’il n’existe aucune solution optimale compte tenu des contraintes énoncées. Cela signifie que la qualité de la décision finale, prise sur la base de la résolution du problème, dépend de la mesure dans laquelle le modèle représente de façon adéquate la situation réelle qu’il décrit formellement au moyen de contraintes. Parmi les contraintes figurent les quotas, la capacité de charge des véhicules, le volume de la tâche planifiée, les caractéristiques de poids des équipements, les limitations de ressources, etc.</p>
+
+<p>Lorsque la configuration des contraintes change, une autre solution peut devenir la meilleure. Dans le monde réel, les contraintes peuvent être de nature physique, économique ou politique et ne se prêtent pas nécessairement à la formalisation. Une solution donnée ne sera la meilleure que pour le modèle considéré, sous réserve du système de contraintes établi. Plus le modèle reflète fidèlement la situation, plus la solution du problème se rapproche de l’optimum.</p>
+
+<h2>Classification des modèles de recherche opérationnelle</h2>
+
+<p>Tous les modèles de recherche opérationnelle peuvent être classés en fonction de la nature et des propriétés de l’opération, du caractère des problèmes résolus et des méthodes mathématiques employées :</p>
+<ul>
+<li>Si le critère d’efficacité est une fonction linéaire et que les fonctions du système de contraintes sont également linéaires, alors le problème est un problème de programmation linéaire.</li>
+<li>Si, en raison de sa signification concrète, ses solutions doivent être entières, alors il s’agit d’un problème de programmation linéaire en nombres entiers.</li>
+<li>Si le critère d’efficacité et/ou le système de contraintes sont définis par des fonctions non linéaires, on a alors un problème de programmation non linéaire. En particulier, si les fonctions énoncées possèdent des propriétés de convexité, le problème obtenu est un problème de programmation convexe.</li>
+<li>Si un problème de programmation mathématique inclut une variable temporelle et que le critère d’efficacité s’exprime non pas explicitement en fonction des variables, mais indirectement — par le biais d’équations décrivant le déroulement des opérations dans le temps — alors le problème est un problème de programmation dynamique.</li>
+<li>Si trouver l’optimum exact par un algorithme est impossible en raison d’un nombre excessivement grand de variantes de solutions, alors on emploie des méthodes de programmation heuristique, qui permettent de réduire considérablement le nombre de variantes examinées et de trouver, sinon la solution optimale, du moins une solution suffisamment bonne et satisfaisante d’un point de vue pratique.</li>
+</ul>
+
+<p>Par leur formulation concrète, une multitude d’autres problèmes types de recherche opérationnelle peuvent être répartis en plusieurs classes :</p>
+<ul>
+<li>Les problèmes d’ordonnancement de projets (PERT/CPM) examinent les relations entre les dates d’achèvement d’un vaste ensemble d’opérations (tâches) et les instants de début de toutes les opérations de cet ensemble. Ces problèmes consistent à trouver les durées minimales de l’ensemble des opérations et la relation optimale entre les coûts et les délais d’achèvement.</li>
+<li>Les problèmes de files d’attente sont consacrés à l’étude et à l’analyse des systèmes de service comportant des files de requêtes ou de demandes, et consistent à déterminer les indicateurs de performance des systèmes ainsi que leurs caractéristiques optimales — par exemple, la détermination du nombre de canaux de service, du temps de service, et autres.</li>
+<li>Les problèmes de gestion des stocks consistent à trouver les valeurs optimales du niveau de stock (point de commande) et de la taille de la commande. La particularité de ces problèmes est que, lorsque le niveau de stock augmente, d’une part les coûts de stockage augmentent, mais d’autre part les pertes dues à d’éventuelles pénuries du produit stocké diminuent.</li>
+<li>Les problèmes d’allocation de ressources apparaissent lorsqu’il existe un certain ensemble d’opérations (tâches) devant être exécutées avec des ressources disponibles limitées, et qu’il est nécessaire de trouver la répartition optimale des ressources entre les opérations ou la composition optimale des opérations.</li>
+<li>Les problèmes de maintenance et de remplacement sont pertinents en lien avec l’usure et le vieillissement des équipements et la nécessité de leur remplacement.</li>
+<li>Parmi les modèles de recherche opérationnelle, on distingue en particulier les modèles de prise de décisions optimales dans des situations de conflit, étudiés par la théorie des jeux. Les situations de conflit, dans lesquelles s’affrontent les intérêts de deux (ou plusieurs) parties poursuivant des objectifs différents, englobent un certain nombre de situations dans les domaines de l’économie, du droit, des affaires militaires, et autres. Dans les problèmes de théorie des jeux, il est nécessaire d’élaborer des recommandations pour le comportement rationnel des participants au conflit et de déterminer leurs stratégies optimales.</li>
+</ul>
+
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div class="links">
+    <div class="links-section">
+      <h2>Recherche opérationnelle</h2>
+      <ul>
+        <li><a href="/fr/operation_research_caa.html">Recherche opérationnelle : Churchman, Ackoff et Arnoff</a></li>
+        <li><a href="/fr/operation_research_as.html">Fondements de la recherche opérationnelle : Ackoff et Sasieni</a></li>
+        <li><a href="/fr/operation_research_me.html">Recherche opérationnelle : Moder et Elmaghraby</a></li>
+        <li><a href="/fr/operation_research_vg.html">Recherche opérationnelle : Wagner</a></li>
+        <li><a href="/fr/operation_research_gv.html">Recherche opérationnelle : Gvichiani</a></li>
+        <li><a href="/fr/operation_research_ve.html">Recherche opérationnelle : Ventsel</a></li>
+        <li><a href="/fr/methodology_or.html">Méthodologie de la recherche opérationnelle</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/fr/">Accueil</a> <span aria-hidden="true">/</span>
+    <a href="/fr/operation_research.html">Recherche opérationnelle</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Modèles de recherche opérationnelle</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Changer de thème"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_model.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/fr/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Changer de thème"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a37108b5fab4a5ce',t:'MTc4ODczNTA0MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

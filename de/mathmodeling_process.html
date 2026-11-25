@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Der Prozess der mathematischen Modellierung</title>
+<meta name="description" content="Der Prozess der mathematischen Modellierung: Modellkonstruktion, Softwareentwicklung, Validierung und Analyse der Ergebnisse. Beschrieben werden die Phasen und Besonderheiten moderner Berechnungsmodelle.">
+<meta name="keywords" content="mathematische Modellierung,Modell,Berechnungsmethoden,Algorithmus,Validierung,Software,Systemanalyse,numerische Methoden">
+<link rel="canonical" href="https://systems-analysis.info/de/mathmodeling_process.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/mathmodeling_process.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/mathmodeling_process.html">
+<link rel="alternate" hreflang="de" href="https://systems-analysis.info/de/mathmodeling_process.html">
+<meta property="og:title" content="Der Prozess der mathematischen Modellierung">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/de/mathmodeling_process.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Der Prozess der mathematischen Modellierung: Modellkonstruktion, Softwareentwicklung, Validierung und Analyse der Ergebnisse. Beschrieben werden die Phasen und Besonderheiten moderner Berechnungsmodelle.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="de_DE">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/de/mathmodeling_process.html#article",
+    "headline": "Der Prozess der mathematischen Modellierung",
+    "description": "Der Prozess der mathematischen Modellierung: Modellkonstruktion, Softwareentwicklung, Validierung und Analyse der Ergebnisse. Beschrieben werden die Phasen und Besonderheiten moderner Berechnungsmodelle.",
+    "url": "https://systems-analysis.info/de/mathmodeling_process.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "de",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/de/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/de/mathmodeling_process.html"
+    },
+    "keywords": [
+        "mathematische Modellierung",
+        "Modell",
+        "Berechnungsmethoden",
+        "Algorithmus",
+        "Validierung",
+        "Software",
+        "Systemanalyse",
+        "numerische Methoden"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Startseite",
+            "item": "https://systems-analysis.info/de/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Modellierung",
+            "item": "https://systems-analysis.info/de/modelling.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Der Prozess der mathematischen Modellierung"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Hauptnavigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menü</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/de/">Startseite</a>
+        <span aria-hidden="true">·</span>
+        <a href="/de/sections.html">Abschnitte</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/de/books.html">Bücher</a>
+        <span aria-hidden="true">·</span>
+        <a href="/de/catalog.html">Katalog</a>
+        <span aria-hidden="true">·</span>
+        <a href="/mathmodeling_process.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Design wechseln"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Schriftart wechseln"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Der Prozess der mathematischen Modellierung</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Ein charakteristisches Merkmal der heute entstehenden mathematischen Modelle ist ihre Komplexität, die sich aus der Komplexität der zu modellierenden Objekte ergibt. Dies führt zu immer aufwendigeren <a href="/de/model.html" class="text-link">Modellen</a> und zur Notwendigkeit, gleichzeitig auf mehrere Theorien aus verschiedenen Wissensgebieten zurückzugreifen sowie moderne Berechnungsmethoden und Rechnertechnik zur Gewinnung und Analyse der Simulationsergebnisse einzusetzen. Bei komplexen Objekten ist es in der Regel unmöglich, alle Anforderungen innerhalb eines einzigen Modells zu erfüllen. Stattdessen muss ein ganzes Spektrum von Modellen desselben Objekts geschaffen werden (in manchen Fällen ein hierarchisches System „verschachtelter“ Modelle), von denen jedes am besten für die Lösung der ihm jeweils zugewiesenen Aufgaben geeignet ist.</p>
+<p>Die Notwendigkeit, Modelle in großem Umfang zu konstruieren, erfordert die Entwicklung eines Regel- und Vorgehenssystems, das die Kosten der Modellentwicklung senkt und die Wahrscheinlichkeit von Fehlern verringert, die sich später nur schwer beseitigen lassen. Ein solches Regelwerk könnte man als Technologie zur Erstellung mathematischer Modelle bezeichnen.</p>
+<p><strong>Der Prozess der Konstruktion eines beliebigen mathematischen Modells lässt sich als eine Abfolge von Phasen darstellen:</strong></p>
+<ol>
+  <li>Untersuchung des zu modellierenden Objekts und Erstellung des Pflichtenhefts für die Modellentwicklung (inhaltliche Problemformulierung);</li>
+  <li>Konzeptionelle und mathematische Formulierung der Aufgabe;</li>
+  <li>Qualitative Analyse und Überprüfung der Korrektheit des Modells;</li>
+  <li>Auswahl und Begründung der Lösungsmethoden;</li>
+  <li>Gewinnung der Lösung;</li>
+  <li>Entwicklung des Lösungsalgorithmus und Untersuchung seiner Eigenschaften; Umsetzung des Algorithmus als Software;</li>
+  <li>Validierung des Modells;</li>
+  <li>Praktische Anwendung des konstruierten Modells.</li>
+</ol>
+<p>Mathematische Modelle — insbesondere solche, die numerische Methoden und Rechnertechnik einsetzen — erfordern für ihre Konstruktion erhebliche intellektuelle, finanzielle und zeitliche Ressourcen. Daher wird die Entscheidung, ein neues Modell zu entwickeln, nur dann getroffen, wenn es keine einfacheren Wege gibt, die anstehenden <a href="/de/problem.html" class="text-link">Probleme</a> zu lösen (zum Beispiel durch Modifikation eines bestehenden Modells).</p>
+<p>Der Bedarf an einem neuen Modell kann im Zusammenhang mit wissenschaftlicher Forschung entstehen, insbesondere an der Schnittstelle verschiedener Wissensgebiete. Sobald die Entscheidung zur Konstruktion eines neuen mathematischen Modells getroffen ist, sucht der Auftraggeber ein Team für die Durchführung der Arbeiten. In der Regel gehören dem Projektteam Fachleute unterschiedlicher Ausrichtung an: angewandte Mathematiker, Fachexperten, die mit dem zu modellierenden Objekt gründlich vertraut sind, sowie Softwareentwickler. Sobald die Entscheidung zur Erstellung des Modells bestätigt und das Projektteam gebildet ist, beginnt die Untersuchungsphase. Das Hauptziel dieser Phase besteht darin, eine inhaltliche Formulierung der Modellierungsaufgabe zu erarbeiten. Die inhaltliche Problemformulierung ist eine in allgemeinverständlicher Sprache formulierte Liste der zentralen Fragen zum Modellierungsobjekt, auf die der Auftraggeber eine Antwort erhalten möchte.</p>
+<p>Die Erstellung der Liste von Fragen, die das neue Modell beantworten soll, ist häufig selbst ein eigenständiges Problem, das Fachleute mit besonderen Kenntnissen und Fähigkeiten erfordert. Sie müssen nicht nur den Fachbereich der Modellierung gründlich verstehen und die Möglichkeiten der modernen numerischen Mathematik und Rechnertechnik kennen, sondern auch in der Lage sein, mit Menschen zu kommunizieren — um die praktischen Experten, die ein intuitives „Gespür“ für das Modellierungsobjekt und die Feinheiten seines Verhaltens besitzen, zum Sprechen zu bringen. Zu solchen Fachleuten gehören beispielsweise Systemanalytiker, Systems-Engineering-Spezialisten und Operations-Research-Experten.</p>
+<p>Auf Grundlage einer Analyse aller gesammelten Informationen muss die Person, die das Problem formuliert, die Anforderungen an das künftige Modell so festlegen, dass sie einerseits den Auftraggeber zufriedenstellen und andererseits die Umsetzung des Modells innerhalb des vorgegebenen Zeit- und Budgetrahmens ermöglichen. Systemanalytiker (bzw. Operations-Research-Experten) müssen in der Lage sein, aus einer großen Menge locker strukturierter und vielfältiger Informationen über das Modellierungsobjekt sowie aus den verschiedenen, oft vage formulierten Wünschen und Anforderungen des Auftraggebers, das Wesentliche herauszufiltern, das tatsächlich umgesetzt werden kann.</p>
+<p>Auf Grundlage der gesammelten Informationen über das Modellierungsobjekt formuliert der Systemanalytiker (bzw. Ingenieur, Operations-Research-Experte) gemeinsam mit dem Auftraggeber die inhaltliche Problemformulierung, die in der Regel noch nicht endgültig ist und im Verlauf der Modellentwicklung präzisiert und weiter ausgearbeitet werden kann. Alle nachfolgenden Anpassungen und Änderungen der inhaltlichen Formulierung sollten jedoch von geringfügiger, nicht grundsätzlicher Natur sein.</p>
+<p>Das gesamte während der Untersuchung gesammelte Material — das angesammelte Wissen über das Objekt, die inhaltliche Problemformulierung, zusätzliche Anforderungen an die Modellumsetzung und die Darstellung der Ergebnisse — wird in Form eines Pflichtenhefts für Entwurf und Entwicklung des Modells dokumentiert. Das Pflichtenheft stellt das abschließende Dokument der Untersuchungsphase dar. Je vollständiger die während der Untersuchung gesammelten Informationen über das Objekt sind, desto klarer lässt sich die inhaltliche Problemstellung formulieren, desto umfassender können gesammelte Erfahrungen und Kenntnisse berücksichtigt werden und desto mehr Schwierigkeiten lassen sich in den folgenden Phasen der Modellentwicklung vermeiden.</p>
+<p>Im Unterschied zur inhaltlichen Formulierung wird die konzeptionelle Formulierung der Modellierungsaufgabe in der Regel von den Mitgliedern des Projektteams ohne Beteiligung von Vertretern des Auftraggebers erarbeitet, und zwar auf Grundlage des in der vorangegangenen Phase entwickelten Pflichtenhefts sowie unter Nutzung des verfügbaren Wissens über das Modellierungsobjekt und der Anforderungen an das künftige Modell. Die Analyse und gemeinsame Diskussion aller verfügbaren Informationen über das Modellierungsobjekt durch die Teammitglieder ermöglicht es, ein konzeptionelles Modell des Objekts zu bilden — eine Synthese der von jedem Teammitglied entwickelten kognitiven Modelle.</p>
+<p>Die konzeptionelle Formulierung der Modellierungsaufgabe ist eine Liste der für den Auftraggeber interessanten zentralen Fragen, ausgedrückt in den Begriffen konkreter Fachdisziplinen, zusammen mit einem Satz von Hypothesen über die Eigenschaften und das Verhalten des Modellierungsobjekts.</p>
+<p>Die größten Schwierigkeiten bei der Ausarbeitung der konzeptionellen Formulierung treten bei Modellen auf, die an der Schnittstelle verschiedener Disziplinen liegen. Unterschiede in Traditionen, Begriffen und Sprachen, die zur Beschreibung derselben Objekte verwendet werden, stellen bei der Erstellung interdisziplinärer Modelle sehr ernsthafte Hindernisse dar.</p>
+<p>Eine abgeschlossene konzeptionelle Formulierung ermöglicht die Erstellung der mathematischen Formulierung der Modellierungsaufgabe, die eine Reihe mathematischer Beziehungen umfasst, die das Verhalten und die Eigenschaften des Modellierungsobjekts beschreiben.</p>
+<p>Die mathematische Formulierung der Modellierungsaufgabe ist die Gesamtheit der mathematischen Beziehungen, die das Verhalten und die Eigenschaften des Modellierungsobjekts beschreiben.</p>
+<p>Ein mathematisches Modell gilt als korrekt, wenn alle Prüfverfahren mit positivem Ergebnis durchgeführt wurden: Dimensionsanalyse, Prüfung der Größenordnungen, Prüfung der Art der Abhängigkeiten, Analyse von Grenzfällen, Randbedingungen, physikalische Bedeutung und mathematische Abgeschlossenheit. Die mathematische Formulierung ist noch abstrakter als die konzeptionelle, da sie das ursprüngliche Problem auf ein rein mathematisches Problem reduziert, für das gut ausgearbeitete Lösungsmethoden existieren.</p>
+<p>Alle Methoden zur Lösung der Aufgaben, die den „Kern“ mathematischer Modelle bilden, lassen sich in analytische und algorithmische (numerische) Methoden einteilen.</p>
+<p>Es sei angemerkt, dass bei der Verwendung analytischer Lösungen zur Gewinnung numerischer Ergebnisse häufig auch die Entwicklung entsprechender, auf Computern implementierter Algorithmen erforderlich ist.</p>
+<p>Die Ausgangslösung nimmt in diesem Fall jedoch die Form eines analytischen Ausdrucks (oder eines Satzes von Ausdrücken) an. Auf algorithmischen Methoden beruhende Lösungen sind demgegenüber grundsätzlich nicht auf exakte analytische Lösungen des betreffenden Problems zurückführbar.</p>
+<p>Die Wahl einer bestimmten Forschungsmethode hängt in hohem Maße von der Qualifikation und Erfahrung der Mitglieder des Projektteams ab. Analytische Methoden sind für die anschließende Analyse der Ergebnisse bequemer, lassen sich jedoch nur auf relativ einfache Modelle anwenden. Lässt das mathematische Problem (selbst in vereinfachter Formulierung) eine analytische Lösung zu, so ist diese einer numerischen Lösung zweifellos vorzuziehen.</p>
+<p>Algorithmische Methoden reduzieren das Problem auf einen Algorithmus, der mithilfe von Rechnertechnik ein rechnerisches Experiment durchführt. Die Genauigkeit der Modellierung in einem solchen Experiment hängt entscheidend von der gewählten Methode und ihren Parametern ab. Algorithmische Methoden sind in der Regel aufwendiger umzusetzen und erfordern von den Mitgliedern des Projektteams fundierte Kenntnisse der numerischen Mathematik, eine umfangreiche Bibliothek spezialisierter Software sowie leistungsfähige Rechenressourcen.</p>
+<p>Numerische Methoden sind nur auf korrekt gestellte mathematische Probleme anwendbar, was ihren Einsatz in der mathematischen Modellierung erheblich einschränkt. Allen numerischen Methoden gemeinsam ist die Reduktion des mathematischen Problems auf ein endlichdimensionales Problem. Dies wird meist durch Diskretisierung des ursprünglichen Problems erreicht — das heißt durch Ersetzen von Funktionen eines kontinuierlichen Arguments durch Funktionen eines diskreten Arguments. Die Anwendung jeder numerischen Methode führt unvermeidlich zu Fehlern in den Ergebnissen. Es lassen sich drei Hauptkomponenten des bei der numerischen Lösung des ursprünglichen Problems auftretenden Fehlers unterscheiden: der inhärente Fehler, der mit der ungenauen Angabe der Eingangsdaten (Anfangs- und Randbedingungen, Gleichungskoeffizienten und rechte Seiten) verbunden ist; der Diskretisierungsfehler, der mit dem Übergang zu einem diskreten Analogon des ursprünglichen Problems verbunden ist; sowie der Rundungsfehler, der mit der endlichen Genauigkeit der im Computer dargestellten Zahlen verbunden ist.</p>
+<p>Eine natürliche Anforderung an jeden konkreten Berechnungsalgorithmus ist die Konsistenz der Größenordnungen dieser drei Fehlertypen.</p>
+<p>Eine numerische bzw. approximative Methode wird stets als Berechnungsalgorithmus umgesetzt. Daher gelten alle Anforderungen, die generell an Algorithmen gestellt werden, auch für Berechnungsalgorithmen. Vor allem muss ein Algorithmus praktisch durchführbar sein — er muss das Problem innerhalb einer akzeptablen Rechenzeit lösen. Eine wichtige Eigenschaft eines Algorithmus ist seine Genauigkeit — die Fähigkeit, eine Lösung des ursprünglichen Problems mit vorgegebener Genauigkeit in einer endlichen Anzahl von Operationen zu erhalten.</p>
+<p>Die Laufzeit eines Algorithmus hängt von der Anzahl der zur Erreichung der vorgegebenen Genauigkeit erforderlichen Operationen ab. Für jedes mathematische Problem lassen sich in der Regel mehrere Algorithmen vorschlagen, die eine Lösung mit der gewünschten Genauigkeit liefern, jedoch mit unterschiedlicher Anzahl von Operationen. Algorithmen, die für dieselbe Genauigkeit weniger Operationen benötigen, werden als sparsamer oder effizienter bezeichnet.</p>
+<p>Während der Ausführung eines Berechnungsalgorithmus entsteht bei jedem Rechenschritt ein bestimmter Fehler. Von Schritt zu Schritt kann dieser Fehler wachsen oder nicht wachsen (in manchen Fällen kann er sogar abnehmen). Wächst der Fehler während der Berechnung unbegrenzt an, so bezeichnet man den Algorithmus als instabil bzw. divergent. Andernfalls bezeichnet man den Algorithmus als stabil bzw. konvergent.</p>
+<p>Die enorme Vielfalt numerischer Methoden erschwert die Auswahl einer konkreten Methode im jeweiligen Fall erheblich. Da für die Umsetzung eines gegebenen Modells mehrere alternative algorithmische Methoden verwendet werden können, erfolgt die Wahl einer konkreten Methode unter Berücksichtigung dessen, welche Methode hinsichtlich Effizienz, Stabilität und Genauigkeit der Ergebnisse am besten zum Modell passt und welche den Mitgliedern des Projektteams am vertrautesten ist.</p>
+<p>Bei der Entwicklung verschiedener Softwaresysteme, die zur Lösung eines breiten Spektrums von Forschungs-, Konstruktions- und Managementaufgaben eingesetzt werden, dienen mathematische Modelle heute in der Regel als Grundlage. Daraus ergibt sich die Notwendigkeit, ein Modell als Computerprogramm umzusetzen. Der Prozess der Entwicklung zuverlässiger und effizienter Software ist nicht weniger komplex als alle vorangegangenen Phasen der Erstellung mathematischer Modelle. Diese Aufgabe kann nur erfolgreich gelöst werden, wenn man moderne Programmiersprachen und -technologien sicher beherrscht, die Möglichkeiten der Rechnertechnik und verfügbare Software kennt sowie die Besonderheiten der Umsetzung von Methoden der numerischen Mathematik versteht.</p>
+<p><strong>Der Prozess der Softwareentwicklung lässt sich in mehrere Phasen unterteilen:</strong></p>
+<ul>
+  <li>Erstellung des Pflichtenhefts für die Softwareentwicklung;</li>
+  <li>Entwurf der Struktur des Softwaresystems;</li>
+  <li>Programmierung des Algorithmus;</li>
+  <li>Testen und Fehlerbeseitigung;</li>
+  <li>Wartung und Betrieb.</li>
+</ul>
+<p>Das Pflichtenheft für die Softwareentwicklung wird in Form einer Spezifikation dokumentiert. In der Entwurfsphase wird die Gesamtstruktur des Softwaresystems festgelegt. Das gesamte Programm wird in Softwaremodule unterteilt. Für jedes Modul werden funktionale Anforderungen formuliert und ein Algorithmus zur Umsetzung dieser Funktionen entwickelt. Das Interaktionsschema zwischen den Modulen — bekannt als Datenflussdiagramm des Softwaresystems — wird festgelegt. Es wird ein Testplan entwickelt, und es werden Eingabedaten für das Testen einzelner Module sowie des Gesamtsystems festgelegt.</p>
+<p><strong>Die meisten Programme, die mathematische Modelle umsetzen, bestehen aus drei Hauptteilen:</strong></p>
+<ul>
+  <li>einem Präprozessor (Aufbereitung und Überprüfung der Eingabedaten des Modells);</li>
+  <li>einem Solver (Lösung des Problems, Durchführung des rechnerischen Experiments);</li>
+  <li>einem Postprozessor (Visualisierung und Darstellung der Ergebnisse).</li>
+</ul>
+<p>Der Einführung moderner Programmiertechnologien sollte erhebliche Bedeutung beigemessen werden. Der Zweck jeder solchen Technologie besteht in erster Linie darin, die Zuverlässigkeit der Software zu erhöhen und die Produktivität der Entwickler zu steigern. Je ernsthafter und umfangreicher das Softwareprojekt ist, desto bedeutsamer werden die Fragen der Anwendung moderner Programmiertechnologien. Werden diese Fragen vernachlässigt, kann dies zu erheblichen Zeitüberschreitungen und einer verringerten Zuverlässigkeit des Softwaresystems führen.</p>
+<p>Ein entscheidender Faktor für die Gewährleistung der Zuverlässigkeit und der kurzen Entwicklungszeit eines Softwaresystems zur Lösung einer bestimmten Klasse von Problemen ist das Vorhandensein einer gut ausgebauten Bibliothek zueinander kompatibler Softwaremodule. Ein Programm ist zuverlässiger und lässt sich schneller entwickeln, wenn standardisierte Softwarekomponenten in größtmöglichem Umfang verwendet werden.</p>
+<p>Die Adäquatheit eines mathematischen Modells ist der Grad, in dem die mit dem entwickelten Modell erzielten Ergebnisse mit experimentellen Daten oder den Ergebnissen einer Referenzaufgabe übereinstimmen.</p>
+<p><strong>Die Validierung des Modells verfolgt zwei Ziele:</strong></p>
+<ul>
+  <li>die Überprüfung der Gültigkeit des Systems von Hypothesen, die in den Phasen der konzeptionellen und mathematischen Formulierung aufgestellt wurden. Zur Überprüfung der Hypothesen sollte erst übergegangen werden, nachdem die Lösungsmethoden verifiziert und die Software einer umfassenden Fehlerbeseitigung sowie der Beseitigung aller Konflikte unterzogen wurde;</li>
+  <li>der Nachweis, dass die Genauigkeit der Ergebnisse der im Pflichtenheft festgelegten Genauigkeit entspricht.</li>
+</ul>
+<p>Die Validierung des entwickelten mathematischen Modells erfolgt durch Vergleich mit verfügbaren experimentellen Daten zum realen Objekt oder mit den Ergebnissen anderer, bereits zuvor erstellter und bewährter Modelle. Im ersten Fall spricht man von einer Validierung durch Vergleich mit dem Experiment, im zweiten von einem Vergleich mit den Ergebnissen einer Referenzaufgabe.</p>
+<p>Die Frage der Modellierungsgenauigkeit hängt von den an das Modell gestellten Anforderungen und seinem beabsichtigten Zweck ab. Auch die Genauigkeit der experimentellen Ergebnisse bzw. die Besonderheiten der Formulierungen der Referenzaufgabe müssen berücksichtigt werden. Für Modelle, die für grobe Näherungs- und Größenordnungsberechnungen bestimmt sind, gilt eine Genauigkeit von 10–15 % als zufriedenstellend. Für Modelle, die in Steuerungs- und Überwachungs<a href="/de/system.html" class="text-link">systemen</a> eingesetzt werden, kann die erforderliche Genauigkeit 1–2 % oder sogar noch höher liegen.</p>
+<p>Treten Probleme mit der Adäquatheit des Modells auf, sollte die Korrektur mit einer systematischen Analyse aller möglichen Ursachen für die Diskrepanz zwischen Modellierungsergebnissen und experimentellen Ergebnissen beginnen. Zunächst sollte das Modell untersucht und sein Adäquatheitsgrad für verschiedene Werte der veränderlichen Parameter (Anfangs- und Randbedingungen, Parameter, die die Eigenschaften der Modellierungsobjekte charakterisieren) bewertet werden. Erweist sich das Modell im für den Forscher interessierenden Parameterbereich als nicht adäquat, kann versucht werden, die Werte der Modellkonstanten und Anfangsparameter zu präzisieren. Führt dies weiterhin nicht zu positiven Ergebnissen, bleibt als einzige Möglichkeit zur Verbesserung des Modells die Überarbeitung des angenommenen Systems von Hypothesen. Diese Entscheidung bedeutet praktisch eine Rückkehr zur zweiten Phase des Modellentwicklungsprozesses und kann nicht nur eine grundlegende Änderung der mathematischen Formulierung nach sich ziehen, sondern auch der Lösungsmethoden (zum Beispiel den Übergang von analytischen zu numerischen Methoden), eine vollständige Überarbeitung der Software und einen neuen Zyklus der Modellvalidierung. Daher muss die Entscheidung zur Überarbeitung des angenommenen Systems von Hypothesen sorgfältig abgewogen werden und darf erst getroffen werden, wenn alle anderen Möglichkeiten zur Verbesserung der Modelladäquatheit ausgeschöpft sind.</p>
+<p>Deskriptive Modelle dienen dazu, die untersuchten Parameter eines gegebenen Phänomens oder Prozesses zu charakterisieren sowie die Gesetzmäßigkeiten zu untersuchen, die Veränderungen dieser Parameter bestimmen. Diese Modelle können eingesetzt werden, um die Eigenschaften und das Verhalten des untersuchten Objekts unter verschiedenen Kombinationen von Eingangsdaten und Betriebsbedingungen zu untersuchen; beim Aufbau von Optimierungsmodellen; sowie beim Aufbau von Simulationsmodellen komplexer Systeme.</p>
+<p>Für Forschungszwecke entwickelte Modelle werden in der Regel nicht bis zur Stufe von Softwaresystemen ausgebaut, die für die Verbreitung an externe Nutzer bestimmt sind. Ihre Lebensdauer ist üblicherweise auf die Dauer des entsprechenden Forschungsprogramms begrenzt. Diese Modelle zeichnen sich durch einen explorativen Charakter, die Verwendung neuer Berechnungsverfahren und Algorithmen sowie eine unausgereifte Benutzeroberfläche aus.</p>
+<p>Modelle und die darauf aufbauenden Softwaresysteme, die für die anschließende Verbreitung an externe Nutzer oder für die kommerzielle Freigabe bestimmt sind, verfügen über eine gut ausgearbeitete, benutzerfreundliche Oberfläche sowie leistungsfähige Präprozessoren und Postprozessoren. Diese Modelle beruhen in der Regel auf bewährten und gut etablierten Formulierungen und Berechnungsverfahren. Es sollte jedoch bedacht werden, dass solche Modelle nur zur Lösung einer klar definierten Problemklasse ausgelegt sind.</p>
+<p>Unabhängig vom beabsichtigten Einsatzzweck des Modells ist das Entwicklungsteam verpflichtet, sowohl eine qualitative als auch eine quantitative Analyse der Modellierungsergebnisse durchzuführen.</p>
+<p>Durch die Arbeit mit dem Modell werden die Entwickler zu Fachleuten in dem mit dem Modellierungsobjekt verbundenen Bereich. Sie entwickeln ein hinreichend gründliches Verständnis der Eigenschaften des Objekts und sind in der Lage, sein Verhalten vorherzusagen und zu erklären.</p>
+<p><strong>Eine umfassende Analyse der Modellierungsergebnisse ermöglicht daher Folgendes:</strong></p>
+<ul>
+  <li>das betrachtete Objekt zu modifizieren, seine optimalen Kennwerte zu finden oder zumindest sein Verhalten und seine Eigenschaften bestmöglich zu berücksichtigen;</li>
+  <li>den Anwendungsbereich des Modells abzugrenzen;</li>
+  <li>die Gültigkeit der in der Phase der mathematischen Formulierung angenommenen Hypothesen zu überprüfen und die Möglichkeit einer Vereinfachung des Modells zur Steigerung seiner Effizienz bei Beibehaltung der erforderlichen Genauigkeit zu bewerten;</li>
+  <li>die Richtung anzugeben, in der das Modell weiterentwickelt werden sollte.</li>
+</ul>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Verwandte Artikel</h2>
+    <ul>
+      <li><a href="/de/model.html">Modell</a></li>
+      <li><a href="/de/modelling.html">Modellierung</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/de/">Startseite</a> <span aria-hidden="true">/</span>
+    <a href="/de/modelling.html">Modellierung</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Der Prozess der mathematischen Modellierung</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Design wechseln"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/mathmodeling_process.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/de/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Design wechseln"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710784893aa5ce',t:'MTc4ODczNDk5Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

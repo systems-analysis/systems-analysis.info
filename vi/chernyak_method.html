@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Phương pháp luận của Chernyak</title>
+<meta name="description" content="Phương pháp phân tích hệ thống của Yu.I. Chernyak gồm 12 giai đoạn tuần tự — từ phân tích vấn đề và xác định hệ thống đến xây dựng một chương trình phát triển tổng hợp. Mỗi giai đoạn được mô tả chi tiết.">
+<meta name="keywords" content="phân tích hệ thống,phương pháp Chernyak,mục tiêu,hệ thống,vấn đề,quản lý,quyết định">
+<link rel="canonical" href="https://systems-analysis.info/vi/chernyak_method.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/chernyak_method.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/chernyak_method.html">
+<link rel="alternate" hreflang="vi" href="https://systems-analysis.info/vi/chernyak_method.html">
+<meta property="og:title" content="Phương pháp luận của Chernyak">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/vi/chernyak_method.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Phương pháp phân tích hệ thống của Yu.I. Chernyak gồm 12 giai đoạn tuần tự — từ phân tích vấn đề và xác định hệ thống đến xây dựng một chương trình phát triển tổng hợp. Mỗi giai đoạn được mô tả chi tiết.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="vi_VN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/vi/chernyak_method.html#article",
+    "headline": "Phương pháp luận của Chernyak",
+    "description": "Phương pháp phân tích hệ thống của Yu.I. Chernyak gồm 12 giai đoạn tuần tự — từ phân tích vấn đề và xác định hệ thống đến xây dựng một chương trình phát triển tổng hợp. Mỗi giai đoạn được mô tả chi tiết.",
+    "url": "https://systems-analysis.info/vi/chernyak_method.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "vi",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/vi/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/vi/chernyak_method.html"
+    },
+    "keywords": [
+        "phân tích hệ thống",
+        "phương pháp Chernyak",
+        "mục tiêu",
+        "hệ thống",
+        "vấn đề",
+        "quản lý",
+        "quyết định"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Systems Analysis in Economic Management",
+        "author": {
+            "@type": "Person",
+            "name": "Chernyak Yu.I."
+        },
+        "datePublished": "1975",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Ekonomika"
+        },
+        "inLanguage": "vi"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Systems Analysis in Economic Management",
+        "author": {
+            "@type": "Person",
+            "name": "Chernyak Yu.I."
+        },
+        "datePublished": "1975",
+        "inLanguage": "vi"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Trang chủ",
+            "item": "https://systems-analysis.info/vi/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Phân tích hệ thống",
+            "item": "https://systems-analysis.info/vi/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Phương pháp luận của Chernyak"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Điều hướng chính">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/vi/">Trang chủ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/sections.html">Chuyên mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/books.html">Sách</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/catalog.html">Danh mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/chernyak_method.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Đổi giao diện"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Đổi phông chữ"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Phương pháp luận của Chernyak</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Xét đến sự đa dạng vô cùng lớn và về bản chất là không hạn chế của các vấn đề được giải quyết bằng các phương pháp phân tích hệ thống, khó có thể kỳ vọng xây dựng được một bộ công cụ duy nhất phù hợp cho mọi trường hợp. Ở các giai đoạn khác nhau của nghiên cứu — vốn đi từ một cách phát biểu trực giác và khá lỏng lẻo về vấn đề đến việc lựa chọn các phương án tối ưu bằng các phương pháp toán học chặt chẽ — người ta tự nhiên phải sử dụng một bộ công cụ khoa học rất đa dạng. Vì vậy, có lẽ nên trước hết xác lập trình tự cơ bản các giai đoạn của phân tích hệ thống.</p>
+<p>Việc phân tích các phương pháp do nhiều tác giả khác nhau đề xuất dẫn đến kết luận rằng có một sự thống nhất cơ bản trong trình tự tiến hành phân tích hệ thống, bất kể <a href="/vi/goal.html" class="text-link">mục tiêu</a> hay đối tượng nghiên cứu là gì. Tuy vậy, chúng tôi không coi cách tiếp cận chọn lọc là đủ hợp lý trong trường hợp này và đề xuất một cách phân loại mới về các giai đoạn của phân tích hệ thống. Cách phân loại này tính đến toàn bộ các giai đoạn chính của nhiều cách phân loại khác nhau, tuân theo nguyên tắc trình tự logic và gắn với các luận điểm cơ bản của lý thuyết hệ thống làm nền tảng cho phân tích hệ thống. Tính phù hợp và thuận tiện của cách phân loại được đề xuất đã được kiểm chứng qua một loạt nghiên cứu hệ thống ở tất cả các cấp quản lý chủ yếu.</p>
+<p>Trình tự cơ bản các giai đoạn và nhiệm vụ của phân tích hệ thống</p>
+<ol>
+  <li>Phân tích vấn đề.</li>
+  <li>Xác định hệ thống.</li>
+  <li>Phân tích cấu trúc của hệ thống.</li>
+  <li>Xác định mục tiêu tổng quát và tiêu chí của hệ thống.</li>
+  <li>Phân rã mục tiêu, xác định yêu cầu về nguồn lực và quy trình.</li>
+  <li>Xác định nguồn lực và quy trình; tổng hợp mục tiêu từ dưới lên.</li>
+  <li>Dự báo và phân tích các điều kiện trong tương lai.</li>
+  <li>Đánh giá mục tiêu và phương tiện.</li>
+  <li>Lựa chọn phương án.</li>
+  <li>Chẩn đoán hệ thống hiện có.</li>
+  <li>Xây dựng chương trình phát triển tổng hợp.</li>
+  <li>Thiết kế một tổ chức để đạt được mục tiêu.</li>
+</ol>
+<p>Mô tả các giai đoạn</p>
+<p>Giai đoạn 1. <strong>Phân tích vấn đề</strong></p>
+<ul>
+  <li>Vấn đề có thực sự tồn tại không?</li>
+  <li>Phát biểu chính xác vấn đề.</li>
+  <li>Phân tích cấu trúc logic của vấn đề.</li>
+  <li>Diễn biến của vấn đề trong quá khứ và tương lai.</li>
+  <li>Các mối liên hệ bên ngoài của vấn đề với các vấn đề khác.</li>
+  <li>Khả năng giải quyết về nguyên tắc của vấn đề.</li>
+</ul>
+<p>Câu hỏi liệu <a href="/vi/problem.html" class="text-link">vấn đề</a> có thực sự tồn tại hay không có ý nghĩa hết sức quan trọng, bởi việc dồn công sức khổng lồ vào giải quyết những vấn đề không thực sự tồn tại hoàn toàn không phải là trường hợp cá biệt mà là một hiện tượng khá điển hình. Việc phát biểu vấn đề một cách đúng đắn và chính xác là giai đoạn đầu tiên và cần thiết của bất kỳ nghiên cứu hệ thống nào. Như đã biết, một cách phát biểu vấn đề thành công có thể tương đương với một nửa lời giải.</p>
+<p>Giai đoạn 2. <strong>Xác định hệ thống</strong></p>
+<ul>
+  <li>Cụ thể hóa nhiệm vụ.</li>
+  <li>Xác định vị trí của người quan sát.</li>
+  <li>Xác định đối tượng.</li>
+  <li>Xác định các phần tử (xác định ranh giới phân rã hệ thống).</li>
+  <li>Xác định các hệ thống con.</li>
+  <li>Xác định môi trường.</li>
+</ul>
+<p>Để xây dựng một <a href="/vi/system.html" class="text-link">hệ thống</a>, vấn đề phải được phân rã thành một tập hợp các nhiệm vụ được phát biểu rõ ràng. Trong trường hợp hệ thống lớn, các nhiệm vụ này tạo thành một thứ bậc; trong hệ thống phức tạp, chúng tạo thành một quang phổ — nghĩa là những nhiệm vụ hoàn toàn khác nhau, bằng những ngôn ngữ khác nhau, sẽ được giải quyết đối với cùng một đối tượng. Vị trí của người quan sát về căn bản quyết định tiêu chí giải quyết vấn đề. Việc xác định đối tượng chỉ nhìn qua tưởng là một việc dễ; trong một số trường hợp, đó lại là khó khăn lớn nhất của nghiên cứu.</p>
+<p>Giai đoạn 3. <strong>Phân tích cấu trúc của hệ thống</strong></p>
+<ul>
+  <li>Xác định các cấp thứ bậc (trong hệ thống lớn).</li>
+  <li>Xác định các khía cạnh và ngôn ngữ (trong hệ thống phức tạp).</li>
+  <li>Xác định các quy trình và chức năng (trong hệ thống động).</li>
+  <li>Xác định và cụ thể hóa các quy trình quản lý và các kênh thông tin.</li>
+  <li>Cụ thể hóa các hệ thống con.</li>
+  <li>Cụ thể hóa các quy trình thường lệ (hoạt động hiện hành) và các quy trình phát triển (định hướng mục tiêu).</li>
+</ul>
+<p>Việc xác định tùy tiện các hệ thống con và các quy trình liên quan đến chúng tất yếu khiến một nghiên cứu hệ thống đi đến thất bại. Trong khi ở các hệ thống kỹ thuật — ít nhất là ở phần vật chất của chúng — cấu trúc của các hệ thống con có thể nhận ra rõ ràng, thì ở các hệ thống quản lý kinh tế, mọi mối liên hệ cấu trúc không chỉ không hiển nhiên mà còn bị che khuất mạnh mẽ bởi các quan hệ trực thuộc hành chính. Khi giải quyết các vấn đề hiện hành của quản lý kinh tế, cả về mặt khách quan — theo sự phân bổ định lượng của công sức — và về mặt chủ quan — trong tâm trí của nhân sự tổ chức — các quy trình thường lệ đều che lấp các mục tiêu và quy trình phát triển. Việc nhận diện và phân biệt các mục tiêu, quy trình đó với các hoạt động thường lệ không chỉ đòi hỏi phân tích logic chặt chẽ mà còn cần sự giao tiếp hiệu quả với nhân sự quản lý.</p>
+<p>Giai đoạn 4. <strong>Xác định mục tiêu tổng quát và tiêu chí của hệ thống</strong></p>
+<ul>
+  <li>Xác định các mục tiêu do siêu hệ thống áp đặt.</li>
+  <li>Xác định các mục tiêu và ràng buộc của môi trường.</li>
+  <li>Phát biểu mục tiêu tổng quát.</li>
+  <li>Xác định tiêu chí.</li>
+  <li>Phân rã mục tiêu và tiêu chí xuống các hệ thống con.</li>
+  <li>Tổng hợp tiêu chí tổng quát từ các tiêu chí của hệ thống con.</li>
+</ul>
+<p>Việc phát biểu mục tiêu tổng quát của một tổ chức, và đặc biệt là việc xây dựng tiêu chí đánh giá hiệu quả của hệ thống, hoàn toàn không thể thực hiện được thông qua thăm dò dư luận xã hội; đó là một thủ tục logic phức tạp trong khung khổ các khái niệm của lý thuyết hệ thống, tuy nhiên vẫn đòi hỏi sự hiểu biết tinh tế về kinh tế và công nghệ cụ thể của đối tượng nghiên cứu.</p>
+<p>Giai đoạn 5. <strong>Phân rã mục tiêu, xác định yêu cầu về nguồn lực và quy trình</strong></p>
+<ul>
+  <li>Phát biểu các mục tiêu bậc cao nhất.</li>
+  <li>Phát biểu các mục tiêu cho các quy trình hiện hành.</li>
+  <li>Phát biểu các mục tiêu về hiệu suất.</li>
+  <li>Phát biểu các mục tiêu phát triển.</li>
+  <li>Phát biểu các mục tiêu và ràng buộc bên ngoài.</li>
+  <li>Xác định yêu cầu về nguồn lực và quy trình.</li>
+</ul>
+<p>Ở các thực thể kinh tế lớn và phức tạp (và chính với các thực thể như vậy mà phân tích hệ thống xử lý), mục tiêu tổng quát của hệ thống ở cách quá xa những phương tiện cụ thể để đạt được nó, đến mức việc lựa chọn một lời giải đòi hỏi một khối lượng công việc rộng lớn, tốn nhiều công sức nhằm gắn kết mục tiêu với các phương tiện thực hiện nó thông qua việc phân rã mục tiêu. Công việc quan trọng và tốn nhiều công sức này, theo lệ thường, là trọng tâm của phân tích hệ thống. Nó đã sinh ra phương pháp cây mục tiêu, thành tựu công cụ chủ yếu — nếu không phải là duy nhất — của phân tích hệ thống.</p>
+<p>Giai đoạn 6. <strong>Xác định nguồn lực và quy trình; tổng hợp mục tiêu từ dưới lên</strong></p>
+<ul>
+  <li>Đánh giá công nghệ và năng lực hiện có.</li>
+  <li>Đánh giá trạng thái hiện tại của nguồn lực.</li>
+  <li>Đánh giá các dự án đang triển khai và đã lập kế hoạch.</li>
+  <li>Đánh giá khả năng tương tác với các hệ thống khác.</li>
+  <li>Đánh giá các yếu tố xã hội.</li>
+  <li>Tổng hợp mục tiêu từ dưới lên.</li>
+</ul>
+<p>Trong một số lượng đáng kể các trường hợp, đặc biệt khi xử lý các hệ thống phi sản xuất và nhất là phi kinh tế (y tế, giáo dục, và một loạt các lĩnh vực khác), không thể diễn đạt rõ ràng mục tiêu và tiêu chí hiệu quả phát triển thông qua lập luận logic. Con đường phân tích xuất phát từ “nhu cầu tự nhiên của con người” là không thể chấp nhận được đối với nhà nghiên cứu, do sự phát triển và biến đổi liên tục của chúng. Trong những trường hợp như vậy, cần phải tiến hành ở một mức độ nào đó theo con đường truyền thống: từ việc phân tích tình hình hiện tại và mức đã đạt được, qua các bước dự báo tuần tự.</p>
+<p>Giai đoạn 7. <strong>Dự báo và phân tích các điều kiện trong tương lai</strong></p>
+<ul>
+  <li>Phân tích các xu hướng ổn định trong sự phát triển của hệ thống.</li>
+  <li>Dự báo sự phát triển và biến đổi của môi trường.</li>
+  <li>Dự đoán sự xuất hiện của các yếu tố mới có ảnh hưởng mạnh đến sự phát triển của hệ thống.</li>
+  <li>Phân tích các nguồn lực trong tương lai.</li>
+  <li>Phân tích tổng hợp sự tương tác của các yếu tố phát triển trong tương lai.</li>
+  <li>Phân tích các khả năng dịch chuyển mục tiêu và tiêu chí.</li>
+</ul>
+<p>Phân tích hệ thống, theo lệ thường, xử lý các triển vọng phát triển, đôi khi là những triển vọng khá xa. Do đó, mối quan tâm lớn nhất thuộc về bất kỳ thông tin nào về tương lai — về các tình huống tương lai, nguồn lực, các phát hiện và phát minh khoa học - kỹ thuật sẽ làm biến đổi căn bản các hệ thống kinh tế và các quy trình diễn ra trong đó, cũng như các hệ thống giá trị xã hội trong tương lai sẽ ảnh hưởng đáng kể đến sự thay đổi cân bằng và, trong một số trường hợp, đến sự biến đổi mục tiêu và tiêu chí. Vì lý do này, dự báo — việc thu thập thông tin về tương lai bằng các phương pháp khoa học — là phần quan trọng nhất và chắc chắn là phần phức tạp nhất của phân tích hệ thống.</p>
+<p>Giai đoạn 8. <strong>Đánh giá mục tiêu và phương tiện</strong></p>
+<ul>
+  <li>Tính toán các đánh giá dựa trên tiêu chí.</li>
+  <li>Đánh giá sự phụ thuộc lẫn nhau giữa các mục tiêu.</li>
+  <li>Đánh giá tầm quan trọng tương đối của các mục tiêu.</li>
+  <li>Đánh giá mức độ khan hiếm và chi phí của nguồn lực.</li>
+  <li>Đánh giá ảnh hưởng của các yếu tố bên ngoài.</li>
+  <li>Tính toán các đánh giá tổng hợp.</li>
+</ul>
+<p>Một loạt các yếu tố xã hội, chính trị, đạo đức, luân lý và các yếu tố khác không thể bị bỏ qua trong phân tích hệ thống — vì đôi khi chúng có ảnh hưởng quyết định đến việc phát biểu mục tiêu và lựa chọn phương tiện thực hiện, cũng như đến việc đánh giá nguồn lực — về nguyên tắc không thể đo lường được bằng định lượng. Cách duy nhất để tính đến chúng là thu thập các đánh giá chủ quan của các chuyên gia và các nhà chuyên môn, cả về vấn đề đang xét lẫn về một phạm vi rộng các vấn đề liên quan lẫn nhau. Vì phân tích hệ thống, theo lệ thường, xử lý các vấn đề không có cấu trúc hoặc có cấu trúc yếu — tức là các vấn đề thiếu các đánh giá định lượng — việc thu thập các đánh giá chuyên gia và xử lý chúng dường như là một giai đoạn cần thiết của phân tích hệ thống đối với hầu hết các vấn đề.</p>
+<p>Giai đoạn 9. <strong>Lựa chọn phương án</strong></p>
+<ul>
+  <li>Phân tích tính tương thích của các mục tiêu.</li>
+  <li>Kiểm tra tính đầy đủ của các mục tiêu.</li>
+  <li>Loại bỏ các mục tiêu dư thừa.</li>
+  <li>Lập kế hoạch các phương án để đạt được từng mục tiêu riêng lẻ.</li>
+  <li>Đánh giá và so sánh các phương án.</li>
+  <li>Kết hợp một tập hợp các phương án có liên quan lẫn nhau.</li>
+</ul>
+<p>Sự khác biệt giữa nhu cầu và các phương tiện thỏa mãn chúng tạo thành một quy luật và là động lực quan trọng nhất của sự phát triển kinh tế. Vì khái niệm mục tiêu không thể tách rời khái niệm phương tiện để đạt được nó, điểm trung tâm của việc ra quyết định trong phân tích hệ thống là việc cắt tỉa mục tiêu — loại bỏ những mục tiêu được coi là không quan trọng hoặc thiếu phương tiện để đạt được — và lựa chọn các phương án cụ thể để đạt được một tập hợp liên kết các mục tiêu quan trọng nhất.</p>
+<p>Trong các nghiên cứu hệ thống thuộc loại “kỹ thuật” và có quy mô tương đối nhỏ, “lựa chọn phương án” được coi là nhiệm vụ quan trọng nhất, nếu không phải là nhiệm vụ duy nhất, của phân tích hệ thống. Trong các bài toán quản lý kinh tế, việc cắt tỉa cây mục tiêu và lựa chọn một tập hợp liên kết các phương án là một nhiệm vụ quan trọng, đặc biệt khi tiến bộ khoa học - kỹ thuật, cùng với sự thay đổi của các điều kiện môi trường, tạo ra một số lượng khổng lồ các biện pháp thay thế để đạt được một tập hợp các mục tiêu kinh tế. Các biện pháp này phải phù hợp với các ràng buộc về nguồn lực, vì quy luật phát triển có kế hoạch của nền kinh tế quốc dân đặt ra những giới hạn chặt chẽ đối với việc phân bổ nguồn lực nhằm hỗ trợ các hệ thống con riêng lẻ của nền kinh tế quốc dân.</p>
+<p>Giai đoạn 10. <strong>Chẩn đoán hệ thống hiện có</strong></p>
+<ul>
+  <li>Mô hình hóa quy trình công nghệ và kinh tế.</li>
+  <li>Tính toán năng lực tiềm năng và năng lực thực tế.</li>
+  <li>Phân tích các thất thoát về năng lực.</li>
+  <li>Xác định các thiếu sót trong tổ chức sản xuất và quản lý.</li>
+  <li>Xác định và phân tích các biện pháp cải thiện tổ chức.</li>
+</ul>
+<p>Các vấn đề quản lý kinh tế quốc dân được giải quyết bằng các phương pháp phân tích hệ thống không nảy sinh trong một khoảng trống mà trong các cơ quan quản lý đang thực sự tồn tại, thường là trong các phức hợp liên kết lẫn nhau của chúng. Nhiệm vụ của phân tích hệ thống, trong phần lớn trường hợp, không phải là tạo ra một cơ quan quản lý mới mà là cải thiện các cơ quan hiện có, định hướng chúng vào việc giải quyết vấn đề. Trong những trường hợp như vậy, cần có một phân tích chẩn đoán các cơ quan quản lý để xác định năng lực, thiếu sót và các điểm nghẽn của chúng trong việc thu thập, xử lý thông tin và ra quyết định, nhằm loại bỏ những thiếu sót này và định hướng hệ thống tốt hơn.</p>
+<p>Một hệ thống mới sẽ được triển khai một cách hiệu quả nếu nó tạo điều kiện thuận lợi cho công việc của cơ quan quản lý, giúp giải quyết những vấn đề cấp bách và thúc đẩy việc đạt được các mục tiêu trước mắt. Do đó, việc xác định các vấn đề quản lý hiện tại và các mục tiêu trước mắt cũng là đối tượng của khảo sát chẩn đoán và phân tích các cơ quan quản lý. Khảo sát này bao gồm việc thăm dò rộng rãi nhân sự của cơ quan quản lý đó, các đơn vị đối tác, các tổ chức cấp trên và các tổ chức cấp dưới, qua đó xác định và sau đó phân tích các thông tin cần thiết. Điều này tạo cơ sở để xây dựng một kế hoạch tổ chức có căn cứ vững chắc nhằm triển khai hệ thống mới được thiết kế.</p>
+<p>Giai đoạn 11. <strong>Xây dựng chương trình phát triển tổng hợp</strong></p>
+<ul>
+  <li>Phát biểu các biện pháp, dự án và chương trình.</li>
+  <li>Xác định mức độ ưu tiên của các mục tiêu và các biện pháp để đạt được chúng.</li>
+  <li>Phân bổ các lĩnh vực hoạt động.</li>
+  <li>Phân bổ các lĩnh vực thẩm quyền.</li>
+  <li>Xây dựng một kế hoạch tổng hợp các biện pháp trong khuôn khổ các ràng buộc về nguồn lực và thời gian.</li>
+  <li>Phân công cho các tổ chức, người quản lý và các bên thực hiện chịu trách nhiệm.</li>
+</ul>
+<p>Như đã lưu ý trước đó, các kết quả của phân tích hệ thống được thu được trong khung khổ các khái niệm hệ thống, và để chuyển sang việc lập kế hoạch thực tế các biện pháp, chúng phải được dịch sang ngôn ngữ của các phạm trù kinh tế. Kết quả của việc giải quyết các bài toán phân tích hệ thống cho các vấn đề kinh tế quốc dân lớn — bao gồm các kế hoạch nghiên cứu khoa học, phát triển, đầu tư vốn và xây dựng, cũng như phát triển các ngành và các vùng lãnh thổ — các chương trình phát triển tổng hợp được tạo ra. Các chương trình này được phân bổ theo thời gian, giao cho các bên thực hiện khác nhau; một cấu trúc quản lý và điều phối được thiết lập, và một hệ thống báo cáo trách nhiệm được tạo ra.</p>
+<p>Giai đoạn 12. <strong>Thiết kế một tổ chức để đạt được mục tiêu</strong></p>
+<ul>
+  <li>Xác định các mục tiêu của tổ chức.</li>
+  <li>Phát biểu các chức năng của tổ chức.</li>
+  <li>Thiết kế cấu trúc tổ chức.</li>
+  <li>Thiết kế các cơ chế thông tin.</li>
+  <li>Thiết kế các chế độ hoạt động.</li>
+  <li>Thiết kế các cơ chế khuyến khích vật chất và tinh thần.</li>
+</ul>
+<p>Trong một số trường hợp, việc triển khai các chương trình tổng hợp như vậy đòi hỏi phải tạo ra một cơ quan quản lý thường trực hoặc tạm thời; trong những trường hợp khác, mục tiêu của phân tích hệ thống là thiết kế lại một cơ quan quản lý đã có. Phân tích hệ thống có một loạt các phương pháp và kỹ thuật cụ thể để thiết kế các cơ quan quản lý hiệu quả, định hướng theo mục tiêu — nghĩa là tập trung vào việc tạo ra và sử dụng một hệ thống cụ thể trong nền kinh tế quốc dân.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Các phương pháp luận phân tích hệ thống</h2>
+    <ul>
+      <li><a href="/vi/methodology_sa.html">Phương pháp luận phân tích hệ thống</a></li>
+      <li><a href="/vi/quade_method.html">Phương pháp luận phân tích hệ thống của Quade</a></li>
+      <li><a href="/vi/optner_method.html">Phương pháp luận phân tích hệ thống của Optner</a></li>
+      <li><a href="/vi/young_method.html">Phương pháp luận phân tích hệ thống của Young</a></li>
+      <li><a href="/vi/golubkov_method.html">Phương pháp luận phân tích hệ thống của Golubkov</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Tài liệu</h2>
+    <ul>
+      <li><a href="/assets/systems_analysis_chernyak.pdf">Tải sách: Phân tích hệ thống trong quản lý kinh tế. Chernyak</a></li>
+      <li><a href="/vi/systems_analysis_book.html">Tải tài liệu về phân tích hệ thống</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Bài viết liên quan</h2>
+    <ul>
+      <li><a href="/vi/systems_analysis.html">Phân tích hệ thống</a></li>
+      <li><a href="/vi/decision_theory.html">Lý thuyết ra quyết định</a></li>
+      <li><a href="/vi/decision_making.html">Ra quyết định</a></li>
+      <li><a href="/vi/choice.html">Quyết định và lựa chọn</a></li>
+      <li><a href="/vi/management.html">Quản lý</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Đường dẫn điều hướng">
+    <a href="/vi/">Trang chủ</a> <span aria-hidden="true">/</span>
+    <a href="/vi/systems_analysis.html">Phân tích hệ thống</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Phương pháp luận của Chernyak</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Đổi giao diện"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/chernyak_method.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/vi/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Đổi giao diện"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710efddcf01e13',t:'MTc4ODczNTI5OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

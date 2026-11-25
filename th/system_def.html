@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>นิยามของระบบ</title>
+<meta name="description" content="แนวคิดนี้มีนิยามอยู่หลายสิบแบบ นิยามของแนวคิดเรื่อง “ระบบ” เปลี่ยนแปลงไปทั้งในด้านรูปแบบและเนื้อหา">
+<meta name="keywords" content="ระบบ,องค์ประกอบของระบบ,เซต,ความสัมพันธ์,ความเชื่อมโยง,องค์ประกอบ,คุณสมบัติ,การวิเคราะห์ระบบ,องค์ประกอบย่อย,เชิงระบบ">
+<link rel="canonical" href="https://systems-analysis.info/th/system_def.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/system_def.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/system_def.html">
+<link rel="alternate" hreflang="th" href="https://systems-analysis.info/th/system_def.html">
+<meta property="og:title" content="นิยามของระบบ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/th/system_def.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="แนวคิดนี้มีนิยามอยู่หลายสิบแบบ นิยามของแนวคิดเรื่อง “ระบบ” เปลี่ยนแปลงไปทั้งในด้านรูปแบบและเนื้อหา">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="th_TH">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/th/system_def.html#article",
+    "headline": "นิยามของระบบ",
+    "description": "แนวคิดนี้มีนิยามอยู่หลายสิบแบบ นิยามของแนวคิดเรื่อง “ระบบ” เปลี่ยนแปลงไปทั้งในด้านรูปแบบและเนื้อหา",
+    "url": "https://systems-analysis.info/th/system_def.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "th",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/th/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/th/system_def.html"
+    },
+    "keywords": [
+        "ระบบ",
+        "องค์ประกอบของระบบ",
+        "เซต",
+        "ความสัมพันธ์",
+        "ความเชื่อมโยง",
+        "องค์ประกอบ",
+        "คุณสมบัติ",
+        "การวิเคราะห์ระบบ",
+        "องค์ประกอบย่อย",
+        "เชิงระบบ"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "นิยามของระบบ",
+        "description": "A collection of dozens of definitions of the concept of 'system,' reflecting the development of systems theory — from a complex of interacting components to a set of elements with relations among them.",
+        "sameAs": [
+            "https://www.wikidata.org/entity/Q58778",
+            "https://en.wikipedia.org/wiki/System",
+            "https://systems-analysis.info/wiki/Определения_системы",
+            "https://systems-analysis.info/eng/Definitions_of_a_system"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "หน้าแรก",
+            "item": "https://systems-analysis.info/th/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "ทฤษฎีระบบ",
+            "item": "https://systems-analysis.info/th/system.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "นิยามของระบบ"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="การนำทางหลัก">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">เมนู</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/th/">หน้าแรก</a>
+        <span aria-hidden="true">·</span>
+        <a href="/th/sections.html">หมวดหมู่</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/th/books.html">หนังสือ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/th/catalog.html">สารบัญ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/system_def.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="สลับธีม"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="สลับแบบอักษร"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">นิยามของระบบ</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>แนวคิดนี้มีนิยามอยู่หลายสิบแบบ นิยามของแนวคิดเรื่อง <strong>ระบบ</strong> เปลี่ยนแปลงไปทั้งในด้านรูปแบบและเนื้อหา</p>
+<p><strong>ระบบ</strong> คือ</p>
+<ul>
+  <li>ส่วนประกอบที่ซับซ้อนของสิ่งที่มีปฏิสัมพันธ์กัน (ล. ฟอน แบร์ทาลันฟี)</li>
+  <li>เซตขององค์ประกอบที่มีความสัมพันธ์บางประการต่อกันและต่อสภาพแวดล้อม (ล. ฟอน แบร์ทาลันฟี)</li>
+  <li>องค์รวมที่ประกอบขึ้นจากหลายส่วน คือกลุ่มของคุณลักษณะ (ซี. เชอร์รี)</li>
+  <li>เซตขององค์ประกอบที่เชื่อมโยงถึงกัน แยกออกจากสภาพแวดล้อมและมีปฏิสัมพันธ์กับสภาพแวดล้อมในฐานะองค์รวม (ฟ. อี. เปเรกูดอฟ, ฟ. พี. ตาราเซนโก)</li>
+  <li>การจัดเรียง เซต หรือกลุ่มของสิ่งต่าง ๆ ที่เชื่อมโยงหรือสัมพันธ์กันในลักษณะที่รวมกันเป็นเอกภาพหนึ่งเดียว เป็นบูรณภาพ การจัดเรียงองค์ประกอบทางกายภาพที่เชื่อมโยงหรือสัมพันธ์กันในลักษณะที่ก่อรูปหรือทำหน้าที่เป็นองค์รวมหนึ่งเดียว (ดิสเตฟาโน)</li>
+  <li>การรวมกันขององค์ประกอบที่มีปฏิสัมพันธ์กัน จัดระเบียบขึ้นเพื่อบรรลุวัตถุประสงค์ที่ระบุไว้หนึ่งอย่างหรือมากกว่า (ISO/IEC 15288)</li>
+  <li>เซตจำกัดขององค์ประกอบเชิงหน้าที่และความสัมพันธ์ระหว่างองค์ประกอบเหล่านั้น ซึ่งแยกออกจากสภาพแวดล้อมตามวัตถุประสงค์ที่กำหนดไว้ภายในช่วงเวลาหนึ่ง (ว. น. ซากาตอฟสกี)</li>
+  <li>ภาพสะท้อนในจิตสำนึกของผู้กระทำ (นักวิจัย ผู้สังเกตการณ์) ต่อคุณสมบัติของวัตถุและความสัมพันธ์ระหว่างวัตถุเหล่านั้นในภารกิจของการวิจัยและการรับรู้ (ยู. อี. เชอร์เนียก)</li>
+  <li>ระบบ S ที่นิยามบนวัตถุ A โดยสัมพันธ์กับคุณสมบัติเชิงบูรณาการ (คุณภาพ) หมายถึงเซตขององค์ประกอบที่มีความสัมพันธ์เช่นนั้น อันก่อให้เกิดคุณสมบัติเชิงบูรณาการที่กำหนดขึ้น (อี. บี. อาโกชโควา, บี. ว. อัคลิบินินสกี)</li>
+  <li>กลุ่มขององค์ประกอบที่บูรณาการและมีปฏิสัมพันธ์กันอย่างสม่ำเสมอหรือพึ่งพากัน สร้างขึ้นเพื่อบรรลุวัตถุประสงค์เฉพาะ โดยที่ความสัมพันธ์ระหว่างองค์ประกอบถูกกำหนดไว้อย่างชัดเจนและมั่นคง และประสิทธิผลหรือหน้าที่โดยรวมของระบบมีค่ามากกว่าผลรวมอย่างง่ายขององค์ประกอบทั้งหมด (PMBOK)</li>
+  <li>อุปกรณ์ที่รับปัจจัยนำเข้าอย่างน้อยหนึ่งอย่างและสร้างผลผลิตอย่างน้อยหนึ่งอย่าง (เดรนิก)</li>
+  <li>อุปกรณ์ กระบวนการ หรือแผนผังที่ทำงานตามข้อกำหนดบางอย่าง หน้าที่ของระบบคือการดำเนินการตามเวลาต่อสารสนเทศ และ/หรือพลังงาน และ/หรือสสาร เพื่อสร้างสารสนเทศ และ/หรือพลังงาน และ/หรือสสาร (ดี. เอลลิส, ฟ. ลุดวิก)</li>
+  <li>นามธรรมทางคณิตศาสตร์ที่ทำหน้าที่เป็นแบบจำลองของปรากฏการณ์เชิงพลวัต (เอช. ฟรีแมน)</li>
+  <li>กลุ่มบูรณาการขององค์ประกอบที่มีปฏิสัมพันธ์กัน ออกแบบมาเพื่อการทำงานร่วมกันในการปฏิบัติหน้าที่ที่กำหนดไว้ล่วงหน้า (อาร์. กิบสัน)</li>
+  <li>เซตของวัตถุร่วมกับความสัมพันธ์ระหว่างวัตถุและระหว่างคุณลักษณะของวัตถุเหล่านั้น (เอ. ฮอลล์, อาร์. เฟเกน)</li>
+  <li>กลุ่มของสิ่งที่มีชีวิตหรือไม่มีชีวิต ซึ่งรับปัจจัยนำเข้าบางอย่างและดำเนินการกับปัจจัยเหล่านั้นเพื่อสร้างผลผลิตบางอย่าง โดยมีเป้าหมายเพื่อทำให้ฟังก์ชันบางอย่างของปัจจัยนำเข้าและผลผลิตมีค่าสูงสุด (อาร์. เคอร์ชเนอร์)</li>
+  <li>บริเวณที่มีขอบเขตในเชิงพื้นที่และเวลา ซึ่งส่วนประกอบต่าง ๆ เชื่อมโยงกันด้วยความสัมพันธ์เชิงหน้าที่ (เจ. มิลเลอร์)</li>
+  <li>ในมุมมองทางคณิตศาสตร์ คือส่วนหนึ่งของโลกที่ ณ เวลาใดเวลาหนึ่งสามารถอธิบายได้โดยการกำหนดค่าเฉพาะให้แก่เซตของตัวแปรชุดหนึ่ง มันไม่ใช่เพียงกลุ่มของหน่วย (อนุภาค บุคคล) ที่แต่ละหน่วยถูกควบคุมโดยกฎแห่งเหตุผลที่กระทำต่อหน่วยนั้น แต่เป็นผลรวมของความสัมพันธ์ระหว่างหน่วยเหล่านั้น ยิ่งความสัมพันธ์เชื่อมโยงกันแน่นแฟ้นมากเท่าใด ระบบที่เกิดจากความสัมพันธ์เหล่านั้นก็ยิ่งมีการจัดระเบียบมากขึ้นเท่านั้น (เอ. ราโปพอร์ท)</li>
+  <li>เซตของการกระทำ (ฟังก์ชัน) ที่เชื่อมโยงกันในเชิงเวลาและพื้นที่ ด้วยชุดของภารกิจเชิงปฏิบัติของการตัดสินใจและการประเมินพฤติกรรม กล่าวคือภารกิจของการจัดการ (เอส. เซนกุปตะ, อาร์. แอกคอฟฟ์)</li>
+  <li>คำที่ใช้เพื่อสื่อถึงแนวคิดที่แตกต่างกันอย่างน้อยสองแนวคิด ได้แก่ การจัดเรียงอย่างสม่ำเสมอหรือมีระเบียบ ซึ่งประกอบด้วยองค์ประกอบหรือส่วนต่าง ๆ ที่เชื่อมโยงกันและทำหน้าที่เป็นหนึ่งเดียว และกลุ่มหรือหมู่ขององค์ประกอบ (ส่วนต่าง ๆ) ที่จำเป็นสำหรับการปฏิบัติงานบางอย่าง (เอ. วิลสัน, เอ็ม. วิลสัน)</li>
+  <li>เซตที่ไม่ว่างเปล่าขององค์ประกอบที่มีอย่างน้อยสององค์ประกอบ โดยที่องค์ประกอบของเซตนี้มีความสัมพันธ์และการเชื่อมโยงบางประการต่อกัน (จี. โครเบอร์)</li>
+  <li>ระบบนามธรรม หรือเรียกสั้น ๆ ว่าระบบ ซึ่งเป็นเซตที่เชื่อมโยงกันบางส่วนของวัตถุนามธรรมอันประกอบเป็นองค์ประกอบของระบบ องค์ประกอบของระบบอาจมีทิศทางหรือไม่มีทิศทางก็ได้ จำนวนขององค์ประกอบอาจเป็นจำนวนจำกัดหรืออนันต์ องค์ประกอบแต่ละอย่างอาจนิยามได้ด้วยจำนวนตัวแปรพื้นฐานที่จำกัดหรืออนันต์ (แอล. ซาเดห์, ซี. เดโซเออร์)</li>
+  <li>เซตขององค์ประกอบที่กระทำการซึ่งเชื่อมโยงกัน (โอ. ลังเงอ)</li>
+  <li>รูปแบบใด ๆ ของการกระจายกิจกรรมในสายลำดับที่ถูกรับรู้โดยผู้สังเกตการณ์บางคนว่าเป็นแบบแผน (จี. แพสก์)</li>
+  <li>เซตขององค์ประกอบที่สัมพันธ์กันในรูปแบบใดรูปแบบหนึ่ง ซึ่งจัดเรียงโดยความสัมพันธ์ที่มีคุณสมบัติชัดเจน เซตนี้มีลักษณะเฉพาะคือเอกภาพที่แสดงออกในคุณสมบัติและหน้าที่โดยรวมของมัน (ว. ส. ตยุคติน)</li>
+  <li>ความหลากหลายของความสัมพันธ์และการเชื่อมโยงระหว่างองค์ประกอบของเซตหนึ่งซึ่งก่อให้เกิดเอกภาพที่สมบูรณ์ การเข้าใจระบบว่าเป็นเซตที่จัดระเบียบซึ่งก่อรูปเป็นเอกภาพที่สมบูรณ์นั้นสมเหตุสมผล (เอ. ดี. อูร์ซุล)</li>
+  <li>ส่วนประกอบที่ถูกคัดสรรอย่างเลือกสรรเข้าร่วม ซึ่งปฏิสัมพันธ์และความสัมพันธ์ระหว่างส่วนประกอบเหล่านั้นมีลักษณะของการเกื้อหนุนซึ่งกันและกันเพื่อให้ได้ผลลัพธ์ที่เป็นประโยชน์ตามที่มุ่งหมาย (พี. เค. อโนคิน)</li>
+  <li>กลุ่มขององค์ประกอบที่เป็นจริงหรือในจินตนาการซึ่งแยกออกจากส่วนที่เหลือของโลกไม่ว่าด้วยวิธีใดก็ตาม กลุ่มนี้จะเป็นระบบก็ต่อเมื่อ ความเชื่อมโยงที่มีอยู่ระหว่างองค์ประกอบเหล่านี้ถูกระบุไว้ชัดเจน แต่ละองค์ประกอบถือว่าแบ่งแยกไม่ได้ภายในตัวมันเอง ระบบมีปฏิสัมพันธ์กับโลกภายนอกในฐานะองค์รวม เมื่อพัฒนาไปตามเวลา กลุ่มนี้จะถือว่าเป็นระบบเดียวกันหากสามารถสร้างความสอดคล้องแบบหนึ่งต่อหนึ่งระหว่างองค์ประกอบของมันในช่วงเวลาต่าง ๆ ได้ ความสอดคล้องนี้ต้องเป็นแบบค่าเดียว ไม่จำเป็นต้องเป็นแบบหนึ่งต่อหนึ่งอย่างสมบูรณ์ ลำดับเวลาไม่จำเป็นต้องเป็นคุณสมบัติบังคับ เมื่อเกิดความแตกต่างขึ้น อาจถือว่าองค์รวมเป็นระบบเดียว หรืออาจแยกระบบย่อยออกจากกันภายในระบบก็ได้ (แอล. เอ. บลูเมนเฟลด์)</li>
+  <li>เซตของวัตถุที่มีความสัมพันธ์ที่กำหนดไว้ล่วงหน้าโดยมีคุณสมบัติคงที่เกิดขึ้นจริง นิยามคู่ตรงข้ามคือ ระบบในฐานะเซตของวัตถุที่มีคุณสมบัติกำหนดไว้ล่วงหน้าโดยมีความสัมพันธ์ระหว่างวัตถุเหล่านั้นคงที่ (เอ. ไอ. อูเยมอฟ)</li>
+</ul>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>ระเบียบวิธี</h2>
+    <ul>
+      <li><a href="/th/methodology_sa.html">ระเบียบวิธีการวิเคราะห์ระบบ</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>บทความที่เกี่ยวข้อง</h2>
+    <ul>
+      <li><a href="/th/system.html">ระบบ</a></li>
+      <li><a href="/th/system_terminus.html">แนวคิดเรื่องระบบ</a></li>
+      <li><a href="/th/system_ol.html">กฎเกณฑ์ของระบบ</a></li>
+      <li><a href="/th/systems_analysis.html">การวิเคราะห์ระบบ</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="เส้นทางนำทาง">
+    <a href="/th/">หน้าแรก</a> <span aria-hidden="true">/</span>
+    <a href="/th/system.html">ทฤษฎีระบบ</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">นิยามของระบบ</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="สลับธีม"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/system_def.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/th/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="สลับธีม"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710e0e4ced1e13',t:'MTc4ODczNTI1OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>运筹学：格维希阿尼</title>
+<meta name="description" content="推动运筹学发展的一大动因，是人们认识到复杂系统必须作为统一整体来研究和管理。本文介绍格维希阿尼所归纳的典型运筹学课题。">
+<meta name="keywords" content="运筹学,模型,解,课题,系统分析,管理,科学的,科学,方法,决策,问题,任务">
+<link rel="canonical" href="https://systems-analysis.info/zh/operation_research_gv.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_gv.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_gv.html">
+<link rel="alternate" hreflang="zh" href="https://systems-analysis.info/zh/operation_research_gv.html">
+<meta property="og:title" content="运筹学：格维希阿尼">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/zh/operation_research_gv.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="推动运筹学发展的一大动因，是人们认识到复杂系统必须作为统一整体来研究和管理。本文介绍格维希阿尼所归纳的典型运筹学课题。">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="zh_CN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/zh/operation_research_gv.html#article",
+    "headline": "运筹学：格维希阿尼",
+    "description": "推动运筹学发展的一大动因，是人们认识到复杂系统必须作为统一整体来研究和管理。本文介绍格维希阿尼所归纳的典型运筹学课题。",
+    "url": "https://systems-analysis.info/zh/operation_research_gv.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "zh",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/zh/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/zh/operation_research_gv.html"
+    },
+    "keywords": [
+        "运筹学",
+        "模型",
+        "解",
+        "课题",
+        "系统分析",
+        "管理",
+        "科学的",
+        "科学",
+        "方法",
+        "决策",
+        "任务"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "组织与管理",
+        "author": {
+            "@type": "Person",
+            "name": "Gvishiani D.M."
+        },
+        "datePublished": "1972",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Nauka"
+        },
+        "inLanguage": "ru"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "组织与管理",
+        "author": {
+            "@type": "Person",
+            "name": "Gvishiani D.M."
+        },
+        "datePublished": "1972",
+        "inLanguage": "ru"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://systems-analysis.info/zh/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "运筹学",
+            "item": "https://systems-analysis.info/zh/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "运筹学：格维希阿尼"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/zh/">首页</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/sections.html">栏目</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">维基</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/books.html">书籍</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/catalog.html">目录</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_gv.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Toggle theme"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Toggle font"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">运筹学：格维希阿尼</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>「运筹研究」之所以兴起，主要推动力在于人们认识到：对于具有明确目标的复杂过程（即作业），必须进行综合研究并寻求统一的解；因为对总课题各个部分分别求解，得到的只是彼此孤立的过程，而实践却要求所有局部解构成一个整体。</p>
+<p>最初，「运筹学」只限于研究如何把课题作为一个整体来分析，而不把它拆分成各个组成部分。这一时期研究的另一个特点，是采用「小组法」。其实质并不在于把与所研究作业有关的全部专家集中到一处，而在于组建一个掌握精确科学方法、又不受各门学科各自片面性局限的小组。因此，小组法同时反映了两个事实：其一，管理科学需要引入精确科学的方法；其二，在后来被称为「运筹学」的这一研究领域中，尚缺乏相应的方法（和专家）。</p>
+<p>此后，「运筹学」从不同专业的专家共同开展的活动，演变为科学与组织实践的一个独立分支，并在此过程中分化为两大方向。</p>
+<p>第一个方向是为管理中最常遇到的各类子课题建立数学模型，在这些模型中或多或少可以摆脱考虑参与作业的个别人员行为的必要性。在这里，「运筹学」数学理论的基本课题得以划分出来，从事这一问题域的学者也随之进一步专业化。</p>
+<p><strong>属于这类课题的，有管理者需要解决的大量课题，例如：</strong></p>
+<ul>
+  <li>库存管理，即在储存需要一定费用的条件下，确定所需「储备」资源（人力、物力、财力、原料等）的规模；</li>
+  <li>在各类使用者之间分配有限资源，而每一使用者利用这些资源的效率各不相同；</li>
+  <li>排队服务课题，即按照构成某一过程的明确次序来安排它们，并确定排队规则；</li>
+  <li>路线选择与工作在时间上的排序；</li>
+  <li>与更换陈旧设备有关的课题；</li>
+  <li>通过对各种可能性进行合理（而非穷举）的搜索来寻找解；</li>
+  <li>对策课题或博弈论课题，研究在下述情形下合理的行为策略：作业的结局不仅取决于主体的行为，还取决于目标与主体相冲突的对手的行为。</li>
+</ul>
+<p>这样，「运筹学」方法被应用于各种类型的作业与过程，并根据分析对象的不同而采用不同的途径和多样的数学工具（数学规划方法、组合模拟与统计模拟方法）。除数学工具之外，「运筹学」中也运用启发式方法。</p>
+<p>在制订分析有目的的行动（作业）以及主要以定量形式对解进行比较评价的方法时，「运筹学」以系统方法论为基础：按照这一方法论，所研究的现象被视为系统，即为达到确定目标而由相互作用的要素构成的集合。</p>
+<p>从「运筹学」的立场分析具体的作业或现象，包括：建立该现象的数学模型，分析模型并寻找解，检验模型与解对现象的适当性，对模型与解作必要的修正（「调整」），最后把所选定的解应用于实践。</p>
+
+<p>与该方法的数学课题相互关联（虽然形式上并不属于它们）的，是所谓计划与管理网络方法这一广阔领域。网络方法与网络系统的发展，同「运筹学」方法中研究排序模型的那一分支密切相关。这些方法为描述、模拟和分析复杂的多阶段作业找到了一种新的、十分便利的语言。属于这类方法的，特别有网络模拟与作业调节方法 CPM——「关键路径法」（Critical Path Method）和 PERT——「计划评审技术」（Program Evaluation and Review Technique）。</p>
+
+<p>各种形式化管理系统、长期计划工作方法、规划方法与预测方法的出现，是由于必须创造条件以便在下述环境中正确地作出决策：管理面对庞大的信息量和成千上万个因素，而在通常的管理组织形式下无法对它们进行核算、评价和综合。</p>
+
+<p>一些美国心理学家的研究表明，当作出决策需要考虑 10 个以上的变量或相互矛盾的因素，或者 20 个以上同一数量级的因素时，人就会感到困难。然而，既然最优解只能来自对全部因素的核算与分析，而不论处于该管理层级上的人能否胜任这一课题，客观上就产生了把问题划分为子问题、子课题的必要性。当时大多数规划系统所依据的主要原则，正是对课题作逻辑上的分解。其出发点是必须把因素的数目或信息的数量削减到人能够对其作出评价的程度。</p>
+
+<p>「运筹学」第二个方向的发展则有所不同：它所强调的与其说是管理课题的数学化和精确科学方法的引入，不如说是运用把作业作为一个整体来研究的原则，并借助「新鲜的」、「不带成见的」研究小组。系统工程（system engineering）的出现即与这一方向有关。应当指出，许多运用「运筹学」方法研究管理过程的学者，后来逐步超出了这类探索的界限。因此，他们对以该方法为基础的这门科学学科提出了越来越宽泛的定义，而这往往导致术语上的混乱。</p>
+
+<p>许多美国专家意识到，「运筹学」总体上虽然是走向创建新的管理科学的十分重要的一步，但它所涵盖的问题范围毕竟比较狭窄。此外，随着数学专业化的发展，出现了一种倾向：把「运筹学」看作应用数学的特殊分支，也就是不认为它构成一门具有特定研究对象的独立科学学科。</p>
+
+<p>因此，早在 20 世纪 50 年代初，人们就开始积极寻求更确切地界定这样一类管理课题的特性：解决它们需要运用数学方法，而这些课题本身却应归入组织与管理理论的对象。其结果，是把管理决策理论作为（管理科学范围内的）一门独立的科学学科划分出来；它被视为「运筹学」的进一步发展，而「运筹学」相应地被解释为若干特定的决策方式。然而在决策理论中（这正是它区别于「运筹学」之处），主要注意力放在决策过程本身、放在选择原则的形成、质量准则的制订以及确定符合这些原则的求解方式上。这一理论的拥护者断言，决策构成管理活动的核心，决定着管理活动的特点。</p>
+
+<p>这一领域的工作主要沿两个方向进行。第一个方向首先致力于对决策过程按其在现实集体中实际实现的样子进行数学模拟。第二个方向则把力量集中于制订能够求得最优解的算法。属于第一个方向的有各种「行为」研究，例如 E. 福格尔和 R. 卢斯的研究；属于第二个方向的则有统计决策理论、博弈论等方面的大量探讨。两个方向的代表人物在其著作中广泛运用数理逻辑、数理统计以及线性规划、非线性规划、动态规划和系统规划的工具。必须在不确定条件下评价某一决策的后果，这导致统计试验方法即「蒙特卡罗方法」的广泛使用。</p>
+
+<p>与此同时，在「新」学派内部也形成了另一种观点：管理的特殊性与各类系统活动的经济方面相关联，因而管理科学的注意力中心应当是经济现象的量化与数学模拟这一课题。这种观点催生了所谓分析与规划管理过程的计量经济学途径。</p>
+
+<p>对计量经济学途径的发展具有重大意义的，是苏联数学家、诺贝尔奖获得者 L. V. 康托罗维奇于 1939 年发现线性规划方法，这一领域的研究在很大程度上以此为基础。直到 10 年之后，美国数学家 G. 丹齐格才重新提出了这一方法。</p>
+
+<p>计量经济学途径的基础，是通过对现象与过程最典型特征的科学抽象，编制以图式形式反映某些经济现象或过程的模型。与经济模型不同，计量经济模型以数学形式表达。按照这一途径，在任何一个成熟的经济数学模型中都可以划分出四个不同的方面：</p>
+<ul>
+<li>它反映具有定性内容的一定经济现象，这些现象以某种计量单位表示。这些量在某种意义上就是模型的参数。</li>
+<li>模型中包含参数之间一定的数量联系与依赖关系。它们可以是确定所模拟过程结构的平衡关系式，也可以是把过程的结果同引起结果的原因联系起来的更为复杂的依赖关系。</li>
+<li>模型确定其参数在时间、空间和数量上的容许变化范围。这就是所谓加于数量依赖关系之上的约束条件。</li>
+<li>模型应当是一个由相互联系的参数、依赖关系和约束条件构成的、具有确定输入与输出的系统。对这种系统的管理，即在输出端得到确定的结果，应当通过对输入端施加某种影响来实现，而不干预其内部结构。</li>
+</ul>
+
+<p>计量经济模型的建立分为四个基本阶段。</p>
+<ul>
+<li>第一阶段是设定，即对基本经济变量进行形式化，并在初始假设与前提的基础上寻求数学方程。</li>
+<li>第二阶段是识别，即求出第一阶段设定所得方程中各参数的值。</li>
+<li>第三阶段是验证，即确定并选择用以评价设定与识别结果质量的准则，也就是评价模型对真实经济过程的适当程度。如果通过设定与识别得到的模型不适当，就要重新研究初始前提的合理性以及经济变量的选择与形式化。</li>
+<li>第四阶段是预测，即确定进入计量经济模型的各变量未来值的程序。</li>
+</ul>
+
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div class="links">
+    <div class="links-section">
+      <h2>运筹学</h2>
+      <ul>
+        <li><a href="/zh/operation_research.html">运筹学</a></li>
+        <li><a href="/zh/operation_research_caa.html">运筹学导论：丘奇曼、阿科夫、阿诺夫</a></li>
+        <li><a href="/zh/operation_research_as.html">运筹学基础：阿科夫、萨西尼</a></li>
+        <li><a href="/zh/operation_research_me.html">运筹学：莫德、埃尔马格拉比</a></li>
+        <li><a href="/zh/operation_research_ve.html">运筹学：文采尔</a></li>
+        <li><a href="/zh/operation_research_vg.html">运筹学原理：瓦格纳</a></li>
+        <li><a href="/zh/operation_research_book.html">运筹学文献</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/zh/">首页</a> <span aria-hidden="true">/</span>
+    <a href="/zh/operation_research.html">运筹学</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">运筹学：格维希阿尼</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Toggle theme"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_gv.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">语言</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/zh/map.html">网站地图</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710f73deae1e13',t:'MTc4ODczNTMxNw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

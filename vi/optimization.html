@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tối ưu hóa</title>
+<meta name="description" content="Tối ưu nghĩa là tốt nhất trong những điều kiện đã cho. Chất lượng được đánh giá bằng tiêu chí tối ưu, còn điều kiện được xác định dưới dạng ràng buộc đối với các tiêu chí bổ sung.">
+<meta name="keywords" content="Tối ưu hóa">
+<link rel="canonical" href="https://systems-analysis.info/vi/optimization.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/optimization.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/optimization.html">
+<link rel="alternate" hreflang="vi" href="https://systems-analysis.info/vi/optimization.html">
+<meta property="og:title" content="Tối ưu hóa">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/vi/optimization.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Tối ưu nghĩa là tốt nhất trong những điều kiện đã cho. Chất lượng được đánh giá bằng tiêu chí tối ưu, còn điều kiện được xác định dưới dạng ràng buộc đối với các tiêu chí bổ sung.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="vi_VN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/vi/optimization.html#article",
+    "headline": "Tối ưu hóa",
+    "description": "Tối ưu nghĩa là tốt nhất trong những điều kiện đã cho. Chất lượng được đánh giá bằng tiêu chí tối ưu, còn điều kiện được xác định dưới dạng ràng buộc đối với các tiêu chí bổ sung.",
+    "url": "https://systems-analysis.info/vi/optimization.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "vi",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/vi/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/vi/optimization.html"
+    },
+    "keywords": [
+        "Tối ưu hóa"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "Tối ưu hóa",
+        "description": "Finding the best solution under given conditions, where quality is assessed using an optimality criterion and conditions are specified as constraints.",
+        "sameAs": [
+            "https://www.wikidata.org/entity/Q141495",
+            "https://en.wikipedia.org/wiki/Mathematical_optimization",
+            "https://ru.wikipedia.org/wiki/Оптимизация_(математика)",
+            "https://systems-analysis.info/wiki/Оптимизация",
+            "https://systems-analysis.info/eng/Optimization"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Trang chủ",
+            "item": "https://systems-analysis.info/vi/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Lý thuyết ra quyết định",
+            "item": "https://systems-analysis.info/vi/decision_theory.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Tối ưu hóa"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Điều hướng chính">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/vi/">Trang chủ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/sections.html">Chuyên mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/books.html">Sách</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/catalog.html">Danh mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/optimization.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Đổi giao diện"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Đổi phông chữ"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Tối ưu hóa</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>Tối ưu</strong> nghĩa là tốt nhất trong những điều kiện đã cho. Chất lượng được đánh giá bằng tiêu chí tối ưu, còn điều kiện được xác định dưới dạng ràng buộc đối với các tiêu chí bổ sung.</p>
+<p>Khát vọng nâng cao hiệu suất trong lao động, hoạt động sáng tạo và bất kỳ hoạt động có mục tiêu nào về bản chất được thể hiện qua khái niệm tối ưu. Sự khác biệt giữa cách hiểu khoa học và cách hiểu thông thường về tính tối ưu là không đáng kể. Mặc dù các cụm từ như “tối ưu nhất” hay “hiệu quả tối đa với chi phí tối thiểu” không chính xác về mặt toán học, nhưng những cách diễn đạt như vậy vẫn truyền tải được ý tưởng mong muốn một cách tương đối. Khi cần tối ưu hóa cụ thể, người ta thường diễn đạt lại phát biểu của mình một cách chính xác hơn.</p>
+<p>Tối ưu hóa — trong toán học, khoa học máy tính và vận trù học — là bài toán tìm cực trị (cực tiểu hoặc cực đại) của hàm mục tiêu trong một miền nào đó của không gian vectơ hữu hạn chiều, bị giới hạn bởi một tập các đẳng thức và/hoặc bất đẳng thức tuyến tính và/hoặc phi tuyến.</p>
+<p><a href="/vi/model.html" class="text-link">Mô hình</a> tối ưu hóa được thiết kế nhằm xác định các tham số tối ưu (tốt nhất) của đối tượng được mô hình hóa theo một tiêu chí nào đó, hoặc để tìm chế độ điều khiển quá trình tối ưu (tốt nhất). Một số tham số của mô hình được xếp vào loại tham số điều khiển; bằng cách thay đổi chúng, có thể thu được các bộ giá trị tham số đầu ra khác nhau. Thông thường, các mô hình như vậy được xây dựng dựa trên một hoặc nhiều mô hình mô tả và bao gồm một tiêu chí cho phép so sánh các bộ giá trị tham số đầu ra khác nhau để chọn ra bộ tốt nhất. Các ràng buộc dưới dạng đẳng thức và bất đẳng thức, liên quan đến đặc tính của đối tượng hoặc quá trình đang xét, có thể được áp đặt lên miền giá trị của các tham số đầu vào. Mục đích của mô hình tối ưu hóa là tìm ra các tham số điều khiển khả thi sao cho tiêu chí lựa chọn đạt được “giá trị tốt nhất”.</p>
+<p>Bài toán được phát biểu dưới dạng mô hình toán học. Mô hình toán học chuẩn của vận trù học được trình bày theo cách phát biểu sau:</p>
+<p>Cực đại hóa hoặc cực tiểu hóa hàm mục tiêu, với điều kiện thỏa mãn các ràng buộc.</p>
+<p>Các phương án được gọi là tối ưu nếu, theo một dấu hiệu nào đó, chúng ưu việt hơn các phương án khác. Mỗi lựa chọn phương án tốt nhất đều mang tính cụ thể, vì nó dựa trên sự phù hợp với các tiêu chí đã được xác lập. Khi nói về một phương án tối ưu, người ta cần chỉ rõ các tiêu chí này (“tối ưu theo…”). Cái gì tối ưu theo tiêu chí này thì không nhất thiết tối ưu theo tiêu chí khác.</p>
+<p>Một lời giải khả thi là lời giải thỏa mãn tất cả các ràng buộc của mô hình. Trong một số trường hợp, số lượng lời giải khả thi có thể là vô hạn.</p>
+<p>Một lời giải tối ưu là lời giải, bên cạnh việc khả thi, còn cực đại hóa hoặc cực tiểu hóa hàm mục tiêu.</p>
+<p>Tối ưu hóa là việc cực đại hóa hoặc cực tiểu hóa hàm mục tiêu.</p>
+<p>Mô hình tối ưu hóa là mô hình ra quyết định chứa một thước đo hiệu quả (hàm mục tiêu) cần được tối ưu hóa, với điều kiện tuân theo các ràng buộc đã cho.</p>
+<p>Lời giải tối ưu là một tập hợp giá trị khả dĩ của các biến quyết định, giúp tối ưu hóa hàm mục tiêu của mô hình tối ưu hóa.</p>
+<p>Một số lượng lớn các bài toán lựa chọn trong thực tế được quy về việc tìm ra những phương án tốt nhất hoặc được ưa chuộng nhất, và thường xuyên là tìm ra một phương án tốt nhất duy nhất. Trong quá trình này, mỗi người ra quyết định có những quan niệm chủ quan riêng về điều gì là ưu tiên đối với họ trong một tình huống lựa chọn cụ thể.</p>
+<p>Nhiều bài toán cho phép xây dựng mô hình lựa chọn toán học, trong đó phương án tốt nhất được xác định bởi một hoặc nhiều tiêu chí hiệu quả (hoặc chất lượng) bằng số. Các tiêu chí này, được xác định bởi bài toán, là các hàm mục tiêu của các biến đại diện cho các thuộc tính của các phương án. Phương án được người ra quyết định ưa chuộng nhất khi đó chính là lựa chọn tối ưu, mang lại các giá trị cực trị của các thước đo hiệu quả trong những điều kiện đã cho.</p>
+<p>Một khía cạnh cơ bản khi phát biểu bài toán lựa chọn tối ưu là khả năng mô tả tình huống có vấn đề và sở thích của người ra quyết định dưới dạng định lượng. Điều này có nghĩa là, thứ nhất, các phương án lời giải khả dĩ (phương án, đối tượng, hướng hành động) được xác định bởi các thuộc tính định lượng (biến, tham số, đặc trưng) được đo bằng các thang đo số. Thứ hai, cần phải xác định các thước đo định lượng (tiêu chí tối ưu, thước đo hiệu quả, hàm mục tiêu, hàm giá trị), theo độ lớn của chúng mà chất lượng của phương án được chọn được đánh giá. Những tình huống như vậy là đặc trưng của các bài toán có cấu trúc tốt và các tình huống lựa chọn lặp lại điển hình của vận trù học và điều khiển tối ưu.</p>
+<p>Để phân tích các phương án khả dĩ nhằm giải quyết một vấn đề (các cách thức đạt được mục tiêu) và để lựa chọn (những) phương án tốt nhất trong số đó, người ta xây dựng các mô hình hình thức của lựa chọn tối ưu. Một mô hình cung cấp một cách biểu diễn đơn giản hóa của bài toán thực tế và phải phản ánh những phụ thuộc và mối quan hệ quan trọng nhất, tồn tại khách quan giữa các phương án, các thuộc tính mô tả của chúng, và các ràng buộc do các yếu tố có thể kiểm soát và không thể kiểm soát áp đặt. Việc xây dựng mô hình như vậy là nhiệm vụ của các chuyên gia tư vấn-phân tích, với sự tham gia của người ra quyết định. Khi xây dựng mô hình lựa chọn, cần phải cân bằng giữa tính đầy đủ và mức độ chi tiết của mô hình với độ chính xác cần thiết cho bài toán lựa chọn thực tế, cũng như với khối lượng thông tin cần thiết để tìm ra lời giải — cả thông tin đã có sẵn lẫn thông tin có thể thu thập thêm.</p>
+<p>Các bài toán tối ưu hóa là những bài toán toán học hoàn toàn hình thức. Ý nghĩa thực tiễn của lời giải của các bài toán như vậy phụ thuộc trực tiếp vào chất lượng của mô hình toán học ban đầu. Trong các hệ thống phức tạp, việc mô hình hóa toán học là khó khăn, mang tính gần đúng và không chính xác. <a href="/vi/system.html" class="text-link">Hệ thống</a> càng phức tạp thì càng cần thận trọng hơn khi tiếp cận việc tối ưu hóa nó.</p>
+<p>Từ góc độ phân tích hệ thống, thái độ đối với tối ưu hóa có thể được phát biểu như sau: đó là một công cụ mạnh mẽ để nâng cao hiệu suất, nhưng cần được sử dụng với sự thận trọng ngày càng tăng khi độ phức tạp của bài toán tăng lên.</p>
+<p>Mặc dù ý tưởng tối ưu hóa rõ ràng là hữu ích, thực tiễn đòi hỏi phải xử lý nó một cách thận trọng. Có những căn cứ đủ thuyết phục cho kết luận này.</p>
+<ol>
+  <li>Lời giải tối ưu thường tỏ ra không ổn định: những thay đổi tưởng như không đáng kể trong điều kiện của bài toán có thể dẫn đến việc lựa chọn các phương án khác biệt đáng kể.</li>
+  <li>Hệ thống đang xét là một bộ phận của một hệ thống lớn hơn nào đó, và việc tối ưu hóa cục bộ không nhất thiết mang lại kết quả giống như kết quả cần thiết cho hệ thống con khi tối ưu hóa toàn bộ hệ thống. Điều này đòi hỏi phải gắn kết các tiêu chí của hệ thống con với các tiêu chí của hệ thống, khiến việc tối ưu hóa cục bộ thường trở nên không cần thiết.</li>
+  <li>Các tiêu chí chỉ đặc trưng cho mục tiêu một cách gián tiếp — đôi khi tốt hơn, đôi khi kém hơn, nhưng luôn chỉ là gần đúng. Việc cực đại hóa tiêu chí tối ưu thường bị đánh đồng với mục tiêu, nhưng trên thực tế đây là hai điều khác nhau. Về bản chất, tiêu chí và mục tiêu quan hệ với nhau như mô hình và bản gốc, với tất cả những hệ quả kèm theo. Nhiều mục tiêu khó, thậm chí không thể mô tả được bằng định lượng.</li>
+  <li>Nếu không xác định đầy đủ tất cả các ràng buộc cần thiết, chúng ta có thể, đồng thời với việc cực đại hóa tiêu chí chính, thu được những tác dụng phụ không lường trước và không mong muốn.</li>
+</ol>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Phương pháp luận</h2>
+    <ul>
+      <li><a href="/vi/methodology_or.html">Phương pháp luận vận trù học</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Bài viết liên quan</h2>
+    <ul>
+      <li><a href="/vi/modelling.html">Mô hình hóa</a></li>
+      <li><a href="/vi/systems_analysis.html">Phân tích hệ thống</a></li>
+      <li><a href="/vi/operation_research.html">Vận trù học</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Đường dẫn điều hướng">
+    <a href="/vi/">Trang chủ</a> <span aria-hidden="true">/</span>
+    <a href="/vi/decision_theory.html">Lý thuyết ra quyết định</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Tối ưu hóa</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Đổi giao diện"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/optimization.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/vi/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Đổi giao diện"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710f211df51e13',t:'MTc4ODczNTMwMw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

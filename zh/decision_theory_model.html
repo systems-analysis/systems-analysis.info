@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>决策问题</title>
+<meta name="description" content="决策问题在于：在既有约束条件下形成能够化解问题情境的备选方案集合，并从中选出满足要求的唯一最优方案或若干优选方案。">
+<meta name="keywords" content="备选方案,决策,系统分析,约束条件,问题,目标,选择,准则,偏好">
+<link rel="canonical" href="https://systems-analysis.info/zh/decision_theory_model.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/decision_theory_model.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/decision_theory_model.html">
+<link rel="alternate" hreflang="zh" href="https://systems-analysis.info/zh/decision_theory_model.html">
+<meta property="og:title" content="决策问题">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/zh/decision_theory_model.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="决策问题在于：在既有约束条件下形成能够化解问题情境的备选方案集合，并从中选出满足要求的唯一最优方案或若干优选方案。">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="zh_CN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/zh/decision_theory_model.html#article",
+    "headline": "决策问题",
+    "description": "决策问题在于：在既有约束条件下形成能够化解问题情境的备选方案集合，并从中选出满足要求的唯一最优方案或若干优选方案。",
+    "url": "https://systems-analysis.info/zh/decision_theory_model.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "zh",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/zh/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/zh/decision_theory_model.html"
+    },
+    "keywords": [
+        "备选方案",
+        "决策",
+        "系统分析",
+        "约束条件",
+        "问题",
+        "目标",
+        "选择",
+        "准则",
+        "偏好"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "决策问题",
+        "description": "在既有约束条件下形成能够化解问题情境的备选方案集合，并从中选出最优者。",
+        "sameAs": [
+            "https://systems-analysis.info/wiki/Задача_принятия_решения",
+            "https://systems-analysis.info/eng/Decision_problem"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://systems-analysis.info/zh/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "决策理论",
+            "item": "https://systems-analysis.info/zh/decision_theory.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "决策问题"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/zh/">首页</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/sections.html">栏目</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">维基</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/books.html">书籍</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/catalog.html">目录</a>
+        <span aria-hidden="true">·</span>
+        <a href="/decision_theory_model.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Toggle theme"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Toggle font"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">决策问题</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>决策问题</strong>的提法</p>
+<p>决策问题在于：在既有约束条件下形成能够化解问题情境的可能方案集合，并从中选出满足所提要求的唯一最优方案或若干优选方案。形式上，决策问题 D 可以写成如下的概括形式：</p>
+<p>D = ⟨F, A, X, G, P⟩</p>
+<p>其中：</p>
+<p>F 是决策问题的提法，其中包括对所面临<a href="/zh/problem.html" class="text-link">问题</a>的实质性描述、必要时还包括其模型表示，以及所要达成目标的确定和对最终结果形式的要求；</p>
+<p>A 是作出选择所依据的可能方案集合。它们既可以是实际存在的方案——依问题的语境不同，表现为客体、候选者、达成目标的途径、行动、决定等等——也可以是理论上一切可能方案的假想集合，而这一集合甚至可能是无限的。只有当解决问题的可能方案不少于两个时，才谈得上选择；</p>
+<p>X 是描述各方案及其区别性特征的属性（特征、参数）集合。属性首先包括客观指标，它们刻画方案所固有的某些性质，通常可以测量；其次包括主观评价，这些评价通常按专门选定或构造的准则给出，这些准则反映方案中对选择参与者而言重要的特点；</p>
+<p>G 是限定问题可行解决方案范围的条件集合。约束既可以作实质性描述，也可以表述为对方案及／或其属性的某些形式要求。例如，可以是对某一属性取值的限制，可以是该属性在不同方案中相关程度（表现程度）的差异，也可以是实际存在的方案中某些属性取值无法同时并存；</p>
+<p>P 是一位或若干位决策者的偏好，它是评价和比较问题各可能解决方案、筛选可行方案、并找出最优方案或可接受方案的依据。为简化决策问题的提法，常常把描述决策者偏好的部分信息转化为约束条件。</p>
+<p>刻画问题情境的各种因素，习惯上分为两组：可控因素与不可控因素。</p>
+<ul>
+  <li>可控因素，其选择取决于决策者；实质上就是所设定的目标、达成目标的各种方案、对方案的主观评价，以及目标达成的程度。</li>
+</ul>
+<ul>
+  <li>不可控因素不取决于决策者。它们决定各方案的客观属性，并部分地确立对可能方案选择的约束。</li>
+</ul>
+<p><strong>各因素还可细分为：</strong></p>
+<ul>
+  <li>确定性因素，其精确特征已知及／或预先给定；</li>
+  <li>概率性因素（随机因素），其随机特征已知及／或预先给定；</li>
+  <li>不确定因素（未知因素），其特征界定含糊及／或未知，但有时其取值的变化范围是已知的。</li>
+</ul>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>相关文章</h2>
+    <ul>
+      <li><a href="/zh/decision_theory.html">决策理论</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/zh/">首页</a> <span aria-hidden="true">/</span>
+    <a href="/zh/decision_theory.html">决策理论</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">决策问题</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Toggle theme"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/decision_theory_model.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">语言</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/zh/map.html">网站地图</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710f7ce9e81e13',t:'MTc4ODczNTMxOA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

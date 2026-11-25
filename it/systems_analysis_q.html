@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Analisi dei sistemi: Quade</title>
+<meta name="description" content="L’analisi dei sistemi secondo E. Quade — un modo di guardare a un problema in cui il formalismo matematico svolge un ruolo ausiliario. Vengono descritte la struttura, la sequenza e gli elementi chiave dell’analisi.">
+<meta name="keywords" content="analisi dei sistemi,sistema,decisione,problemi,compiti,obiettivo,modello">
+<link rel="canonical" href="https://systems-analysis.info/it/systems_analysis_q.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/systems_analysis_q.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/systems_analysis_q.html">
+<link rel="alternate" hreflang="it" href="https://systems-analysis.info/it/systems_analysis_q.html">
+<meta property="og:title" content="Analisi dei sistemi: Quade">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/it/systems_analysis_q.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="L’analisi dei sistemi secondo E. Quade — un modo di guardare a un problema in cui il formalismo matematico svolge un ruolo ausiliario. Vengono descritte la struttura, la sequenza e gli elementi chiave dell’analisi.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="it_IT">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/it/systems_analysis_q.html#article",
+    "headline": "Analisi dei sistemi: Quade",
+    "description": "L’analisi dei sistemi secondo E. Quade — un modo di guardare a un problema in cui il formalismo matematico svolge un ruolo ausiliario. Vengono descritte la struttura, la sequenza e gli elementi chiave dell’analisi.",
+    "url": "https://systems-analysis.info/it/systems_analysis_q.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "it",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/it/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/it/systems_analysis_q.html"
+    },
+    "keywords": [
+        "analisi dei sistemi",
+        "sistema",
+        "decisione",
+        "problemi",
+        "compiti",
+        "obiettivo",
+        "modello"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Analysis for Military Decisions",
+        "author": {
+            "@type": "Person",
+            "name": "Quade E.S."
+        },
+        "datePublished": "1964",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Rand McNally"
+        },
+        "inLanguage": "it"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Analysis for Military Decisions",
+        "author": {
+            "@type": "Person",
+            "name": "Quade E.S."
+        },
+        "datePublished": "1964",
+        "inLanguage": "it"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://systems-analysis.info/it/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Analisi dei sistemi",
+            "item": "https://systems-analysis.info/it/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Analisi dei sistemi: Quade"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Navigazione principale">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/it/">Home</a>
+        <span aria-hidden="true">·</span>
+        <a href="/it/sections.html">Sezioni</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/it/books.html">Libri</a>
+        <span aria-hidden="true">·</span>
+        <a href="/it/catalog.html">Catalogo</a>
+        <span aria-hidden="true">·</span>
+        <a href="/systems_analysis_q.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Cambia tema"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Cambia carattere"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Analisi dei sistemi: Quade</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>«Analisi per le decisioni militari». Quade</strong></p>
+<p>Ci fidiamo dell’intuizione di una persona nell’area in cui essa può essere considerata un esperto. Ma quando si risolvono <a href="/it/problem.html" class="text-link">problemi</a> complessi riguardanti la struttura delle forze armate o lo sviluppo di equipaggiamenti militari, ci troviamo di fronte a un’area tanto vasta che non esistono veri esperti in essa. L’analisi dei sistemi richiede, di regola, di tenere conto di una moltitudine di fattori nelle più diverse aree della tecnologia, delle operazioni militari e della logistica — non solo dalla nostra parte, ma anche da quella dell’avversario — così come di fattori economici, politici e strategici e delle complesse connessioni tra essi. Nessuna singola persona può essere esperta in più di una o due parti del campo; nessuno può essere esperto nel campo nel suo insieme e nelle sue interrelazioni. Perciò non si può fare affidamento sull’intuizione non supportata di un singolo individuo.</p>
+<p>L’analisi dei sistemi non dovrebbe essere vista come l’antitesi del giudizio, ma come un quadro di riferimento che consente di utilizzare i giudizi di esperti in numerose parti del campo, al fine di ottenere risultati che vadano oltre qualsiasi singolo giudizio. Questo è l’<a href="/it/goal.html" class="text-link">obiettivo</a> dell’analisi dei sistemi e il suo potenziale.</p>
+<p>L’analisi dei sistemi è un modo di guardare a un problema. Il formalismo matematico e l’uso dei computer possono essere necessari o addirittura utili, ma potrebbero anche non esserlo. A volte può bastare una riflessione attenta sul problema. Ma in qualsiasi analisi legata alla preparazione di una decisione in condizioni di incertezza, indipendentemente dalla sua complessità, sono presenti determinati elementi. Questi elementi — un obiettivo o degli obiettivi, alternative o mezzi per raggiungere tali obiettivi, costi ovvero tutto ciò che deve essere impiegato per realizzare ciascuna alternativa, un <a href="/it/model.html" class="text-link">modello</a> ovvero una descrizione della dipendenza tra le alternative e ciò che esse realizzano e costano, e criteri in base ai quali viene scelta un’alternativa preferita — sono presenti in qualsiasi analisi il cui scopo sia influenzare la scelta di una linea d’azione. Questi elementi sono spesso difficili da individuare o definire chiaramente.</p>
+<p>L’analisi dei sistemi è un tentativo di individuare le domande importanti nella scelta di una linea d’azione e di fornire risposte a esse. Lo strumento più utile per rispondere a queste domande è spesso un modello matematico. A volte l’uso di due o tre modelli matematici risulta ancora più utile. Tuttavia, la creazione di tali modelli e il lavoro con essi non esaurisce affatto l’intera analisi. In effetti, porre domande utili, creare <a href="/it/system.html" class="text-link">sistemi</a> alternativi per il confronto, interpretare abilmente i risultati ottenuti dal confronto e collegare tali risultati ai problemi che hanno motivato lo studio sono, in misura maggiore, le fasi decisive del processo rispetto al lavoro con un modello. Questo viene spesso dimenticato, poiché il lavoro con un modello richiede la maggior parte del tempo e i metodi di lavoro sono facilmente spiegabili e trasferibili da uno studio all’altro.</p>
+</div>
+      </article>
+    </div>
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Sull’analisi dei sistemi</h2>
+    <ul>
+      <li><a href="/it/systems_analysis.html">Analisi dei sistemi</a></li>
+      <li><a href="/it/systems_analysis_golubkov.html">L’approccio sistemico nella pianificazione a lungo termine: Golubkov</a></li>
+      <li><a href="/it/systems_analysis_optner.html">Analisi dei sistemi per la soluzione di problemi aziendali e industriali: Optner</a></li>
+      <li><a href="/it/systems_analysis_pospelov.html">Analisi dei sistemi e pianificazione a lungo termine: Pospelov</a></li>
+      <li><a href="/it/systems_analysis_clelandking.html">Analisi dei sistemi e gestione dei progetti: Cleland, King</a></li>
+      <li><a href="/it/systems_analysis_nikanorov.html">Analisi dei sistemi e approccio sistemico: Nikanorov</a></li>
+      <li><a href="/it/systems_analysis_pt.html">Analisi dei sistemi: Peregudov, Tarasenko</a></li>
+      <li><a href="/it/systems_analysis_ch.html">Analisi dei sistemi in economia: Chernyak</a></li>
+      <li><a href="/it/systems_analysis_book.html">Scarica la letteratura sull’analisi dei sistemi</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Vai all’articolo</h2>
+    <ul>
+      <li><a href="/it/system.html">Sistema</a></li>
+      <li><a href="/it/system_terminus.html">Il concetto di sistema</a></li>
+      <li><a href="/it/system_def.html">Definizioni di sistema</a></li>
+      <li><a href="/it/methodology_sa.html">Metodologia dell’analisi dei sistemi</a></li>
+      <li><a href="/it/economics.html">Analisi dei sistemi in economia</a></li>
+      <li><a href="/it/systems_thinking.html">L’approccio sistemico</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Percorso di navigazione">
+    <a href="/it/">Home</a> <span aria-hidden="true">/</span>
+    <a href="/it/systems_analysis.html">Analisi dei sistemi</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Analisi dei sistemi: Quade</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Cambia tema"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/systems_analysis_q.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/it/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Cambia tema"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710a2a1d05a5ce',t:'MTc4ODczNTEwMA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chernyak módszertana</title>
+<meta name="description" content="Ju. I. Chernyak rendszerelemzési módszere 12 egymást követő szakaszból áll — a probléma elemzésétől és a rendszer meghatározásától a komplex fejlesztési program felépítéséig. Minden szakaszt részletesen bemutatunk.">
+<meta name="keywords" content="rendszerelemzés,Chernyak módszere,cél,rendszer,probléma,irányítás,döntés">
+<link rel="canonical" href="https://systems-analysis.info/hu/chernyak_method.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/chernyak_method.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/chernyak_method.html">
+<link rel="alternate" hreflang="hu" href="https://systems-analysis.info/hu/chernyak_method.html">
+<meta property="og:title" content="Chernyak módszertana">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/hu/chernyak_method.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Ju. I. Chernyak rendszerelemzési módszere 12 egymást követő szakaszból áll — a probléma elemzésétől és a rendszer meghatározásától a komplex fejlesztési program felépítéséig. Minden szakaszt részletesen bemutatunk.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="hu_HU">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/hu/chernyak_method.html#article",
+    "headline": "Chernyak módszertana",
+    "description": "Ju. I. Chernyak rendszerelemzési módszere 12 egymást követő szakaszból áll — a probléma elemzésétől és a rendszer meghatározásától a komplex fejlesztési program felépítéséig. Minden szakaszt részletesen bemutatunk.",
+    "url": "https://systems-analysis.info/hu/chernyak_method.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "hu",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/hu/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/hu/chernyak_method.html"
+    },
+    "keywords": [
+        "rendszerelemzés",
+        "Chernyak módszere",
+        "cél",
+        "rendszer",
+        "probléma",
+        "irányítás",
+        "döntés"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Systems Analysis in Economic Management",
+        "author": {
+            "@type": "Person",
+            "name": "Chernyak Yu.I."
+        },
+        "datePublished": "1975",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Ekonomika"
+        },
+        "inLanguage": "hu"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Systems Analysis in Economic Management",
+        "author": {
+            "@type": "Person",
+            "name": "Chernyak Yu.I."
+        },
+        "datePublished": "1975",
+        "inLanguage": "hu"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Főoldal",
+            "item": "https://systems-analysis.info/hu/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Rendszerelemzés",
+            "item": "https://systems-analysis.info/hu/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Chernyak módszertana"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Fő navigáció">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menü</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/hu/">Főoldal</a>
+        <span aria-hidden="true">·</span>
+        <a href="/hu/sections.html">Témakörök</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/hu/books.html">Könyvek</a>
+        <span aria-hidden="true">·</span>
+        <a href="/hu/catalog.html">Katalógus</a>
+        <span aria-hidden="true">·</span>
+        <a href="/chernyak_method.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Téma váltása"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Betűtípus váltása"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Chernyak módszertana</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Tekintettel a rendszerelemzés módszereivel megoldott problémák hatalmas és lényegében korlátlan sokféleségére, nehéz lenne elvárni egy olyan egységes eszköztár kidolgozását, amely minden esetre alkalmas. A kutatás különböző szakaszaiban — amely az intuitív és meglehetősen lazán megfogalmazott problémafelvetéstől halad az optimális megoldások szigorú matematikai módszerekkel történő kiválasztásáig — természetesen igen sokféle tudományos eszköztárat alkalmaznak. Ezért célszerűnek tűnik mindenekelőtt megállapítani a rendszerelemzés szakaszainak alapvető sorrendjét.</p>
+<p>A különböző szerzők által javasolt módszerek elemzése arra a következtetésre vezet, hogy a rendszerelemzés elvégzésének sorrendjében alapvető egység áll fenn, függetlenül a <a href="/hu/goal.html" class="text-link">céltól</a> vagy a vizsgált objektumtól. Mindazonáltal az eklektikus megközelítést ebben az esetben nem tartjuk kellően elfogadhatónak, és a rendszerelemzés szakaszainak új osztályozását javasoljuk. Ez figyelembe veszi a különböző osztályozások valamennyi fő szakaszát, követve a logikai sorrend elvét, és kapcsolódik a rendszerelemzés alapját képező rendszerelméleti alaptételekhez. A javasolt osztályozás alkalmasságát és kényelmét a vezetés valamennyi fő szintjén végzett rendszervizsgálatok sorozatában igazolták.</p>
+<p>A rendszerelemzés szakaszainak és feladatainak alapvető sorrendje</p>
+<ol>
+  <li>Probléma elemzése.</li>
+  <li>Rendszer meghatározása.</li>
+  <li>A rendszer struktúrájának elemzése.</li>
+  <li>Az általános cél és a rendszerkritérium megfogalmazása.</li>
+  <li>Célbontás, az erőforrás- és folyamatigények meghatározása.</li>
+  <li>Erőforrások és folyamatok azonosítása; célszintézis alulról felfelé.</li>
+  <li>Előrejelzés és a jövőbeli feltételek elemzése.</li>
+  <li>Célok és eszközök értékelése.</li>
+  <li>Alternatívák kiválasztása.</li>
+  <li>A meglévő rendszer diagnosztizálása.</li>
+  <li>Komplex fejlesztési program kidolgozása.</li>
+  <li>A célmegvalósítást szolgáló szervezet tervezése.</li>
+</ol>
+<p>A szakaszok leírása</p>
+<p>1. szakasz. <strong>Problémaelemzés</strong></p>
+<ul>
+  <li>Létezik-e a probléma?</li>
+  <li>A probléma pontos megfogalmazása.</li>
+  <li>A probléma logikai struktúrájának elemzése.</li>
+  <li>A probléma alakulása a múltban és a jövőben.</li>
+  <li>A probléma külső kapcsolatai más problémákkal.</li>
+  <li>A probléma alapvető megoldhatósága.</li>
+</ul>
+<p>Annak kérdése, hogy egy <a href="/hu/problem.html" class="text-link">probléma</a> valóban létezik-e, kiemelkedő fontosságú, mivel korántsem kivétel, hanem meglehetősen tipikus eset, hogy hatalmas erőfeszítéseket fordítanak nem létező problémák megoldására. A probléma helyes és pontos megfogalmazása minden rendszervizsgálat első és szükséges szakasza. Mint ismeretes, a probléma sikeres megfogalmazása a megoldás felével lehet egyenértékű.</p>
+<p>2. szakasz. <strong>Rendszer meghatározása</strong></p>
+<ul>
+  <li>A feladat pontosítása.</li>
+  <li>A megfigyelő pozíciójának meghatározása.</li>
+  <li>Az objektum meghatározása.</li>
+  <li>Az elemek azonosítása (a rendszer felbontási határainak meghatározása).</li>
+  <li>Alrendszerek azonosítása.</li>
+  <li>A környezet meghatározása.</li>
+</ul>
+<p>Egy <a href="/hu/system.html" class="text-link">rendszer</a> felépítéséhez a problémát világosan megfogalmazott feladatok halmazára kell bontani. Nagy rendszer esetén ezek a feladatok hierarchiát alkotnak; komplex rendszer esetén spektrumot alkotnak — vagyis egyetlen objektumra vonatkozóan teljesen eltérő feladatokat oldanak meg különböző nyelveken. A megfigyelő pozíciója alapvetően meghatározza a probléma megoldásának kritériumát. Az objektum meghatározása csak első pillantásra tűnik könnyű feladatnak; egyes esetekben a vizsgálat legnagyobb nehézségét jelenti.</p>
+<p>3. szakasz. <strong>A rendszer struktúrájának elemzése</strong></p>
+<ul>
+  <li>A hierarchiaszintek meghatározása (nagy rendszerekben).</li>
+  <li>Az aspektusok és nyelvek meghatározása (komplex rendszerekben).</li>
+  <li>A folyamatok és funkciók meghatározása (dinamikus rendszerekben).</li>
+  <li>Az irányítási folyamatok és információs csatornák azonosítása és pontosítása.</li>
+  <li>Az alrendszerek pontosítása.</li>
+  <li>A rutinfolyamatok (aktuális műveletek) és a fejlesztési folyamatok (célorientált) pontosítása.</li>
+</ul>
+<p>Az alrendszerek és a hozzájuk kapcsolódó folyamatok önkényes azonosítása elkerülhetetlenül kudarcra ítéli a rendszervizsgálatot. Míg a technikai rendszerekben — legalábbis anyagi részükben — az alrendszerek struktúrája világosan felismerhető, a gazdasági irányítás rendszereiben minden strukturális kapcsolat nemcsak hogy nem nyilvánvaló, hanem erősen el is rejtőzik az adminisztratív alárendeltségi viszonyok mögött. A gazdasági irányítás aktuális problémáinak megoldása során — mind objektíven, az erőfeszítés mennyiségi eloszlása szempontjából, mind szubjektíven, a szervezeti személyzet gondolkodásában — a rutinszerű eljárások elhomályosítják a fejlesztés céljait és folyamatait. E célok és folyamatok azonosítása és megkülönböztetése a rutinműveletektől nemcsak szigorú logikai elemzést, hanem az irányító személyzettel folytatott hatékony kommunikációt is igényel.</p>
+<p>4. szakasz. <strong>Az általános cél és a rendszerkritérium megfogalmazása</strong></p>
+<ul>
+  <li>A fölérendelt rendszer által meghatározott célok azonosítása.</li>
+  <li>A környezeti célok és korlátozások azonosítása.</li>
+  <li>Az általános cél megfogalmazása.</li>
+  <li>A kritérium meghatározása.</li>
+  <li>A célok és kritériumok lebontása az alrendszerekre.</li>
+  <li>Az általános kritérium szintézise az alrendszerek kritériumaiból.</li>
+</ul>
+<p>Egy szervezet általános céljának megfogalmazása, és különösen a rendszer eredményességének kritériumát megalapozó konstrukció, semmiképpen sem lehetséges közvéleménykutatás útján; ez a rendszerelméleti fogalmak keretében végzett összetett logikai eljárást jelent, amely ugyanakkor a vizsgált objektum sajátos gazdaságtanának és technológiájának finom ismeretét igényli.</p>
+<p>5. szakasz. <strong>Célbontás, az erőforrás- és folyamatigények meghatározása</strong></p>
+<ul>
+  <li>A legfelső szintű célok megfogalmazása.</li>
+  <li>Az aktuális folyamatok céljainak megfogalmazása.</li>
+  <li>A hatékonysági célok megfogalmazása.</li>
+  <li>A fejlesztési célok megfogalmazása.</li>
+  <li>A külső célok és korlátozások megfogalmazása.</li>
+  <li>Az erőforrás- és folyamatigények meghatározása.</li>
+</ul>
+<p>Nagy és komplex gazdasági egységekben (és éppen ilyen egységekkel foglalkozik a rendszerelemzés) a rendszer általános célja olyannyira távol áll a megvalósítás konkrét eszközeitől, hogy a megoldás kiválasztása kiterjedt, munkaigényes munkát igényel a cél és a megvalósítás eszközeinek célbontás útján történő összekapcsolásához. Ez a fontos és munkaigényes munka rendszerint a rendszerelemzés központi eleme. Ebből született meg a célfa módszere, amely a rendszerelemzés fő — ha nem az egyetlen — instrumentális eredménye.</p>
+<p>6. szakasz. <strong>Erőforrások és folyamatok azonosítása; célszintézis alulról felfelé</strong></p>
+<ul>
+  <li>A meglévő technológia és kapacitás felmérése.</li>
+  <li>Az erőforrások jelenlegi állapotának felmérése.</li>
+  <li>A megvalósítás alatt álló és tervezett projektek felmérése.</li>
+  <li>A más rendszerekkel való együttműködés lehetőségeinek felmérése.</li>
+  <li>A társadalmi tényezők felmérése.</li>
+  <li>Célszintézis alulról felfelé.</li>
+</ul>
+<p>Számos esetben, különösen a nem termelő, és különösen a nem gazdasági jellegű rendszerekkel (egészségügy, oktatás és számos más terület) foglalkozva nem lehetséges a célt és a fejlesztés eredményességének kritériumát logikai gondolkodás útján egyértelműen kifejezni. A „természetes emberi szükségletekből” kiinduló elemzési út a kutató számára elfogadhatatlan, mivel ezek folyamatosan fejlődnek és változnak. Ilyen esetekben bizonyos mértékig a hagyományos úton kell haladni: a jelenlegi helyzet és az elért szint elemzéséből kiindulva, egymást követő előrejelzéseken keresztül.</p>
+<p>7. szakasz. <strong>Előrejelzés és a jövőbeli feltételek elemzése</strong></p>
+<ul>
+  <li>A rendszer fejlődésének stabil tendenciáinak elemzése.</li>
+  <li>A környezet fejlődésének és változásának előrejelzése.</li>
+  <li>A rendszer fejlődését erősen befolyásoló új tényezők megjelenésének előrejelzése.</li>
+  <li>A jövőbeli erőforrások elemzése.</li>
+  <li>A jövőbeli fejlesztési tényezők kölcsönhatásának átfogó elemzése.</li>
+  <li>A célok és kritériumok lehetséges eltolódásainak elemzése.</li>
+</ul>
+<p>A rendszerelemzés rendszerint fejlesztési kilátásokkal foglalkozik, olykor meglehetősen távoliakkal. Ezért a legnagyobb érdeklődésre bármely, a jövőre vonatkozó információ tarthat számot — a jövőbeli helyzetekre, erőforrásokra, tudományos és műszaki felfedezésekre és találmányokra vonatkozó információk, amelyek alapvetően átalakítják a gazdasági rendszereket és az azokban végbemenő folyamatokat, valamint a jövőbeli társadalmi értékrendekre vonatkozó információk, amelyek jelentősen befolyásolják az egyensúly változásait, és számos esetben a célok és kritériumok átalakulását. Ezért az előrejelzés — a jövőre vonatkozó információk tudományos módszerekkel történő megszerzése — a rendszerelemzés legfontosabb és kétségtelenül legösszetettebb része.</p>
+<p>8. szakasz. <strong>Célok és eszközök értékelése</strong></p>
+<ul>
+  <li>A kritérium alapú értékelések kiszámítása.</li>
+  <li>A célok kölcsönös függőségének felmérése.</li>
+  <li>A célok relatív fontosságának felmérése.</li>
+  <li>Az erőforrások szűkösségének és költségének felmérése.</li>
+  <li>A külső tényezők hatásának felmérése.</li>
+  <li>Az átfogó számított értékelések kiszámítása.</li>
+</ul>
+<p>A társadalmi, politikai, erkölcsi, etikai és egyéb tényezők egész sora, amelyeket a rendszerelemzés során nem lehet figyelmen kívül hagyni — mivel olykor döntő hatást gyakorolnak a célok megfogalmazására és a megvalósítás eszközeinek kiválasztására, valamint az erőforrások felmérésére —, elvileg nem mérhető mennyiségileg. Az egyetlen módja ezek figyelembevételének a szakértők és specialisták szubjektív értékeléseinek megszerzése, mind a szóban forgó problémára, mind az egymással összefüggő problémák széles körére vonatkozóan. Mivel a rendszerelemzés rendszerint strukturálatlan vagy gyengén strukturált problémákkal foglalkozik — vagyis olyanokkal, amelyek mennyiségi értékelése hiányzik —, a szakértői értékelések megszerzése és feldolgozása a legtöbb probléma esetében a rendszerelemzés szükséges szakaszának tűnik.</p>
+<p>9. szakasz. <strong>Alternatívák kiválasztása</strong></p>
+<ul>
+  <li>A célok kompatibilitásának elemzése.</li>
+  <li>A célok teljességének ellenőrzése.</li>
+  <li>A felesleges célok kiküszöbölése.</li>
+  <li>Az egyes célok elérésére szolgáló alternatívák tervezése.</li>
+  <li>Az alternatívák értékelése és összehasonlítása.</li>
+  <li>Az egymással összefüggő alternatívák halmazának összekapcsolása.</li>
+</ul>
+<p>A szükségletek és kielégítésük eszközei közötti eltérés törvényszerűséget és a gazdasági fejlődés legfontosabb ösztönzőjét jelenti. Mivel a cél fogalma elválaszthatatlan az elérését szolgáló eszközök fogalmától, a rendszerelemzésben a döntéshozatal központi pontja a célok metszése — a jelentéktelennek ítélt, vagy a megvalósításhoz szükséges eszközökkel nem rendelkező célok kiküszöbölése —, valamint a legfontosabb célok egymással összefüggő halmazának eléréséhez szükséges konkrét alternatívák kiválasztása.</p>
+<p>A viszonylag kis léptékű, „mérnöki” típusú rendszervizsgálatokban az „alternatívák kiválasztása” a rendszerelemzés legfontosabb, ha nem az egyetlen feladatának számít. A gazdasági irányítás problémáiban a célfa metszése és az egymással összefüggő alternatívák halmazának kiválasztása fontos feladatot jelent, különösen mivel a tudományos és technológiai fejlődés, a változó környezeti feltételekkel együtt, hatalmas számú alternatív intézkedést generál a gazdasági célok egy halmazának eléréséhez. Ezeknek az intézkedéseknek illeszkedniük kell az erőforrás-korlátokhoz, mivel a népgazdaság tervszerű fejlődésének törvénye szigorú korlátokat szab a népgazdaság egyes alrendszereinek támogatására szolgáló erőforrások elosztására.</p>
+<p>10. szakasz. <strong>A meglévő rendszer diagnosztizálása</strong></p>
+<ul>
+  <li>A technológiai és gazdasági folyamat modellezése.</li>
+  <li>A potenciális és tényleges kapacitás kiszámítása.</li>
+  <li>A kapacitásveszteségek elemzése.</li>
+  <li>A termelés és irányítás szervezésében fellelhető hiányosságok azonosítása.</li>
+  <li>A szervezés javítására szolgáló intézkedések azonosítása és elemzése.</li>
+</ul>
+<p>A rendszerelemzés módszereivel megoldott népgazdasági irányítási problémák nem légüres térben merülnek fel, hanem a ténylegesen létező irányítási szerveken belül, rendszerint azok egymással összefüggő komplexumaiban. A rendszerelemzés feladata többnyire nem egy új irányítási szerv létrehozása, hanem a meglévők tökéletesítése, a problémamegoldás felé orientálva azokat. Ilyen esetekben az irányítási szervek diagnosztikai elemzésére van szükség, hogy azonosítsák képességeiket, hiányosságaikat és szűk keresztmetszeteiket az információgyűjtés és -feldolgozás, valamint a döntéshozatal terén, azzal a céllal, hogy megszüntessék e hiányosságokat, és jobban orientálják a rendszert.</p>
+<p>Egy új rendszer akkor valósul meg eredményesen, ha megkönnyíti az irányítási szerv munkáját, segít megoldani a sürgető problémákat, és előmozdítja a közvetlen célok elérését. Ezért az aktuális irányítási problémák és a közvetlen célok azonosítása szintén az irányítási szervek diagnosztikai felmérésének és elemzésének tárgyát képezi. Ez a felmérés az adott irányítási szerv, annak partnerei, felsőbb szervezetei és alárendelt szervezetei személyzetének tömeges megkérdezésével jár, amelynek révén a szükséges információkat azonosítják, majd elemzik. Ez képezi az alapját az újonnan megtervezett rendszer megvalósítására szolgáló, megalapozott szervezeti terv kidolgozásának.</p>
+<p>11. szakasz. <strong>Komplex fejlesztési program kidolgozása</strong></p>
+<ul>
+  <li>Intézkedések, projektek és programok megfogalmazása.</li>
+  <li>A célok és az elérésükre szolgáló intézkedések prioritásának meghatározása.</li>
+  <li>A tevékenységi területek elosztása.</li>
+  <li>A hatáskörök elosztása.</li>
+  <li>Az intézkedések átfogó tervének kidolgozása az erőforrás- és időbeli korlátokon belül.</li>
+  <li>Felelős szervezetekhez, vezetőkhöz és megvalósítókhoz rendelés.</li>
+</ul>
+<p>Amint korábban megjegyeztük, a rendszerelemzés eredményei rendszerszemléletű fogalmak keretében születnek, és ahhoz, hogy az intézkedések gyakorlati tervezésére áttérjünk, ezeket át kell fordítani a gazdasági kategóriák nyelvére. A jelentős népgazdasági kérdésekre — beleértve a tudományos kutatási, fejlesztési, beruházási és építési terveket, valamint az iparágak és területek fejlesztését — vonatkozó rendszerelemzési problémák megoldásának eredményeként komplex fejlesztési programok jönnek létre. Ezeket a programokat időben elosztják, különböző megvalósítókhoz rendelik; irányítási és koordinációs struktúrát hoznak létre, és beszámoltatási rendszert alakítanak ki.</p>
+<p>12. szakasz. <strong>A célmegvalósítást szolgáló szervezet tervezése</strong></p>
+<ul>
+  <li>A szervezeti célok meghatározása.</li>
+  <li>A szervezeti funkciók megfogalmazása.</li>
+  <li>A szervezeti struktúra tervezése.</li>
+  <li>Az információs mechanizmusok tervezése.</li>
+  <li>A működési módok tervezése.</li>
+  <li>Az anyagi és erkölcsi ösztönző mechanizmusok tervezése.</li>
+</ul>
+<p>Egyes esetekben az ilyen komplex programok megvalósítása állandó vagy ideiglenes irányítási szerv létrehozását igényli; más esetekben a rendszerelemzés célja egy adott irányítási szerv újratervezése. A rendszerelemzés rendelkezik a hatékony, célorientált irányítási szervek tervezésére szolgáló sajátos módszerek és technikák sorával — vagyis olyanokkal, amelyek egy adott rendszer létrehozására és hasznosítására összpontosítanak a népgazdaságon belül.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Rendszerelemzési módszertanok</h2>
+    <ul>
+      <li><a href="/hu/methodology_sa.html">Rendszerelemzési módszertan</a></li>
+      <li><a href="/hu/quade_method.html">Quade rendszerelemzési módszertana</a></li>
+      <li><a href="/hu/optner_method.html">Optner rendszerelemzési módszertana</a></li>
+      <li><a href="/hu/young_method.html">Young rendszerelemzési módszertana</a></li>
+      <li><a href="/hu/golubkov_method.html">Golubkov rendszerelemzési módszertana</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Irodalom</h2>
+    <ul>
+      <li><a href="/assets/systems_analysis_chernyak.pdf">Könyv letöltése: Rendszerelemzés a gazdasági irányításban. Chernyak</a></li>
+      <li><a href="/hu/systems_analysis_book.html">Rendszerelemzési szakirodalom letöltése</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Kapcsolódó cikkek</h2>
+    <ul>
+      <li><a href="/hu/systems_analysis.html">Rendszerelemzés</a></li>
+      <li><a href="/hu/decision_theory.html">Döntéselmélet</a></li>
+      <li><a href="/hu/decision_making.html">Döntéshozatal</a></li>
+      <li><a href="/hu/choice.html">Döntés és választás</a></li>
+      <li><a href="/hu/management.html">Irányítás</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Navigációs útvonal">
+    <a href="/hu/">Főoldal</a> <span aria-hidden="true">/</span>
+    <a href="/hu/systems_analysis.html">Rendszerelemzés</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Chernyak módszertana</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Téma váltása"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/chernyak_method.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/hu/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Téma váltása"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a371096d88b5a5ce',t:'MTc4ODczNTA3MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

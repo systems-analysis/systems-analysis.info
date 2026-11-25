@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>수학적 모델링 과정</title>
+<meta name="description" content="수학적 모델링 과정: 모델 구성, 소프트웨어 개발, 검증, 결과 분석. 현대 계산 모델의 단계와 특징을 설명한다.">
+<meta name="keywords" content="수학적 모델링,모델,계산 방법,알고리즘,검증,소프트웨어,시스템 분석,수치해석 방법">
+<link rel="canonical" href="https://systems-analysis.info/ko/mathmodeling_process.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/mathmodeling_process.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/mathmodeling_process.html">
+<link rel="alternate" hreflang="ko" href="https://systems-analysis.info/ko/mathmodeling_process.html">
+<meta property="og:title" content="수학적 모델링 과정">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/ko/mathmodeling_process.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="수학적 모델링 과정: 모델 구성, 소프트웨어 개발, 검증, 결과 분석. 현대 계산 모델의 단계와 특징을 설명한다.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="ko_KR">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/ko/mathmodeling_process.html#article",
+    "headline": "수학적 모델링 과정",
+    "description": "수학적 모델링 과정: 모델 구성, 소프트웨어 개발, 검증, 결과 분석. 현대 계산 모델의 단계와 특징을 설명한다.",
+    "url": "https://systems-analysis.info/ko/mathmodeling_process.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "ko",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/ko/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/ko/mathmodeling_process.html"
+    },
+    "keywords": [
+        "수학적 모델링",
+        "모델",
+        "계산 방법",
+        "알고리즘",
+        "검증",
+        "소프트웨어",
+        "시스템 분석",
+        "수치해석 방법"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "홈",
+            "item": "https://systems-analysis.info/ko/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "모델링",
+            "item": "https://systems-analysis.info/ko/modelling.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "수학적 모델링 과정"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="주 메뉴">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">메뉴</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/ko/">홈</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ko/sections.html">섹션</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ko/books.html">도서</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ko/catalog.html">카탈로그</a>
+        <span aria-hidden="true">·</span>
+        <a href="/mathmodeling_process.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="테마 전환"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="글꼴 전환"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">수학적 모델링 과정</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>오늘날 만들어지는 수학적 모델의 특징적인 점은 그 복잡성인데, 이는 모델링 대상 자체의 복잡성에서 비롯된다. 이로 인해 <a href="/ko/model.html" class="text-link">모델</a>은 점점 더 정교해지고, 서로 다른 지식 분야의 여러 이론을 동시에 활용해야 할 필요성이 생기며, 시뮬레이션 결과를 얻고 분석하기 위해 현대적인 계산 방법과 컴퓨팅 기술을 사용해야 할 필요성도 생긴다. 대상이 복잡한 경우, 단일 모델 안에서 모든 요구사항을 충족시키는 것은 대개 불가능하다. 대신, 동일한 대상에 대한 일련의 모델들(경우에 따라서는 서로 «내포된» 계층적 모델 집합)을 만들어야 하며, 이 각각의 모델은 자신에게 부여된 특정 과제를 해결하는 데 가장 적합하도록 구성된다.</p>
+<p>대규모 모델 구축에 대한 필요성은 모델 개발 비용을 줄이고 나중에 제거하기 어려운 오류의 발생 가능성을 낮추는 일련의 규칙과 접근법의 개발을 요구한다. 이러한 규칙의 집합을 수학적 모델 구축 기술이라고 부를 수 있다.</p>
+<p><strong>모든 수학적 모델의 구축 과정은 다음과 같은 일련의 단계로 나타낼 수 있다:</strong></p>
+<ol>
+  <li>모델링 대상에 대한 조사 및 모델 개발을 위한 과업지시서 작성(실질적 문제 설정);</li>
+  <li>문제의 개념적 정식화 및 수학적 정식화;</li>
+  <li>모델의 정성적 분석 및 정확성 검증;</li>
+  <li>해법의 선택 및 그 타당성 입증;</li>
+  <li>해의 도출;</li>
+  <li>해 알고리즘의 개발 및 그 특성 연구, 알고리즘의 소프트웨어 구현;</li>
+  <li>모델 검증;</li>
+  <li>구축된 모델의 실제 적용.</li>
+</ol>
+<p>수학적 모델, 특히 수치해석 방법과 컴퓨팅 기술을 사용하는 모델은 구축에 상당한 지적·재정적·시간적 자원을 요구한다. 따라서 새로운 모델을 개발하기로 하는 결정은 주어진 <a href="/ko/problem.html" class="text-link">문제</a>를 해결할 더 간단한 방법(예를 들어 기존 모델을 수정하는 방법)이 없을 때에만 내려진다.</p>
+<p>새로운 모델에 대한 필요성은 특히 서로 다른 지식 분야가 교차하는 지점에서 이루어지는 과학 연구와 관련하여 생겨날 수 있다. 새로운 수학적 모델을 구축하기로 결정되면, 발주 측은 이를 수행할 팀을 구한다. 일반적으로 프로젝트 팀에는 다양한 배경을 가진 전문가들, 즉 응용수학자, 모델링 대상에 정통한 해당 분야 전문가, 그리고 소프트웨어 개발자가 포함된다. 모델 구축 결정이 확정되고 프로젝트 팀이 구성되면 조사 단계가 시작된다. 이 단계의 주된 목표는 모델링 문제의 실질적 정식화를 준비하는 것이다. 실질적 문제 설정이란, 발주 측이 답을 얻고자 하는 모델링 대상에 관한 핵심 질문들을 평이한 언어로 표현한 목록이다.</p>
+<p>새로운 모델이 답해야 할 질문 목록을 준비하는 일 자체가 흔히 하나의 독립된 과제이며, 특정한 지식과 능력을 갖춘 전문가를 필요로 한다. 이들은 모델링 대상의 주제 영역을 충분히 이해하고 현대 계산수학과 컴퓨팅 기술의 가능성을 파악하고 있어야 할 뿐만 아니라, 사람들과 소통하는 능력, 즉 모델링 대상과 그 행동의 미묘한 부분에 대해 직관적인 «감»을 가진 실무 전문가들로부터 정보를 이끌어내는 능력도 갖추어야 한다. 이러한 전문가로는 예를 들어 시스템 분석가, 시스템 엔지니어, 경영과학자를 들 수 있다.</p>
+<p>수집된 모든 정보의 분석을 바탕으로, 문제 설정자는 향후 모델에 대한 요구사항을 정의해야 하는데, 한편으로는 발주 측을 만족시켜야 하고, 다른 한편으로는 주어진 기한과 예산 내에서 모델을 구현할 수 있어야 한다. 시스템 분석가(또는 경영과학자)는 모델링 대상에 관한 방대하고 느슨하게 구조화된 다양한 정보와, 발주 측이 모호하게 표현한 여러 요구와 바람 가운데서, 실제로 구현 가능한 본질적인 요소를 추려낼 수 있는 능력을 갖추어야 한다.</p>
+<p>모델링 대상에 관해 수집된 정보를 바탕으로, 시스템 분석가(엔지니어, 경영과학자)는 발주 측과 함께 실질적 문제 설정을 정식화하는데, 이는 대개 최종적인 것이 아니며 모델 개발 과정에서 다듬어지고 정교해질 수 있다. 다만 실질적 정식화에 대한 이후의 모든 조정과 변경은 사소하고 근본적이지 않은 성격에 그쳐야 한다.</p>
+<p>조사 단계에서 수집된 모든 자료, 즉 대상에 대해 축적된 지식, 실질적 문제 설정, 모델 구현과 결과 제시에 대한 추가 요구사항은 모델의 설계와 개발을 위한 과업지시서의 형태로 문서화된다. 과업지시서는 조사 단계를 마무리하는 문서이다. 조사 과정에서 대상에 관해 수집된 정보가 완전할수록, 실질적 문제를 더 명확하게 설정할 수 있고, 축적된 경험과 지식을 더 충분히 반영할 수 있으며, 모델 개발의 이후 단계에서 발생할 수 있는 어려움을 더 많이 피할 수 있다.</p>
+<p>실질적 정식화와 달리, 모델링 문제의 개념적 정식화는 일반적으로 발주 측 대표자의 참여 없이 프로젝트 팀 구성원들에 의해, 이전 단계에서 작성된 과업지시서와 모델링 대상 및 향후 모델에 대한 요구사항에 관한 기존 지식을 바탕으로 준비된다. 팀 구성원들이 모델링 대상에 관한 모든 가용 정보를 분석하고 함께 논의함으로써, 대상에 대한 개념 모델, 즉 각 팀 구성원이 형성한 인지 모델들의 종합을 만들어낼 수 있다.</p>
+<p>모델링 문제의 개념적 정식화란, 발주 측이 관심을 가지는 핵심 질문들을 특정 학문 분야의 용어로 표현한 목록과, 모델링 대상의 속성과 행동에 관한 일련의 가설을 함께 제시한 것이다.</p>
+<p>개념적 정식화를 작성하는 데 있어 가장 큰 어려움은 서로 다른 학문 분야가 교차하는 모델에서 발생한다. 동일한 대상을 기술하는 데 사용되는 전통, 개념, 언어의 차이는 학제 간 모델을 만드는 데 매우 심각한 장애가 된다.</p>
+<p>개념적 정식화가 완성되면 모델링 문제의 수학적 정식화를 도출할 수 있는데, 여기에는 모델링 대상의 행동과 속성을 기술하는 일련의 수학적 관계식이 포함된다.</p>
+<p>모델링 문제의 수학적 정식화란, 모델링 대상의 행동과 속성을 기술하는 수학적 관계식의 집합이다.</p>
+<p>수학적 모델은 모든 검증 절차가 긍정적인 결과로 수행되었을 때 정확하다고 간주된다: 차원 분석, 크기 등급 검사, 의존관계의 성격 검사, 극한 사례 분석, 경계조건, 물리적 의미, 그리고 수학적 완결성. 수학적 정식화는 원래의 문제를 잘 개발된 해법이 존재하는 순수한 수학적 문제로 환원하기 때문에 개념적 정식화보다 훨씬 더 추상적이다.</p>
+<p>수학적 모델의 «핵심»을 이루는 문제를 해결하는 모든 방법은 해석적 방법과 알고리즘적(수치적) 방법으로 나눌 수 있다.</p>
+<p>해석적 해를 이용해 수치적 결과를 얻는 경우에도 컴퓨터로 구현되는 대응 알고리즘의 개발이 종종 요구된다는 점에 유의해야 한다.</p>
+<p>다만 이 경우 초기 해는 해석적 표현식(또는 일련의 표현식)의 형태를 취한다. 이에 반해 알고리즘적 방법에 기반한 해는 근본적으로 해당 문제의 정확한 해석적 해로 환원될 수 없다.</p>
+<p>특정 연구 방법의 선택은 프로젝트 팀 구성원의 자격과 경험에 크게 좌우된다. 해석적 방법은 결과의 후속 분석에 더 편리하지만 비교적 단순한 모델에만 적용할 수 있다. 수학적 문제가(단순화된 정식화에서라도) 해석적 해를 허용한다면, 그 해는 수치해보다 의심할 여지 없이 선호된다.</p>
+<p>알고리즘적 방법은 문제를 컴퓨팅 기술을 이용한 계산 실험을 수행하는 알고리즘으로 환원한다. 이러한 실험에서 모델링의 정확도는 선택된 방법과 그 매개변수에 결정적으로 좌우된다. 알고리즘적 방법은 일반적으로 구현에 더 많은 노력이 필요하며, 프로젝트 팀 구성원이 계산수학에 대한 탄탄한 지식, 전문 소프트웨어의 방대한 라이브러리, 강력한 컴퓨팅 자원을 갖출 것을 요구한다.</p>
+<p>수치해석 방법은 잘 정식화된(well-posed) 수학적 문제에만 적용 가능하며, 이는 수학적 모델링에서 그 활용을 상당히 제한한다. 모든 수치해석 방법에 공통되는 점은 수학적 문제를 유한차원 문제로 환원한다는 것이다. 이는 대개 원래 문제를 이산화함으로써, 즉 연속 변수의 함수를 이산 변수의 함수로 대체함으로써 이루어진다. 어떤 수치해석 방법을 적용하더라도 결과에는 필연적으로 오차가 도입된다. 원래 문제를 수치적으로 해결할 때 발생하는 오차의 주요 구성요소는 세 가지로 구분할 수 있다: 입력 자료(초기조건 및 경계조건, 방정식의 계수와 우변)를 부정확하게 지정함으로써 생기는 고유 오차; 원래 문제를 이산적 대응물로 전환함으로써 생기는 이산화 오차; 그리고 컴퓨터에서 수를 유한한 정밀도로 표현함으로써 생기는 반올림 오차이다.</p>
+<p>구체적인 계산 알고리즘에 대한 자연스러운 요구사항은 이 세 가지 유형의 오차가 크기 등급 면에서 서로 일관되어야 한다는 것이다.</p>
+<p>수치적, 즉 근사적 방법은 항상 계산 알고리즘의 형태로 구현된다. 따라서 알고리즘 일반에 적용되는 모든 요구사항은 계산 알고리즘에도 적용된다. 무엇보다 먼저, 알고리즘은 실행 가능해야 한다. 즉 허용 가능한 계산 시간 내에 문제를 해결할 수 있어야 한다. 알고리즘의 중요한 특성 중 하나는 그 정확도, 즉 유한한 횟수의 연산으로 원래 문제의 해를 주어진 정밀도로 얻을 수 있는 능력이다.</p>
+<p>알고리즘의 실행 시간은 지정된 정확도를 달성하는 데 필요한 연산 횟수에 좌우된다. 대개 어떤 수학적 문제에 대해서도 원하는 정확도의 해를 산출하는 여러 알고리즘을 제안할 수 있지만, 그 연산 횟수는 서로 다르다. 동일한 정확도를 달성하는 데 더 적은 연산을 요구하는 알고리즘을 더 경제적, 즉 더 효율적이라고 부른다.</p>
+<p>계산 알고리즘이 실행되는 동안 각 계산 단계마다 일정한 오차가 발생한다. 이 오차는 단계를 거듭할수록 증가할 수도 있고 증가하지 않을 수도 있으며(경우에 따라서는 감소할 수도 있다). 계산 과정에서 오차가 한없이 커진다면 그 알고리즘은 불안정하다, 즉 발산한다고 말한다. 그렇지 않다면 그 알고리즘은 안정적이다, 즉 수렴한다고 말한다.</p>
+<p>수치해석 방법의 엄청난 다양성은 각각의 구체적인 경우에서 특정 방법을 선택하는 일을 상당히 어렵게 만든다. 주어진 모델을 구현하는 데 여러 대안적인 알고리즘적 방법을 사용할 수 있으므로, 구체적인 방법의 선택은 그 모델에 대해 효율성, 안정성, 결과의 정확도 측면에서 가장 적합한 방법이 무엇인지, 그리고 프로젝트 팀 구성원들에게 가장 익숙한 방법이 무엇인지를 고려하여 이루어진다.</p>
+<p>오늘날 다양한 연구, 설계·공학, 관리 과제를 해결하는 데 사용되는 여러 소프트웨어 시스템의 구축에 있어, 수학적 모델은 일반적으로 그 기반을 이룬다. 이로부터 모델을 컴퓨터 프로그램으로 구현해야 할 필요성이 생겨난다. 신뢰할 수 있고 효율적인 소프트웨어를 개발하는 과정은 수학적 모델 구축의 앞선 모든 단계 못지않게 복잡하다. 이 과제를 성공적으로 해결하는 것은 현대적인 프로그래밍 언어와 기술을 능숙하게 다루고, 컴퓨팅 역량과 가용 소프트웨어, 계산수학 방법 구현의 세부사항을 잘 알고 있을 때에만 가능하다.</p>
+<p><strong>소프트웨어 개발 과정은 여러 단계로 나눌 수 있다:</strong></p>
+<ul>
+  <li>소프트웨어 개발을 위한 과업지시서 작성;</li>
+  <li>소프트웨어 시스템의 구조 설계;</li>
+  <li>알고리즘의 코딩;</li>
+  <li>테스트 및 디버깅;</li>
+  <li>유지보수 및 운용.</li>
+</ul>
+<p>소프트웨어 개발을 위한 과업지시서는 사양서(명세서)의 형태로 문서화된다. 설계 단계에서는 소프트웨어 시스템의 전체 구조가 형성된다. 프로그램 전체는 소프트웨어 모듈로 나뉜다. 각 모듈에 대해 기능 요구사항이 정식화되고 그 기능을 구현하는 알고리즘이 개발된다. 모듈 간의 상호작용 체계, 즉 소프트웨어 시스템의 데이터 흐름도가 정의된다. 테스트 계획이 수립되며, 개별 모듈 및 시스템 전체에 대한 테스트용 입력 자료가 지정된다.</p>
+<p><strong>수학적 모델을 구현하는 대부분의 프로그램은 세 가지 주요 부분으로 구성된다:</strong></p>
+<ul>
+  <li>전처리기(모델 입력 데이터의 준비 및 검증);</li>
+  <li>계산부(문제 해결, 계산 실험 수행);</li>
+  <li>후처리기(결과의 시각화 및 제시).</li>
+</ul>
+<p>현대적인 프로그래밍 기술을 채택하는 데 상당한 중요성을 두어야 한다. 이러한 기술의 목적은 무엇보다도 소프트웨어의 신뢰성을 향상시키고 개발자의 생산성을 높이는 것이다. 소프트웨어 프로젝트가 진지하고 대규모일수록, 현대적인 프로그래밍 기술을 적용하는 문제는 더욱 중요해진다. 이러한 문제를 소홀히 하면 상당한 시간 초과와 소프트웨어 시스템의 신뢰성 저하로 이어질 수 있다.</p>
+<p>특정 유형의 문제를 해결하기 위한 소프트웨어 시스템의 신뢰성과 짧은 개발 기간을 확보하는 데 있어 결정적인 요인은, 서로 호환되는 소프트웨어 모듈로 잘 구축된 라이브러리를 보유하고 있는지 여부이다. 표준 소프트웨어 구성요소를 최대한 활용할 때 프로그램은 더 신뢰성 있고 더 빠르게 개발될 수 있다.</p>
+<p>수학적 모델의 적합성이란, 개발된 모델에서 얻은 결과가 실험 자료 또는 기준 문제의 결과와 일치하는 정도를 말한다.</p>
+<p><strong>모델 검증은 두 가지 목적에 이바지한다:</strong></p>
+<ul>
+  <li>개념적 정식화 및 수학적 정식화 단계에서 세운 일련의 가설의 타당성을 확인하는 것. 가설 검증에 착수하는 것은 해법이 검증되고 소프트웨어에 대한 포괄적인 디버깅 및 모든 오류와 충돌의 제거가 완료된 이후에만 이루어져야 한다;</li>
+  <li>결과의 정확도가 과업지시서에 명시된 정확도에 부합하는지를 확인하는 것.</li>
+</ul>
+<p>구축된 수학적 모델의 검증은 실제 대상에 관한 가용 실험 자료와의 비교, 또는 이전에 만들어져 이미 검증된 다른 모델의 결과와의 비교를 통해 수행된다. 전자의 경우는 실험과의 비교에 의한 검증이라 하고, 후자의 경우는 기준 문제의 결과와의 비교라고 한다.</p>
+<p>모델링 정확도에 관한 문제는 모델에 부여된 요구사항과 그 목적에 좌우된다. 또한 실험 결과의 정확도나 기준 문제 정식화의 특성도 고려해야 한다. 대략적이고 크기 등급 수준의 계산을 목적으로 하는 모델의 경우, 10~15%의 정확도로도 만족스럽다고 간주된다. 제어 및 모니터링 <a href="/ko/system.html" class="text-link">시스템</a>에 사용되는 모델의 경우, 요구되는 정확도는 1~2% 또는 그 이상일 수 있다.</p>
+<p>모델의 적합성에 문제가 발생할 경우, 수정 작업은 모델링 결과와 실험 결과 간의 불일치가 발생할 수 있는 모든 원인에 대한 체계적인 분석에서 시작해야 한다. 우선 모델을 검토하여 여러 가변 매개변수 값(초기조건 및 경계조건, 모델링 대상의 속성을 특징짓는 매개변수)에 대해 그 적합도를 평가해야 한다. 연구자가 관심을 가지는 매개변수 범위에서 모델이 부적합하다면, 모델의 상수와 초기 매개변수 값을 정교화해볼 수 있다. 그럼에도 긍정적인 결과를 얻지 못한다면, 모델을 개선할 유일하게 남은 방법은 채택된 가설 체계를 재검토하는 것이다. 이러한 결정은 사실상 모델 개발 과정의 두 번째 단계로 되돌아가는 것을 의미하며, 수학적 정식화뿐 아니라 해법(예를 들어 해석적 방법에서 수치적 방법으로의 전환), 소프트웨어의 전면적인 재작업, 그리고 모델 검증의 새로운 주기까지 중대한 변경을 초래할 수 있다. 따라서 채택된 가설 체계를 재검토하기로 하는 결정은 신중하게 저울질되어야 하며, 모델의 적합성을 개선할 다른 모든 방법이 소진되었을 때에만 내려져야 한다.</p>
+<p>기술적(記述的) 모델은 주어진 현상이나 과정에서 연구 대상이 되는 매개변수를 특성화하고, 그 매개변수의 변화를 지배하는 규칙성을 연구하기 위해 설계된다. 이러한 모델은 다양한 입력 자료 및 운용 조건의 조합 하에서 연구 대상의 속성과 행동을 연구하는 데, 최적화 모델을 구축하는 데, 그리고 복잡한 시스템의 시뮬레이션 모델을 구축하는 데 사용될 수 있다.</p>
+<p>연구 목적으로 개발된 모델은 일반적으로 외부 사용자에게 배포하기 위한 소프트웨어 시스템 수준까지는 완성되지 않는다. 이러한 모델의 수명은 대개 해당 분야의 연구 프로그램 기간으로 한정된다. 이러한 모델은 탐색적 성격, 새로운 계산 절차와 알고리즘의 사용, 그리고 미완성된 사용자 인터페이스를 특징으로 한다.</p>
+<p>이후 외부 사용자에게 배포하거나 상업적으로 출시하기 위해 개발된 모델 및 그것을 기반으로 구축된 소프트웨어 시스템은 잘 개발된 사용자 친화적 인터페이스와 강력한 전처리기 및 후처리기를 특징으로 한다. 이러한 모델은 대개 검증되고 잘 확립된 정식화와 계산 절차에 기반한다. 다만 이러한 모델은 명확하게 정의된 문제 범주만을 해결하도록 설계되어 있다는 점을 유념해야 한다.</p>
+<p>모델의 용도가 무엇이든 관계없이, 개발 팀은 모델링 결과에 대한 정성적 분석과 정량적 분석을 모두 수행할 의무가 있다.</p>
+<p>모델과 함께 작업함으로써 개발자들은 모델링 대상과 관련된 분야의 전문가가 된다. 이들은 대상의 속성에 대해 충분히 깊이 있는 이해를 발전시키며 그 행동을 예측하고 설명할 수 있게 된다.</p>
+<p><strong>따라서 모델링 결과에 대한 포괄적인 분석은 다음을 가능하게 한다:</strong></p>
+<ul>
+  <li>고려 대상을 수정하고, 그 최적 특성을 찾아내거나, 적어도 그 행동과 속성을 최선의 방식으로 고려할 수 있도록 하는 것;</li>
+  <li>모델의 적용 범위를 명확히 설정하는 것;</li>
+  <li>수학적 정식화 단계에서 채택된 가설의 타당성을 검증하고, 요구되는 정확도를 유지하면서 모델의 효율성을 향상시키기 위해 모델을 단순화할 수 있는 가능성을 평가하는 것;</li>
+  <li>모델이 앞으로 더 발전해야 할 방향을 제시하는 것.</li>
+</ul>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>관련 자료</h2>
+    <ul>
+      <li><a href="/ko/model.html">모델</a></li>
+      <li><a href="/ko/modelling.html">모델링</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="이동 경로">
+    <a href="/ko/">홈</a> <span aria-hidden="true">/</span>
+    <a href="/ko/modelling.html">모델링</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">수학적 모델링 과정</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="테마 전환"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/mathmodeling_process.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/ko/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="테마 전환"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710b1ce93ba5ce',t:'MTc4ODczNTEzOQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

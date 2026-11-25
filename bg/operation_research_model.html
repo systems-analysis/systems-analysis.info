@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Модели на операционните изследвания</title>
+<meta name="description" content="Построяването на модел на операция е ключов етап от операционните изследвания. Операцията се опростява и схематизира, а съществените фактори се идентифицират. Описани са стандартният модел и класификацията на задачите.">
+<meta name="keywords" content="Моделиране,модел,операционни изследвания,целева функция,програмиране,задачи,ефективност,оптимален,математически,системи,анализ,решение">
+<link rel="canonical" href="https://systems-analysis.info/bg/operation_research_model.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_model.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_model.html">
+<link rel="alternate" hreflang="bg" href="https://systems-analysis.info/bg/operation_research_model.html">
+<meta property="og:title" content="Модели на операционните изследвания">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/bg/operation_research_model.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Построяването на модел на операция е ключов етап от операционните изследвания. Операцията се опростява и схематизира, а съществените фактори се идентифицират. Описани са стандартният модел и класификацията на задачите.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="bg_BG">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/bg/operation_research_model.html#article",
+    "headline": "Модели на операционните изследвания",
+    "description": "Построяването на модел на операция е ключов етап от операционните изследвания. Операцията се опростява и схематизира, а съществените фактори се идентифицират. Описани са стандартният модел и класификацията на задачите.",
+    "url": "https://systems-analysis.info/bg/operation_research_model.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "bg",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/bg/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/bg/operation_research_model.html"
+    },
+    "keywords": [
+        "Моделиране",
+        "модел",
+        "операционни изследвания",
+        "целева функция",
+        "програмиране",
+        "задачи",
+        "ефективност",
+        "оптимален",
+        "математически",
+        "системи",
+        "анализ",
+        "решение"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "Модели на операционните изследвания",
+        "description": "A sufficiently precise mathematical description of an operation expressed through functions, equations, systems of equations, and inequalities.",
+        "sameAs": [
+            "https://systems-analysis.info/wiki/Модели_исследования_операций",
+            "https://systems-analysis.info/eng/Operations_research_models"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Начална страница",
+            "item": "https://systems-analysis.info/bg/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Операционни изследвания",
+            "item": "https://systems-analysis.info/bg/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Модели на операционните изследвания"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Основна навигация">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Меню</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/bg/">Начална страница</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bg/sections.html">Раздели</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bg/books.html">Книги</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bg/catalog.html">Каталог</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_model.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Смяна на темата"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Смяна на шрифта"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Модели на операционните изследвания</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>За да се прилагат количествени методи на изследване, е необходимо да се построи математически модел на операцията. При построяването на модел операцията обикновено се опростява и схематизира, а получената схема се описва с помощта на математически средства. Модел на операция е достатъчно точно математическо описание на операцията, изразено чрез функции, уравнения, системи от уравнения и неравенства. Ефективността на операцията е степента, в която тя постига поставената цел.</p>
+
+<h2>Обща формулировка на задачата на операционните изследвания</h2>
+
+<p>В операционните изследвания управленската ситуация включва цели и решения. Решенията се вземат за постигане на цел. Управленската ситуация се описва с модел. Моделът съдържа мярка за ефективност, чрез която се определя доколко решението е близо до целта. Мярката за ефективност зависи от факторите, които влияят върху операцията. Всички фактори, включени в описанието на операцията, могат да се разделят на две групи: постоянни фактори, върху които не може да се влияе, и управляеми фактори.</p>
+
+<p>Концептуалните елементи на модела се представят като „черна кутия”, при която основното внимание е насочено към определянето на входовете и изходите. Входовете са това, което моделът обработва; изходите са това, което моделът произвежда. Като входове се подават управляеми и неуправляеми променливи. Изходът е критерият за ефективност. Моделът съдържа изрична мярка за ефективност, чрез която се определя доколко решението е близо до целта. При построяването на модел е важно да се уточни как входните параметри ще влияят върху зададената мярка.</p>
+
+<p>Критерият за ефективност, изразен чрез определена функция, наречена целева функция, зависи от факторите от двете групи. Математическото изражение на критерия за ефективност се нарича целева функция. Целевата функция е математически формулирана (формализирана) мярка за ефективност, която трябва да бъде максимизирана или минимизирана.</p>
+
+<p>Управляемите променливи са онези параметри, които се управляват от лицето, вземащо решение.</p>
+
+<p>Неуправляемите променливи са външни фактори, които ръководителят не може да контролира, но които са съществени за постигането на целите.</p>
+
+<p>Критерият за ефективност, или целевата функция, е функция на решаващите променливи, изразяваща степента на приближаване до целта.</p>
+
+<p>Определение на математически модел: под математически модел се разбира всеки оператор, който при съответни стойности на входните параметри установява изходните стойности на параметрите на моделирания обект в рамките на множеството от допустими стойности на входните и изходните параметри на моделирания обект.</p>
+
+<h2>Модели на операционните изследвания и вземане на решения</h2>
+
+<p>Операционните изследвания са насочени към количественото обосноваване на рационално вземане на решения. Такива модели се пресичат в голяма степен с широк клас задачи от теорията на решенията и с оптимизационни задачи.</p>
+
+<p>При разработването на модел на операционни изследвания е необходимо да се отговори на следните въпроси:</p>
+<ul>
+<li>какво, в конкретния случай, трябва да се смята за алтернативни решения?</li>
+<li>по какъв критерий се избират алтернативните решения?</li>
+<li>какви ограничения трябва да удовлетворяват допустимите решения?</li>
+</ul>
+
+<p>Стандартният математически модел на операционните изследвания се представя в следната формулировка: максимизиране или минимизиране на целевата функция при изпълнение на ограниченията.</p>
+
+<p>При избора на решение се предпочита това, което максимизира или минимизира целевата функция. Примери за максимизиране на целевата функция са печалбата и производителността. Минимизирането на целевата функция може да се отнася до разходи, издръжка, време и други подобни. Изборът на критерий за ефективност е централният, най-критичният момент от изследването. Далеч по-добре е да се намери неоптимално решение на правилно избран критерий, отколкото оптимално решение на неправилно избран критерий.</p>
+
+<p>Допустимо решение е такова, което удовлетворява всички ограничения на модела. Броят на допустимите решения може да бъде безкраен.</p>
+
+<p>Оптимално решение е такова, което, освен че е допустимо, води до достигане на максималната или минималната стойност на целевата функция.</p>
+
+<p>Решенията се наричат оптимални, ако по един или друг признак са предпочитани пред останалите. Всеки избор на най-добрата алтернатива е конкретен, тъй като се основава на съответствие с установени критерии. Когато се говори за оптимална алтернатива, тези критерии се уточняват („оптимална по отношение на…”). Онова, което е оптимално според един критерий, не е задължително такова според друг.</p>
+
+<p>Ограничение е математически израз под форма на неравенство или равенство, което променливите на модела трябва да удовлетворяват.</p>
+
+<p>Ограниченията стесняват множеството от допустими решения. В някои случаи, при зададените ограничения, може да не съществува оптимално решение изобщо. Това означава, че качеството на крайното решение, взето въз основа на решаването на задачата, зависи от доколко адекватно моделът представя реалната ситуация, която формално описва чрез ограничения. Ограниченията включват квоти, товароподемност на превозните средства, обем на планираната задача, тегловни характеристики на оборудването, ограничения на ресурсите и други подобни.</p>
+
+<p>Когато конфигурацията на ограниченията се промени, най-добро може да стане друго решение. В реалния свят ограниченията могат да имат физически, икономически или политически характер и не винаги подлежат на формализация. Конкретно решение ще бъде най-добро само за дадения модел, при установената система от ограничения. Колкото по-точно моделът отразява ситуацията, толкова по-близо решението на задачата е до оптималното.</p>
+
+<h2>Класификация на моделите на операционните изследвания</h2>
+
+<p>Всички модели на операционните изследвания могат да се класифицират в зависимост от характера и свойствата на операцията, характера на решаваните задачи и използваните математически методи:</p>
+<ul>
+<li>Ако критерият за ефективност е линейна функция и функциите в системата от ограничения също са линейни, тогава задачата е задача на линейното програмиране.</li>
+<li>Ако по своята съдържателна смисъл решенията ѝ трябва да са цели числа, тогава това е задача на целочисленото линейно програмиране.</li>
+<li>Ако критерият за ефективност и/или системата от ограничения са зададени чрез нелинейни функции, тогава имаме задача на нелинейното програмиране. По-конкретно, ако посочените функции притежават свойства на изпъкналост, получената задача е задача на изпъкналото програмиране.</li>
+<li>Ако задачата на математическото програмиране включва променлива време и критерият за ефективност е изразен не пряко като функция на променливите, а косвено — чрез уравнения, описващи развитието на операциите във времето, тогава задачата е задача на динамичното програмиране.</li>
+<li>Ако намирането на точния оптимум по алгоритмичен път е невъзможно поради прекалено голям брой варианти на решения, тогава се прилагат методи на евристичното програмиране, които позволяват значително да се намали броят на разглежданите варианти и да се намери, ако не оптимално, то достатъчно добро решение, задоволително от практическа гледна точка.</li>
+</ul>
+
+<p>По своята съдържателна формулировка множеството останали типови задачи на операционните изследвания могат да се разделят на няколко класа:</p>
+<ul>
+<li>Задачите за планиране на проекти (PERT/CPM) изследват връзките между сроковете за завършване на голям комплекс от операции (задачи) и началните моменти на всички операции в комплекса. Тези задачи се състоят в намирането на минималната продължителност на комплекса от операции и оптималната връзка между разходите и сроковете за завършване.</li>
+<li>Задачите на масовото обслужване са посветени на изследването и анализа на системи за обслужване с редове от заявки или искания и се състоят в определянето на показателите за работа на системите и техните оптимални характеристики — например определяне на броя на обслужващите канали, времето за обслужване и подобни.</li>
+<li>Задачите за управление на запасите се състоят в намирането на оптималните стойности на нивото на запасите (точката на преразход) и размера на поръчката. Отличителна особеност на такива задачи е, че с увеличаването на нивото на запасите, от една страна, се увеличават разходите за складиране, но от друга страна, намаляват загубите поради възможен недостиг на съхраняваната продукция.</li>
+<li>Задачите за разпределение на ресурси възникват, когато има определен набор от операции (задачи), които трябва да бъдат изпълнени с ограничени налични ресурси, и е необходимо да се намери оптималното разпределение на ресурсите между операциите или оптималният състав на операциите.</li>
+<li>Задачите за поддръжка и замяна са актуални във връзка с износването и стареенето на оборудването и необходимостта от неговата замяна.</li>
+<li>Сред моделите на операционните изследвания се отделят особено моделите за взимане на оптимални решения в конфликтни ситуации, изследвани от теорията на игрите. Конфликтните ситуации, при които се сблъскват интересите на две (или повече) страни, преследващи различни цели, включват редица ситуации в областта на икономиката, правото, военното дело и подобни. В задачите на теорията на игрите е необходимо да се разработят препоръки за рационално поведение на участниците в конфликта и да се определят техните оптимални стратегии.</li>
+</ul>
+
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div class="links">
+    <div class="links-section">
+      <h2>Операционни изследвания</h2>
+      <ul>
+        <li><a href="/bg/operation_research_caa.html">Операционни изследвания: Чърчман, Акоф и Арноф</a></li>
+        <li><a href="/bg/operation_research_as.html">Основи на операционните изследвания: Акоф и Сасиени</a></li>
+        <li><a href="/bg/operation_research_me.html">Операционни изследвания: Модър и Елмаграби</a></li>
+        <li><a href="/bg/operation_research_vg.html">Операционни изследвания: Вагнер</a></li>
+        <li><a href="/bg/operation_research_gv.html">Операционни изследвания: Гвишиани</a></li>
+        <li><a href="/bg/operation_research_ve.html">Операционни изследвания: Вентцел</a></li>
+        <li><a href="/bg/methodology_or.html">Методология на операционните изследвания</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="breadcrumbs" aria-label="Път за навигация">
+    <a href="/bg/">Начална страница</a> <span aria-hidden="true">/</span>
+    <a href="/bg/operation_research.html">Операционни изследвания</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Модели на операционните изследвания</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Смяна на темата"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_model.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/bg/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Смяна на темата"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a37106a86dd5a5ce',t:'MTc4ODczNDk1Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rendszerelemzés: Golubkov</title>
+<meta name="description" content="A rendszerelemzés módszerei E. P. Golubkov szerint: matematikai módszerek, a rendszer formalizált leírásának módszerei és alkalmazási területeik az irányítási és szervezéstervezési feladatokban.">
+<meta name="keywords" content="rendszerelemzés,távlati tervezés,Golubkov,rendszerek,megoldási módszerek,problémák,kritériumok,kutatás">
+<link rel="canonical" href="https://systems-analysis.info/hu/systems_analysis_golubkov.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/systems_analysis_golubkov.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/systems_analysis_golubkov.html">
+<link rel="alternate" hreflang="hu" href="https://systems-analysis.info/hu/systems_analysis_golubkov.html">
+<meta property="og:title" content="Rendszerelemzés: Golubkov">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/hu/systems_analysis_golubkov.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="A rendszerelemzés módszerei E. P. Golubkov szerint: matematikai módszerek, a rendszer formalizált leírásának módszerei és alkalmazási területeik az irányítási és szervezéstervezési feladatokban.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="hu_HU">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/hu/systems_analysis_golubkov.html#article",
+    "headline": "Rendszerelemzés: Golubkov",
+    "description": "A rendszerelemzés módszerei E. P. Golubkov szerint: matematikai módszerek, a rendszer formalizált leírásának módszerei és alkalmazási területeik az irányítási és szervezéstervezési feladatokban.",
+    "url": "https://systems-analysis.info/hu/systems_analysis_golubkov.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "hu",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/hu/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/hu/systems_analysis_golubkov.html"
+    },
+    "keywords": [
+        "rendszerelemzés",
+        "távlati tervezés",
+        "Golubkov",
+        "rendszerek",
+        "megoldási módszerek",
+        "problémák",
+        "kritériumok",
+        "kutatás"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "The Use of Systems Analysis in Sectoral Planning",
+        "author": {
+            "@type": "Person",
+            "name": "Golubkov E.P."
+        },
+        "datePublished": "1977",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Ekonomika"
+        },
+        "inLanguage": "hu"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "The Systems Approach in Long-Range Planning",
+        "author": [
+            {
+                "@type": "Person",
+                "name": "Golubkov E.P."
+            },
+            {
+                "@type": "Person",
+                "name": "Raizenberg B.A."
+            },
+            {
+                "@type": "Person",
+                "name": "Pekarsky L.S."
+            }
+        ],
+        "datePublished": "1975",
+        "inLanguage": "hu"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Főoldal",
+            "item": "https://systems-analysis.info/hu/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Rendszerelemzés",
+            "item": "https://systems-analysis.info/hu/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Rendszerelemzés: Golubkov"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Fő navigáció">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menü</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/hu/">Főoldal</a>
+        <span aria-hidden="true">·</span>
+        <a href="/hu/sections.html">Témakörök</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/hu/books.html">Könyvek</a>
+        <span aria-hidden="true">·</span>
+        <a href="/hu/catalog.html">Katalógus</a>
+        <span aria-hidden="true">·</span>
+        <a href="/systems_analysis_golubkov.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Téma váltása"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Betűtípus váltása"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Rendszerelemzés: Golubkov</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Golubkov, Raizenberg és Pekarszkij: „A rendszerszemlélet a távlati tervezésben”, 1975 (oroszul).</p>
+<p>A rendszerelemzés tudományos módszerek és gyakorlati eljárások összessége az összetett <a href="/hu/problem.html" class="text-link">problémák</a> (műszaki, természettudományi, gazdasági, társadalmi-politikai és egyéb) megoldására.</p>
+<p>Mindenekelőtt a <a href="/hu/system.html" class="text-link">rendszer</a> fogalmát alkalmazza, amely egymással összefüggő elemek egységét jelenti, amelyek közös <a href="/hu/goal.html" class="text-link">cél</a> elérése érdekében együttesen működnek. A rendszer mint egész tulajdonságai eltérnek az azt alkotó elemek tulajdonságaitól. Minden rendszert saját, sajátos törvényszerűségek jellemeznek, amelyek nem következnek közvetlenül az elemek működési módjaiból.</p>
+<p>A rendszer fő részei a bemenet, a folyamat (struktúra) és a kimenet. A rendszer bemenete összetett fogalom. Egyrészt az az anyag, amely belép a rendszerbe, és bizonyos átalakulásokon megy át benne. Másrészt ez a külső (körülvevő) környezet, vagyis a rendszerre ható tényezők és jelenségek összessége (természeti feltételek, külpolitikai helyzet, piaci viszonyok). A bemenet a rendszer elemeinek kialakult működési módjaira is vonatkozik, például az utasításokra, szabályzatokra és rendelkezésekre, amelyek meghatározzák a rendszer működésének eljárásait, szabályait, korlátozásait és céljait.</p>
+<p>A rendszer második része a belső struktúrája, vagyis azok a csatornák, amelyeken a bemeneteken keresztül belépő anyag, energia és információ áthalad, valamint azok a folyamatok vagy műveletek, amelyek átalakítják azokat (gazdasági rendszerek esetében ezek az anyagi, munkaerő- és pénzügyi erőforrások újratermelési folyamatai).</p>
+<p>A rendszer harmadik része a kimenete, vagyis tevékenységének terméke vagy eredménye.</p>
+<p>A külső környezettel való kölcsönhatás mértéke alapján a rendszereket nyílt és zárt rendszerekre osztják. A nyílt rendszerek intenzíven cserélnek anyagot, energiát vagy információt a környezetükkel, míg a zárt, elszigetelt rendszerek viszonylag csekély cserével működnek (például a tervezési és gazdasági információ feldolgozásának zárt körfolyamata, vagy egy zárt technológiai ciklus). Meg kell jegyezni, hogy egy rendszer lehet zárt vagy nyílt anyag, energia vagy információ tekintetében külön-külön is. A rendszernek vagy természetes határai vannak, vagy a kutatási célok alapján meghatározott határai; ez utóbbi esetben a rendszer határait a kutató határozza meg.</p>
+<p>Ugyanaz az objektum több különböző rendszerként is ábrázolható. Ha egy gyártó vállalatot gépek, technológiai folyamatok, anyagok és az ezeken a gépeken megmunkált termékek összességeként vizsgálunk, a vállalat technológiai rendszerként jelenik meg. A vállalat más szempontból is vizsgálható: a munkásoknak a termelőeszközökhöz való viszonya, a munkafolyamatban való részvételük és annak eredményeinek elosztása, a vállalat helye a tágabb gazdasági rendszerben stb. Ebben az esetben a vállalat gazdasági rendszerként jelenik meg.</p>
+<p>A társadalmi fejlődés és a tudományos-technikai forradalom során az irányítás területén új kutatási tárgy jelent meg, amelyet nagyméretű rendszernek neveznek. A különböző szerzők álláspontjait általánosítva a nagyméretű rendszerek alábbi legfontosabb jellemzői azonosíthatók:</p>
+<ul>
+  <li>világosan kifejezett helyi tulajdonságokkal rendelkező alrendszerek jelenléte, amelyek együttesen alkotják a nagyméretű rendszert;</li>
+  <li>a rendszer céltudatossága és irányíthatósága, vagyis egy közös cél és általános rendeltetés megléte, amelyet magasabb szintű rendszerek határoznak meg és igazítanak ki;</li>
+  <li>a rendszer bonyolult hierarchikus (többszintű) szervezeti felépítése, amely biztosítja a központosított irányítás és a részek (alrendszerek) autonómiájának kombinációját, a különböző szintű elemek közötti vertikális kapcsolatok, valamint az azonos szintű elemek közötti horizontális kapcsolatok jelenlétét;</li>
+  <li>a rendszer nagy mérete, vagyis az elemek, bemenetek és kimenetek nagy száma, valamint a funkciók sokfélesége;</li>
+  <li>a viselkedés integritása és összetettsége, a változók közötti bonyolult, összefonódó kapcsolatok, valamint olyan visszacsatolási hurkok, amelyek miatt egy változó megváltozása sok másik változásával jár.</li>
+</ul>
+<p>A rendszerelemzés speciális eljárásokat kínál, amelyek segítségével egy egészében nehezen vizsgálható nagyméretű rendszer több kisebb, egymással kölcsönhatásban álló rendszerre vagy alrendszerre bontható.</p>
+<p>A rendszerelemzés fontos fogalmai közé tartozik a visszacsatolás alapvető kibernetikai fogalma. Éppen ez a fogalom segített megállapítani a minőségileg eltérő rendszerek irányítási szerveződése közötti hasonlóságot. A visszacsatolás egy kommunikációs csatorna meglétét jelenti a rendszer kimenete és bemenete között, közvetlenül vagy a rendszer más elemein (például egy vezérlőegységen) keresztül. A visszacsatolás révén az irányított rendszer működésére vonatkozó adatok annak kimenetéről az irányítórendszerhez jutnak el. Ott ezeket az adatokat összevetik a munka tartalmát és terjedelmét meghatározó adatokkal (például a tervvel). Ha a rendszer tényleges és előírt állapota között eltérés mutatkozik, intézkedéseket dolgoznak ki az eltérés megszüntetésére.</p>
+<p>A rendszerelemzésben használt fontos fogalom a bizonytalanság fogalma. A bizonytalanság tényezője jelen van a nemzetgazdasági tervezés és irányítás területének számos összetett problémájának megoldásában.</p>
+<p>A rendszerelemzés során felmerülő bizonytalanság adódhat a vizsgált jelenség elégtelen ismeretéből, vagy abból, hogy a meghozott döntések következményei kellően hosszú idő alatt jelentkeznek, és nem jósolhatók meg kellő pontossággal.</p>
+<p>A bizonytalanság egyéb okai közé tartozik számos jelenség mennyiségi értékelésének lehetetlensége, különösen a „jobb–rosszabb”, „több–kevesebb” fogalmak mennyiségi értelmezésének nehézsége a döntéshozatalban, a probléma pontatlan megfogalmazása, valamint a döntéshozók egyéni jellemzői.</p>
+<p>A rendszerelemzést elsősorban nem egy sajátos tudományos formalizmus jellemzi, hanem a problémák vizsgálatának rendezett, logikailag megalapozott megközelítése. A rendszerelemzés módszereinek segítségével összetett rendszereket és helyzeteket vizsgálnak, elsősorban azokat, amelyek a célok, feladatok és cselekvési módok meghatározásának szükségességével kapcsolatosak.</p>
+<p>A rendszerelemzés az összetett problémák megoldására lehetséges megközelítések vizsgálatában alkalmazott módszerek összessége, és egyúttal eszközül szolgál a szakértők tudásának, ítéleteinek és intuíciójának rendezéséhez és hatékonyabb felhasználásához e problémák megoldására irányuló döntéshozatal folyamatában. Más szóval, a rendszerelemzés a kutatók és döntéshozók tudományos eszköze.</p>
+<p>A rendszerelemzés feladata a döntéshozók előtt álló problémák olyan tisztázása, hogy a végrehajtó tudatában legyen a döntések valamennyi fontosabb következményének, és figyelembe tudja azokat venni cselekedeteiben. A mennyiségi elemzés segít a döntésért felelős személynek abban, hogy szigorúbban közelítse meg a lehetséges cselekvési módok értékelését, és kiválassza a legjobbat, figyelembe véve azokat a további, nem formalizálható tényezőket és szempontokat, amelyek a döntést előkészítő szakemberek (a rendszerelemzők) számára ismeretlenek lehetnek. A rendszerelemzés a felmerülő problémák megoldásának legreálisabb módjainak meghatározására szolgál, biztosítva a felvetett követelmények maximális kielégítését.</p>
+<p>A rendszerelemzés katonai alkalmazásának tapasztalata nagy hatással volt módszertani fejlődésére, ami bizonyos nyomot hagyott e tudományág és a hozzá szorosan kapcsolódó tudományágak (operációkutatás, rendszertervezés) terminológiáján.</p>
+<p>A rendszerelemzés különböző elnevezésű egyes irányzatai között gyakran nincsenek alapvető különbségek vagy egyértelműen kijelölt határok; ugyanakkor mindegyik irányzatot bizonyos megkülönböztető jegyek és árnyalatok jellemzik. Így az operációkutatás alatt általában azt a tudományt értjük, amely a műveletek tervezéséhez és megszervezéséhez szükséges mennyiségi ajánlások kidolgozásával foglalkozik. A művelet itt egy személy, embercsoport vagy ember–gép rendszer bármely céltudatos cselekvését jelenti. A rendszertervezés a nagyméretű rendszerek szintézisének módszereit hozza létre, az egyes elemeik működésének vizsgálata alapján. Bár a rendszertervezés számos módszerét és eredményét műszaki rendszerekre alkalmazva dolgozták ki, ezek jelentős mértékben átvihetők más természetű, így gazdasági objektumokra is.</p>
+<p>A rendszerelemzés megjelenése az irányítási döntések megalapozásának módszertanában átmenetet jelent a jól strukturált, formalizálható problémák megoldásától (ahol a célok, utak és kritériumok egyértelműen meghatározottak, és operációkutatási módszerekkel elérhetők) a rosszul strukturált problémák megoldása felé, amelyek bizonytalanság feltételei között merülnek fel, és a matematika nyelvére le nem fordítható, nem formalizálható elemeket tartalmaznak.</p>
+<p>Az operációkutatási szakember matematikai vagy logikai elemzési módszereket alkalmaz olyan körülmények között, amikor egyértelmű az elképzelés arról, mit jelent a „hatékonyabb” teljesítmény. Ritkán foglalkozik a munka céljának vagy sikerének értékelési módszereinek meghatározásával; ez a rendszerelemző egyik fő feladata.</p>
+<p>A tervezési szakember gyakorlatilag mindig rendszerelemzőként jár el, mivel a megoldandó problémát egészében látja. A rendszerelemzés eredményei az alkalmazott kritériumrendszertől függenek. A kritériumok kiválasztása az elemzés szerves része. Az elemzés szerepe abban áll, hogy megállapítsa, mely kritériumokat célszerű alkalmazni bizonyos irányítási területen hozott döntésekhez.</p>
+<p>Az operatív elemzés egyik fajtája, az úgynevezett költség-hatékonyság elemzés, egy adott cselekvési mód végrehajtásának hatását veti össze átfogóan a megvalósításához szükséges erőforrásokkal.</p>
+<p>A rendszerelemzés és a költség-hatékonyság elemzés közötti különbség abban rejlik, hogy utóbbi esetben az elemzés az erőforrások racionális felhasználási módjainak megtalálására irányul egy megfogalmazott, leggyakrabban adott cél feltételei mellett. A rendszerelemzés tágabban veti fel a problémát, magát a célt is bizonyos elvek szerint meghozott választás tárgyaként kezelve.</p>
+<p>A rendszerelemzés módszertana elveinek összességeként határozható meg, vagyis azon legáltalánosabb, alapvető törvényszerűségekként, amelyek a különböző rendszerek és az azokban zajló folyamatok konkrét elemzésének lefolytatását szabályozzák.</p>
+<p>A rendszerelemzés meghatározó elve a céltudatosság. Minden rendszer külsőleg kitűzött vagy a rendszer által aktívan kialakított céloknak megfelelően létezik és fejlődik. A rendszerelemzés szempontjából éppen a célok összessége határozza meg és jelöli ki a rendszert, egyesítve a rendszert és tevékenységét egységes egésszé.</p>
+<p>A rendszerelemzés következő elve a rendszerszemlélet alkalmazásának szükségességéből fakad, és abban áll, hogy azonosítani és vizsgálni kell valamennyi lényeges összefüggést mind a rendszeren belül, mind a rendszer és külső környezete között, valamint az egyes megoldások kiválasztásakor figyelembe kell venni azok hatását a rendszer egészére.</p>
+<p>A rendszerelemzésben szem előtt kell tartani, hogy ugyanazok a célok több különböző eszköz és módszer alkalmazásával is elérhetők. Ebből következik a rendszerelemzés egyik elve, amely a felmerült problémákra több alternatív megoldás keresésében áll. A rendszer szerkezetének, szervezetének és a benne zajló folyamatoknak (technológiai, tervezési, irányítási és egyéb) lehetséges változatainak vizsgálata a legjobb kiválasztása céljából a rendszerelemzés kritikus jellemzője.</p>
+<p>Gyakran a rendszerelemzés fő feladata az optimális megoldások megtalálása. Optimális megoldásoknak azokat nevezzük, amelyek egy vagy másik kritérium alapján előnyösebbek a többinél. Jellemzően egy kritérium alapján történő optimális megoldás kiválasztásakor a bizonyos viselkedési stratégia megvalósításából származó hatást összevetik a megvalósításához szükséges erőforrás-ráfordítással.</p>
+<p>A különböző rendszerekben zajló folyamatok elemzésének mélységét és teljességét nagymértékben meghatározza az, hogy milyen mértékben vizsgálják működésük és fejlődésük dinamikus jellegét. A rendszerelemzés abból indul ki, hogy nemcsak a rendszer statikus összefüggéseit kell megérteni, hanem a dinamikus kölcsönhatásokat is, nemcsak a rendszer adott pillanatbeli állapotát kell vizsgálni, hanem annak időbeli változását is. A jelenségek vizsgálata dinamikájukban és fejlődésükben szintén a rendszerelemzés fontos elve.</p>
+<p>A rendszerelemzés eredményeként született ajánlásokért és az azok alapján hozott döntésekért való felelősség szétválasztásának elve feltételezi a rendszerelemzők és az elemzés eredményei alapján cselekvő döntéshozók jogainak és felelősségeinek egyértelműen kijelölt körének kialakítását. A döntés végleges jóváhagyásakor a felelősök a rendszerelemzés eredményeként született ajánlások mellett figyelembe vehetnek olyan további mennyiségi és minőségi szempontokat is, amelyeket az elemzők nem vettek figyelembe.</p>
+<p>Azokban az esetekben, amikor egy összetett rendszert vizsgálnak, amelynek elemzése csak az azt alkotó részek (alrendszerek, elemek) elemzési eredményeinek általánosításával végezhető el, először a vizsgált rendszer (probléma) szerkezetét és az elemekre bontás lehetőségeit vizsgálják. Ezt követően a rendszer szerkezetének, funkcióinak és belső folyamatainak megfelelően, valamennyi legfontosabb összefüggést figyelembe véve elvégzik a rendszer alkotórészeire történő szekvenciális felbontását (strukturálását). A vizsgált rendszer céltudatos strukturálásának elve számos rendszerelemzési módszerben konkrét gyakorlati megvalósítást nyer, például a célfa módszerben.</p>
+<p>A rendszerelemzés alkalmazási területe a megoldandó problémák összetettségétől és a matematikai módszerek alkalmazhatóságától függően nagyjából öt szintre osztható:</p>
+<ul>
+  <li>egyes műveletek tervezésének és irányításának optimalizálása;</li>
+  <li>a rendszer típusának vagy a kitűzött célok eléréséhez vezető leghatékonyabb utaknak a kiválasztása;</li>
+  <li>új rendszerek kidolgozása;</li>
+  <li>egy rendszer helyének és szerepének meghatározása a magasabb szintű problémákban;</li>
+  <li>egy gazdasági rendszer tervezése és irányítása a nemzetgazdasági szinten.</li>
+</ul>
+<p>Ez a sorrend a probléma összetettségének, a bizonytalanság szintjének és a konkrét cselekvést lehetővé tevő ajánlások kidolgozásának nehézségét tükrözi. Az első szinten az elemzés a legnagyobb mértékben ölt matematikai formát, és formális-logikai eszközök és módszerek alkalmazására épülhet. Lényegében ez az operációkutatás, amely a rendszer eredményességének növelésére irányul olyan körülmények között, amikor a „hatékonyabb” fogalma egyértelműen meghatározott. Az ebbe a területbe tartozó problémák fő jellemzője, hogy formalizált leírásra alkalmas, egyértelműen kijelölt struktúrával rendelkeznek. A többi szinten a rendszerelemzés alkalmazása szükségszerűen összefügg a minőségi tényezők és feltételek, leggyakrabban társadalmi jellegű tényezők vizsgálatának szükségességével.</p>
+<p>Bizonyos esetekben a rendszerelemzés elkerülhetetlenül összefügg az ellentmondások vizsgálatának szükségességével. Az ellentmondások és következetlenségek példái közé tartoznak a kiegyensúlyozatlan tervek, egyes anyag- és berendezéstípusok ellátásának zavarai, a termelés és a fogyasztás növekedési üteme közötti eltérések egyes terméktípusok esetében, valamint az új technológia lassú bevezetésével összefüggő ellentmondások.</p>
+<p>A második és harmadik szintű problémák elemzése magában foglalja új rendszerek tervezését, amelyek ismert műveletek jobb végrehajtására vagy korábban soha nem végzett műveletekre irányulnak. Az ezen és a következő szinteken felmerülő problémák vizsgálatakor a társadalmi és politikai tényezők figyelembevétele egyre fontosabbá válik.</p>
+<p>E. P. Golubkov: „A rendszerelemzés alkalmazása az ágazati tervezésben”, 1977 (oroszul).</p>
+<p>A rendszerelemzés konkrét problémáinak megoldására szolgáló általános módszer differenciált, és a módszerek nagy változatosságában ölt testet, amelyek az alkalmazott osztályozási elvtől függően különböző csoportokra oszthatók — például elemzési és szintézismódszerekre, leíró és kísérleti módszerekre. A rendszerelemzésben alkalmazott formális elemek mértéke szerint három módszercsoport különböztethető meg: matematikai (formális), heurisztikus (informális) és kombinált matematikai-heurisztikus módszerek.</p>
+<p>A rendszerelemzés módszerei tág és szűk, sajátos értelemben egyaránt vizsgálhatók. Tág értelemben a rendszerelemzés módszerei közé tartozik a fent felsorolt három csoport bármely módszere, amelyet a rendszerszemlélet alapján a felmerült probléma megoldására alkalmaznak. Ebben a tág értelmezésben a rendszerelemzés módszerei azonosak a problémamegoldó módszerekkel, és a döntéshozatali folyamat egyes szakaszai szerint osztályozhatók.</p>
+<p>Szűk értelemben a rendszerelemzés módszerei sajátos módszerek, amelyeket a rendszer tevékenységi céljainak összessége és az azok eléréséhez vezető legjobb utak meghatározására, <a href="/hu/model.html" class="text-link">modellek</a> és kritériumok kiválasztására, a rendszer (probléma) alkotóelemeire történő szekvenciális, célirányos felbontására, ezen elemek közötti összefüggések és kölcsönös függőségek meghatározására, valamint az egyes célok, mértékek, kritériumok és modellek relatív fontosságának (preferenciájának) meghatározására dolgoztak ki. Ezek tehát elsősorban a rosszul strukturált problémák megoldására irányuló módszerek olyan esetekben, amikor a formális, matematikai módszerek alkalmazása korlátozott.</p>
+<p>A rendszerelemzés matematikai módszereinek fő állományát az operációkutatási módszerek (a programozás különböző típusai, játékelmélet, sorbanállás-elmélet és mások) alkotják. Ezeket a módszereket széles körben alkalmazzák a rendszerelemzésben, de inkább a megoldandó probléma egyes aspektusainak vizsgálatára, mintsem lényegének feltárására.</p>
+<p><strong>A rendszerelemzésben a matematikai módszereket leggyakrabban a következőkre használják:</strong></p>
+<ul>
+  <li>a rendszer működésének eredményeit jellemző mutatók számszerű értékeinek meghatározására;</li>
+  <li>a konkrét eredmények eléréséhez vezető legjobb cselekvési módok megtalálására (optimalizálás);</li>
+  <li>heurisztikus, kreatív jellegű adatok feldolgozására és elemzésére.</li>
+</ul>
+<p>A matematikai módszerek gazdasági problémák megoldásában betöltött egyre növekvő szerepe ellenére sem tekinthetők a megoldás egyetemes eszközének. A felhalmozott tapasztalatra és intuícióra épülő módszerek, vagyis a heurisztikus (informális) módszerek, továbbra is nélkülözhetetlenek.</p>
+<p>A feltett kérdésekre matematikai módszerekkel pontos válaszok megszerzésére irányuló törekvés odáig vezetheti a mérnököt és a közgazdászt, hogy annyira elmerülnek a munkájukban és a kutatási igények azonosításának módszertanában, hogy erőfeszítéseik végső eredménye a további vizsgálatok szükségességéről szóló következtetéssé válik.</p>
+<p>Ugyanakkor olyan körülmények között, amikor egy adott gazdasági folyamatra, jelenségre vagy eredményre vonatkozó bizonyos adatok hiányoznak, jobb közelítő válaszokat kapni a legfontosabb kérdésekre, mint pontos választ próbálni adni olyan kérdésekre, amelyek nincsenek teljesen tisztázva és megértve. A rendszer céljainak, azok megvalósítási alternatíváinak, modelljeinek és kritériumainak megfogalmazására szolgáló eljárások nem formalizálhatók teljes mértékben.</p>
+<p>Az ilyen szakértői vizsgálatok és tanácskozások lefolytatását nagyon gyakran a hagyomány, vagyis végső soron a tapasztalat szabályozza, és sok tekintetben művészetnek tekinthető. Fokozatosan azonban a heurisztikus eredetű forrásanyag feldolgozásának különféle matematikai módszerei is kezdenek behatolni ebbe a területbe.</p>
+<p>A heurisztikus módszerek megkülönböztető jegye, hogy a szakember egy esemény értékelésekor jelentős mértékben a saját tapasztalatán és intuícióján alapuló információra támaszkodik. Ez az információ rendkívüli mértékben függ a szakértő személyes tulajdonságaitól. A döntéshozatal intuitív módszerének alkalmazásakor a szakértő nem képes szavakba önteni annak megvalósítási sorrendjét.</p>
+<p>Az intuíció a megoldás közvetlen, ugrásszerű elérését feltételezi, gondos, alaposan végiggondolt és mérlegelt lépések sorozata helyett. Az intuitívan gondolkodó ember gyakran nem tudja megmondani, hogy az érzékelés folyamatában a helyzet mely aspektusait azonosította, emlékezetében tárolt információinak mekkora részét használta fel, vagy milyen „gondolatmenet” vezette el a kiindulási adatoktól a döntésig.</p>
+<p>A tapasztalaton alapuló heurisztikus döntéshozatali módszerek egy, a jelen pillanatban felmerülttel azonos probléma múltbeli elemzéséből indulnak ki (a múlttal való analógián alapuló döntés). Az informális módszerek közé tartozik a tekintélyre való hivatkozáson alapuló döntéshozatal is (tanács és útmutatás kérése a vezetéstől, szakértőktől vagy referenciaforrásoktól, például tudományos és oktatási szakirodalomtól).</p>
+<p><strong>A rendszerelemzés módszereinek alkalmazási területei:</strong></p>
+<ol>
+  <li>A célok összességének és az azok eléréséhez vezető utaknak a meghatározása (például egy ágazati terv céljainak meghatározása és a megvalósítás több alternatívájának kidolgozása).</li>
+  <li>Az egyes célok, utak, intézkedések, eredmények stb. preferenciájának (rangsorolásának) meghatározása (például egy ágazati új technológiai terv egyes intézkedései megvalósításának prioritásának és ütemezésének meghatározása).</li>
+  <li>Célok, programok, tervek stb. elemekre bontása (például egyes egyesületek vagy vállalatok terveinek összeállítása az ágazat egészére kitűzött feladatok alapján).</li>
+  <li>A kitűzött célok eléréséhez vezető legjobb utak kiválasztása (például a tervbe felvenni javasolt különféle szervezési és műszaki intézkedések elemzése és összehasonlítása).</li>
+  <li>A célok és az azok eléréséhez vezető utak összehasonlítására szolgáló kritériumok kiválasztása (például a különböző ágazati tervalternatívák eredményességének értékelésére szolgáló kritériumok kiválasztása).</li>
+  <li>Modellek kidolgozása a célok és az azok eléréséhez vezető utak kiválasztására (például egy modell a tervfeladatok elosztására egy ágazat vállalatai között a csökkentett költségek minimalizálásának kritériuma szerint).</li>
+  <li>Az egyes alrendszerek működésének elemzési adatainak általánosítása annak érdekében, hogy következtetéseket vonjanak le a rendszer egészének működésének optimalitásáról (például egy optimális séma összeállítása az ágazati tervek kidolgozására, az ágazat egyes egyesületeiben vagy vállalataiban alkalmazott tervezési eljárások elemzése alapján).</li>
+</ol>
+<p>Meg kell jegyezni, hogy a heurisztikus és a kombinált módszerek közötti határ bizonyos mértékig konvencionális, mivel köztük nincs szigorú elhatárolás. Jelenleg a heurisztikus jellegű forrásadatok feldolgozásának matematikai eljárásait szinte valamennyi heurisztikus módszer alkalmazásakor használják.</p>
+<p>A rendszerelemzésben a problémák megfogalmazásának bizonyossági fokától és megoldásuk feltételeitől függően különböző típusú problémák lehetnek, amelyek meghatározzák egy vagy másik konkrét megoldási módszer alkalmazását. Ezek a problémák, az operációkutatásban alkalmazott osztályozást felhasználva, három csoportra oszthatók, bár itt is szükségesek bizonyos pontosítások.</p>
+<ol>
+  <li>Determinisztikus problémák. Ezek a legjobb megoldási alternatíva kiválasztásának problémái olyan helyzetekben, amikor minden stratégia egyetlen eredményhez vezet (például egy adott tervalternatíva 100 százalékos valószínűséggel vezet a kívánt eredmény eléréséhez).</li>
+  <li>Valószínűségi problémák. Ezek a legjobb megoldási alternatíva kiválasztásának problémái olyan helyzetekben, amikor minden cselekvés különböző eredményeket hozhat, amelyek valószínűségei ismertek vagy becsülhetők (például minden tervalternatíva bizonyos valószínűséggel ismert eredmények eléréséhez vezet).</li>
+  <li>Bizonytalansági problémák. Ezek a legjobb megoldási alternatíva kiválasztásának problémái olyan helyzetekben, amikor a különböző eredmények elérésének valószínűségei ismeretlenek, vagy egyáltalán nem ismert, hogy milyen eredmények érhetők el a vizsgált stratégiák egyikének vagy másikának választásakor.</li>
+</ol>
+<p>A rendszerelemzés problémáira vonatkozó ilyen terminológia bevezetése bizonyos mértékig konvencionális, mivel például a bizonytalanság tényezője a valószínűségi problémák megoldásában is jelen van.</p>
+<p>Szem előtt kell tartani, hogy a valószínűségi és a bizonytalansági problémák osztályába olyan problémák is tartoznak, amelyeknél a lehetséges stratégiák teljes halmazát nem határozták meg, és csak az ismert stratégiákat veszik figyelembe. Ez a helyzet jellemző a döntéshozatali gyakorlatra, ahol a felmerült probléma megoldásának nem minden lehetséges alternatíváját veszik figyelembe, hanem csak az ilyen alternatívák korlátozott számát.</p>
+<p>A determinisztikus és a bizonytalansági problémák a valószínűségi problémák határeseteinek tekinthetők (például az eredmények teljes ismerete és teljes ismeretlensége). Ezért először a valószínűségi problémákat vizsgáljuk, majd áttérünk a determinisztikus és a bizonytalansági problémák vizsgálatára.</p>
+<p>A valószínűségi problémák megoldásában a legjobb megoldási alternatíva kiválasztása a preferencia fokának várható értékének maximalizálásával történik. Ezt a kritériumot alkalmazzák az ilyen típusú problémák többségének megoldásában.</p>
+<p>Azokban az esetekben, amikor bizonyos számítások, például technikai-gazdasági számítások lehetővé teszik egy vagy másik stratégia eredményességének meghatározását a külső környezet különböző feltételei mellett, a preferencia fokának értékei helyett az egyik vagy másik megoldási alternatíva megvalósításának hatását jellemző konkrét értékeket kell használni. A megoldás kiválasztására vonatkozó végleges ajánlásokat úgy kell kidolgozni, hogy figyelembe vegyék a vizsgált megoldási alternatívák különböző eredményei elérésének valószínűségét.</p>
+<p>A determinisztikus probléma a valószínűségi probléma határesetének tekinthető, feltételezve, hogy a lehetséges eredmények mindegyikének elérési valószínűsége egy vagy nulla.</p>
+<p>A determinisztikus problémák példái közé tartoznak például a lineáris programozási problémák.</p>
+<p>Az ilyen problémák megoldásában alkalmazott kritériumok a preferencia fokának várható értéke maximalizálásának határesetét jelenthetik, ahol a lehetséges eredmények megvalósulásának valószínűségei egy vagy nulla. Konkrét gazdasági jelentéssel bíró különféle mutatókat (csökkentett költségek, jövedelmezőségi szint, munkatermelékenység és mások) gyakran alkalmaznak kritériumként a determinisztikus problémák megoldásában.</p>
+<p>A rendszerelemzési problémák legjellemzőbb típusa a bizonytalansági probléma. Valós esetekben, amikor kezdetben úgy tűnik, hogy hiányoznak a különböző eredmények elérésére vonatkozó valószínűségi becslések, a rendszerelemző általában maximális erőfeszítést tesz e valószínűségekre vonatkozó információk megszerzésére egy speciális vizsgálat lefolytatásával, és ez rendszerint sikerül is. Előfordulhatnak azonban olyan esetek is, amikor a valószínűségi becslések teljesen ismeretlenek.</p>
+<p>A bizonytalansági problémák megoldásában olyan jól ismert kritériumokat alkalmaznak, mint a minimax, a maximin, az általánosított maximin (a Hurwicz-kritérium), a minimax sajnálat kritérium (a Savage-kritérium), a Laplace-kritérium és mások.</p>
+<p>A különböző kritériumok alkalmazása egyetlen probléma megoldásában rendszerint eltérő eredményekhez vezet. Kétféle megközelítés létezik a bizonytalansági problémák megoldására szolgáló kritériumok kiválasztására. Az első az új kritériumok vagy a döntési kritérium kiválasztására vonatkozó követelmények kidolgozása. A második megközelítés bármilyen, akár a legszerényebb információ felhasználásában áll a különböző környezeti feltételek megvalósulásának valószínűségeiről (az egyik vagy másik stratégia megvalósításából származó különböző eredményekről), vagy kísérletek végzésében ezen valószínűségek becsléseinek megszerzésére. Ezáltal a bizonytalansági probléma valószínűségivé válik.</p>
+<p>Mindkét megközelítés munkaigényes, és rendszerint nehezen megvalósítható a gyakorlatban; a második megközelítés azonban előnyösebb. Az első megközelítés az ismertek közül a legjobb kiválasztására szolgáló új kritériumok kereséséhez vezet, majd a vizsgált kritériumok közül kritériumokat választó kritériumok kereséséhez, és így tovább. Más szóval, nincs olyan, valószínűségi becslésen nem alapuló döntési kritérium, amely megfelelne a „jó” kritériummal szemben támasztott bizonyos indokolt követelményeknek.</p>
+<p>A bizonytalanság melletti lehetséges döntések értékelésére szolgáló kritérium megfogalmazására tett kísérletek azt a törekvést tükrözik, hogy az egyes cselekvési módok előnyeit és hátrányait különböző körülmények között átláthatóbbá tegyék. A bizonytalanság melletti döntések kiválasztására szolgáló meglévő kritériumok egyike sem egyetemes, amely bármely döntéshozót ki tudna elégíteni.</p>
+<p>A rendszerelemzés módszereit nem szabad egymással szembeállítani. Mindegyiknek vannak előnyei és hátrányai, de egyik sem alkalmas minden probléma megoldására. Ezért a legjobb eredmények több módszer kombinálásával érhetők el, a megoldandó probléma jellegétől és a vizsgálat szintjétől függően. A gazdasági irányítás legalsó szintjén a tervezési problémák megoldásakor jellemzően kellően jól strukturált problémákkal találkozunk, amelyek lehetővé teszik a matematikai elemzési módszerek széles körű alkalmazását. Magasabb szinteken a célok és a rendszerelemzés más elemei egyre inkább minőségi jelleget öltenek, ezért az informális módszerek jelentősége nő.</p>
+<p>A gazdasági rendszerekben zajló társadalmi folyamatok modellezésének összetettsége tovább nehezíti a matematikai módszerek alkalmazását. Ugyanakkor a bizonytalansági tényező szerepe nő, és ennek formális módszerekkel történő figyelmen kívül hagyása téves következtetésekhez vezethet.</p>
+</div>
+      </article>
+    </div>
+
+    <div class="links">
+  <div class="links-section">
+    <h2>A rendszerelemzésről</h2>
+    <ul>
+      <li><a href="/hu/systems_analysis.html">Rendszerelemzés</a></li>
+      <li><a href="/hu/systems_analysis_optner.html">Rendszerelemzés az üzleti és ipari problémák megoldásához: Optner</a></li>
+      <li><a href="/hu/systems_analysis_pospelov.html">Rendszerelemzés és távlati tervezés: Pospelov</a></li>
+      <li><a href="/hu/systems_analysis_clelandking.html">Rendszerelemzés és projektirányítás: Cleland, King</a></li>
+      <li><a href="/hu/systems_analysis_nikanorov.html">Rendszerelemzés és rendszerszemlélet: Nikanorov</a></li>
+      <li><a href="/hu/systems_analysis_pt.html">Rendszerelemzés: Peregudov, Tarasenko</a></li>
+      <li><a href="/hu/systems_analysis_q.html">Rendszerelemzés: Quade</a></li>
+      <li><a href="/hu/systems_analysis_book.html">Rendszerelemzési szakirodalom letöltése</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Ugrás a cikkhez</h2>
+    <ul>
+      <li><a href="/hu/system.html">Rendszer</a></li>
+      <li><a href="/hu/system_terminus.html">A rendszer fogalma</a></li>
+      <li><a href="/hu/system_def.html">A rendszer meghatározásai</a></li>
+      <li><a href="/hu/methodology_sa.html">A rendszerelemzés módszertana</a></li>
+      <li><a href="/hu/economics.html">Rendszerelemzés a közgazdaságtanban</a></li>
+      <li><a href="/hu/systems_thinking.html">A rendszerszemlélet</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Navigációs útvonal">
+    <a href="/hu/">Főoldal</a> <span aria-hidden="true">/</span>
+    <a href="/hu/systems_analysis.html">Rendszerelemzés</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Rendszerelemzés: Golubkov</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Téma váltása"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/systems_analysis_golubkov.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/hu/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Téma váltása"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710962fb57a5ce',t:'MTc4ODczNTA2OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

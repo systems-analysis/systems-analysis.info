@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>运筹学：丘奇曼、阿科夫、阿诺夫</title>
+<meta name="description" content="运筹学随工业组织的成长而兴起，其目的是为管理层提供科学依据，用以解决组织各部门在追求组织总体目标过程中相互作用所产生的问题。">
+<meta name="keywords" content="运筹学,丘奇曼,阿科夫,阿诺夫,模型,问题,解,系统分析">
+<link rel="canonical" href="https://systems-analysis.info/zh/operation_research_caa.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_caa.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_caa.html">
+<link rel="alternate" hreflang="zh" href="https://systems-analysis.info/zh/operation_research_caa.html">
+<meta property="og:title" content="运筹学：丘奇曼、阿科夫、阿诺夫">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/zh/operation_research_caa.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="运筹学随工业组织的成长而兴起，其目的是为管理层提供科学依据，用以解决组织各部门在追求组织总体目标过程中相互作用所产生的问题。">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="zh_CN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/zh/operation_research_caa.html#article",
+    "headline": "运筹学：丘奇曼、阿科夫、阿诺夫",
+    "description": "运筹学随工业组织的成长而兴起，其目的是为管理层提供科学依据，用以解决组织各部门在追求组织总体目标过程中相互作用所产生的问题。",
+    "url": "https://systems-analysis.info/zh/operation_research_caa.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "zh",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/zh/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/zh/operation_research_caa.html"
+    },
+    "keywords": [
+        "运筹学",
+        "丘奇曼",
+        "阿科夫",
+        "阿诺夫",
+        "模型",
+        "问题",
+        "解",
+        "系统分析"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Introduction to Operations Research",
+        "author": [
+            {
+                "@type": "Person",
+                "name": "Churchman C.W."
+            },
+            {
+                "@type": "Person",
+                "name": "Ackoff R."
+            },
+            {
+                "@type": "Person",
+                "name": "Arnoff L."
+            }
+        ],
+        "datePublished": "1957",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Wiley"
+        },
+        "inLanguage": "en"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Introduction to Operations Research",
+        "author": [
+            {
+                "@type": "Person",
+                "name": "Churchman C.W."
+            },
+            {
+                "@type": "Person",
+                "name": "Ackoff R."
+            },
+            {
+                "@type": "Person",
+                "name": "Arnoff L."
+            }
+        ],
+        "datePublished": "1957",
+        "inLanguage": "en"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://systems-analysis.info/zh/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "运筹学",
+            "item": "https://systems-analysis.info/zh/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "运筹学：丘奇曼、阿科夫、阿诺夫"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/zh/">首页</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/sections.html">栏目</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">维基</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/books.html">书籍</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/catalog.html">目录</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_caa.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Toggle theme"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Toggle font"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">运筹学：丘奇曼、阿科夫、阿诺夫</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>Introduction to Operations Research. Churchman C.W., Ackoff R., Arnoff L. 1957.</strong></p>
+<p>运筹学最初产生于第二次世界大战期间的英国，其发展随后很快为美国所接续。因此，运筹学最先用于军事课题，直到战后才用于金融、工业与民政管理课题。起初这一进程在英国推进得更快，直到 1951 年运筹学在美国工业界站稳脚跟，并在美国迅速发展起来。</p>
+<p>尽管后来被称为运筹学的这一领域的工作始于军事组织，其发展与作为独立学科的形成，却可以用众所周知的工业发展过程来类比说明。工业革命之前，生产主要由小企业进行，那里的全部管理由一个业主承担：他采购、计划并指挥工作、销售产品、雇用和解雇工人等等。</p>
+<p>此后发生了行政职能的分工，出现了生产部门、销售部门、财务部门、人事部门等的负责人。机械化程度的提高连同局部自动化，使工业生产增长得更快，从而导致<a href="/zh/operation.html" class="text-link">作业</a>的细分和行政职能的进一步划分。</p>
+<p>大量分立作业的出现，必然要求设立管理这些作业的行政职位。如今，与生产车间有直接接触的生产部门负责人越来越少，他们实际上已成为履行纯组织职能的人员。</p>
+<p>在行政职能日益分化和细分的同时，科学家对工业组织各生产部门中所出现问题的兴趣也在增长。科学家开始越来越关注工业生产的各种问题，其共同努力的结果是出现了若干应用科学的新分支及相应的专业——机械工程师、化学工程师、工业建筑工程师、统计质量控制工程师和生产管理专家。在其他领域则出现了市场研究、工业经济学、计量经济学、劳动关系心理学、工业社会学等应用学科的专家。</p>
+<p>在行政职能分化与细分的这一时期，开始出现并成形一类新的管理课题——可以称之为组织管理性质的课题。这类课题是企业内部职能分工的直接后果，分工产生了组织活动的需要。在任何组织中，每个专业部门都完成总体工作的某一部分；完成每一部分工作，都是达成组织总体任务所必需的。然而，正是由于这种分工，每个专业部门都形成了自己的<a href="/zh/goal.html" class="text-link">目标</a>。</p>
+<p>随着组织类课题的出现，产生了管理顾问这一职位。顾问的作用，是凭借在其他领域解决同类课题的经验，帮助解决所出现的组织课题。他们所用的方法，在于分析各种解决方案时找出某一类课题的共同之处。自然，人们逐渐开始尝试寻找这些解决方案的共同结构（建立“<a href="/zh/model.html" class="text-link">模型</a>”），以及检验所得结构正确与否的一般原则。这些尝试导致了对组织类课题进行科学研究的需要——尽管应当指出，在运筹学出现之前，科学成果就已不时被用于这一领域。</p>
+<p>第二次世界大战期间，军方请来一批科学家帮助解决战略与战术课题。其中许多课题恰恰属于我们所说的组织类课题。各科学分支的代表被编成工作组，任务是使资源的使用达到<a href="/zh/optimization.html" class="text-link">最优</a>。这些就是最早的运筹学团队。</p>
+<p>运筹学随工业组织的成长而兴起，其目的是为管理层提供科学依据，用以解决组织各部门在追求组织总体目标过程中相互作用所产生的问题。</p>
+<p>对整个组织而言显得最有利的解，被视为最优解；而只对组织的一个或几个部分最有利的解，则称为次优解。</p>
+<p>在进行运筹学研究时，力求为整个组织中尽可能大的部分找到最好的解。例如，用运筹学方法解决企业的维护课题时，目标是考虑各种维护方针对整个生产的影响。还可以走得更远，试图确定这又如何影响某家公司，而公司反过来又影响整个行业，如此等等。在可能的情况下，还要设法考虑对生产部门的影响将如何波及其他部门乃至整个公司。运筹学力求在看来必要的限度内考虑各种相互作用或因果联系。不过在任何具体情形下，运筹学研究的范围在实践中通常都是有限的：或者因为进入组织更高层级受到限制，或者因为时间、经费与资源有限。</p>
+<p>理想的追求与现实的可能之间总有差距。尽管如此，运筹学的根本目标仍归结为：在考虑整个组织运行的前提下，为组织类课题寻找最优解。运筹学目标的这种总体性质，正是系统方法的一个例子，因为我们所说的“系统”，是指功能上相互关联的组成部分构成的相互联系的复合体。</p>
+<p>以系统方法看待课题，并不意味着必须在一个研究项目中解决以最一般方式提出的课题。这固然可取，实践中却极少能够做到。实践中，总课题通常按一定顺序分部分解决。在许多情况下，总课题无法事先表述出来，而某一阶段的解使人能够确定下一步。</p>
+<p>简言之，同时对<a href="/zh/system.html" class="text-link">系统</a>各部分作最优化固然十分可取，但实际条件通常要求对系统各部分依次进行最优化，并同时对各局部最优相互调整，以确定整个课题的最优解。</p>
+<p>运筹学力求描述系统中尽可能大的部分，但由此并不能推出必须从研究作为整体的系统开始。多数运筹学研究都从范围有限的已知课题入手，此后再在条件允许的范围内扩大研究的边界。实质上，研究范围正是决定运筹学特征之一的尺度。因此，运筹学研究常常从机械工程师、工业建筑工程师、化学工程师或市场研究人员也会着手的同样课题开始，但极少以这类课题告终。</p>
+<p>运筹学的一个特点是：每解决一个课题，都会产生新的课题。由此可见，在解决狭窄、有限的课题时运用运筹学方法收效不大。最大的效益来自连续的、累积的研究，即从一个课题依次过渡到另一个课题。这一点正是由上面给出的运筹学目标定义本身所决定的。</p>
+<p>运筹学最本质的特征之一，是力求找到最优解、确定最优的策略或方案。任务不是找到一个比现有方案更好的解，而是在一切可能的解中找到最好的那一个。由于科学现状、时间、资源或能力不足所施加的限制，这样的解并非总能求得；但运筹学的努力始终指向寻找最优解，或尽可能接近最优的解。</p>
+<p>最终的决策权属于管理作业的人，而不属于研究作业的人。运筹学团队只能推荐解决方案，或为选定某一方案提供依据；此外还可以在决策作出之后协助其实施。</p>
+<p>总而言之，最一般意义上的运筹学可以概括为：把科学的原理、方法与手段运用于与组织系统运行相关的课题，目的是为管理这些系统的人提供最优解。</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>各家著述</h2>
+    <ul>
+      <li><a href="/zh/operation_research_as.html">运筹学基础。阿科夫、萨西尼</a></li>
+      <li><a href="/zh/operation_research_me.html">运筹学：莫德、埃尔马格拉比</a></li>
+      <li><a href="/zh/operation_research_gv.html">组织与管理。格维希阿尼</a></li>
+      <li><a href="/zh/operation_research_ve.html">运筹学：文采尔</a></li>
+      <li><a href="/zh/operation_research_vg.html">运筹学：瓦格纳</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>文献</h2>
+    <ul>
+      <li><a href="/zh/operation_research_book.html">下载运筹学文献</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>相关文章</h2>
+    <ul>
+      <li><a href="/zh/operation_research.html">运筹学</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/zh/">首页</a> <span aria-hidden="true">/</span>
+    <a href="/zh/operation_research.html">运筹学</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">运筹学：丘奇曼、阿科夫、阿诺夫</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Toggle theme"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_caa.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">语言</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/zh/map.html">网站地图</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710f723b5a1e13',t:'MTc4ODczNTMxNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

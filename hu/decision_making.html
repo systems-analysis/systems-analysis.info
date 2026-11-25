@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Döntéshozatal</title>
+<meta name="description" content="A döntéshozatal az a folyamat, amelynek során több alternatíva közül kiválasztunk egyet. A formális döntéshozatali módszerek hasznosak a többszempontú problémák elemzésénél, a kollektív választásnál, valamint akkor, ha egy döntést alá kell támasztani.">
+<meta name="keywords" content="döntés,döntéshozatal,probléma,rendszerelemzés,alternatíva,kritérium">
+<link rel="canonical" href="https://systems-analysis.info/hu/decision_making.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/decision_making.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/decision_making.html">
+<link rel="alternate" hreflang="hu" href="https://systems-analysis.info/hu/decision_making.html">
+<meta property="og:title" content="Döntéshozatal">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/hu/decision_making.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="A döntéshozatal az a folyamat, amelynek során több alternatíva közül kiválasztunk egyet. A formális döntéshozatali módszerek hasznosak a többszempontú problémák elemzésénél, a kollektív választásnál, valamint akkor, ha egy döntést alá kell támasztani.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="hu_HU">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/hu/decision_making.html#article",
+    "headline": "Döntéshozatal",
+    "description": "A döntéshozatal az a folyamat, amelynek során több alternatíva közül kiválasztunk egyet. A formális döntéshozatali módszerek hasznosak a többszempontú problémák elemzésénél, a kollektív választásnál, valamint akkor, ha egy döntést alá kell támasztani.",
+    "url": "https://systems-analysis.info/hu/decision_making.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "hu",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/hu/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/hu/decision_making.html"
+    },
+    "keywords": [
+        "döntés",
+        "döntéshozatal",
+        "probléma",
+        "rendszerelemzés",
+        "alternatíva",
+        "kritérium"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "Döntéshozatal",
+        "description": "The process of selecting the most preferred course of action from a set of possible alternatives based on formal methods and analysis of the problem situation.",
+        "sameAs": [
+            "https://www.wikidata.org/entity/Q1331926",
+            "https://en.wikipedia.org/wiki/Decision-making",
+            "https://ru.wikipedia.org/wiki/Принятие_решений",
+            "https://systems-analysis.info/wiki/Принятие_решений",
+            "https://systems-analysis.info/eng/Decision-making"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Főoldal",
+            "item": "https://systems-analysis.info/hu/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Döntéselmélet",
+            "item": "https://systems-analysis.info/hu/decision_theory.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Döntéshozatal"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Fő navigáció">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menü</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/hu/">Főoldal</a>
+        <span aria-hidden="true">·</span>
+        <a href="/hu/sections.html">Témakörök</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/hu/books.html">Könyvek</a>
+        <span aria-hidden="true">·</span>
+        <a href="/hu/catalog.html">Katalógus</a>
+        <span aria-hidden="true">·</span>
+        <a href="/decision_making.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Téma váltása"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Betűtípus váltása"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Döntéshozatal</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>A döntéshozatal</strong> különféle jellegű objektumokra és azok létezésének különféle feltételei mellett alkalmazható. A döntéselméleten belül kidolgozott formális módszerek rávilágítanak arra, hogy az emberi tevékenység különböző területein zajló döntéshozatali folyamatoknak sok közös vonásuk van.</p>
+<p><strong>A formális döntéshozatali módszerek a következő esetekben bizonyulhatnak hasznosnak:</strong></p>
+<ul>
+  <li>létezik egy probléma vagy problémahelyzet, amelyet meg kell oldani. A kívánt eredményt gyakran egy vagy több olyan céllal azonosítják, amelyet a problémahelyzet megoldása során el kell érni;</li>
+  <li>több lehetőség áll rendelkezésre a probléma megoldására, a cél elérésének módjaira, cselekvésekre vagy objektumokra, amelyek közül választani kell. A döntéselméletben ezeket a lehetőségeket általában alternatíváknak nevezik. Ha csak egyetlen lehetőség létezik, és nincs választás, akkor nincs döntési probléma sem;</li>
+  <li>vannak olyan tényezők, amelyek bizonyos korlátozásokat rónak a probléma megoldásának és a cél elérésének lehetséges módjaira. Ezeket a tényezőket a probléma kontextusa határozza meg, és különböző jellegűek lehetnek: fizikai, műszaki, gazdasági, társadalmi, személyes és egyéb jellegűek;</li>
+  <li>van egy személy vagy személyek egy csoportja, akik érdekeltek a probléma megoldásában, jogosultak az egyik vagy másik megoldás kiválasztására, és felelősséget viselnek a meghozott döntés végrehajtásáért.</li>
+</ul>
+<p>A <a href="/hu/choice.html" class="text-link">döntés</a> egy <a href="/hu/problem.html" class="text-link">probléma</a> megoldásáról szóló életciklusa több szakaszból áll, és egy többlépéses, iteratív eljárást jelent.</p>
+<p>A döntés szükségessége akkor merül fel, amikor problémahelyzet jelenik meg. Ebben az esetben azonosítják a problémát – vagyis megadják a probléma tartalmi leírását, meghatározzák a megoldás kívánt eredményét, és felmérik a fennálló korlátozásokat.</p>
+<p>A következő szakaszban megfogalmazzák a döntési problémát. Ehhez meg kell határozni a lehetséges megoldások (alternatívák) halmazát. A vizsgált problémától függően a lehetséges megoldások száma néhánytól akár több tucatig, több százig vagy akár több ezerig terjedhet. Elméletileg a figyelembe vett alternatívák száma végtelen is lehet.</p>
+<p>Az összes lehetséges megoldás teljes körű leírásához általában szükség van a problémára és annak alternatív megoldási módjaira vonatkozó különféle információk összegyűjtésére és elemzésére. A szükséges információk hiánya vagy megszerzésének lehetetlensége megoldhatatlanná teheti a problémát. Ilyen esetekben vissza kell térni a probléma eredeti megfogalmazásához, és módosítani kell annak leírását. Ilyen igény a megoldási folyamat valamennyi korábbi szakaszában felmerülhet. Bonyolult választási helyzetekben szükség lehet arra is, hogy a probléma egyszerűsített megoldásának eléréséhez kidolgozzanak egy speciális <a href="/hu/model.html" class="text-link">modellt</a> (általában matematikai modellt).</p>
+<p>A második szakasz a döntési probléma megfogalmazásával zárul. Megjegyzendő, hogy a megoldandó probléma részletes tartalmi leírása már az első szakaszban nagymértékben meghatározza a megoldás lehetséges megközelítéseit, és közvetlenül elvezethet a döntési probléma megfogalmazásához, megkerülve a következő szakaszok mindegyikét vagy nagy részét.</p>
+<p>Miután megfogalmazódott a döntési probléma, megkezdődik a megoldás keresése. Ez a szakasz egyrészt magában foglalja egy megfelelő, a probléma megoldására szolgáló módszer kiválasztását a már ismertek közül, vagy egy új módszer kidolgozását; másrészt magát a megoldási folyamatot, amely a különféle megoldási lehetőségek értékeléséből és elemzéséből, valamint a köztük legkedvezőbb kiválasztásából áll. Egyes problémák esetében a végeredmény megszerzése nem nehéz. Gyakrabban azonban ezek meglehetősen összetett és munkaigényes eljárások, amelyek sok ember tudását és szakértelmét, valamint a modern számítástechnika lehetőségeit igénylik.</p>
+<p>Ugyanakkor a problémamegoldási folyamat valamennyi szakaszának lezárása után sem lehet mindig végleges választást tenni. Előfordulnak olyan helyzetek, amikor a legjobb megoldás nem található meg. Előfordulhat, hogy a szükséges lehetőség egyszerűen nem áll rendelkezésre. Ilyen esetben vagy módosítani lehet az eredeti probléma megfogalmazását, vagy vissza lehet térni a korábbi szakaszokhoz, össze lehet gyűjteni a szükséges további információkat, változtatásokat lehet végrehajtani a probléma formális megfogalmazásán vagy a problémahelyzet modelljén, bővíteni vagy szűkíteni lehet a figyelembe vett alternatívák számát, illetve új lehetőségeket lehet kidolgozni.</p>
+<p>Mindenesetre a legjobb megoldás keresése akkor sem hiábavaló, ha nem vezetett pozitív eredményre. Elősegítheti a vizsgált probléma új megértését, rávilágíthat figyelembe veendő új szempontokra, és más megoldási módokat sugallhat.</p>
+<p>Ha elfogadható lehetőség található, megkezdődik a döntés végrehajtásának szakasza, amelynek során megvalósítják az elfogadott döntést, nyomon követik a végrehajtási folyamatot, és értékelik a problémahelyzet megoldásának eredményét. Szigorúan véve ez a szakasz nem tartozik a döntéshozatali eljáráshoz. A döntés végrehajtásának az általános sémába való beillesztése azonban módszertani és gyakorlati szempontból egyaránt fontos, mivel ez a szakasz zárja le a problémahelyzet keletkezésének, megoldásának és megszűnésének életciklusát. Ezenkívül az elfogadott döntés végrehajtása új problémát vethet fel, amely önálló megoldást igényel.</p>
+<p>A döntéshozatal problémája olyan esetekben merül fel, amikor egy probléma (feladat) annyira összetetté válik, hogy megfogalmazására (megállapítására) nem alkalmazható azonnal megfelelő formalizálási apparátus, és a probléma megfogalmazásának folyamata különböző tudásterületek szakértőinek részvételét igényli.</p>
+<p>Ez olyan helyzethez vezet, amelyben magának a problémának a megfogalmazása válik problematikussá, ami speciális megközelítések, technikák és módszerek kidolgozását teszi szükségessé. Ilyen esetekben szükségessé válik a döntési probléma (a problémahelyzet) tartományának meghatározása, a megoldását befolyásoló tényezők azonosítása, valamint olyan technikák és módszerek kiválasztása, amelyek lehetővé teszik a probléma olyan megfogalmazását vagy megállapítását, amely alapján döntés hozható.</p>
+<p>Így a döntés meghozatalához olyan kifejezést kell kapni, amely összeköti a célt az elérésének eszközeivel, a cél elérhetőségének értékelésére és az eszközök értékelésére bevezetett <a href="/hu/criterion.html" class="text-link">kritériumok</a> felhasználásával. A párhuzamosan kialakult különböző alkalmazott területeken az ilyen kifejezések különböző elnevezéseket kaptak: teljesítménykritérium; eredményességi kritérium vagy eredményességi mutató; célfüggvény vagy kritériumfüggvény; és így tovább. (Az orosz nyelvű szakirodalomban ezeket <em>celevaja funkcija</em> – szó szerint „célfüggvény” – és <em>funkcija celi</em> néven is nevezik, amelyek mindegyike megfelel az angol „objective function” kifejezésnek.)</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Kapcsolódó cikkek</h2>
+    <ul>
+      <li><a href="/hu/decision_theory.html">Döntéselmélet</a></li>
+      <li><a href="/hu/decision_theory_model.html">Döntési probléma</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Navigációs útvonal">
+    <a href="/hu/">Főoldal</a> <span aria-hidden="true">/</span>
+    <a href="/hu/decision_theory.html">Döntéselmélet</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Döntéshozatal</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Téma váltása"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/decision_making.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/hu/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Téma váltása"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710988cac3a5ce',t:'MTc4ODczNTA3NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

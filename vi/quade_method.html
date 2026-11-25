@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Phương pháp luận phân tích hệ thống của Quade</title>
+<meta name="description" content="Phân tích hệ thống. Phương pháp luận của Quade. Xác định vấn đề là yếu tố quan trọng nhất của phân tích hệ thống, bao gồm việc nêu rõ bản chất của vấn đề, xác định phạm vi nghiên cứu, thiết lập dữ liệu ban đầu và xác định các mục tiêu.">
+<meta name="keywords" content="Phân tích hệ thống,Phương pháp luận của Quade">
+<link rel="canonical" href="https://systems-analysis.info/vi/quade_method.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/quade_method.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/quade_method.html">
+<link rel="alternate" hreflang="vi" href="https://systems-analysis.info/vi/quade_method.html">
+<meta property="og:title" content="Phương pháp luận phân tích hệ thống của Quade">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/vi/quade_method.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Phân tích hệ thống. Phương pháp luận của Quade. Xác định vấn đề là yếu tố quan trọng nhất của phân tích hệ thống, bao gồm việc nêu rõ bản chất của vấn đề, xác định phạm vi nghiên cứu, thiết lập dữ liệu ban đầu và xác định các mục tiêu.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="vi_VN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/vi/quade_method.html#article",
+    "headline": "Phương pháp luận phân tích hệ thống của Quade",
+    "description": "Phân tích hệ thống. Phương pháp luận của Quade. Xác định vấn đề là yếu tố quan trọng nhất của phân tích hệ thống, bao gồm việc nêu rõ bản chất của vấn đề, xác định phạm vi nghiên cứu, thiết lập dữ liệu ban đầu và xác định các mục tiêu.",
+    "url": "https://systems-analysis.info/vi/quade_method.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "vi",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/vi/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/vi/quade_method.html"
+    },
+    "keywords": [
+        "Phân tích hệ thống",
+        "Phương pháp luận của Quade"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Analysis for Military Decisions",
+        "author": {
+            "@type": "Person",
+            "name": "Quade E.S."
+        },
+        "datePublished": "1964",
+        "publisher": {
+            "@type": "Organization",
+            "name": "RAND Corporation"
+        },
+        "inLanguage": "vi"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Analysis for Military Decisions",
+        "author": {
+            "@type": "Person",
+            "name": "Quade E.S."
+        },
+        "datePublished": "1964",
+        "inLanguage": "vi"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Trang chủ",
+            "item": "https://systems-analysis.info/vi/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Phân tích hệ thống",
+            "item": "https://systems-analysis.info/vi/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Phương pháp luận của Quade"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Điều hướng chính">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/vi/">Trang chủ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/sections.html">Chuyên mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/books.html">Sách</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/catalog.html">Danh mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/quade_method.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Đổi giao diện"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Đổi phông chữ"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Phương pháp luận phân tích hệ thống của Quade</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>Phân tích hệ thống thường được tiến hành theo trình tự sau:</strong></p>
+<ol>
+  <li>Xác định vấn đề;</li>
+  <li>Lựa chọn các cách tiếp cận khác nhau để giải quyết vấn đề;</li>
+  <li>Nghiên cứu các nguồn lực chi cho việc giải quyết vấn đề;</li>
+  <li>Xây dựng mô hình;</li>
+  <li>Lựa chọn tiêu chí đánh giá;</li>
+  <li>So sánh các phương án và ra quyết định.</li>
+</ol>
+<p>Xác định vấn đề là yếu tố quan trọng nhất của phân tích hệ thống và bao gồm việc nêu rõ bản chất của <a href="/vi/problem.html" class="text-link">vấn đề</a>, xác định phạm vi nghiên cứu, thiết lập dữ liệu ban đầu và xác định các mục tiêu.</p>
+<p>Việc lựa chọn các cách tiếp cận khác nhau để giải quyết vấn đề bao gồm việc liệt kê các phương án (phương tiện) mà, dựa trên những cân nhắc sơ bộ, có thể được sử dụng để giải quyết vấn đề đã nêu. Trong quá trình nghiên cứu, một số phương án bị loại bỏ và những phương án mới được đưa vào.</p>
+<p>Nghiên cứu các nguồn lực chi cho việc giải quyết vấn đề là một giai đoạn then chốt của phân tích kinh tế, trong đó xác định các yêu cầu về vật chất và tài chính. Thông thường, các <a href="/vi/system.html" class="text-link">hệ thống</a> vũ khí được lựa chọn dựa trên chi phí tối thiểu ứng với một mức hiệu quả nhất định.</p>
+<p>Xây dựng <a href="/vi/model.html" class="text-link">mô hình</a> là giai đoạn nghiên cứu mà tại đó một tương tự của quá trình thực tế được xây dựng bằng cách biểu diễn các yếu tố quan trọng nhất thông qua các quan hệ toán học (mô hình giải tích), thông qua máy tính (mô hình máy tính), hoặc thông qua một “trò chơi” đặc biệt (mô hình trò chơi).</p>
+<p>Mô hình hóa trong phân tích hệ thống sẽ ngày càng chiếm vị trí quan trọng hơn, đặc biệt gắn liền với sự phát triển của các phương pháp mô hình hóa toán học và máy tính.</p>
+<p>Lựa chọn tiêu chí đánh giá là một giai đoạn cực kỳ quan trọng của phân tích hệ thống, bao gồm việc xác định một đại lượng (hoặc một hệ thống các đại lượng) mà giá trị số của nó có thể được dùng để đánh giá mức độ thành công của giải pháp. Để các phương pháp phân tích hệ thống hoạt động hiệu quả, điều quan trọng là các tiêu chí được áp dụng ở mỗi cấp quản lý phải được liên kết thành một hệ thống logic thống nhất. Tiêu chí quan trọng nhất ở cấp cao nhất (lãnh đạo bộ quốc phòng) là tỷ lệ chi phí – hiệu quả của hệ thống.</p>
+<p>So sánh các phương án và ra quyết định là giai đoạn cuối cùng của phân tích, trong đó các phương tiện giải quyết vấn đề đã nêu được đánh giá theo tiêu chí đã chọn. Ngoài việc đánh giá định lượng các phương án khác nhau, cũng có thể đưa ra các nhận định logic chỉ ra sự ưu tiên của phương án này so với các phương án khác.</p>
+</div>
+      </article>
+    </div>
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Phương pháp luận phân tích hệ thống</h2>
+    <ul>
+      <li><a href="/vi/methodology_sa.html">Phương pháp luận phân tích hệ thống</a></li>
+      <li><a href="/vi/optner_method.html">Phương pháp luận phân tích hệ thống của Optner</a></li>
+      <li><a href="/vi/chernyak_method.html">Phương pháp luận phân tích hệ thống của Chernyak</a></li>
+      <li><a href="/vi/young_method.html">Phương pháp luận phân tích hệ thống của Young</a></li>
+      <li><a href="/vi/golubkov_method.html">Phương pháp luận phân tích hệ thống của Golubkov</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Tài liệu</h2>
+    <ul>
+      <li><a href="/assets/systems_analysis_quaid.pdf">Tải sách: Phân tích cho các quyết định quân sự. Quade</a></li>
+      <li><a href="/vi/systems_analysis_book.html">Tải tài liệu về phân tích hệ thống</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Bài viết liên quan</h2>
+    <ul>
+      <li><a href="/vi/systems_analysis.html">Phân tích hệ thống</a></li>
+      <li><a href="/vi/decision_theory.html">Lý thuyết ra quyết định</a></li>
+      <li><a href="/vi/decision_making.html">Ra quyết định</a></li>
+      <li><a href="/vi/choice.html">Quyết định và lựa chọn</a></li>
+      <li><a href="/vi/management.html">Quản lý</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Đường dẫn điều hướng">
+    <a href="/vi/">Trang chủ</a> <span aria-hidden="true">/</span>
+    <a href="/vi/systems_analysis.html">Phân tích hệ thống</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Phương pháp luận của Quade</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Đổi giao diện"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/quade_method.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/vi/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Đổi giao diện"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710f027f071e13',t:'MTc4ODczNTI5OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

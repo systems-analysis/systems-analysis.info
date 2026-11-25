@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>فرایند مدل‌سازی</title>
+<meta name="description" content="فرایند مدل‌سازی را می‌توان گذار از یک دسته مدل‌ها به دسته‌ای دیگر دانست. به‌طور قراردادی سه دسته کلی مدل‌ها متمایز می‌شوند: شناختی، محتوایی و صوری. این‌ها سه سطح به‌هم‌پیوسته مدل‌سازی‌اند که نمی‌توان آن‌ها را جدا از یکدیگر بررسی کرد.">
+<meta name="keywords" content="فرایند مدل‌سازی,مدل,مدل شناختی,مدل مفهومی,مدل صوری,مدل‌سازی ریاضی,تحلیل سیستم‌ها">
+<link rel="canonical" href="https://systems-analysis.info/fa/modeling_process.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/modeling_process.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/modeling_process.html">
+<link rel="alternate" hreflang="fa" href="https://systems-analysis.info/fa/modeling_process.html">
+<meta property="og:title" content="فرایند مدل‌سازی">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/fa/modeling_process.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="فرایند مدل‌سازی را می‌توان گذار از یک دسته مدل‌ها به دسته‌ای دیگر دانست. به‌طور قراردادی سه دسته کلی مدل‌ها متمایز می‌شوند: شناختی، محتوایی و صوری. این‌ها سه سطح به‌هم‌پیوسته مدل‌سازی‌اند که نمی‌توان آن‌ها را جدا از یکدیگر بررسی کرد.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="fa_IR">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css?v=20261125b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;600;700&family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/fa/modeling_process.html#article",
+    "headline": "فرایند مدل‌سازی",
+    "description": "فرایند مدل‌سازی را می‌توان گذار از یک دسته مدل‌ها به دسته‌ای دیگر دانست. به‌طور قراردادی سه دسته کلی مدل‌ها متمایز می‌شوند: شناختی، محتوایی و صوری. این‌ها سه سطح به‌هم‌پیوسته مدل‌سازی‌اند که نمی‌توان آن‌ها را جدا از یکدیگر بررسی کرد.",
+    "url": "https://systems-analysis.info/fa/modeling_process.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "fa",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/fa/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/fa/modeling_process.html"
+    },
+    "keywords": [
+        "فرایند مدل‌سازی",
+        "مدل",
+        "مدل شناختی",
+        "مدل مفهومی",
+        "مدل صوری",
+        "مدل‌سازی ریاضی",
+        "تحلیل سیستم‌ها"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "خانه",
+            "item": "https://systems-analysis.info/fa/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "مدل‌سازی",
+            "item": "https://systems-analysis.info/fa/modelling.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "فرایند مدل‌سازی"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="ناوبری اصلی">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">منو</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/fa/">خانه</a>
+        <span aria-hidden="true">·</span>
+        <a href="/fa/sections.html">بخش‌ها</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">ویکی</a>
+        <span aria-hidden="true">·</span>
+        <a href="/fa/books.html">کتاب‌ها</a>
+        <span aria-hidden="true">·</span>
+        <a href="/fa/catalog.html">فهرست</a>
+        <span aria-hidden="true">·</span>
+        <a href="/modeling_process.html" lang="en" dir="ltr">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="تغییر حالت نمایش"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="تغییر قلم"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">فرایند مدل‌سازی</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>فرایند مدل‌سازی را می‌توان گذار از یک دسته <a href="/fa/model.html" class="text-link">مدل‌ها</a> به دسته‌ای دیگر دانست. به‌طور قراردادی سه دسته کلی مدل‌ها متمایز می‌شوند: شناختی، محتوایی و صوری. این‌ها سه سطح به‌هم‌پیوسته مدل‌سازی‌اند که نمی‌توان آن‌ها را جداگانه بررسی کرد. تأثیر متقابل سطوح مدل‌سازی با خاصیت بالقوگی ذاتی مدل‌ها پیوند دارد. ساختن هر مدلی پیدایش دانش تازه‌ای درباره شیء مورد مطالعه را در پی دارد و به بازنگری و پالایش مفاهیم و دیدگاه‌ها درباره شیء مدل‌سازی در سطوح گوناگون می‌انجامد. این وضعیت به نوبه خود به بازنگری مدل‌های محتوایی و شناختی متناظر می‌انجامد و رشد مارپیچی همه سطوح مدل‌سازی شیء مورد مطالعه را تضمین می‌کند.</p>
+<p>هنگام مشاهده شیء اصلی، تصویری ذهنی از شیء — یعنی مدل آرمانی آن — در ذهن پژوهشگر شکل می‌گیرد. در ادبیات علمی این را معمولاً مدل شناختی (ذهنی) می‌نامند. پژوهشگر در شکل دادن چنین مدلی، به‌طور معمول، می‌کوشد به پرسش‌های مشخصی پاسخ دهد؛ از این رو، هر چیز غیرضروری از ترکیب بی‌نهایت پیچیده شیء کنار گذاشته می‌شود تا توصیفی فشرده‌تر و موجزتر به دست آید. بازنمایی مدل شناختی به زبان طبیعی مدل محتوایی نامیده می‌شود.</p>
+<p>مدل‌های شناختی ذاتاً ذهنی‌اند، زیرا پژوهشگران آن‌ها را بر پایه دانش و تجربه پیشین می‌سازند. این مدل‌ها را تنها از راه توصیف نمادین می‌توان فهمید. مدل‌های شناختی و محتوایی هم‌ارز نیستند، زیرا اولی ممکن است عناصری را در بر داشته باشد که پژوهشگر نمی‌تواند یا نمی‌خواهد آن‌ها را بیان کند. در عین حال، اگر مدل محتوایی را کس دیگری صورت‌بندی کرده باشد یا حاصل کار جمعی باشد، تفسیر آن، سطح فهم و میزان اعتماد به آن ممکن است میان تفسیرکنندگان به‌طور چشمگیری متفاوت باشد. مدل‌های محتوایی اغلب «شرح فنی مسئله» نامیده می‌شوند.</p>
+<p><strong>مدل‌های محتوایی بر حسب کارکرد و اهداف به توصیفی، تبیینی و پیش‌بینی‌کننده تقسیم می‌شوند:</strong></p>
+<ul>
+  <li><em>مدل توصیفی</em> هر توصیفی از یک شیء است.</li>
+  <li><em>مدل تبیینی</em> به این پرسش پاسخ می‌دهد که چرا چیزی رخ می‌دهد.</li>
+  <li><em>مدل پیش‌بینی‌کننده</em> رفتار آینده شیء را توصیف می‌کند. شایان توجه است که مدل پیش‌بینی‌کننده لزوماً جزء تبیینی را در بر ندارد.</li>
+</ul>
+<p><em>مدل مفهومی</em> مدلی محتوایی است که در صورت‌بندی آن از مفاهیم و بازنمایی‌های حوزه‌های موضوعی مرتبط با مطالعه شیء مدل‌سازی استفاده می‌شود.</p>
+<p>در معنایی گسترده‌تر، مدل مفهومی به مدلی محتوایی گفته می‌شود که بر مفهوم یا دیدگاهی مشخص استوار است. سه نوع مدل مفهومی متمایز می‌شوند: منطقی‑معنایی، ساختاری‑کارکردی و علّی.</p>
+<ul>
+  <li><em>مدل منطقی‑معنایی</em> شیء را با اصطلاحات و تعریف‌های حوزه‌های موضوعی مربوط توصیف می‌کند و همه گزاره‌ها و واقعیت‌های شناخته‌شده و از نظر منطقی سازگار را در بر می‌گیرد. تحلیل این مدل‌ها بر استدلال منطقی و دانش انباشته در حوزه‌های مربوط تکیه دارد.</li>
+  <li><em>مدل ساختاری‑کارکردی</em> شیء را سیستمی یکپارچه می‌داند که به عناصر یا زیرسیستم‌های جداگانه تجزیه می‌شود. اجزا با روابط ساختاری‌ای به هم پیوسته‌اند که تبعیت، توالی منطقی و ترتیب زمانی انجام وظایف را تعیین می‌کنند. برای بازنمایی این مدل‌ها معمولاً از نمودارها، چارت‌ها و نقشه‌ها استفاده می‌شود.</li>
+  <li><em>مدل علّی</em> اغلب برای تبیین و پیش‌بینی رفتار شیء به کار می‌رود. این مدل‌ها عمدتاً معطوف‌اند به: (1) شناسایی روابط متقابل کلیدی میان عناصر سازنده شیء مورد مطالعه؛ (2) تعیین اینکه تغییر برخی عوامل چگونه بر وضعیت اجزای مدل اثر می‌گذارد؛ (3) فهم اینکه مدل در کل چگونه کار خواهد کرد و آیا پویایی پارامترهای مورد علاقه پژوهشگر را به‌درستی توصیف خواهد کرد یا نه.</li>
+</ul>
+<p><em>مدل صوری</em> مدل مفهومی را با یک یا چند زبان صوری، مانند نظریه‌های ریاضی، زبان‌های تخصصی مدل‌سازی یا زبان‌های برنامه‌نویسی، بازنمایی می‌کند. در علوم انسانی، مدل‌سازی اغلب با تدوین مدل مفهومی پایان می‌یابد، حال آنکه در علوم طبیعی ساختن مدل صوری عموماً امکان‌پذیر است.</p>
+<p>هرچند اهمیت مدل‌های محتوایی و صوری در پژوهش به‌طور گسترده پذیرفته شده است، نقش مدل‌های شناختی به سبب ذهنی بودن آن‌ها و ماهیت ضمنی فرایندهای فکری اغلب دست‌کم گرفته می‌شود. با این حال، مدل‌های شناختی به‌ویژه در بافت‌هایی اهمیت دارند که اپراتورها یا تصمیم‌گیرندگان برای کنترل اشیا یا فرایندها به بازنمایی‌های ذهنی خود تکیه می‌کنند. این نوع مدل در علوم اجتماعی نیز نقش چشمگیری دارد.</p>
+<p>مدل‌سازی ریاضی شکلی از مدل‌سازی علمی، نمادین و صوری است که در آن اشیا با زبان ریاضی توصیف و با روش‌های ریاضی بررسی می‌شوند.</p>
+<p>مدل ریاضی‌ای که برای پژوهش علمی طراحی شده است امکان تعیین مقادیر پارامترهای شیء یا پدیده مدل‌شده را بر پایه داده‌های ورودی مشخص فراهم می‌کند. بدین ترتیب، هسته چنین مدلی نگاشت مقادیر پارامترهای ورودی به مقادیر پارامترهای خروجی است. این دیدگاه اجازه می‌دهد مدل ریاضی را عملگری ریاضی بدانیم که می‌توان آن را به‌طور گسترده چنین تعریف کرد: یک تابع، نگاشتی که با معادلات جبری، دیفرانسیل، انتگرال‑دیفرانسیل یا انتگرال بازنمایی می‌شود، یک الگوریتم، مجموعه‌ای از قواعد، یا جدول‌هایی که تعیین پارامترهای خروجی از مقادیر ورودی را آسان می‌کنند.</p>
+<p>تعریف مدل ریاضی از راه مفهوم عملگر از دیدگاه ساختن طبقه‌بندی این مدل‌ها سازنده‌تر است، زیرا همه تنوع مدل‌های ریاضی موجود امروز را در بر می‌گیرد.</p>
+<p><strong>مزایای مدل‌سازی ریاضی در مقایسه با آزمایش فیزیکی:</strong></p>
+<ul>
+  <li>صرفه‌جویی (به‌ویژه، حفظ منابع سیستم واقعی)؛</li>
+  <li>امکان مدل‌سازی اشیای فرضی — یعنی اشیایی که در طبیعت تحقق نیافته‌اند؛</li>
+  <li>امکان شبیه‌سازی شرایط کاری‌ای که خطرناک‌اند یا بازتولید آن‌ها در واقعیت دشوار است؛</li>
+  <li>امکان تغییر مقیاس زمان؛</li>
+  <li>سهولت تحلیل چندجانبه؛</li>
+  <li>توان پیش‌بینی بیشتر، به سبب امکان شناسایی الگوهای کلی؛</li>
+  <li>عمومیت سخت‌افزار و نرم‌افزار به کار رفته (سیستم‌های برنامه‌نویسی و بسته‌های نرم‌افزاری کاربردی همه‌منظوره).</li>
+</ul>
+<p><em>مدل اطلاعاتی</em> مدلی از یک شیء است که به شکل اطلاعاتی ارائه می‌شود که پارامترها و متغیرهای اساسی برای تحلیل مورد نظر، روابط میان آن‌ها و ورودی‌ها و خروجی‌های شیء را توصیف می‌کند و امکان شبیه‌سازی حالت‌های ممکن شیء را با وارد کردن اطلاعات مربوط به تغییر مقادیر ورودی به مدل فراهم می‌سازد.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>مقاله‌های مرتبط</h2>
+    <ul>
+      <li><a href="/fa/model.html">مدل</a></li>
+      <li><a href="/fa/modelling.html">مدل‌سازی</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="مسیر راهنما">
+    <a href="/fa/">خانه</a> <span aria-hidden="true">/</span>
+    <a href="/fa/modelling.html">مدل‌سازی</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">فرایند مدل‌سازی</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="تغییر حالت نمایش"></button>
+    <span class="footer-info" dir="ltr">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/modeling_process.html" lang="en" dir="ltr">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">زبان‌ها</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/fa/map.html">نقشه سایت</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="تغییر حالت نمایش"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+</body>
+</html>

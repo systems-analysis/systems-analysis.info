@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>অপারেশনস রিসার্চের মডেল</title>
+<meta name="description" content="অপারেশন মডেল তৈরি করা অপারেশনস রিসার্চের মূল পর্যায়। অপারেশনটিকে সরলীকৃত ও স্কিমাবদ্ধ করা হয় এবং মূল নিয়ামকগুলো চিহ্নিত করা হয়। প্রমিত মডেল ও সমস্যার শ্রেণিবিন্যাস বর্ণনা করা হয়েছে।">
+<meta name="keywords" content="মডেলিং,মডেল,অপারেশনস রিসার্চ,উদ্দেশ্য অপেক্ষক,প্রোগ্রামিং,সমস্যা,কার্যকারিতা,সর্বোত্তম,গাণিতিক,সিস্টেম,বিশ্লেষণ,সমাধান">
+<link rel="canonical" href="https://systems-analysis.info/bn/operation_research_model.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_model.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_model.html">
+<link rel="alternate" hreflang="bn" href="https://systems-analysis.info/bn/operation_research_model.html">
+<meta property="og:title" content="অপারেশনস রিসার্চের মডেল">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/bn/operation_research_model.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="অপারেশন মডেল তৈরি করা অপারেশনস রিসার্চের মূল পর্যায়। অপারেশনটিকে সরলীকৃত ও স্কিমাবদ্ধ করা হয় এবং মূল নিয়ামকগুলো চিহ্নিত করা হয়। প্রমিত মডেল ও সমস্যার শ্রেণিবিন্যাস বর্ণনা করা হয়েছে।">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="bn_BD">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/bn/operation_research_model.html#article",
+    "headline": "অপারেশনস রিসার্চের মডেল",
+    "description": "অপারেশন মডেল তৈরি করা অপারেশনস রিসার্চের মূল পর্যায়। অপারেশনটিকে সরলীকৃত ও স্কিমাবদ্ধ করা হয় এবং মূল নিয়ামকগুলো চিহ্নিত করা হয়। প্রমিত মডেল ও সমস্যার শ্রেণিবিন্যাস বর্ণনা করা হয়েছে।",
+    "url": "https://systems-analysis.info/bn/operation_research_model.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "bn",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/bn/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/bn/operation_research_model.html"
+    },
+    "keywords": [
+        "মডেলিং",
+        "মডেল",
+        "অপারেশনস রিসার্চ",
+        "উদ্দেশ্য অপেক্ষক",
+        "প্রোগ্রামিং",
+        "সমস্যা",
+        "কার্যকারিতা",
+        "সর্বোত্তম",
+        "গাণিতিক",
+        "সিস্টেম",
+        "বিশ্লেষণ",
+        "সমাধান"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "অপারেশনস রিসার্চের মডেল",
+        "description": "A sufficiently precise mathematical description of an operation expressed through functions, equations, systems of equations, and inequalities.",
+        "sameAs": [
+            "https://systems-analysis.info/wiki/Модели_исследования_операций",
+            "https://systems-analysis.info/eng/Operations_research_models"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "প্রধান পাতা",
+            "item": "https://systems-analysis.info/bn/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "অপারেশনস রিসার্চ",
+            "item": "https://systems-analysis.info/bn/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "অপারেশনস রিসার্চের মডেল"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="প্রধান নেভিগেশন">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">মেনু</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/bn/">প্রধান পাতা</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bn/sections.html">বিভাগসমূহ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bn/books.html">বইসমূহ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bn/catalog.html">তালিকা</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_model.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="থিম পরিবর্তন"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="ফন্ট পরিবর্তন"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">অপারেশনস রিসার্চের মডেল</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>পরিমাণগত গবেষণা পদ্ধতি প্রয়োগ করতে হলে অপারেশনের একটি গাণিতিক মডেল তৈরি করা প্রয়োজন। মডেল তৈরির সময় সাধারণত অপারেশনটিকে সরলীকৃত ও স্কিমাবদ্ধ করা হয় এবং প্রাপ্ত স্কিমাটি গাণিতিক উপকরণের সাহায্যে বর্ণনা করা হয়। অপারেশনের মডেল হলো অপারেশনের একটি যথেষ্ট নিখুঁত গাণিতিক বর্ণনা, যা অপেক্ষক, সমীকরণ, সমীকরণ ব্যবস্থা এবং অসমতার মাধ্যমে প্রকাশ করা হয়। কোনো অপারেশনের কার্যকারিতা হলো তা তার লক্ষ্য অর্জনের যে মাত্রায় সক্ষম হয় তার পরিমাপ।</p>
+
+<h2>অপারেশনস রিসার্চ সমস্যার সাধারণ সূত্রায়ন</h2>
+
+<p>অপারেশনস রিসার্চে, একটি ব্যবস্থাপনা পরিস্থিতি লক্ষ্য ও সিদ্ধান্তকে অন্তর্ভুক্ত করে। লক্ষ্য অর্জনের জন্য সিদ্ধান্ত নেওয়া হয়। ব্যবস্থাপনা পরিস্থিতি একটি মডেলের মাধ্যমে বর্ণিত হয়। মডেলটিতে কার্যকারিতার একটি মাপকাঠি থাকে, যার মাধ্যমে নির্ধারণ করা হয় যে কোনো সিদ্ধান্ত লক্ষ্যের কতটা কাছাকাছি। কার্যকারিতার মাপকাঠি সেই নিয়ামকগুলোর উপর নির্ভর করে, যেগুলো অপারেশনকে প্রভাবিত করে। অপারেশনের বর্ণনায় অন্তর্ভুক্ত সব নিয়ামককে দুটি দলে ভাগ করা যায়: স্থির নিয়ামক, যাদের উপর প্রভাব ফেলা যায় না, এবং নিয়ন্ত্রণযোগ্য নিয়ামক।</p>
+
+<p>মডেলের ধারণাগত উপাদানগুলোকে একটি “ব্ল্যাক বক্স” হিসেবে উপস্থাপন করা হয়, যেখানে মূল মনোযোগ দেওয়া হয় ইনপুট ও আউটপুট নির্ধারণে। ইনপুট হলো যা মডেল প্রক্রিয়াকরণ করে; আউটপুট হলো মডেল যা উৎপন্ন করে। নিয়ন্ত্রণযোগ্য ও অনিয়ন্ত্রণযোগ্য চলকগুলো ইনপুট হিসেবে সরবরাহ করা হয়। আউটপুট হলো কার্যকারিতার মানদণ্ড। মডেলটিতে কার্যকারিতার একটি সুস্পষ্ট মাপকাঠি থাকে, যার মাধ্যমে নির্ধারণ করা হয় কোনো সিদ্ধান্ত লক্ষ্যের কতটা কাছাকাছি। মডেল তৈরির সময় এটি নির্দিষ্ট করা গুরুত্বপূর্ণ যে ইনপুট প্যারামিটারগুলো নির্ধারিত মাপকাঠিকে কীভাবে প্রভাবিত করবে।</p>
+
+<p>কার্যকারিতার মানদণ্ড, যা একটি নির্দিষ্ট অপেক্ষক দ্বারা প্রকাশিত হয় — যাকে উদ্দেশ্য অপেক্ষক বলা হয় — উভয় দলের নিয়ামকের উপর নির্ভর করে। কার্যকারিতার মানদণ্ডের গাণিতিক প্রকাশকে উদ্দেশ্য অপেক্ষক বলা হয়। উদ্দেশ্য অপেক্ষক হলো কার্যকারিতার একটি গাণিতিকভাবে প্রণীত (আনুষ্ঠানিক) মাপকাঠি, যাকে সর্বোচ্চ বা সর্বনিম্ন করা প্রয়োজন।</p>
+
+<p>নিয়ন্ত্রণযোগ্য চলক হলো সেই প্যারামিটারগুলো, যেগুলো সিদ্ধান্ত গ্রহণকারী দ্বারা পরিচালিত হয়।</p>
+
+<p>অনিয়ন্ত্রণযোগ্য চলক হলো বাহ্যিক নিয়ামক, যা ব্যবস্থাপক নিয়ন্ত্রণ করতে পারেন না, কিন্তু যা লক্ষ্য অর্জনের জন্য অপরিহার্য।</p>
+
+<p>কার্যকারিতার মানদণ্ড, বা উদ্দেশ্য অপেক্ষক, সিদ্ধান্ত চলকগুলোর একটি অপেক্ষক, যা লক্ষ্যের নিকটবর্তী হওয়ার মাত্রা প্রকাশ করে।</p>
+
+<p>গাণিতিক মডেলের সংজ্ঞা: একটি গাণিতিক মডেল বলতে এমন যেকোনো অপারেটরকে বোঝানো হয়, যা ইনপুট প্যারামিটারের সংশ্লিষ্ট মান দেওয়া হলে, মডেলকৃত বস্তুর ইনপুট ও আউটপুট প্যারামিটারের অনুমোদিত মানের সেটের মধ্যে সেই বস্তুর প্যারামিটারের আউটপুট মান নির্ধারণ করে।</p>
+
+<h2>অপারেশনস রিসার্চের মডেল এবং সিদ্ধান্ত গ্রহণ</h2>
+
+<p>অপারেশনস রিসার্চ যুক্তিসঙ্গত সিদ্ধান্ত গ্রহণের পরিমাণগত ন্যায্যতা প্রদানের দিকে পরিচালিত। এই ধরনের মডেলগুলো সিদ্ধান্ত তত্ত্বের একটি বৃহৎ শ্রেণির সমস্যা এবং অপ্টিমাইজেশন সমস্যার সঙ্গে ঘনিষ্ঠভাবে সংযুক্ত।</p>
+
+<p>একটি অপারেশনস রিসার্চের মডেল তৈরির সময় নিম্নলিখিত প্রশ্নগুলোর উত্তর দেওয়া প্রয়োজন:</p>
+<ul>
+<li>নির্দিষ্ট ক্ষেত্রে, কোনগুলোকে বিকল্প সমাধান হিসেবে বিবেচনা করা উচিত?</li>
+<li>কোন মানদণ্ডের ভিত্তিতে বিকল্প সমাধানগুলো নির্বাচন করা হয়?</li>
+<li>সম্ভাব্য সমাধানগুলোকে কোন সীমাবদ্ধতা পূরণ করতে হবে?</li>
+</ul>
+
+<p>অপারেশনস রিসার্চের প্রমিত গাণিতিক মডেল নিম্নলিখিত সূত্রায়নে উপস্থাপিত হয়: সীমাবদ্ধতাসমূহ পূরণ সাপেক্ষে উদ্দেশ্য অপেক্ষকের সর্বোচ্চকরণ বা সর্বনিম্নকরণ।</p>
+
+<p>সমাধান নির্বাচনের সময়, যেটি উদ্দেশ্য অপেক্ষককে সর্বোচ্চ বা সর্বনিম্ন করে সেটিকেই অগ্রাধিকার দেওয়া হয়। উদ্দেশ্য অপেক্ষককে সর্বোচ্চ করার উদাহরণের মধ্যে রয়েছে মুনাফা ও উৎপাদনশীলতা। উদ্দেশ্য অপেক্ষককে সর্বনিম্ন করা ব্যয়, খরচ, সময় ইত্যাদির সঙ্গে সম্পর্কিত হতে পারে। কার্যকারিতার মানদণ্ড নির্বাচন গবেষণার কেন্দ্রীয় ও সবচেয়ে গুরুত্বপূর্ণ মুহূর্ত। সঠিকভাবে নির্বাচিত মানদণ্ডের একটি অ-সর্বোত্তম সমাধান পাওয়া, ভুলভাবে নির্বাচিত মানদণ্ডের সর্বোত্তম সমাধান পাওয়ার চেয়ে অনেক ভালো।</p>
+
+<p>একটি সম্ভাব্য সমাধান হলো এমন একটি সমাধান, যা মডেলের সব সীমাবদ্ধতা পূরণ করে। সম্ভাব্য সমাধানের সংখ্যা অসীম হতে পারে।</p>
+
+<p>সর্বোত্তম সমাধান হলো এমন একটি সমাধান, যা সম্ভাব্য হওয়ার পাশাপাশি উদ্দেশ্য অপেক্ষককে তার সর্বোচ্চ বা সর্বনিম্ন মানে পৌঁছাতে বাধ্য করে।</p>
+
+<p>সমাধানগুলোকে সর্বোত্তম বলা হয় যদি, কোনো না কোনো বৈশিষ্ট্যের ভিত্তিতে, সেগুলো অন্যগুলোর চেয়ে অগ্রাধিকারযোগ্য হয়। সর্বোত্তম বিকল্প নির্বাচনের প্রতিটি ক্ষেত্র নির্দিষ্ট, কারণ এটি প্রতিষ্ঠিত মানদণ্ডের সঙ্গে সামঞ্জস্যের উপর ভিত্তি করে করা হয়। কোনো সর্বোত্তম বিকল্পের কথা বলার সময়, এই মানদণ্ডগুলো নির্দিষ্ট করা হয় (“…-এর ক্ষেত্রে সর্বোত্তম”)। একটি মানদণ্ডে যা সর্বোত্তম, তা অন্য মানদণ্ডে সর্বোত্তম নাও হতে পারে।</p>
+
+<p>একটি সীমাবদ্ধতা হলো অসমতা বা সমতার আকারে একটি গাণিতিক প্রকাশ, যা মডেলের চলকগুলোকে অবশ্যই পূরণ করতে হবে।</p>
+
+<p>সীমাবদ্ধতাগুলো সম্ভাব্য সমাধানের সেটকে সংকুচিত করে। কিছু ক্ষেত্রে, নির্ধারিত সীমাবদ্ধতার প্রেক্ষাপটে কোনো সর্বোত্তম সমাধানই নাও থাকতে পারে। এর অর্থ হলো, সমস্যাটির সমাধানের ভিত্তিতে নেওয়া চূড়ান্ত সিদ্ধান্তের গুণমান নির্ভর করে মডেলটি কতটা যথাযথভাবে বাস্তব পরিস্থিতিকে প্রতিনিধিত্ব করে, যা তা সীমাবদ্ধতার মাধ্যমে আনুষ্ঠানিকভাবে বর্ণনা করে। সীমাবদ্ধতার মধ্যে রয়েছে কোটা, যানবাহনের বহন ক্ষমতা, পরিকল্পিত কাজের পরিমাণ, সরঞ্জামের ওজন বৈশিষ্ট্য, সম্পদের সীমাবদ্ধতা ইত্যাদি।</p>
+
+<p>সীমাবদ্ধতার বিন্যাস পরিবর্তিত হলে, ভিন্ন একটি সমাধান সর্বোত্তম হয়ে উঠতে পারে। বাস্তব জগতে, সীমাবদ্ধতা ভৌত, অর্থনৈতিক বা রাজনৈতিক প্রকৃতির হতে পারে এবং তা সবসময় আনুষ্ঠানিকীকরণের উপযোগী নাও হতে পারে। একটি নির্দিষ্ট সমাধান কেবল প্রদত্ত মডেলের জন্যই সর্বোত্তম হবে, প্রতিষ্ঠিত সীমাবদ্ধতা ব্যবস্থার শর্তে। মডেলটি পরিস্থিতিকে যত নিখুঁতভাবে প্রতিফলিত করে, সমস্যার সমাধান সর্বোত্তমের তত কাছাকাছি হয়।</p>
+
+<h2>অপারেশনস রিসার্চের মডেলের শ্রেণিবিন্যাস</h2>
+
+<p>সব অপারেশনস রিসার্চের মডেলকে অপারেশনের প্রকৃতি ও বৈশিষ্ট্য, সমাধানযোগ্য সমস্যার ধরন এবং ব্যবহৃত গাণিতিক পদ্ধতির উপর নির্ভর করে শ্রেণিবদ্ধ করা যায়:</p>
+<ul>
+<li>যদি কার্যকারিতার মানদণ্ড একটি রৈখিক অপেক্ষক হয় এবং সীমাবদ্ধতা ব্যবস্থার অপেক্ষকগুলোও রৈখিক হয়, তাহলে সমস্যাটি একটি রৈখিক প্রোগ্রামিং সমস্যা।</li>
+<li>যদি এর বিষয়বস্তুগত অর্থের ভিত্তিতে, এর সমাধানগুলো অবশ্যই পূর্ণসংখ্যা হতে হয়, তাহলে এটি একটি পূর্ণসংখ্যা রৈখিক প্রোগ্রামিং সমস্যা।</li>
+<li>যদি কার্যকারিতার মানদণ্ড এবং/অথবা সীমাবদ্ধতা ব্যবস্থা অরৈখিক অপেক্ষক দ্বারা নির্দিষ্ট করা হয়, তাহলে আমরা একটি অরৈখিক প্রোগ্রামিং সমস্যার সম্মুখীন হই। বিশেষভাবে, যদি উল্লিখিত অপেক্ষকগুলোর উত্তলতার বৈশিষ্ট্য থাকে, তাহলে প্রাপ্ত সমস্যাটি একটি উত্তল প্রোগ্রামিং সমস্যা।</li>
+<li>যদি কোনো গাণিতিক প্রোগ্রামিং সমস্যায় একটি সময় চলক অন্তর্ভুক্ত থাকে এবং কার্যকারিতার মানদণ্ড চলকগুলোর একটি সুস্পষ্ট অপেক্ষক হিসেবে নয়, বরং পরোক্ষভাবে — সময়ের সঙ্গে অপারেশনগুলোর অগ্রগতি বর্ণনাকারী সমীকরণের মাধ্যমে — প্রকাশ করা হয়, তাহলে সমস্যাটি একটি ডাইনামিক প্রোগ্রামিং সমস্যা।</li>
+<li>যদি অত্যধিক সংখ্যক সমাধান বিকল্পের কারণে অ্যালগরিদমিকভাবে সঠিক সর্বোত্তম খুঁজে পাওয়া অসম্ভব হয়, তাহলে হিউরিস্টিক প্রোগ্রামিং পদ্ধতি ব্যবহার করা হয়, যা পরীক্ষা করা বিকল্পের সংখ্যা উল্লেখযোগ্যভাবে হ্রাস করে এবং, সর্বোত্তম না হলেও, ব্যবহারিক দৃষ্টিকোণ থেকে সন্তোষজনক এমন একটি যথেষ্ট ভালো সমাধান খুঁজে পাওয়া সম্ভব করে তোলে।</li>
+</ul>
+
+<p>তাদের বিষয়বস্তুগত সূত্রায়ন অনুসারে, অন্যান্য বহু সাধারণ অপারেশনস রিসার্চ সমস্যাকে বেশ কয়েকটি শ্রেণিতে ভাগ করা যায়:</p>
+<ul>
+<li>প্রকল্প নির্ধারণ সমস্যা (পিইআরটি/সিপিএম) একটি বৃহৎ জটিল অপারেশন (কাজ) সমাবেশের সমাপ্তির তারিখ এবং সমাবেশের সব অপারেশনের শুরুর সময়ের মধ্যে সম্পর্ক পরীক্ষা করে। এই সমস্যাগুলোতে অপারেশন সমাবেশের ন্যূনতম সময়কাল এবং খরচ ও সমাপ্তির সময়ের মধ্যে সর্বোত্তম সম্পর্ক খুঁজে বের করা হয়।</li>
+<li>সারি সমস্যাগুলো অনুরোধ বা চাহিদার সারিসহ সেবা ব্যবস্থার অধ্যয়ন ও বিশ্লেষণে নিবেদিত, এবং এতে ব্যবস্থার কার্যকারিতার পরিমাপ এবং সেগুলোর সর্বোত্তম বৈশিষ্ট্য নির্ধারণ করা হয় — উদাহরণস্বরূপ, সেবা চ্যানেলের সংখ্যা, সেবার সময় ইত্যাদি নির্ধারণ করা।</li>
+<li>মজুদ ব্যবস্থাপনা সমস্যাগুলোতে মজুদ স্তরের (পুনর্আদেশ বিন্দু) সর্বোত্তম মান এবং অর্ডারের আকার খুঁজে বের করা হয়। এই ধরনের সমস্যার স্বতন্ত্র বৈশিষ্ট্য হলো, মজুদ স্তর বাড়ার সাথে সাথে, একদিকে সংরক্ষণ খরচ বাড়ে, কিন্তু অন্যদিকে সংরক্ষিত পণ্যের সম্ভাব্য ঘাটতির কারণে ক্ষতি হ্রাস পায়।</li>
+<li>সম্পদ বণ্টন সমস্যাগুলো তখন দেখা দেয় যখন সীমিত উপলব্ধ সম্পদ দিয়ে সম্পন্ন করতে হবে এমন কিছু নির্দিষ্ট অপারেশনের (কাজের) সেট থাকে, এবং অপারেশনগুলোর মধ্যে সম্পদের সর্বোত্তম বণ্টন বা অপারেশনগুলোর সর্বোত্তম গঠন খুঁজে বের করা প্রয়োজন হয়।</li>
+<li>রক্ষণাবেক্ষণ ও প্রতিস্থাপন সমস্যাগুলো সরঞ্জামের ক্ষয় ও বার্ধক্যজনিত কারণে এবং এর প্রতিস্থাপনের প্রয়োজনীয়তার সঙ্গে সম্পর্কিত।</li>
+<li>অপারেশনস রিসার্চের মডেলগুলোর মধ্যে, দ্বন্দ্বমূলক পরিস্থিতিতে সর্বোত্তম সিদ্ধান্ত গ্রহণের জন্য মডেল, যা ক্রীড়া তত্ত্ব দ্বারা অধ্যয়ন করা হয়, বিশেষভাবে আলাদা করা হয়। দ্বন্দ্বমূলক পরিস্থিতি, যেখানে ভিন্ন লক্ষ্য অনুসরণকারী দুই (বা তার অধিক) পক্ষের স্বার্থ সংঘর্ষে লিপ্ত হয়, তার মধ্যে অর্থনীতি, আইন, সামরিক বিষয় ইত্যাদি ক্ষেত্রের বেশ কিছু পরিস্থিতি অন্তর্ভুক্ত। ক্রীড়া তত্ত্বের সমস্যায়, দ্বন্দ্বে অংশগ্রহণকারীদের যুক্তিসঙ্গত আচরণের জন্য সুপারিশ তৈরি করা এবং তাদের সর্বোত্তম কৌশল নির্ধারণ করা প্রয়োজন।</li>
+</ul>
+
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div class="links">
+    <div class="links-section">
+      <h2>অপারেশনস রিসার্চ</h2>
+      <ul>
+        <li><a href="/bn/operation_research_caa.html">অপারেশনস রিসার্চ: চার্চম্যান, অ্যাকফ ও আর্নফ</a></li>
+        <li><a href="/bn/operation_research_as.html">অপারেশনস রিসার্চের মূলনীতি: অ্যাকফ ও সাসিয়েনি</a></li>
+        <li><a href="/bn/operation_research_me.html">অপারেশনস রিসার্চ: মোডার ও এলমাগরাবি</a></li>
+        <li><a href="/bn/operation_research_vg.html">অপারেশনস রিসার্চ: ওয়াগনার</a></li>
+        <li><a href="/bn/operation_research_gv.html">অপারেশনস রিসার্চ: গভিশিয়ানি</a></li>
+        <li><a href="/bn/operation_research_ve.html">অপারেশনস রিসার্চ: ভেনৎসেল</a></li>
+        <li><a href="/bn/methodology_or.html">অপারেশনস রিসার্চ পদ্ধতিবিজ্ঞান</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="breadcrumbs" aria-label="নেভিগেশন পথ">
+    <a href="/bn/">প্রধান পাতা</a> <span aria-hidden="true">/</span>
+    <a href="/bn/operation_research.html">অপারেশনস রিসার্চ</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">অপারেশনস রিসার্চের মডেল</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="থিম পরিবর্তন"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_model.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/bn/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="থিম পরিবর্তন"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710708e89ba5ce',t:'MTc4ODczNDk3Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quá trình mô hình hóa toán học</title>
+<meta name="description" content="Quá trình mô hình hóa toán học: xây dựng mô hình, phát triển phần mềm, kiểm định và phân tích kết quả. Bài viết mô tả các giai đoạn và đặc điểm của các mô hình tính toán hiện đại.">
+<meta name="keywords" content="mô hình hóa toán học,mô hình,phương pháp tính toán,thuật toán,kiểm định,phần mềm,phân tích hệ thống,phương pháp số">
+<link rel="canonical" href="https://systems-analysis.info/vi/mathmodeling_process.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/mathmodeling_process.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/mathmodeling_process.html">
+<link rel="alternate" hreflang="vi" href="https://systems-analysis.info/vi/mathmodeling_process.html">
+<meta property="og:title" content="Quá trình mô hình hóa toán học">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/vi/mathmodeling_process.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Quá trình mô hình hóa toán học: xây dựng mô hình, phát triển phần mềm, kiểm định và phân tích kết quả. Bài viết mô tả các giai đoạn và đặc điểm của các mô hình tính toán hiện đại.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="vi_VN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/vi/mathmodeling_process.html#article",
+    "headline": "Quá trình mô hình hóa toán học",
+    "description": "Quá trình mô hình hóa toán học: xây dựng mô hình, phát triển phần mềm, kiểm định và phân tích kết quả. Bài viết mô tả các giai đoạn và đặc điểm của các mô hình tính toán hiện đại.",
+    "url": "https://systems-analysis.info/vi/mathmodeling_process.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "vi",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/vi/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/vi/mathmodeling_process.html"
+    },
+    "keywords": [
+        "mô hình hóa toán học",
+        "mô hình",
+        "phương pháp tính toán",
+        "thuật toán",
+        "kiểm định",
+        "phần mềm",
+        "phân tích hệ thống",
+        "phương pháp số"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Trang chủ",
+            "item": "https://systems-analysis.info/vi/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Mô hình hóa",
+            "item": "https://systems-analysis.info/vi/modelling.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Quá trình mô hình hóa toán học"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Điều hướng chính">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/vi/">Trang chủ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/sections.html">Chuyên mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/books.html">Sách</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/catalog.html">Danh mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/mathmodeling_process.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Đổi giao diện"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Đổi phông chữ"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Quá trình mô hình hóa toán học</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Một đặc điểm nổi bật của các mô hình toán học được xây dựng ngày nay là tính phức tạp của chúng, bắt nguồn từ tính phức tạp của các đối tượng được mô hình hóa. Điều này dẫn đến việc <a href="/vi/model.html" class="text-link">các mô hình</a> ngày càng trở nên tinh vi hơn và nảy sinh nhu cầu phải đồng thời vận dụng một số lý thuyết thuộc các lĩnh vực tri thức khác nhau, cũng như sử dụng các phương pháp tính toán hiện đại và công nghệ máy tính để thu được và phân tích kết quả mô phỏng. Đối với các đối tượng phức tạp, thông thường không thể thỏa mãn tất cả các yêu cầu chỉ trong một mô hình duy nhất. Thay vào đó, cần phải xây dựng cả một phổ mô hình của cùng một đối tượng (trong một số trường hợp, đó là một tập hợp phân cấp các mô hình “lồng nhau”), mỗi mô hình phù hợp nhất với việc giải quyết các nhiệm vụ cụ thể được giao cho nó.</p>
+<p>Nhu cầu xây dựng mô hình ở quy mô lớn đòi hỏi phải phát triển một tập hợp các quy tắc và cách tiếp cận nhằm giảm chi phí phát triển mô hình và giảm khả năng xảy ra sai sót khó khắc phục sau này. Tập hợp các quy tắc như vậy có thể được gọi là công nghệ xây dựng mô hình toán học.</p>
+<p><strong>Quá trình xây dựng bất kỳ mô hình toán học nào cũng có thể được biểu diễn thành một chuỗi các giai đoạn:</strong></p>
+<ol>
+  <li>Khảo sát đối tượng cần mô hình hóa và soạn thảo đề bài kỹ thuật cho việc phát triển mô hình (phát biểu bài toán về mặt nội dung);</li>
+  <li>Phát biểu bài toán về mặt khái niệm và toán học;</li>
+  <li>Phân tích định tính và kiểm tra tính đúng đắn của mô hình;</li>
+  <li>Lựa chọn và luận chứng phương pháp giải;</li>
+  <li>Thu được lời giải;</li>
+  <li>Xây dựng thuật toán giải và nghiên cứu các tính chất của nó; triển khai thuật toán dưới dạng phần mềm;</li>
+  <li>Kiểm định mô hình;</li>
+  <li>Ứng dụng thực tiễn mô hình đã xây dựng.</li>
+</ol>
+<p>Các mô hình toán học — đặc biệt là những mô hình sử dụng phương pháp số và công nghệ máy tính — đòi hỏi nguồn lực trí tuệ, tài chính và thời gian đáng kể để xây dựng. Vì vậy, quyết định phát triển một mô hình mới chỉ được đưa ra khi không có cách nào đơn giản hơn để giải quyết các <a href="/vi/problem.html" class="text-link">vấn đề</a> đang đặt ra (chẳng hạn, bằng cách hiệu chỉnh một mô hình đã có).</p>
+<p>Nhu cầu về một mô hình mới có thể nảy sinh liên quan đến nghiên cứu khoa học, đặc biệt là tại điểm giao thoa giữa các lĩnh vực tri thức khác nhau. Sau khi quyết định xây dựng một mô hình toán học mới được đưa ra, bên đặt hàng sẽ tìm kiếm một nhóm thực hiện công việc này. Theo thông lệ, nhóm dự án bao gồm các chuyên gia thuộc nhiều lĩnh vực khác nhau: các nhà toán học ứng dụng, các chuyên gia trong lĩnh vực chuyên môn am hiểu tường tận đối tượng được mô hình hóa, và các lập trình viên. Sau khi quyết định xây dựng mô hình được xác nhận và nhóm dự án được thành lập, giai đoạn khảo sát bắt đầu. Mục tiêu chính của giai đoạn này là soạn thảo phát biểu bài toán mô hình hóa về mặt nội dung. Phát biểu bài toán về mặt nội dung là danh mục các câu hỏi then chốt về đối tượng mô hình hóa, được diễn đạt bằng ngôn ngữ thông thường, mà bên đặt hàng mong muốn được giải đáp.</p>
+<p>Việc soạn thảo danh mục các câu hỏi mà mô hình mới cần trả lời tự nó thường đã là một bài toán khó, đòi hỏi những chuyên gia có kiến thức và năng lực đặc thù. Họ không chỉ phải am hiểu tường tận lĩnh vực chuyên môn của công việc mô hình hóa và nắm rõ khả năng của toán học tính toán cũng như công nghệ máy tính hiện đại, mà còn phải có khả năng giao tiếp với con người — để khai thác được kinh nghiệm từ các chuyên gia thực tiễn, những người có “cảm nhận” trực giác về đối tượng mô hình hóa và các sắc thái trong hành vi của nó. Những chuyên gia như vậy bao gồm, chẳng hạn, các nhà phân tích hệ thống, các kỹ sư hệ thống và các nhà nghiên cứu vận trù học.</p>
+<p>Dựa trên việc phân tích toàn bộ thông tin thu thập được, người soạn thảo bài toán phải xác định các yêu cầu đối với mô hình tương lai sao cho, một mặt, chúng thỏa mãn bên đặt hàng, và mặt khác, chúng cho phép mô hình được triển khai trong khung thời gian và ngân sách đã định. Các nhà phân tích hệ thống (hay các nhà nghiên cứu vận trù học) phải có khả năng, từ một khối lượng lớn thông tin thiếu cấu trúc và đa dạng về đối tượng mô hình hóa cũng như từ những mong muốn và yêu cầu mơ hồ khác nhau của bên đặt hàng, chắt lọc ra những yếu tố cốt lõi có thể thực sự triển khai được.</p>
+<p>Dựa trên thông tin đã thu thập về đối tượng mô hình hóa, nhà phân tích hệ thống (kỹ sư, nhà nghiên cứu vận trù học), cùng với bên đặt hàng, soạn thảo phát biểu bài toán về mặt nội dung, phát biểu này theo thông lệ chưa phải là bản cuối cùng và có thể được tinh chỉnh, hoàn thiện trong quá trình phát triển mô hình. Tuy nhiên, mọi điều chỉnh và thay đổi tiếp theo đối với phát biểu về mặt nội dung chỉ nên mang tính chất nhỏ, không căn bản.</p>
+<p>Toàn bộ tư liệu thu thập được trong quá trình khảo sát — những kiến thức tích lũy được về đối tượng, phát biểu bài toán về mặt nội dung, các yêu cầu bổ sung đối với việc triển khai mô hình và trình bày kết quả — được ghi lại dưới dạng đề bài kỹ thuật cho việc thiết kế và phát triển mô hình. Đề bài kỹ thuật là văn bản kết thúc của giai đoạn khảo sát. Thông tin thu thập được về đối tượng trong quá trình khảo sát càng đầy đủ, thì bài toán về mặt nội dung càng được phát biểu rõ ràng, kinh nghiệm và kiến thức tích lũy càng được tính đến đầy đủ hơn, và càng tránh được nhiều khó khăn ở các giai đoạn phát triển mô hình tiếp theo.</p>
+<p>Khác với phát biểu về mặt nội dung, phát biểu về mặt khái niệm của bài toán mô hình hóa thường do các thành viên nhóm dự án soạn thảo mà không có sự tham gia của đại diện bên đặt hàng, dựa trên đề bài kỹ thuật được xây dựng ở giai đoạn trước và sử dụng những kiến thức sẵn có về đối tượng mô hình hóa cũng như các yêu cầu đối với mô hình tương lai. Việc phân tích và cùng nhau thảo luận toàn bộ thông tin sẵn có về đối tượng mô hình hóa giữa các thành viên nhóm cho phép hình thành một mô hình khái niệm của đối tượng — một sự tổng hợp các mô hình nhận thức được từng thành viên nhóm xây dựng nên.</p>
+<p>Phát biểu về mặt khái niệm của bài toán mô hình hóa là danh mục các câu hỏi then chốt mà bên đặt hàng quan tâm, được diễn đạt bằng thuật ngữ của các ngành khoa học cụ thể, cùng với một tập hợp các giả thuyết về tính chất và hành vi của đối tượng mô hình hóa.</p>
+<p>Những khó khăn lớn nhất trong việc phát biểu bài toán về mặt khái niệm nảy sinh ở các mô hình nằm tại điểm giao thoa giữa các ngành khoa học khác nhau. Sự khác biệt về truyền thống, khái niệm và ngôn ngữ được sử dụng để mô tả cùng một đối tượng tạo ra những trở ngại rất nghiêm trọng trong việc xây dựng các mô hình liên ngành.</p>
+<p>Một phát biểu khái niệm hoàn chỉnh cho phép xây dựng phát biểu toán học của bài toán mô hình hóa, bao gồm một tập hợp các quan hệ toán học mô tả hành vi và tính chất của đối tượng mô hình hóa.</p>
+<p>Phát biểu toán học của bài toán mô hình hóa là tập hợp các quan hệ toán học mô tả hành vi và tính chất của đối tượng mô hình hóa.</p>
+<p>Một mô hình toán học được coi là đúng đắn nếu tất cả các phép kiểm tra xác minh đã được thực hiện với kết quả khả quan: phân tích thứ nguyên, kiểm tra bậc độ lớn, kiểm tra bản chất của các mối phụ thuộc, phân tích các trường hợp cực trị, điều kiện biên, ý nghĩa vật lý và tính khép kín về mặt toán học. Phát biểu toán học thậm chí còn trừu tượng hơn phát biểu khái niệm, vì nó quy bài toán ban đầu về một bài toán thuần túy toán học mà đối với nó đã có sẵn các phương pháp giải phát triển tốt.</p>
+<p>Tất cả các phương pháp giải các bài toán tạo nên “lõi” của các mô hình toán học đều có thể được chia thành phương pháp giải tích và phương pháp thuật toán (số).</p>
+<p>Cần lưu ý rằng khi sử dụng các lời giải giải tích để thu được kết quả bằng số, việc xây dựng các thuật toán tương ứng được triển khai trên máy tính cũng thường là điều cần thiết.</p>
+<p>Tuy nhiên, trong trường hợp này, lời giải ban đầu có dạng một biểu thức giải tích (hoặc một tập hợp các biểu thức). Ngược lại, các lời giải dựa trên phương pháp thuật toán về bản chất không thể quy về các lời giải giải tích chính xác của bài toán đang xét.</p>
+<p>Việc lựa chọn một phương pháp nghiên cứu cụ thể phụ thuộc rất nhiều vào trình độ chuyên môn và kinh nghiệm của các thành viên nhóm dự án. Các phương pháp giải tích thuận tiện hơn cho việc phân tích kết quả sau này, nhưng chỉ áp dụng được cho các mô hình tương đối đơn giản. Nếu bài toán toán học (dù ở dạng phát biểu đã đơn giản hóa) có lời giải giải tích, thì lời giải đó chắc chắn được ưu tiên hơn so với lời giải bằng số.</p>
+<p>Các phương pháp thuật toán quy bài toán về một thuật toán thực hiện một thí nghiệm tính toán bằng công nghệ máy tính. Độ chính xác của việc mô hình hóa trong một thí nghiệm như vậy phụ thuộc quyết định vào phương pháp được chọn và các tham số của nó. Nhìn chung, các phương pháp thuật toán đòi hỏi nhiều công sức hơn để triển khai và yêu cầu các thành viên nhóm dự án phải có kiến thức vững vàng về toán học tính toán, một thư viện phần mềm chuyên dụng phong phú và nguồn lực tính toán mạnh mẽ.</p>
+<p>Các phương pháp số chỉ áp dụng được cho các bài toán toán học được đặt đúng, điều này hạn chế đáng kể phạm vi sử dụng của chúng trong mô hình hóa toán học. Điểm chung của tất cả các phương pháp số là quy bài toán toán học về một bài toán hữu hạn chiều. Điều này thường được thực hiện bằng cách rời rạc hóa bài toán ban đầu — tức là thay thế các hàm số của biến liên tục bằng các hàm số của biến rời rạc. Việc áp dụng bất kỳ phương pháp số nào cũng tất yếu đưa sai số vào kết quả. Có thể phân biệt ba thành phần chính của sai số phát sinh khi giải số bài toán ban đầu: sai số vốn có liên quan đến việc xác định không chính xác dữ liệu đầu vào (điều kiện đầu và điều kiện biên, các hệ số của phương trình và vế phải); sai số rời rạc hóa liên quan đến việc chuyển sang một dạng rời rạc tương tự của bài toán ban đầu; và sai số làm tròn liên quan đến độ chính xác hữu hạn của các con số được biểu diễn trong máy tính.</p>
+<p>Một yêu cầu tự nhiên đối với bất kỳ thuật toán tính toán cụ thể nào là sự tương thích về bậc độ lớn giữa ba loại sai số nói trên.</p>
+<p>Một phương pháp số, hay phương pháp gần đúng, luôn được triển khai dưới dạng một thuật toán tính toán. Do đó, tất cả các yêu cầu áp dụng cho thuật toán nói chung cũng áp dụng cho các thuật toán tính toán. Trước hết, một thuật toán phải khả thi — nghĩa là phải giải được bài toán trong một khoảng thời gian tính toán chấp nhận được. Một đặc trưng quan trọng của thuật toán là độ chính xác của nó — khả năng thu được lời giải của bài toán ban đầu với một độ chính xác cho trước trong một số hữu hạn phép toán.</p>
+<p>Thời gian chạy của một thuật toán phụ thuộc vào số lượng phép toán cần thiết để đạt được độ chính xác đã định. Đối với bất kỳ bài toán toán học nào, theo thông lệ, có thể đề xuất một số thuật toán cho ra lời giải với độ chính xác mong muốn, nhưng với số lượng phép toán khác nhau. Các thuật toán đòi hỏi ít phép toán hơn để đạt cùng một độ chính xác được gọi là kinh tế hơn, hay hiệu suất cao hơn.</p>
+<p>Trong quá trình thực hiện một thuật toán tính toán, một sai số nhất định phát sinh ở mỗi bước tính toán. Từ bước này sang bước khác, sai số này có thể tăng lên hoặc không tăng lên (và trong một số trường hợp thậm chí có thể giảm đi). Nếu sai số tăng lên không có giới hạn trong quá trình tính toán, thuật toán được gọi là không ổn định, hay phân kỳ. Ngược lại, thuật toán được gọi là ổn định, hay hội tụ.</p>
+<p>Sự đa dạng vô cùng lớn của các phương pháp số khiến việc lựa chọn một phương pháp cụ thể trong từng trường hợp riêng trở nên khá khó khăn. Vì có thể sử dụng nhiều phương pháp thuật toán khác nhau để triển khai một mô hình cho trước, việc lựa chọn một phương pháp cụ thể được thực hiện dựa trên việc xem phương pháp nào phù hợp nhất với mô hình xét về hiệu suất, tính ổn định và độ chính xác của kết quả, cũng như phương pháp nào quen thuộc nhất đối với các thành viên nhóm dự án.</p>
+<p>Trong việc xây dựng các hệ thống phần mềm đa dạng được sử dụng để giải quyết nhiều nhiệm vụ nghiên cứu, thiết kế kỹ thuật và quản lý, ngày nay các mô hình toán học nói chung đóng vai trò là nền tảng. Điều này làm nảy sinh nhu cầu triển khai một mô hình dưới dạng một chương trình máy tính. Quá trình phát triển phần mềm đáng tin cậy và hiệu quả không kém phần phức tạp so với tất cả các giai đoạn xây dựng mô hình toán học trước đó. Việc giải quyết thành công nhiệm vụ này chỉ có thể thực hiện được khi làm chủ vững vàng các ngôn ngữ và công nghệ lập trình hiện đại, hiểu biết về khả năng tính toán, phần mềm sẵn có và các đặc thù trong việc triển khai các phương pháp toán học tính toán.</p>
+<p><strong>Quá trình phát triển phần mềm có thể được chia thành một số giai đoạn:</strong></p>
+<ul>
+  <li>soạn thảo đề bài kỹ thuật cho việc phát triển phần mềm;</li>
+  <li>thiết kế cấu trúc của hệ thống phần mềm;</li>
+  <li>lập trình thuật toán;</li>
+  <li>kiểm thử và gỡ lỗi;</li>
+  <li>bảo trì và vận hành.</li>
+</ul>
+<p>Đề bài kỹ thuật cho việc phát triển phần mềm được ghi lại dưới dạng một bản đặc tả kỹ thuật. Ở giai đoạn thiết kế, cấu trúc tổng thể của hệ thống phần mềm được hình thành. Toàn bộ chương trình được chia thành các mô-đun phần mềm. Đối với mỗi mô-đun, các yêu cầu chức năng được xây dựng và một thuật toán triển khai các chức năng đó được phát triển. Sơ đồ tương tác giữa các mô-đun — được gọi là sơ đồ luồng dữ liệu của hệ thống phần mềm — được xác định. Một kế hoạch kiểm thử được xây dựng, và dữ liệu đầu vào để kiểm thử từng mô-đun riêng lẻ cũng như toàn bộ hệ thống được xác định.</p>
+<p><strong>Phần lớn các chương trình triển khai mô hình toán học bao gồm ba phần chính:</strong></p>
+<ul>
+  <li>bộ tiền xử lý (chuẩn bị và kiểm tra dữ liệu đầu vào của mô hình);</li>
+  <li>bộ giải (giải bài toán, thực hiện thí nghiệm tính toán);</li>
+  <li>bộ hậu xử lý (trực quan hóa và trình bày kết quả).</li>
+</ul>
+<p>Cần đặc biệt chú trọng việc áp dụng các công nghệ lập trình hiện đại. Mục đích của bất kỳ công nghệ nào như vậy, trước hết, là nâng cao độ tin cậy của phần mềm và tăng năng suất của người phát triển. Dự án phần mềm càng nghiêm túc và có quy mô lớn, thì các vấn đề về việc áp dụng các công nghệ lập trình hiện đại càng trở nên quan trọng. Việc bỏ qua những vấn đề này có thể dẫn đến việc kéo dài đáng kể thời gian thực hiện và làm giảm độ tin cậy của hệ thống phần mềm.</p>
+<p>Một yếu tố then chốt để bảo đảm độ tin cậy và rút ngắn thời gian phát triển của một hệ thống phần mềm dùng để giải quyết một lớp bài toán cụ thể là sự sẵn có của một thư viện phong phú gồm các mô-đun phần mềm tương thích lẫn nhau. Một chương trình sẽ đáng tin cậy hơn và có thể được phát triển nhanh hơn khi các thành phần phần mềm chuẩn được sử dụng ở mức tối đa có thể.</p>
+<p>Tính thỏa đáng của một mô hình toán học là mức độ mà các kết quả thu được từ mô hình đã xây dựng phù hợp với dữ liệu thực nghiệm hoặc với kết quả của một bài toán chuẩn tham chiếu.</p>
+<p><strong>Việc kiểm định mô hình phục vụ hai mục tiêu:</strong></p>
+<ul>
+  <li>xác minh tính đúng đắn của tập hợp các giả thuyết được đưa ra ở các giai đoạn phát biểu khái niệm và phát biểu toán học. Chỉ nên tiến hành kiểm tra các giả thuyết sau khi các phương pháp giải đã được xác minh và phần mềm đã trải qua quá trình gỡ lỗi toàn diện, loại bỏ hết mọi sai sót và xung đột;</li>
+  <li>xác nhận rằng độ chính xác của kết quả phù hợp với độ chính xác đã được quy định trong đề bài kỹ thuật.</li>
+</ul>
+<p>Việc kiểm định mô hình toán học đã xây dựng được thực hiện bằng cách so sánh nó với dữ liệu thực nghiệm sẵn có về đối tượng thực, hoặc với kết quả của các mô hình khác đã được xây dựng trước đó và đã được kiểm chứng tốt. Trong trường hợp đầu, người ta nói đến việc kiểm định bằng cách so sánh với thực nghiệm; trong trường hợp sau, đó là so sánh với kết quả của một bài toán chuẩn tham chiếu.</p>
+<p>Vấn đề về độ chính xác của mô hình hóa phụ thuộc vào các yêu cầu đặt ra đối với mô hình và mục đích sử dụng của nó. Cũng cần phải tính đến độ chính xác của các kết quả thực nghiệm hoặc các đặc thù trong cách phát biểu của bài toán chuẩn tham chiếu. Đối với các mô hình dùng cho các tính toán sơ bộ và ước lượng bậc độ lớn, độ chính xác 10–15% được coi là thỏa đáng. Đối với các mô hình được sử dụng trong các <a href="/vi/system.html" class="text-link">hệ thống</a> điều khiển và giám sát, độ chính xác yêu cầu có thể là 1–2% hoặc thậm chí cao hơn.</p>
+<p>Khi phát sinh vấn đề về tính thỏa đáng của mô hình, việc hiệu chỉnh nên bắt đầu bằng cách phân tích có hệ thống mọi nguyên nhân có thể dẫn đến sự khác biệt giữa kết quả mô hình hóa và kết quả thực nghiệm. Trước hết, cần nghiên cứu mô hình và đánh giá mức độ thỏa đáng của nó đối với các giá trị khác nhau của các tham số biến đổi (điều kiện đầu và điều kiện biên, các tham số đặc trưng cho tính chất của đối tượng mô hình hóa). Nếu mô hình không thỏa đáng trong phạm vi tham số mà nhà nghiên cứu quan tâm, có thể thử tinh chỉnh giá trị của các hằng số và tham số ban đầu của mô hình. Nếu điều này vẫn không mang lại kết quả khả quan, thì cách duy nhất còn lại để cải thiện mô hình là xem xét lại hệ thống giả thuyết đã được chấp nhận. Quyết định này thực chất đồng nghĩa với việc quay trở lại giai đoạn thứ hai của quá trình phát triển mô hình và có thể kéo theo không chỉ một thay đổi lớn đối với phát biểu toán học mà còn đối với các phương pháp giải (chẳng hạn, chuyển từ phương pháp giải tích sang phương pháp số), việc làm lại toàn bộ phần mềm, và một chu trình kiểm định mô hình mới. Do đó, quyết định xem xét lại hệ thống giả thuyết đã được chấp nhận cần được cân nhắc kỹ lưỡng và chỉ nên đưa ra khi mọi hướng khác nhằm cải thiện tính thỏa đáng của mô hình đã được thử hết.</p>
+<p>Các mô hình mô tả được thiết kế để mô tả đặc trưng của các tham số đang được nghiên cứu trong một hiện tượng hoặc quá trình nhất định, cũng như để nghiên cứu các quy luật chi phối sự biến đổi của những tham số đó. Các mô hình này có thể được sử dụng để nghiên cứu các tính chất và hành vi của đối tượng đang xét dưới nhiều tổ hợp khác nhau của dữ liệu đầu vào và điều kiện vận hành; trong việc xây dựng các mô hình tối ưu hóa; và trong việc xây dựng các mô hình mô phỏng của các hệ thống phức tạp.</p>
+<p>Các mô hình được xây dựng cho mục đích nghiên cứu thường không được đưa lên mức độ hệ thống phần mềm dành để phân phối cho người dùng bên ngoài. Tuổi thọ của chúng thường bị giới hạn trong thời gian thực hiện chương trình nghiên cứu tương ứng. Các mô hình này có đặc điểm là mang tính thăm dò, sử dụng các thủ tục và thuật toán tính toán mới, và có giao diện người dùng chưa được phát triển hoàn thiện.</p>
+<p>Các mô hình và các hệ thống phần mềm được xây dựng dựa trên chúng, dành để phân phối tiếp theo cho người dùng bên ngoài hoặc để phát hành thương mại, có đặc điểm là giao diện được phát triển tốt, thân thiện với người dùng, cùng các bộ tiền xử lý và hậu xử lý mạnh mẽ. Các mô hình này thường dựa trên các phát biểu và thủ tục tính toán đã được kiểm chứng và thiết lập vững chắc. Tuy nhiên, cần lưu ý rằng các mô hình như vậy chỉ được thiết kế để giải quyết một lớp bài toán được xác định rõ ràng.</p>
+<p>Bất kể mục đích ứng dụng của mô hình là gì, nhóm phát triển đều có trách nhiệm tiến hành phân tích cả về mặt định tính lẫn định lượng đối với kết quả mô hình hóa.</p>
+<p>Thông qua việc làm việc với mô hình, các nhà phát triển trở thành chuyên gia trong lĩnh vực liên quan đến đối tượng mô hình hóa. Họ hình thành một sự hiểu biết đủ sâu sắc về các tính chất của đối tượng và có khả năng dự đoán cũng như giải thích hành vi của nó.</p>
+<p><strong>Do đó, một phân tích toàn diện các kết quả mô hình hóa cho phép:</strong></p>
+<ul>
+  <li>hiệu chỉnh đối tượng đang xét, tìm ra các đặc trưng tối ưu của nó, hoặc ít nhất là tính đến hành vi và tính chất của nó theo cách tốt nhất có thể;</li>
+  <li>xác định phạm vi áp dụng của mô hình;</li>
+  <li>xác minh tính đúng đắn của các giả thuyết được chấp nhận ở giai đoạn phát biểu toán học và đánh giá khả năng đơn giản hóa mô hình nhằm nâng cao hiệu suất của nó trong khi vẫn giữ được độ chính xác cần thiết;</li>
+  <li>chỉ ra hướng cần tiếp tục phát triển mô hình.</li>
+</ul>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Bài viết liên quan</h2>
+    <ul>
+      <li><a href="/vi/model.html">Mô hình</a></li>
+      <li><a href="/vi/modelling.html">Mô hình hóa</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Đường dẫn điều hướng">
+    <a href="/vi/">Trang chủ</a> <span aria-hidden="true">/</span>
+    <a href="/vi/modelling.html">Mô hình hóa</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Quá trình mô hình hóa toán học</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Đổi giao diện"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/mathmodeling_process.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/vi/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Đổi giao diện"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710f271b791e13',t:'MTc4ODczNTMwNA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

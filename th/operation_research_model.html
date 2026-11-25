@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>แบบจำลองการวิจัยดำเนินการ</title>
+<meta name="description" content="การสร้างแบบจำลองปฏิบัติการเป็นขั้นตอนสำคัญของการวิจัยดำเนินการ ปฏิบัติการจะถูกทำให้เรียบง่ายและจัดเป็นแผนผัง พร้อมทั้งระบุปัจจัยสำคัญ บทความนี้อธิบายแบบจำลองมาตรฐานและการจำแนกประเภทของปัญหา">
+<meta name="keywords" content="การสร้างแบบจำลอง,แบบจำลอง,การวิจัยดำเนินการ,ฟังก์ชันวัตถุประสงค์,กำหนดการ,ปัญหา,ประสิทธิผล,ที่เหมาะที่สุด,คณิตศาสตร์,ระบบ,การวิเคราะห์,ผลเฉลย">
+<link rel="canonical" href="https://systems-analysis.info/th/operation_research_model.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_model.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_model.html">
+<link rel="alternate" hreflang="th" href="https://systems-analysis.info/th/operation_research_model.html">
+<meta property="og:title" content="แบบจำลองการวิจัยดำเนินการ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/th/operation_research_model.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="การสร้างแบบจำลองปฏิบัติการเป็นขั้นตอนสำคัญของการวิจัยดำเนินการ ปฏิบัติการจะถูกทำให้เรียบง่ายและจัดเป็นแผนผัง พร้อมทั้งระบุปัจจัยสำคัญ บทความนี้อธิบายแบบจำลองมาตรฐานและการจำแนกประเภทของปัญหา">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="th_TH">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/th/operation_research_model.html#article",
+    "headline": "แบบจำลองการวิจัยดำเนินการ",
+    "description": "การสร้างแบบจำลองปฏิบัติการเป็นขั้นตอนสำคัญของการวิจัยดำเนินการ ปฏิบัติการจะถูกทำให้เรียบง่ายและจัดเป็นแผนผัง พร้อมทั้งระบุปัจจัยสำคัญ บทความนี้อธิบายแบบจำลองมาตรฐานและการจำแนกประเภทของปัญหา",
+    "url": "https://systems-analysis.info/th/operation_research_model.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "th",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/th/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/th/operation_research_model.html"
+    },
+    "keywords": [
+        "การสร้างแบบจำลอง",
+        "แบบจำลอง",
+        "การวิจัยดำเนินการ",
+        "ฟังก์ชันวัตถุประสงค์",
+        "กำหนดการ",
+        "ปัญหา",
+        "ประสิทธิผล",
+        "ที่เหมาะที่สุด",
+        "คณิตศาสตร์",
+        "ระบบ",
+        "การวิเคราะห์",
+        "ผลเฉลย"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "แบบจำลองการวิจัยดำเนินการ",
+        "description": "A sufficiently precise mathematical description of an operation expressed through functions, equations, systems of equations, and inequalities.",
+        "sameAs": [
+            "https://systems-analysis.info/wiki/Модели_исследования_операций",
+            "https://systems-analysis.info/eng/Operations_research_models"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "หน้าแรก",
+            "item": "https://systems-analysis.info/th/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "การวิจัยดำเนินการ",
+            "item": "https://systems-analysis.info/th/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "แบบจำลองการวิจัยดำเนินการ"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="การนำทางหลัก">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">เมนู</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/th/">หน้าแรก</a>
+        <span aria-hidden="true">·</span>
+        <a href="/th/sections.html">หมวดหมู่</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/th/books.html">หนังสือ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/th/catalog.html">สารบัญ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_model.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="สลับธีม"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="สลับแบบอักษร"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">แบบจำลองการวิจัยดำเนินการ</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>เพื่อประยุกต์ใช้วิธีการวิจัยเชิงปริมาณ จำเป็นต้องสร้างแบบจำลองทางคณิตศาสตร์ของปฏิบัติการ เมื่อสร้างแบบจำลอง ปฏิบัติการมักจะถูกทำให้เรียบง่ายและจัดเป็นแผนผัง แล้วอธิบายแผนผังที่ได้ด้วยเครื่องมือทางคณิตศาสตร์ แบบจำลองของปฏิบัติการคือคำอธิบายทางคณิตศาสตร์ของปฏิบัติการที่มีความแม่นยำเพียงพอ แสดงผ่านฟังก์ชัน สมการ ระบบสมการ และอสมการ ประสิทธิผลของปฏิบัติการคือระดับความสำเร็จในการบรรลุเป้าหมาย</p>
+
+<h2>การกำหนดปัญหาการวิจัยดำเนินการโดยทั่วไป</h2>
+
+<p>ในการวิจัยดำเนินการ สถานการณ์การจัดการครอบคลุมทั้งเป้าหมายและการตัดสินใจ การตัดสินใจถูกกระทำเพื่อบรรลุเป้าหมาย สถานการณ์การจัดการถูกอธิบายด้วยแบบจำลอง แบบจำลองประกอบด้วยมาตรวัดประสิทธิผล ซึ่งใช้พิจารณาว่าการตัดสินใจนั้นใกล้เคียงกับเป้าหมายมากเพียงใด มาตรวัดประสิทธิผลขึ้นอยู่กับปัจจัยที่มีผลต่อปฏิบัติการ ปัจจัยทั้งหมดที่รวมอยู่ในคำอธิบายของปฏิบัติการสามารถแบ่งออกเป็นสองกลุ่ม ได้แก่ ปัจจัยคงที่ที่ไม่สามารถควบคุมได้ และปัจจัยที่ควบคุมได้</p>
+
+<p>องค์ประกอบเชิงแนวคิดของแบบจำลองถูกนำเสนอในรูปแบบ “กล่องดำ” ซึ่งเน้นหนักไปที่การกำหนดปัจจัยนำเข้าและผลลัพธ์ ปัจจัยนำเข้าคือสิ่งที่แบบจำลองประมวลผล ผลลัพธ์คือสิ่งที่แบบจำลองสร้างขึ้น ตัวแปรที่ควบคุมได้และควบคุมไม่ได้ถูกป้อนเข้าในรูปของปัจจัยนำเข้า ผลลัพธ์คือเกณฑ์ประสิทธิผล แบบจำลองมีมาตรวัดประสิทธิผลอย่างชัดเจน ซึ่งใช้พิจารณาว่าการตัดสินใจนั้นใกล้เคียงกับเป้าหมายมากเพียงใด เมื่อสร้างแบบจำลอง สิ่งสำคัญคือต้องระบุว่าพารามิเตอร์นำเข้าจะส่งผลต่อมาตรวัดที่กำหนดไว้อย่างไร</p>
+
+<p>เกณฑ์ประสิทธิผล ซึ่งแสดงด้วยฟังก์ชันหนึ่งที่เรียกว่าฟังก์ชันวัตถุประสงค์ ขึ้นอยู่กับปัจจัยทั้งสองกลุ่ม การแสดงออกทางคณิตศาสตร์ของเกณฑ์ประสิทธิผลเรียกว่าฟังก์ชันวัตถุประสงค์ ฟังก์ชันวัตถุประสงค์คือมาตรวัดประสิทธิผลที่ถูกกำหนดขึ้นทางคณิตศาสตร์ (แปรเป็นรูปแบบ) ซึ่งต้องหาค่าสูงสุดหรือต่ำสุด</p>
+
+<p>ตัวแปรที่ควบคุมได้คือพารามิเตอร์ที่ผู้ตัดสินใจสามารถจัดการได้</p>
+
+<p>ตัวแปรที่ควบคุมไม่ได้คือปัจจัยภายนอกที่ผู้จัดการไม่สามารถควบคุมได้ แต่มีความสำคัญต่อการบรรลุเป้าหมาย</p>
+
+<p>เกณฑ์ประสิทธิผล หรือฟังก์ชันวัตถุประสงค์ คือฟังก์ชันของตัวแปรการตัดสินใจที่แสดงระดับความใกล้เคียงกับเป้าหมาย</p>
+
+<p>คำจำกัดความของแบบจำลองทางคณิตศาสตร์ คือ ตัวดำเนินการใด ๆ ที่เมื่อกำหนดค่าที่สอดคล้องกันของพารามิเตอร์นำเข้า จะสามารถกำหนดค่าผลลัพธ์ของพารามิเตอร์ของวัตถุที่ถูกสร้างแบบจำลองภายในเซตของค่าที่ยอมรับได้ของพารามิเตอร์นำเข้าและผลลัพธ์สำหรับวัตถุที่ถูกสร้างแบบจำลองนั้น</p>
+
+<h2>แบบจำลองการวิจัยดำเนินการและการตัดสินใจ</h2>
+
+<p>การวิจัยดำเนินการมุ่งเน้นไปที่การให้เหตุผลเชิงปริมาณสำหรับการตัดสินใจที่มีเหตุผล แบบจำลองดังกล่าวมีความเกี่ยวข้องอย่างใกล้ชิดกับปัญหากลุ่มใหญ่ในทฤษฎีการตัดสินใจและปัญหาการหาค่าเหมาะที่สุด</p>
+
+<p>เมื่อพัฒนาแบบจำลองการวิจัยดำเนินการ จำเป็นต้องตอบคำถามต่อไปนี้</p>
+<ul>
+<li>ในกรณีเฉพาะนั้น สิ่งใดควรถือเป็นผลเฉลยทางเลือก</li>
+<li>ผลเฉลยทางเลือกถูกคัดเลือกด้วยเกณฑ์ใด</li>
+<li>ผลเฉลยที่เป็นไปได้ต้องเป็นไปตามข้อจำกัดใดบ้าง</li>
+</ul>
+
+<p>แบบจำลองทางคณิตศาสตร์มาตรฐานของการวิจัยดำเนินการถูกนำเสนอในรูปแบบดังนี้ คือ การหาค่าสูงสุดหรือต่ำสุดของฟังก์ชันวัตถุประสงค์ ภายใต้เงื่อนไขที่ต้องเป็นไปตามข้อจำกัด</p>
+
+<p>เมื่อเลือกผลเฉลย ผลเฉลยที่ทำให้ฟังก์ชันวัตถุประสงค์มีค่าสูงสุดหรือต่ำสุดจะได้รับการพิจารณาก่อน ตัวอย่างของการหาค่าสูงสุดของฟังก์ชันวัตถุประสงค์ ได้แก่ กำไรและผลิตภาพ การหาค่าต่ำสุดของฟังก์ชันวัตถุประสงค์อาจเกี่ยวข้องกับต้นทุน ค่าใช้จ่าย เวลา และอื่น ๆ การเลือกเกณฑ์ประสิทธิผลเป็นจุดศูนย์กลางและสำคัญที่สุดของการศึกษา การหาผลเฉลยที่ไม่เหมาะที่สุดสำหรับเกณฑ์ที่เลือกไว้ถูกต้องนั้นดีกว่าการหาผลเฉลยที่เหมาะที่สุดสำหรับเกณฑ์ที่เลือกไว้ผิดมากนัก</p>
+
+<p>ผลเฉลยที่เป็นไปได้ คือผลเฉลยที่เป็นไปตามข้อจำกัดทั้งหมดของแบบจำลอง ซึ่งอาจมีจำนวนไม่จำกัด</p>
+
+<p>ผลเฉลยที่เหมาะที่สุด คือผลเฉลยที่นอกจากจะเป็นไปได้แล้ว ยังทำให้ฟังก์ชันวัตถุประสงค์มีค่าสูงสุดหรือต่ำสุด</p>
+
+<p>ผลเฉลยจะถูกเรียกว่าเหมาะที่สุด หากตามคุณลักษณะใดคุณลักษณะหนึ่ง ผลเฉลยนั้นดีกว่าผลเฉลยอื่น ๆ การเลือกทางเลือกที่ดีที่สุดทุกครั้งมีความเฉพาะเจาะจง เนื่องจากขึ้นอยู่กับความสอดคล้องกับเกณฑ์ที่กำหนดไว้ เมื่อกล่าวถึงทางเลือกที่เหมาะที่สุด จำเป็นต้องระบุเกณฑ์เหล่านี้ (“เหมาะที่สุดเมื่อเทียบกับ…”) สิ่งที่เหมาะที่สุดตามเกณฑ์หนึ่งอาจไม่จำเป็นต้องเหมาะที่สุดตามอีกเกณฑ์หนึ่ง</p>
+
+<p>ข้อจำกัดคือการแสดงออกทางคณิตศาสตร์ในรูปแบบอสมการหรือสมการที่ตัวแปรของแบบจำลองต้องเป็นไปตาม</p>
+
+<p>ข้อจำกัดทำให้เซตของผลเฉลยที่เป็นไปได้แคบลง ในบางกรณี อาจไม่มีผลเฉลยที่เหมาะที่สุดเลยภายใต้ข้อจำกัดที่กำหนดไว้ นั่นหมายความว่าคุณภาพของการตัดสินใจขั้นสุดท้ายที่กระทำบนพื้นฐานของการแก้ปัญหานั้น ขึ้นอยู่กับว่าแบบจำลองสะท้อนสถานการณ์จริงที่มันอธิบายอย่างเป็นทางการผ่านข้อจำกัดได้เหมาะสมเพียงใด ข้อจำกัดรวมถึงโควตา ความจุบรรทุกของยานพาหนะ ปริมาณงานตามแผน คุณลักษณะน้ำหนักของอุปกรณ์ ข้อจำกัดด้านทรัพยากร และอื่น ๆ</p>
+
+<p>เมื่อโครงสร้างของข้อจำกัดเปลี่ยนแปลงไป ผลเฉลยอื่นอาจกลายเป็นผลเฉลยที่ดีที่สุดแทน ในโลกความเป็นจริง ข้อจำกัดอาจมีลักษณะทางกายภาพ เศรษฐกิจ หรือการเมือง และไม่จำเป็นต้องสามารถแปรเป็นรูปแบบทางการได้เสมอไป ผลเฉลยเฉพาะหนึ่งจะเป็นผลเฉลยที่ดีที่สุดก็ต่อเมื่อพิจารณาจากแบบจำลองที่กำหนดไว้ ภายใต้ระบบข้อจำกัดที่ได้กำหนดขึ้น ยิ่งแบบจำลองสะท้อนสถานการณ์ได้แม่นยำมากเท่าใด ผลเฉลยของปัญหาก็ยิ่งใกล้เคียงกับผลเฉลยที่เหมาะที่สุดมากขึ้นเท่านั้น</p>
+
+<h2>การจำแนกประเภทแบบจำลองการวิจัยดำเนินการ</h2>
+
+<p>แบบจำลองการวิจัยดำเนินการทั้งหมดสามารถจำแนกประเภทได้ตามลักษณะและคุณสมบัติของปฏิบัติการ ลักษณะของปัญหาที่ต้องแก้ไข และวิธีการทางคณิตศาสตร์ที่นำมาใช้</p>
+<ul>
+<li>หากเกณฑ์ประสิทธิผลเป็นฟังก์ชันเชิงเส้น และฟังก์ชันในระบบข้อจำกัดก็เป็นเชิงเส้นเช่นกัน ปัญหานั้นจะเป็นปัญหากำหนดการเชิงเส้น</li>
+<li>หากตามความหมายเชิงเนื้อหา ผลเฉลยของปัญหานั้นต้องเป็นจำนวนเต็ม ปัญหานั้นก็เป็นปัญหากำหนดการเชิงเส้นแบบจำนวนเต็ม</li>
+<li>หากเกณฑ์ประสิทธิผลและ/หรือระบบข้อจำกัดถูกกำหนดด้วยฟังก์ชันไม่เชิงเส้น เราจะได้ปัญหากำหนดการไม่เชิงเส้น โดยเฉพาะอย่างยิ่ง หากฟังก์ชันที่กล่าวถึงมีคุณสมบัติความนูน ปัญหาที่ได้จะเป็นปัญหากำหนดการนูน</li>
+<li>หากปัญหากำหนดการทางคณิตศาสตร์มีตัวแปรเวลารวมอยู่ด้วย และเกณฑ์ประสิทธิผลไม่ได้แสดงเป็นฟังก์ชันของตัวแปรโดยตรง แต่แสดงโดยอ้อมผ่านสมการที่อธิบายความคืบหน้าของปฏิบัติการตามเวลา ปัญหานั้นก็เป็นปัญหากำหนดการพลวัต</li>
+<li>หากการหาค่าเหมาะที่สุดที่แน่นอนด้วยวิธีอัลกอริทึมเป็นไปไม่ได้เนื่องจากมีจำนวนตัวเลือกของผลเฉลยมากเกินไป จะใช้วิธีการโปรแกรมเชิงฮิวริสติก ซึ่งช่วยลดจำนวนตัวเลือกที่ต้องพิจารณาลงได้อย่างมาก และช่วยให้ค้นพบผลเฉลยที่แม้จะไม่ใช่ผลเฉลยที่เหมาะที่สุด แต่ก็ดีเพียงพอและเป็นที่น่าพอใจในเชิงปฏิบัติ</li>
+</ul>
+
+<p>ตามการกำหนดเนื้อหา ปัญหาการวิจัยดำเนินการทั่วไปอีกจำนวนมากสามารถแบ่งออกเป็นหลายประเภท</p>
+<ul>
+<li>ปัญหาการจัดตารางโครงการ (PERT/CPM) ศึกษาความสัมพันธ์ระหว่างวันที่แล้วเสร็จของกลุ่มปฏิบัติการ (งาน) ที่ซับซ้อนขนาดใหญ่ กับเวลาเริ่มต้นของปฏิบัติการทั้งหมดในกลุ่มนั้น ปัญหาเหล่านี้ประกอบด้วยการหาระยะเวลาต่ำสุดของกลุ่มปฏิบัติการ และความสัมพันธ์ที่เหมาะที่สุดระหว่างต้นทุนกับเวลาแล้วเสร็จ</li>
+<li>ปัญหาแถวคอยเกี่ยวข้องกับการศึกษาและวิเคราะห์ระบบบริการที่มีแถวคอยของคำขอหรือความต้องการ และประกอบด้วยการกำหนดมาตรวัดสมรรถนะของระบบและคุณลักษณะที่เหมาะที่สุดของระบบ เช่น การกำหนดจำนวนช่องทางให้บริการ เวลาให้บริการ และอื่น ๆ ในทำนองเดียวกัน</li>
+<li>ปัญหาการบริหารสินค้าคงคลังประกอบด้วยการหาค่าที่เหมาะที่สุดของระดับสินค้าคงคลัง (จุดสั่งซื้อซ้ำ) และขนาดคำสั่งซื้อ ลักษณะเฉพาะของปัญหาประเภทนี้คือ เมื่อระดับสินค้าคงคลังเพิ่มขึ้น ในด้านหนึ่งต้นทุนการจัดเก็บจะเพิ่มขึ้น แต่ในอีกด้านหนึ่งความสูญเสียอันเนื่องมาจากการขาดแคลนสินค้าที่จัดเก็บไว้ที่อาจเกิดขึ้นจะลดลง</li>
+<li>ปัญหาการจัดสรรทรัพยากรเกิดขึ้นเมื่อมีชุดปฏิบัติการ (งาน) ที่ต้องดำเนินการโดยใช้ทรัพยากรที่มีอยู่อย่างจำกัด และจำเป็นต้องหาการจัดสรรทรัพยากรที่เหมาะที่สุดระหว่างปฏิบัติการ หรือองค์ประกอบที่เหมาะที่สุดของปฏิบัติการ</li>
+<li>ปัญหาการบำรุงรักษาและการทดแทนมีความเกี่ยวข้องกับการสึกหรอและการเสื่อมสภาพของอุปกรณ์ และความจำเป็นในการทดแทนอุปกรณ์นั้น</li>
+<li>ในบรรดาแบบจำลองการวิจัยดำเนินการ แบบจำลองสำหรับการตัดสินใจที่เหมาะที่สุดในสถานการณ์ความขัดแย้ง ซึ่งศึกษาโดยทฤษฎีเกม ถูกแยกออกมาเป็นกรณีพิเศษ สถานการณ์ความขัดแย้งซึ่งผลประโยชน์ของสองฝ่าย (หรือมากกว่า) ที่มุ่งเป้าหมายต่างกันปะทะกัน รวมถึงสถานการณ์จำนวนมากในด้านเศรษฐศาสตร์ กฎหมาย การทหาร และอื่น ๆ ในทำนองเดียวกัน ในปัญหาทฤษฎีเกม จำเป็นต้องพัฒนาคำแนะนำสำหรับพฤติกรรมที่มีเหตุผลของผู้เข้าร่วมในความขัดแย้ง และกำหนดกลยุทธ์ที่เหมาะที่สุดของพวกเขา</li>
+</ul>
+
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div class="links">
+    <div class="links-section">
+      <h2>การวิจัยดำเนินการ</h2>
+      <ul>
+        <li><a href="/th/operation_research_caa.html">การวิจัยดำเนินการ: เชิร์ชแมน แอกคอฟฟ์ และอาร์นอฟฟ์</a></li>
+        <li><a href="/th/operation_research_as.html">พื้นฐานการวิจัยดำเนินการ: แอกคอฟฟ์และซาซีเอนี</a></li>
+        <li><a href="/th/operation_research_me.html">การวิจัยดำเนินการ: โมเดอร์และเอลมักราบี</a></li>
+        <li><a href="/th/operation_research_vg.html">การวิจัยดำเนินการ: แวกเนอร์</a></li>
+        <li><a href="/th/operation_research_gv.html">การวิจัยดำเนินการ: กวิชิอานี</a></li>
+        <li><a href="/th/operation_research_ve.html">การวิจัยดำเนินการ: เวนต์เซล</a></li>
+        <li><a href="/th/methodology_or.html">ระเบียบวิธีการวิจัยดำเนินการ</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="breadcrumbs" aria-label="เส้นทางนำทาง">
+    <a href="/th/">หน้าแรก</a> <span aria-hidden="true">/</span>
+    <a href="/th/operation_research.html">การวิจัยดำเนินการ</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">แบบจำลองการวิจัยดำเนินการ</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="สลับธีม"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_model.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/th/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="สลับธีม"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710dee7b1d1e13',t:'MTc4ODczNTI1NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lý thuyết ra quyết định</title>
+<meta name="description" content="Lý thuyết ra quyết định là một ngành khoa học tổng hợp nhằm xây dựng các phương pháp và công cụ giúp một hoặc nhiều người thực hiện lựa chọn có cơ sở đối với phương án tốt nhất trong số các phương án khả dụng.">
+<meta name="keywords" content="lý thuyết ra quyết định,phân tích hệ thống,phương án,lựa chọn có cơ sở,quản lý,nghiên cứu,mô hình hóa">
+<link rel="canonical" href="https://systems-analysis.info/vi/decision_theory.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/decision_theory.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/decision_theory.html">
+<link rel="alternate" hreflang="vi" href="https://systems-analysis.info/vi/decision_theory.html">
+<meta property="og:title" content="Lý thuyết ra quyết định">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/vi/decision_theory.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Lý thuyết ra quyết định là một ngành khoa học tổng hợp nhằm xây dựng các phương pháp và công cụ giúp một hoặc nhiều người thực hiện lựa chọn có cơ sở đối với phương án tốt nhất trong số các phương án khả dụng.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="vi_VN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/vi/decision_theory.html#article",
+    "headline": "Lý thuyết ra quyết định",
+    "description": "Lý thuyết ra quyết định là một ngành khoa học tổng hợp nhằm xây dựng các phương pháp và công cụ giúp một hoặc nhiều người thực hiện lựa chọn có cơ sở đối với phương án tốt nhất trong số các phương án khả dụng.",
+    "url": "https://systems-analysis.info/vi/decision_theory.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "vi",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/vi/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/vi/decision_theory.html"
+    },
+    "keywords": [
+        "lý thuyết ra quyết định",
+        "phân tích hệ thống",
+        "phương án",
+        "lựa chọn có cơ sở",
+        "quản lý",
+        "nghiên cứu",
+        "mô hình hóa"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "Lý thuyết ra quyết định",
+        "description": "A comprehensive discipline aimed at developing methods and tools to help make a justified choice of the best available alternative.",
+        "sameAs": [
+            "https://www.wikidata.org/entity/Q177571",
+            "https://en.wikipedia.org/wiki/Decision_theory",
+            "https://ru.wikipedia.org/wiki/Теория_принятия_решений",
+            "https://systems-analysis.info/wiki/Теория_принятия_решений",
+            "https://systems-analysis.info/eng/Decision_theory"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Trang chủ",
+            "item": "https://systems-analysis.info/vi/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Lý thuyết ra quyết định"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Điều hướng chính">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/vi/">Trang chủ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/sections.html">Chuyên mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/books.html">Sách</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/catalog.html">Danh mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/decision_theory.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Đổi giao diện"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Đổi phông chữ"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Lý thuyết ra quyết định</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>Lý thuyết ra quyết định</strong> là một ngành khoa học tổng hợp nhằm xây dựng các phương pháp và công cụ giúp một hoặc nhiều người thực hiện lựa chọn có cơ sở đối với phương án tốt nhất trong số các phương án khả dụng.</p>
+<p><a href="/vi/decision_making.html" class="text-link">Ra quyết định</a> theo nghĩa chuyên môn là một dạng hoạt động đặc biệt của con người, liên quan đến việc lựa chọn có cơ sở phương án tốt nhất (theo một nghĩa nào đó) hoặc một số phương án được ưu tiên trong số các phương án hiện có. Nhu cầu biện minh cho một lựa chọn tồn tại trong mọi lĩnh vực hoạt động của con người. Lựa chọn có cơ sở đặc biệt quan trọng trong quản lý các hệ thống tổ chức và kỹ thuật.</p>
+<p>Việc nghiên cứu cách con người đưa ra <a href="/vi/choice.html" class="text-link">quyết định</a> và xây dựng các phương pháp lựa chọn là mối quan tâm của nhiều ngành khoa học, ra đời và phát triển một cách độc lập với nhau trong lịch sử. Trong số đó có lý thuyết ra quyết định, phân tích hệ thống, vận trù học, lý thuyết quyết định thống kê, lý thuyết trò chơi, lý thuyết điều khiển tối ưu, điều khiển học kinh tế, lý thuyết tổ chức, khoa học thông tin, trí tuệ nhân tạo, tâm lý học nhận thức, lý thuyết hành vi và nhiều ngành khác. Các ngành khoa học này phân tích các cơ chế, quá trình và quy tắc lựa chọn từ những góc độ khác nhau, áp dụng cho các đối tượng khác nhau và trong những điều kiện tồn tại khác nhau của chúng. Cùng nhau, chúng tạo thành một khoa học đa ngành giúp con người thực hiện các lựa chọn có cơ sở.</p>
+<p>Lý thuyết ra quyết định với tư cách là một lĩnh vực nghiên cứu độc lập bắt đầu hình thành vào giữa thế kỷ XX, dựa trên phương pháp luận phân tích hệ thống. Mục đích chính của lý thuyết ra quyết định là xây dựng các phương pháp và công cụ cho phép một cá nhân hoặc một nhóm người xác định tập hợp các phương án khả thi để giải quyết một <a href="/vi/problem.html" class="text-link">vấn đề</a>, so sánh chúng với nhau, tìm ra trong số đó những phương án tốt nhất hoặc có thể chấp nhận được, thỏa mãn những yêu cầu (ràng buộc) nhất định, và khi cần thiết, giải thích cho lựa chọn đã được thực hiện.</p>
+<p>Lý thuyết ra quyết định có thể hỗ trợ đáng kể trong việc phân tích và giải quyết các vấn đề phức tạp, nhưng chỉ khi các phương pháp và công cụ của nó được sử dụng một cách phù hợp, trong giới hạn của chúng, không đề cao cũng không hạ thấp vai trò của chúng trong quá trình tìm kiếm lời giải. Do đó, cách hiểu đúng nhất về lý thuyết ra quyết định là coi nó như việc tìm kiếm và biện minh cho những phương án được người ra quyết định ưa chuộng nhất.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Các bài viết liên quan</h2>
+    <ul>
+      <li><a href="/vi/choice.html">Quyết Định và Lựa Chọn</a></li>
+      <li><a href="/vi/decision_making.html">Ra Quyết Định</a></li>
+      <li><a href="/vi/decision_theory_model.html">Bài Toán Ra Quyết Định</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Đường dẫn điều hướng">
+    <a href="/vi/">Trang chủ</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Lý thuyết ra quyết định</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Đổi giao diện"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/decision_theory.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/vi/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Đổi giao diện"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710eea5a861e13',t:'MTc4ODczNTI5NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

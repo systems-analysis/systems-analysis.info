@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vận trù học: Wentzel</title>
+<meta name="description" content="Tác nghiệp là một công việc được thống nhất bởi một kế hoạch duy nhất và hướng tới việc đạt được một mục tiêu. Bài viết trình bày các khái niệm cơ bản của vận trù học theo E. S. Wentzel: quyết định, hiệu quả, tiêu chí tối ưu.">
+<meta name="keywords" content="Vận trù học,Wentzel,phương án giải,tối ưu hóa,thống kê,toán học,bài toán,lựa chọn,phân tích hệ thống">
+<link rel="canonical" href="https://systems-analysis.info/vi/operation_research_ve.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_ve.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_ve.html">
+<link rel="alternate" hreflang="vi" href="https://systems-analysis.info/vi/operation_research_ve.html">
+<meta property="og:title" content="Vận trù học: Wentzel">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/vi/operation_research_ve.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Tác nghiệp là một công việc được thống nhất bởi một kế hoạch duy nhất và hướng tới việc đạt được một mục tiêu. Bài viết trình bày các khái niệm cơ bản của vận trù học theo E. S. Wentzel: quyết định, hiệu quả, tiêu chí tối ưu.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="vi_VN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/vi/operation_research_ve.html#article",
+    "headline": "Vận trù học: Wentzel",
+    "description": "Tác nghiệp là một công việc được thống nhất bởi một kế hoạch duy nhất và hướng tới việc đạt được một mục tiêu. Bài viết trình bày các khái niệm cơ bản của vận trù học theo E. S. Wentzel: quyết định, hiệu quả, tiêu chí tối ưu.",
+    "url": "https://systems-analysis.info/vi/operation_research_ve.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "vi",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/vi/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/vi/operation_research_ve.html"
+    },
+    "keywords": [
+        "Vận trù học",
+        "Wentzel",
+        "phương án giải",
+        "tối ưu hóa",
+        "thống kê",
+        "toán học",
+        "bài toán",
+        "lựa chọn",
+        "phân tích hệ thống"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Operations Research",
+        "author": {
+            "@type": "Person",
+            "name": "Wentzel E.S."
+        },
+        "datePublished": "1972",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Sovetskoye Radio"
+        },
+        "inLanguage": "vi"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Operations Research",
+        "author": {
+            "@type": "Person",
+            "name": "Wentzel E.S."
+        },
+        "datePublished": "1972",
+        "inLanguage": "vi"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Trang chủ",
+            "item": "https://systems-analysis.info/vi/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Vận trù học",
+            "item": "https://systems-analysis.info/vi/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Vận trù học: Wentzel"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Điều hướng chính">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/vi/">Trang chủ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/sections.html">Chuyên mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/books.html">Sách</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/catalog.html">Danh mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_ve.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Đổi giao diện"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Đổi phông chữ"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Vận trù học: Wentzel</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Trong những năm gần đây, vận trù học ngày càng có phạm vi ứng dụng rộng rãi. Khoa học này thuộc về các ngành tương đối trẻ, mới được hình thành gần đây; ranh giới và nội dung của nó chưa được xác định rõ ràng.</p>
+<p>Vận trù học được giảng dạy ở nhiều trường đại học, nhưng nội dung được gán cho thuật ngữ này còn xa mới thống nhất. Một số tác giả hiểu “vận trù học” chủ yếu là các phương pháp tối ưu hóa toán học, chẳng hạn như quy hoạch tuyến tính, quy hoạch phi tuyến và quy hoạch động. Ngược lại, những người khác không xếp các nhánh toán học này vào vận trù học, mà tiếp cận vận trù học chủ yếu từ góc độ lý thuyết trò chơi và lý thuyết quyết định thống kê. Một số người có xu hướng phủ nhận sự tồn tại của “vận trù học” như một ngành khoa học độc lập, xếp nó vào điều khiển học (một thuật ngữ cũng chưa được xác định đầy đủ và được những người khác nhau hiểu khác nhau). Ngược lại, những người khác lại gán cho khái niệm “vận trù học” một ý nghĩa quá rộng, tuyên bố ngành khoa học này là một “khoa học của các khoa học” bao trùm tất cả.</p>
+<p>Thời gian sẽ cho biết ngành khoa học tương đối trẻ này sẽ tiếp tục phát triển theo những hình thức nào, nó sẽ giữ lại những phần nào, và những phần nào sẽ “tách ra” thành các ngành khoa học độc lập. Đặc biệt, mối quan hệ trong tương lai giữa “vận trù học” và “lý thuyết hệ thống” (hay “lý thuyết hệ thống phức tạp”), vốn đã được bàn luận và viết nhiều gần đây, vẫn chưa rõ ràng. Dù sao đi nữa, có một điều chắc chắn đúng là trong những lĩnh vực thực tiễn đa dạng nhất — tổ chức sản xuất và cung ứng, hoạt động giao thông vận tải, tác chiến quân sự và vũ khí trang bị, bố trí nhân sự, dịch vụ tiêu dùng, y tế, thông tin liên lạc, tính toán, v.v. — ngày càng xuất hiện những bài toán tương tự nhau về cách đặt vấn đề, có một số đặc điểm chung, và được giải quyết bằng những phương pháp tương tự nhau, những phương pháp này được gộp lại một cách thuận tiện dưới tiêu đề chung là “các bài toán vận trù học”.</p>
+<p>Tình huống điển hình như sau: một quá trình hành động có mục đích nào đó được tổ chức theo cách này hay cách khác — nghĩa là có thể đưa ra một “quyết định” nào đó từ một số phương án khả dĩ. Mỗi phương án đều có ưu điểm và nhược điểm, và do tính phức tạp của tình huống, không phải ngay lập tức có thể thấy rõ phương án nào tốt hơn (được ưu tiên hơn) và vì sao. Để làm rõ tình huống và so sánh các phương án quyết định theo một tập hợp tiêu chí, người ta thực hiện một loạt các tính toán toán học. Nhiệm vụ của các tính toán này là giúp những người chịu trách nhiệm lựa chọn quyết định thực hiện một sự phân tích phê phán tình huống và, cuối cùng, chọn ra một phương án nào đó.</p>
+<p>Trong thời đại của chúng ta, thời đại được gọi một cách chính đáng là kỷ nguyên của cách mạng khoa học và công nghệ, khoa học ngày càng chú ý nhiều hơn đến các vấn đề tổ chức và quản lý. Có nhiều lý do cho điều này. Sự phát triển nhanh chóng và mức độ phức tạp ngày càng tăng của công nghệ, sự mở rộng chưa từng có về quy mô của các công việc và phạm vi các hậu quả có thể xảy ra của chúng, việc đưa các hệ thống điều khiển tự động vào mọi lĩnh vực thực tiễn — tất cả những điều này đòi hỏi phải phân tích các quá trình có mục đích phức tạp từ góc độ cấu trúc và tổ chức của chúng. Khoa học được kêu gọi để đưa ra các khuyến nghị nhằm quản lý tối ưu (hợp lý) các quá trình như vậy. Đã qua rồi cái thời mà việc quản lý đúng đắn, hiệu quả được các nhà tổ chức tìm ra “bằng cảm tính”, thông qua phương pháp “thử và sai”. Ngày nay, việc xây dựng cách quản lý như vậy đòi hỏi một cách tiếp cận khoa học — những tổn thất do sai lầm gây ra là quá lớn.</p>
+<p>Nhu cầu của thực tiễn đã làm nảy sinh những phương pháp khoa học đặc biệt, được gộp lại một cách thuận tiện dưới tiêu đề “vận trù học”. Với thuật ngữ này, chúng ta sẽ hiểu là việc áp dụng các phương pháp toán học, định lượng để luận chứng cho các quyết định trong mọi lĩnh vực hoạt động có mục đích của con người.</p>
+<p>Hãy giải thích ý nghĩa của khái niệm “quyết định”. Giả sử một công việc nào đó đang được thực hiện, hướng tới việc đạt được một mục tiêu cụ thể. Người (hoặc nhóm người) tổ chức công việc luôn có một mức độ tự do lựa chọn nhất định: họ có thể tổ chức công việc theo cách này hay cách khác — ví dụ, họ có thể chọn loại thiết bị sẽ sử dụng, phân bổ các nguồn lực sẵn có theo cách này hay cách khác, v.v. “Quyết định” chính là một sự lựa chọn nào đó từ phạm vi các khả năng mà người tổ chức có được. Các quyết định có thể tồi hoặc tốt, được cân nhắc kỹ lưỡng hoặc vội vàng, có căn cứ hoặc tùy tiện.</p>
+<p>Vận trù học bắt đầu khi các phương pháp toán học được áp dụng để luận chứng cho các quyết định. Cho đến một mức độ nhất định, các quyết định trong bất kỳ lĩnh vực thực tiễn nào đều được đưa ra mà không cần các tính toán toán học đặc biệt, chỉ đơn giản dựa trên kinh nghiệm và lẽ thường. Tuy nhiên, có những quyết định có ý nghĩa hệ trọng hơn nhiều. Chẳng hạn, giả sử giao thông công cộng đang được tổ chức tại một thành phố mới với mạng lưới các xí nghiệp, khu dân cư, v.v. Cần phải đưa ra một số quyết định: nên đi theo những tuyến đường nào và bằng những phương tiện vận tải nào? Nên đặt các điểm dừng ở đâu? Nên điều chỉnh tần suất phục vụ theo thời gian trong ngày như thế nào? Và còn nhiều vấn đề khác.</p>
+<p>Những quyết định này phức tạp hơn nhiều, và quan trọng nhất là có rất nhiều thứ phụ thuộc vào chúng. Một sự lựa chọn sai lầm có thể ảnh hưởng đến đời sống hoạt động của cả một thành phố. Tất nhiên, trong trường hợp này cũng có thể hành động theo trực giác khi chọn quyết định, dựa vào kinh nghiệm và lẽ thường (và điều này thực sự thường xuyên xảy ra). Nhưng các quyết định sẽ hợp lý hơn nhiều nếu chúng được hỗ trợ bởi các tính toán toán học. Những tính toán sơ bộ này sẽ giúp tránh được việc tìm kiếm quyết định đúng đắn một cách kéo dài và tốn kém “bằng cảm tính”.</p>
+<p>Công việc dự kiến càng phức tạp, tốn kém và quy mô lớn thì các quyết định tùy tiện càng khó chấp nhận, và các phương pháp khoa học cho phép đánh giá trước hậu quả của mỗi quyết định, loại bỏ trước những phương án không thể chấp nhận được và khuyến nghị những phương án thành công nhất càng trở nên quan trọng hơn; để xác định xem thông tin sẵn có của chúng ta có đủ để lựa chọn đúng đắn quyết định hay không, và nếu không, cần thu thập thêm những thông tin gì. Trong những trường hợp như vậy, việc dựa vào trực giác, vào “kinh nghiệm và lẽ thường” là quá nguy hiểm. Trong kỷ nguyên cách mạng khoa học và công nghệ của chúng ta, công nghệ và phương pháp thay đổi nhanh đến mức “kinh nghiệm” đơn giản là không kịp tích lũy. Hơn nữa, chúng ta thường phải đối phó với những công việc độc nhất vô nhị được tiến hành lần đầu tiên. Trong những trường hợp như vậy, “kinh nghiệm” im lặng, và “lẽ thường” có thể dễ dàng bị đánh lừa nếu nó không được dựa trên tính toán. Chính những tính toán như vậy, giúp con người đưa ra quyết định, là đối tượng mà vận trù học quan tâm.</p>
+<p>Tác nghiệp là bất kỳ công việc nào (hệ thống các hành động), được thống nhất bởi một kế hoạch duy nhất và hướng tới việc đạt được một mục tiêu nào đó. Tác nghiệp luôn là một công việc được quản lý — nghĩa là việc lựa chọn một số tham số đặc trưng cho tổ chức của nó phụ thuộc vào chúng ta. “Tổ chức” ở đây được hiểu theo nghĩa rộng của từ này, bao gồm cả tập hợp các phương tiện kỹ thuật được sử dụng trong tác nghiệp.</p>
+<p>Bất kỳ sự lựa chọn cụ thể nào của các tham số phụ thuộc vào chúng ta đều được gọi là một quyết định. Các quyết định có thể thành công hoặc không thành công, hợp lý hoặc không hợp lý. Các quyết định được gọi là tối ưu nếu theo một dấu hiệu nào đó, chúng được ưu tiên hơn các quyết định khác. Mục tiêu của vận trù học là cung cấp cơ sở định lượng cho việc lựa chọn các quyết định tối ưu.</p>
+<p>Đôi khi (tương đối hiếm) một nghiên cứu đưa ra một quyết định duy nhất tối ưu tuyệt đối; nhưng thường xuyên hơn nhiều, nó xác định một phạm vi các quyết định tối ưu (hợp lý) tương đương nhau về mặt thực tiễn, trong đó có thể thực hiện lựa chọn cuối cùng.</p>
+<p>Cần lưu ý rằng bản thân việc đưa ra quyết định nằm ngoài phạm vi của vận trù học và thuộc thẩm quyền của một cá nhân chịu trách nhiệm, hoặc thường xuyên hơn là một nhóm cá nhân, những người được trao quyền lựa chọn cuối cùng và chịu trách nhiệm về sự lựa chọn đó. Khi đưa ra lựa chọn của mình, họ có thể tính đến, bên cạnh các khuyến nghị thu được từ các tính toán toán học, một số cân nhắc bổ sung (cả về mặt định lượng lẫn định tính) mà chưa được tính đến trong các tính toán.</p>
+<p>Sự hiện diện không thể thiếu của con người (với tư cách là cơ quan cuối cùng đưa ra quyết định) không bị loại bỏ ngay cả khi có một hệ thống điều khiển hoàn toàn tự động, dường như có thể đưa ra quyết định mà không cần sự tham gia của con người. Không được quên rằng chính việc tạo ra thuật toán điều khiển, việc lựa chọn một trong các phương án khả dĩ của nó, tự nó đã là một quyết định — và là một quyết định có ý nghĩa hệ trọng.</p>
+<p>Các tham số mà tập hợp của chúng tạo thành một quyết định được gọi là các biến quyết định. Nhiều loại số, vectơ, hàm số, thuộc tính vật lý, v.v. có thể đóng vai trò là các biến quyết định. Trong những bài toán vận trù học đơn giản nhất, số lượng biến quyết định có thể tương đối nhỏ. Nhưng trong đa số các bài toán có ý nghĩa thực tiễn, số lượng biến quyết định là rất lớn.</p>
+<p>Ngoài các biến quyết định, mà chúng ta có thể tùy ý sử dụng trong những giới hạn nhất định, mỗi bài toán vận trù học còn chứa những điều kiện cho trước, “có tính kỷ luật”, được ấn định ngay từ đầu và không thể vi phạm (ví dụ, tải trọng của phương tiện vận tải, quy mô của một nhiệm vụ được lên kế hoạch, đặc tính trọng lượng của thiết bị, v.v.). Đặc biệt, những điều kiện như vậy bao gồm các nguồn lực (vật chất, kỹ thuật, con người) mà chúng ta có quyền sử dụng, và các ràng buộc khác được áp đặt lên quyết định. Tổng hợp lại, chúng tạo thành cái gọi là “tập hợp khả thi”.</p>
+<p>Để so sánh các quyết định khác nhau với nhau về mặt hiệu quả, cần có một tiêu chí định lượng nào đó, cái gọi là thước đo hiệu quả (thường được gọi là “hàm mục tiêu”). Thước đo này được chọn sao cho phản ánh được tính có mục đích của tác nghiệp. Quyết định “tốt nhất” sẽ được coi là quyết định góp phần nhiều nhất vào việc đạt được mục tiêu đã đề ra. Để lựa chọn, để “gọi tên” thước đo hiệu quả W, trước hết cần tự hỏi: chúng ta muốn gì, chúng ta đang phấn đấu vì điều gì khi tiến hành tác nghiệp? Khi lựa chọn một quyết định, chúng ta tự nhiên ưu tiên quyết định biến thước đo hiệu quả W thành cực đại (hoặc cực tiểu). Ví dụ, người ta muốn tối đa hóa thu nhập từ một tác nghiệp; nếu thước đo hiệu quả là chi phí, người ta muốn tối thiểu hóa chúng.</p>
+<p>Rất thường xuyên, việc tiến hành một tác nghiệp đi kèm với tác động của các yếu tố ngẫu nhiên. Trong những trường hợp như vậy, thước đo hiệu quả thường được lấy không phải là bản thân đại lượng mà người ta muốn tối đa hóa (tối thiểu hóa), mà là giá trị trung bình của nó (kỳ vọng toán học).</p>
+<p>Trong một số trường hợp, một tác nghiệp đi kèm với các yếu tố ngẫu nhiên theo đuổi một mục tiêu khá xác định, mục tiêu này chỉ có thể được đạt được hoàn toàn hoặc hoàn toàn không đạt được (sơ đồ “có–không”), và không có kết quả trung gian nào là đáng quan tâm. Trong những trường hợp như vậy, xác suất đạt được mục tiêu này được chọn làm thước đo hiệu quả. Ví dụ, nếu hỏa lực đang được nhắm vào một mục tiêu nào đó với điều kiện bắt buộc là phải tiêu diệt nó, thì xác suất tiêu diệt mục tiêu sẽ là thước đo hiệu quả.</p>
+<p>Việc lựa chọn sai thước đo hiệu quả là rất nguy hiểm. Các tác nghiệp được tổ chức từ góc độ một tiêu chí được lựa chọn kém có thể dẫn đến những chi phí và tổn thất không chính đáng. Đáng tiếc là trong đa số các bài toán có ý nghĩa thực tiễn, việc lựa chọn thước đo hiệu quả không đơn giản và được giải quyết một cách không rõ ràng. Đối với bất kỳ bài toán nào đủ phức tạp, đặc điểm điển hình là hiệu quả của một tác nghiệp không thể được đặc trưng đầy đủ bằng một con số duy nhất — cần phải đưa thêm các thước đo khác vào để bổ sung cho nó.</p>
+<p>Để áp dụng các phương pháp nghiên cứu định lượng trong bất kỳ lĩnh vực nào, luôn cần có một loại mô hình toán học nào đó. Khi xây dựng mô hình, hiện tượng thực tế (trong trường hợp của chúng ta là tác nghiệp) tất yếu bị đơn giản hóa và lược đồ hóa, và lược đồ này (một sự biểu diễn có tính sơ đồ của hiện tượng) được mô tả bằng các công cụ toán học. Mô hình toán học được lựa chọn càng thành công, càng phản ánh tốt các đặc điểm đặc trưng của hiện tượng, thì nghiên cứu càng thành công và các khuyến nghị thu được càng hữu ích hơn.</p>
+<p>Không có phương pháp chung nào để xây dựng các mô hình toán học. Trong mỗi trường hợp cụ thể, mô hình được lựa chọn dựa trên loại tác nghiệp, tính có mục đích của nó, và có tính đến nhiệm vụ nghiên cứu (cần xác định những tham số nào và cần phản ánh ảnh hưởng của những yếu tố nào). Cũng cần thiết trong mỗi trường hợp cụ thể phải cân bằng độ chính xác và mức độ chi tiết của mô hình với: (a) độ chính xác mà chúng ta cần biết lời giải, và (b) thông tin mà chúng ta có hoặc có thể thu thập được. Nếu các dữ liệu ban đầu cần thiết cho các tính toán được biết một cách không chính xác, thì rõ ràng không có ý nghĩa gì khi đi sâu vào những chi tiết tinh vi, xây dựng một mô hình rất chi tiết, và dành thời gian (của bản thân mình và của máy tính) cho việc tối ưu hóa lời giải một cách tinh tế và chính xác. Đáng tiếc là nguyên tắc này thường bị bỏ qua, và những mô hình quá chi tiết được lựa chọn để mô tả hiện tượng.</p>
+<p>Một mô hình toán học phải phản ánh những đặc điểm quan trọng nhất của hiện tượng, tất cả các yếu tố thiết yếu mà thành công của tác nghiệp chủ yếu phụ thuộc vào. Đồng thời, mô hình cần phải càng đơn giản càng tốt, không bị “làm rối” bởi một khối lượng lớn các yếu tố thứ yếu, không quan trọng: việc tính đến chúng làm phức tạp hóa việc phân tích toán học và khiến kết quả nghiên cứu khó bao quát hơn. Luôn có hai mối nguy hiểm rình rập người xây dựng mô hình: mối nguy thứ nhất là sa lầy vào chi tiết (“không thấy rừng vì cây”), và mối nguy thứ hai là đơn giản hóa hiện tượng quá mức (“hắt cả nước tắm lẫn đứa trẻ”). Nghệ thuật xây dựng mô hình toán học quả thực là một nghệ thuật, và kinh nghiệm trong lĩnh vực này được tích lũy dần dần.</p>
+<p>Vì mô hình toán học không tất yếu suy ra từ mô tả bài toán, nên luôn hữu ích khi không tin tưởng mù quáng vào bất kỳ mô hình đơn lẻ nào, mà so sánh các kết quả thu được từ các mô hình khác nhau, tổ chức một kiểu “cuộc thi giữa các mô hình”. Trong quá trình này, cùng một bài toán được giải không chỉ một lần mà nhiều lần, sử dụng các hệ thống giả định khác nhau, các công cụ khác nhau, và các mô hình khác nhau. Nếu các kết luận khoa học thay đổi ít từ mô hình này sang mô hình khác, đây là một lập luận mạnh mẽ ủng hộ tính khách quan của nghiên cứu. Nếu chúng khác biệt đáng kể, cần phải xem xét lại các khái niệm làm nền tảng cho các mô hình khác nhau, xác định mô hình nào trong số chúng phù hợp hơn với thực tế, và nếu cần thiết, tiến hành một thí nghiệm kiểm chứng. Cũng là đặc trưng của vận trù học việc quay lại nhiều lần với mô hình (sau khi vòng tính toán đầu tiên đã được thực hiện) để đưa vào đó những điều chỉnh.</p>
+<p>Việc tạo ra một mô hình toán học là phần quan trọng nhất và có trách nhiệm nhất của nghiên cứu, đòi hỏi kiến thức sâu sắc không nhiều về toán học mà về bản chất của các hiện tượng đang được mô hình hóa. Theo quy luật, các nhà toán học “thuần túy” (không có sự trợ giúp của các chuyên gia trong lĩnh vực mà bài toán thuộc về) thường xử lý kém trong việc xây dựng mô hình. Sự chú ý của họ tập trung vào công cụ toán học và những điểm tinh tế của nó, hơn là vào bài toán thực tiễn thực sự.</p>
+<p>Kinh nghiệm cho thấy rằng những mô hình thành công nhất được tạo ra bởi các chuyên gia trong lĩnh vực thực tiễn đã nhận được, ngoài đào tạo chuyên môn chính, một sự chuẩn bị toán học sâu sắc, hoặc bởi các nhóm tập hợp các chuyên gia thực hành và các nhà toán học. Lợi ích to lớn đến từ các cuộc tư vấn do một nhà toán học am hiểu về vận trù học dành cho các nhà thực hành — kỹ sư, nhà sinh học, chuyên gia y tế, và những người khác — những người gặp phải trong công việc của mình nhu cầu luận chứng khoa học cho các quyết định.</p>
+<p>Cần đặc biệt nhấn mạnh rằng kiến thức về lý thuyết xác suất là cần thiết — không nhiều đến mức rộng và sâu bằng việc mang tính không chính thức và hiệu quả, cùng với thói quen làm việc với dữ liệu thống kê và các khái niệm xác suất. Những yêu cầu đặc biệt chính trong lĩnh vực kiến thức toán học này được giải thích bởi thực tế rằng đa số các tác nghiệp được tiến hành trong điều kiện không chắc chắn hoàn toàn, và tiến trình cũng như kết quả của chúng phụ thuộc vào các yếu tố ngẫu nhiên. Đáng tiếc là trong các giới chuyên gia rộng rãi — kỹ sư, nhà sinh học, chuyên gia y tế, nhà hóa học — sự thông thạo lý thuyết xác suất hiếm khi được gặp. Các mệnh đề và quy tắc của nó thường được áp dụng một cách hình thức, không có sự hiểu biết thực sự về ý nghĩa và tinh thần của chúng. Không ít khi, lý thuyết xác suất được xem như một loại “cây đũa thần” cho phép thu được thông tin “từ hư không”, từ sự không hiểu biết hoàn toàn. Đây là một quan niệm sai lầm: lý thuyết xác suất chỉ cho phép biến đổi thông tin — nghĩa là từ dữ liệu về những hiện tượng nhất định có thể quan sát được, rút ra kết luận về những hiện tượng khác không thể tiếp cận được.</p>
+<p>Trong việc xây dựng một mô hình toán học, các công cụ toán học có độ phức tạp khác nhau có thể được sử dụng (tùy thuộc vào loại tác nghiệp, các nhiệm vụ nghiên cứu, và độ chính xác của dữ liệu ban đầu). Trong những trường hợp đơn giản nhất, hiện tượng được mô tả bằng các phương trình đại số đơn giản. Trong những trường hợp phức tạp hơn, khi cần xem xét hiện tượng trong động thái của nó, các phương pháp phương trình vi phân (thường hoặc đạo hàm riêng) được sử dụng. Trong những trường hợp phức tạp nhất, khi sự phát triển của một tác nghiệp và kết quả của nó phụ thuộc vào một số lượng lớn các yếu tố ngẫu nhiên đan xen phức tạp, các phương pháp giải tích hoàn toàn thất bại, và phương pháp mô hình hóa thống kê (Monte Carlo) được sử dụng.</p>
+<p>Trong một phép gần đúng thô đầu tiên, ý tưởng của phương pháp này có thể được mô tả như sau: quá trình phát triển của tác nghiệp, với tất cả tính ngẫu nhiên đi kèm, thực chất được “sao chép”, tái tạo trên máy tính. Kết quả là một mẫu đơn lẻ (một “hiện thực hóa”) của quá trình ngẫu nhiên phát triển của tác nghiệp với một tiến trình và kết quả ngẫu nhiên. Bản thân một hiện thực hóa như vậy không cung cấp cơ sở nào để lựa chọn quyết định, nhưng sau khi thu được nhiều hiện thực hóa như vậy, chúng ta xử lý chúng như tài liệu thống kê thông thường (do đó có thuật ngữ “mô hình hóa thống kê”), tìm ra các đặc trưng trung bình của quá trình, và có được hiểu biết về việc, trung bình, các điều kiện của bài toán và các biến quyết định ảnh hưởng đến chúng như thế nào.</p>
+<p>Trong vận trù học, cả mô hình giải tích lẫn mô hình thống kê đều được sử dụng rộng rãi. Mỗi loại trong số này có những ưu điểm và nhược điểm riêng. Các mô hình giải tích thô hơn, tính đến ít yếu tố hơn, và luôn đòi hỏi những giả định và đơn giản hóa nhất định. Mặt khác, kết quả tính toán của chúng dễ bao quát hơn và phản ánh rõ ràng hơn các quy luật cơ bản vốn có trong hiện tượng. Và quan trọng nhất, các mô hình giải tích thích hợp hơn cho việc tìm kiếm các lời giải tối ưu.</p>
+<p>So với các mô hình giải tích, các mô hình thống kê chính xác và chi tiết hơn, không đòi hỏi những giả định thô như vậy, và cho phép tính đến một số lượng lớn (về lý thuyết là không giới hạn) các yếu tố. Nhưng chúng cũng có những nhược điểm: cồng kềnh, khó bao quát, và quan trọng nhất, việc tìm kiếm các lời giải tối ưu cực kỳ khó khăn, phải được tìm kiếm “bằng cảm tính”, thông qua phỏng đoán và thử nghiệm.</p>
+<p>Những công trình xuất sắc nhất trong lĩnh vực vận trù học dựa trên việc sử dụng kết hợp các mô hình giải tích và thống kê. Một mô hình giải tích giúp có được sự hiểu biết chung về hiện tượng, phác họa, như là, “đường viền” của các quy luật cơ bản. Bất kỳ sự tinh chỉnh nào cũng có thể thu được với sự trợ giúp của các mô hình thống kê.</p>
+<p>Để kết luận, chúng ta hãy nói vài lời về cái gọi là mô hình hóa “mô phỏng”. Nó được áp dụng cho các quá trình mà ý chí con người có thể can thiệp vào theo thời gian. Người (hoặc nhóm người) điều hành tác nghiệp có thể, tùy thuộc vào tình huống đã phát triển, đưa ra quyết định này hoặc quyết định khác, giống như một kỳ thủ cờ vua, nhìn vào bàn cờ, chọn nước đi tiếp theo của mình. Sau đó, mô hình toán học được đưa vào vận hành, cho thấy sự thay đổi nào trong tình huống được dự kiến sẽ xảy ra để đáp lại quyết định này và những hậu quả nào nó sẽ dẫn đến sau một thời gian nào đó. “Quyết định hiện hành” tiếp theo được đưa ra với tình huống thực tế mới đã được tính đến, và cứ như vậy. Kết quả của việc áp dụng lặp đi lặp lại thủ tục này là người quản lý thực sự “tích lũy kinh nghiệm”, học hỏi từ những sai lầm của chính mình và của người khác, và dần dần học được cách đưa ra những quyết định đúng đắn — nếu không phải là tối ưu, thì cũng gần như tối ưu.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div class="links">
+    <div class="links-section">
+      <h2>Vận trù học</h2>
+      <ul>
+        <li><a href="/vi/operation_research.html">Vận trù học</a></li>
+        <li><a href="/vi/operation_research_caa.html">Vận trù học: Churchman, Ackoff và Arnoff</a></li>
+        <li><a href="/vi/operation_research_as.html">Những nguyên lý cơ bản của vận trù học. Ackoff, Sasieni</a></li>
+        <li><a href="/vi/operation_research_me.html">Vận trù học: Moder và Elmaghraby</a></li>
+        <li><a href="/vi/operation_research_gv.html">Tổ chức và quản lý. Gvishiani</a></li>
+        <li><a href="/vi/operation_research_vg.html">Vận trù học: Wagner</a></li>
+        <li><a href="/vi/operation_research_book.html">Tải xuống tài liệu về vận trù học</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="breadcrumbs" aria-label="Đường dẫn điều hướng">
+    <a href="/vi/">Trang chủ</a> <span aria-hidden="true">/</span>
+    <a href="/vi/operation_research.html">Vận trù học</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Vận trù học: Wentzel</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Đổi giao diện"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_ve.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/vi/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Đổi giao diện"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710f14ca841e13',t:'MTc4ODczNTMwMQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

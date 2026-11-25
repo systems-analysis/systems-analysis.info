@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>オペレーションズ・リサーチのモデル</title>
+<meta name="description" content="オペレーションのモデルを構築することは、オペレーションズ・リサーチの鍵となる段階である。オペレーションは単純化され図式化され、本質的な要因が特定される。標準的なモデルと問題の分類を解説する。">
+<meta name="keywords" content="モデリング,モデル,オペレーションズ・リサーチ,目的関数,計画法,問題,有効性,最適,数学的,システム,分析,解">
+<link rel="canonical" href="https://systems-analysis.info/ja/operation_research_model.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_model.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_model.html">
+<link rel="alternate" hreflang="ja" href="https://systems-analysis.info/ja/operation_research_model.html">
+<meta property="og:title" content="オペレーションズ・リサーチのモデル">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/ja/operation_research_model.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="オペレーションのモデルを構築することは、オペレーションズ・リサーチの鍵となる段階である。オペレーションは単純化され図式化され、本質的な要因が特定される。標準的なモデルと問題の分類を解説する。">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="ja_JP">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/ja/operation_research_model.html#article",
+    "headline": "オペレーションズ・リサーチのモデル",
+    "description": "オペレーションのモデルを構築することは、オペレーションズ・リサーチの鍵となる段階である。オペレーションは単純化され図式化され、本質的な要因が特定される。標準的なモデルと問題の分類を解説する。",
+    "url": "https://systems-analysis.info/ja/operation_research_model.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "ja",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/ja/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/ja/operation_research_model.html"
+    },
+    "keywords": [
+        "モデリング",
+        "モデル",
+        "オペレーションズ・リサーチ",
+        "目的関数",
+        "計画法",
+        "問題",
+        "有効性",
+        "最適",
+        "数学的",
+        "システム",
+        "分析",
+        "解"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-08-22",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "オペレーションのモデル",
+        "description": "関数、方程式、方程式系、不等式によって表される、オペレーションの十分に正確な数学的記述。",
+        "sameAs": [
+            "https://systems-analysis.info/wiki/Модели_исследования_операций",
+            "https://systems-analysis.info/eng/Operations_research_models"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ホーム",
+            "item": "https://systems-analysis.info/ja/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "オペレーションズ・リサーチ",
+            "item": "https://systems-analysis.info/ja/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "オペレーションズ・リサーチのモデル"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/ja/">ホーム</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/sections.html">セクション</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/Systems_Analysis_Wiki_Catalog_%28%E6%97%A5%E6%9C%AC%E8%AA%9E%29">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/books.html">書籍</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/catalog.html">カタログ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_model.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Toggle theme"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Toggle font"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">オペレーションズ・リサーチのモデル</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>量的な研究方法を適用するには、オペレーションの数理モデルを構築しなければならない。モデルを構築する際には通常、オペレーションを単純化し図式化し、得られた図式を数学の道具によって記述する。オペレーションのモデルとは、関数、方程式、方程式系、不等式によって表される、オペレーションの十分に正確な数学的記述である。オペレーションの有効性とは、その目的をどの程度達成するかの度合いである。</p>
+
+<h2>オペレーションズ・リサーチの問題の一般的な定式化</h2>
+
+<p>オペレーションズ・リサーチにおいて、管理の状況は目標と決定を包含する。決定は目標を達成するために下される。管理の状況はモデルによって記述される。モデルは有効性の尺度を含み、それによって決定が目標にどれだけ近いかが定められる。有効性の尺度は、オペレーションに影響する要因に左右される。オペレーションの記述に含まれるすべての要因は二つの群に分けられる。働きかけることのできない定常的な要因と、制御しうる要因である。</p>
+
+<p>モデルの概念的な要素は「ブラックボックス」として表され、そこでは入力と出力を定めることに主眼が置かれる。入力とはモデルが処理するものであり、出力とはモデルが生み出すものである。入力としては、制御しうる変数と制御しえない変数が与えられる。出力は有効性の基準である。モデルは有効性の明示的な尺度を含み、それによって決定が目標にどれだけ近いかが定められる。モデルを構築する際には、入力パラメータが、掲げられた尺度にどう影響するかを指定することが重要である。</p>
+
+<p>目的関数と呼ばれるある関数によって表される有効性の基準は、両方の群の要因に左右される。有効性の基準の数学的な表現を目的関数と呼ぶ。目的関数とは、最大化あるいは最小化されるべき、数学的に定式化された（形式化された）有効性の尺度である。</p>
+
+<p>制御しうる変数とは、意思決定者が管理するパラメータである。</p>
+
+<p>制御しえない変数とは、管理者が制御できないが、目標の達成にとって本質的である外部の要因である。</p>
+
+<p>有効性の基準、すなわち目的関数とは、目標への接近の度合いを表す決定変数の関数である。</p>
+
+<p>数理モデルの定義。数理モデルとは、モデル化される対象の入力パラメータと出力パラメータの許容値の集合のなかで、入力パラメータの対応する値が与えられたときに、モデル化される対象のパラメータの出力値を定めるあらゆる作用素と理解される。</p>
+
+<h2>オペレーションズ・リサーチのモデルと意思決定</h2>
+
+<p>オペレーションズ・リサーチは、合理的な意思決定を量的に根拠づけることに向けられている。そうしたモデルは、意思決定理論の大きな問題群および最適化の問題と密接に交わる。</p>
+
+<p>オペレーションズ・リサーチのモデルを練り上げる際には、次の問いに答えなければならない。</p>
+<ul>
+<li>具体的な場合において、何を代替的な解とみなすべきか。</li>
+<li>どの基準によって代替的な解が選ばれるか。</li>
+<li>実行可能解はどのような制約を満たさなければならないか。</li>
+</ul>
+
+<p>オペレーションズ・リサーチの標準的な数理モデルは、次の定式で示される。制約が満たされるという条件のもとでの、目的関数の最大化あるいは最小化。</p>
+
+<p>解を選ぶ際には、目的関数を最大化あるいは最小化するものが望ましい。目的関数を最大化する例としては、利潤や生産性が挙げられる。目的関数の最小化は、費用、支出、時間などにかかわりうる。有効性の基準の選択は、研究の中心的で最も重要な瞬間である。誤って選ばれた基準に対する最適解を得るよりも、正しく選ばれた基準に対する最適でない解を見いだすほうが、はるかに優れている。</p>
+
+<p>実行可能解とは、モデルのすべての制約を満たす解である。実行可能解は無限に存在しうる。</p>
+
+<p>最適解とは、実行可能であることに加えて、目的関数をその最大値あるいは最小値に到達させる解である。</p>
+
+<p>解は、なんらかの属性によってほかより望ましいとされる場合に最適と呼ばれる。最良の代替案の選択はいずれも個別的である。それは定められた基準への適合にもとづくからである。最適な代替案について語るときには、これらの基準を指定する（「……に関して最適である」）。ある基準のもとで最適であるものが、別の基準のもとでも必ず最適であるとはかぎらない。</p>
+
+<p>制約とは、モデルの変数が満たさなければならない、不等式あるいは等式の形の数学的な表現である。</p>
+
+<p>制約は実行可能解の集合を狭める。場合によっては、掲げられた制約のもとで最適解がまったく存在しないこともある。これは、問題を解くことにもとづいて下される最終的な決定の質が、モデルが制約によって形式的に記述する現実の状況を、どれだけ適切に表しているかに左右されることを意味する。制約には、割当量、車両の積載能力、計画課題の量、設備の重量特性、資源の制限などが含まれる。</p>
+
+<p>制約の構成が変われば、別の解が最良になりうる。現実の世界では、制約は物理的、経済的、あるいは政治的な性質をもちうるし、必ずしも形式化になじむとはかぎらない。特定の解が最良であるのは、与えられたモデルにおいて、立てられた制約の体系のもとにおいてのみである。モデルが状況を正確に反映しているほど、問題の解は最適解に近づく。</p>
+
+<h2>オペレーションズ・リサーチのモデルの分類</h2>
+
+<p>オペレーションズ・リサーチのモデルはすべて、オペレーションの本性と性質、解かれる問題の性格、そして用いられる数学的方法に応じて分類できる。</p>
+<ul>
+<li>有効性の基準が線形関数であり、制約系の関数も線形であるなら、その問題は線形計画問題である。</li>
+<li>その内容上の意味からして解が整数でなければならないなら、それは整数線形計画問題である。</li>
+<li>有効性の基準および／または制約系が非線形関数によって指定されるなら、非線形計画問題となる。とりわけ、これらの関数が凸性をもつ場合、得られる問題は凸計画問題である。</li>
+<li>数理計画問題が時間変数を含み、有効性の基準が変数の関数として明示的にではなく、オペレーションの時間的な進行を記述する方程式を通じて間接的に表されるなら、その問題は動的計画問題である。</li>
+<li>解の変種があまりに多いために厳密な最適解をアルゴリズムによって見いだすことが不可能であるなら、ヒューリスティック計画法が用いられる。これは検討する変種の数を大幅に減らし、最適ではないにせよ実務上満足のいく十分によい解を見いだすことを可能にする。</li>
+</ul>
+
+<p>内容上の定式化によって、ほかの数多くの典型的なオペレーションズ・リサーチの問題は、いくつかの類に分けられる。</p>
+<ul>
+<li>日程計画問題（PERT／CPM）は、多数のオペレーション（作業）からなる大きな複合体の完了期日と、複合体に含まれるすべてのオペレーションの開始時期との関係を検討する。これらの問題は、オペレーションの複合体の最小の所要期間と、費用と完了期日の最適な関係を見いだすことからなる。</li>
+<li>待ち行列問題は、要求あるいは需要の列をともなうサービスシステムの研究と分析に充てられ、システムの成果尺度とその最適な特性——たとえばサービス窓口の数、サービス時間など——を定めることからなる。</li>
+<li>在庫管理問題は、在庫水準（発注点）と発注量の最適値を見いだすことからなる。この種の問題の際立った特徴は、在庫水準が上がると、一方では保管費用が増えるが、他方では保管される製品の不足によって生じうる損失が減ることである。</li>
+<li>資源配分問題は、限られた利用可能な資源によって遂行しなければならないオペレーション（作業）の一定の集合があり、オペレーション間の最適な資源配分、あるいはオペレーションの最適な構成を見いださなければならない場合に生じる。</li>
+<li>保全と更新の問題は、設備の摩耗と老朽化、およびその更新の必要と関連して重要になる。</li>
+<li>オペレーションズ・リサーチのモデルのなかでは、ゲーム理論が研究する、対立状況における最適な意思決定のモデルがとりわけ際立っている。異なる目標を追う二者（あるいはそれ以上）の利害が衝突する対立状況には、経済、法律、軍事などの領域のいくつもの状況が含まれる。ゲーム理論の問題では、対立の参加者の合理的な行動についての勧告を練り上げ、その最適戦略を定めなければならない。</li>
+</ul>
+
+        </div>
+      </article>
+    </div>
+
+    <div class="links">
+    <div class="links-section">
+      <h2>オペレーションズ・リサーチ</h2>
+      <ul>
+        <li><a href="/ja/operation_research_caa.html">オペレーションズ・リサーチ入門：チャーチマン、アコフ、アーノフ</a></li>
+        <li><a href="/ja/operation_research_as.html">オペレーションズ・リサーチの基礎：アコフ、サシエニ</a></li>
+        <li><a href="/ja/operation_research_me.html">オペレーションズ・リサーチ：モーダー、エルマグラビー</a></li>
+        <li><a href="/ja/operation_research_vg.html">オペレーションズ・リサーチの原理：ワグナー</a></li>
+        <li><a href="/ja/operation_research_gv.html">組織とマネジメント：グヴィシアーニ</a></li>
+        <li><a href="/ja/operation_research_ve.html">オペレーションズ・リサーチ：ヴェンツェリ</a></li>
+        <li><a href="/ja/methodology_or.html">オペレーションズ・リサーチの方法論</a></li>
+      </ul>
+    </div>
+  </div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/ja/">ホーム</a> <span aria-hidden="true">/</span>
+    <a href="/ja/operation_research.html">オペレーションズ・リサーチ</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">オペレーションズ・リサーチのモデル</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Toggle theme"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_model.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">言語</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/ja/map.html">サイトマップ</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710a9ddf4aa5ce',t:'MTc4ODczNTExOQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

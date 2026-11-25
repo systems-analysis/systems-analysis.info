@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Phương pháp luận phân tích hệ thống của Optner</title>
+<meta name="description" content="Một vấn đề được phát biểu tốt có thể coi như đã giải quyết được một nửa. Vì lý do này, nhà phân tích hệ thống dành sự chú ý đặc biệt đến việc đánh giá các tham số, thuộc tính và mối quan hệ của vấn đề càng sớm càng tốt.">
+<meta name="keywords" content="Phân tích hệ thống,phương pháp luận của Optner,vấn đề,hệ thống,giải pháp,phương án,yêu cầu">
+<link rel="canonical" href="https://systems-analysis.info/vi/optner_method.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/optner_method.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/optner_method.html">
+<link rel="alternate" hreflang="vi" href="https://systems-analysis.info/vi/optner_method.html">
+<meta property="og:title" content="Phương pháp luận phân tích hệ thống của Optner">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/vi/optner_method.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Một vấn đề được phát biểu tốt có thể coi như đã giải quyết được một nửa. Vì lý do này, nhà phân tích hệ thống dành sự chú ý đặc biệt đến việc đánh giá các tham số, thuộc tính và mối quan hệ của vấn đề càng sớm càng tốt.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="vi_VN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/vi/optner_method.html#article",
+    "headline": "Phương pháp luận phân tích hệ thống của Optner",
+    "description": "Một vấn đề được phát biểu tốt có thể coi như đã giải quyết được một nửa. Vì lý do này, nhà phân tích hệ thống dành sự chú ý đặc biệt đến việc đánh giá các tham số, thuộc tính và mối quan hệ của vấn đề càng sớm càng tốt.",
+    "url": "https://systems-analysis.info/vi/optner_method.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "vi",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/vi/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/vi/optner_method.html"
+    },
+    "keywords": [
+        "Phân tích hệ thống",
+        "phương pháp luận của Optner",
+        "vấn đề",
+        "hệ thống",
+        "giải pháp",
+        "phương án",
+        "yêu cầu"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Systems Analysis for Business and Industrial Problem Solving",
+        "author": {
+            "@type": "Person",
+            "name": "Optner S.L."
+        },
+        "datePublished": "1965",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Prentice-Hall"
+        },
+        "inLanguage": "vi"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Systems Analysis for Business and Industrial Problem Solving",
+        "author": {
+            "@type": "Person",
+            "name": "Optner S.L."
+        },
+        "datePublished": "1965",
+        "inLanguage": "vi"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Trang chủ",
+            "item": "https://systems-analysis.info/vi/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Phân tích hệ thống",
+            "item": "https://systems-analysis.info/vi/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Phương pháp luận của Optner"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Điều hướng chính">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/vi/">Trang chủ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/sections.html">Chuyên mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/books.html">Sách</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/catalog.html">Danh mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/optner_method.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Đổi giao diện"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Đổi phông chữ"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Phương pháp luận phân tích hệ thống của Optner</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Stanford L. Optner. Phân tích hệ thống để giải quyết <a href="/vi/problem.html" class="text-link">vấn đề</a> kinh doanh và công nghiệp</p>
+<p><strong>Các giai đoạn của phương pháp luận phân tích hệ thống của Optner</strong>:</p>
+<ol>
+  <li>Nhận diện các triệu chứng.</li>
+  <li>Xác định xem vấn đề có liên quan hay không.</li>
+  <li>Xác định mục tiêu.</li>
+  <li>Phát hiện cấu trúc của hệ thống và các phần tử khiếm khuyết của nó.</li>
+  <li>Xác định cấu trúc các khả năng.</li>
+  <li>Nhận diện các phương án.</li>
+  <li>Đánh giá các phương án.</li>
+  <li>Lựa chọn một phương án.</li>
+  <li>Xây dựng giải pháp.</li>
+  <li>Giành được sự chấp thuận đối với giải pháp từ những người thực thi và quản lý.</li>
+  <li>Khởi động quá trình triển khai.</li>
+  <li>Quản lý quá trình triển khai.</li>
+  <li>Đánh giá kết quả và hệ quả của việc triển khai.</li>
+</ol>
+<p>Vấn đề được định nghĩa là một tình huống bao hàm hai trạng thái: một gọi là trạng thái hiện tồn và một gọi là trạng thái được đề xuất. Trạng thái hiện tồn được biểu diễn bởi hệ thống hiện tại; trạng thái được đề xuất được biểu diễn bởi một hệ thống giả định hoặc mong muốn. Mỗi trạng thái chứa một tập hợp các đối tượng, thuộc tính và mối quan hệ được thống nhất trong một quá trình, và mỗi trạng thái đều có thể được mô tả như một <a href="/vi/system.html" class="text-link">hệ thống</a>. Để chuyển từ trạng thái hiện tồn sang trạng thái được đề xuất, tập hợp hiện tại các đối tượng, thuộc tính và mối quan hệ phải được thay đổi. Thay đổi về đối tượng có thể là thay thế một thiết bị chứ không phải tổ chức lại nhân sự; thay đổi về thuộc tính có thể mang hình thức tăng số lượng nhân viên; thay đổi về mối quan hệ có thể đưa vào một sự phân bổ trách nhiệm mới.</p>
+<p>Vấn đề được đặc trưng bởi các ẩn số mà nó chứa đựng và bởi các điều kiện của nó. Có thể có một hoặc nhiều lĩnh vực chứa ẩn số. Một ẩn số có thể được xác định về mặt định tính nhưng không thể xác định về mặt định lượng. Đặc trưng định lượng có thể mang hình thức một khoảng ước lượng biểu thị trạng thái giả định của ẩn số. Theo nghĩa cổ điển, ẩn số là những đại lượng cần được xác định. Do đó, việc định nghĩa một ẩn số thông qua một ẩn số khác có thể dẫn đến mâu thuẫn hoặc dư thừa. Ẩn số chỉ có thể được biểu đạt thông qua những gì đã biết — tức là thông qua những sự vật mà đối tượng, thuộc tính và mối quan hệ của chúng đã được xác lập. Cái đã biết được định nghĩa là một đại lượng có giá trị đã được xác định.</p>
+<p>Trạng thái hiện tồn (hệ thống hiện tại) có thể chứa cả cái đã biết lẫn ẩn số; điều này có nghĩa là sự hiện diện của ẩn số không nhất thiết ngăn cản hệ thống vận hành. Theo định nghĩa, hệ thống hiện tồn được cấu thành một cách hợp lý, nhưng nó có thể không thỏa mãn một ràng buộc nào đó. Vì vậy, việc hệ thống vận hành đơn thuần không phải là thước đo tối hậu cho sự thỏa đáng của nó, bởi một số hệ thống có thể vận hành hoàn toàn tốt mà vẫn không đạt được mục tiêu của mình. Mục tiêu chỉ có thể được xác định thông qua các yêu cầu của hệ thống. Yêu cầu hệ thống được xác lập bằng một điều kiện quy định các đối tượng và thuộc tính trong mối quan hệ đúng đắn của chúng.</p>
+<p>Yêu cầu hệ thống đóng vai trò là phương tiện để ghi nhận các phát biểu rõ ràng, không mơ hồ nhằm xác định <a href="/vi/goal.html" class="text-link">mục tiêu</a>. Mặc dù yêu cầu hệ thống được phát biểu dưới dạng đối tượng, thuộc tính và mối quan hệ, mục tiêu có thể được biểu đạt dưới dạng một trạng thái mong muốn. Với một tập hợp yêu cầu hệ thống cho trước, mục tiêu và trạng thái mong muốn có thể hoàn toàn trùng khớp. Nếu chúng khác nhau, các yêu cầu được cho là biểu diễn hệ thống mong muốn. Nói chung, mục tiêu được đồng nhất với hệ thống mong muốn.</p>
+<p>Khoảng cách giữa hệ thống hiện tồn và hệ thống mong muốn chính là vấn đề. Mục đích của hành động là thu hẹp khoảng cách này đến mức tối thiểu. Việc duy trì hoặc cải thiện hoạt động của hệ thống được hiểu thông qua khoảng cách này giữa trạng thái hiện tồn và trạng thái mong muốn. Duy trì trạng thái hiện tồn nghĩa là giữ đầu ra của hệ thống trong các giới hạn quy định. Cải thiện trạng thái của hệ thống nghĩa là đạt được đầu ra vượt trội hơn, hoặc vượt xa hơn, so với những gì được tạo ra dưới trạng thái hiện tồn.</p>
+<p>Giải pháp xác định cách thức lấp đầy khoảng cách giữa trạng thái hiện tồn và trạng thái mong muốn. Do đó, giải pháp là phương tiện chuyển hóa trạng thái này sang trạng thái kia. Nó mô tả những khác biệt giữa hai trạng thái theo các đối tượng, thuộc tính và mối quan hệ, đồng thời quy định cách thức cấu trúc bắc cầu này phải được đưa vào để đạt được trạng thái được đề xuất. Giải pháp được triển khai thông qua kiểm soát phản hồi bao gồm một <a href="/vi/model.html" class="text-link">mô hình</a> đầu ra, một bước kiểm tra sự phù hợp, và một mô hình hành động.</p>
+<p>Việc giải quyết vấn đề được thực hiện thông qua một quá trình học hỏi. Học hỏi được định nghĩa là một hành vi nhận thức phát sinh từ các kích thích. Nhận thức bao trùm một phạm vi rộng các hoạt động trí tuệ, bao gồm cả việc nhận diện các khuôn mẫu hiện tại hoặc tương lai. Sự nhận diện đạt được bằng cách áp dụng một tiêu chí cho đầu ra. Nhận thức là một trong những chức năng nền tảng cần thiết để lấp đầy khoảng cách giữa hệ thống hiện tồn và hệ thống mong muốn. Các chức năng khác liên quan đến học hỏi bao gồm việc xây dựng phương tiện để chuyển hóa một trạng thái hệ thống này sang trạng thái khác, và ý tưởng chỉ ra, một cách tiên nghiệm, làm thế nào để đạt được trạng thái mong muốn thông qua những thay đổi đối với các đối tượng, thuộc tính và mối quan hệ hiện tồn.</p>
+<p>Một sự phát biểu thành công về vấn đề có thể coi như đã giải quyết được một nửa vấn đề đó. Vì lý do này, nhà phân tích hệ thống dành sự chú ý đặc biệt đến việc đánh giá càng sớm càng tốt các tham số, thuộc tính và mối quan hệ của vấn đề. Không phải lúc nào cũng có thể đưa những mục tiêu “dựng sẵn” vào một vấn đề; các mục tiêu do người khác đề xuất có thể tỏ ra không đầy đủ. Hơn nữa, nhà phân tích hệ thống chỉ có thể chấp nhận một mục tiêu được đề xuất sau khi xác định, thông qua việc phát biểu vấn đề, rằng nó không chứa sự dư thừa và mâu thuẫn. Một vấn đề đã “giải quyết được một nửa” thông qua việc phát biểu không phải là một vấn đề đã được giải quyết theo nghĩa chặt chẽ, nhưng việc phát biểu đó có nghĩa là các thành tố chính của vấn đề đã được nhận diện và liên hệ đúng đắn. Vì lý do này, việc phát biểu vấn đề cũng có thể được gọi là xác định vấn đề.</p>
+<p>Các bước ban đầu trong việc phát biểu một vấn đề nhằm mục đích: 1) soạn thảo phát biểu vấn đề ban đầu; 2) diễn giải phát biểu này trong mối liên hệ với các phần khác nhau của vấn đề; 3) diễn giải các sự kiện liên quan đến vấn đề; và 4) tinh chỉnh phát biểu vấn đề ban đầu. Trong quá trình khảo sát ban đầu, nhà phân tích tách biệt cái đã biết khỏi ẩn số nhằm làm cho phát biểu ban đầu trở nên có ý nghĩa.</p>
+<p>Đối ứng với việc phát biểu vấn đề là việc xây dựng định nghĩa mục tiêu. Thuật ngữ “mục tiêu” mô tả kết quả cần đạt được. Mục tiêu có thể mang hình thức một giá trị cực đại (hoặc cực tiểu) mà độ lớn của nó còn phải được xác định, hoặc nó có thể quy định một khoảng giá trị mà trong đó giải pháp phải nằm gọn. Trong mọi trường hợp, mục tiêu là một kết quả mong muốn của hoạt động.</p>
+<p>Sự kết hợp giữa các mục tiêu định hướng hành động và các mối quan hệ ràng buộc giới hạn chúng tạo thành khung ràng buộc mà trong đó việc nghiên cứu vấn đề bắt đầu. Ràng buộc là tổng hòa các quy tắc, quy định và nguyên tắc chỉ đạo — dù tự áp đặt hay áp đặt từ bên ngoài — xác định ranh giới của vấn đề. Mọi vấn đề đều phải có một tập hợp ràng buộc có thể xác định được. Sự tương thích giữa mục tiêu và các mối quan hệ ràng buộc là điều thiết yếu. Nếu không có sự đồng thuận về ràng buộc, việc đồng thuận về giải pháp là điều rất khó xảy ra. Sẽ vô nghĩa nếu nói đến một “giải pháp” khi các bên liên quan không thể thống nhất về vấn đề hoặc về các ràng buộc xác định vấn đề đó.</p>
+<p>Khi nhà phân tích hệ thống xác lập điều kiện của vấn đề, người đó thiết lập giới hạn của cuộc khảo sát và, theo đó, ranh giới của khung ràng buộc. Về mặt toán học, các điều kiện có thể là đủ, dư thừa, hoặc mâu thuẫn; chúng không thể mang hình thức nào khác.</p>
+<p>Một điều kiện được coi là dư thừa nếu nó chứa các phần tử không cần thiết — những phần tử có xu hướng gây lãng phí. Một điều kiện cũng có thể chứa mâu thuẫn. Một phần tử mâu thuẫn là phần tử có mối liên hệ chặt chẽ với một phần tử khác đến mức nếu phần tử này đúng thì phần tử kia phải sai. Hệ quả của một điều kiện mâu thuẫn là các phần của vấn đề không nhất quán với nhau và do đó đối nghịch lẫn nhau.</p>
+<p>Một điều kiện đủ được thỏa mãn khi các ràng buộc tương thích với mục tiêu được đề xuất và mục tiêu được xác định một cách thỏa đáng đối với các yêu cầu của hệ thống. Tính đủ hàm ý sự chính xác: nó chứa mọi thứ cần thiết để thỏa mãn yêu cầu, không thiếu và không thừa.</p>
+<p>Những vấn đề có cấu trúc được xác định kém thường được “giải quyết” bằng cách chấp nhận các đánh giá tương đối thay vì tuyệt đối mà không có chứng minh. Những vấn đề có phạm vi rất rộng, những vấn đề mà giải pháp phụ thuộc vào những thứ chưa được phát triển, và những vấn đề liên quan đến các giả thuyết về việc kết hợp các hệ thống chưa thể xác định được trong hoàn cảnh hiện tại — tất cả đều là những vấn đề có cấu trúc được xác định kém.</p>
+<p>Khi phát biểu (hay trình bày) một vấn đề, nhà phân tích hệ thống phải hoàn thành các nhiệm vụ sau: thứ nhất, mô tả cách thức vấn đề được phát hiện; thứ hai, xác lập lý do vì sao nó được coi là một vấn đề; thứ ba, phân biệt nó với một “triệu chứng” đơn thuần của các vấn đề liên quan; và thứ tư, đưa ra các định nghĩa mang tính vận hành cho những hệ quả không mong muốn của vấn đề. Nhà phân tích sẽ phạm sai lầm nghiêm trọng nếu, trong quá trình phát biểu vấn đề, người đó đề xuất giải pháp hoặc quy kết nguyên nhân. Việc soạn thảo phát biểu vấn đề, trên hết, nhằm mục đích làm rõ nét vấn đề. Không có đòi hỏi nào được đặt ra đối với các giả thuyết ở giai đoạn phát biểu. Để duy trì sự kiểm soát đối với vấn đề, nên có sẵn những sự kiện được liên kết một cách hợp lý, có thể nhận diện rõ ràng.</p>
+<p>Việc khảo sát các khía cạnh lịch sử của một vấn đề có những giá trị riêng của nó. Thời điểm mà vấn đề lần đầu tiên trở nên rõ ràng có thể đóng vai trò như một bằng chứng quý giá, cho phép liên hệ nó với những hành động đã diễn ra trước đó, có thể nhận diện được. Đôi khi việc xác định các hoàn cảnh đã làm nảy sinh vấn đề là điều quan trọng.</p>
+<p>Cùng một hiện tượng có thể không được mọi người nhận thức như một vấn đề. Do đó, cần phải xác lập cơ sở lý luận cho việc coi một hiện tượng nhất định là một vấn đề. Các hiện tượng trong kinh doanh, chính phủ và các định chế quân sự có thể được phân loại là vấn đề nếu chúng có xu hướng phá vỡ kỳ vọng lợi nhuận hoặc làm giảm hiệu quả tác nghiệp. Tuy nhiên, một số vấn đề không hiển nhiên chỉ có thể được dự đoán thông qua các phương pháp phân tích. Trong trường hợp vấn đề không hiển nhiên, sự gián đoạn hoạt động của hệ thống không xảy ra ngay lập tức mà chỉ trở thành một khả năng.</p>
+<p>Trong việc giải quyết một vấn đề, nhiệm vụ đầu tiên là xác định tập hợp các đối tượng cần được phân tích. Tập hợp các đối tượng này, xét như một tổng thể, tạo thành một phương án. Đánh giá các phương án là một phương tiện để lựa chọn giải pháp hoặc mục tiêu. Một vấn đề cho trước có thể được giải quyết thông qua nhiều thủ tục phương án khác nhau. Các phương án có thể có hoặc không có những khía cạnh định lượng được. Ví dụ, số lượng người hoặc thiết bị trong một phương án là có thể định lượng, trong khi loại thị trường, mức độ ảnh hưởng của thị trường, hay vị trí của thị trường có thể chỉ định lượng được một phần. Sự tồn tại của các phương án hàm ý khả năng lựa chọn giữa hai hoặc nhiều giải pháp chấp nhận được. Bản chất của các phương án xác định những điều kiện mà theo đó việc lựa chọn có thể được thực hiện.</p>
+<p>Giả định là những phát biểu về trạng thái được tin là đúng của một đối tượng, thuộc tính hoặc mối quan hệ. Mệnh đề là các giả thuyết hoặc tiên đề. Nếu các mệnh đề sai, thì các giả định cũng sai và điều kiện của vấn đề trở nên mâu thuẫn. Giả định được sử dụng để đối phó với những thực tế khó khăn có xu hướng làm gián đoạn thủ tục giải quyết vấn đề. Nếu các giả định không làm thay đổi mức độ rủi ro hay tỷ lệ chi phí-hiệu quả của một phương án cho trước, chúng là một phần hữu ích và thiết yếu của vấn đề. Giả định đặt lên vai nhà phân tích hệ thống trách nhiệm bảo đảm tính nhất quán.</p>
+<p>Một giả định cho phép suy luận ra một sự kiện chưa được biết chắc chắn từ sự tồn tại của những sự kiện đã biết khác.</p>
+<p>Tiêu chí là phương tiện dùng để đo lường hoặc lựa chọn các phương án. Tiêu chí buộc nhà phân tích hệ thống phải chứng minh lập luận logic khi lựa chọn ưu tiên. Tiêu chí chỉ ra hiệu suất tương đối của một phương án theo các thước đo khác, chẳng hạn như thời gian, chi phí, hoặc hiệu quả. Đó là một chuẩn mực để có thể đưa ra phán đoán về giá trị tương đối của một lựa chọn.</p>
+<p>Rủi ro là thước đo mức độ phơi nhiễm tiềm tàng trước các khiếm khuyết. Rủi ro cao cũng có thể được đặc trưng bởi xác suất thống kê thấp, mặc dù thước đo chính xác của rủi ro không phải lúc nào cũng có thể định lượng được. Để mô tả rủi ro trong các vấn đề phức tạp bao hàm cả khía cạnh định lượng lẫn định tính, thuật ngữ “tính bất định” được sử dụng.</p>
+<p>Trong cách dùng này, “tính bất định” đề cập đến mức độ khả tín tương đối của một sự kiện đã thực sự xảy ra. Rủi ro hoặc tính bất định có thể biểu hiện xuyên suốt toàn bộ quá trình giải quyết vấn đề. Rủi ro tăng lên nếu, chẳng hạn, các tiêu chí vốn không phù hợp để đo lường những gì chúng được cho là phải đo lường. Rủi ro cũng tăng lên nếu các giả định được chấp nhận là đúng lại tỏ ra sai. Rủi ro có thể xuất hiện như một đặc trưng nổi trội của một phương án được chọn do các sai sót phản hồi từ đầu ra về đầu vào không được phát hiện.</p>
+<p>Phương án là một trong hai hay nhiều khả năng để lựa chọn. Để một phương án được xem xét, nó phải đại diện cho một giải pháp tiềm năng chấp nhận được đối với vấn đề đã nêu. Khi các phương án có thể so sánh được, sự khác biệt giữa chúng được xác lập. Khi chúng không thể so sánh được, những khía cạnh mà chúng khác nhau được nhận diện. Theo định nghĩa này, các phương án có thể khác nhau về mức độ hoặc về loại.</p>
+<p>Có hai hình thức chung của phương án: khác biệt về chức năng và khác biệt về tác nghiệp. Hình thức chức năng có thể được minh họa bằng một chiếc thuyền buồm và một máy bay một động cơ, cả hai đều có thể được xem là các giải pháp phương án cho cùng một vấn đề. Hình thức tác nghiệp có thể được minh họa bằng ba biến thể của cùng một chiếc ô tô, mỗi biến thể được thiết kế để giải quyết cùng một vấn đề. Các phương án chức năng khác nhau ở cách thức chúng giải quyết vấn đề. Các phương án tác nghiệp khác nhau ở cách thức các đối tượng, thuộc tính và mối quan hệ được tập hợp thành một hệ thống. Các phương án được đánh giá dựa trên tổng nhu cầu nguồn lực và chi phí, cũng như lợi ích kỳ vọng. Mục đích của việc xác định các phương án có thể là tối đa hóa, tối thiểu hóa, hoặc tối ưu hóa hiệu quả của hệ thống.</p>
+<p>Trong toán học và thống kê, có một quy tắc rằng chỉ có một thước đo có thể được tối đa hóa hoặc tối thiểu hóa một cách hợp logic tại bất kỳ thời điểm nào. Quy tắc này áp dụng với hiệu lực ngang nhau đối với các vấn đề hỗn hợp định lượng-định tính. Chẳng hạn, khó có thể vừa tối thiểu hóa thời gian vừa tối thiểu hóa chi phí giải quyết một vấn đề mà không làm suy giảm hiệu quả của hệ thống. Một biến số có thể được tối đa hóa trong khi các biến khác được tối ưu hóa — tức là chúng sẽ tiệm cận gần, nhưng không đạt tới, trạng thái lý tưởng của chúng với điều kiện biến số kia đạt cực đại. Tối ưu nghĩa là tốt nhất theo nghĩa “xét đến mọi yếu tố”. Nó không có nghĩa là “tốt nhất tuyệt đối”. Nó có thể có nghĩa là những điều kiện thuận lợi nhất để đạt được một mục tiêu cho trước. Các trạng thái tối ưu có thể được cảm nhận là “thuận lợi” đến mức một chuyên gia có thể mô tả chúng là “lý tưởng”, “xuất sắc”, hoặc “tốt nhất tuyệt đối”. Tuy nhiên, cách mô tả này mang tính hậu nghiệm, và nó không phải là một phần của cấu trúc logic của các phương án.</p>
+<p>Trong hầu hết các trường hợp, giá trị cực đại và cực tiểu của giải pháp một vấn đề có thể không được biết đến; do đó, giá trị tối ưu cũng sẽ không được biết đến. Những cân nhắc này cho thấy rằng có thể xây dựng một phương án mà giá trị cực đại hoặc cực tiểu của nó có ít giá trị thực tiễn. Ngay cả khi nhà phân tích hệ thống thiếu sự hiểu biết về giá trị tuyệt đối của từng phương án, vẫn có thể xác lập một tập hợp các ước lượng cho phép mô tả giải pháp của vấn đề.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Phương pháp luận phân tích hệ thống</h2>
+    <ul>
+      <li><a href="/vi/methodology_sa.html">Phương pháp luận phân tích hệ thống</a></li>
+      <li><a href="/vi/quade_method.html">Phương pháp luận phân tích hệ thống của Quade</a></li>
+      <li><a href="/vi/chernyak_method.html">Phương pháp luận phân tích hệ thống của Chernyak</a></li>
+      <li><a href="/vi/young_method.html">Phương pháp luận phân tích hệ thống của Young</a></li>
+      <li><a href="/vi/golubkov_method.html">Phương pháp luận phân tích hệ thống của Golubkov</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Tài liệu</h2>
+    <ul>
+      <li><a href="/assets/systems_analysis_optner.pdf">Tải sách: Phân tích hệ thống để giải quyết vấn đề kinh doanh và công nghiệp. Optner</a></li>
+      <li><a href="/vi/systems_analysis_book.html">Tải tài liệu về phân tích hệ thống</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Bài viết liên quan</h2>
+    <ul>
+      <li><a href="/vi/systems_analysis.html">Phân tích hệ thống</a></li>
+      <li><a href="/vi/decision_theory.html">Lý thuyết ra quyết định</a></li>
+      <li><a href="/vi/decision_making.html">Ra quyết định</a></li>
+      <li><a href="/vi/choice.html">Quyết định và lựa chọn</a></li>
+      <li><a href="/vi/management.html">Quản lý</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Đường dẫn điều hướng">
+    <a href="/vi/">Trang chủ</a> <span aria-hidden="true">/</span>
+    <a href="/vi/systems_analysis.html">Phân tích hệ thống</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Phương pháp luận của Optner</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Đổi giao diện"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/optner_method.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/vi/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Đổi giao diện"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710f00dbcc1e13',t:'MTc4ODczNTI5OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

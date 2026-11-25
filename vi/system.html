@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hệ thống</title>
+<meta name="description" content="Hệ thống là khái niệm trung tâm của lý thuyết hệ thống và tiếp cận hệ thống. Bài viết mô tả các định nghĩa khác nhau về hệ thống, các cách tiếp cận phân loại và những tính chất then chốt — tính toàn vẹn, cấu trúc, tính thứ bậc.">
+<meta name="keywords" content="Hệ thống,Phân tích hệ thống,Định nghĩa hệ thống,Khái niệm hệ thống">
+<link rel="canonical" href="https://systems-analysis.info/vi/system.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/system.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/system.html">
+<link rel="alternate" hreflang="vi" href="https://systems-analysis.info/vi/system.html">
+<meta property="og:title" content="Hệ thống">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/vi/system.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Hệ thống là khái niệm trung tâm của lý thuyết hệ thống và tiếp cận hệ thống. Bài viết mô tả các định nghĩa khác nhau về hệ thống, các cách tiếp cận phân loại và những tính chất then chốt — tính toàn vẹn, cấu trúc, tính thứ bậc.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="vi_VN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/vi/system.html#article",
+    "headline": "Hệ thống",
+    "description": "Hệ thống là khái niệm trung tâm của lý thuyết hệ thống và tiếp cận hệ thống. Bài viết mô tả các định nghĩa khác nhau về hệ thống, các cách tiếp cận phân loại và những tính chất then chốt — tính toàn vẹn, cấu trúc, tính thứ bậc.",
+    "url": "https://systems-analysis.info/vi/system.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "vi",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/vi/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/vi/system.html"
+    },
+    "keywords": [
+        "Hệ thống",
+        "Phân tích hệ thống",
+        "Định nghĩa hệ thống",
+        "Khái niệm hệ thống"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "Hệ thống",
+        "description": "The central concept of systems theory and the systems approach, denoting a set of interrelated elements that form a definite integrity and unity.",
+        "sameAs": [
+            "https://www.wikidata.org/entity/Q58778",
+            "https://en.wikipedia.org/wiki/System",
+            "https://systems-analysis.info/wiki/Система",
+            "https://systems-analysis.info/eng/System"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Trang chủ",
+            "item": "https://systems-analysis.info/vi/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Lý thuyết hệ thống"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Điều hướng chính">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/vi/">Trang chủ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/sections.html">Chuyên mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/books.html">Sách</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/catalog.html">Danh mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/system.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Đổi giao diện"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Đổi phông chữ"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Hệ thống</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Khái niệm trung tâm của lý thuyết hệ thống và tiếp cận hệ thống nói chung là khái niệm <strong>hệ thống</strong>. Nhiều tác giả đã phân tích khái niệm này và đưa ra các định nghĩa về hệ thống, khác nhau về mức độ hình thức hóa. Một định nghĩa là một mô hình ngôn ngữ của hệ thống, và do đó, sự khác biệt về mục đích và yêu cầu của mô hình dẫn đến những định nghĩa khác nhau.</p>
+<p>Tài liệu khoa học đưa ra nhiều định nghĩa về hệ thống, cả tổng quát lẫn chuyên biệt. Những định nghĩa này phản ánh các lĩnh vực hoạt động khác nhau — khoa học, kỹ thuật, xã hội hoặc kinh tế. Theo đó, có thể phân biệt ba góc nhìn khác nhau về định nghĩa hệ thống:</p>
+<ul>
+  <li>hệ thống được xem là một phức hợp liên kết các đối tượng vật chất — cách tiếp cận này thuận tiện khi nghiên cứu các đối tượng tự nhiên hoặc các quá trình sản xuất vật chất;</li>
+  <li>hệ thống gồm hai thành phần riêng biệt: (1) một tập hợp các đối tượng vật chất, và (2) thông tin về trạng thái của các đối tượng đó. Sự phân chia này làm cơ sở để mô tả các quá trình liên quan đến quản lý sản xuất vật chất;</li>
+  <li>hệ thống được xem thuần túy như một thực thể thông tin, tức là một phức hợp các quan hệ (liên kết, thông tin) nhất định. Cách tiếp cận này được dùng trong các bài toán liên quan đến quan hệ kinh tế – xã hội và các quá trình quản lý.</li>
+</ul>
+<p>Hệ thống là một thuật ngữ được dùng khi người ta muốn đặc trưng đối tượng đang nghiên cứu hoặc thiết kế như một cái gì đó toàn vẹn, liên kết chặt chẽ và phức tạp — một cái gì đó không thể trình bày ngay lập tức một cách đầy đủ và trọn vẹn, không thể minh họa trực quan, biểu diễn bằng đồ thị, hay mô tả bằng một biểu thức toán học, công thức, phương trình, v.v.</p>
+<p>Ở các giai đoạn khác nhau khi biểu diễn một đối tượng như một hệ thống, trong những tình huống cụ thể khác nhau, có thể sử dụng những định nghĩa khác nhau về hệ thống. Khi sự hiểu biết ngày càng sâu sắc và khi chuyển sang một mức độ mô tả cao hơn hoặc một giai đoạn nghiên cứu khác, định nghĩa về hệ thống không chỉ có thể mà còn cần được hoàn thiện thêm.</p>
+<p>Ở mức độ trừu tượng cao nhất, nơi các tính chất của mọi hệ thống được khái quát hóa, có thể đưa ra hai định nghĩa bổ sung cho nhau về hệ thống, tương ứng với hai khía cạnh quan trọng nhất của hoạt động con người — nhận thức thực tại và sự tác động ngược trở lại của con người đối với thực tại đó:</p>
+<ul>
+  <li>hệ thống là sự phản ánh trong ý thức của chủ thể về các tính chất của đối tượng và các mối quan hệ giữa chúng trong nhiệm vụ nghiên cứu và nhận thức;</li>
+  <li>hệ thống là một phương thức mà chủ thể dùng để tương tác với các đối tượng, sử dụng các tính chất của chúng và các mối quan hệ giữa chúng, nhằm những mục đích như thiết kế, vận hành hoặc quản lý.</li>
+</ul>
+</div>
+      </article>
+    </div>
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Phương pháp luận</h2>
+    <ul>
+      <li><a href="/vi/methodology_sa.html">Phương pháp luận phân tích hệ thống</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Bài viết liên quan</h2>
+    <ul>
+      <li><a href="/vi/system_terminus.html">Khái niệm hệ thống</a></li>
+      <li><a href="/vi/system_def.html">Các định nghĩa về hệ thống</a></li>
+      <li><a href="/vi/system_ol.html">Các quy luật của hệ thống</a></li>
+      <li><a href="/vi/systems_analysis.html">Phân tích hệ thống</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Đường dẫn điều hướng">
+    <a href="/vi/">Trang chủ</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Lý thuyết hệ thống</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Đổi giao diện"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/system.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/vi/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Đổi giao diện"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710f288ee81e13',t:'MTc4ODczNTMwNQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

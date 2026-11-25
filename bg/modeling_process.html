@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Процесът на моделиране</title>
+<meta name="description" content="Процесът на моделиране може да се разглежда като преход от един клас модели към друг. Обичайно се разграничават три широки класа модели: когнитивни, съдържателни и формални. Те представляват три взаимосвързани нива на моделиране, които не могат да се разглеждат изолирано едно от друго.">
+<meta name="keywords" content="процес на моделиране,модел,когнитивен модел,концептуален модел,формален модел,математическо моделиране,системен анализ">
+<link rel="canonical" href="https://systems-analysis.info/bg/modeling_process.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/modeling_process.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/modeling_process.html">
+<link rel="alternate" hreflang="bg" href="https://systems-analysis.info/bg/modeling_process.html">
+<meta property="og:title" content="Процесът на моделиране">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/bg/modeling_process.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Процесът на моделиране може да се разглежда като преход от един клас модели към друг. Обичайно се разграничават три широки класа модели: когнитивни, съдържателни и формални. Те представляват три взаимосвързани нива на моделиране, които не могат да се разглеждат изолирано едно от друго.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="bg_BG">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/bg/modeling_process.html#article",
+    "headline": "Процесът на моделиране",
+    "description": "Процесът на моделиране може да се разглежда като преход от един клас модели към друг. Обичайно се разграничават три широки класа модели: когнитивни, съдържателни и формални. Те представляват три взаимосвързани нива на моделиране, които не могат да се разглеждат изолирано едно от друго.",
+    "url": "https://systems-analysis.info/bg/modeling_process.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "bg",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/bg/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/bg/modeling_process.html"
+    },
+    "keywords": [
+        "процес на моделиране",
+        "модел",
+        "когнитивен модел",
+        "концептуален модел",
+        "формален модел",
+        "математическо моделиране",
+        "системен анализ"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Начална страница",
+            "item": "https://systems-analysis.info/bg/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Моделиране",
+            "item": "https://systems-analysis.info/bg/modelling.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Процесът на моделиране"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Основна навигация">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Меню</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/bg/">Начална страница</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bg/sections.html">Раздели</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bg/books.html">Книги</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bg/catalog.html">Каталог</a>
+        <span aria-hidden="true">·</span>
+        <a href="/modeling_process.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Смяна на темата"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Смяна на шрифта"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Процесът на моделиране</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Процесът на моделиране може да се разглежда като преход от един клас <a href="/bg/model.html" class="text-link">модели</a> към друг. Обичайно се разграничават три широки класа модели: когнитивни, съдържателни и формални. Те представляват три взаимосвързани нива на моделиране, които не могат да се разглеждат изолирано едно от друго. Взаимното влияние между нивата на моделиране е свързано със свойството потенциалност, присъщо на моделите. Създаването на всеки модел води до появата на ново знание за изучавания обект, което води до преосмисляне и уточняване на понятията и представите за обекта на моделиране на различните нива. Това обстоятелство от своя страна води до преразглеждане на съответните съдържателни и когнитивни модели, осигурявайки спираловидно развитие на всички нива на моделиране на изучавания обект.</p>
+<p>При наблюдение на изходния обект в съзнанието на изследователя се формира мисловен образ на обекта — неговият идеален модел. В научната литература той обикновено се нарича когнитивен (мисловен) модел. При формирането на такъв модел изследователят по правило се стреми да отговори на конкретни въпроси, поради което от безкрайно сложната структура на обекта се отстранява всичко несъществено, за да се получи по-компактно, сбито описание. Представянето на когнитивния модел на естествен език се нарича съдържателен модел.</p>
+<p>Когнитивните модели по своята същност са субективни, тъй като се изграждат от изследователите въз основа на предходни знания и опит. Тези модели могат да бъдат разбрани единствено чрез символно описание. Когнитивните и съдържателните модели не са равностойни, тъй като първите могат да съдържат елементи, които изследователят не е в състояние или не желае да формулира. В същото време, ако съдържателен модел е формулиран от друго лице или е резултат от колективни усилия, интерпретацията, степента на разбиране и степента на доверие в него могат значително да се различават сред тези, които го тълкуват. Съдържателните модели често се наричат технически постановки на проблема.</p>
+<p><strong>По функционално предназначение и цели съдържателните модели се делят на описателни, обяснителни и прогнозни:</strong></p>
+<ul>
+  <li><em>Описателният модел</em> е всяко описание на даден обект.</li>
+  <li><em>Обяснителният модел</em> отговаря на въпроса защо се случва нещо.</li>
+  <li><em>Прогнозният модел</em> описва бъдещото поведение на обекта. Забележително е, че прогнозният модел не задължително включва обяснителен компонент.</li>
+</ul>
+<p><em>Концептуалният модел</em> е съдържателен модел, при чието формулиране се използват понятията и представите на предметните области, свързани с изучаването на обекта на моделиране.</p>
+<p>В по-широк смисъл под концептуален модел се разбира съдържателен модел, изграден въз основа на определена концепция или гледна точка. Разграничават се три вида концептуални модели: логико-семантични, структурно-функционални и причинно-следствени.</p>
+<ul>
+  <li><em>Логико-семантичният модел</em> описва обекта чрез термините и определенията на съответните предметни области, включвайки всички известни логически непротиворечиви твърдения и факти. Анализът на тези модели се основава на логическо разсъждение и натрупаните знания в съответните области.</li>
+  <li><em>Структурно-функционалният модел</em> разглежда обекта като интегрирана система, разложена на отделни елементи или подсистеми. Компонентите са свързани чрез структурни отношения, които определят подчинеността, логическата последователност и времевия ред на изпълнение на задачите. За представянето на тези модели обичайно се използват диаграми, схеми и карти.</li>
+  <li><em>Причинно-следственият модел</em> често се използва за обяснение и прогнозиране на поведението на даден обект. Тези модели са насочени преди всичко към: (1) идентифициране на ключовите взаимовръзки между съставните елементи на изучавания обект; (2) определяне на това как промените в определени фактори влияят върху състоянието на компонентите на модела; (3) разбиране на това как моделът като цяло ще функционира и дали адекватно ще описва динамиката на параметрите, интересуващи изследователя.</li>
+</ul>
+<p><em>Формалният модел</em> представя концептуален модел с помощта на един или повече формални езици, като математически теории, специализирани езици за моделиране или езици за програмиране. В хуманитарните науки моделирането често приключва с разработването на концептуален модел, докато в естествените науки изграждането на формален модел обикновено е осъществимо.</p>
+<p>Въпреки че значението на съдържателните и формалните модели в изследванията е общопризнато, ролята на когнитивните модели често се подценява поради тяхната субективност и неявния характер на мисловните процеси. Независимо от това, когнитивните модели са особено значими в случаите, когато операторите или лицата, вземащи решения, разчитат на собствените си мисловни представи за управление на обекти или процеси. Този тип модел играе съществена роля и в социалните науки.</p>
+<p>Математическото моделиране е форма на научно, символно и формално моделиране, при която обектите се описват с помощта на математически език и се изследват чрез математически методи.</p>
+<p>Математическият модел, предназначен за научно изследване, позволява определянето на стойностите на параметрите на моделирания обект или явление въз основа на зададени входни данни. По този начин същността на такъв модел е съответствието между стойностите на входните параметри и стойностите на изходните параметри. От тази гледна точка математическият модел може да се разглежда като математически оператор, който в широк смисъл може да бъде дефиниран като функция, съответствие, представено чрез алгебрични, диференциални, интегро-диференциални или интегрални уравнения, алгоритъм, съвкупност от правила или таблици, които позволяват определянето на изходните параметри въз основа на входните стойности.</p>
+<p>Дефинирането на математическия модел чрез понятието оператор е по-конструктивно от гледна точка на изграждането на класификация на такива модели, тъй като обхваща цялото многообразие от математически модели, съществуващи днес.</p>
+<p><strong>Предимства на математическото моделиране в сравнение с физическия експеримент:</strong></p>
+<ul>
+  <li>икономичност (по-специално — запазване на ресурсите на реалната система);</li>
+  <li>възможност за моделиране на хипотетични обекти — тоест обекти, нереализирани в действителността;</li>
+  <li>възможност за симулиране на условия на работа, които са опасни или трудно възпроизводими в реалността;</li>
+  <li>възможност за промяна на времевия мащаб;</li>
+  <li>лекота при многоаспектен анализ;</li>
+  <li>по-голяма прогностична способност благодарение на възможността за откриване на общи закономерности;</li>
+  <li>универсалност на използваните хардуерни и софтуерни средства (системи за програмиране и пакети приложен софтуер с общо предназначение).</li>
+</ul>
+<p><em>Информационният модел</em> е модел на обект, представен под формата на информация, описваща параметрите и променливите, съществени за даден анализ, връзките между тях, както и входовете и изходите на обекта, което позволява да се симулират възможните състояния на обекта чрез подаване в модела на информация за промените във входните стойности.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Свързани статии</h2>
+    <ul>
+      <li><a href="/bg/model.html">Модел</a></li>
+      <li><a href="/bg/modelling.html">Моделиране</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Път за навигация">
+    <a href="/bg/">Начална страница</a> <span aria-hidden="true">/</span>
+    <a href="/bg/modelling.html">Моделиране</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Процесът на моделиране</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Смяна на темата"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/modeling_process.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/bg/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Смяна на темата"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a37106c20d05a5ce',t:'MTc4ODczNDk2MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

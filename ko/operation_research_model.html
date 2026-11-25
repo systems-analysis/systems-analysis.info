@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>경영과학 모델</title>
+<meta name="description" content="운용 모델을 구성하는 것은 경영과학의 핵심 단계이다. 운용은 단순화되고 도식화되며, 본질적인 요인들이 식별된다. 표준 모델과 문제의 분류에 대해 설명한다.">
+<meta name="keywords" content="모델링,모델,경영과학,목적함수,계획법,문제,효과성,최적,수학적,시스템,분석,해">
+<link rel="canonical" href="https://systems-analysis.info/ko/operation_research_model.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_model.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_model.html">
+<link rel="alternate" hreflang="ko" href="https://systems-analysis.info/ko/operation_research_model.html">
+<meta property="og:title" content="경영과학 모델">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/ko/operation_research_model.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="운용 모델을 구성하는 것은 경영과학의 핵심 단계이다. 운용은 단순화되고 도식화되며, 본질적인 요인들이 식별된다. 표준 모델과 문제의 분류에 대해 설명한다.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="ko_KR">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/ko/operation_research_model.html#article",
+    "headline": "경영과학 모델",
+    "description": "운용 모델을 구성하는 것은 경영과학의 핵심 단계이다. 운용은 단순화되고 도식화되며, 본질적인 요인들이 식별된다. 표준 모델과 문제의 분류에 대해 설명한다.",
+    "url": "https://systems-analysis.info/ko/operation_research_model.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "ko",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/ko/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/ko/operation_research_model.html"
+    },
+    "keywords": [
+        "모델링",
+        "모델",
+        "경영과학",
+        "목적함수",
+        "계획법",
+        "문제",
+        "효과성",
+        "최적",
+        "수학적",
+        "시스템",
+        "분석",
+        "해"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "경영과학 모델",
+        "description": "A sufficiently precise mathematical description of an operation expressed through functions, equations, systems of equations, and inequalities.",
+        "sameAs": [
+            "https://systems-analysis.info/wiki/Модели_исследования_операций",
+            "https://systems-analysis.info/eng/Operations_research_models"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "홈",
+            "item": "https://systems-analysis.info/ko/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "경영과학",
+            "item": "https://systems-analysis.info/ko/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "경영과학 모델"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="주 메뉴">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">메뉴</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/ko/">홈</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ko/sections.html">섹션</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ko/books.html">도서</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ko/catalog.html">카탈로그</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_model.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="테마 전환"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="글꼴 전환"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">경영과학 모델</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>정량적 연구 방법을 적용하려면 운용의 수학적 모델을 구성해야 한다. 모델을 구축할 때 운용은 일반적으로 단순화되고 도식화되며, 그 결과로 얻어진 도식은 수학적 도구를 사용하여 기술된다. 운용 모델이란 함수, 방정식, 방정식 체계, 부등식을 통해 표현되는, 운용에 대한 충분히 정확한 수학적 기술이다. 운용의 효과성이란 그 운용이 목표를 달성하는 정도를 말한다.</p>
+
+<h2>경영과학 문제의 일반적 정식화</h2>
+
+<p>경영과학에서 관리 상황은 목표와 결정을 포괄한다. 결정은 목표를 달성하기 위해 내려진다. 관리 상황은 모델로 기술된다. 모델에는 효과성 척도가 포함되며, 이를 통해 어떤 결정이 목표에 얼마나 근접하는지가 결정된다. 효과성 척도는 운용에 영향을 미치는 요인들에 따라 달라진다. 운용의 기술에 포함되는 모든 요인은 두 그룹으로 나눌 수 있다: 영향을 미칠 수 없는 상수 요인과 통제 가능한 요인이다.</p>
+
+<p>모델의 개념적 요소는 〈블랙박스〉로 표현되며, 여기서 주된 초점은 입력과 출력을 정의하는 데 있다. 입력은 모델이 처리하는 것이고, 출력은 모델이 산출하는 것이다. 통제 가능 변수와 통제 불가능 변수가 입력으로 제공된다. 출력은 효과성 기준이다. 모델에는 명시적인 효과성 척도가 포함되며, 이를 통해 어떤 결정이 목표에 얼마나 근접하는지가 결정된다. 모델을 구성할 때는 입력 매개변수가 제시된 척도에 어떻게 영향을 미치는지를 명확히 하는 것이 중요하다.</p>
+
+<p>목적함수라 불리는 특정 함수로 표현되는 효과성 기준은 두 그룹의 요인 모두에 의존한다. 효과성 기준의 수학적 표현을 목적함수라고 한다. 목적함수는 극대화하거나 극소화해야 할, 수학적으로 정식화(형식화)된 효과성 척도이다.</p>
+
+<p>통제 가능 변수란 의사결정자가 관리하는 매개변수를 말한다.</p>
+
+<p>통제 불가능 변수란 관리자가 통제할 수 없지만 목표 달성에 필수적인 외부 요인을 말한다.</p>
+
+<p>효과성 기준, 즉 목적함수는 결정변수의 함수로서 목표에 대한 근접 정도를 표현한다.</p>
+
+<p>수학적 모델의 정의: 수학적 모델이란, 모델링 대상 객체에 대해 설정된 입력 및 출력 매개변수의 허용값 집합 내에서, 대응하는 입력 매개변수 값이 주어졌을 때 모델링 대상 객체의 매개변수 출력값을 결정하는 임의의 연산자로 이해된다.</p>
+
+<h2>경영과학 모델과 의사결정</h2>
+
+<p>경영과학은 합리적 의사결정의 정량적 정당화를 지향한다. 이러한 모델들은 의사결정이론의 방대한 문제 부류 및 최적화 문제와 긴밀히 교차한다.</p>
+
+<p>경영과학 모델을 개발할 때는 다음 질문들에 답해야 한다:</p>
+<ul>
+<li>구체적인 경우에 무엇을 대안적 해결책으로 간주해야 하는가?</li>
+<li>대안적 해결책은 어떤 기준에 의해 선택되는가?</li>
+<li>실행 가능한 해결책은 어떤 제약조건을 충족해야 하는가?</li>
+</ul>
+
+<p>경영과학의 표준 수학적 모델은 다음과 같은 정식화로 제시된다: 제약조건의 충족을 조건으로 하는 목적함수의 극대화 또는 극소화.</p>
+
+<p>해를 선택할 때는 목적함수를 극대화 또는 극소화하는 해가 선호된다. 목적함수를 극대화하는 예로는 이윤과 생산성을 들 수 있다. 목적함수의 극소화는 비용, 지출, 시간 등에 관련될 수 있다. 효과성 기준의 선택은 연구에서 가장 핵심적이고 결정적인 순간이다. 잘못 선택된 기준에 대한 최적해보다는, 올바르게 선택된 기준에 대한 비최적해를 찾는 편이 훨씬 낫다.</p>
+
+<p>실행 가능한 해란 모델의 모든 제약조건을 충족하는 해를 말한다. 실행 가능한 해는 무한히 많이 존재할 수 있다.</p>
+
+<p>최적해란 실행 가능할 뿐만 아니라 목적함수가 최댓값 또는 최솟값에 도달하게 하는 해를 말한다.</p>
+
+<p>해는 어떤 속성에 의해 다른 해보다 선호될 때 최적이라고 불린다. 최선의 대안을 선택하는 것은 항상 확립된 기준에 대한 부합성에 근거하므로 특수한 성격을 지닌다. 최적의 대안이라고 말할 때는 이러한 기준(〈…에 대해 최적〉)을 명시해야 한다. 어떤 기준에서 최적인 것이 다른 기준에서도 반드시 최적인 것은 아니다.</p>
+
+<p>제약조건이란 모델의 변수들이 충족해야 하는, 부등식 또는 등식 형태의 수학적 표현이다.</p>
+
+<p>제약조건은 실행 가능한 해의 집합을 축소한다. 경우에 따라서는 제시된 제약조건하에서 최적해가 전혀 존재하지 않을 수도 있다. 이는 문제 해결에 기반하여 내려진 최종 결정의 질이, 모델이 제약조건을 통해 형식적으로 기술하는 실제 상황을 얼마나 적절하게 나타내는지에 달려 있음을 의미한다. 제약조건에는 할당량, 차량 적재 용량, 계획 과업량, 장비의 중량 특성, 자원 제한 등이 포함된다.</p>
+
+<p>제약조건의 구성이 바뀌면 다른 해가 최선이 될 수 있다. 현실 세계에서 제약조건은 물리적, 경제적, 또는 정치적 성격을 가질 수 있으며 반드시 형식화가 가능한 것은 아니다. 특정한 해는 확립된 제약조건 체계를 전제로 오직 주어진 모델에 대해서만 최선이다. 모델이 상황을 더 정확하게 반영할수록 문제의 해는 최적해에 더 가까워진다.</p>
+
+<h2>경영과학 모델의 분류</h2>
+
+<p>모든 경영과학 모델은 운용의 성격과 속성, 해결되는 문제의 특성, 사용되는 수학적 방법에 따라 분류할 수 있다:</p>
+<ul>
+<li>효과성 기준이 선형함수이고 제약조건 체계의 함수들도 선형이면, 그 문제는 선형계획법 문제이다.</li>
+<li>문제의 실질적 의미에 근거할 때 해가 정수여야 한다면, 그것은 정수 선형계획법 문제이다.</li>
+<li>효과성 기준 및/또는 제약조건 체계가 비선형함수로 주어지면, 비선형계획법 문제가 된다. 특히 제시된 함수들이 볼록성을 가지면, 그 결과는 볼록계획법 문제가 된다.</li>
+<li>수리계획법 문제에 시간 변수가 포함되고, 효과성 기준이 변수들의 함수로 명시적으로 표현되는 것이 아니라, 시간에 따른 운용의 진행을 기술하는 방정식들을 통해 간접적으로 표현된다면, 그 문제는 동적계획법 문제이다.</li>
+<li>해의 변형이 지나치게 많아 알고리즘적으로 정확한 최적값을 찾는 것이 불가능한 경우에는 휴리스틱 계획법 방법이 사용되며, 이를 통해 검토해야 할 변형의 수를 크게 줄이고, 최적은 아니더라도 실무적 관점에서 만족스러운 충분히 좋은 해를 찾을 수 있다.</li>
+</ul>
+
+<p>실질적 정식화에 따라 그 밖의 수많은 전형적인 경영과학 문제들은 몇 가지 부류로 나눌 수 있다:</p>
+<ul>
+<li>프로젝트 일정관리 문제(PERT/CPM)는 방대하고 복잡한 운용(과업) 집합의 완료 일자와, 그 집합에 속한 모든 운용의 시작 시점 사이의 관계를 검토한다. 이러한 문제는 운용 집합의 최소 소요 기간과, 비용과 완료 시점 사이의 최적 관계를 찾는 것으로 구성된다.</li>
+<li>대기행렬 문제는 요청 또는 수요의 대기열을 가진 서비스 시스템의 연구와 분석에 전념하며, 시스템의 성능 척도와 최적 특성—예를 들어 서비스 채널의 수, 서비스 시간 등—을 결정하는 것으로 구성된다.</li>
+<li>재고관리 문제는 재고 수준(재주문점)과 주문량의 최적값을 찾는 것으로 구성된다. 이러한 문제의 특징은, 재고 수준이 증가함에 따라 한편으로는 보관 비용이 증가하지만, 다른 한편으로는 저장된 제품의 부족 가능성으로 인한 손실이 감소한다는 점이다.</li>
+<li>자원배분 문제는 제한된 가용 자원으로 수행해야 하는 일정한 운용(과업) 집합이 있을 때 발생하며, 운용들 사이의 최적 자원 배분 또는 운용들의 최적 구성을 찾아야 한다.</li>
+<li>유지보수 및 교체 문제는 장비의 마모 및 노후화와, 그에 따른 교체 필요성과 관련하여 중요성을 갖는다.</li>
+<li>경영과학 모델 중에서도, 게임이론에서 연구되는 갈등 상황에서의 최적 의사결정 모델은 특별히 구분된다. 서로 다른 목표를 추구하는 둘(또는 그 이상)의 당사자의 이해관계가 충돌하는 갈등 상황은 경제, 법률, 군사 등의 영역에서 다수 존재한다. 게임이론 문제에서는 갈등 참여자들의 합리적 행동에 대한 권고안을 개발하고 그들의 최적 전략을 결정해야 한다.</li>
+</ul>
+
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div class="links">
+    <div class="links-section">
+      <h2>경영과학</h2>
+      <ul>
+        <li><a href="/ko/operation_research_caa.html">경영과학: 처치먼, 애코프, 아노프</a></li>
+        <li><a href="/ko/operation_research_as.html">경영과학의 기초: 애코프와 사시에니</a></li>
+        <li><a href="/ko/operation_research_me.html">경영과학: 모더와 엘마그라비</a></li>
+        <li><a href="/ko/operation_research_vg.html">경영과학: 와그너</a></li>
+        <li><a href="/ko/operation_research_gv.html">경영과학: 그비시아니</a></li>
+        <li><a href="/ko/operation_research_ve.html">경영과학: 벤첼</a></li>
+        <li><a href="/ko/methodology_or.html">경영과학 방법론</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/ko/">홈</a> <span aria-hidden="true">/</span>
+    <a href="/ko/operation_research.html">경영과학</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">경영과학 모델</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="테마 전환"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_model.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/ko/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="테마 전환"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710affaec1a5ce',t:'MTc4ODczNTEzNA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

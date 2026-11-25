@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>オプトナーのシステム分析の方法論</title>
+<meta name="description" content="うまく定式化された問題は、その解決の半分にあたることがある。それゆえシステム分析者は、問題のパラメータ、性質、関係をできるかぎり早い段階で評価することに特別な注意を払う。">
+<meta name="keywords" content="システム分析,オプトナーの方法論,問題,システム,解,代替案,要求">
+<link rel="canonical" href="https://systems-analysis.info/ja/optner_method.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/optner_method.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/optner_method.html">
+<link rel="alternate" hreflang="ja" href="https://systems-analysis.info/ja/optner_method.html">
+<meta property="og:title" content="オプトナーのシステム分析の方法論">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/ja/optner_method.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="うまく定式化された問題は、その解決の半分にあたることがある。それゆえシステム分析者は、問題のパラメータ、性質、関係をできるかぎり早い段階で評価することに特別な注意を払う。">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="ja_JP">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/ja/optner_method.html#article",
+    "headline": "オプトナーのシステム分析の方法論",
+    "description": "うまく定式化された問題は、その解決の半分にあたることがある。それゆえシステム分析者は、問題のパラメータ、性質、関係をできるかぎり早い段階で評価することに特別な注意を払う。",
+    "url": "https://systems-analysis.info/ja/optner_method.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "ja",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/ja/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/ja/optner_method.html"
+    },
+    "keywords": [
+        "システム分析",
+        "オプトナーの方法論",
+        "問題",
+        "システム",
+        "解",
+        "代替案",
+        "要求"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Systems Analysis for Business and Industrial Problem Solving",
+        "author": {
+            "@type": "Person",
+            "name": "Optner S.L."
+        },
+        "datePublished": "1965",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Prentice-Hall"
+        },
+        "inLanguage": "en"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-08-22",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Systems Analysis for Business and Industrial Problem Solving",
+        "author": {
+            "@type": "Person",
+            "name": "Optner S.L."
+        },
+        "datePublished": "1965",
+        "inLanguage": "en"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ホーム",
+            "item": "https://systems-analysis.info/ja/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "システム分析",
+            "item": "https://systems-analysis.info/ja/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "オプトナーのシステム分析の方法論"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/ja/">ホーム</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/sections.html">セクション</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/Systems_Analysis_Wiki_Catalog_%28%E6%97%A5%E6%9C%AC%E8%AA%9E%29">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/books.html">書籍</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/catalog.html">カタログ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/optner_method.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Toggle theme"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Toggle font"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">オプトナーのシステム分析の方法論</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>スタンフォード・L・オプトナー『経営・産業<a href="/ja/problem.html" class="text-link">問題</a>解決のためのシステム分析』</p>
+<p><strong>オプトナーのシステム分析の方法論の段階</strong>：</p>
+<ol>
+  <li>症状を特定する。</li>
+  <li>その問題が該当するかどうかを判定する。</li>
+  <li>目標を定義する。</li>
+  <li>システムの構造と、その欠陥のある要素を明らかにする。</li>
+  <li>可能性の構造を定める。</li>
+  <li>代替案を洗い出す。</li>
+  <li>代替案を評価する。</li>
+  <li>代替案を選ぶ。</li>
+  <li>解を定式化する。</li>
+  <li>実施者と管理者から解への同意を得る。</li>
+  <li>実施のプロセスを開始する。</li>
+  <li>実施のプロセスを管理する。</li>
+  <li>実施の結果と帰結を評価する。</li>
+</ol>
+<p>問題とは、二つの状態をともなう状況として定義される。一方は現存する状態と呼ばれ、他方は提案された状態と呼ばれる。現存する状態は現行のシステムによって表され、提案された状態は仮設的なあるいは望ましいシステムによって表される。それぞれの状態は、一つのプロセスのうちに結ばれた対象、性質、関係の集合を含んでおり、いずれも<a href="/ja/system.html" class="text-link">システム</a>として記述できる。現存する状態から提案された状態へ移るには、現行の対象、性質、関係の集合を変えなければならない。対象の変更とは、人員の再編ではなく設備の交換を意味することがある。性質の変更は人員数の増加という形をとることがある。関係の変更は責任の新たな配分をもたらすことがある。</p>
+<p>問題は、それが含む未知のものと、その条件によって特徴づけられる。未知の領域は一つのこともあれば多数のこともある。未知のものは、質的には定義できても量的には定義できないことがある。量的な特徴づけは、未知のものの想定される状態を表す推定値の幅という形をとることがある。古典的な意味では、未知のものとは求めるべき量である。したがって、ある未知のものを別の未知のものによって定義することは、矛盾していたり冗長であったりしうる。未知のものは既知のものによってしか、すなわち対象、性質、関係が確定されているものによってしか表現できない。既知のものとは、その値が確定された量として定義される。</p>
+<p>現存する状態（現行のシステム）は、既知のものと未知のものの双方を含みうる。これは、未知のものが存在してもシステムの機能が妨げられるとはかぎらないことを意味する。現存するシステムは、定義上は論理的に構成されているが、なんらかの制約を満たしていないことがある。したがってシステムが機能しているというだけでは、その適合性の究極の尺度にはならない。完璧に機能しながら目標を達成していないシステムもありうるからである。目標はシステム要求によってしか定義できない。システム要求は、対象と性質を適切な関係のうちに指定する条件によって確定される。</p>
+<p>システム要求は、<a href="/ja/goal.html" class="text-link">目標</a>を定義する一義的な言明を記録する手段として役立つ。システム要求は対象、性質、関係によって述べられるが、目標は望ましい状態によって表現されうる。あるシステム要求の集合について、目標と望ましい状態が完全に一致することもある。両者が異なる場合、その要求は望ましいシステムを表すと言われる。一般に、目標は望ましいシステムと同一視される。</p>
+<p>現存するシステムと望ましいシステムとの隔たりが問題をなす。行動の目的はこの隔たりを最小にすることである。システムの動作を維持することも改善することも、現存する状態と望ましい状態とのあいだのこの隔たりによって理解される。現存する状態を維持するとは、システムの出力を定められた範囲内に保つことである。システムの状態を改善するとは、現存する状態のもとで得られるものより優れた、あるいはそれを超える出力を得ることである。</p>
+<p>解は、現存する状態と望ましい状態のあいだの隔たりをどのように橋渡しするかを定める。したがって解とは、一方の状態を他方へ転換する手段である。それは二つの状態の差異を対象、性質、関係によって記述し、提案された状態を得るためにこの橋渡しの構造をどう導入しなければならないかを指定する。解は、出力<a href="/ja/model.html" class="text-link">モデル</a>、適合性の検査、行動モデルからなるフィードバック制御を通じて実施される。</p>
+<p>問題の解決は学習のプロセスを通じて行われる。学習は、刺激から生じる認知の行為として定義される。認知は、現在あるいは将来のパターンの認識を含む、広範な知的活動を包含する。認識は出力に基準を適用することによって達成される。認知は、現存するシステムと望ましいシステムのあいだの隔たりを橋渡しするために必要な基本的機能の一つである。学習にかかわるほかの機能には、システムのある状態を別の状態へ転換する手段を定式化すること、そして既存の対象、性質、関係を変えることによって望ましい状態にどう到達しうるかをあらかじめ示す着想が含まれる。</p>
+<p>問題をうまく定式化することは、その解決の半分にあたることがある。それゆえシステム分析者は、問題のパラメータ、性質、関係をできるかぎり早い段階で評価することに特別な注意を払う。「出来合いの」目標を問題に持ち込むことはつねに可能とはかぎらず、他人が提案した目標では不十分なこともある。しかもシステム分析者は、問題の定式化を通じてその目標に冗長さも矛盾もないと確かめたうえでなければ、提案された目標を受け入れることはできない。定式化によって「半分解かれた」問題は、厳密な意味では解かれた問題ではないが、その定式化は、問題の主要な要素が正しく特定され関係づけられたことを意味する。それゆえ問題の定式化は、問題の定義とも呼びうる。</p>
+<p>問題を定式化する最初の手順は次のことを目指す。（1）問題の最初の言明を組み立てること、（2）その言明を問題のさまざまな部分との関係で解釈すること、（3）問題にかかわる事実を解釈すること、（4）問題の最初の言明を精密化すること。最初の調査の過程で、分析者は最初の言明を意味あるものにするために、既知のものと未知のものを切り分ける。</p>
+<p>問題の定式化に対応するのが、目標の定義を練り上げることである。「目標」という語は、達成されるべき結果を表す。目標は、その大きさがまだ確定されていない最大値（あるいは最小値）という形をとることもあれば、解がその中に収まらなければならない値の範囲を指定することもある。いずれの場合も、目標とは活動の望ましい成果である。</p>
+<p>行動方針を定める目標と、それを限る制約関係との組み合わせが、問題の研究が始まる制約の枠組みをなす。制約とは、規則、規程、指導原理——自ら課したものであれ外から課されたものであれ——の総和であり、問題の境界を定めるものである。いかなる問題も、定義可能な制約の集合をもたなければならない。目標と制約関係のあいだの両立性は不可欠である。制約について合意がなければ、解について合意する見込みはきわめて薄い。関係する当事者が問題についても、それを定める制約についても合意できないのであれば、「解」を語ることは無意味である。</p>
+<p>システム分析者が問題の条件を確定するとき、彼は調査の限界を、ひいては制約の枠組みの境界を定めることになる。数学的な言い方をすれば、条件は十分であるか、冗長であるか、矛盾しているかのいずれかであり、それ以外の形はとりえない。</p>
+<p>条件は、不必要な要素——浪費を招きがちな要素——を含んでいれば冗長である。条件は矛盾を含むこともある。矛盾する要素とは、他の要素と密接に関係していて、一方が真であれば他方が偽でなければならないような要素である。矛盾した条件の帰結は、問題の各部分が互いに整合せず、したがって互いに対立することである。</p>
+<p>十分な条件とは、制約が提案された目標と両立し、目標がシステム要求に照らして適切に定義されているときに満たされる。十分性は厳密さを含意する。すなわち、要求を満たすために必要なすべてを、不足なく過剰なく含んでいることである。</p>
+<p>構造が十分に定義されていない問題は、一般に、絶対的な評価ではなく相対的な評価を証明なしに受け入れることによって「解かれる」。範囲がきわめて広い問題、その解がまだ開発されていないものに依存する問題、現在の状況のもとではまだ定義しえないシステムの組み合わせについての仮説をともなう問題——これらはすべて、構造が十分に定義されていない問題である。</p>
+<p>問題を定式化（あるいは提示）するにあたって、システム分析者は次の課題を果たさなければならない。第一に、問題がどのように発見されたかを記述すること。第二に、なぜそれが問題とみなされるのかを確定すること。第三に、それを関連する諸問題の単なる「症状」から区別すること。第四に、問題の望ましくない帰結について操作的な定義を与えること。問題の定式化の過程で解を提案したり原因を割り当てたりすれば、分析者は重大な誤りを犯すことになる。問題の言明を用意することは、なによりも問題を鮮明な焦点に収めることを目指す。定式化の段階では仮説に対する要求は課されない。問題を制御下に置き続けるためには、論理的につながった、明確に識別できる事実を手元にもっていることが望ましい。</p>
+<p>問題の歴史的な側面を調べることには利点がある。問題が最初に表面化した時点は貴重な証拠となりえ、それによって問題を先行する識別可能な行動と結びつけることができる。ときには、問題を生じさせた事情を確定することが重要になる。</p>
+<p>同じ現象が誰にとっても問題と受け取られるとはかぎらない。したがって、ある現象を問題として扱う根拠を確定しておく必要がある。企業、行政、軍の組織における現象は、利益の期待を損なう傾向がある場合、あるいは業務の有効性を低下させる場合に、問題として分類されうる。しかし、自明でない問題のなかには、分析的な方法によってしか予測できないものもある。問題が表に現れていない場合、システムの動作の混乱は直ちには生じず、ありうる事態にとどまる。</p>
+<p>問題を解くにあたっての最初の課題は、分析すべき対象の集合を定めることである。この対象の集合を全体としてとらえたものが代替案をなす。代替案の評価は、解あるいは目標を選ぶ手段である。一つの問題は、多くの異なる代替的な手続きによって解かれうる。代替案は、量化できる側面をもつこともあれば、もたないこともある。たとえば代替案における人員数や設備の台数は量化できるが、市場の種類、市場への影響力の度合い、市場の立地は部分的にしか量化できないことがある。代替案が存在するということは、二つ以上の受容可能な解のあいだで選択しうることを意味する。代替案の実質は、選択が可能となる条件を定める。</p>
+<p>仮定とは、対象、性質、関係が有すると信じられている状態についての言明である。命題とは仮説あるいは公準である。命題が偽であれば仮定も偽であり、問題の条件は矛盾したものとなる。仮定は、問題解決の手続きを乱しがちな扱いにくい現実に対処するために用いられる。仮定がリスクの水準や当の代替案の費用対効果比を変えないのであれば、それは問題の有用かつ不可欠な一部である。仮定はシステム分析者に、整合性を保証する責任を負わせる。</p>
+<p>仮定は、既知のほかの事実の存在から、確実には知られていない事実を推論することを可能にする。</p>
+<p>基準とは、代替案を測り、あるいは選び出す手段である。基準はシステム分析者に、選好を選ぶにあたって論理的な推論を示すことを強いる。基準は、時間、費用、有効性といったほかの尺度との関係で、代替案の相対的な成績を示す。それは、ある選択の相対的な価値について判断を下すための標準である。</p>
+<p>リスクとは、欠陥にさらされうる度合いの尺度である。高いリスクは統計的確率の低さによっても特徴づけられうるが、リスクの精確な尺度はつねに量化できるとはかぎらない。量的な次元と質的な次元の双方をともなう複雑な問題においてリスクを記述するために、「不確実性」という語が用いられる。</p>
+<p>この用法における「不確実性」とは、実際に起こった事象の相対的なもっともらしさを指す。リスクあるいは不確実性は、問題解決のプロセス全体を通じて現れうる。たとえば基準が、それが測るべきものを測るのに本来適していない場合には、リスクは高まる。真とみなされた仮定が偽であることが判明した場合にも、リスクは高まる。出力から入力へのフィードバックの誤りが見過ごされたために選ばれた代替案では、リスクが支配的な特徴として現れることもある。</p>
+<p>代替案とは、そこから選ぶべき二つ以上の可能性のうちの一つである。代替案として検討されるためには、それは提示された問題の受容可能な潜在的解を表していなければならない。代替案が比較可能であれば、それらのあいだの区別が確定される。比較可能でなければ、どの点で異なるのかが特定される。この定義にしたがえば、代替案は程度において異なることも、種類において異なることもある。</p>
+<p>代替案には二つの一般的な形態がある。機能的に異なるものと、運用上異なるものである。機能的な形態は、同じ問題に対する代替的な解とみなしうる帆船と単発機によって例示できる。運用上の形態は、同じ問題を解くために設計された同一車種の三つの仕様によって例示できる。機能的な代替案は、問題をどう解くかにおいて異なる。運用上の代替案は、対象、性質、関係をシステムへと組み立てる仕方において異なる。代替案は、その資源所要量と費用の総額、および期待される見返りによって評価される。代替案を定めるにあたっての狙いは、システムの有効性を最大化することも、最小化することも、最適化することもありうる。</p>
+<p>数学と統計学には、任意の一時点で論理的に最大化あるいは最小化しうる尺度は一つだけである、という規則がある。この規則は、量的・質的が混在する問題にも同じ強さで当てはまる。たとえば、システムの有効性を損なわずに、問題解決の時間と費用の両方を最小化できるとは考えにくい。一つの変数を最大化しつつ、ほかの変数を最適化することはできる。すなわち、その一つの変数の最大値のもとで、ほかの変数は理想的な状態に近づきはするが到達はしない。最適とは、「すべてを考慮したうえで」という意味での最良を指す。「文字どおり最良」を意味するのではない。それは、与えられた目標を達成するのに最も好都合な条件を意味することもある。最適解はきわめて「好都合」に見えるため、専門家がそれを「理想的」「卓越している」「文字どおり最良」と評することもある。しかしこうした評は事後的なものであり、代替案の論理的な構成の一部ではない。</p>
+<p>多くの場合、問題の解の最大値と最小値は未知でありうる。したがって最適値もまた未知となる。これらの考察が示すのは、実用上ほとんど役に立たない最大値あるいは最小値をもつ代替案を構成することもありうる、ということである。システム分析者が各代替案の絶対的な価値を把握していない場合でも、問題の解を記述しうる推定値の集合を確定することは可能である。</p>
+        </div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>システム分析の方法論</h2>
+    <ul>
+      <li><a href="/ja/methodology_sa.html">システム分析の方法論</a></li>
+      <li><a href="/ja/quade_method.html">クエイドのシステム分析の方法論</a></li>
+      <li><a href="/ja/chernyak_method.html">チェルニャークのシステム分析の方法論</a></li>
+      <li><a href="/ja/young_method.html">ヤングのシステム分析の方法論</a></li>
+      <li><a href="/ja/golubkov_method.html">ゴルブコフのシステム分析の方法論</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>文献</h2>
+    <ul>
+      <li><a href="/assets/systems_analysis_optner.pdf">書籍のダウンロード：経営・産業問題解決のためのシステム分析。オプトナー（ロシア語）</a></li>
+      <li><a href="/ja/systems_analysis_book.html">システム分析に関する文献のダウンロード</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>関連記事</h2>
+    <ul>
+      <li><a href="/ja/systems_analysis.html">システム分析</a></li>
+      <li><a href="/ja/decision_theory.html">意思決定理論</a></li>
+      <li><a href="/ja/decision_making.html">意思決定</a></li>
+      <li><a href="/ja/choice.html">決定と選択</a></li>
+      <li><a href="/ja/management.html">マネジメント</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/ja/">ホーム</a> <span aria-hidden="true">/</span>
+    <a href="/ja/systems_analysis.html">システム分析</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">オプトナーのシステム分析の方法論</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Toggle theme"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/optner_method.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">言語</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/ja/map.html">サイトマップ</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710a936eeda5ce',t:'MTc4ODczNTExNw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ゴルブコフの方法論</title>
+<meta name="description" content="Е・П・ゴルブコフによるシステム分析の段階：問題の定式化、調査、分析、予備的判断、確認、最終的判断、採用された決定の実施。">
+<meta name="keywords" content="システム分析,ゴルブコフの方法,方法,決定,問題,目標,結果,段階">
+<link rel="canonical" href="https://systems-analysis.info/ja/golubkov_method.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/golubkov_method.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/golubkov_method.html">
+<link rel="alternate" hreflang="ja" href="https://systems-analysis.info/ja/golubkov_method.html">
+<meta property="og:title" content="ゴルブコフの方法論">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/ja/golubkov_method.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Е・П・ゴルブコフによるシステム分析の段階：問題の定式化、調査、分析、予備的判断、確認、最終的判断、採用された決定の実施。">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="ja_JP">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/ja/golubkov_method.html#article",
+    "headline": "ゴルブコフの方法論",
+    "description": "Е・П・ゴルブコフによるシステム分析の段階：問題の定式化、調査、分析、予備的判断、確認、最終的判断、採用された決定の実施。",
+    "url": "https://systems-analysis.info/ja/golubkov_method.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "ja",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/ja/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/ja/golubkov_method.html"
+    },
+    "keywords": [
+        "システム分析",
+        "ゴルブコフの方法",
+        "方法",
+        "決定",
+        "問題",
+        "目標",
+        "結果",
+        "段階"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "部門計画におけるシステム分析の活用",
+        "author": {
+            "@type": "Person",
+            "name": "Golubkov E.P."
+        },
+        "datePublished": "1977",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Ekonomika"
+        },
+        "inLanguage": "ru"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-08-22",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "部門計画におけるシステム分析の活用",
+        "author": {
+            "@type": "Person",
+            "name": "Golubkov E.P."
+        },
+        "datePublished": "1977",
+        "inLanguage": "ru"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ホーム",
+            "item": "https://systems-analysis.info/ja/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "システム分析",
+            "item": "https://systems-analysis.info/ja/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "ゴルブコフの方法論"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/ja/">ホーム</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/sections.html">セクション</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/Systems_Analysis_Wiki_Catalog_%28%E6%97%A5%E6%9C%AC%E8%AA%9E%29">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/books.html">書籍</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/catalog.html">カタログ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/golubkov_method.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Toggle theme"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Toggle font"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">ゴルブコフの方法論</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>Е・П・ゴルブコフによるシステム分析の段階</strong></p>
+<ol>
+  <li>問題の定式化</li>
+  <li>調査</li>
+  <li>分析</li>
+  <li>予備的判断</li>
+  <li>確認</li>
+  <li>最終的判断</li>
+  <li>採用された決定の実施</li>
+</ol>
+<p>システム分析は通常、求められる結果へ向けて逐次的に近づいていく形で進められ、次の段階（手続き）からなる。</p>
+<p>1.　<strong>問題の定式化</strong></p>
+<p>この段階では、最終的な目標と解決を要する課題の範囲を定め、<a href="/ja/system.html" class="text-link">システム</a>が機能する条件を分析し、システムの動作条件に課される制約を確定する。</p>
+<p>2.　<strong>調査</strong></p>
+<p><a href="/ja/problem.html" class="text-link">問題</a>を解くために必要なデータが特定され、分析され、総合される。分析対象のシステム（問題）の構造が研究され、関係が確定され、問題を解くさまざまな行動方針が明らかにされる。問題の予備的分析にあたっては、ありうる解の集合をできるかぎり網羅的に洗い出すよう努める。</p>
+<p>通常、目標を達成する道筋にはいくつもの選択肢がある。この場合、調査の段階では、以後の分析段階で詳しく検討する選択肢を選び出し、明らかに不合理な行動方針を除外しておかなければならない。システム分析の専門家は、狭い部門的アプローチに陥らないために、解こうとしている問題についてのさまざまな見方に通じているべきである。</p>
+<p>現代の計画とマネジメントの問題は複雑であり、その解決には、問題に影響を与える主要な要因の総体を考慮することが求められる。要素間の相互関係を無視して個々の要素の検討へと課題を単純化すれば、誤った決定に至る。最も網羅的な結果が期待できるのは、システム分析を行う研究グループに、問題を全体として少なくとも大づかみに理解している専門家が加わっている場合である。</p>
+<p>最初の二つの段階は最も形式化しにくい。活動の目標とその達成の道筋を定めるにあたっては、システム分析を行い決定を下す専門家の創造的な思考、これまでの仕事の経験、そして直観に最大限に頼らなければならない。</p>
+<p>3.　<strong>分析</strong></p>
+<p>この段階では、モデルの構築、有効性の基準の選択とそれによる各行動方針を選んだ場合の帰結の予測、そしてそれらの帰結の観点からのさまざまな解の選択肢の比較が行われる。<a href="/ja/model.html" class="text-link">モデル</a>は特定のパラメータ変動範囲を想定して構築されるため、結果の分析はその範囲内で行うべきである。</p>
+<p>経済数学的な方法とモデルは大きな可能性をもつ。しかし、それらはシステム分析の非形式的な方法と組み合わせて適用すべきであることを忘れてはならない。さもなければ問題は単純化され、あるいは歪められて、実用的な価値を失いかねない。非形式的な技法によってしか解けない問題もある。</p>
+<p>生じた問題のさまざまな解の選択肢を比較分析した結果として、意思決定者への勧告が練り上げられる。これが本質的にシステム分析の生産物である。とはいえ、その勧告を実際の実施へ運ぶ以後の段階を簡単に述べておかなければ、システム分析のプロセスの考察は不完全なものにとどまるだろう。</p>
+<p>4〜5.　<strong>採用された決定の予備的判断と確認</strong></p>
+<p>システム分析の第二および第三の段階で得られたデータと、そのほか利用しうるあらゆる情報にもとづいて、目標を達成する最良の道筋が選ばれ、行動方針についての結論と勧告が練り上げられる。すでに述べたように、いずれかの解の選択肢を選ぶ際、意思決定者はシステム分析者の知らない付加的な要因を考慮に入れることがある。</p>
+<p>6.　<strong>最終的判断（最良の解の選択肢の最終決定）</strong></p>
+<p>これは、分析の第四段階の結果を実験的に検証したうえで行われる。</p>
+<p>7.　<strong>採用された決定の実施</strong></p>
+<p>採用された決定は実施の責任者に伝えられ、その執行と監督が組織される。必要に応じて決定に修正が加えられる。</p>
+<p>いかなる分析も、程度の差はあれこれら七つの段階を含んでいる。第一段階は、意思決定者と決定を準備する者（システム分析者）が共同で行う。調査と分析の段階はシステム分析者が担う。システム分析の第四段階と第六段階は通常、決定を下す責任者が行い、第五段階は分析者がシミュレーションによって行うこともあれば、まったく行われないこともある。</p>
+<p>以上では段階がかなり明確に分けられている。実務においてそのような明確な区分が存在することはまれで、程度の差はあれ段階は並行して進むからである。述べてきたシステム分析の段階の系列は、通常一度の反復で終わらない。問題が最初の試みで解けることはまれである。分析のどの段階からも前の段階へ立ち戻ることがありうる。したがってシステム分析は反復的なプロセスである。それゆえ分析の過程では柔軟であること、結果を再評価すること、場合によっては当初分析に組み込んでいた考えを見直すことが必要になる。そうした結果の再評価を無駄な労力とみなすべきではない。もちろん、目標、道筋、その達成手段を絶えず変更することは、明確な方向づけを妨げるので許されない。しかし、実際の事態の推移に逆らって当の問題を解こうとする願望も、同じくらい危険である。</p>
+        </div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>システム分析の方法論</h2>
+    <ul>
+      <li><a href="/ja/methodology_sa.html">システム分析の方法論</a></li>
+      <li><a href="/ja/quade_method.html">クエイドのシステム分析の方法論</a></li>
+      <li><a href="/ja/chernyak_method.html">チェルニャークのシステム分析の方法論</a></li>
+      <li><a href="/ja/young_method.html">ヤングのシステム分析の方法論</a></li>
+      <li><a href="/ja/optner_method.html">オプトナーのシステム分析の方法論</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>関連記事</h2>
+    <ul>
+      <li><a href="/ja/systems_analysis.html">システム分析</a></li>
+      <li><a href="/ja/decision_theory.html">意思決定理論</a></li>
+      <li><a href="/ja/decision_making.html">意思決定</a></li>
+      <li><a href="/ja/choice.html">決定と選択</a></li>
+      <li><a href="/ja/management.html">マネジメント</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/ja/">ホーム</a> <span aria-hidden="true">/</span>
+    <a href="/ja/systems_analysis.html">システム分析</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">ゴルブコフの方法論</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Toggle theme"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/golubkov_method.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">言語</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/ja/map.html">サイトマップ</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710a91db9ca5ce',t:'MTc4ODczNTExNw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Metodologia analizei sistemelor a lui Optner</title>
+<meta name="description" content="O problemă bine formulată poate însemna jumătate din rezolvarea ei. Din acest motiv, analistul de sisteme acordă o atenție deosebită evaluării cât mai timpurii a parametrilor, proprietăților și relațiilor problemei.">
+<meta name="keywords" content="analiza sistemelor,metodologia lui Optner,problemă,sistem,soluție,alternativă,cerință">
+<link rel="canonical" href="https://systems-analysis.info/ro/optner_method.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/optner_method.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/optner_method.html">
+<link rel="alternate" hreflang="ro" href="https://systems-analysis.info/ro/optner_method.html">
+<meta property="og:title" content="Metodologia analizei sistemelor a lui Optner">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/ro/optner_method.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="O problemă bine formulată poate însemna jumătate din rezolvarea ei. Din acest motiv, analistul de sisteme acordă o atenție deosebită evaluării cât mai timpurii a parametrilor, proprietăților și relațiilor problemei.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="ro_RO">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/ro/optner_method.html#article",
+    "headline": "Metodologia analizei sistemelor a lui Optner",
+    "description": "O problemă bine formulată poate însemna jumătate din rezolvarea ei. Din acest motiv, analistul de sisteme acordă o atenție deosebită evaluării cât mai timpurii a parametrilor, proprietăților și relațiilor problemei.",
+    "url": "https://systems-analysis.info/ro/optner_method.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "ro",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/ro/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/ro/optner_method.html"
+    },
+    "keywords": [
+        "analiza sistemelor",
+        "metodologia lui Optner",
+        "problemă",
+        "sistem",
+        "soluție",
+        "alternativă",
+        "cerință"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Systems Analysis for Business and Industrial Problem Solving",
+        "author": {
+            "@type": "Person",
+            "name": "Optner S.L."
+        },
+        "datePublished": "1965",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Prentice-Hall"
+        },
+        "inLanguage": "ro"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Systems Analysis for Business and Industrial Problem Solving",
+        "author": {
+            "@type": "Person",
+            "name": "Optner S.L."
+        },
+        "datePublished": "1965",
+        "inLanguage": "ro"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Pagina principală",
+            "item": "https://systems-analysis.info/ro/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Analiza sistemelor",
+            "item": "https://systems-analysis.info/ro/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Metodologia lui Optner"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Navigare principală">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Meniu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/ro/">Pagina principală</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ro/sections.html">Secțiuni</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ro/books.html">Cărți</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ro/catalog.html">Catalog</a>
+        <span aria-hidden="true">·</span>
+        <a href="/optner_method.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Schimbă tema"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Schimbă fontul"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Metodologia analizei sistemelor a lui Optner</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Stanford L. Optner. Analiza sistemelor pentru rezolvarea <a href="/ro/problem.html" class="text-link">problemelor</a> de afaceri și industriale</p>
+<p><strong>Etapele metodologiei analizei sistemelor a lui Optner</strong>:</p>
+<ol>
+  <li>Identificarea simptomelor.</li>
+  <li>Determinarea relevanței problemei.</li>
+  <li>Definirea scopului.</li>
+  <li>Descoperirea structurii sistemului și a elementelor sale defectuoase.</li>
+  <li>Determinarea structurii posibilităților.</li>
+  <li>Identificarea alternativelor.</li>
+  <li>Evaluarea alternativelor.</li>
+  <li>Selectarea unei alternative.</li>
+  <li>Formularea soluției.</li>
+  <li>Obținerea acceptării soluției din partea executanților și a managerilor.</li>
+  <li>Lansarea procesului de implementare.</li>
+  <li>Gestionarea procesului de implementare.</li>
+  <li>Evaluarea rezultatelor și a consecințelor implementării.</li>
+</ol>
+<p>O problemă este definită ca o situație care implică două stări: una numită starea existentă, iar cealaltă starea propusă. Starea existentă este reprezentată de sistemul actual; starea propusă este reprezentată de un sistem ipotetic sau dorit. Fiecare stare conține un ansamblu de obiecte, proprietăți și relații reunite într-un proces, și fiecare poate fi descrisă ca un <a href="/ro/system.html" class="text-link">sistem</a>. Pentru a trece de la starea existentă la cea propusă, trebuie schimbat ansamblul actual de obiecte, proprietăți și relații. O schimbare a obiectelor poate însemna înlocuirea unui echipament, mai degrabă decât reorganizarea personalului; o schimbare a proprietăților poate lua forma creșterii numărului de angajați; o schimbare a relațiilor poate introduce o nouă distribuție a responsabilităților.</p>
+<p>O problemă este caracterizată de necunoscutele pe care le conține și de condițiile sale. Pot exista una sau mai multe zone ale necunoscutului. O necunoscută poate fi definibilă în termeni calitativi, dar nu cantitativi. O caracterizare cantitativă poate lua forma unui interval de estimări care reprezintă starea presupusă a necunoscutei. În sens clasic, necunoscutele sunt mărimi care urmează a fi determinate. Prin urmare, definirea unei necunoscute în termenii alteia poate fi contradictorie sau redundantă. Necunoscutele pot fi exprimate doar în termenii a ceea ce este cunoscut — adică în termenii unor lucruri ale căror obiecte, proprietăți și relații au fost stabilite. Cunoscutul este definit ca o mărime a cărei valoare a fost determinată.</p>
+<p>Starea existentă (sistemul actual) poate conține atât cunoscute, cât și necunoscute; aceasta înseamnă că prezența necunoscutelor nu trebuie neapărat să împiedice funcționarea sistemului. Sistemul existent este, prin definiție, constituit logic, dar poate să nu satisfacă o restricție. Astfel, simpla funcționare a unui sistem nu este măsura finală a adecvării sale, întrucât unele sisteme pot funcționa perfect și totuși pot eșua în atingerea scopurilor lor. Scopurile pot fi definite doar în termenii cerințelor sistemului. Cerințele sistemului sunt stabilite printr-o condiție care specifică obiectele și proprietățile în relațiile lor corespunzătoare.</p>
+<p>Cerințele sistemului servesc drept mijloc de consemnare a unor afirmații lipsite de ambiguitate care definesc <a href="/ro/goal.html" class="text-link">scopul</a>. Deși cerințele sistemului sunt formulate în termeni de obiecte, proprietăți și relații, scopurile pot fi exprimate în termenii unei stări dorite. Pentru un set dat de cerințe ale sistemului, scopurile și starea dorită pot coincide în întregime. Dacă diferă, se spune că cerințele reprezintă sistemul dorit. În general, scopurile sunt identificate cu sistemul dorit.</p>
+<p>Diferența dintre sistemul existent și cel dorit constituie problema. Scopul acțiunii este minimizarea acestei diferențe. Menținerea sau îmbunătățirea funcționării sistemului este înțeleasă în termenii acestei diferențe dintre starea existentă și cea dorită. Menținerea stării existente înseamnă păstrarea ieșirii sistemului în limitele prescrise. Îmbunătățirea stării sistemului înseamnă obținerea unei ieșiri superioare, sau care depășește, ceea ce se produce în starea existentă.</p>
+<p>O soluție determină modul în care trebuie eliminată diferența dintre starea existentă și cea dorită. Prin urmare, o soluție este mijlocul prin care o stare este transformată în cealaltă. Ea descrie diferențele dintre cele două stări în termeni de obiecte, proprietăți și relații și specifică modul în care această structură de legătură trebuie introdusă pentru a obține starea propusă. Soluția este implementată prin control cu conexiune inversă, constând dintr-un <a href="/ro/model.html" class="text-link">model</a> de ieșire, o verificare a conformității și un model de acțiune.</p>
+<p>Rezolvarea problemelor se realizează printr-un proces de învățare. Învățarea este definită ca un act cognitiv rezultat din stimuli. Cogniția cuprinde o gamă largă de activități intelectuale, inclusiv recunoașterea tiparelor prezente sau viitoare. Recunoașterea se realizează prin aplicarea unui criteriu asupra ieșirii. Cogniția este una dintre funcțiile fundamentale necesare pentru a elimina diferența dintre sistemul existent și cel dorit. Alte funcții implicate în învățare includ formularea mijloacelor prin care o stare a sistemului este transformată în alta, precum și ideea care indică, a priori, modul în care starea dorită poate fi atinsă prin schimbări ale obiectelor, proprietăților și relațiilor existente.</p>
+<p>O formulare reușită a problemei poate echivala cu jumătate din soluția ei. Din acest motiv, analistul de sisteme acordă o atenție deosebită evaluării cât mai timpurii a parametrilor, proprietăților și relațiilor problemei. Nu este întotdeauna posibil să se introducă în problemă scopuri „gata făcute”; scopurile propuse de altcineva se pot dovedi insuficiente. Mai mult, analistul de sisteme poate accepta un scop propus doar după ce a determinat, prin formularea problemei, că acesta este lipsit de redundanță și contradicție. O problemă „pe jumătate rezolvată” prin formulare nu este o problemă rezolvată în sens strict, dar formularea ei înseamnă totuși că elementele principale ale problemei au fost identificate și corelate în mod corespunzător. Din acest motiv, formularea problemei mai poate fi numită și definirea problemei.</p>
+<p>Pașii inițiali în formularea unei probleme urmăresc: 1) elaborarea unui enunț inițial al problemei; 2) interpretarea acestui enunț în raport cu diferitele părți ale problemei; 3) interpretarea faptelor referitoare la problemă; și 4) rafinarea enunțului inițial al problemei. În timpul investigației inițiale, analistul separă cunoscutul de necunoscut pentru a face enunțul inițial semnificativ.</p>
+<p>Corespondentul formulării problemei este elaborarea unei definiții a scopului. Termenul „scop” descrie rezultatul care trebuie atins. Un scop poate lua forma unui maxim (sau minim) a cărui mărime urmează încă să fie determinată, sau poate specifica un interval de valori în care trebuie să se încadreze soluția. În toate cazurile, un scop este un rezultat dorit al activității.</p>
+<p>Combinația dintre scopurile care stabilesc direcția acțiunii și relațiile restrictive care le limitează formează cadrul de restricții în care începe studiul problemei. O restricție reprezintă suma regulilor, reglementărilor și principiilor directoare — fie autoimpuse, fie impuse din exterior — care definesc limitele problemei. Fiecare problemă trebuie să aibă un set de restricții care poate fi definit. Compatibilitatea dintre scopuri și relațiile restrictive este esențială. Fără un acord privind restricțiile, un acord privind soluțiile este foarte puțin probabil. Este lipsit de sens să vorbim despre o „soluție” dacă părțile interesate nu pot cădea de acord asupra problemei sau asupra restricțiilor care o definesc.</p>
+<p>Atunci când analistul de sisteme stabilește condiția problemei, el fixează limitele investigației și, prin extensie, limitele cadrului de restricții. În termeni matematici, condițiile pot fi suficiente, redundante sau contradictorii; ele nu pot lua alte forme.</p>
+<p>O condiție este redundantă dacă conține elemente inutile — elemente care tind să provoace risipă. O condiție poate conține, de asemenea, o contradicție. Un element contradictoriu este unul atât de strâns legat de altul, încât, dacă unul este adevărat, celălalt trebuie să fie fals. Consecința unei condiții contradictorii este că părți ale problemei sunt inconsistente între ele și, prin urmare, se opun reciproc.</p>
+<p>O condiție suficientă este îndeplinită atunci când restricțiile sunt compatibile cu scopul propus, iar scopul este definit adecvat în raport cu cerințele sistemului. Suficiența implică exactitate: ea conține tot ceea ce este necesar pentru satisfacerea cerinței, fără lipsuri și fără exces.</p>
+<p>Problemele cu structuri slab definite sunt, în general, „rezolvate” prin acceptarea unor evaluări relative, mai degrabă decât absolute, fără demonstrație. Problemele de amploare foarte largă, problemele ale căror soluții depind de lucruri care nu au fost încă dezvoltate, precum și problemele care implică ipoteze privind combinarea unor sisteme ce nu pot fi încă definite în circumstanțele existente — toate acestea sunt probleme cu structuri slab definite.</p>
+<p>La formularea (sau enunțarea) unei probleme, analistul de sisteme trebuie să îndeplinească următoarele sarcini: în primul rând, să descrie modul în care a fost descoperită problema; în al doilea rând, să stabilească de ce este considerată o problemă; în al treilea rând, să o deosebească de un simplu „simptom” al unor probleme conexe; și, în al patrulea rând, să furnizeze definiții operaționale ale consecințelor nedorite ale problemei. Analistul va comite o greșeală gravă dacă, în timpul formulării problemei, propune soluții sau atribuie cauze. Elaborarea unui enunț al problemei urmărește, mai presus de toate, aducerea problemei într-un focus clar. La etapa formulării nu se impun cerințe asupra ipotezelor. Pentru a menține controlul asupra problemei, este de dorit să existe la îndemână fapte conectate logic și clar identificabile.</p>
+<p>Investigarea aspectelor istorice ale unei probleme are meritele sale. Momentul în timp în care problema a devenit vizibilă pentru prima dată poate servi drept dovadă valoroasă, permițând legarea ei de acțiuni anterioare, identificabile. Uneori este important să se determine circumstanțele care au dat naștere problemei.</p>
+<p>Același fenomen poate să nu fie perceput drept problemă de către toată lumea. De aceea, este necesar să se stabilească rațiunea pentru care un anumit fenomen este tratat ca problemă. Fenomenele din mediul de afaceri, din instituțiile guvernamentale și militare pot fi clasificate drept probleme dacă tind să perturbe așteptările privind profitul sau să reducă eficacitatea operațională. Totuși, anumite probleme neevidente pot fi prevăzute doar prin metode analitice. În cazurile în care problemele nu sunt evidente, perturbarea funcționării sistemului nu survine imediat, ci devine o posibilitate.</p>
+<p>În rezolvarea unei probleme, prima sarcină este determinarea ansamblului de obiecte care urmează a fi analizate. Acest ansamblu de obiecte, luat ca întreg, constituie o alternativă. Evaluarea alternativelor este un mijloc de selectare a soluțiilor sau a scopurilor. O problemă dată poate fi rezolvată prin numeroase proceduri alternative diferite. Alternativele pot avea sau nu aspecte cuantificabile. De exemplu, numărul de persoane sau de echipamente dintr-o alternativă este cuantificabil, în timp ce tipul de piață, gradul de influență al pieței sau localizarea unei piețe pot fi doar parțial cuantificabile. Existența alternativelor implică posibilitatea de a alege între două sau mai multe soluții acceptabile. Substanța alternativelor definește condițiile în care poate fi făcută o alegere.</p>
+<p>Presupunerile sunt afirmații privind starea presupusă a unui obiect, a unei proprietăți sau a unei relații. Propozițiile sunt ipoteze sau postulate. Dacă propozițiile sunt false, atunci presupunerile sunt false, iar condiția problemei este contradictorie. Presupunerile sunt utilizate pentru a face față unor realități dificile care tind să perturbe procedura de rezolvare a problemei. Dacă presupunerile nu modifică nivelul de risc sau raportul cost-eficacitate al unei alternative date, ele reprezintă o parte utilă și esențială a problemei. Presupunerile impun analistului de sisteme sarcina de a asigura coerența.</p>
+<p>O presupunere permite deducerea unui fapt necunoscut cu certitudine, pornind de la existența altor fapte cunoscute.</p>
+<p>Un criteriu este mijlocul prin care alternativele sunt măsurate sau selectate. Un criteriu obligă analistul de sisteme să demonstreze un raționament logic în selectarea preferințelor. Un criteriu indică performanța relativă a unei alternative în raport cu alte măsuri, precum timpul, costul sau eficacitatea. Este un standard prin care se poate emite o judecată asupra meritului relativ al unei alegeri.</p>
+<p>Riscul este o măsură a expunerii potențiale la deficiențe. Riscul ridicat poate fi caracterizat, de asemenea, printr-o probabilitate statistică scăzută, deși măsura precisă a riscului nu poate fi întotdeauna cuantificabilă. Pentru a descrie riscul în probleme complexe care implică atât dimensiuni cantitative, cât și calitative, se utilizează termenul „incertitudine”.</p>
+<p>În această utilizare, „incertitudinea” se referă la plauzibilitatea relativă a unui eveniment care s-a produs efectiv. Riscul sau incertitudinea se pot manifesta pe parcursul întregului proces de rezolvare a problemei. Riscul crește, de exemplu, dacă criteriile sunt, prin natura lor, nepotrivite pentru a măsura ceea ce sunt destinate să măsoare. Riscul crește, de asemenea, dacă presupunerile acceptate ca adevărate se dovedesc a fi false. Riscul poate apărea ca o caracteristică dominantă a unei alternative alese din cauza unor erori nedetectate ale conexiunii inverse de la ieșire la intrare.</p>
+<p>O alternativă este una dintre două sau mai multe posibilități între care se poate alege. Pentru ca o alternativă să fie luată în considerare, ea trebuie să reprezinte o soluție potențială acceptabilă pentru problema enunțată. Atunci când alternativele sunt comparabile, se stabilește distincția dintre ele. Atunci când nu sunt comparabile, se identifică aspectele în care diferă. În conformitate cu această definiție, alternativele pot diferi în grad sau în natură.</p>
+<p>Există două forme generale de alternative: diferite din punct de vedere funcțional și diferite din punct de vedere operațional. Forma funcțională poate fi ilustrată printr-o barcă cu pânze și un avion monomotor, ambele putând fi considerate soluții alternative pentru aceeași problemă. Forma operațională poate fi ilustrată prin trei variante ale aceluiași automobil, fiecare concepută pentru a rezolva aceeași problemă. Alternativele funcționale diferă prin modul în care rezolvă problemele. Alternativele operaționale diferă prin modurile în care obiectele, proprietățile și relațiile sunt asamblate într-un sistem. Alternativele sunt evaluate în funcție de cerințele totale de resurse și de cost, precum și de rentabilitatea așteptată. Scopul definirii alternativelor poate fi maximizarea, minimizarea sau optimizarea eficacității sistemului.</p>
+<p>În matematică și statistică, există o regulă potrivit căreia doar o singură măsură poate fi, în mod logic, maximizată sau minimizată la un moment dat. Această regulă se aplică cu aceeași forță problemelor mixte, cantitativ-calitative. Este puțin probabil, de exemplu, ca atât timpul, cât și costul rezolvării unei probleme să poată fi minimizate simultan fără a degrada eficacitatea sistemului. O variabilă poate fi maximizată, în timp ce altele sunt optimizate — adică se vor apropia îndeaproape, dar nu vor atinge, stările lor ideale, dată fiind maximizarea acelei variabile. Optimul înseamnă cel mai bun în sensul „luând totul în considerare”. Nu înseamnă „cel mai bun cu putință”. Poate însemna condițiile cele mai favorabile pentru atingerea unui scop dat. Optimele pot fi percepute drept atât de „favorabile”, încât un specialist le-ar descrie drept „ideale”, „excelente” sau „cele mai bune cu putință”. Totuși, această caracterizare este a posteriori și nu face parte din construcția logică a alternativelor.</p>
+<p>În cele mai multe cazuri, maximul și minimul soluției unei probleme pot fi necunoscute; în consecință, optimul va fi, de asemenea, necunoscut. Aceste considerații arată că este posibil să se construiască o alternativă al cărei maxim sau minim are o utilitate practică redusă. Chiar și atunci când analistul de sisteme nu înțelege valoarea absolută a fiecărei alternative, este totuși posibil să se stabilească un set de estimări care să permită descrierea soluției problemei.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Metodologii de analiză a sistemelor</h2>
+    <ul>
+      <li><a href="/ro/methodology_sa.html">Metodologia analizei sistemelor</a></li>
+      <li><a href="/ro/quade_method.html">Metodologia analizei sistemelor a lui Quade</a></li>
+      <li><a href="/ro/chernyak_method.html">Metodologia analizei sistemelor a lui Chernyak</a></li>
+      <li><a href="/ro/young_method.html">Metodologia analizei sistemelor a lui Young</a></li>
+      <li><a href="/ro/golubkov_method.html">Metodologia analizei sistemelor a lui Golubkov</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Literatură</h2>
+    <ul>
+      <li><a href="/assets/systems_analysis_optner.pdf">Descarcă cartea: Analiza sistemelor pentru rezolvarea problemelor de afaceri și industriale. Optner</a></li>
+      <li><a href="/ro/systems_analysis_book.html">Descarcă literatură despre analiza sistemelor</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Articole conexe</h2>
+    <ul>
+      <li><a href="/ro/systems_analysis.html">Analiza sistemelor</a></li>
+      <li><a href="/ro/decision_theory.html">Teoria deciziei</a></li>
+      <li><a href="/ro/decision_making.html">Luarea deciziilor</a></li>
+      <li><a href="/ro/choice.html">Decizie și alegere</a></li>
+      <li><a href="/ro/management.html">Management</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Cale de navigare">
+    <a href="/ro/">Pagina principală</a> <span aria-hidden="true">/</span>
+    <a href="/ro/systems_analysis.html">Analiza sistemelor</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Metodologia lui Optner</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Schimbă tema"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/optner_method.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/ro/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Schimbă tema"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710d56cb0f1e13',t:'MTc4ODczNTIzMA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

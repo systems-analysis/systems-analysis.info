@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>チェルニャークの方法論</title>
+<meta name="description" content="Ю・И・チェルニャークのシステム分析の方法は、問題の分析とシステムの定義から総合的な発展プログラムの構築に至る十二の段階からなる。各段階を詳しく解説する。">
+<meta name="keywords" content="システム分析,チェルニャークの方法,目標,システム,問題,マネジメント,決定">
+<link rel="canonical" href="https://systems-analysis.info/ja/chernyak_method.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/chernyak_method.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/chernyak_method.html">
+<link rel="alternate" hreflang="ja" href="https://systems-analysis.info/ja/chernyak_method.html">
+<meta property="og:title" content="チェルニャークの方法論">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/ja/chernyak_method.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Ю・И・チェルニャークのシステム分析の方法は、問題の分析とシステムの定義から総合的な発展プログラムの構築に至る十二の段階からなる。各段階を詳しく解説する。">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="ja_JP">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/ja/chernyak_method.html#article",
+    "headline": "チェルニャークの方法論",
+    "description": "Ю・И・チェルニャークのシステム分析の方法は、問題の分析とシステムの定義から総合的な発展プログラムの構築に至る十二の段階からなる。各段階を詳しく解説する。",
+    "url": "https://systems-analysis.info/ja/chernyak_method.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "ja",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/ja/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/ja/chernyak_method.html"
+    },
+    "keywords": [
+        "システム分析",
+        "チェルニャークの方法",
+        "目標",
+        "システム",
+        "問題",
+        "マネジメント",
+        "決定"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "経済管理におけるシステム分析",
+        "author": {
+            "@type": "Person",
+            "name": "Chernyak Yu.I."
+        },
+        "datePublished": "1975",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Ekonomika"
+        },
+        "inLanguage": "ru"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-08-22",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "経済管理におけるシステム分析",
+        "author": {
+            "@type": "Person",
+            "name": "Chernyak Yu.I."
+        },
+        "datePublished": "1975",
+        "inLanguage": "ru"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ホーム",
+            "item": "https://systems-analysis.info/ja/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "システム分析",
+            "item": "https://systems-analysis.info/ja/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "チェルニャークの方法論"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/ja/">ホーム</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/sections.html">セクション</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/Systems_Analysis_Wiki_Catalog_%28%E6%97%A5%E6%9C%AC%E8%AA%9E%29">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/books.html">書籍</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/catalog.html">カタログ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/chernyak_method.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Toggle theme"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Toggle font"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">チェルニャークの方法論</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>システム分析の方法によって解かれる問題はきわめて多様で、本質的に限りがない。そのため、あらゆる場合に適した単一の道具立てが作り上げられることを期待するのは難しい。研究の各段階——直観的でかなり緩やかな問題の提示から、厳密な数学的方法による最適解の選択へと進む段階——では、当然ながらきわめて多様な科学的道具が用いられる。したがって、まずシステム分析の段階の基本的な順序を定めておくのが適切だと思われる。</p>
+<p>さまざまな論者が提案した方法を分析すると、<a href="/ja/goal.html" class="text-link">目標</a>や研究対象のいかんを問わず、システム分析を進める順序には根本的な統一性があるという結論に至る。とはいえ、この場合に折衷的なアプローチが十分に受け入れうるとは考えず、システム分析の段階の新しい分類を提案する。この分類は、さまざまな分類の主要な段階をすべて考慮に入れ、論理的な順序の原則にしたがい、システム分析の基礎にあるシステム理論の根本命題と結びつけられている。提案する分類の適切さと使いやすさは、管理のあらゆる主要な水準における一連のシステム的研究において検証されている。</p>
+<p>システム分析の段階と課題の基本的な順序</p>
+<ol>
+  <li>問題の分析。</li>
+  <li>システムの定義。</li>
+  <li>システムの構造の分析。</li>
+  <li>全体目標とシステム基準の定式化。</li>
+  <li>目標の分解、資源とプロセスの必要量の特定。</li>
+  <li>資源とプロセスの特定、下位から上位への目標の総合。</li>
+  <li>将来の条件の予測と分析。</li>
+  <li>目標と手段の評価。</li>
+  <li>代替案の選択。</li>
+  <li>既存システムの診断。</li>
+  <li>総合的な発展プログラムの構築。</li>
+  <li>目標達成のための組織の設計。</li>
+</ol>
+<p>各段階の説明</p>
+<p>第1段階　<strong>問題の分析</strong></p>
+<ul>
+  <li>その問題は存在するか。</li>
+  <li>問題の正確な定式化。</li>
+  <li>問題の論理的構造の分析。</li>
+  <li>過去と将来における問題の展開。</li>
+  <li>ほかの問題との外的な結びつき。</li>
+  <li>問題の原理的な解決可能性。</li>
+</ul>
+<p><a href="/ja/problem.html" class="text-link">問題</a>が実際に存在するかという問いはきわめて重要である。存在しない問題の解決に膨大な労力が費やされることは、例外どころかごく典型的な事態だからである。問題を正しく正確に定式化することは、いかなるシステム的研究においても第一の、そして必要な段階である。よく知られているように、問題をうまく定式化することは、解の半分に等しいことがある。</p>
+<p>第2段階　<strong>システムの定義</strong></p>
+<ul>
+  <li>課題の特定。</li>
+  <li>観察者の位置の決定。</li>
+  <li>対象の定義。</li>
+  <li>要素の特定（システムの分解の限界の決定）。</li>
+  <li>サブシステムの特定。</li>
+  <li>環境の定義。</li>
+</ul>
+<p><a href="/ja/system.html" class="text-link">システム</a>を構成するには、問題を明確に定式化された課題の集合へと分解しなければならない。大規模システムの場合、これらの課題は階層をなす。複雑システムの場合はスペクトルをなす。すなわち、一つの対象について、まったく異なる課題が異なる言語で解かれることになる。観察者の位置は、問題を解く基準を根本的に規定する。対象を定義することは一見たやすい課題にすぎないが、場合によっては研究の最大の困難となる。</p>
+<p>第3段階　<strong>システムの構造の分析</strong></p>
+<ul>
+  <li>階層の水準の決定（大規模システムの場合）。</li>
+  <li>側面と言語の決定（複雑システムの場合）。</li>
+  <li>プロセスと機能の決定（動的システムの場合）。</li>
+  <li>管理のプロセスと情報経路の特定と明確化。</li>
+  <li>サブシステムの明確化。</li>
+  <li>ルーティンのプロセス（日常業務）と発展のプロセス（目標志向）の明確化。</li>
+</ul>
+<p>サブシステムとそれに結びついたプロセスを恣意的に特定すれば、システム的研究は必ず失敗する。技術システムでは、少なくともその物質的な部分についてはサブシステムの構造がはっきり見てとれるのに対し、経済管理のシステムではあらゆる構造的な関係が非自明であるばかりか、行政的な従属関係の陰に強く隠されている。経済管理の当面の問題を解く際には、客観的にも——労力の量的な配分という点で——、主観的にも——組織の職員の意識のうえで——、ルーティンの手続きが発展の目標とプロセスを覆い隠してしまう。これらの目標とプロセスを日常業務から見分け区別するには、厳密な論理的分析だけでなく、管理職員との有効な意思疎通も必要になる。</p>
+<p>第4段階　<strong>全体目標とシステム基準の定式化</strong></p>
+<ul>
+  <li>上位システムから課される目標の特定。</li>
+  <li>環境の目標と制約の特定。</li>
+  <li>全体目標の定式化。</li>
+  <li>基準の決定。</li>
+  <li>目標と基準のサブシステムへの分解。</li>
+  <li>サブシステムの基準からの全体基準の総合。</li>
+</ul>
+<p>組織の全体目標の定式化、とりわけシステムの有効性の基準の構築は、世論調査によって行えるものでは決してない。それはシステム理論の概念の枠内での複雑な論理的手続きであり、しかも研究対象の具体的な経済と技術についての繊細な知識を必要とする。</p>
+<p>第5段階　<strong>目標の分解、資源とプロセスの必要量の特定</strong></p>
+<ul>
+  <li>最上位ランクの目標の定式化。</li>
+  <li>現行プロセスの目標の定式化。</li>
+  <li>効率の目標の定式化。</li>
+  <li>発展の目標の定式化。</li>
+  <li>外的な目標と制約の定式化。</li>
+  <li>資源とプロセスの必要量の特定。</li>
+</ul>
+<p>大規模で複雑な経済主体（システム分析が扱うのはまさにそうした主体である）では、システムの全体目標がその達成の具体的な手段からあまりに隔たっているため、解を選ぶには、目標の分解を通じて目標とその実現手段とを結びつける広範で労力のかかる作業が必要になる。この重要で労力のかかる作業は、通常システム分析の中心をなす。そこから目標ツリー法が生まれた。それはシステム分析の主要な——唯一とまでは言わないにせよ——道具上の達成である。</p>
+<p>第6段階　<strong>資源とプロセスの特定、下位から上位への目標の総合</strong></p>
+<ul>
+  <li>既存の技術と生産能力の評価。</li>
+  <li>資源の現状の評価。</li>
+  <li>実施中および計画中のプロジェクトの評価。</li>
+  <li>ほかのシステムとの相互作用の可能性の評価。</li>
+  <li>社会的要因の評価。</li>
+  <li>下位から上位への目標の総合。</li>
+</ul>
+<p>かなりの数の場合、とりわけ非生産的な、そしてとりわけ非経済的なシステム（医療、教育、その他さまざまなもの）を扱う場合には、発展の目標と有効性の基準を論理的な推論によって明示的に表すことができない。「人間の自然な欲求」から出発する分析の道筋は、それが絶えず発展し変化するために研究者には受け入れられない。そうした場合には、ある程度まで伝統的な道筋——現状と到達した水準の分析から出発し、順次予測を重ねていく道筋——を進まざるをえない。</p>
+<p>第7段階　<strong>将来の条件の予測と分析</strong></p>
+<ul>
+  <li>システムの発展の安定した傾向の分析。</li>
+  <li>環境の発展と変化の予測。</li>
+  <li>システムの発展に強く影響する新しい要因の出現の予測。</li>
+  <li>将来の資源の分析。</li>
+  <li>将来の発展要因の相互作用の総合的な分析。</li>
+  <li>目標と基準のありうる移り変わりの分析。</li>
+</ul>
+<p>システム分析が扱うのは通常、発展の展望であり、ときにはかなり遠い展望である。したがって、将来についてのあらゆる情報——将来の状況、資源、経済システムとそのなかで生じるプロセスを根本的に変える科学的・技術的な発見と発明、そして目標と基準の均衡の変化、場合によってはその転換に大きな影響を及ぼす将来の社会的価値の体系——に最大の関心が寄せられる。それゆえ、科学的方法を用いて将来についての情報を得ること、すなわち予測は、システム分析の最も重要で、疑いなく最も複雑な部分である。</p>
+<p>第8段階　<strong>目標と手段の評価</strong></p>
+<ul>
+  <li>基準にもとづく評価の算出。</li>
+  <li>目標の相互依存の評価。</li>
+  <li>目標の相対的な重要度の評価。</li>
+  <li>資源の希少性とコストの評価。</li>
+  <li>外的要因の影響の評価。</li>
+  <li>総合的な計算評価の算出。</li>
+</ul>
+<p>システム分析において無視できない社会的、政治的、道徳的、倫理的なさまざまな要因——それらは目標の定式化とその実現手段の選択、そして資源の評価に決定的な影響を及ぼすことさえある——は、原理的に量的に測ることができない。それらを考慮に入れる唯一の道は、当の問題についても、相互に関連する広範な問題についても、専門家と有識者の主観的な評価を得ることである。システム分析が通常扱うのは非構造あるいは弱構造の問題、すなわち量的な評価をもたない問題であるから、専門家の評価を得てそれを処理することは、大半の問題においてシステム分析の必要な段階と思われる。</p>
+<p>第9段階　<strong>代替案の選択</strong></p>
+<ul>
+  <li>目標の両立性の分析。</li>
+  <li>目標の完全性の検証。</li>
+  <li>余分な目標の除去。</li>
+  <li>個々の目標を達成する代替案の立案。</li>
+  <li>代替案の評価と比較。</li>
+  <li>相互に関連する代替案の組み合わせ。</li>
+</ul>
+<p>欲求とそれを満たす手段との不一致は、経済発展の法則であり、その最も重要な刺激である。目標という概念はそれを達成する手段という概念と切り離せないので、システム分析における意思決定の中心にあるのは、目標の剪定——重要でないとみなされる目標、あるいは達成手段をもたない目標を除くこと——と、相互に結びついた最重要の目標を達成する具体的な代替案の選択である。</p>
+<p>「工学的」な型の、比較的小規模なシステム的研究では、「代替案の選択」がシステム分析の最も重要な、いや唯一とさえ言える課題とみなされる。経済管理の問題では、目標ツリーの剪定と相互に結びついた代替案の集合の選択が重要な課題となる。とりわけ、科学技術の進歩と環境条件の変化が、経済的な目標の集合を達成するための膨大な数の代替的方策を生み出すからである。これらの方策は資源の制約に収まらなければならない。国民経済の計画的発展の法則が、国民経済の個々のサブシステムを支える資源の配分に厳しい限界を定めているからである。</p>
+<p>第10段階　<strong>既存システムの診断</strong></p>
+<ul>
+  <li>技術的・経済的プロセスのモデリング。</li>
+  <li>潜在的能力と実際の能力の計算。</li>
+  <li>能力の損失の分析。</li>
+  <li>生産とマネジメントの組織上の欠陥の特定。</li>
+  <li>組織を改善する方策の特定と分析。</li>
+</ul>
+<p>システム分析の方法によって解かれる国民経済の管理の問題は、真空のなかにではなく、実際に存在する管理機関のなかで、通常はその相互に結びついた複合体のなかで生じる。システム分析の課題は、多くの場合、新しい管理機関を創設することではなく、既存のものを改善し、問題の解決へ向けて方向づけることにある。そうした場合には、管理機関の能力、欠陥、そして情報の収集・処理と意思決定におけるボトルネックを明らかにし、それらの欠陥を取り除いてシステムをよりよく方向づけるために、管理機関の診断的分析が必要になる。</p>
+<p>新しいシステムは、管理機関の仕事を楽にし、切実な問題の解決を助け、当面の目標の達成を進めるならば、効果的に導入される。したがって、当面の管理上の問題と直近の目標を明らかにすることもまた、管理機関の診断的な調査と分析の対象となる。この調査には、当の管理機関、その相手方、上級組織、下級組織の職員への大規模な聞き取りが含まれ、それによって必要な情報が明らかにされ、次いで分析される。これが、新しく設計されるシステムを導入するための根拠ある組織計画を構築する基礎となる。</p>
+<p>第11段階　<strong>総合的な発展プログラムの構築</strong></p>
+<ul>
+  <li>方策、プロジェクト、プログラムの定式化。</li>
+  <li>目標とその達成方策の優先順位の決定。</li>
+  <li>活動領域の配分。</li>
+  <li>権限領域の配分。</li>
+  <li>資源と時間の制約のもとでの総合的な方策計画の作成。</li>
+  <li>責任組織、管理者、実施主体への割り当て。</li>
+</ul>
+<p>すでに述べたように、システム分析の結果はシステム的な概念の枠内で得られるので、方策の実践的な計画へ移るには、それを経済的カテゴリーの言語へ翻訳しなければならない。国民経済の主要な課題——科学研究、開発、設備投資と建設、産業と地域の発展の計画を含む——についてシステム分析の課題を解いた結果として、総合的な発展プログラムが作られる。これらのプログラムは時間軸に配分され、さまざまな実施主体に割り当てられる。管理と調整の体制が定められ、報告の仕組みが作られる。</p>
+<p>第12段階　<strong>目標達成のための組織の設計</strong></p>
+<ul>
+  <li>組織の目標の定義。</li>
+  <li>組織の機能の定式化。</li>
+  <li>組織構造の設計。</li>
+  <li>情報の仕組みの設計。</li>
+  <li>業務の運用形態の設計。</li>
+  <li>物質的・道徳的な誘因の仕組みの設計。</li>
+</ul>
+<p>場合によっては、そうした総合的なプログラムの実施には、恒常的なあるいは一時的な管理機関の創設が必要になる。別の場合には、システム分析の目標は当の管理機関を再設計することにある。システム分析は、目標志向的な——すなわち国民経済における特定のシステムの創設と活用に焦点を合わせた——効果的な管理機関を設計するための、一連の固有の方法と技法をそなえている。</p>
+        </div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>システム分析の方法論</h2>
+    <ul>
+      <li><a href="/ja/methodology_sa.html">システム分析の方法論</a></li>
+      <li><a href="/ja/quade_method.html">クエイドのシステム分析の方法論</a></li>
+      <li><a href="/ja/optner_method.html">オプトナーのシステム分析の方法論</a></li>
+      <li><a href="/ja/young_method.html">ヤングのシステム分析の方法論</a></li>
+      <li><a href="/ja/golubkov_method.html">ゴルブコフのシステム分析の方法論</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>文献</h2>
+    <ul>
+      <li><a href="/assets/systems_analysis_chernyak.pdf">書籍のダウンロード：経済管理におけるシステム分析。チェルニャーク（ロシア語）</a></li>
+      <li><a href="/ja/systems_analysis_book.html">システム分析に関する文献のダウンロード</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>関連記事</h2>
+    <ul>
+      <li><a href="/ja/systems_analysis.html">システム分析</a></li>
+      <li><a href="/ja/decision_theory.html">意思決定理論</a></li>
+      <li><a href="/ja/decision_making.html">意思決定</a></li>
+      <li><a href="/ja/choice.html">決定と選択</a></li>
+      <li><a href="/ja/management.html">マネジメント</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/ja/">ホーム</a> <span aria-hidden="true">/</span>
+    <a href="/ja/systems_analysis.html">システム分析</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">チェルニャークの方法論</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Toggle theme"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/chernyak_method.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">言語</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/ja/map.html">サイトマップ</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710a9068f2a5ce',t:'MTc4ODczNTExNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

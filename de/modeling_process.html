@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Der Modellierungsprozess</title>
+<meta name="description" content="Der Modellierungsprozess kann als Übergang von einer Modellklasse zu einer anderen betrachtet werden. Üblicherweise werden drei übergreifende Modellklassen unterschieden: kognitive, inhaltliche und formale Modelle. Sie bilden drei miteinander verbundene Ebenen der Modellierung, die nicht isoliert voneinander betrachtet werden können.">
+<meta name="keywords" content="Modellierungsprozess,Modell,kognitives Modell,konzeptionelles Modell,formales Modell,mathematische Modellierung,Systemanalyse">
+<link rel="canonical" href="https://systems-analysis.info/de/modeling_process.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/modeling_process.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/modeling_process.html">
+<link rel="alternate" hreflang="de" href="https://systems-analysis.info/de/modeling_process.html">
+<meta property="og:title" content="Der Modellierungsprozess">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/de/modeling_process.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Der Modellierungsprozess kann als Übergang von einer Modellklasse zu einer anderen betrachtet werden. Üblicherweise werden drei übergreifende Modellklassen unterschieden: kognitive, inhaltliche und formale Modelle. Sie bilden drei miteinander verbundene Ebenen der Modellierung, die nicht isoliert voneinander betrachtet werden können.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="de_DE">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/de/modeling_process.html#article",
+    "headline": "Der Modellierungsprozess",
+    "description": "Der Modellierungsprozess kann als Übergang von einer Modellklasse zu einer anderen betrachtet werden. Üblicherweise werden drei übergreifende Modellklassen unterschieden: kognitive, inhaltliche und formale Modelle. Sie bilden drei miteinander verbundene Ebenen der Modellierung, die nicht isoliert voneinander betrachtet werden können.",
+    "url": "https://systems-analysis.info/de/modeling_process.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "de",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/de/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/de/modeling_process.html"
+    },
+    "keywords": [
+        "Modellierungsprozess",
+        "Modell",
+        "kognitives Modell",
+        "konzeptionelles Modell",
+        "formales Modell",
+        "mathematische Modellierung",
+        "Systemanalyse"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Startseite",
+            "item": "https://systems-analysis.info/de/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Modellierung",
+            "item": "https://systems-analysis.info/de/modelling.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Der Modellierungsprozess"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Hauptnavigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menü</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/de/">Startseite</a>
+        <span aria-hidden="true">·</span>
+        <a href="/de/sections.html">Abschnitte</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/de/books.html">Bücher</a>
+        <span aria-hidden="true">·</span>
+        <a href="/de/catalog.html">Katalog</a>
+        <span aria-hidden="true">·</span>
+        <a href="/modeling_process.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Design wechseln"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Schriftart wechseln"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Der Modellierungsprozess</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Der Modellierungsprozess kann als Übergang von einer Klasse von <a href="/de/model.html" class="text-link">Modellen</a> zu einer anderen betrachtet werden. Üblicherweise werden drei übergreifende Modellklassen unterschieden: kognitive, inhaltliche und formale Modelle. Sie bilden drei miteinander verbundene Ebenen der Modellierung, die nicht isoliert voneinander betrachtet werden können. Die gegenseitige Beeinflussung der Modellierungsebenen hängt mit der den Modellen innewohnenden Eigenschaft der Potentialität zusammen. Die Erstellung eines jeden Modells führt zur Entstehung neuen Wissens über das untersuchte Objekt, was eine Neubewertung und Verfeinerung der Konzepte und Sichtweisen auf das Modellierungsobjekt auf verschiedenen Ebenen nach sich zieht. Dieser Umstand wiederum führt zu einer Überarbeitung der entsprechenden inhaltlichen und kognitiven Modelle und gewährleistet so eine spiralförmige Entwicklung aller Modellierungsebenen des untersuchten Objekts.</p>
+<p>Bei der Beobachtung des Originalobjekts bildet sich im Bewusstsein des Forschers ein gedankliches Abbild des Objekts – sein ideelles Modell. In der wissenschaftlichen Literatur wird dies gewöhnlich als kognitives (mentales) Modell bezeichnet. Bei der Bildung eines solchen Modells versucht der Forscher in der Regel, bestimmte Fragen zu beantworten; daher wird aus der unendlich komplexen Struktur des Objekts alles Unwesentliche entfernt, um eine kompaktere, prägnantere Beschreibung zu erhalten. Die Darstellung eines kognitiven Modells in natürlicher Sprache wird als inhaltliches Modell bezeichnet.</p>
+<p>Kognitive Modelle sind ihrer Natur nach subjektiv, da sie von Forschern auf der Grundlage von Vorwissen und Erfahrung konstruiert werden. Diese Modelle können nur durch symbolische Beschreibung verstanden werden. Kognitive und inhaltliche Modelle sind nicht gleichwertig, da erstere Elemente enthalten können, die der Forscher nicht formulieren kann oder will. Wurde ein inhaltliches Modell von jemand anderem formuliert oder ist es Ergebnis einer gemeinschaftlichen Arbeit, so können zugleich seine Interpretation, das Verständnisniveau und der Grad des Vertrauens bei den Interpreten erheblich variieren. Inhaltliche Modelle werden oft als technische Problemstellungen bezeichnet.</p>
+<p><strong>Nach funktionalem Zweck und Zielsetzung werden inhaltliche Modelle in beschreibende, erklärende und prognostische unterteilt:</strong></p>
+<ul>
+  <li>Ein <em>beschreibendes Modell</em> ist jede Beschreibung eines Objekts.</li>
+  <li>Ein <em>erklärendes Modell</em> beantwortet die Frage, warum etwas geschieht.</li>
+  <li>Ein <em>prognostisches Modell</em> beschreibt das zukünftige Verhalten eines Objekts. Bemerkenswert ist, dass ein prognostisches Modell nicht zwangsläufig eine erklärende Komponente enthält.</li>
+</ul>
+<p>Ein <em>konzeptionelles Modell</em> ist ein inhaltliches Modell, bei dessen Formulierung die Begriffe und Vorstellungen der Fachgebiete verwendet werden, die sich mit der Untersuchung des Modellierungsobjekts befassen.</p>
+<p>Im weiteren Sinne wird unter einem konzeptionellen Modell ein inhaltliches Modell verstanden, das auf einem bestimmten Konzept oder einer bestimmten Sichtweise beruht. Es werden drei Arten konzeptioneller Modelle unterschieden: logisch-semantische, strukturell-funktionale und kausale Modelle.</p>
+<ul>
+  <li>Ein <em>logisch-semantisches Modell</em> beschreibt ein Objekt anhand der Begriffe und Definitionen der relevanten Fachgebiete und bezieht alle bekannten logisch konsistenten Aussagen und Fakten mit ein. Die Analyse dieser Modelle stützt sich auf logisches Schließen und das in den jeweiligen Fachgebieten angesammelte Wissen.</li>
+  <li>Ein <em>strukturell-funktionales Modell</em> behandelt das Objekt als integriertes System, das in einzelne Elemente oder Teilsysteme zerlegt wird. Die Komponenten sind durch strukturelle Beziehungen verbunden, die Unterordnung, logische Abfolge und zeitliche Reihenfolge der Aufgabenerfüllung festlegen. Zur Darstellung dieser Modelle werden üblicherweise Diagramme, Schaubilder und Karten verwendet.</li>
+  <li>Ein <em>kausales Modell</em> wird häufig zur Erklärung und Vorhersage des Verhaltens eines Objekts eingesetzt. Diese Modelle sind vor allem darauf ausgerichtet: (1) die wichtigsten Zusammenhänge zwischen den Bestandteilen des untersuchten Objekts zu identifizieren; (2) zu bestimmen, wie Veränderungen bestimmter Faktoren den Zustand der Modellkomponenten beeinflussen; (3) zu verstehen, wie das Modell als Ganzes funktionieren wird und ob es die Dynamik der für den Forscher interessierenden Parameter angemessen beschreibt.</li>
+</ul>
+<p>Ein <em>formales Modell</em> stellt ein konzeptionelles Modell mithilfe einer oder mehrerer formaler Sprachen dar, etwa mathematischer Theorien, spezieller Modellierungssprachen oder Programmiersprachen. In den Geisteswissenschaften endet die Modellierung häufig mit der Entwicklung eines konzeptionellen Modells, während in den Naturwissenschaften die Konstruktion eines formalen Modells in der Regel möglich ist.</p>
+<p>Obwohl die Bedeutung inhaltlicher und formaler Modelle in der Forschung allgemein anerkannt ist, wird die Rolle kognitiver Modelle aufgrund ihrer Subjektivität und der impliziten Natur der Denkprozesse häufig unterschätzt. Dennoch sind kognitive Modelle besonders bedeutsam in Zusammenhängen, in denen Operatoren oder Entscheidungsträger sich bei der Steuerung von Objekten oder Prozessen auf ihre eigenen mentalen Vorstellungen verlassen. Diese Art von Modell spielt auch in den Sozialwissenschaften eine wesentliche Rolle.</p>
+<p>Die mathematische Modellierung ist eine Form der wissenschaftlichen, symbolischen und formalen Modellierung, bei der Objekte mithilfe mathematischer Sprache beschrieben und mit mathematischen Methoden untersucht werden.</p>
+<p>Ein für die wissenschaftliche Forschung konzipiertes mathematisches Modell ermöglicht es, die Parameterwerte des modellierten Objekts oder Phänomens auf der Grundlage vorgegebener Eingangsdaten zu bestimmen. Somit besteht der Kern eines solchen Modells in der Abbildung von Eingangsparameterwerten auf Ausgangsparameterwerte. Aus dieser Perspektive kann ein mathematisches Modell als mathematischer Operator betrachtet werden, der im weiteren Sinne als Funktion, als durch algebraische, differentielle, integro-differentielle oder integrale Gleichungen dargestellte Abbildung, als Algorithmus, als Regelwerk oder als Tabellen definiert werden kann, die die Bestimmung der Ausgangsparameter aus den Eingangswerten ermöglichen.</p>
+<p>Die Definition eines mathematischen Modells über den Begriff des Operators ist im Hinblick auf den Aufbau einer Klassifikation solcher Modelle konstruktiver, da sie die gesamte Vielfalt der heute existierenden mathematischen Modelle umfasst.</p>
+<p><strong>Vorteile der mathematischen Modellierung gegenüber dem realen Experiment:</strong></p>
+<ul>
+  <li>Wirtschaftlichkeit (insbesondere Schonung der Ressourcen des realen Systems);</li>
+  <li>die Möglichkeit, hypothetische Objekte zu modellieren – also Objekte, die in der Natur nicht realisiert sind;</li>
+  <li>die Fähigkeit, Betriebsbedingungen zu simulieren, die in der Realität gefährlich oder schwer reproduzierbar sind;</li>
+  <li>die Möglichkeit, den Zeitmaßstab zu verändern;</li>
+  <li>die einfache Durchführbarkeit einer vielschichtigen Analyse;</li>
+  <li>eine größere Vorhersagekraft dank der Fähigkeit, allgemeine Gesetzmäßigkeiten zu erkennen;</li>
+  <li>die Universalität der eingesetzten Hard- und Software (Programmiersysteme und allgemeine Anwendungssoftwarepakete).</li>
+</ul>
+<p>Ein <em>Informationsmodell</em> ist ein Modell eines Objekts, das in Form von Informationen dargestellt wird, welche die für die jeweilige Analyse wesentlichen Parameter und Variablen, die Beziehungen zwischen ihnen sowie die Ein- und Ausgänge des Objekts beschreiben und es ermöglichen, mögliche Zustände des Objekts zu simulieren, indem Informationen über Änderungen der Eingangswerte in das Modell eingespeist werden.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Verwandte Artikel</h2>
+    <ul>
+      <li><a href="/de/model.html">Modell</a></li>
+      <li><a href="/de/modelling.html">Modellierung</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/de/">Startseite</a> <span aria-hidden="true">/</span>
+    <a href="/de/modelling.html">Modellierung</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Der Modellierungsprozess</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Design wechseln"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/modeling_process.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/de/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Design wechseln"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a37107830e7ba5ce',t:'MTc4ODczNDk5MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

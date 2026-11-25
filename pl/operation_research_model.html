@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Modele badań operacyjnych</title>
+<meta name="description" content="Konstruowanie modelu operacji jest kluczowym etapem badań operacyjnych. Operacja zostaje uproszczona i schematyzowana, a istotne czynniki zostają zidentyfikowane. Opisano standardowy model oraz klasyfikację problemów.">
+<meta name="keywords" content="Modelowanie,model,badania operacyjne,funkcja celu,programowanie,problemy,skuteczność,optymalny,matematyczny,systemy,analiza,rozwiązanie">
+<link rel="canonical" href="https://systems-analysis.info/pl/operation_research_model.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_model.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_model.html">
+<link rel="alternate" hreflang="pl" href="https://systems-analysis.info/pl/operation_research_model.html">
+<meta property="og:title" content="Modele badań operacyjnych">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/pl/operation_research_model.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Konstruowanie modelu operacji jest kluczowym etapem badań operacyjnych. Operacja zostaje uproszczona i schematyzowana, a istotne czynniki zostają zidentyfikowane. Opisano standardowy model oraz klasyfikację problemów.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="pl_PL">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/pl/operation_research_model.html#article",
+    "headline": "Modele badań operacyjnych",
+    "description": "Konstruowanie modelu operacji jest kluczowym etapem badań operacyjnych. Operacja zostaje uproszczona i schematyzowana, a istotne czynniki zostają zidentyfikowane. Opisano standardowy model oraz klasyfikację problemów.",
+    "url": "https://systems-analysis.info/pl/operation_research_model.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "pl",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/pl/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/pl/operation_research_model.html"
+    },
+    "keywords": [
+        "Modelowanie",
+        "model",
+        "badania operacyjne",
+        "funkcja celu",
+        "programowanie",
+        "problemy",
+        "skuteczność",
+        "optymalny",
+        "matematyczny",
+        "systemy",
+        "analiza",
+        "rozwiązanie"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "Modele badań operacyjnych",
+        "description": "A sufficiently precise mathematical description of an operation expressed through functions, equations, systems of equations, and inequalities.",
+        "sameAs": [
+            "https://systems-analysis.info/wiki/Модели_исследования_операций",
+            "https://systems-analysis.info/eng/Operations_research_models"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Strona główna",
+            "item": "https://systems-analysis.info/pl/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Badania operacyjne",
+            "item": "https://systems-analysis.info/pl/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Modele badań operacyjnych"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Nawigacja główna">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/pl/">Strona główna</a>
+        <span aria-hidden="true">·</span>
+        <a href="/pl/sections.html">Działy</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/pl/books.html">Książki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/pl/catalog.html">Katalog</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_model.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Zmień motyw"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Zmień krój pisma"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Modele badań operacyjnych</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Aby zastosować ilościowe metody badawcze, konieczne jest zbudowanie modelu matematycznego operacji. Przy budowie modelu operacja jest zazwyczaj upraszczana i schematyzowana, a powstały schemat opisywany jest za pomocą narzędzi matematycznych. Model operacji to wystarczająco precyzyjny opis matematyczny operacji, wyrażony za pomocą funkcji, równań, układów równań i nierówności. Skuteczność operacji to stopień, w jakim osiąga ona swój cel.</p>
+
+<h2>Ogólne sformułowanie problemu badań operacyjnych</h2>
+
+<p>W badaniach operacyjnych sytuacja decyzyjna obejmuje cele i decyzje. Decyzje podejmowane są w celu osiągnięcia celu. Sytuacja decyzyjna opisywana jest przez model. Model zawiera miarę skuteczności, dzięki której określa się, jak blisko celu znajduje się dana decyzja. Miara skuteczności zależy od czynników wpływających na operację. Wszystkie czynniki uwzględnione w opisie operacji można podzielić na dwie grupy: czynniki stałe, na które nie można wpływać, oraz czynniki sterowalne.</p>
+
+<p>Elementy pojęciowe modelu przedstawiane są jako „czarna skrzynka”, w której główny nacisk kładzie się na określenie wejść i wyjść. Wejścia to to, co model przetwarza; wyjścia to to, co model wytwarza. Zmienne sterowalne i niesterowalne podawane są jako wejścia. Wyjściem jest kryterium skuteczności. Model zawiera jawną miarę skuteczności, dzięki której określa się, jak blisko celu znajduje się dana decyzja. Przy budowie modelu ważne jest określenie, w jaki sposób parametry wejściowe wpłyną na przyjętą miarę.</p>
+
+<p>Kryterium skuteczności, wyrażone pewną funkcją zwaną funkcją celu, zależy od czynników obu grup. Matematyczne wyrażenie kryterium skuteczności nazywane jest funkcją celu. Funkcja celu to matematycznie sformułowana (sformalizowana) miara skuteczności, którą należy maksymalizować lub minimalizować.</p>
+
+<p>Zmienne sterowalne to parametry zarządzane przez decydenta.</p>
+
+<p>Zmienne niesterowalne to czynniki zewnętrzne, których menedżer nie może kontrolować, ale które są istotne dla osiągnięcia celów.</p>
+
+<p>Kryterium skuteczności, czyli funkcja celu, jest funkcją zmiennych decyzyjnych wyrażającą stopień zbliżenia do celu.</p>
+
+<p>Definicja modelu matematycznego: model matematyczny rozumiany jest jako dowolny operator, który dla odpowiednich wartości parametrów wejściowych ustala wartości wyjściowe parametrów modelowanego obiektu w zbiorze dopuszczalnych wartości parametrów wejściowych i wyjściowych dla modelowanego obiektu.</p>
+
+<h2>Modele badań operacyjnych a podejmowanie decyzji</h2>
+
+<p>Badania operacyjne ukierunkowane są na ilościowe uzasadnienie racjonalnego podejmowania decyzji. Modele te ściśle przecinają się z dużą klasą problemów teorii decyzji oraz problemów optymalizacyjnych.</p>
+
+<p>Przy opracowywaniu modelu badań operacyjnych konieczne jest udzielenie odpowiedzi na następujące pytania:</p>
+<ul>
+<li>co w danym konkretnym przypadku należy uznać za alternatywne rozwiązania?</li>
+<li>według jakiego kryterium wybierane są alternatywne rozwiązania?</li>
+<li>jakie ograniczenia muszą spełniać rozwiązania dopuszczalne?</li>
+</ul>
+
+<p>Standardowy model matematyczny badań operacyjnych przedstawiany jest w następującym sformułowaniu: maksymalizacja lub minimalizacja funkcji celu przy spełnieniu ograniczeń.</p>
+
+<p>Przy wyborze rozwiązania preferowane jest to, które maksymalizuje lub minimalizuje funkcję celu. Przykładami maksymalizacji funkcji celu są zysk i produktywność. Minimalizacja funkcji celu może dotyczyć kosztów, wydatków, czasu itd. Wybór kryterium skuteczności jest centralnym, najważniejszym momentem badania. Znacznie lepiej jest znaleźć rozwiązanie nieoptymalne dla poprawnie dobranego kryterium niż rozwiązanie optymalne dla niewłaściwie dobranego kryterium.</p>
+
+<p>Rozwiązanie dopuszczalne to takie, które spełnia wszystkie ograniczenia modelu. Rozwiązań dopuszczalnych może być nieskończenie wiele.</p>
+
+<p>Rozwiązanie optymalne to takie, które oprócz bycia dopuszczalnym, powoduje osiągnięcie przez funkcję celu wartości maksymalnej lub minimalnej.</p>
+
+<p>Rozwiązania nazywane są optymalnymi, jeśli pod tym czy innym względem są preferowane względem innych. Każdy wybór najlepszej alternatywy jest konkretny, ponieważ opiera się na zgodności z ustalonymi kryteriami. Mówiąc o alternatywie optymalnej, precyzuje się te kryteria („optymalna względem…”). To, co jest optymalne według jednego kryterium, niekoniecznie jest takie według innego.</p>
+
+<p>Ograniczenie to wyrażenie matematyczne w postaci nierówności lub równości, które muszą spełniać zmienne modelu.</p>
+
+<p>Ograniczenia zawężają zbiór rozwiązań dopuszczalnych. W niektórych przypadkach przy danych ograniczeniach może w ogóle nie istnieć rozwiązanie optymalne. Oznacza to, że jakość ostatecznej decyzji, podjętej na podstawie rozwiązania problemu, zależy od tego, jak trafnie model odzwierciedla rzeczywistą sytuację, którą formalnie opisuje za pomocą ograniczeń. Do ograniczeń należą limity, ładowność pojazdów, planowana wielkość zadania, charakterystyki wagowe sprzętu, ograniczenia zasobów itd.</p>
+
+<p>Gdy konfiguracja ograniczeń ulega zmianie, najlepszym może stać się inne rozwiązanie. W realnym świecie ograniczenia mogą mieć charakter fizyczny, ekonomiczny lub polityczny i niekoniecznie poddają się formalizacji. Konkretne rozwiązanie będzie najlepsze wyłącznie dla danego modelu, przy ustalonym systemie ograniczeń. Im dokładniej model odzwierciedla sytuację, tym bliższe optymalnemu jest rozwiązanie problemu.</p>
+
+<h2>Klasyfikacja modeli badań operacyjnych</h2>
+
+<p>Wszystkie modele badań operacyjnych można klasyfikować w zależności od charakteru i właściwości operacji, charakteru rozwiązywanych problemów oraz stosowanych metod matematycznych:</p>
+<ul>
+<li>Jeśli kryterium skuteczności jest funkcją liniową, a funkcje w układzie ograniczeń są również liniowe, to problem jest problemem programowania liniowego.</li>
+<li>Jeśli ze względu na swój sens merytoryczny jego rozwiązania muszą być liczbami całkowitymi, to jest to problem programowania liniowego całkowitoliczbowego.</li>
+<li>Jeśli kryterium skuteczności i/lub układ ograniczeń są określone funkcjami nieliniowymi, mamy do czynienia z problemem programowania nieliniowego. W szczególności, jeśli wskazane funkcje posiadają właściwości wypukłości, powstały problem jest problemem programowania wypukłego.</li>
+<li>Jeśli problem programowania matematycznego zawiera zmienną czasową, a kryterium skuteczności wyrażone jest nie wprost jako funkcja zmiennych, lecz pośrednio — poprzez równania opisujące przebieg operacji w czasie, to problem jest problemem programowania dynamicznego.</li>
+<li>Jeśli algorytmiczne znalezienie dokładnego optimum jest niemożliwe ze względu na zbyt dużą liczbę wariantów rozwiązań, wówczas stosuje się metody programowania heurystycznego, które pozwalają znacząco zmniejszyć liczbę rozpatrywanych wariantów i znaleźć, jeśli nie optymalne, to wystarczająco dobre rozwiązanie, satysfakcjonujące z praktycznego punktu widzenia.</li>
+</ul>
+
+<p>Ze względu na merytoryczne sformułowanie, wielość innych typowych problemów badań operacyjnych można podzielić na kilka klas:</p>
+<ul>
+<li>Problemy harmonogramowania projektów (PERT/CPM) badają zależności między terminami zakończenia dużego złożonego kompleksu operacji (zadań) a momentami rozpoczęcia wszystkich operacji w tym kompleksie. Problemy te polegają na znalezieniu minimalnego czasu trwania kompleksu operacji oraz optymalnej zależności między kosztami a terminami zakończenia.</li>
+<li>Problemy kolejek poświęcone są badaniu i analizie systemów obsługi z kolejkami zgłoszeń lub żądań i polegają na wyznaczeniu miar wydajności systemów oraz ich optymalnych charakterystyk — na przykład wyznaczeniu liczby kanałów obsługi, czasu obsługi itp.</li>
+<li>Problemy zarządzania zapasami polegają na znalezieniu optymalnych wartości poziomu zapasów (punktu ponownego zamówienia) i wielkości zamówienia. Cechą charakterystyczną takich problemów jest to, że wraz ze wzrostem poziomu zapasów, z jednej strony rosną koszty magazynowania, a z drugiej strony maleją straty wynikające z możliwych braków przechowywanego towaru.</li>
+<li>Problemy alokacji zasobów pojawiają się, gdy istnieje pewien zbiór operacji (zadań), które muszą zostać wykonane przy ograniczonych dostępnych zasobach, i konieczne jest znalezienie optymalnego rozdziału zasobów pomiędzy operacje lub optymalnego składu operacji.</li>
+<li>Problemy konserwacji i wymiany są istotne w związku ze zużyciem i starzeniem się sprzętu oraz koniecznością jego wymiany.</li>
+<li>Wśród modeli badań operacyjnych szczególnie wyróżnia się modele podejmowania optymalnych decyzji w sytuacjach konfliktowych, badane przez teorię gier. Sytuacje konfliktowe, w których zderzają się interesy dwóch (lub więcej) stron dążących do różnych celów, obejmują szereg sytuacji z zakresu ekonomii, prawa, spraw wojskowych itp. W problemach teorii gier konieczne jest opracowanie zaleceń dotyczących racjonalnego zachowania uczestników konfliktu oraz określenie ich optymalnych strategii.</li>
+</ul>
+
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div class="links">
+    <div class="links-section">
+      <h2>Badania operacyjne</h2>
+      <ul>
+        <li><a href="/pl/operation_research_caa.html">Badania operacyjne: Churchman, Ackoff i Arnoff</a></li>
+        <li><a href="/pl/operation_research_as.html">Podstawy badań operacyjnych: Ackoff i Sasieni</a></li>
+        <li><a href="/pl/operation_research_me.html">Badania operacyjne: Moder i Elmaghraby</a></li>
+        <li><a href="/pl/operation_research_vg.html">Badania operacyjne: Wagner</a></li>
+        <li><a href="/pl/operation_research_gv.html">Badania operacyjne: Gwiszjani</a></li>
+        <li><a href="/pl/operation_research_ve.html">Badania operacyjne: Wentzel</a></li>
+        <li><a href="/pl/methodology_or.html">Metodologia badań operacyjnych</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="breadcrumbs" aria-label="Ścieżka nawigacji">
+    <a href="/pl/">Strona główna</a> <span aria-hidden="true">/</span>
+    <a href="/pl/operation_research.html">Badania operacyjne</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Modele badań operacyjnych</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Zmień motyw"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_model.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/pl/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Zmień motyw"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710b623f74a5ce',t:'MTc4ODczNTE1MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

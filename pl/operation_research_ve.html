@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Badania operacyjne: Wentzel</title>
+<meta name="description" content="Operacja to przedsięwzięcie zjednoczone jednym planem i ukierunkowane na osiągnięcie celu. Opisano fundamentalne pojęcia badań operacyjnych według E.S. Wentzel: decyzja, skuteczność, kryterium optymalności.">
+<meta name="keywords" content="Badania operacyjne,Wentzel,rozwiązanie modelu,optymalizacja,statystyka,matematyczne,problemy,wybór,analiza systemowa">
+<link rel="canonical" href="https://systems-analysis.info/pl/operation_research_ve.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_ve.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_ve.html">
+<link rel="alternate" hreflang="pl" href="https://systems-analysis.info/pl/operation_research_ve.html">
+<meta property="og:title" content="Badania operacyjne: Wentzel">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/pl/operation_research_ve.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Operacja to przedsięwzięcie zjednoczone jednym planem i ukierunkowane na osiągnięcie celu. Opisano fundamentalne pojęcia badań operacyjnych według E.S. Wentzel: decyzja, skuteczność, kryterium optymalności.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="pl_PL">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/pl/operation_research_ve.html#article",
+    "headline": "Badania operacyjne: Wentzel",
+    "description": "Operacja to przedsięwzięcie zjednoczone jednym planem i ukierunkowane na osiągnięcie celu. Opisano fundamentalne pojęcia badań operacyjnych według E.S. Wentzel: decyzja, skuteczność, kryterium optymalności.",
+    "url": "https://systems-analysis.info/pl/operation_research_ve.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "pl",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/pl/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/pl/operation_research_ve.html"
+    },
+    "keywords": [
+        "Badania operacyjne",
+        "Wentzel",
+        "rozwiązanie modelu",
+        "optymalizacja",
+        "statystyka",
+        "matematyczne",
+        "problemy",
+        "wybór",
+        "analiza systemowa"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Operations Research",
+        "author": {
+            "@type": "Person",
+            "name": "Wentzel E.S."
+        },
+        "datePublished": "1972",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Sovetskoye Radio"
+        },
+        "inLanguage": "pl"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Operations Research",
+        "author": {
+            "@type": "Person",
+            "name": "Wentzel E.S."
+        },
+        "datePublished": "1972",
+        "inLanguage": "pl"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Strona główna",
+            "item": "https://systems-analysis.info/pl/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Badania operacyjne",
+            "item": "https://systems-analysis.info/pl/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Badania operacyjne: Wentzel"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Nawigacja główna">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/pl/">Strona główna</a>
+        <span aria-hidden="true">·</span>
+        <a href="/pl/sections.html">Działy</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/pl/books.html">Książki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/pl/catalog.html">Katalog</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_ve.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Zmień motyw"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Zmień krój pisma"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Badania operacyjne: Wentzel</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Badania operacyjne zdobywają w ostatnich latach coraz szerszy zakres zastosowań. Nauka ta należy do dyscyplin stosunkowo młodych, powstałych niedawno; jej granice i treść nie są jasno określone.</p>
+<p>Badania operacyjne są wykładane na wielu uczelniach, jednak treść przypisywana temu terminowi jest dalece niejednolita. Niektórzy autorzy rozumieją przez „badania operacyjne” przede wszystkim matematyczne metody optymalizacji, takie jak programowanie liniowe, nieliniowe i dynamiczne. Inni, przeciwnie, nie zaliczają tych działów matematyki do badań operacyjnych, podchodząc do nich głównie z pozycji teorii gier i statystycznej teorii decyzji. Niektórzy skłonni są w ogóle zaprzeczać istnieniu „badań operacyjnych” jako samodzielnej dyscypliny naukowej, włączając je do cybernetyki (termin ten również jest niewystarczająco określony i różnie rozumiany przez różnych ludzi). Inni z kolei nadają pojęciu „badania operacyjne” zbyt szerokie znaczenie, ogłaszając tę dyscyplinę wszechogarniającą „nauką nauk”.</p>
+<p>Czas pokaże, w jakich formach ta stosunkowo młoda nauka będzie się dalej rozwijać, które działy zachowa, a które „odłączą się” jako samodzielne dyscypliny naukowe. W szczególności niejasny pozostaje przyszły stosunek między „badaniami operacyjnymi” a „teorią systemów” (lub „teorią systemów złożonych”), o czym ostatnio wiele się mówi i pisze. W każdym razie niewątpliwie prawdą jest, że w najróżniejszych dziedzinach praktyki — organizacji produkcji i zaopatrzenia, operacji transportowych, działań wojskowych i uzbrojenia, rozmieszczenia personelu, obsługi konsumentów, ochrony zdrowia, łączności, informatyki i tak dalej — coraz częściej pojawiają się problemy podobne do siebie pod względem sformułowania, posiadające szereg wspólnych cech i rozwiązywane podobnymi metodami, które wygodnie jest grupować pod wspólną nazwą „problemów badań operacyjnych”.</p>
+<p>Typowa sytuacja przedstawia się następująco: organizowany jest w taki czy inny sposób pewien celowy tok działania — to znaczy można podjąć pewną „decyzję” spośród szeregu możliwych alternatyw. Każda alternatywa ma zalety i wady, a ze względu na złożoność sytuacji nie od razu jest jasne, która jest lepsza (bardziej preferowana) i dlaczego. Aby wyjaśnić sytuację i porównać alternatywy decyzyjne według zestawu kryteriów, przeprowadza się serię obliczeń matematycznych. Ich zadaniem jest pomóc osobom odpowiedzialnym za wybór decyzji w przeprowadzeniu krytycznej analizy sytuacji i, ostatecznie, w zdecydowaniu się na jedną lub drugą alternatywę.</p>
+<p>W naszych czasach, słusznie nazywanych erą rewolucji naukowo-technicznej, nauka poświęca coraz więcej uwagi zagadnieniom organizacji i zarządzania. Istnieje wiele przyczyn tego stanu rzeczy. Szybki rozwój i rosnąca złożoność techniki, bezprecedensowe zwiększenie skali przedsięwzięć oraz zakresu ich możliwych konsekwencji, wprowadzanie zautomatyzowanych systemów sterowania we wszystkich dziedzinach praktyki — wszystko to wymaga analizy złożonych procesów celowych z punktu widzenia ich struktury i organizacji. Nauka jest powołana do dostarczania zaleceń dotyczących optymalnego (racjonalnego) zarządzania takimi procesami. Minęły czasy, gdy prawidłowe, skuteczne zarządzanie odnajdywano „na wyczucie”, metodą prób i błędów. Dziś opracowanie takiego zarządzania wymaga podejścia naukowego — straty związane z błędami są zbyt duże.</p>
+<p>Potrzeby praktyki dały początek specjalnym metodom naukowym, które wygodnie jest grupować pod nazwą „badania operacyjne”. Przez ten termin będziemy rozumieć zastosowanie matematycznych, ilościowych metod do uzasadniania decyzji we wszystkich dziedzinach celowej działalności człowieka.</p>
+<p>Wyjaśnijmy, co rozumiemy przez „decyzję”. Załóżmy, że realizowane jest pewne przedsięwzięcie, ukierunkowane na osiągnięcie określonego celu. Osoba (lub grupa osób) organizująca to przedsięwzięcie zawsze ma pewną swobodę wyboru: może je zorganizować w taki lub inny sposób — na przykład może wybrać rodzaje stosowanego sprzętu, rozdzielić dostępne zasoby w ten czy inny sposób i tak dalej. „Decyzja” to właśnie pewien wybór spośród zakresu możliwości dostępnych organizatorowi. Decyzje mogą być słabe lub dobre, przemyślane lub pochopne, uzasadnione lub arbitralne.</p>
+<p>Badania operacyjne zaczynają się tam, gdzie do uzasadniania decyzji stosuje się metody matematyczne. Do pewnego momentu decyzje w każdej dziedzinie praktyki są podejmowane bez specjalnych obliczeń matematycznych, po prostu na podstawie doświadczenia i zdrowego rozsądku. Istnieją jednak decyzje o znacznie większej doniosłości. Załóżmy na przykład, że w nowym mieście, z siecią przedsiębiorstw, dzielnic mieszkalnych i tak dalej, organizowany jest transport publiczny. Trzeba podjąć szereg decyzji: jakimi trasami i jakimi środkami transportu należy je kierować? W których punktach należy umieścić przystanki? Jak dostosować częstotliwość obsługi w zależności od pory dnia? I tak dalej.</p>
+<p>Decyzje tego typu są znacznie bardziej złożone, a co najważniejsze, zależy od nich bardzo wiele. Niewłaściwy wybór może wpłynąć na całe życie robocze miasta. Oczywiście i w tym przypadku można działać intuicyjnie przy wyborze decyzji, opierając się na doświadczeniu i zdrowym rozsądku (i rzeczywiście robi się tak często). Jednak decyzje będą znacznie bardziej racjonalne, jeśli zostaną poparte obliczeniami matematycznymi. Te wstępne obliczenia pomogą uniknąć długiego i kosztownego poszukiwania właściwej decyzji „na wyczucie”.</p>
+<p>Im bardziej złożone, kosztowne i zakrojone na szeroką skalę jest planowane przedsięwzięcie, tym mniej dopuszczalne są arbitralne decyzje i tym ważniejsze stają się naukowe metody, które pozwalają z góry ocenić konsekwencje każdej decyzji, odrzucić z góry alternatywy niedopuszczalne i zalecić najbardziej udane; określić, czy dostępne nam informacje są wystarczające dla prawidłowego wyboru decyzji, a jeśli nie — jakie dodatkowe informacje należy pozyskać. W takich przypadkach zbyt niebezpieczne jest poleganie na intuicji, na „doświadczeniu i zdrowym rozsądku”. W naszej erze rewolucji naukowo-technicznej technika i metody zmieniają się tak szybko, że „doświadczenie” po prostu nie zdąża się nagromadzić. Ponadto często mamy do czynienia z unikatowymi przedsięwzięciami realizowanymi po raz pierwszy. W takich przypadkach „doświadczenie” milczy, a „zdrowy rozsądek” łatwo może zostać zwiedziony, jeśli nie jest oparty na obliczeniach. To właśnie takimi obliczeniami, pomagającymi ludziom podejmować decyzje, zajmują się badania operacyjne.</p>
+<p>Operacja to dowolne przedsięwzięcie (system działań), zjednoczone jednym planem i ukierunkowane na osiągnięcie pewnego celu. Operacja jest zawsze przedsięwzięciem sterowanym — to znaczy od nas zależy, jak wybrać pewne parametry charakteryzujące jej organizację. „Organizacja” jest tu rozumiana w szerokim znaczeniu tego słowa, obejmującym zestaw środków technicznych stosowanych w operacji.</p>
+<p>Każdy konkretny wybór parametrów, które od nas zależą, nazywany jest decyzją. Decyzje mogą być udane lub nieudane, racjonalne lub nieracjonalne. Decyzje nazywa się optymalnymi, jeśli pod jakimś względem są bardziej preferowane od innych. Celem badań operacyjnych jest zapewnienie ilościowego wsparcia dla wyboru optymalnych decyzji.</p>
+<p>Czasami (stosunkowo rzadko) badanie daje jedną ściśle optymalną decyzję; znacznie częściej wyłania ono zakres praktycznie równoważnych optymalnych (racjonalnych) decyzji, w ramach którego można dokonać ostatecznego wyboru.</p>
+<p>Należy zauważyć, że samo podjęcie decyzji leży poza zakresem badań operacyjnych i wchodzi w kompetencje osoby odpowiedzialnej, a częściej grupy osób, którym przysługuje prawo ostatecznego wyboru i które ponoszą odpowiedzialność za ten wybór. Dokonując wyboru, mogą one uwzględnić, obok zaleceń wynikających z obliczeń matematycznych, szereg dodatkowych względów (zarówno ilościowych, jak i jakościowych), które nie zostały uwzględnione w obliczeniach.</p>
+<p>Niezbędna obecność człowieka (jako ostatecznej instancji podejmującej decyzję) nie zostaje zniesiona nawet w przypadku w pełni zautomatyzowanego systemu sterowania, który zdawałby się podejmować decyzje bez udziału człowieka. Nie należy zapominać, że samo utworzenie algorytmu sterowania, wybór jednego z jego możliwych wariantów, jest samo w sobie decyzją — i to decyzją o dużej doniosłości.</p>
+<p>Parametry, których całość tworzy decyzję, nazywane są zmiennymi decyzyjnymi. Jako zmienne decyzyjne mogą występować różne liczby, wektory, funkcje, cechy fizyczne i tak dalej. W najprostszych problemach badań operacyjnych liczba zmiennych decyzyjnych może być stosunkowo niewielka. Jednak w większości problemów o znaczeniu praktycznym liczba zmiennych decyzyjnych jest bardzo duża.</p>
+<p>Oprócz zmiennych decyzyjnych, którymi możemy dysponować w pewnych granicach, każdy problem badań operacyjnych zawiera również dane, „dyscyplinujące” warunki, ustalone od samego początku i niepodlegające naruszeniu (na przykład ładowność pojazdu, wielkość planowanego zadania, charakterystyki wagowe sprzętu i tym podobne). W szczególności do takich warunków zaliczają się zasoby (materiałowe, techniczne, ludzkie), którymi mamy prawo dysponować, oraz inne ograniczenia narzucone na decyzję. Wzięte razem tworzą one tak zwany „zbiór dopuszczalny”.</p>
+<p>Aby porównać ze sobą różne decyzje pod względem skuteczności, potrzebne jest pewne kryterium ilościowe, tak zwana miara skuteczności (często nazywana „funkcją celu”). Miarę tę dobiera się tak, aby odzwierciedlała celowość operacji. Za „najlepszą” decyzję uznana zostanie ta, która w największym stopniu przyczynia się do osiągnięcia założonego celu. Aby wybrać, „nazwać” miarę skuteczności W, trzeba najpierw zadać sobie pytanie: czego chcemy, do czego dążymy, podejmując operację? Wybierając decyzję, naturalnie preferujemy tę, która sprawia, że miara skuteczności W osiąga maksimum (lub minimum). Na przykład chciałoby się zmaksymalizować dochód z operacji; jeśli miarą skuteczności są koszty, chciałoby się je zminimalizować.</p>
+<p>Bardzo często przebiegowi operacji towarzyszy działanie czynników losowych. W takich przypadkach za miarę skuteczności przyjmuje się zazwyczaj nie samą wielkość, którą chcielibyśmy zmaksymalizować (zminimalizować), lecz jej wartość średnią (wartość oczekiwaną).</p>
+<p>W niektórych przypadkach operacja, której towarzyszą czynniki losowe, realizuje dość konkretny cel, który może zostać albo w pełni osiągnięty, albo w ogóle nieosiągnięty (schemat „tak–nie”), a wyniki pośrednie nie są interesujące. W takich przypadkach jako miarę skuteczności wybiera się prawdopodobieństwo osiągnięcia tego celu. Na przykład, jeśli ogień jest kierowany na jakiś cel z obowiązkowym warunkiem jego zniszczenia, to miarą skuteczności będzie prawdopodobieństwo zniszczenia celu.</p>
+<p>Niewłaściwy wybór miary skuteczności jest bardzo niebezpieczny. Operacje zorganizowane z pozycji źle dobranego kryterium mogą prowadzić do nieuzasadnionych wydatków i strat. Niestety, w większości problemów o znaczeniu praktycznym wybór miary skuteczności nie jest prosty i bywa rozstrzygany niejednoznacznie. Dla każdego dostatecznie złożonego problemu typowe jest, że skuteczności operacji nie da się wyczerpująco scharakteryzować jedną liczbą — trzeba wprowadzić inne miary, które ją uzupełniają.</p>
+<p>Aby zastosować ilościowe metody badawcze w dowolnej dziedzinie, zawsze potrzebny jest jakiś model matematyczny. Przy budowie modelu rzeczywiste zjawisko (w naszym przypadku — operacja) jest nieuchronnie upraszczane i schematyzowane, a ten schemat (schematyczne przedstawienie zjawiska) opisywany jest za pomocą narzędzi matematycznych. Im trafniej dobrany zostanie model matematyczny, im lepiej odzwierciedla on charakterystyczne cechy zjawiska, tym bardziej udane będzie badanie i tym bardziej użyteczne będą wynikające z niego zalecenia.</p>
+<p>Nie ma ogólnych metod budowy modeli matematycznych. W każdym konkretnym przypadku model dobiera się na podstawie rodzaju operacji, jej celowości, a także z uwzględnieniem zadania badawczego (jakie parametry trzeba określić i wpływ jakich czynników trzeba odzwierciedlić). W każdym konkretnym przypadku należy również zrównoważyć precyzję i szczegółowość modelu z: (a) precyzją, z jaką musimy znać rozwiązanie, oraz (b) informacjami, które posiadamy lub możemy pozyskać. Jeśli dane wyjściowe potrzebne do obliczeń są znane niedokładnie, to oczywiście nie ma sensu wdawać się w subtelności, budować bardzo szczegółowego modelu i tracić czas (własny i komputera) na drobiazgową i precyzyjną optymalizację rozwiązania. Niestety, zasada ta jest często lekceważona i do opisu zjawisk dobiera się nadmiernie szczegółowe modele.</p>
+<p>Model matematyczny musi odzwierciedlać najważniejsze cechy zjawiska, wszystkie istotne czynniki, od których zasadniczo zależy powodzenie operacji. Jednocześnie model powinien być możliwie jak najprostszy, nie „zaśmiecony” mnóstwem drugorzędnych, pobocznych czynników: ich uwzględnianie komplikuje analizę matematyczną i utrudnia ogarnięcie wyników badania. Na budowniczego modelu zawsze czyhają dwa niebezpieczeństwa: pierwsze to zagubienie się w szczegółach („nie widzieć lasu z powodu drzew”), a drugie — nadmierne uproszczenie zjawiska („wylać dziecko z kąpielą”). Sztuka budowania modeli matematycznych to rzeczywiście sztuka, a doświadczenie w niej zdobywa się stopniowo.</p>
+<p>Ponieważ model matematyczny nie wynika w sposób konieczny z opisu problemu, zawsze warto nie ufać ślepo żadnemu pojedynczemu modelowi, lecz porównywać wyniki uzyskane z różnych modeli, urządzając swego rodzaju „konkurs modeli”. W tym procesie ten sam problem rozwiązuje się nie raz, lecz kilkakrotnie, stosując różne układy założeń, różny aparat i różne modele. Jeśli wnioski naukowe zmieniają się nieznacznie od modelu do modelu, jest to mocny argument przemawiający za obiektywnością badania. Jeśli natomiast rozbieżności są znaczne, trzeba na nowo rozważyć koncepcje leżące u podstaw poszczególnych modeli, ustalić, który z nich jest bardziej adekwatny do rzeczywistości, i w razie potrzeby przeprowadzić eksperyment kontrolny. Charakterystyczne dla badań operacyjnych jest również wielokrotne powracanie do modelu (po przeprowadzeniu już pierwszej serii obliczeń) w celu wprowadzenia do niego poprawek.</p>
+<p>Stworzenie modelu matematycznego to najważniejsza i najbardziej odpowiedzialna część badania, wymagająca głębokiej wiedzy nie tyle z matematyki, ile z istoty modelowanych zjawisk. Z reguły „czyści” matematycy (bez pomocy specjalistów z dziedziny, do której należy problem) słabo radzą sobie z budową modeli. Ich uwaga skupia się na narzędziach matematycznych i ich subtelnościach, a nie na rzeczywistym problemie praktycznym.</p>
+<p>Doświadczenie pokazuje, że najbardziej udane modele tworzą specjaliści z danej dziedziny praktyki, którzy oprócz podstawowego wykształcenia otrzymali głębokie przygotowanie matematyczne, albo zespoły łączące praktyków i matematyków. Wielką korzyść przynoszą konsultacje udzielane przez matematyka dobrze zaznajomionego z badaniami operacyjnymi praktykom — inżynierom, biologom, lekarzom i innym — którzy w swojej pracy napotykają potrzebę naukowego uzasadnienia decyzji.</p>
+<p>Trzeba szczególnie podkreślić, że niezbędna jest znajomość teorii prawdopodobieństwa — nie tyle rozległa i głęboka, ile nieformalna i praktyczna, wraz z nawykiem pracy z danymi statystycznymi i pojęciami probabilistycznymi. Szczególne wymagania właśnie w tej dziedzinie wiedzy matematycznej tłumaczy się tym, że większość operacji prowadzona jest w warunkach niepełnej pewności, a ich przebieg i wynik zależą od czynników losowych. Niestety, wśród szerokich kręgów specjalistów — inżynierów, biologów, lekarzy, chemików — dobra znajomość teorii prawdopodobieństwa spotykana jest rzadko. Jej twierdzenia i reguły są często stosowane formalnie, bez rzeczywistego zrozumienia ich sensu i ducha. Niejednokrotnie teoria prawdopodobieństwa jest postrzegana jako pewnego rodzaju „czarodziejska różdżka”, pozwalająca uzyskać informację „z niczego”, z całkowitej niewiedzy. Jest to błędne przekonanie: teoria prawdopodobieństwa pozwala jedynie przekształcać informację — to znaczy na podstawie danych o pewnych zjawiskach dostępnych obserwacji wyciągać wnioski o innych, niedostępnych.</p>
+<p>Przy budowie modelu matematycznego można stosować narzędzia matematyczne różnej złożoności (w zależności od rodzaju operacji, zadań badawczych i precyzji danych wyjściowych). W najprostszych przypadkach zjawisko opisuje się prostymi równaniami algebraicznymi. W bardziej złożonych przypadkach, gdy konieczne jest zbadanie zjawiska w jego dynamice, stosuje się metody równań różniczkowych (zwyczajnych lub cząstkowych). W przypadkach najbardziej złożonych, gdy rozwój operacji i jej wynik zależą od dużej liczby splecionych ze sobą czynników losowych, metody analityczne zawodzą całkowicie i stosuje się metodę modelowania statystycznego (Monte Carlo).</p>
+<p>W pierwszym, zgrubnym przybliżeniu ideę tej metody można opisać następująco: przebieg rozwoju operacji, wraz z towarzyszącą mu losowością, zostaje w istocie „skopiowany”, odtworzony na komputerze. Wynikiem jest pojedynczy egzemplarz („realizacja”) procesu losowego rozwoju operacji o losowym przebiegu i wyniku. Pojedyncza taka realizacja sama w sobie nie daje podstaw do wyboru decyzji, ale mając wiele takich realizacji, przetwarzamy je jak zwykły materiał statystyczny (stąd termin „modelowanie statystyczne”), znajdujemy średnie charakterystyki procesu i zyskujemy zrozumienie, jak — średnio biorąc — warunki zadania i zmienne decyzyjne na nie wpływają.</p>
+<p>W badaniach operacyjnych szeroko stosuje się zarówno modele analityczne, jak i statystyczne. Każdy z tych typów ma swoje zalety i wady. Modele analityczne są bardziej zgrubne, uwzględniają mniej czynników i zawsze wymagają pewnych założeń i uproszczeń. Z drugiej strony, wyniki obliczeń są łatwiejsze do ogarnięcia i wyraźniej odzwierciedlają podstawowe prawidłowości właściwe danemu zjawisku. A co najważniejsze, modele analityczne lepiej nadają się do poszukiwania rozwiązań optymalnych.</p>
+<p>Modele statystyczne, w porównaniu z analitycznymi, są bardziej precyzyjne i szczegółowe, nie wymagają tak zgrubnych założeń i pozwalają uwzględnić dużą (teoretycznie nieograniczoną) liczbę czynników. Mają jednak i swoje wady: nieporęczność, słabą ogarniętość i, co najważniejsze, ogromną trudność w poszukiwaniu rozwiązań optymalnych, których trzeba szukać „na wyczucie”, metodą domysłów i prób.</p>
+<p>Najlepsze prace z dziedziny badań operacyjnych opierają się na łącznym stosowaniu modeli analitycznych i statystycznych. Model analityczny pozwala uzyskać ogólne zrozumienie zjawiska, naszkicować niejako „zarys” podstawowych prawidłowości. Wszelkie doprecyzowania można uzyskać za pomocą modeli statystycznych.</p>
+<p>Na zakończenie powiedzmy kilka słów o tak zwanym modelowaniu „symulacyjnym”. Stosuje się je do procesów, w których przebieg może od czasu do czasu ingerować wola człowieka. Osoba (lub grupa osób) kierująca operacją może, w zależności od zaistniałej sytuacji, podjąć taką lub inną decyzję — podobnie jak szachista, patrząc na szachownicę, wybiera swój kolejny ruch. Następnie uruchamiany jest model matematyczny, pokazujący, jakiej zmiany sytuacji można oczekiwać w odpowiedzi na tę decyzję i do jakich konsekwencji doprowadzi ona po pewnym czasie. Kolejna „bieżąca decyzja” podejmowana jest z uwzględnieniem już nowej, faktycznej sytuacji, i tak dalej. W wyniku wielokrotnego stosowania tej procedury kierownik w istocie „zdobywa doświadczenie”, uczy się na własnych i cudzych błędach i stopniowo uczy się podejmować decyzje prawidłowe — jeśli nie optymalne, to bliskie optymalnym.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div class="links">
+    <div class="links-section">
+      <h2>Badania operacyjne</h2>
+      <ul>
+        <li><a href="/pl/operation_research.html">Badania operacyjne</a></li>
+        <li><a href="/pl/operation_research_caa.html">Badania operacyjne: Churchman, Ackoff i Arnoff</a></li>
+        <li><a href="/pl/operation_research_as.html">Podstawy badań operacyjnych. Ackoff, Sasieni</a></li>
+        <li><a href="/pl/operation_research_me.html">Badania operacyjne: Moder i Elmaghraby</a></li>
+        <li><a href="/pl/operation_research_gv.html">Organizacja i zarządzanie. Gwiszjani</a></li>
+        <li><a href="/pl/operation_research_vg.html">Badania operacyjne: Wagner</a></li>
+        <li><a href="/pl/operation_research_book.html">Pobierz literaturę z zakresu badań operacyjnych</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="breadcrumbs" aria-label="Ścieżka nawigacji">
+    <a href="/pl/">Strona główna</a> <span aria-hidden="true">/</span>
+    <a href="/pl/operation_research.html">Badania operacyjne</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Badania operacyjne: Wentzel</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Zmień motyw"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_ve.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/pl/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Zmień motyw"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710b6b793ea5ce',t:'MTc4ODczNTE1MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

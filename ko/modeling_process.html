@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>모델링 과정</title>
+<meta name="description" content="모델링 과정은 하나의 모델 유형에서 다른 유형으로의 전환으로 볼 수 있다. 일반적으로 모델은 인지적 모델, 실체적 모델, 형식적 모델의 세 가지 유형으로 구분되며, 이들은 서로 분리하여 다룰 수 없는 세 가지 상호연관된 모델링 수준을 이룬다.">
+<meta name="keywords" content="모델링 과정,모델,인지적 모델,개념적 모델,형식적 모델,수학적 모델링,시스템 분석">
+<link rel="canonical" href="https://systems-analysis.info/ko/modeling_process.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/modeling_process.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/modeling_process.html">
+<link rel="alternate" hreflang="ko" href="https://systems-analysis.info/ko/modeling_process.html">
+<meta property="og:title" content="모델링 과정">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/ko/modeling_process.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="모델링 과정은 하나의 모델 유형에서 다른 유형으로의 전환으로 볼 수 있다. 일반적으로 모델은 인지적 모델, 실체적 모델, 형식적 모델의 세 가지 유형으로 구분되며, 이들은 서로 분리하여 다룰 수 없는 세 가지 상호연관된 모델링 수준을 이룬다.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="ko_KR">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/ko/modeling_process.html#article",
+    "headline": "모델링 과정",
+    "description": "모델링 과정은 하나의 모델 유형에서 다른 유형으로의 전환으로 볼 수 있다. 일반적으로 모델은 인지적 모델, 실체적 모델, 형식적 모델의 세 가지 유형으로 구분되며, 이들은 서로 분리하여 다룰 수 없는 세 가지 상호연관된 모델링 수준을 이룬다.",
+    "url": "https://systems-analysis.info/ko/modeling_process.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "ko",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/ko/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/ko/modeling_process.html"
+    },
+    "keywords": [
+        "모델링 과정",
+        "모델",
+        "인지적 모델",
+        "개념적 모델",
+        "형식적 모델",
+        "수학적 모델링",
+        "시스템 분석"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "홈",
+            "item": "https://systems-analysis.info/ko/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "모델링",
+            "item": "https://systems-analysis.info/ko/modelling.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "모델링 과정"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="주 메뉴">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">메뉴</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/ko/">홈</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ko/sections.html">섹션</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ko/books.html">도서</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ko/catalog.html">카탈로그</a>
+        <span aria-hidden="true">·</span>
+        <a href="/modeling_process.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="테마 전환"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="글꼴 전환"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">모델링 과정</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>모델링 과정은 하나의 <a href="/ko/model.html" class="text-link">모델</a> 유형에서 다른 유형으로의 전환으로 볼 수 있다. 일반적으로 모델은 인지적 모델, 실체적 모델, 형식적 모델의 세 가지 유형으로 구분된다. 이들은 서로 분리하여 다룰 수 없는 세 가지 상호연관된 모델링 수준을 이룬다. 모델링 수준 간의 상호 영향은 모델에 내재된 잠재성이라는 속성과 관련이 있다. 어떤 모델을 만들든 연구 대상에 관한 새로운 지식이 생겨나며, 이는 여러 수준에서 모델링 대상에 대한 개념과 견해의 재평가 및 정교화로 이어진다. 이러한 상황은 다시 해당하는 실체적 모델과 인지적 모델의 수정으로 이어져, 연구 대상의 모든 모델링 수준이 나선형으로 발전하도록 만든다.</p>
+<p>원래 대상을 관찰할 때, 연구자의 머릿속에는 그 대상에 대한 심상, 즉 이상화된 모델이 형성된다. 학술 문헌에서는 이를 흔히 인지적(정신적) 모델이라고 부른다. 이러한 모델을 형성할 때 연구자는 대개 특정한 질문에 답하고자 하며, 따라서 대상의 무한히 복잡한 구성에서 본질적이지 않은 모든 것을 제거하여 더 간결하고 압축된 기술을 얻는다. 자연어로 표현된 인지적 모델을 실체적 모델이라고 한다.</p>
+<p>인지적 모델은 연구자가 기존 지식과 경험을 바탕으로 구성하는 것이므로 본질적으로 주관적이다. 이러한 모델은 오직 상징적 기술을 통해서만 이해될 수 있다. 인지적 모델과 실체적 모델은 동등하지 않은데, 전자에는 연구자가 명료하게 표현할 수 없거나 표현하기를 원하지 않는 요소가 포함될 수 있기 때문이다. 한편 실체적 모델이 다른 사람에 의해 정식화되었거나 공동 작업의 산물인 경우, 해석자들 사이에서 그 해석, 이해 수준, 신뢰 정도가 크게 달라질 수 있다. 실체적 모델은 흔히 기술적 문제 정식화라고도 불린다.</p>
+<p><strong>기능적 목적과 목표에 따라 실체적 모델은 기술적, 설명적, 예측적 모델로 나뉜다:</strong></p>
+<ul>
+  <li><em>기술적 모델</em>은 대상에 대한 임의의 기술이다.</li>
+  <li><em>설명적 모델</em>은 어떤 일이 왜 일어나는지에 대한 질문에 답한다.</li>
+  <li><em>예측적 모델</em>은 대상의 미래 행동을 기술한다. 특기할 점은 예측적 모델이 반드시 설명적 요소를 포함하는 것은 아니라는 것이다.</li>
+</ul>
+<p><em>개념적 모델</em>은 모델링 대상 연구와 관련된 주제 영역의 개념과 표상을 사용하여 정식화된 실체적 모델이다.</p>
+<p>더 넓은 의미에서 개념적 모델은 특정한 개념이나 관점에 기초한 실체적 모델로 이해된다. 개념적 모델에는 논리-의미적, 구조-기능적, 인과적이라는 세 가지 유형이 구분된다.</p>
+<ul>
+  <li><em>논리-의미적 모델</em>은 관련 주제 영역의 용어와 정의를 사용하여 대상을 기술하며, 알려진 모든 논리적으로 일관된 진술과 사실을 포함한다. 이러한 모델의 분석은 논리적 추론과 해당 영역 내에 축적된 지식에 의존한다.</li>
+  <li><em>구조-기능적 모델</em>은 대상을 통합된 시스템으로 취급하여 개별 요소나 하위 시스템으로 분해한다. 구성 요소들은 종속 관계, 논리적 순서, 과제 완료의 시간적 순서를 정의하는 구조적 관계로 연결된다. 이러한 모델을 표현하기 위해 도표, 차트, 지도가 흔히 사용된다.</li>
+  <li><em>인과적 모델</em>은 대상의 행동을 설명하고 예측하는 데 흔히 사용된다. 이러한 모델은 주로 다음을 지향한다: (1) 연구 대상을 구성하는 요소들 사이의 핵심적인 상호관계를 식별하는 것, (2) 특정 요인의 변화가 모델 구성 요소의 상태에 어떤 영향을 미치는지 판단하는 것, (3) 모델 전체가 어떻게 작동할 것인지, 그리고 연구자가 관심을 갖는 매개변수의 동태를 적절히 기술할 것인지를 이해하는 것.</li>
+</ul>
+<p><em>형식적 모델</em>은 수학 이론, 전문화된 모델링 언어, 프로그래밍 언어와 같은 하나 이상의 형식 언어를 사용하여 개념적 모델을 표현한 것이다. 인문학에서 모델링은 흔히 개념적 모델의 개발로 마무리되는 반면, 자연과학에서는 대체로 형식적 모델을 구축하는 것이 가능하다.</p>
+<p>연구에서 실체적 모델과 형식적 모델의 중요성은 널리 인정받고 있지만, 인지적 모델의 역할은 그 주관성과 사고 과정의 암묵적인 성격 때문에 흔히 과소평가된다. 그럼에도 불구하고 인지적 모델은 운영자나 의사결정자가 대상이나 과정을 통제하기 위해 자신의 정신적 표상에 의존하는 상황에서 특히 중요하다. 이러한 유형의 모델은 사회과학에서도 상당한 역할을 한다.</p>
+<p>수학적 모델링은 대상을 수학적 언어로 기술하고 수학적 방법을 통해 연구하는 과학적, 상징적, 형식적 모델링의 한 형태이다.</p>
+<p>과학적 연구를 위해 고안된 수학적 모델은 지정된 입력 데이터를 바탕으로 모델링 대상이나 현상의 매개변수 값을 결정할 수 있게 해 준다. 따라서 이러한 모델의 핵심은 입력 매개변수 값을 출력 매개변수 값에 대응시키는 것이다. 이러한 관점에서 볼 때 수학적 모델은 수학적 연산자로 볼 수 있으며, 이는 함수, 대수 방정식·미분 방정식·적분-미분 방정식·적분 방정식으로 표현되는 사상, 알고리즘, 규칙의 집합, 또는 입력 값으로부터 출력 매개변수를 결정할 수 있게 해 주는 표 등으로 폭넓게 정의될 수 있다.</p>
+<p>수학적 모델을 연산자 개념을 통해 정의하는 것은 이러한 모델의 분류 체계를 구축하는 관점에서 더 건설적인데, 이는 오늘날 존재하는 수학적 모델의 다양성 전체를 포괄하기 때문이다.</p>
+<p><strong>물리적 실험과 비교한 수학적 모델링의 장점:</strong></p>
+<ul>
+  <li>경제성(특히 실제 시스템의 자원 절약);</li>
+  <li>가상의 대상, 즉 자연에서 실현되지 않은 대상을 모델링할 수 있는 능력;</li>
+  <li>현실에서 재현하기 위험하거나 어려운 운용 조건을 시뮬레이션할 수 있는 능력;</li>
+  <li>시간 척도를 변경할 수 있는 능력;</li>
+  <li>다면적 분석의 용이성;</li>
+  <li>일반적인 패턴을 식별할 수 있는 능력에서 비롯되는 더 큰 예측력;</li>
+  <li>사용되는 하드웨어 및 소프트웨어(프로그래밍 시스템 및 범용 응용 소프트웨어 패키지)의 범용성.</li>
+</ul>
+<p><em>정보 모델</em>은 주어진 분석에 필수적인 매개변수와 변수, 이들 사이의 관계, 그리고 대상의 입력과 출력을 기술하는 정보 형태로 제시된 대상의 모델로서, 입력 값의 변화에 관한 정보를 모델에 입력함으로써 대상의 가능한 상태를 시뮬레이션할 수 있게 해 준다.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>관련 문서</h2>
+    <ul>
+      <li><a href="/ko/model.html">모델</a></li>
+      <li><a href="/ko/modelling.html">모델링</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/ko/">홈</a> <span aria-hidden="true">/</span>
+    <a href="/ko/modelling.html">모델링</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">모델링 과정</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="테마 전환"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/modeling_process.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/ko/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="테마 전환"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710b1b2d68a5ce',t:'MTc4ODczNTEzOQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

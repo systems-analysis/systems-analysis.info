@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Analyse des systèmes : Goloubkov</title>
+<meta name="description" content="Méthodes d’analyse des systèmes selon E.P. Goloubkov : méthodes mathématiques, méthodes formalisées de représentation des systèmes et leurs domaines d’application dans les tâches de gestion et de conception organisationnelle.">
+<meta name="keywords" content="analyse des systèmes,planification à long terme,Goloubkov,systèmes,méthodes de résolution,problèmes,critères,recherche">
+<link rel="canonical" href="https://systems-analysis.info/fr/systems_analysis_golubkov.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/systems_analysis_golubkov.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/systems_analysis_golubkov.html">
+<link rel="alternate" hreflang="fr" href="https://systems-analysis.info/fr/systems_analysis_golubkov.html">
+<meta property="og:title" content="Analyse des systèmes : Goloubkov">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/fr/systems_analysis_golubkov.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Méthodes d’analyse des systèmes selon E.P. Goloubkov : méthodes mathématiques, méthodes formalisées de représentation des systèmes et leurs domaines d’application dans les tâches de gestion et de conception organisationnelle.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="fr_FR">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/fr/systems_analysis_golubkov.html#article",
+    "headline": "Analyse des systèmes : Goloubkov",
+    "description": "Méthodes d’analyse des systèmes selon E.P. Goloubkov : méthodes mathématiques, méthodes formalisées de représentation des systèmes et leurs domaines d’application dans les tâches de gestion et de conception organisationnelle.",
+    "url": "https://systems-analysis.info/fr/systems_analysis_golubkov.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "fr",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/fr/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/fr/systems_analysis_golubkov.html"
+    },
+    "keywords": [
+        "analyse des systèmes",
+        "planification à long terme",
+        "Goloubkov",
+        "systèmes",
+        "méthodes de résolution",
+        "problèmes",
+        "critères",
+        "recherche"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "The Use of Systems Analysis in Sectoral Planning",
+        "author": {
+            "@type": "Person",
+            "name": "Golubkov E.P."
+        },
+        "datePublished": "1977",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Ekonomika"
+        },
+        "inLanguage": "fr"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "The Systems Approach in Long-Range Planning",
+        "author": [
+            {
+                "@type": "Person",
+                "name": "Golubkov E.P."
+            },
+            {
+                "@type": "Person",
+                "name": "Raizenberg B.A."
+            },
+            {
+                "@type": "Person",
+                "name": "Pekarsky L.S."
+            }
+        ],
+        "datePublished": "1975",
+        "inLanguage": "fr"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://systems-analysis.info/fr/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Analyse des systèmes",
+            "item": "https://systems-analysis.info/fr/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Analyse des systèmes : Goloubkov"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Navigation principale">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/fr/">Accueil</a>
+        <span aria-hidden="true">·</span>
+        <a href="/fr/sections.html">Sections</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/fr/books.html">Livres</a>
+        <span aria-hidden="true">·</span>
+        <a href="/fr/catalog.html">Catalogue</a>
+        <span aria-hidden="true">·</span>
+        <a href="/systems_analysis_golubkov.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Changer de thème"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Changer de police"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Analyse des systèmes : Goloubkov</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>« L’approche systémique dans la planification à long terme » par Goloubkov, Raizenberg et Pekarski, 1975 (en russe).</p>
+<p>L’analyse des systèmes regroupe un ensemble de méthodes scientifiques et de procédés pratiques destinés à résoudre des <a href="/fr/problem.html" class="text-link">problèmes</a> complexes (techniques, relevant des sciences naturelles, économiques, sociopolitiques et autres).</p>
+<p>Elle emploie avant tout le concept de <a href="/fr/system.html" class="text-link">système</a>, entendu comme une unité d’éléments interdépendants agissant conjointement pour atteindre un <a href="/fr/goal.html" class="text-link">objectif</a> commun. Les propriétés que possède un système dans son ensemble diffèrent des propriétés de ses éléments constitutifs. Tout système est caractérisé par des régularités qui lui sont propres et qui ne découlent pas directement des modes d’action de ses éléments.</p>
+<p>Les principales parties d’un système sont l’entrée, le processus (structure) et la sortie. L’entrée d’un système est une notion complexe. D’une part, il s’agit de la substance qui pénètre dans le système et qui y subit certaines transformations. D’autre part, il s’agit de l’environnement extérieur (ambiant), c’est-à-dire de l’ensemble des facteurs et phénomènes affectant le système (conditions naturelles, situation de politique étrangère, conjoncture du marché). L’entrée désigne également les modes de fonctionnement établis pour les éléments du système, par exemple les instructions, règlements et ordres qui définissent les procédures, règles, contraintes et objectifs de fonctionnement du système.</p>
+<p>La deuxième partie d’un système est sa structure interne, c’est-à-dire les canaux par lesquels transitent la matière, l’énergie et l’information entrant dans le système par ses entrées, ainsi que les processus ou opérations qui les transforment (pour les systèmes économiques, il s’agit des processus de reproduction des ressources matérielles, humaines et financières).</p>
+<p>La troisième partie d’un système est sa sortie, le produit ou le résultat de son activité.</p>
+<p>Selon leur degré d’interaction avec l’environnement extérieur, les systèmes se divisent en systèmes ouverts et fermés. Les systèmes ouverts échangent intensément de la matière, de l’énergie ou de l’information avec leur environnement, tandis que les systèmes fermés, isolés, fonctionnent avec des échanges relativement faibles (par exemple, un cycle fermé de traitement de l’information de planification et économique, ou un cycle technologique fermé). Il convient de noter qu’un système peut être fermé ou ouvert par rapport à la matière, à l’énergie ou à l’information pris séparément. Un système possède soit des frontières naturelles, soit des frontières établies en fonction des objectifs de recherche ; dans ce dernier cas, les frontières du système sont définies par le chercheur.</p>
+<p>Un même objet peut être représenté sous la forme de plusieurs systèmes différents. Si une entreprise industrielle est envisagée comme un ensemble de machines, de processus technologiques, de matériaux et de produits traités sur ces machines, l’entreprise apparaît comme un système technologique. L’entreprise peut être envisagée sous un angle différent : en examinant le rapport des travailleurs aux moyens de production, leur participation au processus de travail et à la répartition de ses résultats, la place de l’entreprise dans le système économique plus large, et ainsi de suite. Dans ce cas, l’entreprise est un système économique.</p>
+<p>Au cours du développement social et de la révolution scientifique et technique, un nouvel objet de recherche est apparu dans le domaine de la gestion, connu sous le nom de système de grande dimension. En généralisant les points de vue de différents auteurs, on peut dégager les caractéristiques les plus importantes des systèmes de grande dimension :</p>
+<ul>
+  <li>la présence de sous-systèmes aux propriétés locales clairement exprimées, qui constituent ensemble le système de grande dimension ;</li>
+  <li>l’orientation vers un but et la contrôlabilité du système, c’est-à-dire l’existence d’un objectif commun et d’une finalité générale, fixés et ajustés au sein de systèmes de niveau supérieur ;</li>
+  <li>une structure organisationnelle hiérarchique complexe (à plusieurs niveaux) du système, prévoyant une combinaison de contrôle centralisé et d’autonomie des parties (sous-systèmes), la présence de liens verticaux entre les éléments de différents niveaux et de liens horizontaux entre les éléments d’un même niveau ;</li>
+  <li>la grande taille du système, c’est-à-dire un grand nombre d’éléments, d’entrées et de sorties, ainsi qu’une diversité de fonctions ;</li>
+  <li>l’intégrité et la complexité du comportement, l’enchevêtrement complexe des relations entre variables, et les boucles de rétroaction faisant qu’un changement d’une variable entraîne des changements dans de nombreuses autres.</li>
+</ul>
+<p>L’analyse des systèmes fournit des techniques spéciales permettant de diviser un système de grande dimension, difficile à examiner dans son ensemble, en un certain nombre de systèmes plus petits en interaction, ou sous-systèmes.</p>
+<p>Parmi les concepts importants de l’analyse des systèmes figure le concept cybernétique fondamental de rétroaction. C’est précisément ce concept qui a permis d’établir la similitude entre l’organisation du contrôle dans des systèmes qualitativement différents. La rétroaction désigne l’existence d’un canal de communication entre la sortie et l’entrée d’un système, soit direct, soit passant par d’autres éléments du système (par exemple, par une unité de contrôle). Grâce à la rétroaction, les données sur le fonctionnement du système contrôlé sont transmises de sa sortie au système de contrôle. Là, ces données sont comparées avec les données spécifiant le contenu et le volume de travail (par exemple, avec le plan). En cas d’écart entre l’état réel et l’état spécifié du système, des mesures sont élaborées pour éliminer cet écart.</p>
+<p>Un concept important utilisé dans l’analyse des systèmes est le concept d’incertitude. Le facteur d’incertitude est présent dans la résolution de nombreux problèmes complexes dans le domaine de la planification et de la gestion de l’économie nationale.</p>
+<p>L’incertitude rencontrée au cours de l’analyse des systèmes peut résulter d’une connaissance insuffisante du phénomène étudié, ou peut être due au fait que les conséquences des décisions prises se manifestent sur une période suffisamment longue et ne peuvent être prédites avec une précision suffisante.</p>
+<p>Parmi les autres causes d’incertitude figurent l’impossibilité d’une évaluation quantitative de nombreux phénomènes, en particulier la difficulté d’interprétation quantitative des notions « meilleur–pire », « plus–moins » dans la prise de décision, une formulation imprécise du problème, ainsi que les caractéristiques individuelles des décideurs.</p>
+<p>L’analyse des systèmes se caractérise avant tout non pas par un formalisme scientifique spécifique, mais par une approche ordonnée et logiquement fondée de l’étude des problèmes. À l’aide des méthodes d’analyse des systèmes, on étudie des systèmes et des situations complexes, notamment ceux liés à la nécessité de déterminer des objectifs, des tâches et des lignes de conduite.</p>
+<p>L’analyse des systèmes représente un ensemble de méthodes appliquées à l’étude des approches possibles pour résoudre des problèmes complexes et sert simultanément de moyen pour ordonner et utiliser plus efficacement les connaissances, les jugements et l’intuition des spécialistes dans le processus de prise de décision relatif à ces problèmes. Autrement dit, l’analyse des systèmes est un outil scientifique destiné aux chercheurs et aux décideurs.</p>
+<p>La tâche de l’analyse des systèmes consiste à clarifier les problèmes auxquels sont confrontés les décideurs de manière à ce que l’exécutant prenne conscience de toutes les conséquences principales des décisions et puisse en tenir compte dans son action. L’analyse quantitative aide la personne responsable d’une décision à aborder de manière plus rigoureuse l’évaluation des lignes de conduite possibles et à sélectionner la meilleure, en tenant compte de facteurs et considérations supplémentaires, non formalisables, qui peuvent être inconnus des spécialistes préparant la décision (les analystes de systèmes). L’analyse des systèmes sert à déterminer les moyens les plus réalistes de résoudre les problèmes survenus, en assurant une satisfaction maximale des exigences posées.</p>
+<p>L’expérience de l’application de l’analyse des systèmes dans le domaine militaire a fortement influencé son développement en tant que méthodologie, laissant une certaine empreinte sur la terminologie de cette discipline scientifique et des disciplines qui lui sont étroitement liées (recherche opérationnelle, ingénierie des systèmes).</p>
+<p>Entre les différentes orientations de l’analyse des systèmes portant des noms différents, il n’existe souvent aucune différence fondamentale ni de frontières clairement délimitées ; en même temps, chacune de ces orientations se caractérise par certains traits distinctifs et nuances. Ainsi, la recherche opérationnelle est habituellement comprise comme la science visant à élaborer des recommandations quantitatives nécessaires à la planification et à l’organisation des opérations. Une opération est ici entendue comme toute action orientée vers un but, menée par une personne, un groupe de personnes ou un système homme-machine. L’ingénierie des systèmes crée des méthodes pour la synthèse de systèmes de grande dimension à partir de l’étude du fonctionnement de leurs éléments individuels. Bien que de nombreuses méthodes et résultats de l’ingénierie des systèmes aient été obtenus en application aux systèmes techniques, ils peuvent, dans une large mesure, être transférés à des objets de nature différente, y compris économiques.</p>
+<p>L’apparition de l’analyse des systèmes dans la méthodologie de justification des décisions de gestion marque une transition de la résolution de problèmes bien structurés et formalisables (où les objectifs, les voies et les critères sont clairement définis, réalisables par les méthodes de la recherche opérationnelle) vers la résolution de problèmes mal structurés qui surgissent dans des conditions d’incertitude et contiennent des éléments non formalisables, non traduisibles dans le langage des mathématiques.</p>
+<p>Le spécialiste en recherche opérationnelle emploie des méthodes d’analyse mathématique ou logique dans des conditions où l’on comprend clairement en quoi consiste une performance « plus efficace ». Il s’attarde rarement à définir l’objectif du travail ou les méthodes d’évaluation de sa réussite ; c’est là l’une des principales tâches de l’analyste de systèmes.</p>
+<p>Un spécialiste de la planification agit pratiquement toujours comme un analyste de systèmes, puisqu’il envisage le problème à résoudre dans son ensemble. Les résultats de l’analyse des systèmes dépendent du système de critères adopté. Le choix des critères fait partie intégrante de l’analyse. Le rôle de l’analyse consiste à établir quels critères il convient d’utiliser pour prendre certaines décisions dans le domaine de la gestion.</p>
+<p>Une variété de l’analyse opérationnelle, connue sous le nom d’analyse coûts-efficacité, consiste en une comparaison exhaustive de l’effet de la mise en œuvre d’une ligne de conduite donnée avec les ressources nécessaires à sa mise en œuvre.</p>
+<p>La différence entre l’analyse des systèmes et l’analyse coûts-efficacité réside dans le fait que, dans ce dernier cas, l’analyse est orientée vers la recherche de moyens rationnels d’utiliser les ressources dans des conditions d’objectif formulé, le plus souvent donné. L’analyse des systèmes pose le problème de manière plus large, traitant l’objectif lui-même comme un objet de choix effectué conformément à certains principes.</p>
+<p>La méthodologie de l’analyse des systèmes peut être définie comme un ensemble de ses principes, c’est-à-dire les régularités les plus générales et fondamentales qui régissent la conduite d’analyses concrètes de divers systèmes et des processus qui s’y déroulent.</p>
+<p>Le principe déterminant de l’analyse des systèmes est l’orientation vers un but. Tout système existe et se développe conformément à des objectifs fixés de l’extérieur ou activement formés par le système lui-même. Du point de vue de l’analyse des systèmes, c’est précisément l’ensemble des objectifs qui définit et délimite le système, unifiant le système et ses activités en un tout unique.</p>
+<p>Le principe suivant de l’analyse des systèmes découle de la nécessité d’appliquer une approche systémique et consiste à identifier et étudier toutes les interrelations essentielles, tant à l’intérieur du système qu’entre le système et son environnement extérieur, ainsi qu’à sélectionner des solutions particulières en tenant compte de leur influence sur le système dans son ensemble.</p>
+<p>Dans l’analyse des systèmes, il faut garder à l’esprit que les mêmes objectifs peuvent être atteints par l’utilisation de plusieurs moyens et méthodes différents. Il en découle un principe de l’analyse des systèmes qui consiste à rechercher plusieurs solutions alternatives aux problèmes survenus. L’examen des variantes possibles de la structure d’un système, de son organisation et des processus qui s’y déroulent (technologiques, de planification, de gestion et autres), dans le but de sélectionner la meilleure d’entre elles, constitue un trait essentiel de l’analyse des systèmes.</p>
+<p>Souvent, la tâche principale de l’analyse des systèmes est de trouver des solutions optimales. Les solutions optimales sont celles qui, sur la base d’un critère donné, sont préférables aux autres. En général, lors de la sélection d’une solution optimale sur la base d’un certain critère, l’effet obtenu de la mise en œuvre d’une stratégie de comportement donnée est comparé aux dépenses de ressources nécessaires à sa mise en œuvre.</p>
+<p>La profondeur et l’exhaustivité de l’analyse des processus se déroulant dans divers systèmes sont largement déterminées par le degré d’étude de la nature dynamique de leur fonctionnement et de leur développement. L’analyse des systèmes procède de la nécessité de comprendre non seulement les interrelations statiques d’un système, mais aussi les interactions dynamiques, d’étudier non seulement l’état du système à un moment donné, mais aussi son évolution dans le temps. L’examen des phénomènes dans leur dynamique et leur développement constitue également un principe important de l’analyse des systèmes.</p>
+<p>Le principe de séparation de la responsabilité entre les recommandations issues de l’analyse des systèmes et les décisions prises sur leur base suppose l’établissement d’un ensemble clairement délimité de droits et de responsabilités pour les analystes de systèmes et les décideurs qui agissent sur la base des résultats de l’analyse. En approuvant définitivement une décision, les responsables peuvent tenir compte, outre les recommandations issues de l’analyse des systèmes, d’un certain nombre de considérations quantitatives et qualitatives supplémentaires que les analystes n’avaient pas prises en compte.</p>
+<p>Dans les cas où un système complexe est étudié, dont l’analyse ne peut être menée qu’en généralisant les résultats de l’analyse de ses parties constitutives (sous-systèmes, éléments), la structure du système (problème) à analyser et les possibilités de sa division en éléments sont d’abord étudiées. Ensuite, une décomposition (structuration) séquentielle du système en ses parties constitutives est réalisée conformément à sa structure, ses fonctions et ses processus internes, en tenant compte de toutes les interrelations les plus importantes. Le principe de structuration orientée vers un but du système étudié trouve une incarnation pratique concrète dans un certain nombre de méthodes d’analyse des systèmes, par exemple dans la méthode de l’arbre des objectifs.</p>
+<p>Le domaine d’application de l’analyse des systèmes, selon la complexité des problèmes à résoudre et la possibilité d’utiliser des méthodes mathématiques, peut être approximativement divisé en cinq niveaux :</p>
+<ul>
+  <li>optimisation de la planification et de la gestion d’opérations individuelles ;</li>
+  <li>sélection du type de système ou des voies les plus efficaces pour atteindre les objectifs fixés ;</li>
+  <li>développement de nouveaux systèmes ;</li>
+  <li>détermination de la place et du rôle d’un système dans des problèmes de niveau supérieur ;</li>
+  <li>planification et gestion d’un système économique au niveau de l’économie nationale.</li>
+</ul>
+<p>Cet ordonnancement correspond à une complexité croissante des problèmes, à un niveau d’incertitude croissant et à une difficulté croissante d’élaboration de recommandations sur la base desquelles une action concrète peut être entreprise. Au premier niveau, l’analyse acquiert dans la plus large mesure une forme mathématique et peut s’appuyer sur l’utilisation d’outils et de méthodes formalo-logiques. Il s’agit, par essence, de la recherche opérationnelle visant à accroître l’efficacité du système dans des conditions où la notion de « plus efficace » est clairement définie. La principale caractéristique des problèmes de ce domaine est qu’ils possèdent une structure clairement délimitée, susceptible d’une description formalisée. Aux autres niveaux, l’application de l’analyse des systèmes est nécessairement liée à la nécessité d’étudier des facteurs et conditions qualitatifs, le plus souvent de nature sociale.</p>
+<p>Dans certains cas, l’analyse des systèmes est inévitablement liée à la nécessité d’étudier des contradictions. Parmi les exemples de contradictions et d’incohérences figurent les plans déséquilibrés, les perturbations dans l’approvisionnement de certains types de matériaux et d’équipements, les écarts entre la croissance du volume de production et de consommation de certains types de produits, et les contradictions liées à l’adoption lente de nouvelles technologies.</p>
+<p>L’analyse des problèmes aux deuxième et troisième niveaux comprend la conception de nouveaux systèmes destinés à mieux exécuter des opérations connues ou des opérations n’ayant jamais été effectuées auparavant. Lors de l’examen des problèmes à ce niveau et aux niveaux suivants, la prise en compte des facteurs sociaux et politiques devient de plus en plus importante.</p>
+<p>« L’utilisation de l’analyse des systèmes dans la planification sectorielle » par E.P. Goloubkov, 1977 (en russe).</p>
+<p>La méthode générale de résolution des problèmes concrets de l’analyse des systèmes est différenciée et se concrétise dans une grande variété de méthodes qui, selon le principe de classification adopté, peuvent être réparties en différents groupes — par exemple, en méthodes d’analyse et de synthèse, méthodes descriptives et expérimentales. Selon le degré d’utilisation des éléments formels dans l’analyse des systèmes, on peut distinguer trois groupes de méthodes : mathématiques (formelles), heuristiques (informelles) et méthodes combinées mathématico-heuristiques.</p>
+<p>Les méthodes d’analyse des systèmes peuvent être envisagées à la fois au sens large et au sens étroit, spécifique. Au sens large, les méthodes d’analyse des systèmes comprennent toutes les méthodes issues des trois groupes énumérés ci-dessus qui sont appliquées pour résoudre le problème considéré sur la base d’une approche systémique. Dans cette compréhension large, les méthodes d’analyse des systèmes sont identiques aux méthodes de résolution de problèmes et peuvent être classées selon les étapes individuelles du processus de prise de décision.</p>
+<p>Au sens étroit, les méthodes d’analyse des systèmes sont des méthodes spécifiques conçues pour déterminer l’ensemble des objectifs de l’activité d’un système et les meilleures voies pour les atteindre, pour choisir des <a href="/fr/model.html" class="text-link">modèles</a> et des critères, pour la décomposition séquentielle et orientée d’un système (problème) en ses éléments constitutifs, pour déterminer les interrelations et interdépendances entre ces éléments, et pour déterminer l’importance relative (préférence) des objectifs, mesures, critères et modèles individuels. Ce sont donc principalement des méthodes visant à résoudre des problèmes mal structurés dans les cas où l’application de méthodes formelles, mathématiques, est limitée.</p>
+<p>L’essentiel des méthodes mathématiques de l’analyse des systèmes est constitué des méthodes de recherche opérationnelle (divers types de programmation, théorie des jeux, théorie des files d’attente, et autres). Ces méthodes sont largement appliquées dans l’analyse des systèmes, mais plutôt pour étudier certains aspects particuliers du problème à résoudre que pour en examiner l’essence.</p>
+<p><strong>Les méthodes mathématiques en analyse des systèmes sont le plus souvent utilisées :</strong></p>
+<ul>
+  <li>pour déterminer les valeurs numériques des indicateurs caractérisant les résultats du fonctionnement d’un système ;</li>
+  <li>pour trouver les meilleures lignes de conduite conduisant à l’obtention de résultats spécifiques (optimisation) ;</li>
+  <li>pour traiter et analyser des données de nature heuristique, créative.</li>
+</ul>
+<p>Malgré le rôle croissant des méthodes mathématiques dans la résolution des problèmes économiques, elles ne peuvent être considérées comme un moyen universel de résolution. Les méthodes fondées sur l’expérience accumulée et l’intuition, c’est-à-dire les méthodes heuristiques (informelles), demeurent essentielles.</p>
+<p>Le désir d’obtenir des réponses précises aux questions posées à l’aide de méthodes mathématiques peut amener l’ingénieur et l’économiste à s’absorber tellement dans leur travail et dans la méthodologie d’identification des besoins de recherche que le résultat ultime de leurs efforts se réduit à une conclusion sur la nécessité d’études complémentaires.</p>
+<p>Cependant, dans des conditions où certaines données concernant tel ou tel processus, phénomène ou résultat économique font défaut, il vaut mieux obtenir des réponses approximatives aux questions les plus importantes que de tenter de donner des réponses précises à des questions qui ne sont pas entièrement claires et comprises. Les procédures de formulation des objectifs du système, des alternatives pour leur mise en œuvre, des modèles et des critères ne peuvent être entièrement formalisées.</p>
+<p>La conduite de tels examens et conférences d’experts est très souvent régie par la tradition, c’est-à-dire, en définitive, par l’expérience, et constitue à bien des égards un art. Cependant, progressivement, diverses méthodes mathématiques de traitement des données sources d’origine heuristique commencent également à pénétrer ce domaine.</p>
+<p>Un trait distinctif des méthodes heuristiques est que le spécialiste, en évaluant un événement, s’appuie dans une large mesure sur des informations fondées sur son expérience et son intuition. Ces informations dépendent énormément des qualités personnelles de l’expert. Lorsqu’il utilise la méthode intuitive de prise de décision, l’expert est incapable d’exprimer par des mots la séquence de sa mise en œuvre.</p>
+<p>L’intuition suppose l’atteinte directe et par saut d’une solution, au lieu d’une chaîne d’étapes minutieuses, réfléchies et délibérées. Une personne pensant de manière intuitive ne peut souvent pas indiquer quels aspects de la situation ont été identifiés au cours du processus de perception, quelle part de l’information stockée dans sa mémoire il a utilisée, ni quel « raisonnement » l’a conduit des données initiales à la décision.</p>
+<p>Les méthodes heuristiques de prise de décision fondées sur l’expérience procèdent d’une analyse antérieure d’un problème identique à celui qui s’est posé au moment présent (une décision fondée sur l’analogie avec le passé). Les méthodes informelles comprennent également la prise de décision fondée sur le recours à l’autorité (demande de conseils et d’orientations auprès de la direction, d’experts ou de sources de référence, telles que la littérature scientifique et pédagogique).</p>
+<p><strong>Domaines d’application des méthodes d’analyse des systèmes :</strong></p>
+<ol>
+  <li>Détermination de l’ensemble des objectifs et des voies pour les atteindre (par exemple, définir les objectifs d’un plan sectoriel et élaborer plusieurs alternatives pour sa mise en œuvre).</li>
+  <li>Détermination de la préférence (classement) des objectifs, voies, mesures, résultats individuels, et ainsi de suite (par exemple, déterminer la priorité et les délais de mise en œuvre de mesures individuelles dans un plan sectoriel pour la nouvelle technologie).</li>
+  <li>Décomposition des objectifs, programmes, plans, etc. en leurs éléments (par exemple, l’élaboration de plans pour des associations ou entreprises individuelles à partir des tâches fixées pour l’ensemble du secteur).</li>
+  <li>Sélection des meilleures voies pour atteindre les objectifs fixés (par exemple, analyser et comparer diverses mesures organisationnelles et techniques proposées pour être incluses dans le plan).</li>
+  <li>Sélection des critères de comparaison des objectifs et des voies pour les atteindre (par exemple, sélectionner des critères pour évaluer l’efficacité de diverses alternatives de plan sectoriel).</li>
+  <li>Construction de modèles pour la sélection des objectifs et des voies pour les atteindre (par exemple, un modèle de répartition des tâches de plan entre les entreprises d’un secteur selon le critère de minimisation des coûts réduits).</li>
+  <li>Généralisation des données de l’analyse du fonctionnement de sous-systèmes individuels pour tirer des conclusions sur l’optimalité du fonctionnement du système dans son ensemble (par exemple, l’élaboration d’un schéma optimal de développement des plans sectoriels à partir de l’analyse des procédures de planification adoptées dans les associations ou entreprises individuelles du secteur).</li>
+</ol>
+<p>Il convient de noter que la frontière entre méthodes heuristiques et méthodes combinées est dans une certaine mesure conventionnelle, car il n’existe pas de démarcation stricte entre elles. À l’heure actuelle, des techniques mathématiques de traitement des données sources de nature heuristique sont utilisées dans l’application de presque toutes les méthodes heuristiques.</p>
+<p>Dans l’analyse des systèmes, selon le degré de certitude dans la formulation des problèmes et les conditions de leur résolution, il peut exister différents types de problèmes qui déterminent l’utilisation de telle ou telle méthode de résolution spécifique. Ces problèmes, selon la classification utilisée en recherche opérationnelle, peuvent être répartis en trois groupes, bien que certaines précisions soient également nécessaires ici.</p>
+<ol>
+  <li>Problèmes déterministes. Ce sont des problèmes de sélection de la meilleure alternative de solution dans des situations où chaque stratégie conduit à un résultat unique (par exemple, une alternative de plan donnée conduit à l’obtention du résultat requis avec une probabilité de 100 pour cent).</li>
+  <li>Problèmes probabilistes. Ce sont des problèmes de sélection de la meilleure alternative de solution dans des situations où chaque action peut donner lieu à différents résultats dont les probabilités sont connues ou peuvent être estimées (par exemple, chaque alternative de plan conduit à l’obtention de résultats connus avec une certaine probabilité).</li>
+  <li>Problèmes en situation d’incertitude. Ce sont des problèmes de sélection de la meilleure alternative de solution dans des situations où les probabilités d’obtenir différents résultats sont inconnues, ou où l’on ignore totalement quels résultats peuvent être obtenus en choisissant telle ou telle stratégie parmi celles envisagées.</li>
+</ol>
+<p>L’introduction d’une telle terminologie pour les problèmes d’analyse des systèmes est dans une certaine mesure conventionnelle, puisque, par exemple, le facteur d’incertitude est présent même dans la résolution des problèmes probabilistes.</p>
+<p>Il convient de garder à l’esprit que la classe des problèmes probabilistes et des problèmes en situation d’incertitude comprend également des problèmes pour lesquels un ensemble complet des stratégies possibles n’a pas été défini, et pour lesquels seules les stratégies connues sont prises en compte. Une telle situation est caractéristique de la pratique de prise de décision, où toutes les alternatives possibles pour résoudre le problème survenu ne sont pas envisagées, mais seulement un nombre limité de ces alternatives.</p>
+<p>Les problèmes déterministes et les problèmes en situation d’incertitude peuvent être considérés comme des cas limites (par exemple, connaissance complète et ignorance complète des résultats) des problèmes probabilistes. C’est pourquoi nous examinerons d’abord les problèmes probabilistes, avant de passer à l’examen des problèmes déterministes et des problèmes en situation d’incertitude.</p>
+<p>Dans la résolution des problèmes probabilistes, la sélection de la meilleure alternative de solution s’effectue en maximisant l’espérance mathématique du degré de préférence. Ce critère est appliqué dans la résolution de la majorité des problèmes de ce type.</p>
+<p>Dans les cas où certains calculs, par exemple technico-économiques, permettent de déterminer l’efficacité de telle ou telle stratégie dans diverses conditions de l’environnement extérieur, des valeurs concrètes caractérisant l’effet de la mise en œuvre de telle ou telle alternative de solution doivent être utilisées à la place des valeurs du degré de préférence. Les recommandations finales concernant le choix d’une solution doivent être élaborées en tenant compte de la probabilité d’obtenir différents résultats pour les alternatives de solution envisagées.</p>
+<p>Un problème déterministe peut être considéré comme un cas limite d’un problème probabiliste, en supposant que la probabilité d’obtenir chacun des résultats possibles soit égale à un ou à zéro.</p>
+<p>Parmi les exemples de problèmes déterministes figurent, par exemple, les problèmes de programmation linéaire.</p>
+<p>Les critères appliqués dans la résolution de tels problèmes peuvent représenter un cas limite de maximisation de l’espérance mathématique du degré de préférence, où les probabilités de réalisation des résultats possibles sont égales à un ou à zéro. Divers indicateurs ayant une signification économique concrète (coûts réduits, niveau de rentabilité, productivité du travail, et autres) sont souvent utilisés comme critères dans la résolution de problèmes déterministes.</p>
+<p>Le type de problème le plus caractéristique de l’analyse des systèmes est le problème en situation d’incertitude. Dans les cas réels, lorsqu’il semble d’abord qu’aucune estimation de probabilité concernant l’obtention de différents résultats n’existe, l’analyste de systèmes déploie habituellement un effort maximal pour obtenir des informations sur ces probabilités en menant une étude spéciale, et y parvient, en règle générale. Cependant, des cas sont également possibles où les estimations de probabilité sont entièrement inconnues.</p>
+<p>Dans la résolution de problèmes en situation d’incertitude, des critères bien connus tels que le minimax, le maximin, le maximin généralisé (critère de Hurwicz), le critère du regret minimax (critère de Savage), le critère de Laplace, et d’autres, sont appliqués.</p>
+<p>L’utilisation de différents critères pour résoudre un même problème conduit, en règle générale, à l’obtention de résultats différents. Il existe deux approches pour sélectionner les critères de résolution des problèmes en situation d’incertitude. La première consiste à élaborer de nouveaux critères ou exigences pour le choix d’un critère de décision. La seconde approche consiste à utiliser toute information, même la plus maigre, sur les probabilités de réalisation de différentes conditions environnementales (différents résultats obtenus par la mise en œuvre de telle ou telle stratégie), ou à mener des expériences pour obtenir des estimations de ces probabilités. Le problème d’incertitude devient ainsi un problème probabiliste.</p>
+<p>Les deux approches sont laborieuses et, en règle générale, difficiles à mettre en œuvre en pratique ; cependant, la seconde approche est préférable. La première approche conduit à la recherche de nouveaux critères pour choisir le meilleur parmi ceux connus, puis à la recherche de critères pour choisir des critères parmi ceux envisagés, et ainsi de suite. Autrement dit, il n’existe pas de critère de décision non fondé sur des estimations de probabilité qui satisferait certaines exigences justifiées pour un « bon » critère.</p>
+<p>Les tentatives de formulation d’un critère d’évaluation des décisions possibles en situation d’incertitude reflètent l’aspiration à rendre plus transparents les avantages et inconvénients de chaque ligne de conduite dans diverses conditions. Aucun des critères existants pour le choix des décisions en situation d’incertitude n’est universel, capable de satisfaire tout décideur.</p>
+<p>Les méthodes d’analyse des systèmes ne doivent pas être opposées les unes aux autres. Chacune présente des avantages et des inconvénients, mais aucune n’est adaptée à la résolution de tous les problèmes. Par conséquent, les meilleurs résultats peuvent être obtenus en combinant plusieurs méthodes, selon la nature du problème à résoudre et le niveau auquel il est examiné. Lors de la résolution de problèmes de planification au niveau le plus bas de la gestion économique, on rencontre généralement des problèmes suffisamment bien structurés, ce qui permet une application large des méthodes mathématiques d’analyse. Aux niveaux supérieurs, les objectifs et les autres éléments de l’analyse des systèmes acquièrent un caractère de plus en plus qualitatif, et l’importance des méthodes informelles s’accroît par conséquent.</p>
+<p>La complexité de la modélisation des processus sociaux dans les systèmes économiques complique davantage l’application des méthodes mathématiques. En même temps, le rôle du facteur d’incertitude s’accroît, et le fait de l’ignorer par des méthodes formelles peut conduire à des conclusions erronées.</p>
+</div>
+      </article>
+    </div>
+
+    <div class="links">
+  <div class="links-section">
+    <h2>À propos de l’analyse des systèmes</h2>
+    <ul>
+      <li><a href="/fr/systems_analysis.html">Analyse des systèmes</a></li>
+      <li><a href="/fr/systems_analysis_optner.html">L’analyse des systèmes appliquée aux problèmes d’entreprise et d’industrie : Optner</a></li>
+      <li><a href="/fr/systems_analysis_pospelov.html">Analyse des systèmes et planification à long terme : Pospelov</a></li>
+      <li><a href="/fr/systems_analysis_clelandking.html">Analyse des systèmes et gestion de projet : Cleland, King</a></li>
+      <li><a href="/fr/systems_analysis_nikanorov.html">Analyse des systèmes et approche systémique : Nikanorov</a></li>
+      <li><a href="/fr/systems_analysis_pt.html">Analyse des systèmes : Peregoudov, Tarassenko</a></li>
+      <li><a href="/fr/systems_analysis_q.html">Analyse des systèmes : Quade</a></li>
+      <li><a href="/fr/systems_analysis_book.html">Télécharger la littérature sur l’analyse des systèmes</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Voir aussi</h2>
+    <ul>
+      <li><a href="/fr/system.html">Système</a></li>
+      <li><a href="/fr/system_terminus.html">La notion de système</a></li>
+      <li><a href="/fr/system_def.html">Définitions d’un système</a></li>
+      <li><a href="/fr/methodology_sa.html">Méthodologie de l’analyse des systèmes</a></li>
+      <li><a href="/fr/economics.html">L’analyse des systèmes en économie</a></li>
+      <li><a href="/fr/systems_thinking.html">L’approche systémique</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/fr/">Accueil</a> <span aria-hidden="true">/</span>
+    <a href="/fr/systems_analysis.html">Analyse des systèmes</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Analyse des systèmes : Goloubkov</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Changer de thème"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/systems_analysis_golubkov.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/fr/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Changer de thème"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a371089c8b5da5ce',t:'MTc4ODczNTAzNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

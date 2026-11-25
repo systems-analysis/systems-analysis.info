@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Problem</title>
+<meta name="description" content="Problem ve problem durumu, sistem analizinin merkezi kavramlarıdır. Tanımlar, problem durumlarının özellikleri ve bunların karar teorisindeki rolü açıklanmaktadır.">
+<meta name="keywords" content="problem,sistemik problem,sistem analizi,belirsizlik,sistem,araştırma">
+<link rel="canonical" href="https://systems-analysis.info/tr/problem.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/problem.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/problem.html">
+<link rel="alternate" hreflang="tr" href="https://systems-analysis.info/tr/problem.html">
+<meta property="og:title" content="Problem">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/tr/problem.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Problem ve problem durumu, sistem analizinin merkezi kavramlarıdır. Tanımlar, problem durumlarının özellikleri ve bunların karar teorisindeki rolü açıklanmaktadır.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="tr_TR">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/tr/problem.html#article",
+    "headline": "Problem",
+    "description": "Problem ve problem durumu, sistem analizinin merkezi kavramlarıdır. Tanımlar, problem durumlarının özellikleri ve bunların karar teorisindeki rolü açıklanmaktadır.",
+    "url": "https://systems-analysis.info/tr/problem.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "tr",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/tr/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/tr/problem.html"
+    },
+    "keywords": [
+        "problem",
+        "sistemik problem",
+        "sistem analizi",
+        "belirsizlik",
+        "sistem",
+        "araştırma"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "Problem",
+        "description": "A complex theoretical or practical question requiring study and resolution; a contradictory situation that calls for an adequate theory to resolve it.",
+        "sameAs": [
+            "https://www.wikidata.org/entity/Q621184",
+            "https://en.wikipedia.org/wiki/Problem",
+            "https://systems-analysis.info/wiki/Проблема",
+            "https://systems-analysis.info/eng/Problem"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Ana Sayfa",
+            "item": "https://systems-analysis.info/tr/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Sistem Analizi",
+            "item": "https://systems-analysis.info/tr/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Problem"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Ana gezinme">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menü</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/tr/">Ana Sayfa</a>
+        <span aria-hidden="true">·</span>
+        <a href="/tr/sections.html">Bölümler</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/tr/books.html">Kitaplar</a>
+        <span aria-hidden="true">·</span>
+        <a href="/tr/catalog.html">Katalog</a>
+        <span aria-hidden="true">·</span>
+        <a href="/problem.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Temayı değiştir"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Yazı tipini değiştir"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Problem</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>Problem</strong>:</p>
+<ul>
+  <li>incelenmesi ve çözülmesi gereken karmaşık bir kuramsal veya pratik soru; belirli olayların, nesnelerin veya süreçlerin açıklanmasında karşıt konumlar biçiminde kendini gösteren ve çözümü için yeterli bir kuram gerektiren çelişkili bir durum;</li>
+  <li>belirlenmiş bir amaca ulaşma yolunda bir engel. Bir durum, daha önce benimsenen yöntemlerle faaliyet yürütülemediğinde ve değişen koşullar altında istenen sonuca ulaşmak zor veya imkânsız hâle geldiğinde problemli olarak adlandırılır;</li>
+  <li>belirli çevre koşulları altında, belirli bir zaman noktasında bir sistemin mevcut durumu ile gerekli (hedef) durumu arasındaki tutarsızlık.</li>
+</ul>
+<p><strong>Problem durumu:</strong></p>
+<ul>
+  <li>birinin tatmin edici bulmadığı ve değiştirmek istediği gerçek bir koşullar bütünü.</li>
+  <li>pratik veya kuramsal çalışma sürecinde ortaya çıkan, daha önce edinilmiş bilginin yetersiz olduğuna dair bir farkındalık ve bunun sonucunda amaçlı bir araştırma yoluyla giderilmesi gereken yeni bilgi ihtiyacı.</li>
+</ul>
+<p>Modern sistem analizinin merkezi kavramlarından biri, belirli tanımlanabilir özellikleri paylaşan problemleri ifade eden sistemik problem kavramıdır. Bu kavramı tek ve kapsayıcı bir tanımla kesin olarak belirlemek mümkün olmasa da, bilimsel araştırma deneyiminden yola çıkarak bu tür problemlerin ayırt edici özellikleri genelleştirilebilir. Bunlar arasında şunlar bulunur:</p>
+<ul>
+  <li>Yapısızlık veya zayıf yapılandırılmışlık.</li>
+  <li>Biçimselleştirilememe veya zayıf biçimselleştirilebilirlik.</li>
+  <li>Çelişkililik.</li>
+  <li>Belirsizlik.</li>
+  <li>Belirsizlik/muğlaklık (anlam bulanıklığı).</li>
+  <li>Biçimsel olmayışlık.</li>
+  <li>Karmaşıklık.</li>
+</ul>
+<p><strong>Bir amaca ulaşmada engel oluşturan problem durumunun özellikleri:</strong></p>
+<ul>
+  <li>yüksek düzeyde belirsizlik (bilginin yokluğu veya yetersizliği)</li>
+  <li>durumun tanımlanmasında veya değerlendirilmesinde belirgin veya önemli çelişkilerin varlığı</li>
+  <li>zayıf yapılandırılmışlık veya tam bir yapı eksikliği</li>
+  <li>problem durumunun biçimselleştirilememesi veya zayıf biçimde biçimselleştirilebilir olması</li>
+</ul>
+<p>H. Simon ve A. Newell (1958) tarafından ortaya konan problem yapılandırılmışlığı kavramı, belirli bir problemi tanımlayan nicel ve nitel, nesnel ve öznel bilginin dengesiyle ilgilidir.</p>
+<p>İyi yapılandırılmış ya da iyi biçimselleştirilebilir problemler nicel bir formülasyona elverişlidir; en temel bağımlılıkları nesnel modellerle ifade edilir ve sembollerin sayısal değerler aldığı sembolik biçimde temsil edilir. Yapısız ya da biçimselleştirilemeyen problemler, yalnızca bireylerin öznel yargılarına dayanan nitel, sözel tanımlara sahiptir ve problemin en önemli özellikleri arasındaki nicel ilişkiler ya yoktur ya da bilinmemektedir. Yarı yapılandırılmış ya da zayıf biçimselleştirilebilir problemler ara bir konumdadır: nicel ve nitel bileşenleri bir arada barındırırlar, ancak iyi tanımlanmamış ve yeterince anlaşılmamış yönler baskındır.</p>
+<p>Sistemik problemlerin içerik bakımından dinamiği, ancak olayların nasıl gelişebileceğine dair olası senaryolar veya varyantlar aracılığıyla betimlenebilir. Bunun nedeni, genellikle üç temel ilişki hakkında kapsamlı verinin bulunmamasıdır: (1) problemi çevreleyen koşullar; (2) onun diğer problemlerle bağlantıları; ve (3) çözümü için gereken kaynaklar. Sistemik bir problemin çözümünde karşılaşılacak tüm durumları önceden öngörmek imkânsızdır. Sistemik bir problemin başlangıçta görünen kısmı, çözümü için gereken toplam bilginin yalnızca küçük bir bölümünü oluşturur; geri kalanı ise gizli kalır ve ancak araştırma sırasında ortaya çıkar. Ayrıca sistemik problemler, çözüm için birden çok belirgin olmayan yöntem ve yaklaşım içerir, ancak olası seçeneklerin tam kümesi önceden belirlenemez.</p>
+<p>Sistemik problemler birçok bilimsel disiplini etkiler, ancak hiçbir tek disiplin bunların bütüncül çözümü için etkili yöntemler sunamaz. Geleneksel disiplinler, ancak bu şekilde pratik açıdan anlamlı sonuçlar elde edilebileceği gerekçesiyle kapsamlarını bilinçli olarak daraltırlar. Buna karşılık sistem analizi, öngörü gücü ne olursa olsun herhangi bir tek kuramın çerçevesinin ötesinde bilimsel ve pratik ilgi alanlarının bütünleştirilmesini gerektirir. Bir sistemik problem ancak incelenen nesnenin tüm yönlerini ve görünümlerini kapsayan, karmaşıklığı problemin karmaşıklığına denk bir bilimsel yöntem ve bilgi bütünü oluşturularak etkili biçimde çözülebilir.</p>
+<p>Çeşitli bilimlerin bilgi ve yöntemleri, kendi başlarına böyle bir bütün oluşturamaz çünkü aralarında eşgüdüm ve odaklanmış bir yön eksikliği vardır. Bu nedenle, tekil bileşenleri yönetebilecek, araştırma sonuçlarını eşgüdümleyebilecek ve çabaları en önemli yönlere yoğunlaştırabilecek sistem-oluşturucu bir mekanizmaya ihtiyaç vardır. Sistem analizi, bu eşgüdüm ve bütünleştirme işlevini yerine getirir.</p>
+<p>Sistemik problemler, ortaya çıktıkları özün birçok heterojen yönünü etkiler ve bu yönler arasında karşılıklı etkileşim ilişkileri bulunur. Bir problemi sözde “önemsiz” yönlerini dışlayarak basitleştirme girişimleri hatalara yol açabilir. Aynı zamanda tüm yönleri hesaba katma çabası, problemi yönetilemez ve pratikte çözülemez hâle getirir. Herhangi bir sistemik problemin parametre uzayında bir uzlaşma bölgesi vardır. Bu bölgeyi aramak, sistem analizinin en önemli pragmatik görevlerinden biridir.</p>
+</div>
+      </article>
+    </div>
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Metodolojiler</h2>
+    <ul>
+      <li><a href="/tr/methodology_sa.html">Sistem Analizi Metodolojisi</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>İlgili makaleler</h2>
+    <ul>
+      <li><a href="/tr/system.html">Sistem</a></li>
+      <li><a href="/tr/system_terminus.html">Sistem Kavramı</a></li>
+      <li><a href="/tr/system_def.html">Sistemin Tanımı</a></li>
+      <li><a href="/tr/economics.html">Ekonomide Sistem Analizi</a></li>
+      <li><a href="/tr/systems_analysis.html">Sistem Analizi</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Gezinme yolu">
+    <a href="/tr/">Ana Sayfa</a> <span aria-hidden="true">/</span>
+    <a href="/tr/systems_analysis.html">Sistem Analizi</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Problem</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Temayı değiştir"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/problem.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/tr/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Temayı değiştir"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710ea70f221e13',t:'MTc4ODczNTI4NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

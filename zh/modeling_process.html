@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>建模过程</title>
+<meta name="description" content="建模过程可视为从一类模型向另一类模型的转换。习惯上区分三大类模型：认知模型、实质模型与形式模型。它们构成建模的三个相互关联的层次，不能彼此孤立地看待。">
+<meta name="keywords" content="建模过程,模型,认知模型,概念模型,形式模型,数学建模,系统分析">
+<link rel="canonical" href="https://systems-analysis.info/zh/modeling_process.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/modeling_process.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/modeling_process.html">
+<link rel="alternate" hreflang="zh" href="https://systems-analysis.info/zh/modeling_process.html">
+<meta property="og:title" content="建模过程">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/zh/modeling_process.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="建模过程可视为从一类模型向另一类模型的转换。习惯上区分三大类模型：认知模型、实质模型与形式模型。它们构成建模的三个相互关联的层次，不能彼此孤立地看待。">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="zh_CN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/zh/modeling_process.html#article",
+    "headline": "建模过程",
+    "description": "建模过程可视为从一类模型向另一类模型的转换。习惯上区分三大类模型：认知模型、实质模型与形式模型。",
+    "url": "https://systems-analysis.info/zh/modeling_process.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "zh",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/zh/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/zh/modeling_process.html"
+    },
+    "keywords": [
+        "建模过程",
+        "模型",
+        "认知模型",
+        "概念模型",
+        "形式模型",
+        "数学建模",
+        "系统分析"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://systems-analysis.info/zh/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "建模",
+            "item": "https://systems-analysis.info/zh/modelling.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "建模过程"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/zh/">首页</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/sections.html">栏目</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">维基</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/books.html">书籍</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/catalog.html">目录</a>
+        <span aria-hidden="true">·</span>
+        <a href="/modeling_process.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Toggle theme"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Toggle font"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">建模过程</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>建模过程可以表示为从一类<a href="/zh/model.html" class="text-link">模型</a>向另一类模型的转换。习惯上区分三大类模型：认知模型、实质模型与形式模型。它们构成建模的三个相互关联的层次，不能彼此孤立地看待。各建模层次之间的相互影响，与模型的潜在性这一性质有关。任何模型的建立都伴随着关于所研究客体的新知识的出现，这导致在不同层次上重新评价和精确化对建模客体的构想与看法；而这一情况又反过来促使人们修订相应的实质模型与认知模型，从而使所研究客体的各建模层次呈螺旋式发展。</p>
+<p>在观察原型客体时，研究者头脑中形成客体的某种思维形象，即它的观念模型；科学文献中习惯把它称为认知模型（思维的、有助于认识的模型）。在形成这种模型时，研究者通常力求回答具体的问题，因此要从客体无限复杂的构造中剔除一切不必要的东西，以获得对它更为紧凑、简练的描述。用自然语言对认知模型所作的表示，称为实质模型。</p>
+<p>认知模型是主观的，因为它由研究者在其全部既往知识与经验的基础上凭思辨形成。只有把认知模型以符号形式描述出来，才能对它有所了解。不能断言认知模型与实质模型是等价的，因为前者可能包含研究者无法或不愿表述的成分。同时，如果实质模型是由他人表述的，或者是集体创作的产物，那么对它的解释、理解的程度、信任的程度，都可能因解释者不同而有很大差别。实质模型常被称为问题的技术性提法。</p>
+<p><strong>按功能特征与目标，实质模型分为描述性模型、解释性模型与预测性模型：</strong></p>
+<ul>
+  <li><em>描述性模型</em>——对客体的任何描述都可称为描述性模型。</li>
+  <li><em>解释性模型</em>使人能够回答某事为何发生的问题。</li>
+  <li><em>预测性模型</em>应当描述客体未来的行为。可以注意到，预测性模型并不一定要包含解释性模型。</li>
+</ul>
+<p><em>概念模型</em>，通常是指在表述时使用了研究建模客体的各专业知识领域的概念与表象的实质模型。</p>
+<p>在更广的意义上，概念模型是指以某种构想或观点为基础的实质模型。概念模型分为三种：逻辑语义模型、结构功能模型与因果模型。</p>
+<ul>
+  <li><em>逻辑语义模型</em>是用相应专业知识领域的术语与定义对客体所作的描述，其中包含一切已知的、逻辑上无矛盾的论断与事实。对这类模型的分析借助逻辑手段进行，并援引相应专业领域中积累的知识。</li>
+  <li>在建立<em>结构功能模型</em>时，通常把客体看作完整的系统，并把它分解为若干要素或子系统。系统各部分之间以结构关系相联结，这些关系描述从属性，以及解决各项课题的逻辑顺序与时间顺序。表示这类模型时，各种图式、图表与框图都很方便。</li>
+  <li><em>因果模型</em>常用于解释和预测客体的行为。这类模型主要面向以下几点：1）揭示所研究客体各组成要素之间的主要相互联系；2）确定某些因素的变化如何影响模型各组成部分的状态；3）理解模型总体上将如何运行，以及它能否恰当地描述研究者所关心参数的动态。</li>
+</ul>
+<p><em>形式模型</em>，是借助一种或几种形式语言（例如数学理论的语言、专门的建模语言或算法语言）对概念模型所作的表示。在人文科学中，建模过程在许多情况下以建立客体的概念模型而告终；而在自然科学学科中，通常能够建立形式模型。</p>
+<p>如果说实质模型与形式模型对认识过程的意义或多或少已为研究者所认识，那么认知模型的作用则常被低估。这与这类模型的主观性以及思维过程的隐蔽性有关。然而，确有一些客体与过程，其认知模型的作用格外重大。例如，操作员或决策者主要正是依据自己的认知模型来管理客体或过程的。这类模型在社会科学中的作用同样重大。</p>
+<p>数学建模，是一种观念的、科学的、符号的形式建模：其中对客体的描述以数学语言进行，而对模型的研究则借助各种数学方法进行。</p>
+<p>任何用于科学研究的数学模型，都能根据给定的原始数据求出研究者所关心的建模客体或现象的参数值。因此可以认为，任何这类模型的实质，都在于把输入参数的某个给定值集合映射到输出参数的值集合上。这使人们能够把数学模型看作某种数学算子。算子这一概念可以作相当广义的理解：它既可以是联系输入值与输出值的某个函数，也可以是代表代数方程组、微分方程组、积分微分方程组或积分方程组符号写法的映射，还可以是某种算法、一套规则或表格，用以根据给定的原始值求出（或确定）输出参数。</p>
+<p>从建立这类模型的分类的角度看，通过算子概念来界定数学模型更具建设性，因为它涵盖了目前现有数学模型的全部多样性。</p>
+<p><strong>数学建模与实物实验相比的优点：</strong></p>
+<ul>
+  <li>经济性（特别是节省真实系统的资源）；</li>
+  <li>能够对假设的、即自然界中尚未实现的客体进行建模；</li>
+  <li>能够实现在实物条件下危险或难以复现的工况；</li>
+  <li>能够改变时间尺度；</li>
+  <li>便于进行多方面的分析；</li>
+  <li>由于能够揭示一般规律性，因而具有更强的预测力；</li>
+  <li>所用技术保障与软件保障的通用性（编程系统与广泛用途的应用程序包）。</li>
+</ul>
+<p><em>信息模型</em>，是以信息形式表示的客体模型；这些信息描述对本次考察而言本质的客体参数与变量、它们之间的联系、客体的输入与输出，并使人能够通过向模型输入关于输入量变化的信息，来模拟客体可能的状态。</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>相关文章</h2>
+    <ul>
+      <li><a href="/zh/model.html">模型</a></li>
+      <li><a href="/zh/modelling.html">建模</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/zh/">首页</a> <span aria-hidden="true">/</span>
+    <a href="/zh/modelling.html">建模</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">建模过程</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Toggle theme"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/modeling_process.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">语言</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/zh/map.html">网站地图</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710f8778761e13',t:'MTc4ODczNTMyMA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

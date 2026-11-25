@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Системен анализ: Куейд</title>
+<meta name="description" content="Системен анализ според Е. Куейд — начин на разглеждане на проблема, при който математическият формализъм играе спомагателна роля. Описани са структурата, последователността и ключовите елементи на анализа.">
+<meta name="keywords" content="системен анализ,система,решение,проблеми,задачи,цел,модел">
+<link rel="canonical" href="https://systems-analysis.info/bg/systems_analysis_q.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/systems_analysis_q.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/systems_analysis_q.html">
+<link rel="alternate" hreflang="bg" href="https://systems-analysis.info/bg/systems_analysis_q.html">
+<meta property="og:title" content="Системен анализ: Куейд">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/bg/systems_analysis_q.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Системен анализ според Е. Куейд — начин на разглеждане на проблема, при който математическият формализъм играе спомагателна роля. Описани са структурата, последователността и ключовите елементи на анализа.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="bg_BG">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/bg/systems_analysis_q.html#article",
+    "headline": "Системен анализ: Куейд",
+    "description": "Системен анализ според Е. Куейд — начин на разглеждане на проблема, при който математическият формализъм играе спомагателна роля. Описани са структурата, последователността и ключовите елементи на анализа.",
+    "url": "https://systems-analysis.info/bg/systems_analysis_q.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "bg",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/bg/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/bg/systems_analysis_q.html"
+    },
+    "keywords": [
+        "системен анализ",
+        "система",
+        "решение",
+        "проблеми",
+        "задачи",
+        "цел",
+        "модел"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Analysis for Military Decisions",
+        "author": {
+            "@type": "Person",
+            "name": "Quade E.S."
+        },
+        "datePublished": "1964",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Rand McNally"
+        },
+        "inLanguage": "bg"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Analysis for Military Decisions",
+        "author": {
+            "@type": "Person",
+            "name": "Quade E.S."
+        },
+        "datePublished": "1964",
+        "inLanguage": "bg"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Начална страница",
+            "item": "https://systems-analysis.info/bg/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Системен анализ",
+            "item": "https://systems-analysis.info/bg/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Системен анализ: Куейд"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Основна навигация">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Меню</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/bg/">Начална страница</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bg/sections.html">Раздели</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bg/books.html">Книги</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bg/catalog.html">Каталог</a>
+        <span aria-hidden="true">·</span>
+        <a href="/systems_analysis_q.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Смяна на темата"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Смяна на шрифта"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Системен анализ: Куейд</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>„Анализ за военни решения”. Куейд</strong></p>
+<p>Ние вярваме на интуицията на човека в областта, в която той може да се смята за експерт. Но при решаването на сложни <a href="/bg/problem.html" class="text-link">проблеми</a>, свързани със структурата на силите или разработването на военна техника, се сблъскваме с толкова широка област, че в нея няма истински експерти. Системният анализ изисква, като правило, отчитане на множество фактори в най-разнообразни области на техниката, военните операции и логистиката — не само от нашата страна, но и от страна на противника — както и икономически, политически и стратегически фактори и сложните връзки между тях. Никой отделен човек не може да бъде експерт в повече от една-две части на областта; никой не може да бъде експерт в областта като цяло и в нейните взаимовръзки. Затова не може да се разчита само на неподкрепената интуиция на един-единствен човек.</p>
+<p>Системният анализ трябва да се разглежда не като противопоставяне на експертната преценка, а като рамка, която позволява преценките на специалисти от множество части на областта да се използват за постигане на резултати, надхвърлящи всяка отделна преценка. Именно това е <a href="/bg/goal.html" class="text-link">целта</a> на системния анализ и неговият потенциал.</p>
+<p>Системният анализ е начин на разглеждане на проблема. Математическият формализъм и използването на компютри могат да бъдат необходими или дори полезни, но може и да не са. Понякога е достатъчно внимателно осмисляне на проблема. Но във всеки анализ, свързан с подготовката на решение при условия на неопределеност, независимо от неговата сложност, присъстват определени елементи. Тези елементи — цел или цели, алтернативи или средства за постигане на тези цели, разходи или всичко, което трябва да се вложи за постигане на всяка алтернатива, <a href="/bg/model.html" class="text-link">модел</a> или описание на зависимостта между алтернативите и това, което те постигат и струват, както и критерии, по които се избира предпочитаната алтернатива — присъстват във всеки анализ, чиято цел е да повлияе върху избора на курс на действие. Тези елементи често е трудно да бъдат избрани или ясно определени.</p>
+<p>Системният анализ е опит да се откроят въпросите, важни за избора на курс на действие, и да им се дадат отговори. Най-полезният инструмент за отговаряне на тези въпроси често е математическият модел. Понякога използването на два или три математически модела е дори още по-полезно. Обаче създаването на такива модели и работата с тях по никакъв начин не изчерпват целия анализ. В действителност поставянето на полезни въпроси, създаването на алтернативни <a href="/bg/system.html" class="text-link">системи</a> за сравнение, умелото интерпретиране на получените от сравнението резултати и свързването на тези резултати с проблемите, породили изследването, са в по-голяма степен решаващите фази на процеса, отколкото работата с модела. Това често се забравя, тъй като работата с модел изисква повечето от времето, а методите на работа лесно се обясняват и пренасят от едно изследване в друго.</p>
+</div>
+      </article>
+    </div>
+
+    <div class="links">
+  <div class="links-section">
+    <h2>За системния анализ</h2>
+    <ul>
+      <li><a href="/bg/systems_analysis.html">Системен анализ</a></li>
+      <li><a href="/bg/systems_analysis_golubkov.html">Системният подход в дългосрочното планиране: Голубков</a></li>
+      <li><a href="/bg/systems_analysis_optner.html">Системен анализ за решаване на бизнес и промишлени проблеми: Оптнер</a></li>
+      <li><a href="/bg/systems_analysis_pospelov.html">Системен анализ и дългосрочно планиране: Поспелов</a></li>
+      <li><a href="/bg/systems_analysis_clelandking.html">Системен анализ и управление на проекти: Клилънд, Кинг</a></li>
+      <li><a href="/bg/systems_analysis_nikanorov.html">Системен анализ и системен подход: Никаноров</a></li>
+      <li><a href="/bg/systems_analysis_pt.html">Системен анализ: Перегудов, Тарасенко</a></li>
+      <li><a href="/bg/systems_analysis_ch.html">Системен анализ в икономиката: Черняк</a></li>
+      <li><a href="/bg/systems_analysis_book.html">Изтегляне на литература за системен анализ</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Към статията</h2>
+    <ul>
+      <li><a href="/bg/system.html">Система</a></li>
+      <li><a href="/bg/system_terminus.html">Понятието за система</a></li>
+      <li><a href="/bg/system_def.html">Определения за система</a></li>
+      <li><a href="/bg/methodology_sa.html">Методология на системния анализ</a></li>
+      <li><a href="/bg/economics.html">Системен анализ в икономиката</a></li>
+      <li><a href="/bg/systems_thinking.html">Системният подход</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Път за навигация">
+    <a href="/bg/">Начална страница</a> <span aria-hidden="true">/</span>
+    <a href="/bg/systems_analysis.html">Системен анализ</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Системен анализ: Куейд</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Смяна на темата"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/systems_analysis_q.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/bg/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Смяна на темата"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710697ecefa5ce',t:'MTc4ODczNDk1NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>奥普特纳的系统分析方法</title>
+<meta name="description" content="问题提得好，就等于解决了一半。正因如此，系统分析人员特别注重尽早评估问题的参数、性质与相互关系。">
+<meta name="keywords" content="系统分析,奥普特纳方法,问题,系统,解,备选方案,要求">
+<link rel="canonical" href="https://systems-analysis.info/zh/optner_method.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/optner_method.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/optner_method.html">
+<link rel="alternate" hreflang="zh" href="https://systems-analysis.info/zh/optner_method.html">
+<meta property="og:title" content="奥普特纳的系统分析方法">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/zh/optner_method.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="问题提得好，就等于解决了一半。正因如此，系统分析人员特别注重尽早评估问题的参数、性质与相互关系。">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="zh_CN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/zh/optner_method.html#article",
+    "headline": "奥普特纳的系统分析方法",
+    "description": "问题提得好，就等于解决了一半。正因如此，系统分析人员特别注重尽早评估问题的参数、性质与相互关系。",
+    "url": "https://systems-analysis.info/zh/optner_method.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "zh",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/zh/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/zh/optner_method.html"
+    },
+    "keywords": [
+        "系统分析",
+        "奥普特纳方法",
+        "问题",
+        "系统",
+        "解",
+        "备选方案",
+        "要求"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Systems Analysis for Business and Industrial Problem Solving",
+        "author": {
+            "@type": "Person",
+            "name": "Optner S.L."
+        },
+        "datePublished": "1965",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Prentice-Hall"
+        },
+        "inLanguage": "en"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-08-22",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Systems Analysis for Business and Industrial Problem Solving",
+        "author": {
+            "@type": "Person",
+            "name": "Optner S.L."
+        },
+        "datePublished": "1965",
+        "inLanguage": "en"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://systems-analysis.info/zh/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "系统分析",
+            "item": "https://systems-analysis.info/zh/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "奥普特纳的系统分析方法"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/zh/">首页</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/sections.html">栏目</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">维基</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/books.html">书籍</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/catalog.html">目录</a>
+        <span aria-hidden="true">·</span>
+        <a href="/optner_method.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Toggle theme"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Toggle font"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">奥普特纳的系统分析方法</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+<p>斯坦福·奥普特纳。企业与工业<a href="/zh/problem.html" class="text-link">问题</a>求解中的系统分析</p>
+<p><strong>奥普特纳所划分的系统分析方法阶段</strong>：</p>
+<ol>
+  <li>症状的辨识。</li>
+  <li>问题迫切程度的确定。</li>
+  <li>目标的确定。</li>
+  <li>揭示系统的结构及其有缺陷的要素。</li>
+  <li>可能性结构的确定。</li>
+  <li>备选方案的寻找。</li>
+  <li>备选方案的评价。</li>
+  <li>备选方案的选取。</li>
+  <li>决策的拟定。</li>
+  <li>决策为执行者与领导者集体所接受。</li>
+  <li>决策实施过程的启动。</li>
+  <li>决策实施过程的管理。</li>
+  <li>实施及其后果的评价。</li>
+</ol>
+<p>问题被定义为这样一种情境：其中存在两个状态，一个称为现有状态，另一个称为拟议状态。现有状态由现有系统表示，拟议状态由假想的或拟议的系统表示。每一个状态中都有一组在过程中结合起来的客体、属性与联系。每一个状态都可以描述为<a href="/zh/system.html" class="text-link">系统</a>。要从现有状态过渡到拟议状态，就必须改变现有的客体、属性与联系的集合。客体的改变可以指改变部分设备，而不是人员编组；属性的改变可以表现为人员数量的增加；联系的改变则可能意味着责任的重新分配。</p>
+<p>问题的特征在于它所包含的未知量与条件。未知的领域可以是一个，也可以是许多个。未知量可以是可定性确定的，而不是可定量确定的。作为定量特征，可以采用一个评价区间，用来表示未知量的推定状态。按经典的理解，未知量就是有待求出的量。因此，用一个未知量去定义另一个未知量，可能是矛盾的或多余的。未知量只能用已知的东西来表达，即用那些其客体、属性与联系已经确立的东西来表达。已知量被定义为其数值已经确立的量。</p>
+<p>现有状态（现有系统）可以同时包含已知量和未知量；这意味着未知量的存在未必妨碍系统运行的能力。按定义，现有系统是合乎逻辑的，但可能不满足所加的限制。因此，系统能够运作这一点本身，并不是判断其好坏的最终准则，因为某些运行完美的系统可能并不保证目标的达成。目标只能用对系统的要求来加以确定。对系统的要求借助条件来确立，条件规定了处于恰当联系之中的客体与属性。</p>
+<p>对系统的要求，是把确定<a href="/zh/goal.html" class="text-link">目标</a>的那些单义陈述固定下来的手段。虽然对系统的要求是用客体、属性与联系的术语来确立的，但目标可以用所期望的状态来确定。对于给定的一组系统要求而言，目标与所期望的状态可以完全重合。如果两者不同，就说这些要求代表了所期望的系统。一般而言，目标与所期望的系统是等同的。</p>
+<p>现有系统与所期望的系统之间的间隙，构成了所谓的问题。行动的目标就在于把现有系统与拟议系统之间的间隙缩到最小。保持或改善系统的运作，就等同于现有状态与所期望状态之间的间隙。保持现有状态被定义为把系统的输出维持在规定范围之内的能力。改善系统状态被定义为取得高于、或超出现有状态下所能取得的输出的能力。</p>
+<p>决策规定了现有状态与所期望状态之间的间隙将以何种方式被填补。因此，决策就是对现有状态与所期望状态之间的填补，它完成从一个状态向另一个状态的转变。决策用客体、属性与联系的术语，描述两个状态之间存在的差别。它进而确定这种填补应当以何种方式引入，才能得到拟议状态。决策通过带反馈的管理来实现，这种管理由输出<a href="/zh/model.html" class="text-link">模型</a>、符合性检验和作用模型构成。</p>
+<p>问题的解决借助学习过程来完成。学习被定义为由刺激所引起的认识活动。认识是一系列范围广泛的智力活动，其中之一是对当前的或未来的图像的识别。识别是通过对输出应用准则来实现的。认识是填补现有系统与所期望系统之间间隙时必须履行的基本功能之一。学习中履行的其他功能还有：形成把系统由一种状态转变为另一种状态所借助的手段，以及形成某种想法，这种想法先验地指出如何通过改变现有的客体、属性与联系来取得所期望的状态。</p>
+<p>成功地把问题表述出来，可以抵得上问题解决的“一半”。因此，系统分析专家特别注意尽早对该问题的参数、属性与联系作出评价。并不总能把“现成的”目标带进问题之中；例如，某人所提出的目标可能是不充分的。而且，系统分析专家只有在表述问题的过程中发现其中不存在多余或矛盾之处时，才能接受别人向他提出的目标。经过表述而“解决了一半”的问题并不是真正解决了的问题，但它的表述意味着问题的基本要素已被恰当地确定并联系起来。问题的表述也称为问题的界定。</p>
+<p>表述问题的最初几步操作，其目的在于：1）拟出问题的初始表述；2）就问题的各个部分来把握这一表述；3）把握与问题有关的事实；4）对问题的初始表述作总体的精确化。在最初的研究中，通过区分已知的与未知的，力求使问题的初始表述变得可以把握。</p>
+<p>问题表述的镜像，就是目标界定的形成。“目标”一词用来描述有待达成的结果。目标可以采取这样的形式：它要求达到某个最大值（或最小值），而这个值本身还有待确定；也可以采取给定一个取值区间的形式，解应当落在这个区间之内。在一切情况下，目标都是活动所期望的结果。</p>
+<p>确立方向的目标与限定目标的强制性联系两者的组合，形成了着手研究问题时所处的限制。限制是各种规则、规定以及个人提出或外部提出的指导原则的总和，它们界定了问题的边界。每一个问题都应当有可确定的限制。目标与强制性联系的相容性至关重要。如果对限制没有共识，那么对决策就不大可能有共识。如果与情境相关的各方人员无法就问题或限制达成一致，那么谈论“决策”就毫无意义。</p>
+<p>当系统分析专家确立问题的条件时，他就为问题的研究划定了界限，从而也划定了限制的边界。在数学意义上，条件可以被确定为充分的、多余的或矛盾的；它们不可能采取其他形式。</p>
+<p>如果条件包含不必要的要素，那么它就是多余的。不必要的要素可能是那些容易引起损失的要素。条件也可能包含矛盾。矛盾的要素是这样一种要素：它与另一要素紧密相关，而若其中一个为真，另一个就必定为假。矛盾条件的后果，是问题各部分彼此不协调，从而相互对立。</p>
+<p>如果强制性联系与所提出的目标相容，而目标又是依照对系统的要求恰当界定的，那么充分条件就得到满足。充分性意味着准确，意味着具备满足要求所需的一切，既无不足，也无过剩。</p>
+<p>结构界定不清的问题，一般是通过不加证明地接受相对评价而非绝对评价来“解决”的。范围很大的问题；其解决取决于尚未研制出来的东西的问题；以及在现有情境下尚无法确定系统如何联合、却要就此作出假设的问题，都属于结构界定不清的问题。</p>
+<p>在表述（或提出）问题时，系统分析专家应当完成以下工作：第一，描述问题是如何被发现的；第二，确立为什么把它看作问题；第三，把它与某些相邻问题的“症状”区分开；第四，对问题的不良后果给出可操作的界定。系统分析专家如果在表述问题时就提出解决办法或确立原因，那将犯下相当严重的错误。准备问题的表述，首先是为了把问题置于注意的中心。在问题表述阶段，对各种假说不提任何要求。为了保证对问题的把控，希望能有在逻辑上相互衔接、轮廓鲜明的事实。</p>
+<p>研究问题的历史方面有一定的道理。问题首次被明确知晓的那个时刻，可能是有价值的证据。它可以把问题同先前那些可以辨识的行动联系起来。有时，确定产生该问题的环境是重要的。</p>
+<p>同样的现象未必被所有人解释为问题。因此，必须确立那种把现象的内容确定为问题的合理依据。商界、政府机构和军事机构中的现象，如果有破坏获利预期或降低行动成效的趋势，就可以被确定为问题。不过，某些并不显然的问题，只能借助分析方法来预见。在问题并不显然的情况下，系统运作的破坏不会立即发生，但已成为可能。</p>
+<p>解决问题时的首要课题，是确定有待分析的客体集合。作为整体来看的客体集合，就构成一个备选方案。备选方案的评价是选取决策或目标的手段。同一个问题的解，可以通过许多种备选程序得到。备选方案可能具有、也可能不具有可定量确定的方面。例如，备选方案中的人数或设备台数是可以定量确定的。市场类型、市场影响力的大小或市场的位置，则可能只是部分可以定量确定的。备选方案的存在，意味着有能力在两个或更多可接受的决策之间作出选择。备选方案的内容，就是可以据以作出某一选择的那些条件。</p>
+<p>假定是关于客体、属性或联系的状态所作的陈述。这些陈述是假说或公设。如果这些陈述为假，那么假定为假，问题的条件就是矛盾的。采用假定，是为了应付那些容易破坏问题求解程序的棘手现实。如果假定不改变某一备选方案的风险水平或费用—成效之比，它们就是问题中有益而本质的部分。假定把保证一致性的责任加在系统分析专家身上。</p>
+<p>假定使人能够从其他已知事实的存在，推出某个并不确知的事实的存在。</p>
+<p>准则是据以测度或选取备选方案的手段。准则迫使系统分析专家在选择自己的偏好时表现出逻辑性。准则用时间、费用或成效之类的其他度量，来指出某一备选方案的相对达成程度。准则是一种标准，据以就选择的相对好处作出判断。</p>
+<p>风险是对潜在地承受不利后果的程度的度量。高风险也可能以低统计概率为特征，尽管风险的精确度量未必总能定量确定。在定量与定性混合的复杂问题中，用“不确定性”一词来描述风险。</p>
+<p>在这样的用法下，“不确定性”一词指某一事件实际发生的相对可信程度。风险或不确定性可能贯穿问题求解过程的始终。例如，如果准则内在地不适于测度它所要测度的东西，风险就会增加。如果被当作真的假定结果为假，风险同样会增加。当由于未计入输出对输入的反馈误差而选取了某一备选方案时，风险可能成为该方案的主导特征。</p>
+<p>备选方案被定义为有待选取的两种或更多可能性之一。一个备选方案要被纳入考虑，它就必须是所提问题一个可接受的潜在解。如果各备选方案是可比的，就要确立它们之间的差别。如果它们不可比，就要确立它们在哪些方面不可比。按照这一界定，备选方案之间的差别可以表现在程度上，也可以表现在种类上。</p>
+<p>备选方案有两种普遍形式：功能上不同的备选方案，或操作上不同的备选方案。备选方案的功能形式可以用帆船与单发动机飞机来说明，两者可以被确定为同一课题的备选解。备选方案的操作形式可以用同一款汽车为解决同一课题而推出的三种不同版本来说明。功能性备选方案的区别在于解决课题的手段。操作性备选方案的区别在于客体、属性与联系聚合为系统的方式。备选方案按其对资源与费用的全部需求以及预期收益来评价。确定备选方案的目的可以是使系统成效最大化、最小化或最优化。</p>
+<p>数学与统计学中有这样一条规则：在同一时间，逻辑上只能使一个评价量最大化或最小化。这条规则同样适用于定量与定性混合的问题。例如，不大可能在不损害系统成效的前提下，把解决问题的时间与费用同时最小化。可以使一个客体最大化，同时使其他客体最优化——它们会接近于在该客体取最大值这一条件下所可能达到的理想状态，但达不到那种状态。最优的意思是“通盘考虑之后”的最好，它并不意味着“绝对最好”。它可以指最有利于达成既定目标的条件。最优值可能被感受为如此“有利”，以至于专家会把它们描述为“理想的”“出色的”或“最好的”。然而这种评价是后验的，并不属于备选方案构建的一部分。</p>
+<p>在大多数情况下，问题解的最大值与最小值可能是未知的；因而最优值也将是未知的。这些考虑表明，可以构造出这样一个备选方案的例子，它的最大值或最小值并没有太大用处。当系统分析专家对每一备选方案的绝对价值缺乏把握时，他可以求出一系列评价量，用以描述问题的解。</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>系统分析方法</h2>
+    <ul>
+      <li><a href="/zh/methodology_sa.html">系统分析方法</a></li>
+      <li><a href="/zh/quade_method.html">奎德方法</a></li>
+      <li><a href="/zh/chernyak_method.html">切尔尼亚克方法</a></li>
+      <li><a href="/zh/young_method.html">扬方法</a></li>
+      <li><a href="/zh/golubkov_method.html">戈卢布科夫方法</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>文献</h2>
+    <ul>
+      <li><a href="/assets/systems_analysis_optner.pdf">下载图书：企业与工业问题求解中的系统分析。奥普特纳</a></li>
+      <li><a href="/zh/systems_analysis_book.html">系统分析文献</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>相关文章</h2>
+    <ul>
+      <li><a href="/zh/systems_analysis.html">系统分析</a></li>
+      <li><a href="/zh/decision_theory.html">决策理论</a></li>
+      <li><a href="/zh/decision_making.html">决策</a></li>
+      <li><a href="/zh/choice.html">决策与选择</a></li>
+      <li><a href="/zh/management.html">管理与计划</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/zh/">首页</a> <span aria-hidden="true">/</span>
+    <a href="/zh/systems_analysis.html">系统分析</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">奥普特纳的系统分析方法</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Toggle theme"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/optner_method.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">语言</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/zh/map.html">网站地图</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710f632bd01e13',t:'MTc4ODczNTMxNA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

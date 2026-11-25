@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>عملية النمذجة</title>
+<meta name="description" content="يمكن النظر إلى عملية النمذجة بوصفها انتقالًا من فئة من النماذج إلى أخرى. ويُميَّز اصطلاحًا بين ثلاث فئات كبرى من النماذج: المعرفية، والمضمونية، والصورية. وهي تشكّل ثلاثة مستويات مترابطة من النمذجة لا يمكن النظر إليها بمعزل بعضها عن بعض.">
+<meta name="keywords" content="عملية النمذجة,النموذج,النموذج المعرفي,النموذج المفهومي,النموذج الصوري,النمذجة الرياضية,تحليل النظم">
+<link rel="canonical" href="https://systems-analysis.info/ar/modeling_process.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/modeling_process.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/modeling_process.html">
+<link rel="alternate" hreflang="ar" href="https://systems-analysis.info/ar/modeling_process.html">
+<meta property="og:title" content="عملية النمذجة">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/ar/modeling_process.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="يمكن النظر إلى عملية النمذجة بوصفها انتقالًا من فئة من النماذج إلى أخرى. ويُميَّز اصطلاحًا بين ثلاث فئات كبرى من النماذج: المعرفية، والمضمونية، والصورية. وهي تشكّل ثلاثة مستويات مترابطة من النمذجة لا يمكن النظر إليها بمعزل بعضها عن بعض.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="ar_SA">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css?v=20261125">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;600;700&family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/ar/modeling_process.html#article",
+    "headline": "عملية النمذجة",
+    "description": "يمكن النظر إلى عملية النمذجة بوصفها انتقالًا من فئة من النماذج إلى أخرى. ويُميَّز اصطلاحًا بين ثلاث فئات كبرى من النماذج: المعرفية، والمضمونية، والصورية. وهي تشكّل ثلاثة مستويات مترابطة من النمذجة لا يمكن النظر إليها بمعزل بعضها عن بعض.",
+    "url": "https://systems-analysis.info/ar/modeling_process.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "ar",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/ar/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/ar/modeling_process.html"
+    },
+    "keywords": [
+        "عملية النمذجة",
+        "النموذج",
+        "النموذج المعرفي",
+        "النموذج المفهومي",
+        "النموذج الصوري",
+        "النمذجة الرياضية",
+        "تحليل النظم"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "الرئيسية",
+            "item": "https://systems-analysis.info/ar/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "النمذجة",
+            "item": "https://systems-analysis.info/ar/modelling.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "عملية النمذجة"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="التنقل الرئيسي">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">القائمة</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/ar/">الرئيسية</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ar/sections.html">الأقسام</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">ويكي</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ar/books.html">الكتب</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ar/catalog.html">الفهرس</a>
+        <span aria-hidden="true">·</span>
+        <a href="/modeling_process.html" lang="en" dir="ltr">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="تبديل المظهر"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="تبديل الخط"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">عملية النمذجة</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>يمكن النظر إلى عملية النمذجة بوصفها انتقالًا من فئة من <a href="/ar/model.html" class="text-link">النماذج</a> إلى أخرى. ويُميَّز اصطلاحًا بين ثلاث فئات كبرى من النماذج: المعرفية، والمضمونية، والصورية. وهي تشكّل ثلاثة مستويات مترابطة من النمذجة لا يمكن النظر إليها بمعزل بعضها عن بعض. ويرتبط التأثير المتبادل بين مستويات النمذجة بخاصية الكمون الملازمة للنماذج؛ فإنشاء أي نموذج يستتبع نشوء معرفة جديدة عن الموضوع قيد الدراسة، مما يؤدي إلى إعادة تقييم المفاهيم والتصورات عن موضوع النمذجة وتدقيقها على مستويات مختلفة. ويؤدي هذا بدوره إلى مراجعة النماذج المضمونية والمعرفية المقابلة، بما يضمن تطورًا لولبيًا لجميع مستويات نمذجة الموضوع قيد الدراسة.</p>
+<p>عند ملاحظة الشيء الأصلي تتشكّل في ذهن الباحث صورة ذهنية للشيء — أي نموذجه المثالي. ويُسمّى هذا في الأدبيات العلمية عادةً النموذج المعرفي (الذهني). وعند تكوين مثل هذا النموذج يسعى الباحث، كقاعدة عامة، إلى الإجابة عن أسئلة محددة؛ ولذلك يُجرَّد التكوين المعقد إلى ما لا نهاية للشيء من كل ما هو غير جوهري للحصول على وصف أكثر إيجازًا وتركيزًا. ويُسمّى تمثيل النموذج المعرفي باللغة الطبيعية النموذجَ المضموني.</p>
+<p>النماذج المعرفية ذاتية بطبيعتها، لأن الباحثين يبنونها استنادًا إلى معارفهم وخبراتهم السابقة. ولا يمكن فهم هذه النماذج إلا من خلال الوصف الرمزي. والنماذج المعرفية والمضمونية غير متكافئة، إذ قد تحتوي الأولى على عناصر لا يستطيع الباحث أو لا يريد التعبير عنها. وفي الوقت نفسه، إذا صاغ النموذجَ المضموني شخصٌ آخر أو كان نتاج جهد جماعي، فقد يتفاوت تفسيره ومستوى فهمه ودرجة الثقة به تفاوتًا كبيرًا بين المفسّرين. وكثيرًا ما يُشار إلى النماذج المضمونية بوصفها صياغات تقنية للمسائل.</p>
+<p><strong>تنقسم النماذج المضمونية بحسب الغرض الوظيفي والأهداف إلى وصفية وتفسيرية وتنبؤية:</strong></p>
+<ul>
+  <li><em>النموذج الوصفي</em> هو أي وصف للشيء.</li>
+  <li><em>النموذج التفسيري</em> يجيب عن سؤال لماذا يحدث أمر ما.</li>
+  <li><em>النموذج التنبؤي</em> يصف السلوك المستقبلي للشيء. ومن الجدير بالذكر أن النموذج التنبؤي لا يتضمن بالضرورة مكوّنًا تفسيريًا.</li>
+</ul>
+<p><em>النموذج المفهومي</em> نموذج مضموني تُستخدم في صياغته مفاهيم المجالات الموضوعية المعنية بدراسة موضوع النمذجة وتصوراتها.</p>
+<p>وبمعنى أوسع، يُفهم النموذج المفهومي بوصفه نموذجًا مضمونيًا يستند إلى مفهوم أو وجهة نظر محددة. ويُميَّز بين ثلاثة أنواع من النماذج المفهومية: المنطقية الدلالية، والبنيوية الوظيفية، والسببية.</p>
+<ul>
+  <li><em>النموذج المنطقي الدلالي</em> يصف الشيء باستخدام مصطلحات المجالات الموضوعية ذات الصلة وتعريفاتها، ويضم جميع العبارات والوقائع المعروفة المتّسقة منطقيًا. ويعتمد تحليل هذه النماذج على الاستدلال المنطقي وعلى المعرفة المتراكمة في المجالات المعنية.</li>
+  <li><em>النموذج البنيوي الوظيفي</em> يعامل الشيء بوصفه نظامًا متكاملًا مفكَّكًا إلى عناصر أو نظم فرعية منفردة. وترتبط المكوّنات بعلاقات بنيوية تحدّد التبعية والتسلسل المنطقي والترتيب الزمني لإنجاز المهام. وتُستخدم المخططات والرسوم البيانية والخرائط عادةً لتمثيل هذه النماذج.</li>
+  <li><em>النموذج السببي</em> يُستخدم غالبًا لتفسير سلوك الشيء والتنبؤ به. وتتّجه هذه النماذج أساسًا نحو: (1) تحديد العلاقات المتبادلة الرئيسية بين العناصر المكوِّنة للموضوع قيد الدراسة؛ (2) تحديد كيفية تأثير التغيّرات في عوامل معينة في حالة مكوّنات النموذج؛ (3) فهم كيفية عمل النموذج ككل، وما إذا كان سيصف على نحو ملائم ديناميكية المعلمات التي تهمّ الباحث.</li>
+</ul>
+<p><em>النموذج الصوري</em> يمثّل النموذج المفهومي باستخدام لغة صورية واحدة أو أكثر، كالنظريات الرياضية أو لغات النمذجة المتخصصة أو لغات البرمجة. وفي العلوم الإنسانية كثيرًا ما تنتهي النمذجة بتطوير نموذج مفهومي، في حين يكون بناء نموذج صوري ممكنًا بوجه عام في العلوم الطبيعية.</p>
+<p>ومع أن أهمية النماذج المضمونية والصورية في البحث معترف بها على نطاق واسع، فإن دور النماذج المعرفية كثيرًا ما يُستهان به بسبب ذاتيتها والطبيعة الضمنية لعمليات التفكير. ومع ذلك تكتسي النماذج المعرفية أهمية خاصة في السياقات التي يعتمد فيها المشغّلون أو متخذو القرار على تمثيلاتهم الذهنية الخاصة للتحكم في الأشياء أو العمليات. ويؤدي هذا النوع من النماذج أيضًا دورًا كبيرًا في العلوم الاجتماعية.</p>
+<p>النمذجة الرياضية شكل من أشكال النمذجة العلمية والرمزية والصورية، تُوصف فيه الأشياء باستخدام اللغة الرياضية وتُدرس بالطرائق الرياضية.</p>
+<p>يتيح النموذج الرياضي المصمَّم للبحث العلمي تحديد قيم معلمات الشيء أو الظاهرة المنمذجة استنادًا إلى بيانات مدخلة محددة. وهكذا فإن جوهر هذا النموذج هو إسناد قيم معلمات المخرجات إلى قيم معلمات المدخلات. ويتيح هذا المنظور النظر إلى النموذج الرياضي بوصفه مؤثرًا رياضيًا، يمكن تعريفه على نطاق واسع بأنه دالة، أو تطبيق تمثّله معادلات جبرية أو تفاضلية أو تكاملية تفاضلية أو تكاملية، أو خوارزمية، أو مجموعة من القواعد، أو جداول تيسّر تحديد معلمات المخرجات من قيم المدخلات.</p>
+<p>وتعريف النموذج الرياضي من خلال مفهوم المؤثر أكثر بناءً من منظور بناء تصنيف لهذه النماذج، لأنه يشمل التنوع الكامل للنماذج الرياضية الموجودة اليوم.</p>
+<p><strong>مزايا النمذجة الرياضية مقارنة بالتجربة الفيزيائية:</strong></p>
+<ul>
+  <li>الاقتصاد (ولا سيما الحفاظ على موارد النظام الحقيقي)؛</li>
+  <li>إمكانية نمذجة أشياء افتراضية — أي أشياء غير متحققة في الطبيعة؛</li>
+  <li>إمكانية محاكاة ظروف تشغيل خطرة أو يصعب إعادة إنتاجها في الواقع؛</li>
+  <li>إمكانية تغيير المقياس الزمني؛</li>
+  <li>سهولة التحليل متعدد الجوانب؛</li>
+  <li>قدرة تنبؤية أكبر، بفضل إمكانية تحديد الانتظامات العامة؛</li>
+  <li>عمومية الأجهزة والبرمجيات المستخدمة (أنظمة البرمجة وحزم البرمجيات التطبيقية العامة).</li>
+</ul>
+<p><em>النموذج المعلوماتي</em> نموذج لشيء مقدَّم في صورة معلومات تصف المعلمات والمتغيرات الجوهرية لهذا التحليل، والعلاقات بينها، ومدخلات الشيء ومخرجاته، مما يتيح محاكاة الحالات الممكنة للشيء بتغذية النموذج بمعلومات عن التغيّرات في قيم المدخلات.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>مقالات ذات صلة</h2>
+    <ul>
+      <li><a href="/ar/model.html">النموذج</a></li>
+      <li><a href="/ar/modelling.html">النمذجة</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="مسار التنقل">
+    <a href="/ar/">الرئيسية</a> <span aria-hidden="true">/</span>
+    <a href="/ar/modelling.html">النمذجة</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">عملية النمذجة</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="تبديل المظهر"></button>
+    <span class="footer-info" dir="ltr">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/modeling_process.html" lang="en" dir="ltr">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">اللغات</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/ar/map.html">خريطة الموقع</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="تبديل المظهر"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+</body>
+</html>

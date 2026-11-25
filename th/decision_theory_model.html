@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ปัญหาการตัดสินใจ</title>
+<meta name="description" content="ปัญหาการตัดสินใจประกอบด้วยการกำหนดชุดของทางเลือกที่เป็นไปได้ซึ่งช่วยแก้ไขสถานการณ์ปัญหาภายใต้ข้อจำกัดที่มีอยู่ และการเลือกจากทางเลือกเหล่านั้นเพียงทางเลือกที่ดีที่สุดหนึ่งทางหรือหลายทางเลือกที่พึงประสงค์ซึ่งตอบสนองข้อกำหนดต่าง ๆ">
+<meta name="keywords" content="ทางเลือก,การตัดสินใจ,การวิเคราะห์ระบบ,ข้อจำกัด,ปัญหา,เป้าหมาย,การเลือก,เกณฑ์,ความพึงพอใจ">
+<link rel="canonical" href="https://systems-analysis.info/th/decision_theory_model.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/decision_theory_model.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/decision_theory_model.html">
+<link rel="alternate" hreflang="th" href="https://systems-analysis.info/th/decision_theory_model.html">
+<meta property="og:title" content="ปัญหาการตัดสินใจ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/th/decision_theory_model.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="ปัญหาการตัดสินใจประกอบด้วยการกำหนดชุดของทางเลือกที่เป็นไปได้ซึ่งช่วยแก้ไขสถานการณ์ปัญหาภายใต้ข้อจำกัดที่มีอยู่ และการเลือกจากทางเลือกเหล่านั้นเพียงทางเลือกที่ดีที่สุดหนึ่งทางหรือหลายทางเลือกที่พึงประสงค์ซึ่งตอบสนองข้อกำหนดต่าง ๆ">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="th_TH">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/th/decision_theory_model.html#article",
+    "headline": "ปัญหาการตัดสินใจ",
+    "description": "ปัญหาการตัดสินใจประกอบด้วยการกำหนดชุดของทางเลือกที่เป็นไปได้ซึ่งช่วยแก้ไขสถานการณ์ปัญหาภายใต้ข้อจำกัดที่มีอยู่ และการเลือกจากทางเลือกเหล่านั้นเพียงทางเลือกที่ดีที่สุดหนึ่งทางหรือหลายทางเลือกที่พึงประสงค์ซึ่งตอบสนองข้อกำหนดต่าง ๆ",
+    "url": "https://systems-analysis.info/th/decision_theory_model.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "th",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/th/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/th/decision_theory_model.html"
+    },
+    "keywords": [
+        "ทางเลือก",
+        "การตัดสินใจ",
+        "การวิเคราะห์ระบบ",
+        "ข้อจำกัด",
+        "ปัญหา",
+        "เป้าหมาย",
+        "การเลือก",
+        "เกณฑ์",
+        "ความพึงพอใจ"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "ปัญหาการตัดสินใจ",
+        "description": "Forming a set of possible alternatives that resolve a problem situation under existing constraints, and selecting the best among them.",
+        "sameAs": [
+            "https://systems-analysis.info/wiki/Задача_принятия_решения",
+            "https://systems-analysis.info/eng/Decision_problem"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "หน้าแรก",
+            "item": "https://systems-analysis.info/th/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "ทฤษฎีการตัดสินใจ",
+            "item": "https://systems-analysis.info/th/decision_theory.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "ปัญหาการตัดสินใจ"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="การนำทางหลัก">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">เมนู</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/th/">หน้าแรก</a>
+        <span aria-hidden="true">·</span>
+        <a href="/th/sections.html">หมวดหมู่</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/th/books.html">หนังสือ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/th/catalog.html">สารบัญ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/decision_theory_model.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="สลับธีม"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="สลับแบบอักษร"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">ปัญหาการตัดสินใจ</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>การกำหนด<strong>ปัญหาการตัดสินใจ</strong></p>
+<p>ปัญหาการตัดสินใจประกอบด้วยการกำหนดชุดของทางเลือกที่เป็นไปได้ซึ่งช่วยแก้ไขสถานการณ์ปัญหาภายใต้ข้อจำกัดที่มีอยู่ และการเลือกจากทางเลือกเหล่านี้เพียงทางเลือกที่ดีที่สุดหนึ่งทางหรือหลายทางเลือกที่พึงประสงค์ซึ่งตอบสนองข้อกำหนดที่กำหนดไว้ ในทางรูปนัย ปัญหาการตัดสินใจ D สามารถเขียนได้ในรูปแบบทั่วไปดังนี้:</p>
+<p>D = ⟨F, A, X, G, P⟩</p>
+<p>โดยที่:</p>
+<p>F คือการกำหนดปัญหาการตัดสินใจ ซึ่งรวมถึงคำอธิบายเนื้อหาของ<a href="/th/problem.html" class="text-link">ปัญหา</a>ที่กำลังพิจารณา และหากจำเป็น การนำเสนอในรูปแบบจำลอง การกำหนดเป้าหมายหรือเป้าหมายต่าง ๆ ที่ต้องบรรลุ และข้อกำหนดสำหรับรูปแบบของผลลัพธ์สุดท้าย;</p>
+<p>A คือชุดของทางเลือกที่เป็นไปได้ซึ่งใช้ในการเลือก ทางเลือกเหล่านี้อาจเป็นทางเลือกที่มีอยู่จริง ซึ่งขึ้นอยู่กับบริบทของปัญหา อาจอยู่ในรูปของวัตถุ ผู้สมัคร วิธีการบรรลุเป้าหมาย การกระทำ การตัดสินใจ และอื่น ๆ ในทำนองเดียวกัน หรืออาจเป็นชุดสมมุติของทางเลือกที่เป็นไปได้ทั้งหมดในทางทฤษฎี ซึ่งอาจมีจำนวนไม่จำกัดก็ได้ การเลือกจะเกิดขึ้นก็ต่อเมื่อมีทางเลือกที่เป็นไปได้อย่างน้อยสองทางสำหรับการแก้ปัญหา;</p>
+<p>X คือชุดของคุณลักษณะ (ลักษณะเฉพาะ พารามิเตอร์) ที่อธิบายทางเลือกและลักษณะที่แตกต่างกันของทางเลือกเหล่านั้น คุณลักษณะประกอบด้วย ประการแรก ตัวชี้วัดที่เป็นภาวะวิสัยซึ่งแสดงคุณสมบัติบางประการที่มีอยู่ในทางเลือกและโดยทั่วไปสามารถวัดได้ และประการที่สอง การประเมินเชิงอัตวิสัยซึ่งมักให้ตามเกณฑ์ที่คัดเลือกหรือสร้างขึ้นเป็นพิเศษ ซึ่งสะท้อนถึงลักษณะของทางเลือกที่มีความสำคัญต่อผู้มีส่วนร่วมในการเลือก;</p>
+<p>G คือชุดของเงื่อนไขที่จำกัดขอบเขตของทางเลือกที่ยอมรับได้สำหรับการแก้ปัญหา ข้อจำกัดอาจอธิบายในเชิงเนื้อหาหรือระบุในรูปแบบของข้อกำหนดที่เป็นทางการสำหรับทางเลือกและ/หรือคุณลักษณะของทางเลือกเหล่านั้น ตัวอย่างเช่น อาจเป็นข้อจำกัดเกี่ยวกับค่าของคุณลักษณะที่กำหนด หรือระดับความเกี่ยวข้อง (การแสดงออก) ของคุณลักษณะที่แตกต่างกันไปตามทางเลือกต่าง ๆ หรือความเป็นไปไม่ได้ที่จะรวมค่าคุณลักษณะบางค่าเข้าด้วยกันในเวลาเดียวกันสำหรับทางเลือกที่มีอยู่จริง;</p>
+<p>P แสดงถึงความพึงพอใจของผู้ตัดสินใจ (DM) หนึ่งคนหรือหลายคน ซึ่งใช้เป็นพื้นฐานในการประเมินและเปรียบเทียบทางเลือกที่เป็นไปได้สำหรับการแก้ปัญหา การคัดเลือกทางเลือกที่ยอมรับได้ และการค้นหาทางเลือกที่ดีที่สุดหรือที่ยอมรับได้ บ่อยครั้งที่เพื่อให้การกำหนดปัญหาการตัดสินใจง่ายขึ้น ข้อมูลบางส่วนที่อธิบายความพึงพอใจของผู้ตัดสินใจจะถูกแปลงให้เป็นข้อจำกัด</p>
+<p>ปัจจัยที่แสดงลักษณะของสถานการณ์ปัญหามักถูกแบ่งออกเป็นสองกลุ่มตามธรรมเนียม ได้แก่ ปัจจัยที่ควบคุมได้และปัจจัยที่ควบคุมไม่ได้</p>
+<ul>
+  <li>ปัจจัยที่ควบคุมได้ ซึ่งการเลือกขึ้นอยู่กับผู้ตัดสินใจ โดยเนื้อแท้แล้วคือเป้าหมายที่กำหนดไว้ ทางเลือกสำหรับการบรรลุเป้าหมายเหล่านั้น การประเมินเชิงอัตวิสัยของทางเลือก และระดับของการบรรลุเป้าหมาย</li>
+</ul>
+<ul>
+  <li>ปัจจัยที่ควบคุมไม่ได้ไม่ขึ้นอยู่กับผู้ตัดสินใจ ปัจจัยเหล่านี้กำหนดคุณลักษณะที่เป็นภาวะวิสัยของทางเลือก และในบางส่วนกำหนดข้อจำกัดต่อการเลือกทางเลือกที่เป็นไปได้</li>
+</ul>
+<p><strong>ปัจจัยยังถูกแบ่งย่อยออกเป็น:</strong></p>
+<ul>
+  <li>ปัจจัยเชิงกำหนดแน่นอน ซึ่งมีลักษณะที่แน่นอนที่ทราบและ/หรือกำหนดไว้ล่วงหน้า;</li>
+  <li>ปัจจัยเชิงความน่าจะเป็น หรือเชิงสโตแคสติก ซึ่งมีลักษณะสุ่มที่ทราบและ/หรือกำหนดไว้ล่วงหน้า;</li>
+  <li>ปัจจัยที่ไม่แน่นอน หรือไม่ทราบค่า ซึ่งมีลักษณะที่กำหนดไว้อย่างคลุมเครือและ/หรือไม่ทราบ แต่บางครั้งอาจทราบช่วงของการเปลี่ยนแปลงของค่าของปัจจัยเหล่านั้น</li>
+</ul>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>บทความที่เกี่ยวข้อง</h2>
+    <ul>
+      <li><a href="/th/decision_theory.html">ทฤษฎีการตัดสินใจ</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="เส้นทางนำทาง">
+    <a href="/th/">หน้าแรก</a> <span aria-hidden="true">/</span>
+    <a href="/th/decision_theory.html">ทฤษฎีการตัดสินใจ</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">ปัญหาการตัดสินใจ</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="สลับธีม"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/decision_theory_model.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/th/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="สลับธีม"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710dfd9a571e13',t:'MTc4ODczNTI1Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

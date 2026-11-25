@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tschernjaks Methodik</title>
+<meta name="description" content="Die Methode der Systemanalyse von J. I. Tschernjak umfasst 12 aufeinanderfolgende Stufen — von der Problemanalyse und der Systemdefinition bis zur Erstellung eines umfassenden Entwicklungsprogramms. Jede Stufe wird ausführlich beschrieben.">
+<meta name="keywords" content="Systemanalyse,Tschernjaks Methode,Ziel,System,Problem,Management,Entscheidung">
+<link rel="canonical" href="https://systems-analysis.info/de/chernyak_method.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/chernyak_method.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/chernyak_method.html">
+<link rel="alternate" hreflang="de" href="https://systems-analysis.info/de/chernyak_method.html">
+<meta property="og:title" content="Tschernjaks Methodik">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/de/chernyak_method.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Die Methode der Systemanalyse von J. I. Tschernjak umfasst 12 aufeinanderfolgende Stufen — von der Problemanalyse und der Systemdefinition bis zur Erstellung eines umfassenden Entwicklungsprogramms. Jede Stufe wird ausführlich beschrieben.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="de_DE">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/de/chernyak_method.html#article",
+    "headline": "Tschernjaks Methodik",
+    "description": "Die Methode der Systemanalyse von J. I. Tschernjak umfasst 12 aufeinanderfolgende Stufen — von der Problemanalyse und der Systemdefinition bis zur Erstellung eines umfassenden Entwicklungsprogramms. Jede Stufe wird ausführlich beschrieben.",
+    "url": "https://systems-analysis.info/de/chernyak_method.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "de",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/de/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/de/chernyak_method.html"
+    },
+    "keywords": [
+        "Systemanalyse",
+        "Tschernjaks Methode",
+        "Ziel",
+        "System",
+        "Problem",
+        "Management",
+        "Entscheidung"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Systems Analysis in Economic Management",
+        "author": {
+            "@type": "Person",
+            "name": "Chernyak Yu.I."
+        },
+        "datePublished": "1975",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Ekonomika"
+        },
+        "inLanguage": "de"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Systems Analysis in Economic Management",
+        "author": {
+            "@type": "Person",
+            "name": "Chernyak Yu.I."
+        },
+        "datePublished": "1975",
+        "inLanguage": "de"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Startseite",
+            "item": "https://systems-analysis.info/de/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Systemanalyse",
+            "item": "https://systems-analysis.info/de/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Tschernjaks Methodik"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Hauptnavigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menü</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/de/">Startseite</a>
+        <span aria-hidden="true">·</span>
+        <a href="/de/sections.html">Abschnitte</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/de/books.html">Bücher</a>
+        <span aria-hidden="true">·</span>
+        <a href="/de/catalog.html">Katalog</a>
+        <span aria-hidden="true">·</span>
+        <a href="/chernyak_method.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Design wechseln"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Schriftart wechseln"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Tschernjaks Methodik</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Angesichts der enormen und im Wesentlichen unbegrenzten Vielfalt an Problemen, die mit Methoden der Systemanalyse gelöst werden, wäre es schwierig, die Entwicklung eines einzigen, für alle Fälle geeigneten Instrumentariums zu erwarten. In verschiedenen Phasen der Untersuchung — die von einer intuitiven und eher lose formulierten Problemstellung bis zur Auswahl optimaler Lösungen mittels strenger mathematischer Methoden verläuft — kommt naturgemäß ein äußerst vielfältiges wissenschaftliches Instrumentarium zum Einsatz. Es erscheint daher ratsam, zunächst die grundlegende Abfolge der Stufen der Systemanalyse festzulegen.</p>
+<p>Eine Analyse der von verschiedenen Autoren vorgeschlagenen Methoden führt zu der Schlussfolgerung, dass in der Abfolge der Durchführung der Systemanalyse eine grundlegende Einheitlichkeit besteht, unabhängig vom <a href="/de/goal.html" class="text-link">Ziel</a> oder dem untersuchten Objekt. Dennoch halten wir einen eklektischen Ansatz in diesem Fall nicht für ausreichend akzeptabel und schlagen eine neue Klassifikation der Stufen der Systemanalyse vor. Sie berücksichtigt alle wesentlichen Stufen verschiedener Klassifikationen, folgt dem Prinzip der logischen Abfolge und ist mit den grundlegenden Aussagen der Systemtheorie verknüpft, die der Systemanalyse zugrunde liegen. Die Eignung und Zweckmäßigkeit der vorgeschlagenen Klassifikation wurden in einer Reihe von Systemuntersuchungen auf allen wichtigen Managementebenen überprüft.</p>
+<p>Die grundlegende Abfolge der Stufen und Aufgaben der Systemanalyse</p>
+<ol>
+  <li>Problemanalyse.</li>
+  <li>Systemdefinition.</li>
+  <li>Analyse der Systemstruktur.</li>
+  <li>Formulierung des Gesamtziels und des Systemkriteriums.</li>
+  <li>Zieldekomposition, Bestimmung der Anforderungen an Ressourcen und Prozesse.</li>
+  <li>Bestimmung von Ressourcen und Prozessen; Zielsynthese von unten nach oben.</li>
+  <li>Prognose und Analyse künftiger Bedingungen.</li>
+  <li>Bewertung von Zielen und Mitteln.</li>
+  <li>Auswahl von Alternativen.</li>
+  <li>Diagnose des bestehenden Systems.</li>
+  <li>Erstellung eines umfassenden Entwicklungsprogramms.</li>
+  <li>Gestaltung einer Organisation zur Zielerreichung.</li>
+</ol>
+<p>Beschreibung der Stufen</p>
+<p>Stufe 1. <strong>Problemanalyse</strong></p>
+<ul>
+  <li>Existiert das Problem überhaupt?</li>
+  <li>Präzise Formulierung des Problems.</li>
+  <li>Analyse der logischen Struktur des Problems.</li>
+  <li>Entwicklung des Problems in der Vergangenheit und Zukunft.</li>
+  <li>Äußere Zusammenhänge des Problems mit anderen Problemen.</li>
+  <li>Grundsätzliche Lösbarkeit des Problems.</li>
+</ul>
+<p>Die Frage, ob ein <a href="/de/problem.html" class="text-link">Problem</a> tatsächlich existiert, ist von größter Bedeutung, da der Einsatz enormer Anstrengungen zur Lösung nicht existierender Probleme keineswegs eine Ausnahme, sondern ein durchaus typischer Fall ist. Die korrekte und präzise Formulierung des Problems ist die erste und notwendige Stufe jeder Systemuntersuchung. Wie bekannt ist, kann eine gelungene Problemformulierung der halben Lösung gleichkommen.</p>
+<p>Stufe 2. <strong>Systemdefinition</strong></p>
+<ul>
+  <li>Präzisierung der Aufgabenstellung.</li>
+  <li>Bestimmung der Position des Beobachters.</li>
+  <li>Definition des Objekts.</li>
+  <li>Bestimmung der Elemente (Festlegung der Grenzen der Systemzerlegung).</li>
+  <li>Bestimmung der Teilsysteme.</li>
+  <li>Definition der Umwelt.</li>
+</ul>
+<p>Um ein <a href="/de/system.html" class="text-link">System</a> zu konstruieren, muss das Problem in eine Menge klar formulierter Aufgaben zerlegt werden. Bei einem großen System bilden diese Aufgaben eine Hierarchie; bei einem komplexen System bilden sie ein Spektrum — das heißt, es werden in Bezug auf ein einziges Objekt völlig unterschiedliche Aufgaben in verschiedenen Sprachen gelöst. Die Position des Beobachters bestimmt grundlegend das Kriterium für die Lösung des Problems. Die Definition des Objekts ist nur auf den ersten Blick eine leichte Aufgabe; in manchen Fällen stellt sie die größte Schwierigkeit der Untersuchung dar.</p>
+<p>Stufe 3. <strong>Analyse der Systemstruktur</strong></p>
+<ul>
+  <li>Bestimmung der Hierarchieebenen (in großen Systemen).</li>
+  <li>Bestimmung der Aspekte und Sprachen (in komplexen Systemen).</li>
+  <li>Bestimmung der Prozesse und Funktionen (in dynamischen Systemen).</li>
+  <li>Bestimmung und Präzisierung der Managementprozesse und Informationskanäle.</li>
+  <li>Präzisierung der Teilsysteme.</li>
+  <li>Präzisierung der Routineprozesse (laufender Betrieb) und der Entwicklungsprozesse (zielorientiert).</li>
+</ul>
+<p>Eine willkürliche Bestimmung der Teilsysteme und der ihnen zugeordneten Prozesse verurteilt eine Systemuntersuchung unweigerlich zum Scheitern. Während in technischen Systemen — zumindest in ihrem materiellen Teil — die Struktur der Teilsysteme klar erkennbar ist, sind in Systemen der Wirtschaftsführung alle strukturellen Beziehungen nicht nur nicht offensichtlich, sondern auch stark hinter den Beziehungen der administrativen Unterordnung verborgen. Bei der Lösung aktueller Probleme der Wirtschaftsführung verdecken Routineverfahren — sowohl objektiv, hinsichtlich der quantitativen Verteilung der Anstrengungen, als auch subjektiv, im Bewusstsein des Organisationspersonals — die Ziele und Prozesse der Entwicklung. Diese Ziele und Prozesse von Routineoperationen zu unterscheiden und zu identifizieren erfordert nicht nur eine strenge logische Analyse, sondern auch eine wirksame Kommunikation mit dem Führungspersonal.</p>
+<p>Stufe 4. <strong>Formulierung des Gesamtziels und des Systemkriteriums</strong></p>
+<ul>
+  <li>Bestimmung der vom Übersystem vorgegebenen Ziele.</li>
+  <li>Bestimmung der Umweltziele und -restriktionen.</li>
+  <li>Formulierung des Gesamtziels.</li>
+  <li>Bestimmung des Kriteriums.</li>
+  <li>Zerlegung von Zielen und Kriterien auf die Teilsysteme.</li>
+  <li>Synthese des Gesamtkriteriums aus den Kriterien der Teilsysteme.</li>
+</ul>
+<p>Die Formulierung des Gesamtziels einer Organisation und insbesondere die Konstruktion eines Kriteriums für die Wirksamkeit des Systems ist keinesfalls durch eine Umfrage der öffentlichen Meinung möglich; sie stellt ein komplexes logisches Verfahren im Rahmen der Konzepte der Systemtheorie dar, das gleichwohl eine feine Kenntnis der konkreten Ökonomie und Technologie des untersuchten Objekts erfordert.</p>
+<p>Stufe 5. <strong>Zieldekomposition, Bestimmung der Anforderungen an Ressourcen und Prozesse</strong></p>
+<ul>
+  <li>Formulierung der Ziele höchster Ordnung.</li>
+  <li>Formulierung der Ziele für laufende Prozesse.</li>
+  <li>Formulierung der Effizienzziele.</li>
+  <li>Formulierung der Entwicklungsziele.</li>
+  <li>Formulierung äußerer Ziele und Restriktionen.</li>
+  <li>Bestimmung der Anforderungen an Ressourcen und Prozesse.</li>
+</ul>
+<p>In großen und komplexen wirtschaftlichen Einheiten (und genau mit solchen Einheiten befasst sich die Systemanalyse) ist das Gesamtziel des Systems so weit von den konkreten Mitteln seiner Erreichung entfernt, dass die Auswahl einer Lösung umfangreiche, arbeitsintensive Arbeit erfordert, um das Ziel mit den Mitteln seiner Umsetzung durch Zieldekomposition zu verknüpfen. Diese wichtige und arbeitsintensive Arbeit steht in der Regel im Mittelpunkt der Systemanalyse. Sie hat die Methode des Zielbaums hervorgebracht, die die wichtigste — wenn nicht die einzige — instrumentelle Errungenschaft der Systemanalyse darstellt.</p>
+<p>Stufe 6. <strong>Bestimmung von Ressourcen und Prozessen; Zielsynthese von unten nach oben</strong></p>
+<ul>
+  <li>Bewertung der vorhandenen Technologie und Kapazität.</li>
+  <li>Bewertung des aktuellen Zustands der Ressourcen.</li>
+  <li>Bewertung laufender und geplanter Projekte.</li>
+  <li>Bewertung der Möglichkeiten der Interaktion mit anderen Systemen.</li>
+  <li>Bewertung sozialer Faktoren.</li>
+  <li>Zielsynthese von unten nach oben.</li>
+</ul>
+<p>In einer beträchtlichen Anzahl von Fällen, insbesondere bei nicht-produktiven und vor allem nicht-wirtschaftlichen Systemen (Gesundheitswesen, Bildung und eine ganze Reihe anderer), ist es nicht möglich, das Ziel und das Kriterium der Entwicklungswirksamkeit explizit durch logisches Schließen auszudrücken. Der Weg der Analyse ausgehend von den „natürlichen menschlichen Bedürfnissen“ ist für den Forscher aufgrund ihrer kontinuierlichen Entwicklung und Veränderung nicht akzeptabel. In solchen Fällen muss man gewissermaßen dem traditionellen Weg folgen: von einer Analyse der gegenwärtigen Situation und des erreichten Niveaus, über eine sukzessive Prognose.</p>
+<p>Stufe 7. <strong>Prognose und Analyse künftiger Bedingungen</strong></p>
+<ul>
+  <li>Analyse stabiler Entwicklungstendenzen des Systems.</li>
+  <li>Prognose der Entwicklung und Veränderung der Umwelt.</li>
+  <li>Vorhersage des Auftretens neuer Faktoren, die die Systementwicklung stark beeinflussen.</li>
+  <li>Analyse künftiger Ressourcen.</li>
+  <li>Umfassende Analyse des Zusammenwirkens künftiger Entwicklungsfaktoren.</li>
+  <li>Analyse möglicher Verschiebungen von Zielen und Kriterien.</li>
+</ul>
+<p>Die Systemanalyse befasst sich in der Regel mit Entwicklungsperspektiven, manchmal recht weit entfernten. Daher gilt das größte Interesse jeglicher Information über die Zukunft — über künftige Situationen, Ressourcen, wissenschaftliche und technische Entdeckungen und Erfindungen, die die Wirtschaftssysteme und die in ihnen ablaufenden Prozesse grundlegend verändern werden, sowie künftige Systeme sozialer Werte, die die Veränderung des Gleichgewichts und in einer Reihe von Fällen die Transformation von Zielen und Kriterien maßgeblich beeinflussen werden. Aus diesem Grund ist die Prognose — die Gewinnung von Informationen über die Zukunft mit wissenschaftlichen Methoden — der wichtigste und zweifellos komplexeste Teil der Systemanalyse.</p>
+<p>Stufe 8. <strong>Bewertung von Zielen und Mitteln</strong></p>
+<ul>
+  <li>Berechnung kriteriengestützter Bewertungen.</li>
+  <li>Bewertung der Zielinterdependenzen.</li>
+  <li>Bewertung der relativen Bedeutung der Ziele.</li>
+  <li>Bewertung der Knappheit und der Kosten von Ressourcen.</li>
+  <li>Bewertung des Einflusses äußerer Faktoren.</li>
+  <li>Berechnung umfassender kalkulatorischer Bewertungen.</li>
+</ul>
+<p>Eine ganze Reihe sozialer, politischer, moralischer, ethischer und anderer Faktoren, die in der Systemanalyse nicht außer Acht gelassen werden können — da sie mitunter einen entscheidenden Einfluss auf die Formulierung der Ziele und die Auswahl der Mittel zu ihrer Umsetzung sowie auf die Bewertung der Ressourcen ausüben —, lassen sich grundsätzlich nicht quantitativ messen. Der einzige Weg, sie zu berücksichtigen, besteht darin, subjektive Einschätzungen von Experten und Fachleuten einzuholen, sowohl zum betreffenden Problem als auch zu einem breiten Spektrum miteinander verknüpfter Probleme. Da sich die Systemanalyse in der Regel mit unstrukturierten oder schwach strukturierten Problemen befasst — also Problemen, denen quantitative Bewertungen fehlen —, erscheint die Einholung von Expertenbewertungen und deren Verarbeitung für die meisten Probleme als eine notwendige Stufe der Systemanalyse.</p>
+<p>Stufe 9. <strong>Auswahl von Alternativen</strong></p>
+<ul>
+  <li>Analyse der Ziele auf Kompatibilität.</li>
+  <li>Überprüfung der Ziele auf Vollständigkeit.</li>
+  <li>Beseitigung überflüssiger Ziele.</li>
+  <li>Planung von Alternativen zur Erreichung einzelner Ziele.</li>
+  <li>Bewertung und Vergleich der Alternativen.</li>
+  <li>Zusammenführung einer Menge miteinander verknüpfter Alternativen.</li>
+</ul>
+<p>Die Diskrepanz zwischen Bedürfnissen und den Mitteln zu ihrer Befriedigung stellt ein Gesetz und den wichtigsten Impuls der wirtschaftlichen Entwicklung dar. Da der Begriff des Ziels untrennbar mit dem Begriff der Mittel zu seiner Erreichung verbunden ist, besteht der zentrale Punkt der Entscheidungsfindung in der Systemanalyse im „Beschneiden“ der Ziele — der Beseitigung derjenigen Ziele, die als unbedeutend eingeschätzt werden oder für die keine Mittel zur Erreichung vorhanden sind — sowie in der Auswahl konkreter Alternativen zur Erreichung einer miteinander verknüpften Menge der wichtigsten Ziele.</p>
+<p>In Systemuntersuchungen vom „technischen“ Typ und relativ geringem Umfang wird die „Auswahl von Alternativen“ als die wichtigste, wenn nicht sogar einzige Aufgabe der Systemanalyse betrachtet. Bei Problemen der Wirtschaftsführung stellt das Beschneiden des Zielbaums und die Auswahl einer miteinander verknüpften Menge von Alternativen eine wichtige Aufgabe dar, insbesondere angesichts der Tatsache, dass der wissenschaftlich-technische Fortschritt zusammen mit sich verändernden Umgebungsbedingungen eine enorme Zahl alternativer Maßnahmen zur Erreichung einer Menge wirtschaftlicher Ziele erzeugt. Diese Maßnahmen müssen sich in Ressourcenbeschränkungen einfügen, da das Gesetz der planmäßigen Entwicklung der Volkswirtschaft strikte Grenzen für die Verteilung der Ressourcen zur Unterstützung einzelner Teilsysteme der Volkswirtschaft vorschreibt.</p>
+<p>Stufe 10. <strong>Diagnose des bestehenden Systems</strong></p>
+<ul>
+  <li>Modellierung des technologischen und wirtschaftlichen Prozesses.</li>
+  <li>Berechnung der potenziellen und tatsächlichen Kapazität.</li>
+  <li>Analyse der Kapazitätsverluste.</li>
+  <li>Feststellung von Mängeln in der Organisation von Produktion und Management.</li>
+  <li>Bestimmung und Analyse von Maßnahmen zur Verbesserung der Organisation.</li>
+</ul>
+<p>Die Probleme der Volkswirtschaftsverwaltung, die mit Methoden der Systemanalyse gelöst werden, entstehen nicht im luftleeren Raum, sondern innerhalb tatsächlich bestehender Leitungsorgane, meist in ihren miteinander verknüpften Komplexen. Die Aufgabe der Systemanalyse besteht zumeist nicht in der Schaffung eines neuen Leitungsorgans, sondern in der Verbesserung bestehender, indem sie auf die Problemlösung ausgerichtet werden. In solchen Fällen ist eine diagnostische Analyse der Leitungsorgane erforderlich, um ihre Fähigkeiten, Mängel und Engpässe bei der Erfassung und Verarbeitung von Informationen sowie bei der Entscheidungsfindung zu ermitteln, mit dem Ziel, diese Mängel zu beseitigen und das System besser auszurichten.</p>
+<p>Ein neues System wird wirksam umgesetzt, wenn es die Arbeit des Leitungsorgans erleichtert, zur Lösung drängender Probleme beiträgt und die Erreichung unmittelbarer Ziele fördert. Daher ist die Feststellung aktueller Verwaltungsprobleme und unmittelbarer Ziele ebenfalls Gegenstand der diagnostischen Untersuchung und Analyse der Leitungsorgane. Diese Untersuchung umfasst eine Massenbefragung des Personals des betreffenden Leitungsorgans, seiner gleichgestellten Organisationen, übergeordneten Organisationen und untergeordneten Organisationen, durch die die erforderlichen Informationen ermittelt und anschließend analysiert werden. Dies liefert die Grundlage für die Erstellung eines fundierten organisatorischen Plans zur Umsetzung des neu gestalteten Systems.</p>
+<p>Stufe 11. <strong>Erstellung eines umfassenden Entwicklungsprogramms</strong></p>
+<ul>
+  <li>Formulierung von Maßnahmen, Projekten und Programmen.</li>
+  <li>Bestimmung der Priorität von Zielen und Maßnahmen zu ihrer Erreichung.</li>
+  <li>Verteilung der Tätigkeitsbereiche.</li>
+  <li>Verteilung der Zuständigkeitsbereiche.</li>
+  <li>Entwicklung eines umfassenden Maßnahmenplans innerhalb von Ressourcen- und Zeitrestriktionen.</li>
+  <li>Zuweisung an verantwortliche Organisationen, Führungskräfte und ausführende Stellen.</li>
+</ul>
+<p>Wie bereits erwähnt, werden die Ergebnisse der Systemanalyse im Rahmen systemischer Konzepte gewonnen, und um zur praktischen Planung von Maßnahmen übergehen zu können, müssen sie in die Sprache wirtschaftlicher Kategorien übersetzt werden. Als Ergebnis der Lösung von Systemanalyseaufgaben für wichtige volkswirtschaftliche Fragen — einschließlich Plänen für wissenschaftliche Forschung, Entwicklung, Kapitalinvestitionen und Bauwesen sowie die Entwicklung von Wirtschaftszweigen und Territorien — entstehen umfassende Entwicklungsprogramme. Diese Programme werden zeitlich verteilt, verschiedenen ausführenden Stellen zugewiesen; es wird eine Führungs- und Koordinationsstruktur geschaffen und ein System der Rechenschaftspflicht eingerichtet.</p>
+<p>Stufe 12. <strong>Gestaltung einer Organisation zur Zielerreichung</strong></p>
+<ul>
+  <li>Definition der Organisationsziele.</li>
+  <li>Formulierung der Organisationsfunktionen.</li>
+  <li>Gestaltung der Organisationsstruktur.</li>
+  <li>Gestaltung der Informationsmechanismen.</li>
+  <li>Gestaltung der Betriebsmodi.</li>
+  <li>Gestaltung materieller und moralischer Anreizmechanismen.</li>
+</ul>
+<p>In manchen Fällen erfordert die Umsetzung solcher umfassenden Programme die Schaffung eines dauerhaften oder vorübergehenden Leitungsorgans; in anderen Fällen besteht das Ziel der Systemanalyse in der Neugestaltung eines gegebenen Leitungsorgans. Die Systemanalyse verfügt über eine Reihe spezifischer Methoden und Techniken zur Gestaltung wirksamer Leitungsorgane, die zielorientiert sind — das heißt, auf die Schaffung und Nutzung eines bestimmten Systems innerhalb der Volkswirtschaft ausgerichtet.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Methodiken der Systemanalyse</h2>
+    <ul>
+      <li><a href="/de/methodology_sa.html">Methodik der Systemanalyse</a></li>
+      <li><a href="/de/quade_method.html">Quades Methodik der Systemanalyse</a></li>
+      <li><a href="/de/optner_method.html">Optners Methodik der Systemanalyse</a></li>
+      <li><a href="/de/young_method.html">Youngs Methodik der Systemanalyse</a></li>
+      <li><a href="/de/golubkov_method.html">Golubkows Methodik der Systemanalyse</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Literatur</h2>
+    <ul>
+      <li><a href="/assets/systems_analysis_chernyak.pdf">Buch herunterladen: Systemanalyse in der Wirtschaftsführung. Tschernjak</a></li>
+      <li><a href="/de/systems_analysis_book.html">Literatur zur Systemanalyse herunterladen</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Verwandte Artikel</h2>
+    <ul>
+      <li><a href="/de/systems_analysis.html">Systemanalyse</a></li>
+      <li><a href="/de/decision_theory.html">Entscheidungstheorie</a></li>
+      <li><a href="/de/decision_making.html">Entscheidungsfindung</a></li>
+      <li><a href="/de/choice.html">Entscheidung und Auswahl</a></li>
+      <li><a href="/de/management.html">Management</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/de/">Startseite</a> <span aria-hidden="true">/</span>
+    <a href="/de/systems_analysis.html">Systemanalyse</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Tschernjaks Methodik</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Design wechseln"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/chernyak_method.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/de/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Design wechseln"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a371075c0f77a5ce',t:'MTc4ODczNDk4NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

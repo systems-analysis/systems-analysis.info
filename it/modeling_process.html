@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Il processo di modellazione</title>
+<meta name="description" content="Il processo di modellazione può essere considerato come un passaggio da una classe di modelli a un’altra. Si distinguono convenzionalmente tre ampie classi di modelli: cognitivi, sostanziali e formali. Essi costituiscono tre livelli interconnessi di modellazione che non possono essere considerati in isolamento l’uno dall’altro.">
+<meta name="keywords" content="processo di modellazione, modello, modello cognitivo, modello concettuale, modello formale, modellazione matematica, analisi dei sistemi">
+<link rel="canonical" href="https://systems-analysis.info/it/modeling_process.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/modeling_process.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/modeling_process.html">
+<link rel="alternate" hreflang="it" href="https://systems-analysis.info/it/modeling_process.html">
+<meta property="og:title" content="Il processo di modellazione">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/it/modeling_process.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Il processo di modellazione può essere considerato come un passaggio da una classe di modelli a un’altra. Si distinguono convenzionalmente tre ampie classi di modelli: cognitivi, sostanziali e formali. Essi costituiscono tre livelli interconnessi di modellazione che non possono essere considerati in isolamento l’uno dall’altro.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="it_IT">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/it/modeling_process.html#article",
+    "headline": "Il processo di modellazione",
+    "description": "Il processo di modellazione può essere considerato come un passaggio da una classe di modelli a un’altra. Si distinguono convenzionalmente tre ampie classi di modelli: cognitivi, sostanziali e formali. Essi costituiscono tre livelli interconnessi di modellazione che non possono essere considerati in isolamento l’uno dall’altro.",
+    "url": "https://systems-analysis.info/it/modeling_process.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "it",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/it/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/it/modeling_process.html"
+    },
+    "keywords": [
+        "processo di modellazione",
+        "modello",
+        "modello cognitivo",
+        "modello concettuale",
+        "modello formale",
+        "modellazione matematica",
+        "analisi dei sistemi"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://systems-analysis.info/it/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Modellazione",
+            "item": "https://systems-analysis.info/it/modelling.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Il processo di modellazione"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Navigazione principale">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/it/">Home</a>
+        <span aria-hidden="true">·</span>
+        <a href="/it/sections.html">Sezioni</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/it/books.html">Libri</a>
+        <span aria-hidden="true">·</span>
+        <a href="/it/catalog.html">Catalogo</a>
+        <span aria-hidden="true">·</span>
+        <a href="/modeling_process.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Cambia tema"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Cambia carattere"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Il processo di modellazione</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Il processo di modellazione può essere considerato come un passaggio da una classe di <a href="/it/model.html" class="text-link">modelli</a> a un’altra. Si distinguono convenzionalmente tre ampie classi di modelli: cognitivi, sostanziali e formali. Essi costituiscono tre livelli interconnessi di modellazione che non possono essere considerati in isolamento. L’influenza reciproca tra i livelli di modellazione è legata alla proprietà di potenzialità insita nei modelli. La creazione di qualsiasi modello comporta l’emergere di nuove conoscenze sull’oggetto studiato, che portano a una rivalutazione e a un affinamento dei concetti e delle visioni dell’oggetto di modellazione ai diversi livelli. Questa circostanza, a sua volta, determina una revisione dei corrispondenti modelli sostanziali e cognitivi, garantendo uno sviluppo a spirale di tutti i livelli di modellazione dell’oggetto studiato.</p>
+<p>Osservando l’oggetto originale, nella mente del ricercatore si forma un’immagine mentale dell’oggetto — un suo modello ideale. Nella letteratura scientifica esso viene comunemente chiamato modello cognitivo (mentale). Nel formare tale modello, il ricercatore, di norma, cerca di rispondere a domande specifiche; pertanto, tutto ciò che non è essenziale viene eliminato dalla struttura infinitamente complessa dell’oggetto, al fine di ottenere una descrizione più compatta e concisa. La rappresentazione di un modello cognitivo in linguaggio naturale è chiamata modello sostanziale.</p>
+<p>I modelli cognitivi sono per loro natura soggettivi, poiché vengono costruiti dai ricercatori sulla base delle conoscenze e dell’esperienza pregresse. Questi modelli possono essere compresi soltanto attraverso una descrizione simbolica. I modelli cognitivi e quelli sostanziali non sono equivalenti, poiché i primi possono contenere elementi che il ricercatore non è in grado, o non desidera, esprimere. Allo stesso tempo, se un modello sostanziale è stato formulato da qualcun altro, o è frutto di uno sforzo collettivo, la sua interpretazione, il livello di comprensione e il grado di fiducia possono variare notevolmente tra gli interpreti. I modelli sostanziali sono spesso indicati come formulazioni tecniche del problema.</p>
+<p><strong>In base allo scopo funzionale e agli obiettivi, i modelli sostanziali si suddividono in descrittivi, esplicativi e predittivi:</strong></p>
+<ul>
+  <li>Un <em>modello descrittivo</em> è una qualsiasi descrizione di un oggetto.</li>
+  <li>Un <em>modello esplicativo</em> risponde alla domanda sul perché qualcosa accade.</li>
+  <li>Un <em>modello predittivo</em> descrive il comportamento futuro di un oggetto. È da notare che un modello predittivo non include necessariamente una componente esplicativa.</li>
+</ul>
+<p>Un <em>modello concettuale</em> è un modello sostanziale la cui formulazione impiega i concetti e le rappresentazioni dei domini disciplinari coinvolti nello studio dell’oggetto di modellazione.</p>
+<p>In senso più ampio, per modello concettuale si intende un modello sostanziale basato su un concetto o un punto di vista specifico. Si distinguono tre tipi di modelli concettuali: logico-semantici, strutturale-funzionali e causali.</p>
+<ul>
+  <li>Un <em>modello logico-semantico</em> descrive un oggetto utilizzando i termini e le definizioni dei domini disciplinari pertinenti, includendo tutte le affermazioni e i fatti logicamente coerenti noti. L’analisi di questi modelli si basa sul ragionamento logico e sulle conoscenze accumulate nei rispettivi domini.</li>
+  <li>Un <em>modello strutturale-funzionale</em> considera l’oggetto come un sistema integrato, scomposto in singoli elementi o sottosistemi. Le componenti sono collegate da relazioni strutturali che definiscono la subordinazione, la sequenza logica e l’ordine temporale di esecuzione dei compiti. Per rappresentare questi modelli si utilizzano comunemente diagrammi, schemi e mappe.</li>
+  <li>Un <em>modello causale</em> è spesso utilizzato per spiegare e prevedere il comportamento di un oggetto. Questi modelli sono orientati principalmente a: (1) individuare le principali interrelazioni tra gli elementi costitutivi dell’oggetto studiato; (2) determinare in che modo le variazioni di determinati fattori influenzino lo stato delle componenti del modello; (3) comprendere come il modello nel suo complesso funzionerà e se sarà in grado di descrivere adeguatamente la dinamica dei parametri di interesse per il ricercatore.</li>
+</ul>
+<p>Un <em>modello formale</em> rappresenta un modello concettuale mediante uno o più linguaggi formali, quali teorie matematiche, linguaggi di modellazione specializzati o linguaggi di programmazione. Nelle scienze umanistiche, la modellazione si conclude spesso con l’elaborazione di un modello concettuale, mentre nelle scienze naturali è generalmente possibile costruire un modello formale.</p>
+<p>Sebbene l’importanza dei modelli sostanziali e formali nella ricerca sia ampiamente riconosciuta, il ruolo dei modelli cognitivi viene spesso sottovalutato a causa della loro soggettività e della natura implicita dei processi di pensiero. Ciononostante, i modelli cognitivi assumono particolare rilevanza nei contesti in cui gli operatori o i decisori si affidano alle proprie rappresentazioni mentali per controllare oggetti o processi. Questo tipo di modello svolge inoltre un ruolo significativo nelle scienze sociali.</p>
+<p>La modellazione matematica è una forma di modellazione scientifica, simbolica e formale, in cui gli oggetti vengono descritti mediante il linguaggio matematico e studiati attraverso metodi matematici.</p>
+<p>Un modello matematico concepito per la ricerca scientifica consente di determinare i valori dei parametri dell’oggetto o del fenomeno modellato, a partire da dati di ingresso specificati. Pertanto, il nucleo di un tale modello è la corrispondenza tra i valori dei parametri di ingresso e quelli dei parametri di uscita. Questa prospettiva consente di considerare un modello matematico come un operatore matematico, che può essere definito in senso ampio come una funzione, una corrispondenza rappresentata da equazioni algebriche, differenziali, integro-differenziali o integrali, un algoritmo, un insieme di regole o tabelle che facilitano la determinazione dei parametri di uscita a partire dai valori di ingresso.</p>
+<p>Definire un modello matematico attraverso il concetto di operatore risulta più costruttivo dal punto di vista della costruzione di una classificazione di tali modelli, poiché consente di abbracciare l’intera varietà dei modelli matematici oggi esistenti.</p>
+<p><strong>Vantaggi della modellazione matematica rispetto all’esperimento fisico:</strong></p>
+<ul>
+  <li>economicità (in particolare, la conservazione delle risorse del sistema reale);</li>
+  <li>la possibilità di modellare oggetti ipotetici, cioè oggetti non realizzati in natura;</li>
+  <li>la possibilità di simulare condizioni operative pericolose o difficili da riprodurre nella realtà;</li>
+  <li>la possibilità di modificare la scala temporale;</li>
+  <li>la facilità di analisi multi-sfaccettata;</li>
+  <li>una maggiore capacità predittiva, grazie alla possibilità di individuare regolarità generali;</li>
+  <li>l’universalità dell’hardware e del software utilizzati (sistemi di programmazione e pacchetti applicativi di uso generale).</li>
+</ul>
+<p>Un <em>modello informativo</em> è un modello di un oggetto presentato sotto forma di informazioni che descrivono i parametri e le variabili rilevanti per una data analisi, le relazioni tra essi, nonché gli ingressi e le uscite dell’oggetto, il che consente di simulare i possibili stati dell’oggetto immettendo nel modello informazioni sulle variazioni dei valori di ingresso.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Articoli correlati</h2>
+    <ul>
+      <li><a href="/it/model.html">Modello</a></li>
+      <li><a href="/it/modelling.html">Modellazione</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Percorso di navigazione">
+    <a href="/it/">Home</a> <span aria-hidden="true">/</span>
+    <a href="/it/modelling.html">Modellazione</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Il processo di modellazione</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Cambia tema"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/modeling_process.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/it/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Cambia tema"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710a579a7ba5ce',t:'MTc4ODczNTEwNw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

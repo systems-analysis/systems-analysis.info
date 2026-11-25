@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yöneylem Araştırması Modelleri</title>
+<meta name="description" content="Bir operasyon modelinin kurulması, yöneylem araştırmasının temel aşamasıdır. Operasyon basitleştirilir ve şemalaştırılır, temel etkenler belirlenir. Standart model ve problemlerin sınıflandırılması açıklanmaktadır.">
+<meta name="keywords" content="Modelleme,model,yöneylem araştırması,amaç fonksiyonu,programlama,problemler,etkililik,en iyi,matematiksel,sistemler,analiz,çözüm">
+<link rel="canonical" href="https://systems-analysis.info/tr/operation_research_model.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_model.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_model.html">
+<link rel="alternate" hreflang="tr" href="https://systems-analysis.info/tr/operation_research_model.html">
+<meta property="og:title" content="Yöneylem Araştırması Modelleri">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/tr/operation_research_model.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Bir operasyon modelinin kurulması, yöneylem araştırmasının temel aşamasıdır. Operasyon basitleştirilir ve şemalaştırılır, temel etkenler belirlenir. Standart model ve problemlerin sınıflandırılması açıklanmaktadır.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="tr_TR">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/tr/operation_research_model.html#article",
+    "headline": "Yöneylem Araştırması Modelleri",
+    "description": "Bir operasyon modelinin kurulması, yöneylem araştırmasının temel aşamasıdır. Operasyon basitleştirilir ve şemalaştırılır, temel etkenler belirlenir. Standart model ve problemlerin sınıflandırılması açıklanmaktadır.",
+    "url": "https://systems-analysis.info/tr/operation_research_model.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "tr",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/tr/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/tr/operation_research_model.html"
+    },
+    "keywords": [
+        "Modelleme",
+        "model",
+        "yöneylem araştırması",
+        "amaç fonksiyonu",
+        "programlama",
+        "problemler",
+        "etkililik",
+        "en iyi",
+        "matematiksel",
+        "sistemler",
+        "analiz",
+        "çözüm"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "Yöneylem Araştırması Modelleri",
+        "description": "A sufficiently precise mathematical description of an operation expressed through functions, equations, systems of equations, and inequalities.",
+        "sameAs": [
+            "https://systems-analysis.info/wiki/Модели_исследования_операций",
+            "https://systems-analysis.info/eng/Operations_research_models"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Ana Sayfa",
+            "item": "https://systems-analysis.info/tr/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Yöneylem Araştırması",
+            "item": "https://systems-analysis.info/tr/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Yöneylem Araştırması Modelleri"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Ana gezinme">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menü</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/tr/">Ana Sayfa</a>
+        <span aria-hidden="true">·</span>
+        <a href="/tr/sections.html">Bölümler</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/tr/books.html">Kitaplar</a>
+        <span aria-hidden="true">·</span>
+        <a href="/tr/catalog.html">Katalog</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_model.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Temayı değiştir"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Yazı tipini değiştir"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Yöneylem Araştırması Modelleri</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Nicel araştırma yöntemlerini uygulamak için operasyonun matematiksel bir modelinin kurulması gerekir. Bir model oluşturulurken operasyon genellikle basitleştirilir ve şemalaştırılır, ortaya çıkan şema ise matematiksel araçlarla tanımlanır. Bir operasyon modeli, operasyonun fonksiyonlar, denklemler, denklem sistemleri ve eşitsizlikler aracılığıyla ifade edilen, yeterince kesin bir matematiksel tanımıdır. Bir operasyonun etkililiği, operasyonun amacına ulaşma derecesidir.</p>
+
+<h2>Yöneylem Araştırması Probleminin Genel Formülasyonu</h2>
+
+<p>Yöneylem araştırmasında bir yönetim durumu amaçları ve kararları kapsar. Kararlar bir amaca ulaşmak için alınır. Yönetim durumu bir modelle tanımlanır. Model, bir kararın amaca ne kadar yakın olduğunun belirlenmesini sağlayan bir etkililik ölçüsü içerir. Etkililik ölçüsü, operasyonu etkileyen etkenlere bağlıdır. Bir operasyonun tanımına dahil edilen tüm etkenler iki gruba ayrılabilir: üzerinde etki kurulamayan sabit etkenler ve kontrol edilebilir etkenler.</p>
+
+<p>Modelin kavramsal unsurları bir «kara kutu» olarak temsil edilir; burada temel odak noktası girdilerin ve çıktıların tanımlanmasıdır. Girdiler, modelin işlediği şeylerdir; çıktılar ise modelin ürettiği şeylerdir. Girdi olarak kontrol edilebilir ve kontrol edilemeyen değişkenler sağlanır. Çıktı, etkililik ölçütüdür. Model, bir kararın amaca ne kadar yakın olduğunun belirlenmesini sağlayan açık bir etkililik ölçüsü içerir. Bir model kurulurken, girdi parametrelerinin belirtilen ölçüyü nasıl etkileyeceğinin belirtilmesi önemlidir.</p>
+
+<p>Amaç fonksiyonu adı verilen belirli bir fonksiyonla ifade edilen etkililik ölçütü, her iki gruptaki etkenlere de bağlıdır. Etkililik ölçütünün matematiksel ifadesine amaç fonksiyonu denir. Amaç fonksiyonu, maksimize veya minimize edilmesi gereken, matematiksel olarak formüle edilmiş (formelleştirilmiş) bir etkililik ölçüsüdür.</p>
+
+<p>Kontrol edilebilir değişkenler, karar vericinin yönettiği parametrelerdir.</p>
+
+<p>Kontrol edilemeyen değişkenler, yöneticinin kontrol edemediği, ancak amaçlara ulaşmak için gerekli olan dış etkenlerdir.</p>
+
+<p>Etkililik ölçütü, ya da amaç fonksiyonu, karar değişkenlerinin bir fonksiyonudur ve amaca yaklaşma derecesini ifade eder.</p>
+
+<p>Matematiksel model tanımı: bir matematiksel model, girdi parametrelerinin ilgili değerleri verildiğinde, modellenen nesnenin girdi ve çıktı parametrelerinin kabul edilebilir değerleri kümesi içinde, modellenen nesnenin parametrelerinin çıktı değerlerini belirleyen herhangi bir operatör olarak anlaşılır.</p>
+
+<h2>Yöneylem Araştırması Modelleri ve Karar Verme</h2>
+
+<p>Yöneylem araştırması, rasyonel karar vermenin nicel olarak temellendirilmesine yöneliktir. Bu tür modeller, karar teorisindeki ve optimizasyon problemlerindeki geniş bir problem sınıfıyla yakından kesişir.</p>
+
+<p>Bir yöneylem araştırması modeli geliştirilirken şu sorulara yanıt verilmesi gerekir:</p>
+<ul>
+<li>belirli bir durumda alternatif çözümler olarak ne kabul edilmelidir?</li>
+<li>alternatif çözümler hangi ölçüte göre seçilir?</li>
+<li>uygulanabilir çözümlerin hangi kısıtları sağlaması gerekir?</li>
+</ul>
+
+<p>Yöneylem araştırmasının standart matematiksel modeli şu formülasyonla sunulur: kısıtların sağlanması koşuluyla amaç fonksiyonunun maksimize veya minimize edilmesi.</p>
+
+<p>Bir çözüm seçilirken amaç fonksiyonunu maksimize veya minimize eden çözüm tercih edilir. Amaç fonksiyonunu maksimize etmeye örnek olarak kâr ve verimlilik gösterilebilir. Amaç fonksiyonunu minimize etmek ise maliyetler, giderler, zaman ve benzerleriyle ilgili olabilir. Etkililik ölçütünün seçimi, çalışmanın merkezi ve en kritik anıdır. Doğru seçilmiş bir ölçüte göre en iyi olmayan bir çözüm bulmak, yanlış seçilmiş bir ölçüte göre en iyi çözümü bulmaktan çok daha iyidir.</p>
+
+<p>Uygulanabilir bir çözüm, modelin tüm kısıtlarını sağlayan çözümdür. Sonsuz sayıda uygulanabilir çözüm bulunabilir.</p>
+
+<p>En iyi çözüm, uygulanabilir olmasının yanı sıra amaç fonksiyonunun maksimum ya da minimum değerine ulaşmasına yol açan çözümdür.</p>
+
+<p>Çözümler, şu ya da bu özelliğe göre diğerlerine tercih edildiklerinde en iyi olarak adlandırılır. En iyi seçeneğin her seçimi özeldir, çünkü belirlenmiş ölçütlere uygunluğa dayanır. En iyi bir seçenekten söz edilirken bu ölçütler belirtilir («…açısından en iyi»). Bir ölçüte göre en iyi olan, başka bir ölçüte göre mutlaka en iyi olmayabilir.</p>
+
+<p>Kısıt, modelin değişkenlerinin sağlaması gereken, eşitsizlik veya eşitlik biçiminde bir matematiksel ifadedir.</p>
+
+<p>Kısıtlar, uygulanabilir çözümler kümesini daraltır. Bazı durumlarda, belirtilen kısıtlar altında hiçbir en iyi çözüm bulunmayabilir. Bu, problemin çözümüne dayanarak alınan nihai kararın kalitesinin, modelin kısıtlar aracılığıyla biçimsel olarak tanımladığı gerçek durumu ne kadar yeterli biçimde temsil ettiğine bağlı olduğu anlamına gelir. Kısıtlar arasında kotalar, taşıt yük kapasitesi, planlanan görev hacmi, ekipmanın ağırlık özellikleri, kaynak sınırlamaları ve benzerleri yer alır.</p>
+
+<p>Kısıtların yapılandırması değiştiğinde, farklı bir çözüm en iyisi haline gelebilir. Gerçek dünyada kısıtlar fiziksel, ekonomik ya da siyasi bir nitelik taşıyabilir ve mutlaka biçimselleştirmeye elverişli olmayabilir. Belirli bir çözüm, yalnızca belirlenmiş kısıt sistemine tabi olan verilen model için en iyisi olacaktır. Model durumu ne kadar doğru yansıtırsa, problemin çözümü en iyi çözüme o kadar yakın olur.</p>
+
+<h2>Yöneylem Araştırması Modellerinin Sınıflandırılması</h2>
+
+<p>Tüm yöneylem araştırması modelleri, operasyonun doğasına ve özelliklerine, çözülen problemlerin niteliğine ve kullanılan matematiksel yöntemlere bağlı olarak sınıflandırılabilir:</p>
+<ul>
+<li>Etkililik ölçütü doğrusal bir fonksiyon ise ve kısıt sistemindeki fonksiyonlar da doğrusalsa, problem bir doğrusal programlama problemidir.</li>
+<li>İçeriğine göre çözümlerinin tam sayı olması gerekiyorsa, bu bir tam sayılı doğrusal programlama problemidir.</li>
+<li>Etkililik ölçütü ve/veya kısıt sistemi doğrusal olmayan fonksiyonlarla belirtiliyorsa, doğrusal olmayan bir programlama problemiyle karşı karşıyayız demektir. Özellikle, belirtilen fonksiyonlar dışbükeylik özelliklerine sahipse, ortaya çıkan problem bir dışbükey programlama problemidir.</li>
+<li>Bir matematiksel programlama problemi bir zaman değişkeni içeriyorsa ve etkililik ölçütü değişkenlerin fonksiyonu olarak açık biçimde değil, dolaylı olarak — operasyonların zaman içindeki ilerleyişini tanımlayan denklemler aracılığıyla — ifade ediliyorsa, problem bir dinamik programlama problemidir.</li>
+<li>Çözüm seçeneklerinin sayısının aşırı derecede fazla olması nedeniyle tam en iyiyi algoritmik olarak bulmak mümkün değilse, incelenen seçenek sayısını önemli ölçüde azaltmayı ve en iyi olmasa bile, pratik açıdan tatmin edici, yeterince iyi bir çözüm bulmayı sağlayan sezgisel programlama yöntemleri kullanılır.</li>
+</ul>
+
+<p>İçerik bakımından formüle edilen, diğer tipik yöneylem araştırması problemlerinin çokluğu birkaç sınıfa ayrılabilir:</p>
+<ul>
+<li>Proje zamanlama problemleri (PERT/CPM), büyük ve karmaşık bir operasyon (görev) kompleksinin tamamlanma tarihleri ile komplekstir içindeki tüm operasyonların başlama zamanları arasındaki ilişkileri inceler. Bu problemler, operasyon kompleksinin minimum sürelerinin ve maliyetler ile tamamlanma süreleri arasındaki en iyi ilişkinin bulunmasından oluşur.</li>
+<li>Kuyruk problemleri, talep veya istek kuyruklarına sahip hizmet sistemlerinin incelenmesine ve analizine ayrılmıştır ve sistemlerin performans ölçülerinin ve en iyi özelliklerinin belirlenmesinden — örneğin, hizmet kanalı sayısının, hizmet süresinin ve benzerlerinin belirlenmesinden — oluşur.</li>
+<li>Envanter yönetimi problemleri, envanter düzeyinin (yeniden sipariş noktası) ve sipariş büyüklüğünün en iyi değerlerinin bulunmasından oluşur. Bu tür problemlerin ayırt edici özelliği, envanter düzeyi arttıkça bir yandan depolama maliyetlerinin artması, öte yandan depolanan üründe olası kıtlıklardan kaynaklanan kayıpların azalmasıdır.</li>
+<li>Kaynak tahsisi problemleri, sınırlı mevcut kaynaklarla gerçekleştirilmesi gereken belirli bir operasyon (görev) kümesi olduğunda ortaya çıkar ve kaynakların operasyonlar arasında en iyi tahsisinin ya da operasyonların en iyi bileşiminin bulunmasını gerektirir.</li>
+<li>Bakım ve değiştirme problemleri, ekipmanın aşınması ve eskimesi ile değiştirilmesi gereksinimiyle bağlantılı olarak önem taşır.</li>
+<li>Yöneylem araştırması modelleri arasında, oyun teorisi tarafından incelenen, çatışma durumlarında en iyi kararların alınmasına yönelik modeller özellikle öne çıkar. Farklı amaçlar peşinde koşan iki (veya daha fazla) tarafın çıkarlarının çarpıştığı çatışma durumları, ekonomi, hukuk, askeri işler ve benzeri alanlarda pek çok durumu kapsar. Oyun teorisi problemlerinde, çatışmaya taraf olanların rasyonel davranışına ilişkin öneriler geliştirmek ve en iyi stratejilerini belirlemek gerekir.</li>
+</ul>
+
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div class="links">
+    <div class="links-section">
+      <h2>Yöneylem Araştırması</h2>
+      <ul>
+        <li><a href="/tr/operation_research_caa.html">Yöneylem Araştırması: Churchman, Ackoff ve Arnoff</a></li>
+        <li><a href="/tr/operation_research_as.html">Yöneylem Araştırmasının Temelleri: Ackoff ve Sasieni</a></li>
+        <li><a href="/tr/operation_research_me.html">Yöneylem Araştırması: Moder ve Elmaghraby</a></li>
+        <li><a href="/tr/operation_research_vg.html">Yöneylem Araştırması: Wagner</a></li>
+        <li><a href="/tr/operation_research_gv.html">Yöneylem Araştırması: Gvişiani</a></li>
+        <li><a href="/tr/operation_research_ve.html">Yöneylem Araştırması: Ventsel</a></li>
+        <li><a href="/tr/methodology_or.html">Yöneylem Araştırması Metodolojisi</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="breadcrumbs" aria-label="Gezinme yolu">
+    <a href="/tr/">Ana Sayfa</a> <span aria-hidden="true">/</span>
+    <a href="/tr/operation_research.html">Yöneylem Araştırması</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Yöneylem Araştırması Modelleri</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Temayı değiştir"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_model.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/tr/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Temayı değiştir"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710ead2c7a1e13',t:'MTc4ODczNTI4NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

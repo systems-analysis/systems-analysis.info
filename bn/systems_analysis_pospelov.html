@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>সিস্টেম বিশ্লেষণ ও দীর্ঘমেয়াদি পরিকল্পনা: পোসপেলভ</title>
+<meta name="description" content="সাধারণ সিস্টেম তত্ত্বের একটি প্রায়োগিক শাখা হিসেবে সিস্টেম বিশ্লেষণ। লক্ষ্য নির্ধারণ, বিকল্প উৎপাদন এবং অনিশ্চয়তার পরিস্থিতিতে বিশেষজ্ঞ পদ্ধতি সম্পর্কে জি.এস. পোসপেলভের দৃষ্টিভঙ্গি।">
+<meta name="keywords" content="পোসপেলভ,সিস্টেম বিশ্লেষণ,সিস্টেম,লক্ষ্য,সিদ্ধান্ত,কার্য,সমস্যা,দীর্ঘমেয়াদি পরিকল্পনা,অপারেশনস রিসার্চ">
+<link rel="canonical" href="https://systems-analysis.info/bn/systems_analysis_pospelov.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/systems_analysis_pospelov.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/systems_analysis_pospelov.html">
+<link rel="alternate" hreflang="bn" href="https://systems-analysis.info/bn/systems_analysis_pospelov.html">
+<meta property="og:title" content="সিস্টেম বিশ্লেষণ ও দীর্ঘমেয়াদি পরিকল্পনা: পোসপেলভ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/bn/systems_analysis_pospelov.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="সাধারণ সিস্টেম তত্ত্বের একটি প্রায়োগিক শাখা হিসেবে সিস্টেম বিশ্লেষণ। লক্ষ্য নির্ধারণ, বিকল্প উৎপাদন এবং অনিশ্চয়তার পরিস্থিতিতে বিশেষজ্ঞ পদ্ধতি সম্পর্কে জি.এস. পোসপেলভের দৃষ্টিভঙ্গি।">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="bn_BD">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/bn/systems_analysis_pospelov.html#article",
+    "headline": "সিস্টেম বিশ্লেষণ ও দীর্ঘমেয়াদি পরিকল্পনা: পোসপেলভ",
+    "description": "সাধারণ সিস্টেম তত্ত্বের একটি প্রায়োগিক শাখা হিসেবে সিস্টেম বিশ্লেষণ। লক্ষ্য নির্ধারণ, বিকল্প উৎপাদন এবং অনিশ্চয়তার পরিস্থিতিতে বিশেষজ্ঞ পদ্ধতি সম্পর্কে জি.এস. পোসপেলভের দৃষ্টিভঙ্গি।",
+    "url": "https://systems-analysis.info/bn/systems_analysis_pospelov.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "bn",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/bn/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/bn/systems_analysis_pospelov.html"
+    },
+    "keywords": [
+        "পোসপেলভ",
+        "সিস্টেম বিশ্লেষণ",
+        "সিস্টেম",
+        "লক্ষ্য",
+        "সিদ্ধান্ত",
+        "কার্য",
+        "সমস্যা",
+        "দীর্ঘমেয়াদি পরিকল্পনা",
+        "অপারেশনস রিসার্চ"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "ScholarlyArticle",
+        "name": "Systems Analysis and Long-Range Planning",
+        "author": {
+            "@type": "Person",
+            "name": "Pospelov G.S."
+        },
+        "datePublished": "1972",
+        "inLanguage": "bn"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Systems Analysis and Long-Range Planning",
+        "author": {
+            "@type": "Person",
+            "name": "Pospelov G.S."
+        },
+        "datePublished": "1972",
+        "inLanguage": "bn"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "প্রধান পাতা",
+            "item": "https://systems-analysis.info/bn/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "সিস্টেম বিশ্লেষণ",
+            "item": "https://systems-analysis.info/bn/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "সিস্টেম বিশ্লেষণ ও দীর্ঘমেয়াদি পরিকল্পনা: পোসপেলভ"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="প্রধান নেভিগেশন">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">মেনু</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/bn/">প্রধান পাতা</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bn/sections.html">বিভাগসমূহ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bn/books.html">বইসমূহ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bn/catalog.html">তালিকা</a>
+        <span aria-hidden="true">·</span>
+        <a href="/systems_analysis_pospelov.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="থিম পরিবর্তন"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="ফন্ট পরিবর্তন"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">সিস্টেম বিশ্লেষণ ও দীর্ঘমেয়াদি পরিকল্পনা: পোসপেলভ</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>“সিস্টেম বিশ্লেষণ ও দীর্ঘমেয়াদি পরিকল্পনা”। সম্মেলন কার্যবিবরণী। জি.এস. পোসপেলভ, ১৯৭২ (রুশ ভাষায়)।</strong></p>
+<p>সিস্টেম বিশ্লেষণ, সাধারণ সিস্টেম তত্ত্বের একটি প্রায়োগিক শাখা হিসেবে যা ঐতিহাসিকভাবে বৃহদায়তন প্রযুক্তিগত সিস্টেম নকশা ও উন্নয়নের পদ্ধতি থেকে উদ্ভূত হয়েছে, জাতীয় অর্থনৈতিক দীর্ঘমেয়াদি পরিকল্পনার সমগ্র সমস্যাক্ষেত্রের সঙ্গে ঘনিষ্ঠভাবে সংযুক্ত বলে প্রতীয়মান হয়। নিজ প্রকৃতিতেই, সিস্টেম বিশ্লেষণ কোনো অপারেশন বা উদ্যোগের জন্য একটি সামগ্রিক পরিকল্পনা প্রণয়নকে অন্তর্ভুক্ত করে।</p>
+<p>স্তরবিন্যস্ত সাংগঠনিক সিস্টেমসমূহ কর্তৃক বাস্তবায়িত অপারেশনের পরিকল্পনায় কে কী করবে, কখন করবে এবং এর জন্য কোন সম্পদ বরাদ্দ করা হবে, তার নির্দেশনা অন্তর্ভুক্ত থাকে। অন্য কথায়, একটি অপারেশনাল পরিকল্পনা অপারেশনের সামগ্রিক লক্ষ্যকে পৃথক পৃথক নির্বাহকদের দ্বারা সম্পাদিতব্য লক্ষ্য ও কার্যের একটি স্তরক্রমে বিভক্ত করে। এর অর্থ, অন্যান্য বিষয়ের মধ্যে, একটি অপারেশনাল পরিকল্পনা হলো আগেভাগে (অপারেশন শুরু হওয়ার পূর্বে) নেওয়া সিদ্ধান্তসমূহের একটি সিস্টেম, যা নির্ধারণ করে কে কী করবে এবং কখন করবে।</p>
+<p>দীর্ঘমেয়াদি পরিকল্পনায়, পরিকল্পনার মুহূর্তে নেওয়া কোনো সিদ্ধান্ত এবং তার বাস্তবায়নের মধ্যকার ব্যবধান ১০–১৫ বছর বা তারও বেশি সময় বিস্তৃত হতে পারে, যার ফলে সংশ্লিষ্ট নির্বাহকদের উন্নয়ন, তাদের শিক্ষা প্রভৃতির জন্যও পরিকল্পনা করা আবশ্যক হয়ে পড়ে।</p>
+<p>একটি পরিকল্পনাকে, লক্ষ্য ও কার্যের একটি সিস্টেম হিসেবে, তথাকথিত স্তরক্রমিক গ্রাফ দ্বারা উপস্থাপন করা যায়, যার শীর্ষবিন্দুগুলো বিভিন্ন স্তরের লক্ষ্য ও কার্যকে নির্দেশ করে, আর যার চাপগুলো তাদের মধ্যকার অধীনতা, মিথস্ক্রিয়া ও গুরুত্বের সম্পর্ক নির্দেশ করে। এমন একটি গ্রাফ সিস্টেম বিশ্লেষণের দুটি নীতি সুন্দরভাবে দৃষ্টান্তিত করে:</p>
+<ul>
+  <li>লক্ষ্য অর্জনের উপায় লক্ষ্য নিজে এবং তার বিশ্লেষণ থেকে উদ্ভূত হয়।</li>
+  <li>যেকোনো নিম্নতর স্তরের লক্ষ্য ও কার্যকে উচ্চতর স্তরের লক্ষ্য অর্জনের উপায় হিসেবে গণ্য করা হয়।</li>
+</ul>
+<p>পরিকল্পনার এই সংজ্ঞা থেকে পরিকল্পনা প্রণয়নের ধারণা অনুসৃত হয়, যা কোনো অপারেশন শুরুর পূর্বে সিদ্ধান্ত গ্রহণের একটি প্রক্রিয়া, অথবা কিছুটা ভিন্নভাবে বলা যায়: পরিকল্পনা প্রণয়ন হলো একটি সিস্টেমে প্রাথমিক সিদ্ধান্তসমূহ গঠনের একটি স্তরক্রমিক প্রক্রিয়া, যা নির্ধারণ করে যে পৃথক পৃথক ব্যবস্থা, অপারেশন ও কার্যক্রমের ধারা কোন ক্রমে সম্পাদিত হতে হবে। পরিকল্পনা প্রণয়নের ফলাফল (এর লক্ষ্য) হলো সংগঠনের সমষ্টিগত বোঝাপড়ায় ভবিষ্যৎ অপারেশনের একটি মডেল নির্মাণ।</p>
+<p>এখন আমরা অপারেশনস রিসার্চের (অর্থনৈতিক-গাণিতিক অপ্টিমাইজেশন পদ্ধতির) পদ্ধতি এবং সিস্টেম বিশ্লেষণের মধ্যকার সম্পর্কের ওপর দৃষ্টি নিবদ্ধ করব।</p>
+<p>অপারেশনস রিসার্চ, সিদ্ধান্ত গ্রহণের গাণিতিক মডেলসমূহের একটি তত্ত্ব হিসেবে, ধরে নেয় যে লক্ষ্য প্রদত্ত অথবা কার্য নির্ধারিত, যে তা অর্জনের বিকল্প উপায় (কৌশল, নিয়ন্ত্রণ) গণনাযোগ্য বা অগণনাযোগ্য সেট হিসেবে সংজ্ঞায়িত, এবং যে বিকল্পসমূহের মধ্যে নির্বাচনের মানদণ্ড নির্দিষ্ট করা আছে। এরপর, একটি গাণিতিক সিদ্ধান্ত গ্রহণ মডেল নির্মাণ করা হয়; সর্বোত্তমতার মানদণ্ড এবং সীমাবদ্ধকারী উপাদানসমূহের (শর্তসমূহের) জন্য গাণিতিক রাশিমালা খুঁজে বের করা হয়; সমস্যা সমাধানের জন্য উপাত্ত ও মান সংগ্রহ করা হয়। পরবর্তী পর্যায়ে, সর্বোত্তম সমাধান খুঁজে বের করার একটি অ্যালগরিদম তৈরি করা হয় এবং সমস্যাটি প্রোগ্রাম করা হয়; এরপর কম্পিউটার স্বয়ংক্রিয়ভাবে তা খুঁজে বের করে।</p>
+<p>উল্লেখ্য যে, এভাবে প্রাপ্ত সর্বোত্তম সমাধান কেবল পরিমাণগত উপাদানসমূহই বিবেচনা করে এবং এই দৃষ্টিকোণ থেকেও, তা সমস্যার কেবল একটি দিকের ওপর মনোনিবেশ করে। এভাবে, বণ্টন ও নিয়োগ সমস্যা নামে পরিচিত অপারেশনস রিসার্চের সমস্যাশ্রেণি, যাকে সর্বোত্তম পরিকল্পনা সমস্যাও বলা হয়, গাণিতিক প্রোগ্রামিং অ্যালগরিদম দ্বারা সমাধানকৃত সবচেয়ে সাধারণ (অর্থনৈতিক-গাণিতিক পদ্ধতির) সমস্যাসমূহের অন্যতম। এই শ্রেণিতে পরিবহন সমস্যা, কোনো নির্দিষ্ট শিল্পে নতুন উদ্যোগ স্থাপনের স্থান নির্বাচন, এবং সেগুলোকে ভোক্তাদের সঙ্গে নিয়োজিত করার সমস্যা অন্তর্ভুক্ত। এসব ক্ষেত্রে, লক্ষ্য নির্ধারিত থাকে, এবং কম্পিউটার দ্বারা স্বয়ংক্রিয়ভাবে সৃষ্ট সর্বোত্তম পরিকল্পনাটি কোনোভাবেই পরিবহন বা শিল্প উন্নয়নের জন্য কোনো অপারেশনের পরিকল্পনা নয়। সর্বোত্তম পরিকল্পনা বা সর্বোত্তম সমাধান নির্দেশ করে যে সরবরাহকারীদের মধ্যে ভোক্তাদের কীভাবে বণ্টন করা উচিত অথবা উদ্যোগগুলো কোথায় স্থাপন করা উচিত এবং প্রতিটি উদ্যোগের উৎপাদন পরিমাণ কী হওয়া উচিত। যেহেতু এমন পরিকল্পনা অপারেশনাল নয়, তাই সেগুলো সামগ্রিক হতে পারে না এবং এই অর্থে একপাক্ষিক।</p>
+<p>সিস্টেম বিশ্লেষণ সর্বদা সামগ্রিক বা অপারেশনাল পরিকল্পনার সঙ্গে জড়িত, যেগুলো প্রকৃতিতে স্তরক্রমিক। এই প্রসঙ্গে, কার্যকলাপের লক্ষ্য নিজে, তা অর্জনের বিকল্পসমূহ এবং সর্বোত্তমতার মানদণ্ডসমূহ নির্ধারণ করাই সিস্টেম বিশ্লেষণের বিষয়বস্তু। যেখানে অপারেশনস রিসার্চে অপারেশনের লক্ষ্য প্রদত্ত থাকে, সেখানে সিস্টেম বিশ্লেষণে প্রদত্ত হিসেবে যা বিবেচনা করা উচিত তা হলো পরিস্থিতির পরিবর্তন বা একটি কাঙ্ক্ষিত দৃশ্যকল্পের বাস্তবায়ন, যেখানে পরিস্থিতি (দৃশ্যকল্প) বলতে সিস্টেম ও তার পরিবেশের সামগ্রিক অবস্থা বোঝানো হয়। কোনো সিস্টেমের পরিস্থিতি বিকল্পসমূহের একটি সেট থেকে একটি অপারেশন সম্পাদন করে এবং সেই অনুযায়ী সামগ্রিক লক্ষ্যসমূহের একটি অর্জন করে পরিবর্তন করা যেতে পারে।</p>
+<p>এভাবে, সিস্টেম বিশ্লেষণের কাজের মধ্যে অন্তর্ভুক্ত রয়েছে বিকল্প সামগ্রিক লক্ষ্যসমূহ নির্ধারণ করা, প্রতিটি সামগ্রিক লক্ষ্যকে তার নিজস্ব লক্ষ্য ও কার্যের স্তরক্রমে বিভক্ত করা — যাকে কখনো কখনো কর্মপন্থা বলা হয়; প্রতিটি বিকল্প কর্মপন্থার পরিণতি গণনা ও মূল্যায়ন করা; এবং এই ভিত্তিতে, এর সংশ্লিষ্ট সামগ্রিক লক্ষ্যসহ সর্বোত্তম কর্মপন্থা নির্বাচন করা।</p>
+<p>যেমনটি দেখা যায়, সিস্টেম বিশ্লেষণ ও অপারেশনস রিসার্চের সমস্যাসমূহ উল্লেখযোগ্যভাবে ভিন্ন, যদিও সামগ্রিক পরিকল্পনা (লক্ষ্য ও কার্যের স্তরক্রম) নির্মাণের প্রক্রিয়ায় অপারেশনস রিসার্চের পদ্ধতি ব্যাপকভাবে ব্যবহৃত হয়।</p>
+<p>এটাও উল্লেখ্য যে, অপারেশনস রিসার্চ, সিদ্ধান্ত গ্রহণের একটি গাণিতিক তত্ত্ব হিসেবে, একক-লক্ষ্য, একক-স্তরের সিস্টেমে প্রয়োগের জন্য উন্নত হয়েছিল। সমস্যার কাঠিন্য ও জটিলতার কারণে, বহু-লক্ষ্য, একক-স্তরের সিস্টেমের (ক্রীড়া তত্ত্বের বিভিন্ন শাখা) ক্ষেত্রের জন্য সিদ্ধান্ত গ্রহণের গাণিতিক তত্ত্ব কম পূর্ণাঙ্গভাবে বিকশিত ও ব্যবহারিক ক্ষেত্রে কম প্রচলিত প্রমাণিত হয়েছে।</p>
+<p>বহু-লক্ষ্য ও বহু-স্তরের (স্তরক্রমিক) সিস্টেমের ক্ষেত্রে, এখনো তাদের গাণিতিক অপ্টিমাইজেশন তত্ত্বের কথা বলার সময় আসেনি। তবে, পরিকল্পনা প্রণয়ন ও সিদ্ধান্ত গ্রহণের ব্যবহারিক ক্ষেত্রে, ঠিক এই শেষোক্ত ধরনের সিস্টেমের সঙ্গেই মোকাবিলা করতে হয়। সিস্টেম বিশ্লেষণও ঠিক এই ধরনের সিস্টেমের সঙ্গে সম্পর্কিত, এবং গাণিতিক আনুষ্ঠানিকীকরণের স্তর এমন যে, আমরা স্বীকার করতে বাধ্য হই যে সিস্টেম বিশ্লেষণ হলো “আলোকিত সাধারণ বুদ্ধিমত্তা, যার সেবায় গাণিতিক পদ্ধতিসমূহ নিয়োজিত করা হয়েছে।”</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div class="links">
+    <div class="links-section">
+      <h2>সিস্টেম বিশ্লেষণ</h2>
+      <ul>
+        <li><a href="/bn/methodology_sa.html">সিস্টেম বিশ্লেষণের পদ্ধতিবিজ্ঞান</a></li>
+        <li><a href="/bn/economics.html">অর্থনীতিতে সিস্টেম বিশ্লেষণ</a></li>
+        <li><a href="/bn/systems_thinking.html">সিস্টেম দৃষ্টিভঙ্গি</a></li>
+      </ul>
+      <h3>সিস্টেম বিশ্লেষণ সম্পর্কে</h3>
+      <ul>
+        <li><a href="/bn/systems_analysis.html">সিস্টেম বিশ্লেষণ</a></li>
+        <li><a href="/bn/systems_analysis_golubkov.html">দীর্ঘমেয়াদি পরিকল্পনায় সিস্টেম দৃষ্টিভঙ্গি: গোলুবকভ</a></li>
+        <li><a href="/bn/systems_analysis_optner.html">ব্যবসায় ও শিল্প সমস্যা সমাধানের জন্য সিস্টেম বিশ্লেষণ: অপ্টনার</a></li>
+        <li><a href="/bn/systems_analysis_clelandking.html">সিস্টেম বিশ্লেষণ ও প্রকল্প ব্যবস্থাপনা: ক্লিল্যান্ড, কিং</a></li>
+        <li><a href="/bn/systems_analysis_nikanorov.html">সিস্টেম বিশ্লেষণ ও সিস্টেম দৃষ্টিভঙ্গি: নিকানোরভ</a></li>
+        <li><a href="/bn/systems_analysis_pt.html">সিস্টেম বিশ্লেষণ: পেরেগুদভ, তারাসেঙ্কো</a></li>
+        <li><a href="/bn/systems_analysis_ch.html">অর্থনীতিতে সিস্টেম বিশ্লেষণ: চেরনিয়াক</a></li>
+        <li><a href="/bn/systems_analysis_book.html">সিস্টেম বিশ্লেষণ বিষয়ক সাহিত্য ডাউনলোড করুন</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="breadcrumbs" aria-label="নেভিগেশন পথ">
+    <a href="/bn/">প্রধান পাতা</a> <span aria-hidden="true">/</span>
+    <a href="/bn/systems_analysis.html">সিস্টেম বিশ্লেষণ</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">সিস্টেম বিশ্লেষণ ও দীর্ঘমেয়াদি পরিকল্পনা: পোসপেলভ</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="থিম পরিবর্তন"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/systems_analysis_pospelov.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/bn/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="থিম পরিবর্তন"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a37106f54ea3a5ce',t:'MTc4ODczNDk2OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

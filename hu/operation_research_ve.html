@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Operációkutatás: Wentzel</title>
+<meta name="description" content="A művelet olyan vállalkozás, amelyet egységes terv fog össze, és amely egy cél elérésére irányul. A cikk E. S. Wentzel operációkutatási alapfogalmait ismerteti: döntés, eredményesség, optimalitási kritérium.">
+<meta name="keywords" content="Operációkutatás,Wentzel,modellmegoldás,optimalizálás,statisztika,matematikai,problémák,választás,rendszerelemzés">
+<link rel="canonical" href="https://systems-analysis.info/hu/operation_research_ve.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_ve.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_ve.html">
+<link rel="alternate" hreflang="hu" href="https://systems-analysis.info/hu/operation_research_ve.html">
+<meta property="og:title" content="Operációkutatás: Wentzel">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/hu/operation_research_ve.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="A művelet olyan vállalkozás, amelyet egységes terv fog össze, és amely egy cél elérésére irányul. A cikk E. S. Wentzel operációkutatási alapfogalmait ismerteti: döntés, eredményesség, optimalitási kritérium.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="hu_HU">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/hu/operation_research_ve.html#article",
+    "headline": "Operációkutatás: Wentzel",
+    "description": "A művelet olyan vállalkozás, amelyet egységes terv fog össze, és amely egy cél elérésére irányul. A cikk E. S. Wentzel operációkutatási alapfogalmait ismerteti: döntés, eredményesség, optimalitási kritérium.",
+    "url": "https://systems-analysis.info/hu/operation_research_ve.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "hu",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/hu/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/hu/operation_research_ve.html"
+    },
+    "keywords": [
+        "Operációkutatás",
+        "Wentzel",
+        "modellmegoldás",
+        "optimalizálás",
+        "statisztika",
+        "matematikai",
+        "problémák",
+        "választás",
+        "rendszerelemzés"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Operations Research",
+        "author": {
+            "@type": "Person",
+            "name": "Wentzel E.S."
+        },
+        "datePublished": "1972",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Sovetskoye Radio"
+        },
+        "inLanguage": "hu"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Operations Research",
+        "author": {
+            "@type": "Person",
+            "name": "Wentzel E.S."
+        },
+        "datePublished": "1972",
+        "inLanguage": "hu"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Főoldal",
+            "item": "https://systems-analysis.info/hu/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Operációkutatás",
+            "item": "https://systems-analysis.info/hu/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Operációkutatás: Wentzel"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Fő navigáció">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menü</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/hu/">Főoldal</a>
+        <span aria-hidden="true">·</span>
+        <a href="/hu/sections.html">Témakörök</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/hu/books.html">Könyvek</a>
+        <span aria-hidden="true">·</span>
+        <a href="/hu/catalog.html">Katalógus</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_ve.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Téma váltása"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Betűtípus váltása"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Operációkutatás: Wentzel</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Az operációkutatás az utóbbi években egyre szélesebb körű alkalmazási területet hódít meg. Ez a tudomány a viszonylag ifjú, nemrégiben kialakult tudományágak közé tartozik; határai és tartalma még nincsenek pontosan meghatározva.</p>
+<p>Az operációkutatást számos egyetemen tanítják, de az e fogalomhoz kapcsolt tartalom messze nem egységes. Egyes szerzők az „operációkutatás” fogalmán elsősorban matematikai optimalizálási módszereket értenek, mint például a lineáris, nemlineáris és dinamikus programozást. Mások ezzel szemben nem sorolják ide a matematika ezen ágait, és inkább a játékelmélet és a statisztikai döntéselmélet szempontjából közelítik meg a kérdést. Néhányan egyáltalán megkérdőjelezik az „operációkutatás” mint önálló tudományos diszciplína létezését, és a kibernetika részének tekintik azt (amely fogalom maga is meglehetősen tisztázatlan, és különböző emberek másként értik). Mások viszont túlságosan tág jelentést tulajdonítanak az „operációkutatás” fogalmának, és e diszciplínát a tudományok mindent átfogó „tudományaként” hirdetik.</p>
+<p>Az idő fogja megmutatni, milyen formákban fejlődik tovább ez a viszonylag ifjú tudomány, mely részterületeit tartja meg, és melyek „válnak le” róla önálló tudományos diszciplínákként. Különösen tisztázatlan az „operációkutatás” és a „rendszerelmélet” (vagy „komplex rendszerek elmélete”) jövőbeli kapcsolata, amelyről az utóbbi időben sokat írtak és beszéltek. Mindenesetre kétségtelen, hogy a gyakorlat legváltozatosabb területein — a termelés és az ellátás megszervezésében, a szállítási műveletekben, a katonai hadműveletekben és a fegyverzetben, a személyzet elosztásában, a fogyasztói szolgáltatásokban, az egészségügyben, a hírközlésben, a számítástechnikában és így tovább — egyre gyakrabban vetődnek fel olyan problémák, amelyek megfogalmazásukban hasonlóak egymáshoz, számos közös vonással bírnak, és hasonló módszerekkel oldhatók meg, amelyeket célszerű az „operációkutatási feladatok” közös elnevezés alá sorolni.</p>
+<p>A jellemző helyzet a következő: valamilyen célirányos tevékenységet így vagy úgy megszerveznek — azaz a lehetséges alternatívák közül valamilyen „döntést” lehet hozni. Minden alternatívának megvannak az előnyei és hátrányai, és a helyzet összetettsége miatt nem mindig nyilvánvaló azonnal, melyik a jobb (előnyösebb) és miért. A helyzet tisztázása és a döntési alternatíváknak a kritériumok szerinti összehasonlítása érdekében matematikai számítások sorát végzik el. Ezek feladata, hogy segítsék a döntés meghozataláért felelős személyeket a helyzet kritikai elemzésében, és végső soron abban, hogy az egyik vagy másik alternatíva mellett döntsenek.</p>
+<p>Korunkban, amelyet joggal neveznek a tudományos-technikai forradalom korszakának, a tudomány egyre nagyobb figyelmet fordít a szervezés és az irányítás kérdéseire. Ennek számos oka van. A technika gyors fejlődése és növekvő bonyolultsága, a vállalkozások méretének és lehetséges következményei körének soha nem látott bővülése, az automatizált irányítási rendszerek bevezetése a gyakorlat minden területén — mindez szükségessé teszi az összetett célirányos folyamatok elemzését szerkezetük és szervezésük szempontjából. A tudománynak ajánlásokat kell adnia az ilyen folyamatok optimális (racionális) irányítására. Elmúltak azok az idők, amikor a helyes, eredményes irányítást a szervezők „megérzés” alapján, a „próba és hiba” módszerével találták meg. Napjainkban egy ilyen irányítás kialakítása tudományos megközelítést igényel — a hibákkal járó veszteségek túlságosan nagyok.</p>
+<p>A gyakorlat igényei hívták életre azokat a speciális tudományos módszereket, amelyeket célszerű az „operációkutatás” elnevezés alá sorolni. E fogalom alatt a matematikai, mennyiségi módszereknek az emberi célirányos tevékenység valamennyi területén a döntések megalapozására történő alkalmazását fogjuk érteni.</p>
+<p>Magyarázzuk meg, mit értünk „döntés” alatt. Tegyük fel, hogy valamilyen vállalkozást folytatnak, amely egy meghatározott cél elérésére irányul. A vállalkozást megszervező személynek (vagy személyek csoportjának) mindig van bizonyos választási szabadsága: így vagy úgy megszervezheti azt — például kiválaszthatja az alkalmazandó eszközök típusait, így vagy úgy oszthatja el a rendelkezésre álló erőforrásokat, és így tovább. A „döntés” éppen a szervező számára rendelkezésre álló lehetőségek közüli választás. A döntések lehetnek rosszak vagy jók, alaposan megfontoltak vagy elhamarkodottak, jól megalapozottak vagy önkényesek.</p>
+<p>Az operációkutatás ott kezdődik, ahol matematikai módszereket alkalmaznak a döntések megalapozására. Egy bizonyos pontig a gyakorlat bármely területén a döntéseket különleges matematikai számítások nélkül, egyszerűen a tapasztalat és a józan ész alapján hozzák. Léteznek azonban sokkal nagyobb horderejű döntések is. Tegyük fel például, hogy egy vállalatokból, lakónegyedekből és hasonlókból álló hálózattal rendelkező új városban közösségi közlekedést szerveznek. Számos döntést kell hozni: milyen útvonalakon és milyen közlekedési eszközökkel irányítsák a forgalmat? Mely pontokon helyezzék el a megállókat? Hogyan igazítsák a napszaknak megfelelően a járatok gyakoriságát? És így tovább.</p>
+<p>Ezek a döntések sokkal összetettebbek, és legfőképp sok múlik rajtuk. Egy helytelen választás egy egész város működését befolyásolhatja. Természetesen ebben az esetben is lehet intuitív módon eljárni a döntés meghozatalakor, a tapasztalatra és a józan észre támaszkodva (és ez valóban gyakran így történik). A döntések azonban jóval racionálisabbak lesznek, ha matematikai számításokkal alátámasztottak. Ezek az előzetes számítások segítenek elkerülni a helyes döntés hosszú és költséges, „megérzés” alapján történő keresését.</p>
+<p>Minél összetettebb, költségesebb és nagyobb méretű a tervezett vállalkozás, annál kevésbé elfogadhatók az önkényes döntések, és annál fontosabbá válnak azok a tudományos módszerek, amelyek lehetővé teszik az egyes döntések következményeinek előzetes felmérését, a megengedhetetlen alternatívák előzetes kizárását és a legsikeresebbek ajánlását; annak meghatározását, hogy a rendelkezésünkre álló információ elegendő-e a helyes döntés kiválasztásához, és ha nem, akkor milyen kiegészítő információt kell megszerezni. Ilyen esetekben túlságosan veszélyes az intuícióra, a „tapasztalatra és józan észre” hagyatkozni. A tudományos-technikai forradalom korszakában a technika és a módszerek olyan gyorsan változnak, hogy a „tapasztalatnak” egyszerűen nincs ideje felhalmozódni. Ráadásul gyakran olyan egyedi vállalkozásokkal állunk szemben, amelyeket most először folytatnak le. Ilyen esetekben a „tapasztalat” hallgat, és a „józan eszet” könnyen becsaphatják, ha az nem számításokra épül. Éppen az ilyen, az emberek döntéshozatalát segítő számításokkal foglalkozik az operációkutatás.</p>
+<p>Művelet minden olyan vállalkozás (cselekvések rendszere), amelyet egységes terv fog össze, és amely valamilyen cél elérésére irányul. A művelet mindig irányított vállalkozás — azaz tőlünk függ, hogyan válasszuk meg a szervezését jellemző egyes paramétereket. A „szervezés” szót itt tág értelemben használjuk, beleértve a műveletben alkalmazott technikai eszközök összességét is.</p>
+<p>A tőlünk függő paraméterek bármely konkrét megválasztását döntésnek nevezzük. A döntések lehetnek sikeresek vagy sikertelenek, racionálisak vagy irracionálisak. Azokat a döntéseket nevezzük optimálisnak, amelyek valamilyen szempontból előnyösebbek a többinél. Az operációkutatás célja, hogy mennyiségi alapot biztosítson az optimális döntések kiválasztásához.</p>
+<p>Néha (viszonylag ritkán) a kutatás egyetlen szigorúan optimális döntést eredményez; sokkal gyakrabban azonban a gyakorlatilag egyenértékű optimális (racionális) döntések egy tartományát azonosítja, amelyen belül a végső választás meghozható.</p>
+<p>Meg kell jegyezni, hogy a döntés tényleges meghozatala kívül esik az operációkutatás keretein, és egy felelős személy, vagy gyakrabban személyek csoportjának hatáskörébe tartozik, akik megkapják a végső választás jogát, és vállalják a felelősséget e választásért. A választás során a matematikai számításokból eredő ajánlások mellett figyelembe vehetnek számos további — mind mennyiségi, mind minőségi jellegű — megfontolást is, amelyeket a számítások nem vettek figyelembe.</p>
+<p>Az ember elengedhetetlen jelenléte (mint a döntést végső fokon meghozó fórum) még egy teljesen automatizált irányítási rendszer megléte esetén sem szűnik meg, amely látszólag emberi közreműködés nélkül hoz döntéseket. Nem szabad elfelejteni, hogy magának az irányítási algoritmusnak a megalkotása, egyik lehetséges változatának kiválasztása maga is döntés — és igen nagy horderejű döntés.</p>
+<p>Azokat a paramétereket, amelyek összessége a döntést alkotja, döntési változóknak nevezzük. Döntési változóként szolgálhatnak különféle számok, vektorok, függvények, fizikai jellemzők és hasonlók. A legegyszerűbb operációkutatási feladatokban a döntési változók száma viszonylag kicsi lehet. A gyakorlati szempontból jelentős feladatok többségében azonban a döntési változók száma nagyon nagy.</p>
+<p>A döntési változók mellett, amelyekkel bizonyos határok között rendelkezhetünk, minden operációkutatási feladat tartalmaz adott, „fegyelmező” feltételeket is, amelyek eleve rögzítettek, és nem sérthetők meg (például egy szállítóeszköz teherbírása, egy tervezett feladat mérete, a berendezések súlyjellemzői és hasonlók). Ide tartoznak különösen azok az erőforrások (anyagi, technikai, emberi), amelyekkel rendelkezni jogosultak vagyunk, valamint a döntésre kirótt egyéb korlátozások. Ezek együttesen alkotják az úgynevezett „megengedett halmazt”.</p>
+<p>Ahhoz, hogy a különböző döntéseket eredményesség szempontjából összehasonlíthassuk egymással, valamilyen mennyiségi kritériumra, az úgynevezett eredményességi mutatóra (gyakran „célfüggvénynek” is nevezik) van szükség. Ezt a mutatót úgy választjuk meg, hogy tükrözze a művelet célirányosságát. „Legjobbnak” azt a döntést tekintjük, amely a legnagyobb mértékben hozzájárul a kitűzött cél eléréséhez. Az eredményességi mutató W megválasztásához, „megnevezéséhez” először azt kell megkérdeznünk magunktól: mit akarunk, mire törekszünk a művelet végrehajtásával? A döntés megválasztásakor természetesen azt részesítjük előnyben, amely az eredményességi mutatót W maximálissá (vagy minimálissá) teszi. Például egy művelet bevételét szeretnénk maximalizálni; ha az eredményességi mutató a költség, akkor azt szeretnénk minimalizálni.</p>
+<p>Egy művelet végrehajtását nagyon gyakran véletlen tényezők hatása kíséri. Ilyen esetekben eredményességi mutatóként rendszerint nem magát a maximalizálni (minimalizálni) kívánt mennyiséget vesszük, hanem annak átlagos értékét (várható értékét).</p>
+<p>Bizonyos esetekben egy véletlen tényezők által kísért művelet egy meglehetősen határozott célt követ, amely csak teljesen elérhető vagy egyáltalán nem érhető el (az „igen–nem” séma), és semmilyen közbenső eredmény nem érdekes. Ilyen esetekben eredményességi mutatóként e cél elérésének valószínűségét választjuk. Ha például valamely célpontra tüzet irányítanak azzal a kötelező feltétellel, hogy azt meg kell semmisíteni, akkor eredményességi mutató a célpont megsemmisítésének valószínűsége lesz.</p>
+<p>Az eredményességi mutató helytelen megválasztása nagyon veszélyes. A rosszul megválasztott kritérium alapján megszervezett műveletek indokolatlan kiadásokhoz és veszteségekhez vezethetnek. Sajnos a gyakorlati szempontból jelentős feladatok többségében az eredményességi mutató megválasztása nem egyszerű, és nem oldható meg egyértelműen. Bármely kellően összetett feladatra jellemző, hogy egy művelet eredményessége nem jellemezhető kimerítően egyetlen számmal — kiegészítésképpen más mutatókat is figyelembe kell venni.</p>
+<p>Ahhoz, hogy mennyiségi kutatási módszereket alkalmazhassunk bármely területen, mindig szükség van valamilyen matematikai modellre. A modell felépítésekor a valós jelenséget (esetünkben a műveletet) elkerülhetetlenül egyszerűsítjük és sematizáljuk, és ezt a sémát (a jelenség vázlatos ábrázolását) matematikai eszközökkel írjuk le. Minél sikeresebben választjuk meg a matematikai modellt, minél jobban tükrözi a jelenség jellemző vonásait, annál sikeresebb lesz a kutatás, és annál hasznosabbak lesznek a belőle következő ajánlások.</p>
+<p>A matematikai modellek felépítésére nincsenek általános módszerek. Minden konkrét esetben a modellt a művelet típusa, célirányossága alapján, valamint a kutatási feladat figyelembevételével választjuk meg (mely paramétereket kell meghatározni, és mely tényezők hatását kell tükrözni). Minden konkrét esetben szükséges továbbá összhangba hozni a modell pontosságát és részletességét a) azzal a pontossággal, amellyel a megoldást ismernünk kell, és b) azzal az információval, amellyel rendelkezünk, vagy amelyet megszerezhetünk. Ha a számításokhoz szükséges kezdeti adatok pontatlanul ismertek, akkor nyilvánvalóan nincs értelme finomságokba belemenni, nagyon részletes modellt építeni, és időt (saját és a számítógép idejét) fordítani a megoldás finom és pontos optimalizálására. Sajnos ezt az elvet gyakran elhanyagolják, és a jelenségek leírására túlságosan részletes modelleket választanak.</p>
+<p>A matematikai modellnek tükröznie kell a jelenség legfontosabb vonásait, mindazokat a lényeges tényezőket, amelyektől a művelet sikere alapvetően függ. Egyúttal a modellnek a lehető legegyszerűbbnek kell lennie, nem szabad „túlterhelni” azt sok apró, másodlagos tényezővel: ezek figyelembevétele bonyolítja a matematikai elemzést, és nehezebben áttekinthetővé teszi a kutatás eredményeit. A modellezőre mindig két veszély leselkedik: az egyik, hogy elmerül a részletekben („a fától nem látja az erdőt”), a másik, hogy túlságosan egyszerűsíti a jelenséget („kiönti a gyereket a fürdővízzel együtt”). A matematikai modellek építésének mestersége valóban művészet, és a benne való tapasztalat fokozatosan gyűlik össze.</p>
+<p>Mivel a matematikai modell nem következik szükségszerűen a feladat leírásából, mindig hasznos nem feltétlenül és vakon megbízni egyetlen modellben, hanem összehasonlítani a különböző modellekből kapott eredményeket, egyfajta „modellversenyt” rendezve. Ennek során ugyanazt a feladatot nem egyszer, hanem többször is megoldják, különböző feltételezés-rendszerek, különböző matematikai eszközök és különböző modellek segítségével. Ha a tudományos következtetések modellről modellre kevéssé változnak, ez erős argumentum a kutatás objektivitása mellett. Ha jelentősen eltérnek, akkor át kell gondolni a különböző modellek alapjául szolgáló elképzeléseket, meg kell határozni, melyikük felel meg jobban a valóságnak, és szükség esetén kontrollkísérletet kell végezni. Az operációkutatásra jellemző továbbá a modellhez való ismételt visszatérés (már az első számítási kör elvégzése után is) annak korrekciója céljából.</p>
+<p>A matematikai modell megalkotása a kutatás legfontosabb és legfelelősségteljesebb része, amely nem is annyira a matematika, mint inkább a modellezett jelenségek lényegének mélyreható ismeretét igényli. Általános szabály szerint a „tiszta” matematikusok (az adott terület szakembereinek segítsége nélkül, amelyhez a feladat tartozik) rosszul boldogulnak a modellalkotással. Figyelmük a matematikai eszközökre és azok finomságaira irányul, nem pedig a valódi gyakorlati problémára.</p>
+<p>A tapasztalat azt mutatja, hogy a legsikeresebb modelleket az adott gyakorlati terület olyan szakemberei alkotják, akik alapképzésük mellett mélyreható matematikai felkészültséget is szereztek, vagy olyan csoportok, amelyekben gyakorlati szakemberek és matematikusok egyaránt részt vesznek. Nagy hasznot hoznak az operációkutatásban jól jártas matematikus tanácsai, amelyeket olyan gyakorlati szakembereknek — mérnököknek, biológusoknak, orvosoknak és másoknak — ad, akik munkájuk során szembesülnek a döntések tudományos megalapozásának szükségességével.</p>
+<p>Külön hangsúlyozni kell, hogy szükség van a valószínűségelmélet ismeretére — nem is annyira kiterjedt és mélyreható, mint inkább nem formális és hatékony ismeretére, valamint a statisztikai adatokkal és valószínűségi fogalmakkal való munkavégzés szokására. Az éppen ezen matematikai ismeretkör iránti különleges igényeket az magyarázza, hogy a műveletek többségét nem teljes bizonyosság körülményei között folytatják, és lefolyásuk, kimenetük véletlen tényezőktől függ. Sajnos a szakemberek széles köreiben — mérnökök, biológusok, orvosok, kémikusok — ritkán találkozunk a valószínűségelmélet jó ismeretével. Tételeit és szabályait gyakran formálisan alkalmazzák, jelentésük és szellemük valódi megértése nélkül. Nem ritkán a valószínűségelméletet egyfajta „csodapálcaként” tekintik, amely lehetővé teszi információ „semmiből”, teljes tudatlanságból való megszerzését. Ez téves felfogás: a valószínűségelmélet csupán az információ átalakítását teszi lehetővé — azaz bizonyos, megfigyelés számára hozzáférhető jelenségekre vonatkozó adatokból másokra, hozzáférhetetlenekre vonatkozó következtetések levonását.</p>
+<p>A matematikai modell felépítésekor különböző bonyolultságú matematikai eszközök alkalmazhatók (a művelet típusától, a kutatási feladatoktól és a kezdeti adatok pontosságától függően). A legegyszerűbb esetekben a jelenséget egyszerű algebrai egyenletekkel írják le. Bonyolultabb esetekben, amikor a jelenséget dinamikájában kell vizsgálni, differenciálegyenletek (közönséges vagy parciális) módszereit alkalmazzák. A legbonyolultabb esetekben, amikor egy művelet lefolyása és kimenete nagyszámú, bonyolultan összefonódó véletlen tényezőtől függ, az analitikus módszerek teljesen csődöt mondanak, és a statisztikai modellezés (Monte-Carlo) módszerét alkalmazzák.</p>
+<p>Első, nagyvonalú közelítésben e módszer alapgondolata a következőképpen írható le: a művelet lefolyásának folyamatát, minden vele járó véletlenséggel együtt, valójában „lemásolják”, számítógépen reprodukálják. Az eredmény a művelet lefolyásának véletlen folyamatának egyetlen mintája (egy „realizációja”), véletlen lefolyással és kimenettel. Egy ilyen realizáció önmagában nem ad alapot a döntés kiválasztásához, de sok ilyen realizáció megszerzése után azokat közönséges statisztikai anyagként dolgozzuk fel (innen a „statisztikai modellezés” elnevezés), megtaláljuk a folyamat átlagos jellemzőit, és megértjük, hogyan hatnak rájuk átlagosan a feladat feltételei és a döntési változók.</p>
+<p>Az operációkutatásban egyaránt széles körben alkalmaznak analitikus és statisztikai modelleket. Ennek a két típusnak mindegyike megvannak a saját előnyei és hátrányai. Az analitikus modellek durvábbak, kevesebb tényezőt vesznek figyelembe, és mindig bizonyos feltételezéseket és egyszerűsítéseket igényelnek. Ugyanakkor számítási eredményeik könnyebben áttekinthetők, és világosabban tükrözik a jelenségben rejlő alapvető törvényszerűségeket. És a legfontosabb, hogy az analitikus modellek jobban alkalmasak az optimális megoldások kereséséhez.</p>
+<p>A statisztikai modellek az analitikusakkal összehasonlítva pontosabbak és részletesebbek, nem igényelnek olyan durva feltételezéseket, és lehetővé teszik nagyszámú (elméletileg korlátlan számú) tényező figyelembevételét. Azonban ezeknek is megvannak a hátrányaik: nehézkesség, gyenge áttekinthetőség, és legfőképp az optimális megoldások keresésének rendkívüli nehézsége, amelyeket „megérzés” alapján, sejtésekkel és próbálkozásokkal kell megkeresni.</p>
+<p>Az operációkutatás területén a legjobb munkák az analitikus és a statisztikai modellek együttes alkalmazására épülnek. Az analitikus modell lehetővé teszi a jelenség általános megértését, mintegy felvázolva az alapvető törvényszerűségek „körvonalát”. Bármely finomítás statisztikai modellek segítségével nyerhető el.</p>
+<p>Végezetül essék szó néhány mondatban az úgynevezett „szimulációs” modellezésről is. Ezt olyan folyamatokra alkalmazzák, amelyek lefolyásába időről időre emberi akarat is beavatkozhat. A műveletet irányító személy (vagy személyek csoportja) a kialakult helyzettől függően hozhat egyik vagy másik döntést, hasonlóan ahhoz, ahogyan a sakkjátékos a táblát nézve kiválasztja következő lépését. Ezután beindítják a matematikai modellt, amely megmutatja, milyen változás várható a helyzetben e döntés következtében, és milyen következményekhez vezet az majd egy idő után. A következő „aktuális döntést” már az új, tényleges helyzet figyelembevételével hozzák meg, és így tovább. Ennek az eljárásnak ismételt alkalmazása révén az irányító tulajdonképpen „tapasztalatot szerez”, tanul saját és mások hibáiból, és fokozatosan megtanulja meghozni a helyes döntéseket — ha nem is optimálisakat, de közel optimálisakat.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div class="links">
+    <div class="links-section">
+      <h2>Operációkutatás</h2>
+      <ul>
+        <li><a href="/hu/operation_research.html">Operációkutatás</a></li>
+        <li><a href="/hu/operation_research_caa.html">Operációkutatás: Churchman, Ackoff és Arnoff</a></li>
+        <li><a href="/hu/operation_research_as.html">Az operációkutatás alapjai. Ackoff, Sasieni</a></li>
+        <li><a href="/hu/operation_research_me.html">Operációkutatás: Moder és Elmaghraby</a></li>
+        <li><a href="/hu/operation_research_gv.html">Szervezés és irányítás. Gvishiani</a></li>
+        <li><a href="/hu/operation_research_vg.html">Operációkutatás: Wagner</a></li>
+        <li><a href="/hu/operation_research_book.html">Operációkutatási szakirodalom letöltése</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="breadcrumbs" aria-label="Navigációs útvonal">
+    <a href="/hu/">Főoldal</a> <span aria-hidden="true">/</span>
+    <a href="/hu/operation_research.html">Operációkutatás</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Operációkutatás: Wentzel</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Téma váltása"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_ve.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/hu/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Téma váltása"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a37109844843a5ce',t:'MTc4ODczNTA3Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

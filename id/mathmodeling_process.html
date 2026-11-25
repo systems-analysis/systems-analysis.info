@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Proses Pemodelan Matematis</title>
+<meta name="description" content="Proses pemodelan matematis: konstruksi model, pengembangan perangkat lunak, validasi, dan analisis hasil. Dijelaskan tahapan dan karakteristik model komputasional modern.">
+<meta name="keywords" content="pemodelan matematis,model,metode komputasional,algoritma,validasi,perangkat lunak,analisis sistem,metode numerik">
+<link rel="canonical" href="https://systems-analysis.info/id/mathmodeling_process.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/mathmodeling_process.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/mathmodeling_process.html">
+<link rel="alternate" hreflang="id" href="https://systems-analysis.info/id/mathmodeling_process.html">
+<meta property="og:title" content="Proses Pemodelan Matematis">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/id/mathmodeling_process.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Proses pemodelan matematis: konstruksi model, pengembangan perangkat lunak, validasi, dan analisis hasil. Dijelaskan tahapan dan karakteristik model komputasional modern.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="id_ID">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/id/mathmodeling_process.html#article",
+    "headline": "Proses Pemodelan Matematis",
+    "description": "Proses pemodelan matematis: konstruksi model, pengembangan perangkat lunak, validasi, dan analisis hasil. Dijelaskan tahapan dan karakteristik model komputasional modern.",
+    "url": "https://systems-analysis.info/id/mathmodeling_process.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "id",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/id/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/id/mathmodeling_process.html"
+    },
+    "keywords": [
+        "pemodelan matematis",
+        "model",
+        "metode komputasional",
+        "algoritma",
+        "validasi",
+        "perangkat lunak",
+        "analisis sistem",
+        "metode numerik"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Beranda",
+            "item": "https://systems-analysis.info/id/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Pemodelan",
+            "item": "https://systems-analysis.info/id/modelling.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Proses Pemodelan Matematis"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Navigasi utama">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/id/">Beranda</a>
+        <span aria-hidden="true">·</span>
+        <a href="/id/sections.html">Bagian</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/id/books.html">Buku</a>
+        <span aria-hidden="true">·</span>
+        <a href="/id/catalog.html">Katalog</a>
+        <span aria-hidden="true">·</span>
+        <a href="/mathmodeling_process.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Ganti tema"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Ganti font"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Proses Pemodelan Matematis</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Ciri khas model matematis yang dibuat saat ini adalah kompleksitasnya, yang berasal dari kompleksitas objek yang dimodelkan. Hal ini mendorong terbentuknya <a href="/id/model.html" class="text-link">model</a> yang semakin rumit dan kebutuhan untuk memanfaatkan sekaligus beberapa teori dari berbagai bidang ilmu, serta menggunakan metode komputasional modern dan teknologi komputasi untuk memperoleh dan menganalisis hasil simulasi. Dalam kasus objek yang kompleks, biasanya tidak mungkin memenuhi seluruh kebutuhan hanya dengan satu model. Sebagai gantinya, harus dibuat seluruh spektrum model dari objek yang sama (dalam beberapa kasus, sekumpulan model “bersarang” yang bersifat hierarkis), yang masing-masing paling cocok untuk menyelesaikan tugas tertentu yang diberikan kepadanya.</p>
+<p>Kebutuhan akan konstruksi model berskala besar menuntut dikembangkannya seperangkat aturan dan pendekatan yang dapat mengurangi biaya pengembangan model serta menurunkan kemungkinan terjadinya kesalahan yang sulit dihilangkan di kemudian hari. Seperangkat aturan semacam itu dapat disebut sebagai teknologi pembuatan model matematis.</p>
+<p><strong>Proses konstruksi model matematis apa pun dapat digambarkan sebagai serangkaian tahapan berikut:</strong></p>
+<ol>
+  <li>Survei terhadap objek yang akan dimodelkan dan penyusunan kerangka acuan kerja untuk pengembangan model (perumusan masalah secara substantif);</li>
+  <li>Perumusan konseptual dan matematis dari masalah;</li>
+  <li>Analisis kualitatif dan verifikasi kebenaran model;</li>
+  <li>Pemilihan dan justifikasi metode penyelesaian;</li>
+  <li>Memperoleh solusi;</li>
+  <li>Pengembangan algoritma penyelesaian dan penyelidikan sifat-sifatnya; implementasi algoritma sebagai perangkat lunak;</li>
+  <li>Validasi model;</li>
+  <li>Penerapan praktis model yang telah dibangun.</li>
+</ol>
+<p>Model matematis — terutama yang menggunakan metode numerik dan teknologi komputasi — membutuhkan sumber daya intelektual, finansial, dan waktu yang signifikan untuk konstruksinya. Oleh karena itu, keputusan untuk mengembangkan model baru hanya diambil apabila tidak ada cara yang lebih sederhana untuk menyelesaikan <a href="/id/problem.html" class="text-link">masalah</a> yang dihadapi (misalnya, dengan memodifikasi model yang sudah ada).</p>
+<p>Kebutuhan akan model baru dapat muncul sehubungan dengan penelitian ilmiah, terutama pada titik pertemuan berbagai bidang ilmu. Setelah keputusan untuk membangun model matematis baru diambil, pihak pemberi tugas mencari tim untuk melaksanakan pekerjaan tersebut. Sebagai aturan, tim proyek terdiri atas para spesialis dengan latar belakang beragam: matematikawan terapan, pakar domain yang memahami secara mendalam objek yang dimodelkan, dan pengembang perangkat lunak. Setelah keputusan untuk membuat model dikonfirmasi dan tim proyek terbentuk, tahap survei dimulai. Tujuan utama tahap ini adalah menyusun pernyataan substantif dari masalah pemodelan. Pernyataan masalah substantif adalah daftar pertanyaan-pertanyaan kunci mengenai objek pemodelan, yang diungkapkan dalam bahasa sehari-hari, yang ingin dijawab oleh pihak pemberi tugas.</p>
+<p>Menyusun daftar pertanyaan yang harus dijawab oleh model baru sering kali merupakan masalah tersendiri yang membutuhkan spesialis dengan pengetahuan dan kemampuan khusus. Mereka tidak hanya harus memiliki pemahaman menyeluruh tentang domain subjek dari upaya pemodelan dan menyadari kemampuan matematika komputasional serta teknologi komputasi modern, tetapi juga harus mampu berkomunikasi dengan orang lain — untuk menggali pengetahuan dari para praktisi ahli yang memiliki “naluri” intuitif terhadap objek pemodelan dan seluk-beluk perilakunya. Spesialis semacam ini mencakup, misalnya, analis sistem, insinyur sistem, dan periset operasi.</p>
+<p>Berdasarkan analisis atas seluruh informasi yang terkumpul, perumus masalah harus mendefinisikan kebutuhan untuk model yang akan dibangun sedemikian rupa sehingga, di satu sisi, memenuhi keinginan pihak pemberi tugas, dan di sisi lain, memungkinkan model tersebut diimplementasikan dalam kerangka waktu dan anggaran yang ditetapkan. Analis sistem (atau periset operasi) harus memiliki kemampuan untuk menyaring hal-hal esensial yang benar-benar dapat diimplementasikan dari sejumlah besar informasi yang kurang terstruktur dan beragam mengenai objek pemodelan, serta dari berbagai keinginan dan kebutuhan pihak pemberi tugas yang diungkapkan secara samar.</p>
+<p>Berdasarkan informasi yang terkumpul mengenai objek pemodelan, analis sistem (insinyur, periset operasi), bersama dengan pihak pemberi tugas, merumuskan pernyataan masalah substantif, yang sebagai aturan bersifat belum final dan dapat disempurnakan serta dielaborasi selama pengembangan model berlangsung. Namun, semua penyesuaian dan perubahan selanjutnya terhadap pernyataan substantif tersebut harus bersifat minor dan tidak mendasar.</p>
+<p>Seluruh materi yang dikumpulkan selama survei — pengetahuan yang terakumulasi mengenai objek, pernyataan masalah substantif, kebutuhan tambahan untuk implementasi model dan penyajian hasil — didokumentasikan dalam bentuk kerangka acuan kerja untuk perancangan dan pengembangan model. Kerangka acuan kerja merupakan dokumen penutup dari tahap survei. Semakin lengkap informasi yang terkumpul mengenai objek selama survei, semakin jelas pernyataan masalah substantif dapat dirumuskan, semakin lengkap pengalaman dan pengetahuan yang terakumulasi dapat diperhitungkan, dan semakin banyak kesulitan pada tahap-tahap pengembangan model selanjutnya yang dapat dihindari.</p>
+<p>Berbeda dengan perumusan substantif, perumusan konseptual dari masalah pemodelan biasanya disusun oleh anggota tim proyek tanpa keterlibatan perwakilan pihak pemberi tugas, berdasarkan kerangka acuan kerja yang dikembangkan pada tahap sebelumnya serta menggunakan pengetahuan yang tersedia mengenai objek pemodelan dan kebutuhan untuk model yang akan dibangun. Analisis dan diskusi bersama atas seluruh informasi yang tersedia mengenai objek pemodelan oleh para anggota tim memungkinkan terbentuknya model konseptual dari objek tersebut — sebuah sintesis dari model kognitif yang dikembangkan oleh masing-masing anggota tim.</p>
+<p>Perumusan konseptual dari masalah pemodelan adalah daftar pertanyaan-pertanyaan kunci yang menjadi perhatian pihak pemberi tugas, yang diungkapkan dalam istilah disiplin ilmu tertentu, beserta seperangkat hipotesis mengenai sifat-sifat dan perilaku objek pemodelan.</p>
+<p>Kesulitan terbesar dalam merumuskan pernyataan konseptual muncul pada model-model yang berada di titik pertemuan berbagai disiplin ilmu. Perbedaan dalam tradisi, konsep, dan bahasa yang digunakan untuk menggambarkan objek yang sama menghadirkan hambatan yang sangat serius dalam pembuatan model interdisipliner.</p>
+<p>Perumusan konseptual yang telah selesai memungkinkan dihasilkannya perumusan matematis dari masalah pemodelan, yang mencakup seperangkat relasi matematis yang menggambarkan perilaku dan sifat-sifat objek pemodelan.</p>
+<p>Perumusan matematis dari masalah pemodelan adalah seperangkat relasi matematis yang menggambarkan perilaku dan sifat-sifat objek pemodelan.</p>
+<p>Sebuah model matematis dianggap benar apabila seluruh pemeriksaan verifikasi telah dilakukan dengan hasil positif: analisis dimensi, pemeriksaan orde besaran, pemeriksaan sifat ketergantungan, analisis kasus ekstrem, kondisi batas, makna fisis, dan penutupan matematis. Perumusan matematis bahkan lebih abstrak daripada perumusan konseptual, karena mereduksi masalah asli menjadi masalah yang murni matematis, yang untuknya telah tersedia metode penyelesaian yang berkembang baik.</p>
+<p>Semua metode untuk menyelesaikan masalah yang menjadi “inti” dari model matematis dapat dibagi menjadi metode analitis dan metode algoritmik (numerik).</p>
+<p>Perlu dicatat bahwa ketika solusi analitis digunakan untuk memperoleh hasil numerik, pengembangan algoritma terkait yang diimplementasikan pada komputer juga sering kali diperlukan.</p>
+<p>Namun, solusi awal dalam kasus ini berbentuk ekspresi analitis (atau seperangkat ekspresi). Solusi yang berdasarkan metode algoritmik, sebaliknya, pada dasarnya tidak dapat direduksi menjadi solusi analitis eksak dari masalah yang bersangkutan.</p>
+<p>Pemilihan metode penelitian tertentu sangat bergantung pada kualifikasi dan pengalaman anggota tim proyek. Metode analitis lebih memudahkan analisis hasil selanjutnya, tetapi hanya dapat diterapkan pada model yang relatif sederhana. Jika masalah matematis (bahkan dalam perumusan yang disederhanakan) memungkinkan solusi analitis, solusi tersebut tentu lebih diutamakan dibandingkan solusi numerik.</p>
+<p>Metode algoritmik mereduksi masalah menjadi sebuah algoritma yang melakukan eksperimen komputasional menggunakan teknologi komputasi. Akurasi pemodelan dalam eksperimen semacam itu sangat bergantung pada metode yang dipilih dan parameternya. Metode algoritmik umumnya lebih memakan tenaga untuk diimplementasikan dan menuntut agar anggota tim proyek memiliki pengetahuan yang kuat tentang matematika komputasional, pustaka perangkat lunak khusus yang luas, dan sumber daya komputasi yang andal.</p>
+<p>Metode numerik hanya dapat diterapkan pada masalah matematis yang terumuskan dengan baik (well-posed), yang secara signifikan membatasi penggunaannya dalam pemodelan matematis. Kesamaan dari semua metode numerik adalah reduksi masalah matematis menjadi masalah berdimensi hingga. Hal ini paling sering dicapai dengan mendiskretkan masalah asli — yaitu, dengan mengganti fungsi dari argumen kontinu menjadi fungsi dari argumen diskret. Penerapan metode numerik apa pun pasti memasukkan kesalahan ke dalam hasil. Tiga komponen utama kesalahan yang muncul dalam penyelesaian numerik dari masalah asli dapat dibedakan: kesalahan bawaan yang terkait dengan ketidaktepatan penetapan data masukan (kondisi awal dan batas, koefisien persamaan dan ruas kanan); kesalahan diskretisasi yang terkait dengan peralihan ke analog diskret dari masalah asli; dan kesalahan pembulatan yang terkait dengan presisi terbatas dari bilangan yang direpresentasikan dalam komputer.</p>
+<p>Sebuah kebutuhan alami untuk setiap algoritma komputasional tertentu adalah keselarasan orde besaran dari ketiga jenis kesalahan tersebut.</p>
+<p>Metode numerik, atau metode aproksimasi, selalu diimplementasikan sebagai algoritma komputasional. Oleh karena itu, semua kebutuhan yang berlaku untuk algoritma pada umumnya juga berlaku untuk algoritma komputasional. Pertama dan terutama, sebuah algoritma harus dapat dilaksanakan (feasible) — algoritma tersebut harus mampu menyelesaikan masalah dalam waktu komputasi yang dapat diterima. Karakteristik penting lain dari sebuah algoritma adalah akurasinya — kemampuan untuk memperoleh solusi dari masalah asli dengan presisi tertentu dalam jumlah operasi yang berhingga.</p>
+<p>Waktu eksekusi sebuah algoritma bergantung pada jumlah operasi yang diperlukan untuk mencapai akurasi yang ditentukan. Untuk setiap masalah matematis, sebagai aturan, dapat diajukan beberapa algoritma yang menghasilkan solusi dengan akurasi yang diinginkan, tetapi dengan jumlah operasi yang berbeda-beda. Algoritma yang membutuhkan lebih sedikit operasi untuk mencapai akurasi yang sama disebut lebih ekonomis, atau lebih efisien.</p>
+<p>Selama eksekusi algoritma komputasional, kesalahan tertentu muncul pada setiap langkah komputasi. Dari satu langkah ke langkah berikutnya, kesalahan ini dapat bertambah besar atau tidak bertambah besar (dan dalam beberapa kasus bahkan dapat mengecil). Jika kesalahan bertambah besar tanpa batas selama komputasi, algoritma tersebut dikatakan tidak stabil, atau divergen. Sebaliknya, algoritma tersebut dikatakan stabil, atau konvergen.</p>
+<p>Keragaman metode numerik yang sangat besar membuat pemilihan metode tertentu dalam setiap kasus spesifik menjadi cukup sulit. Karena beberapa metode algoritmik alternatif dapat digunakan untuk mengimplementasikan suatu model tertentu, pemilihan metode spesifik dilakukan dengan mempertimbangkan metode mana yang paling sesuai dengan model tersebut dari segi efisiensi, stabilitas, dan akurasi hasil, serta metode mana yang paling dikuasai oleh anggota tim proyek.</p>
+<p>Dalam pembuatan berbagai sistem perangkat lunak yang digunakan untuk menyelesaikan beragam tugas penelitian, rancang-bangun teknik, dan manajemen, model matematis pada umumnya berfungsi sebagai fondasi saat ini. Hal ini menimbulkan kebutuhan untuk mengimplementasikan model sebagai program komputer. Proses pengembangan perangkat lunak yang andal dan efisien tidak kalah kompleksnya dibandingkan seluruh tahapan pembuatan model matematis sebelumnya. Penyelesaian tugas ini secara berhasil hanya dimungkinkan dengan penguasaan yang mumpuni atas bahasa dan teknologi pemrograman modern, pengetahuan tentang kemampuan komputasi, perangkat lunak yang tersedia, serta spesifikasi implementasi metode matematika komputasional.</p>
+<p><strong>Proses pengembangan perangkat lunak dapat diuraikan ke dalam beberapa tahapan:</strong></p>
+<ul>
+  <li>penyusunan kerangka acuan kerja untuk pengembangan perangkat lunak;</li>
+  <li>perancangan struktur sistem perangkat lunak;</li>
+  <li>pengkodean algoritma;</li>
+  <li>pengujian dan penyahgalatan (debugging);</li>
+  <li>pemeliharaan dan pengoperasian.</li>
+</ul>
+<p>Kerangka acuan kerja untuk pengembangan perangkat lunak didokumentasikan dalam bentuk spesifikasi. Pada tahap perancangan, struktur keseluruhan dari sistem perangkat lunak dibentuk. Seluruh program dibagi menjadi modul-modul perangkat lunak. Untuk setiap modul, kebutuhan fungsional dirumuskan dan algoritma yang mengimplementasikan fungsi-fungsi tersebut dikembangkan. Skema interaksi antarmodul — yang dikenal sebagai diagram alir data dari sistem perangkat lunak — didefinisikan. Rencana pengujian dikembangkan, dan data masukan untuk pengujian modul-modul individual serta sistem secara keseluruhan ditetapkan.</p>
+<p><strong>Sebagian besar program yang mengimplementasikan model matematis terdiri atas tiga bagian utama:</strong></p>
+<ul>
+  <li>prapemroses (persiapan dan verifikasi data masukan model);</li>
+  <li>penyelesai/solver (menyelesaikan masalah, melaksanakan eksperimen komputasional);</li>
+  <li>pascapemroses (visualisasi dan penyajian hasil).</li>
+</ul>
+<p>Perhatian yang besar harus diberikan pada penerapan teknologi pemrograman modern. Tujuan dari teknologi semacam itu, pertama dan terutama, adalah meningkatkan keandalan perangkat lunak dan produktivitas pengembang. Semakin serius dan berskala besar sebuah proyek perangkat lunak, semakin penting pula persoalan penerapan teknologi pemrograman modern. Mengabaikan hal-hal ini dapat menyebabkan keterlambatan waktu yang signifikan dan menurunnya keandalan sistem perangkat lunak.</p>
+<p>Faktor krusial dalam menjamin keandalan dan waktu pengembangan yang singkat dari sebuah sistem perangkat lunak untuk menyelesaikan kelas masalah tertentu adalah tersedianya pustaka modul perangkat lunak yang saling kompatibel dan telah dikembangkan dengan baik. Sebuah program akan lebih andal dan dapat dikembangkan lebih cepat apabila komponen perangkat lunak standar digunakan semaksimal mungkin.</p>
+<p>Kesesuaian (adekuasi) sebuah model matematis adalah sejauh mana hasil yang diperoleh dari model yang dikembangkan sesuai dengan data eksperimen atau hasil dari masalah acuan (benchmark).</p>
+<p><strong>Validasi model memiliki dua tujuan:</strong></p>
+<ul>
+  <li>memverifikasi keabsahan seperangkat hipotesis yang dirumuskan pada tahap perumusan konseptual dan matematis. Verifikasi hipotesis hendaknya dilakukan hanya setelah metode penyelesaian telah diverifikasi dan perangkat lunak telah menjalani penyahgalatan (debugging) menyeluruh serta penghilangan semua kesalahan dan konflik;</li>
+  <li>memastikan bahwa akurasi hasil sesuai dengan akurasi yang ditetapkan dalam kerangka acuan kerja.</li>
+</ul>
+<p>Validasi model matematis yang dikembangkan dilakukan dengan membandingkannya terhadap data eksperimen yang tersedia mengenai objek nyata atau terhadap hasil dari model lain yang telah dibuat sebelumnya dan telah terbukti andal. Dalam kasus pertama, disebut validasi melalui perbandingan dengan eksperimen; dalam kasus kedua, perbandingan dengan hasil masalah acuan (benchmark).</p>
+<p>Persoalan akurasi pemodelan bergantung pada kebutuhan yang diberlakukan pada model dan tujuan penggunaannya. Akurasi hasil eksperimen atau kekhususan perumusan masalah acuan juga harus diperhitungkan. Untuk model yang dimaksudkan untuk perhitungan kasar dan orde besaran, akurasi sebesar 10–15% dianggap memuaskan. Untuk model yang digunakan dalam <a href="/id/system.html" class="text-link">sistem</a> kendali dan pemantauan, akurasi yang dibutuhkan dapat mencapai 1–2% atau bahkan lebih tinggi.</p>
+<p>Ketika muncul persoalan mengenai kesesuaian model, koreksi harus dimulai dengan analisis sistematis atas seluruh kemungkinan penyebab ketidaksesuaian antara hasil pemodelan dan hasil eksperimen. Pertama, model harus diselidiki dan tingkat kesesuaiannya dinilai untuk berbagai nilai parameter variabel (kondisi awal dan batas, parameter yang mencirikan sifat-sifat objek yang dimodelkan). Jika model tersebut tidak sesuai pada rentang parameter yang menjadi perhatian peneliti, dapat dilakukan upaya untuk menyempurnakan nilai konstanta dan parameter awal model. Jika hal ini masih belum memberikan hasil yang positif, maka satu-satunya cara yang tersisa untuk memperbaiki model adalah dengan meninjau kembali sistem hipotesis yang telah diterapkan. Keputusan ini pada dasarnya berarti kembali ke tahap kedua dari proses pengembangan model dan dapat mengakibatkan tidak hanya perubahan besar pada perumusan matematis, tetapi juga pada metode penyelesaian (misalnya, peralihan dari metode analitis ke metode numerik), pengerjaan ulang perangkat lunak secara menyeluruh, dan siklus baru validasi model. Oleh karena itu, keputusan untuk meninjau kembali sistem hipotesis yang telah diterapkan harus dipertimbangkan secara matang dan hanya diambil setelah semua cara lain untuk memperbaiki kesesuaian model telah dicoba.</p>
+<p>Model deskriptif dirancang untuk mencirikan parameter yang diteliti dalam suatu fenomena atau proses tertentu, serta untuk menyelidiki pola-pola yang mengatur perubahan parameter tersebut. Model-model ini dapat digunakan untuk mempelajari sifat-sifat dan perilaku objek yang diteliti di bawah berbagai kombinasi data masukan dan kondisi operasi; dalam menyusun model optimasi; dan dalam membangun model simulasi dari sistem yang kompleks.</p>
+<p>Model yang dikembangkan untuk tujuan penelitian biasanya tidak dikembangkan hingga tingkat sistem perangkat lunak yang dimaksudkan untuk didistribusikan kepada pengguna eksternal. Umur pemakaiannya biasanya terbatas pada durasi program penelitian di bidang terkait. Model-model ini dicirikan oleh sifat eksploratifnya, penggunaan prosedur dan algoritma komputasional baru, serta antarmuka pengguna yang belum berkembang.</p>
+<p>Model dan sistem perangkat lunak yang dibangun berdasarkan model tersebut, yang dimaksudkan untuk didistribusikan kepada pengguna eksternal atau untuk dirilis secara komersial, memiliki antarmuka yang dikembangkan dengan baik dan ramah pengguna serta prapemroses dan pascapemroses yang andal. Model-model ini biasanya didasarkan pada perumusan dan prosedur komputasional yang telah teruji dan mapan. Namun, perlu diingat bahwa model semacam itu hanya dirancang untuk menyelesaikan kelas masalah tertentu yang telah didefinisikan secara jelas.</p>
+<p>Terlepas dari tujuan penerapan model, tim pengembang berkewajiban melakukan analisis kualitatif maupun kuantitatif terhadap hasil pemodelan.</p>
+<p>Melalui pengerjaan model, para pengembang menjadi spesialis dalam domain yang terkait dengan objek pemodelan. Mereka mengembangkan pemahaman yang cukup mendalam mengenai sifat-sifat objek tersebut dan mampu memprediksi serta menjelaskan perilakunya.</p>
+<p><strong>Dengan demikian, analisis menyeluruh atas hasil pemodelan memungkinkan untuk:</strong></p>
+<ul>
+  <li>memodifikasi objek yang sedang dipertimbangkan, menemukan karakteristik optimalnya, atau setidak-tidaknya memperhitungkan perilaku dan sifat-sifatnya dengan sebaik mungkin;</li>
+  <li>menetapkan batas-batas domain penerapan model;</li>
+  <li>memverifikasi keabsahan hipotesis yang diterapkan pada tahap perumusan matematis dan menilai kemungkinan penyederhanaan model untuk meningkatkan efisiensinya sambil mempertahankan akurasi yang dibutuhkan;</li>
+  <li>menunjukkan arah pengembangan model lebih lanjut.</li>
+</ul>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Artikel terkait</h2>
+    <ul>
+      <li><a href="/id/model.html">Model</a></li>
+      <li><a href="/id/modelling.html">Pemodelan</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Jejak navigasi">
+    <a href="/id/">Beranda</a> <span aria-hidden="true">/</span>
+    <a href="/id/modelling.html">Pemodelan</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Proses Pemodelan Matematis</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Ganti tema"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/mathmodeling_process.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/id/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Ganti tema"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a37109f59b4da5ce',t:'MTc4ODczNTA5Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

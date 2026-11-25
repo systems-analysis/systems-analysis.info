@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>系统分析：戈卢布科夫</title>
+<meta name="description" content="戈卢布科夫所归纳的系统分析方法：数学方法、系统的形式化表示方法，及其在管理与组织设计课题中的应用领域。">
+<meta name="keywords" content="系统分析,长期规划,戈卢布科夫,系统,求解方法,问题,准则,研究">
+<link rel="canonical" href="https://systems-analysis.info/zh/systems_analysis_golubkov.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/systems_analysis_golubkov.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/systems_analysis_golubkov.html">
+<link rel="alternate" hreflang="zh" href="https://systems-analysis.info/zh/systems_analysis_golubkov.html">
+<meta property="og:title" content="系统分析：戈卢布科夫">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/zh/systems_analysis_golubkov.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="戈卢布科夫所归纳的系统分析方法：数学方法、系统的形式化表示方法，及其在管理与组织设计课题中的应用领域。">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="zh_CN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/zh/systems_analysis_golubkov.html#article",
+    "headline": "系统分析：戈卢布科夫",
+    "description": "戈卢布科夫所归纳的系统分析方法：数学方法、系统的形式化表示方法，及其在管理与组织设计课题中的应用领域。",
+    "url": "https://systems-analysis.info/zh/systems_analysis_golubkov.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "zh",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/zh/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/zh/systems_analysis_golubkov.html"
+    },
+    "keywords": [
+        "系统分析",
+        "长期规划",
+        "戈卢布科夫",
+        "系统",
+        "求解方法",
+        "问题",
+        "准则",
+        "研究"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "系统分析在部门规划中的应用",
+        "author": {
+            "@type": "Person",
+            "name": "Golubkov E.P."
+        },
+        "datePublished": "1977",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Ekonomika"
+        },
+        "inLanguage": "ru"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-08-22",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "长期规划中的系统方法",
+        "author": [
+            {
+                "@type": "Person",
+                "name": "Golubkov E.P."
+            },
+            {
+                "@type": "Person",
+                "name": "Raizenberg B.A."
+            },
+            {
+                "@type": "Person",
+                "name": "Pekarsky L.S."
+            }
+        ],
+        "datePublished": "1975",
+        "inLanguage": "ru"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://systems-analysis.info/zh/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "系统分析",
+            "item": "https://systems-analysis.info/zh/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "系统分析：戈卢布科夫"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/zh/">首页</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/sections.html">栏目</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">维基</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/books.html">书籍</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/catalog.html">目录</a>
+        <span aria-hidden="true">·</span>
+        <a href="/systems_analysis_golubkov.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Toggle theme"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Toggle font"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">系统分析：戈卢布科夫</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+<p>《长期规划中的系统方法》。戈卢布科夫、赖岑贝格、佩卡尔斯基，1975 年</p>
+<p>系统分析是解决复杂<a href="problem.html" class="text-link">问题</a>（技术的、自然科学的、经济的、社会政治的等等）的科学方法与实践手法的总和。</p>
+<p>这里首先要用到<a href="system.html" class="text-link">系统</a>这一概念，即相互联系的要素为达成共同<a href="goal.html" class="text-link">目标</a>而共同作用所构成的统一体。系统作为整体所具有的属性，不同于构成它的各要素的属性。任何系统都有自身特有的规律性，这些规律性并不直接从其要素的作用方式中引出。</p>
+<p>系统的基本组成部分是输入、过程（结构）和输出。系统的输入是一个综合概念。一方面，它是进入系统并在其中经受一定变换的实体。另一方面，它是外部（周围）环境，即作用于系统的各种因素与现象的总和（自然条件、对外政治形势、贸易行情）。输入还指系统各要素既定的运行方式，例如确定系统行动的秩序、规则、限制条件与目标的各种规程、条例、命令。</p>
+<p>系统的第二部分是它的内部结构，即通过输入进入系统的物质、能量与信息所经由的通道，以及对它们加以变换的过程或作业（对经济系统而言，这就是物质资源、劳动资源、财政资源的再生产过程）。</p>
+<p>系统的第三部分是输出，即它活动的产品或结果。</p>
+<p>按与外部环境联系的程度，系统分为开放系统与封闭系统。开放系统与周围环境密集地交换物质、能量或信息，而封闭的、孤立的系统则在交换相对很少的条件下运行（例如计划经济信息处理的闭合循环，或闭合的工艺循环）。要注意，系统可以分别就物质、能量或信息而言是封闭的或开放的。系统或者有自然的边界，或者有依研究课题而确立的边界；在后一种情况下，系统是由研究者、观察者划分出来的。</p>
+<p>同一个对象可以包含许多不同的系统。如果把生产企业看作机器、工艺过程、材料以及在机器上加工的产品的总和，那么企业就表现为工艺系统。也可以从另一个角度看待企业：弄清企业员工对生产资料的关系、他们在劳动过程及其成果分配中的参与、该企业在国民经济体系中的位置等等。这时企业就是经济系统。</p>
+<p>在社会发展与科学技术革命的进程中，管理领域出现了新的研究对象，得名大系统。概括各家的观点，可以指出大系统以下几个最重要的特征：</p>
+<ul>
+  <li>存在具有明显局部属性的子系统，它们的总和构成大系统。</li>
+  <li>系统的目标导向性与可控性，即它具有总的目标与总的用途，这些目标与用途由更高层次的系统给定并加以校正。</li>
+  <li>系统组织具有复杂的层级（多层次）结构，它把集中管理与各部分（子系统）的自主性结合起来，既有不同层次要素之间的纵向联系，也有同一层次要素之间的横向联系。</li>
+  <li>系统规模大，即要素、输入与输出数量多，功能多样。</li>
+  <li>行为具有整体性与复杂性，各变量之间关系复杂而交错，存在反馈，以至于一个变量的变化会引起许多其他变量的变化。</li>
+</ul>
+<p>系统分析提供了一些专门手法，借助它们可以把难以纵览的大系统分解为若干较小的、相互作用的系统或子系统。</p>
+<p>系统分析的重要概念之一，是控制论的基本概念——反馈。正是它促成了在性质迥异的系统中确立管理组织之间的相似性。反馈意味着在系统的输出与输入之间存在联系通道，或者是直接的，或者是经由系统的其他要素（例如经由管理机构）。借助反馈，关于受控系统运行的数据从其输出端传送到管理系统。在这里，这些数据与给定工作内容和工作量的数据（例如与计划）相比较。当系统的实际状态与给定状态不符时，就制定消除这一不符的措施。</p>
+<p>系统分析中使用的一个重要概念是不确定性。在解决国民经济规划与管理领域的许多复杂问题时，都存在不确定性因素。</p>
+<p>系统分析过程中遇到的不确定性，可能是对所研究现象认识不足的结果，也可能是由于所作决策的后果要经过相当长的时间才显现出来、无法足够精确地加以预测。</p>
+<p>不确定性的其他原因还有：许多现象无法定量评价，特别是决策时“好—坏”“多—少”等概念难以定量解释，课题提法不清晰，以及决策者的个人特点。</p>
+<p>系统分析首先不是以特有的科学工具为特征，而是以条理化的、逻辑上有据的问题研究途径为特征。借助系统分析方法，人们研究复杂的系统与情境，这些系统与情境首先与确定目标、任务和行动方向（方式）的必要性相关。</p>
+<p>系统分析是研究解决复杂课题的各种可能途径时所运用的方法的总和，同时也是在就这些问题作决策的过程中把专家的知识、判断与直觉条理化并更有效加以利用的方式。换句话说，系统分析是科学研究者与领导组织者手中的科学武器。</p>
+<p>系统分析的课题在于把决策者所面临的问题弄清楚，使领导者看清作出决策的一切主要后果，并能在自己的行动中把它们计入。定量分析帮助决策负责人更严格地评估各种可能的行动方案，并在计入那些补充的、不可形式化的、可能为准备决策的专家（系统分析专家）所不知晓的因素与情节之后，选出其中最好的方案。系统分析用于确定解决已出现问题最切实可行的方式，使既定要求得到最大满足。</p>
+<p>系统分析在军事领域的应用经验，对它作为方法论的发展产生了很大影响，这也给这一学科及与之相近的学科（运筹学、系统工程学）的术语留下了明显痕迹。</p>
+<p>名称各异的各个系统分析方向之间，往往并不存在原则区别和界限分明的分界；与此同时，其中每一个方向又都有确定的特征与色彩。例如，运筹学通常被理解为研究拟定规划与组织作业所必需的定量建议的科学。这里的作业，指的是人、人群以及“人—机”系统的任何有目的的行动。系统工程学在研究系统各要素运行的基础上，创立了综合大系统的方法。虽然系统工程学的许多方法与成果是针对技术系统得出的，但它们在很大程度上可以移植到其他性质的对象上，其中也包括经济对象。</p>
+<p>系统分析在管理决策论证方法论中的出现，标志着从解决良好结构化的、可形式化的问题（那里目标、途径与准则都界定清晰，这是在运筹学方法基础上达到的），转向解决弱结构化的、在不确定条件下产生并包含不可形式化、无法译成数学语言的要素的问题。</p>
+<p>运筹学专家是在对什么算作“更有效”的工作有清晰认识的条件下，使用数学分析或逻辑分析方法的。他很少深究工作目标的确定或评价其成败的方法；这是系统分析专家的主要课题之一。</p>
+<p>计划工作者实际上总是充当系统分析专家，因为他把所要解决的问题作为整体来看待。系统分析的结果取决于所采用的准则体系。准则的选取是分析不可分割的组成部分。分析的作用在于确立：为在管理领域作出某些决策，采用哪些准则是合适的。</p>
+<p>作业分析的一个分支，即所谓“费用—成效”准则分析，在于全面对比实施某一行动方针所得的效果与为此所需的资源。</p>
+<p>系统分析与“费用—成效”准则分析的区别在于：在后一种情况下，分析指向的是在已表述、且多半是给定的目标条件下寻找合理利用资源的方式。系统分析则把问题提得更宽，也把目标本身作为按一定原则加以选取的对象来考察。</p>
+<p>系统分析的方法论可以定义为它的一系列原则，即对各种系统及其中所进行过程作具体分析时最一般的、根本的规律性。</p>
+<p>系统分析的决定性原则是目标导向性。每个系统都依照由外部提出、或由系统自身积极形成的目标而存在和发展。从系统分析的立场看，正是一组目标界定并勾勒出系统，把系统及其活动结合为一个整体。</p>
+<p>系统分析的下一条原则源自运用系统的、综合的途径的必要性，它在于确定并研究系统内部以及系统与外部环境之间一切本质的相互联系，并在选取局部决策时计入它们对整个系统的影响。</p>
+<p>进行系统分析时必须记住，同样的目标可以通过使用若干手段与方法来达成。由此引出系统分析的又一条原则，即寻找解决所出现问题的若干方案。为选出最好的方案而考察系统结构、系统组织及其中所进行过程（工艺的、计划的、管理的等等）的各种可能变体，是系统分析最重要的特征。</p>
+<p>系统分析的主要课题往往是寻找最优解。所谓最优解，是指依据某些准则比其他方案更可取的解。通常在依据某一准则选取最优解时，要把实施某一行为策略所得的效果，与实施它所必需的资源耗费加以比较。</p>
+<p>对各种系统中所进行过程分析的深度与完整程度，在很大程度上取决于对其运行与发展的动态性质研究到什么程度。系统分析从这样的必要性出发：不仅要认识系统中的静态相互联系，还要认识动态的相互作用；不仅要研究系统在某一时刻的状态，还要研究它随时间的变化。在事物的动态、发展中考察它们，同样是系统分析的重要原则。</p>
+<p>把系统分析所得建议的责任与在此基础上所作决策的责任加以区分的原则，预设要为系统分析师与依据系统分析结果作决策的人确立界限分明的权利与义务范围。在最终批准决策时，对决策负责的人除了系统分析结果所引出的建议之外，还可以计入一系列分析师未曾计入的定量与定性方面的考虑。</p>
+<p>当所研究的是复杂系统、而对它的分析只能通过概括其组成部分（子系统、要素）运行分析的结果才能完成时，首先要研究所分析系统（问题）的结构以及把它分解为要素的可能性。接下来，依照系统的构造、功能、内部过程，并计入一切最重要的相互联系，对系统进行逐次的分解（结构化）。有目的地对所研究系统进行结构化这一原则，在系统分析的一系列方法中得到了具体的实践体现，例如在目标树方法中。</p>
+<p>系统分析的应用领域，依所解决课题的复杂程度和运用数学方法的可能性，可以有条件地划分为五个层次：</p>
+<ul>
+  <li>个别作业的规划与管理的最优化。</li>
+  <li>系统类型的选择，或达成既定目标最有效途径的选择。</li>
+  <li>新系统的研制。</li>
+  <li>确定系统在更高层次问题中的位置与作用。</li>
+  <li>国民经济层次上经济系统的规划与管理。</li>
+</ul>
+<p>这样的排列对应于问题复杂程度、不确定性水平以及拟定可据以采取具体行动之建议的困难程度的递增。在第一个层次上，分析在最大程度上取得数学形式，可以建立在运用形式逻辑手段与方法的基础上。这实质上就是在“更有效”这一概念已被清晰界定的条件下，为提高系统成效而进行的运筹学研究。这一领域中问题的基本特征是：它们具有轮廓清晰、可作形式化描述的结构。在其余各层次上，运用系统分析必然与研究定性因素和条件（多半是社会性质的）的必要性相关。</p>
+<p>在个别情况下，系统分析必然与研究各种矛盾的必要性相关。矛盾与不相符的例子有：计划的不平衡，个别种类材料与设备供应的中断，个别种类产品生产量增长与消费量增长之间的不相符，与新技术推广缓慢相关的矛盾。</p>
+<p>第二、第三层次课题的分析包括设计新系统，用以更好地完成已知作业，或完成此前从未进行过的作业。在考察这一层次及后续层次的课题时，计入社会因素与政治因素变得越来越重要。</p>
+<p>《系统分析在部门规划中的运用》。戈卢布科夫，1977 年</p>
+<p>解决系统分析具体课题时的一般方法，会分化并体现为形形色色的方法，依所采用的分类原则不同，可以把它们分为不同的组，例如分为分析方法与综合方法、描述性方法与实验性方法。依系统分析中形式化要素的使用程度，可以划分出三组方法：数学的（形式的）；启发式的（非形式的）；数学与启发式相结合的。</p>
+<p>系统分析的方法既可以在广义上、也可以在狭义即具体意义上来看待。在广义上，凡是在系统的、综合的途径基础上用于解决所出现问题的、属于上述三组的任何方法，都属于系统分析方法。在这样宽泛的理解下，系统分析方法就等同于解决所出现问题的方法，并可以依照决策过程的各个阶段加以分类。</p>
+<p>在狭义上，系统分析方法是指这样一些具体方法：用于确定系统活动的一组目标以及达成它们的最佳途径，用于选取<a href="model.html" class="text-link">模型</a>与准则，用于把系统（问题）逐次地、有方向地细化为各组成要素，用于确定这些要素之间的相互联系与相互依赖，以及用于确定个别目标、措施、准则与模型的相对重要性（优先性）。因此，这首先是指那些在形式化数学方法运用受限时，用于解决弱结构化问题的方法。</p>
+<p>系统分析中数学方法的主要部分是运筹学方法（各类规划、对策论、排队论等等）。这些方法在系统分析中被广泛运用，但更多是用于研究所解决问题的个别侧面，而不是研究它的实质。</p>
+<p><strong>数学方法在系统分析中最常用于：</strong></p>
+<ul>
+  <li>确定刻画系统运行结果的各项指标的数值；</li>
+  <li>寻找导向达成某些结果的最佳行动方案（最优化）；</li>
+  <li>处理和分析具有启发性、创造性质的数据。</li>
+</ul>
+<p>尽管数学方法在解决经济课题时的作用越来越大，但不能认为它们是解决这类课题的普适手段。还有那些运用所积累经验与直觉的方法，即启发式（非形式化）方法。</p>
+<p>力求借助数学方法对所提问题得到精确回答，可能导致这样的结果：工程师和经济学家如此沉迷于自己的工作以及查明是否需要进行某些研究的方法论，以至于他们努力的最终成果竟是“需要进行补充研究”这一结论。</p>
+<p>而在关于某一经济过程、现象、结果的确切数据缺失的条件下，对最重要的问题得到近似的回答，要好过试图对那些并未完全弄清和想透的问题给出精确回答。形成系统目标、其实现方案、模型、准则的各项程序，都不可能完全形式化。</p>
+<p>进行此类专家评议与会议的程序，往往由传统即最终由经验来规定，在许多方面是一门艺术。不过，各种处理启发式来源原始材料的数学方法，也开始逐渐渗入这一领域。</p>
+<p>启发式方法的特点在于：专家在评价某一事件时，在很大程度上运用建立在自己经验与直觉之上的信息。这类信息在极大程度上与专家的个人素质相关。在运用直觉决策方法时，专家无法用言语表达其实现的先后步骤。</p>
+<p>直觉预设的是直接地、跳跃式地得到解决办法，而不是经过一连串细致、深思熟虑的步骤。凭直觉思考的人往往说不出，在感知过程中他划分出了情境的哪些方面，他使用了记忆中所存信息的哪一部分，是什么样的“推理”把他从原始数据带到了决策。</p>
+<p>建立在经验运用之上的，是启发式决策方法，它们从对某个与当下所出现问题相同的问题的过往分析出发（基于与过去类比的决策）。属于非形式化方法的还有依据求助于权威而作决策的方法（向领导、专家、参考文献、科学文献或教学文献求教并请求指示）。</p>
+<p><strong>系统分析方法的应用领域：</strong></p>
+<ol>
+  <li>确定目标清单及达成目标的途径（例如确定部门计划的目标并拟出其若干实施方案）。</li>
+  <li>确定个别目标、途径、措施、结果等的优先性（排序）（例如在部门新技术计划中确定个别措施的优先次序与实施期限）。</li>
+  <li>把目标、纲要、计划等分解为其组成要素（例如依据对整个部门提出的任务，编制个别联合公司或企业的计划）。</li>
+  <li>选取达成既定目标的最佳途径（例如分析并对比拟纳入计划的各种组织技术措施）。</li>
+  <li>选取比较目标及其达成途径的准则（例如选取评价部门计划各方案成效的准则）。</li>
+  <li>建立选取目标及其达成途径的模型（例如按折算费用最小化准则在部门各企业之间分配计划任务的模型）。</li>
+  <li>概括对各子系统运行的分析数据，以便就整个系统运行的最优性作出结论（例如依据对个别联合公司（部门企业）所采用规划程序的分析数据，编制部门计划制定的最优方案）。</li>
+</ol>
+<p>必须指出，启发式方法与综合方法之间的界限在某种程度上是有条件的，因为它们之间并不存在严格的分界。目前，在运用几乎所有启发式方法时，都会用到处理启发性原始数据的数学手法。</p>
+<p>在系统分析中，依问题提法与其解决条件的确定程度不同，可能有不同类型的课题，它们预先决定了要运用哪些具体的解决方法。借助运筹学中所采用的分类，可以把这些课题分为三组，尽管这时还需要作一些补充说明。</p>
+<ol>
+  <li>确定性课题。这是在每一策略都导向唯一结果的情境下选取最佳解决方案的课题（例如所考察的计划方案以百分之百的概率带来所需的结果）。</li>
+  <li>概率性课题。这是在每一行动都可能得到不同结果、而达成这些结果的概率已知或可以估计的情境下，选取最佳解决方案的课题（例如每个计划方案都以一定概率带来已知的结果）。</li>
+  <li>不确定条件下的课题。这是在得到各种结果的概率未知、或者根本不知道在所考察的诸策略中选取某一策略会得到哪些结果的情境下，选取最佳解决方案的课题。</li>
+</ol>
+<p>为系统分析课题引入这样的术语在某种程度上是有条件的，因为例如在解决概率性课题时同样存在不确定性因素。</p>
+<p>必须注意，属于概率性课题和不确定条件下课题这一类的，还有那些并未确定全部可能策略、而只考察已知策略的课题。这种情形是决策实践的典型特征：人们考察的并非解决所出现问题的一切可能方案，而只是数量有限的若干方案。</p>
+<p>确定性课题与不确定性课题可以看作概率性课题的极限情形（例如对结果完全知晓与完全不知晓）。因此我们先考察概率性课题，然后再转到确定性课题与不确定性课题。</p>
+<p>解决概率性课题时，最佳方案的选取按偏好程度值的数学期望最大化这一条件来进行。这一准则在解决该类型的大多数课题时都被采用。</p>
+<p>当通过某些计算（例如技术经济计算）有可能确定某一策略在不同外部环境条件下的成效时，就应当用刻画某一决策方案实施效果的具体量值来代替偏好程度值。关于决策选取的最终建议，应当在计入所考察各决策方案得到不同结果之概率的前提下拟定。</p>
+<p>确定性课题可以看作概率性课题的极限情形，即认为得到每一种可能结果的概率或者等于一，或者等于零。</p>
+<p>确定性课题的例子有线性规划课题。</p>
+<p>解决这类课题时所采用的准则，可以是偏好程度期望值最大化的极限情形，即各种可能结果实现的概率或者等于一、或者等于零。在解决确定性课题时，常常采用具有具体经济含义的各种指标作为准则（折算费用、盈利水平、劳动生产率等）。</p>
+<p>系统分析中最典型的课题类型是不确定条件下的课题。在实际情形中，当起初看来完全没有关于达成各种结果之概率的任何估计时，系统分析专家通常会尽最大努力，通过专门研究获取关于这些概率的信息，而且他通常能够做到。不过也可能出现概率估计完全未知的情形。</p>
+<p>解决不确定条件下的课题时，会采用一些相当有名的准则，如极小极大准则、极大极小准则、广义极大极小准则（赫尔维茨准则）、极小极大遗憾准则（萨维奇准则）、拉普拉斯准则等等。</p>
+<p>解决同一课题时采用不同的准则，通常会得到不一样的结果。为解决不确定条件下的课题而选取准则，有两种途径。第一种是研制新的准则或新的要求，以便选取决策准则。第二种途径在于运用关于外部环境各种条件实现（即实施某一策略所得各种结果）之概率的任何信息，哪怕是最贫乏的信息，或者进行实验以取得这些概率的估计。这样一来，不确定性课题就变成了概率性课题。</p>
+<p>两种途径都很费力，而且通常在实践中难以实行，不过第二种途径终究更可取。第一种途径会导致寻找新的准则以便从已知准则中选出最好的，接着又要寻找准则以便从所考察的准则中作选取，如此等等。换句话说，不存在不以概率估计为基础、又能满足“好”准则某些合理要求的决策准则。</p>
+<p>试图为不确定条件下的可能决策形成评价准则，反映的是这样一种愿望：使每一行动方案在不同情势下的长处与短处更为直观。现有的不确定条件下决策选取准则，没有一个是普适的、能够让任何领导者都满意的。</p>
+<p>系统分析的各种方法不应当彼此对立。每一种都有长处与短处，但没有哪一种可以被认为适合解决任何课题。因此，最好的结果可以通过若干方法的结合来取得，这种结合由所解决课题的性质与问题考察的层次来决定。在经济管理低层次上解决规划课题时，通常遇到的是足够结构化的问题，这就使数学分析方法得以广泛运用。在更高的层次上，目标以及系统分析的其他要素越来越具有定性性质，因而非形式化方法的意义随之增大。</p>
+<p>经济系统中社会过程建模的复杂性，使数学方法的运用更加困难。与此同时，不确定性因素的作用增大，运用形式化方法而忽视这一因素，可能导致错误的结论。</p>
+</div>
+      </article>
+    </div>
+
+    <div class="links">
+  <div class="links-section">
+    <h2>关于系统分析</h2>
+    <ul>
+      <li><a href="systems_analysis.html">系统分析</a></li>
+      <li><a href="systems_analysis_optner.html">系统分析：奥普特纳</a></li>
+      <li><a href="systems_analysis_pospelov.html">系统分析：波斯佩洛夫</a></li>
+      <li><a href="systems_analysis_clelandking.html">系统分析：克利兰、金</a></li>
+      <li><a href="systems_analysis_nikanorov.html">系统分析：尼卡诺罗夫</a></li>
+      <li><a href="systems_analysis_pt.html">系统分析：佩列古多夫、塔拉先科</a></li>
+      <li><a href="systems_analysis_q.html">系统分析：奎德</a></li>
+      <li><a href="systems_analysis_book.html">系统分析文献</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>转到文章</h2>
+    <ul>
+      <li><a href="system.html">系统理论</a></li>
+      <li><a href="system_terminus.html">系统的概念</a></li>
+      <li><a href="system_def.html">系统的定义</a></li>
+      <li><a href="methodology_sa.html">系统分析方法</a></li>
+      <li><a href="economics.html">经济学中的系统分析</a></li>
+      <li><a href="systems_thinking.html">系统方法</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/zh/">首页</a> <span aria-hidden="true">/</span>
+    <a href="/zh/systems_analysis.html">系统分析</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">系统分析：戈卢布科夫</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Toggle theme"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/systems_analysis_golubkov.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">语言</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/zh/map.html">网站地图</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710f555e1f1e13',t:'MTc4ODczNTMxMg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

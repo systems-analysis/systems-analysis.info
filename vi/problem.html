@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vấn đề</title>
+<meta name="description" content="Vấn đề và tình huống vấn đề là những khái niệm trung tâm của phân tích hệ thống. Bài viết mô tả các định nghĩa, đặc điểm của tình huống vấn đề và vai trò của chúng trong lý thuyết ra quyết định.">
+<meta name="keywords" content="vấn đề,vấn đề hệ thống,phân tích hệ thống,tính bất định,hệ thống,nghiên cứu">
+<link rel="canonical" href="https://systems-analysis.info/vi/problem.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/problem.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/problem.html">
+<link rel="alternate" hreflang="vi" href="https://systems-analysis.info/vi/problem.html">
+<meta property="og:title" content="Vấn đề">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/vi/problem.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Vấn đề và tình huống vấn đề là những khái niệm trung tâm của phân tích hệ thống. Bài viết mô tả các định nghĩa, đặc điểm của tình huống vấn đề và vai trò của chúng trong lý thuyết ra quyết định.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="vi_VN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/vi/problem.html#article",
+    "headline": "Vấn đề",
+    "description": "Vấn đề và tình huống vấn đề là những khái niệm trung tâm của phân tích hệ thống. Bài viết mô tả các định nghĩa, đặc điểm của tình huống vấn đề và vai trò của chúng trong lý thuyết ra quyết định.",
+    "url": "https://systems-analysis.info/vi/problem.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "vi",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/vi/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/vi/problem.html"
+    },
+    "keywords": [
+        "vấn đề",
+        "vấn đề hệ thống",
+        "phân tích hệ thống",
+        "tính bất định",
+        "hệ thống",
+        "nghiên cứu"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "Vấn đề",
+        "description": "A complex theoretical or practical question requiring study and resolution; a contradictory situation that calls for an adequate theory to resolve it.",
+        "sameAs": [
+            "https://www.wikidata.org/entity/Q621184",
+            "https://en.wikipedia.org/wiki/Problem",
+            "https://systems-analysis.info/wiki/Проблема",
+            "https://systems-analysis.info/eng/Problem"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Trang chủ",
+            "item": "https://systems-analysis.info/vi/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Phân tích hệ thống",
+            "item": "https://systems-analysis.info/vi/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Vấn đề"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Điều hướng chính">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/vi/">Trang chủ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/sections.html">Chuyên mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/books.html">Sách</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/catalog.html">Danh mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/problem.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Đổi giao diện"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Đổi phông chữ"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Vấn đề</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>Vấn đề</strong>:</p>
+<ul>
+  <li>một câu hỏi lý luận hoặc thực tiễn phức tạp cần được nghiên cứu và giải quyết; một tình huống mâu thuẫn thể hiện dưới dạng các quan điểm đối lập trong việc giải thích những hiện tượng, đối tượng hoặc quá trình nhất định và đòi hỏi một lý thuyết thích đáng để giải quyết;</li>
+  <li>một trở ngại trên đường đạt tới mục tiêu đã đề ra. Một tình huống được gọi là có vấn đề khi hoạt động không thể được thực hiện bằng các phương pháp đã áp dụng trước đó, và việc đạt được kết quả mong muốn trong điều kiện đã thay đổi trở nên khó khăn hoặc không thể thực hiện được;</li>
+  <li>sự sai lệch giữa trạng thái hiện có và trạng thái cần đạt (trạng thái mục tiêu) của một hệ thống trong những điều kiện môi trường đã cho ở một thời điểm nhất định.</li>
+</ul>
+<p><strong>Tình huống vấn đề:</strong></p>
+<ul>
+  <li>một tập hợp các hoàn cảnh thực tế mà ai đó thấy không thỏa đáng và muốn thay đổi.</li>
+  <li>một nhận thức, phát sinh trong quá trình hoạt động thực tiễn hoặc lý luận, rằng những kiến thức đã có trước đó là chưa đủ, và nhu cầu tương ứng về kiến thức mới được theo đuổi thông qua một quá trình tìm hiểu có mục đích.</li>
+</ul>
+<p>Một trong những khái niệm trung tâm của phân tích hệ thống hiện đại là vấn đề hệ thống, dùng để chỉ những vấn đề có chung một số đặc điểm nhận biết được. Mặc dù không thể định nghĩa chính xác khái niệm này bằng một công thức duy nhất, đầy đủ, nhưng có thể tổng quát hóa từ kinh nghiệm nghiên cứu khoa học để chỉ ra những đặc trưng phân biệt của loại vấn đề này. Đó là:</p>
+<ul>
+  <li>Thiếu cấu trúc hoặc cấu trúc kém.</li>
+  <li>Thiếu hình thức hóa hoặc hình thức hóa yếu.</li>
+  <li>Tính mâu thuẫn.</li>
+  <li>Tính bất định.</li>
+  <li>Tính mơ hồ.</li>
+  <li>Tính không chính thức.</li>
+  <li>Tính phức tạp.</li>
+</ul>
+<p><strong>Các đặc điểm của tình huống vấn đề với tính cách là trở ngại trên đường đạt tới mục tiêu:</strong></p>
+<ul>
+  <li>mức độ bất định cao (thiếu hoặc không đủ thông tin)</li>
+  <li>sự tồn tại của những mâu thuẫn rõ rệt hoặc đáng kể trong việc mô tả hay đánh giá tình huống</li>
+  <li>cấu trúc kém hoặc hoàn toàn thiếu cấu trúc</li>
+  <li>không thể hình thức hóa hoặc hình thức hóa yếu đối với tình huống vấn đề</li>
+</ul>
+<p>Khái niệm về mức độ có cấu trúc của vấn đề, do H. Simon và A. Newell đưa ra (1958), liên quan đến sự cân bằng giữa thông tin định lượng và định tính, thông tin khách quan và chủ quan mô tả một vấn đề nhất định.</p>
+<p>Những vấn đề có cấu trúc tốt, hay dễ hình thức hóa, cho phép phát biểu dưới dạng định lượng; những mối quan hệ cốt yếu nhất của chúng được biểu diễn bằng các mô hình khách quan và trình bày dưới dạng ký hiệu, trong đó các ký hiệu nhận các giá trị số. Những vấn đề thiếu cấu trúc, hay không thể hình thức hóa, chỉ có những mô tả định tính, bằng lời, dựa trên những phán đoán chủ quan của con người, và các quan hệ định lượng giữa những đặc trưng quan trọng nhất của vấn đề thì hoặc không có, hoặc chưa được biết đến. Những vấn đề nửa cấu trúc, hay khó hình thức hóa, chiếm vị trí trung gian: chúng kết hợp cả các thành phần định lượng và định tính, nhưng những khía cạnh chưa được xác định rõ và chưa được hiểu đầy đủ vẫn chiếm ưu thế.</p>
+<p>Động thái nội dung của các vấn đề hệ thống chỉ có thể được mô tả thông qua các kịch bản khả dĩ hay các biến thể có thể xảy ra của diễn biến sự việc. Điều này là do thông thường không có dữ liệu đầy đủ về ba loại quan hệ then chốt: (1) những hoàn cảnh xung quanh vấn đề; (2) các liên hệ của nó với những vấn đề khác; và (3) các nguồn lực cần thiết để giải quyết nó. Không thể dự đoán trước hết mọi tình huống sẽ gặp phải trong quá trình giải quyết một vấn đề hệ thống. Phần nhìn thấy được ban đầu của một vấn đề hệ thống chỉ chiếm một phần nhỏ trong toàn bộ thông tin cần thiết để giải quyết nó, còn phần còn lại vẫn ẩn giấu và chỉ hiện ra trong quá trình nghiên cứu. Hơn nữa, các vấn đề hệ thống bao hàm nhiều phương pháp và cách tiếp cận giải quyết không hiển nhiên, nhưng không thể xác định trước toàn bộ tập hợp các phương án khả dĩ.</p>
+<p>Các vấn đề hệ thống ảnh hưởng đến nhiều ngành khoa học, song không một ngành riêng lẻ nào có thể đưa ra những phương pháp hữu hiệu để giải quyết chúng một cách toàn diện. Các ngành khoa học truyền thống chủ động thu hẹp phạm vi của mình — với lý do rằng chỉ bằng cách đó mới có thể đạt được những kết quả có ý nghĩa thực tiễn. Ngược lại, phân tích hệ thống đòi hỏi phải tích hợp các lợi ích khoa học và thực tiễn vượt ra ngoài khuôn khổ của bất kỳ một lý thuyết đơn lẻ nào, bất kể sức mạnh dự báo của nó ra sao. Một vấn đề hệ thống chỉ có thể được giải quyết hiệu quả bằng cách tập hợp một hệ các phương pháp và kiến thức khoa học có độ phức tạp tương xứng với vấn đề đó, bao quát toàn bộ các khía cạnh và biểu hiện của đối tượng nghiên cứu.</p>
+<p>Kiến thức và phương pháp của các ngành khoa học khác nhau không thể tự mình tạo thành một hệ như vậy, vì chúng thiếu sự phối hợp và định hướng tập trung. Do đó cần có một cơ chế tạo hệ — có khả năng quản lý các thành phần riêng lẻ, phối hợp các kết quả nghiên cứu và tập trung nỗ lực vào những hướng quan trọng nhất. Phân tích hệ thống thực hiện chức năng phối hợp và tích hợp này.</p>
+<p>Các vấn đề hệ thống ảnh hưởng đến nhiều khía cạnh khác nhau về bản chất của thực thể mà chúng nảy sinh, và các khía cạnh này có những quan hệ tác động qua lại lẫn nhau. Những nỗ lực đơn giản hóa vấn đề bằng cách loại bỏ các khía cạnh được cho là “không cốt yếu” có thể dẫn đến sai sót. Đồng thời, việc cố gắng tính đến mọi khía cạnh khiến vấn đề trở nên không thể quản lý và trên thực tế không thể giải quyết được. Trong không gian tham số của bất kỳ vấn đề hệ thống nào, luôn tồn tại một vùng thỏa hiệp. Việc tìm kiếm vùng này là một trong những nhiệm vụ thực tiễn quan trọng nhất của phân tích hệ thống.</p>
+</div>
+      </article>
+    </div>
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Phương pháp luận</h2>
+    <ul>
+      <li><a href="/vi/methodology_sa.html">Phương pháp luận phân tích hệ thống</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Bài viết liên quan</h2>
+    <ul>
+      <li><a href="/vi/system.html">Hệ thống</a></li>
+      <li><a href="/vi/system_terminus.html">Khái niệm hệ thống</a></li>
+      <li><a href="/vi/system_def.html">Định nghĩa hệ thống</a></li>
+      <li><a href="/vi/economics.html">Phân tích hệ thống trong kinh tế học</a></li>
+      <li><a href="/vi/systems_analysis.html">Phân tích hệ thống</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Đường dẫn điều hướng">
+    <a href="/vi/">Trang chủ</a> <span aria-hidden="true">/</span>
+    <a href="/vi/systems_analysis.html">Phân tích hệ thống</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Vấn đề</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Đổi giao diện"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/problem.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/vi/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Đổi giao diện"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710f058df41e13',t:'MTc4ODczNTI5OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

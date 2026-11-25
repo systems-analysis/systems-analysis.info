@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Az operációkutatás alapjai: Ackoff és Sasieni</title>
+<meta name="description" content="Az operációkutatás a tudományos módszer alkalmazása interdiszciplináris kutatócsoportok által, olyan problémákra, amelyek szervezett (ember-gép) rendszerek irányításával kapcsolatosak, annak érdekében, hogy a szervezet egészének céljait legjobban szolgáló megoldásokat kapjunk.">
+<meta name="keywords" content="operációkutatás,Ackoff,Sasieni,modellek,problémák,megoldás,tudományos,módszer,rendszerelemzés">
+<link rel="canonical" href="https://systems-analysis.info/hu/operation_research_as.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_as.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_as.html">
+<link rel="alternate" hreflang="hu" href="https://systems-analysis.info/hu/operation_research_as.html">
+<meta property="og:title" content="Az operációkutatás alapjai: Ackoff és Sasieni">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/hu/operation_research_as.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Az operációkutatás a tudományos módszer alkalmazása interdiszciplináris kutatócsoportok által, olyan problémákra, amelyek szervezett (ember-gép) rendszerek irányításával kapcsolatosak, annak érdekében, hogy a szervezet egészének céljait legjobban szolgáló megoldásokat kapjunk.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="hu_HU">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/hu/operation_research_as.html#article",
+    "headline": "Az operációkutatás alapjai: Ackoff és Sasieni",
+    "description": "Az operációkutatás a tudományos módszer alkalmazása interdiszciplináris kutatócsoportok által, olyan problémákra, amelyek szervezett (ember-gép) rendszerek irányításával kapcsolatosak, annak érdekében, hogy a szervezet egészének céljait legjobban szolgáló megoldásokat kapjunk.",
+    "url": "https://systems-analysis.info/hu/operation_research_as.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "hu",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/hu/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/hu/operation_research_as.html"
+    },
+    "keywords": [
+        "operációkutatás",
+        "Ackoff",
+        "Sasieni",
+        "modellek",
+        "problémák",
+        "megoldás",
+        "tudományos",
+        "módszer",
+        "rendszerelemzés"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Fundamentals of Operations Research",
+        "author": [
+            {
+                "@type": "Person",
+                "name": "Ackoff R. L."
+            },
+            {
+                "@type": "Person",
+                "name": "Sasieni M. W."
+            }
+        ],
+        "datePublished": "1968",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Wiley"
+        },
+        "inLanguage": "hu"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Fundamentals of Operations Research",
+        "author": [
+            {
+                "@type": "Person",
+                "name": "Ackoff R. L."
+            },
+            {
+                "@type": "Person",
+                "name": "Sasieni M. W."
+            }
+        ],
+        "datePublished": "1968",
+        "inLanguage": "hu"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Főoldal",
+            "item": "https://systems-analysis.info/hu/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Operációkutatás",
+            "item": "https://systems-analysis.info/hu/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Az operációkutatás alapjai: Ackoff és Sasieni"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Fő navigáció">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menü</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/hu/">Főoldal</a>
+        <span aria-hidden="true">·</span>
+        <a href="/hu/sections.html">Témakörök</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/hu/books.html">Könyvek</a>
+        <span aria-hidden="true">·</span>
+        <a href="/hu/catalog.html">Katalógus</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_as.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Téma váltása"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Betűtípus váltása"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Az operációkutatás alapjai: Ackoff és Sasieni</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Az operációkutatás alapjai. Ackoff, R. L. és Sasieni, M. W. 1968.</p>
+<p>Az operációkutatás sok különböző meghatározását javasolták már, és számos érvet is felhoztak amellett, hogy a tárgy egyáltalán nem definiálható. A felkínált meghatározások mérlegelésekor érdemes szem előtt tartani, hogy a régebbi, régóta létező tudományok közül egyiket sem — sőt magát a tudományt egészében sem — sikerült még minden művelőjének megelégedésére meghatározni. Mindazonáltal az alábbi meghatározás hasznos alapul szolgálhat az operációkutatás lényegének általános megértéséhez, különösen a most áttekintett történeti fejlődés fényében.</p>
+<p>Az operációkutatás: (1) a tudományos módszer alkalmazása, (2) interdiszciplináris kutatócsoportok által, (3) szervezett (ember-gép) rendszerek irányításával kapcsolatos problémákra, olyan megoldások érdekében, amelyek a legjobban szolgálják a szervezet egészének <a href="/hu/goal.html" class="text-link">céljait</a>.</p>
+<p>Az operációkutatásnak e meghatározásban megfogalmazott jellegzetes vonásai a következők: (a) rendszerszemlélet, (b) interdiszciplináris kutatócsoportok alkalmazása, és (c) a tudományos módszer alkalmazása irányítási problémákra. Vizsgáljuk meg most részletesebben mindegyik jellemzőt.</p>
+<p>Ez a megközelítés azon a feltételezésen alapul, hogy a szervezeti <a href="/hu/system.html" class="text-link">rendszerekben</a> bármely rész viselkedése végső soron minden más részre hatással van. Nem mindegyik ilyen hatás jelentős, és némelyik teljesen kimutathatatlan is lehet. Ezért e megközelítés lényege abban áll, hogy a szervezet bármely részének teljesítményét vagy stratégiáját értékelve szisztematikusan keressük a jelentős kölcsönhatásokat.</p>
+<p>A szervezeti problémáknak ez a megközelítése gyökeresen eltér attól, hogy a problémát kezelhető méretűre szűkítsük. Az operációkutatók szinte kivétel nélkül kiszélesítik a hozzájuk eljuttatott probléma eredeti megfogalmazását, olyan kölcsönhatásokat is beépítve, amelyek a vezetés megfogalmazásában nem szerepeltek. E tágabb, és ennek megfelelően bonyolultabb problémák kezelése új kutatási módszerek kidolgozását igényli.</p>
+<p>Annyira hozzászoktunk ahhoz, hogy a tudományos ismereteket az egyetemek tanszéki felépítése szerint osztályozzuk, hogy néha azt hisszük, ez a felosztás magának a természetnek a szerkezetét tükrözi. Semmi sem állhatna távolabb az igazságtól. Önmagukban nem léteznek fizikai, biológiai, pszichológiai vagy gazdasági problémák. Csak problémák léteznek. A tudományos diszciplínák pusztán a vizsgálatukra szolgáló különböző módszereket jelentik. Bármely probléma vizsgálható bármely tudományág szempontjából — bár ez természetesen nem mindig célszerű. Lényegében ugyanaz a gondolat ez, amelyet korábban más formában fogalmaztunk meg: egy szervezetnek nincsenek külön termelési, marketing- vagy pénzügyi problémái. Az ilyen felosztás csupán az ugyanazon szervezeti problémák vizsgálatának eltérő megközelítéseit tükrözi.</p>
+<p>Minden szakember elérhet bizonyos javulásokat, de e javulások közül — vagy azok mely kombinációja közül — melyik a legjobb? Bonyolult problémák esetén ezt ritkán tudjuk előre. Ezért célszerű a probléma megközelítéseinek lehető legszélesebb körét megvizsgálni és értékelni. Ez az interdiszciplináris kutatócsoportok létjogosultságának alapja.</p>
+<p>Mivel jelenleg száznál is több elméleti és alkalmazott tudományág létezik, nyilvánvalóan lehetetlen minden kutatási projektbe mindegyikük egy-egy képviselőjét bevonni. Kívánatos azonban, hogy a csoportban a lehető legtöbb tudományág képviseltesse magát, és hogy a csoport munkáját a benne nem képviselt tudományágak lehető legszélesebb köréből kritikai felülvizsgálatnak vessék alá.</p>
+<p>A tudományos módszer legtöbb leírása szerint annak megkülönböztető jegye a kísérlet. Kormányzati, katonai vagy ipari szervezetekkel foglalkozva azonban a kísérletezés szűk értelemben — vagyis a változók értékeinek fizikai megváltoztatása — gyakran lehetetlen vagy kivitelezhetetlen. Egy ipari vállalat például nem kockáztathatja a puszta létét egy kísérlet kedvéért. Kísérletezés persze néha lehetséges, különösen az alrendszerek szintjén, és fontos szerepet is játszik az operációkutatásban. Ennek ellenére a vizsgált rendszer egészét jellemzően nem lehet kísérletnek alávetni. A legtöbb esetben tehát a rendszer egészének vizsgálata olyan megközelítést igényel, amely nem jár kísérletezéssel (a vizsgált objektum fizikai megváltoztatásának szűk értelmében).</p>
+<p>Az operatív modellek olyan egyenletek formáját öltik, amelyek matematikailag ugyan bonyolultak, szerkezetüket tekintve azonban nagyon egyszerűek: a rendszer működését jellemző teljesítménykritérium hasznossága vagy értéke a szabályozható változók, valamint a szabályozhatatlan változók (és állandók) függvényeként fejeződik ki, amelyek mindazonáltal hatással vannak a függvényre.</p>
+<p>Ezenkívül gyakran szükség van egy vagy több egyenletre vagy egyenlőtlenségre annak kifejezésére, hogy egyes szabályozható változók csak meghatározott határok között változhatnak.</p>
+<p>Miután felépítettük a <a href="/hu/model.html" class="text-link">modellt</a>, felhasználható a szabályozható változók pontos vagy közelítő optimális értékeinek megtalálására — vagyis olyan értékek meghatározására, amelyek a szabályozhatatlan változók adott értékei mellett a legjobb rendszerteljesítmény-kritériumot adják. Más szóval, megkapható a probléma megoldása a modellben. Hogy pontosan hogyan jutunk el ehhez a megoldáshoz, az az alkalmazott modelltől függ.</p>
+<p>A megoldás megkapható a modellel végzett kísérletezéssel (paramétereinek változtatásával) vagy matematikai elemzéssel. Egyes esetekben a matematikai elemzés a változók konkrét értékeinek ismerete nélkül is elvégezhető; más esetekben az értékeket számszerűen meg kell adni.</p>
+<p>Az alkalmazott módszertől függetlenül a cél mindig az optimális vagy közel optimális megoldás megtalálása. Optimális megoldásnak azt nevezzük, amely a modellben megjelenő feltételek és korlátozások mellett minimalizálja vagy maximalizálja (a probléma jellegétől függően) a teljesítménykritériumot a modellen. Az <a href="/hu/optimization.html" class="text-link">optimalizálás</a> tehát a modell által leírt probléma legjobb megoldását adja. Mivel azonban a modell soha nem a probléma pontos leírása, az így kapott optimális megoldás sem lehet soha az egyetlen és legjobb megoldása a valós problémának. Ha feltételezzük, hogy a modell a probléma „jó” leképezését adja, akkor a modellen kapott optimális vagy közel optimális megoldás a valós probléma optimális megoldásának „jó” közelítése. Mindenesetre jelentősen jobb, mint az a stratégia vagy eljárás, amelynek a helyébe lép.</p>
+<p>Mivel a megoldás révén kapott optimális változóértékek csak annyiban javítják a rendszer teljesítményét, amennyiben a modell pontosan írja le a rendszert, szükséges ellenőrizni a modell valósággal való megfelelését, és józanul értékelni a megoldást. Más szóval, a megoldás megvalósításának előre jelzett eredményeit össze kell hasonlítani azzal a stratégiával vagy eljárással, amelynek a helyébe lép.</p>
+<p>Végezetül, mivel az operációkutatás célja nem tudományos jelentések készítése, hanem a rendszer teljesítményének javítása, a kutatás eredményeit meg kell valósítani (feltéve, hogy azok elfogadhatóak a döntéshozó számára). Éppen ebben a szakaszban zajlik a kutatási eredmények végső próbája és értékelése. Ez tehát az a szakasz, amelyben az operációkutatók számára a tapasztalatszerzés legnagyobb lehetősége kínálkozik.</p>
+<p>Ha az a döntés, amelynek érdekében a kutatást végzik, az ismétlődő döntések kategóriájába tartozik, akkor — az operációkutatásban vizsgált rendszerek jellegét figyelembe véve — igen valószínű, hogy az egymást követő döntések között egyes szabályozhatatlan változók értékei, sőt magának a rendszernek a szerkezete is megváltozik. Ezért szükséges feltárni a rendszerben és külső környezetében bekövetkező jelentős változásokat, és ennek megfelelően módosítani a döntést. Más szóval, az ismétlődő döntésekre vonatkozó szabályok, illetve a hosszabb időszakokra alkalmazott döntések formájában megjelenő eredményeket frissíteni kell, és figyelemmel kell kísérni azok helyes alkalmazását.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Könyvismertetők</h2>
+    <ul>
+      <li><a href="/hu/operation_research_caa.html">Bevezetés az operációkutatásba: Churchman, Ackoff és Arnoff</a></li>
+      <li><a href="/hu/operation_research_me.html">Operációkutatás: Moder és Elmaghraby</a></li>
+      <li><a href="/hu/operation_research_gv.html">Szervezés és irányítás: Gvishiani</a></li>
+      <li><a href="/hu/operation_research_ve.html">Operációkutatás: Wentzel</a></li>
+      <li><a href="/hu/operation_research_vg.html">Az operációkutatás alapelvei: Wagner</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Kapcsolódó cikkek</h2>
+    <ul>
+      <li><a href="/hu/operation_research.html">Operációkutatás</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Navigációs útvonal">
+    <a href="/hu/">Főoldal</a> <span aria-hidden="true">/</span>
+    <a href="/hu/operation_research.html">Operációkutatás</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Az operációkutatás alapjai: Ackoff és Sasieni</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Téma váltása"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_as.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/hu/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Téma váltása"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a371097e3bd7a5ce',t:'MTc4ODczNTA3Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

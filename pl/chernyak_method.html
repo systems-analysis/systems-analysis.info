@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Metodologia Czerniaka</title>
+<meta name="description" content="Metoda analizy systemowej J.I. Czerniaka obejmuje 12 kolejnych etapów — od analizy problemu i definicji systemu do budowy kompleksowego programu rozwoju. Każdy etap jest szczegółowo opisany.">
+<meta name="keywords" content="analiza systemowa,metoda Czerniaka,cel,system,problem,zarządzanie,decyzja">
+<link rel="canonical" href="https://systems-analysis.info/pl/chernyak_method.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/chernyak_method.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/chernyak_method.html">
+<link rel="alternate" hreflang="pl" href="https://systems-analysis.info/pl/chernyak_method.html">
+<meta property="og:title" content="Metodologia Czerniaka">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/pl/chernyak_method.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Metoda analizy systemowej J.I. Czerniaka obejmuje 12 kolejnych etapów — od analizy problemu i definicji systemu do budowy kompleksowego programu rozwoju. Każdy etap jest szczegółowo opisany.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="pl_PL">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/pl/chernyak_method.html#article",
+    "headline": "Metodologia Czerniaka",
+    "description": "Metoda analizy systemowej J.I. Czerniaka obejmuje 12 kolejnych etapów — od analizy problemu i definicji systemu do budowy kompleksowego programu rozwoju. Każdy etap jest szczegółowo opisany.",
+    "url": "https://systems-analysis.info/pl/chernyak_method.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "pl",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/pl/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/pl/chernyak_method.html"
+    },
+    "keywords": [
+        "analiza systemowa",
+        "metoda Czerniaka",
+        "cel",
+        "system",
+        "problem",
+        "zarządzanie",
+        "decyzja"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Systems Analysis in Economic Management",
+        "author": {
+            "@type": "Person",
+            "name": "Chernyak Yu.I."
+        },
+        "datePublished": "1975",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Ekonomika"
+        },
+        "inLanguage": "pl"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Systems Analysis in Economic Management",
+        "author": {
+            "@type": "Person",
+            "name": "Chernyak Yu.I."
+        },
+        "datePublished": "1975",
+        "inLanguage": "pl"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Strona główna",
+            "item": "https://systems-analysis.info/pl/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Analiza systemowa",
+            "item": "https://systems-analysis.info/pl/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Metodologia Czerniaka"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Nawigacja główna">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/pl/">Strona główna</a>
+        <span aria-hidden="true">·</span>
+        <a href="/pl/sections.html">Działy</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/pl/books.html">Książki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/pl/catalog.html">Katalog</a>
+        <span aria-hidden="true">·</span>
+        <a href="/chernyak_method.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Zmień motyw"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Zmień krój pisma"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Metodologia Czerniaka</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Zważywszy na ogromną i zasadniczo nieograniczoną różnorodność problemów rozwiązywanych metodami analizy systemowej, trudno oczekiwać opracowania jednolitego zestawu narzędzi odpowiedniego do wszystkich przypadków. Na różnych etapach badania — które przebiega od intuicyjnego i dość swobodnie sformułowanego stwierdzenia problemu do wyboru rozwiązań optymalnych za pomocą rygorystycznych metod matematycznych — naturalnie wykorzystuje się bardzo zróżnicowany aparat naukowy. Wydaje się więc celowe najpierw ustalić podstawową sekwencję etapów analizy systemowej.</p>
+<p>Analiza metod proponowanych przez różnych autorów prowadzi do wniosku, że istnieje podstawowa jedność w sekwencji przeprowadzania analizy systemowej, niezależnie od <a href="/pl/goal.html" class="text-link">celu</a> czy badanego obiektu. Niemniej jednak nie uważamy podejścia eklektycznego za wystarczająco akceptowalne w tym przypadku i proponujemy nową klasyfikację etapów analizy systemowej. Uwzględnia ona wszystkie główne etapy różnych klasyfikacji, zgodnie z zasadą logicznej sekwencji i powiązaniem z podstawowymi twierdzeniami teorii systemów, na których opiera się analiza systemowa. Przydatność i wygoda proponowanej klasyfikacji zostały zweryfikowane w serii badań systemowych na wszystkich głównych poziomach zarządzania.</p>
+<p>Podstawowa sekwencja etapów i zadań analizy systemowej</p>
+<ol>
+  <li>Analiza problemu.</li>
+  <li>Definicja systemu.</li>
+  <li>Analiza struktury systemu.</li>
+  <li>Formułowanie celu ogólnego i kryterium systemu.</li>
+  <li>Dekompozycja celów, identyfikacja wymagań dotyczących zasobów i procesów.</li>
+  <li>Identyfikacja zasobów i procesów; synteza celów w kierunku wstępującym.</li>
+  <li>Prognozowanie i analiza przyszłych warunków.</li>
+  <li>Ocena celów i środków.</li>
+  <li>Wybór alternatyw.</li>
+  <li>Diagnoza istniejącego systemu.</li>
+  <li>Budowa kompleksowego programu rozwoju.</li>
+  <li>Projektowanie organizacji dla realizacji celu.</li>
+</ol>
+<p>Opis etapów</p>
+<p>Etap 1. <strong>Analiza problemu</strong></p>
+<ul>
+  <li>Czy problem istnieje?</li>
+  <li>Precyzyjne sformułowanie problemu.</li>
+  <li>Analiza struktury logicznej problemu.</li>
+  <li>Rozwój problemu w przeszłości i przyszłości.</li>
+  <li>Zewnętrzne powiązania problemu z innymi problemami.</li>
+  <li>Podstawowa rozwiązywalność problemu.</li>
+</ul>
+<p>Kwestia, czy <a href="/pl/problem.html" class="text-link">problem</a> faktycznie istnieje, ma pierwszorzędne znaczenie, ponieważ poświęcanie ogromnego wysiłku rozwiązywaniu nieistniejących problemów nie jest wyjątkiem, lecz raczej dość typowym przypadkiem. Poprawne i precyzyjne sformułowanie problemu jest pierwszym i niezbędnym etapem każdego badania systemowego. Jak dobrze wiadomo, udane sformułowanie problemu może być równoważne połowie jego rozwiązania.</p>
+<p>Etap 2. <strong>Definicja systemu</strong></p>
+<ul>
+  <li>Uszczegółowienie zadania.</li>
+  <li>Określenie pozycji obserwatora.</li>
+  <li>Definicja obiektu.</li>
+  <li>Identyfikacja elementów (określenie granic dekompozycji systemu).</li>
+  <li>Identyfikacja podsystemów.</li>
+  <li>Definicja otoczenia.</li>
+</ul>
+<p>Aby zbudować <a href="/pl/system.html" class="text-link">system</a>, problem musi zostać rozłożony na zbiór jasno sformułowanych zadań. W przypadku systemu wielkiego zadania te tworzą hierarchię; w systemie złożonym tworzą spektrum — co oznacza, że w odniesieniu do jednego obiektu będą rozwiązywane zupełnie różne zadania w różnych językach. Pozycja obserwatora zasadniczo determinuje kryterium rozwiązania problemu. Definicja obiektu jest zadaniem łatwym tylko na pierwszy wzrok; w niektórych przypadkach stanowi największą trudność badania.</p>
+<p>Etap 3. <strong>Analiza struktury systemu</strong></p>
+<ul>
+  <li>Określenie poziomów hierarchii (w systemach wielkich).</li>
+  <li>Określenie aspektów i języków (w systemach złożonych).</li>
+  <li>Określenie procesów i funkcji (w systemach dynamicznych).</li>
+  <li>Identyfikacja i uszczegółowienie procesów zarządzania i kanałów informacyjnych.</li>
+  <li>Uszczegółowienie podsystemów.</li>
+  <li>Uszczegółowienie procesów rutynowych (operacji bieżących) i procesów rozwojowych (ukierunkowanych na cel).</li>
+</ul>
+<p>Arbitralne wyodrębnienie podsystemów i związanych z nimi procesów nieuchronnie skazuje badanie systemowe na niepowodzenie. O ile w systemach technicznych — przynajmniej w ich części materialnej — struktura podsystemów jest wyraźnie rozpoznawalna, w systemach zarządzania gospodarczego wszystkie relacje strukturalne są nie tylko nieoczywiste, ale też silnie zamaskowane przez relacje podległości administracyjnej. Przy rozwiązywaniu bieżących problemów zarządzania gospodarczego, zarówno obiektywnie — w sensie kwantytatywnego rozłożenia wysiłku — jak i subiektywnie — w umysłach pracowników organizacji — procedury rutynowe zasłaniają cele i procesy rozwojowe. Identyfikacja i odróżnienie tych celów i procesów od operacji rutynowych wymaga nie tylko rygorystycznej analizy logicznej, ale też efektywnej komunikacji z personelem zarządzającym.</p>
+<p>Etap 4. <strong>Formułowanie celu ogólnego i kryterium systemu</strong></p>
+<ul>
+  <li>Identyfikacja celów narzuconych przez nadsystem.</li>
+  <li>Identyfikacja celów i ograniczeń wynikających z otoczenia.</li>
+  <li>Formułowanie celu ogólnego.</li>
+  <li>Określenie kryterium.</li>
+  <li>Dekompozycja celów i kryteriów między podsystemy.</li>
+  <li>Synteza kryterium ogólnego z kryteriów podsystemów.</li>
+</ul>
+<p>Formułowanie celu ogólnego organizacji, a zwłaszcza budowa kryterium skuteczności systemu, nie jest w żaden sposób możliwe poprzez badanie opinii publicznej; stanowi to złożoną procedurę logiczną w ramach koncepcji teorii systemów, wymagającą jednak subtelnej wiedzy o specyficznej ekonomii i technologii badanego obiektu.</p>
+<p>Etap 5. <strong>Dekompozycja celów, identyfikacja wymagań dotyczących zasobów i procesów</strong></p>
+<ul>
+  <li>Formułowanie celów najwyższego rzędu.</li>
+  <li>Formułowanie celów dla procesów bieżących.</li>
+  <li>Formułowanie celów efektywnościowych.</li>
+  <li>Formułowanie celów rozwojowych.</li>
+  <li>Formułowanie celów i ograniczeń zewnętrznych.</li>
+  <li>Identyfikacja wymagań dotyczących zasobów i procesów.</li>
+</ul>
+<p>W dużych i złożonych podmiotach gospodarczych (a to właśnie z takimi podmiotami zajmuje się analiza systemowa) cel ogólny systemu jest tak odległy od konkretnych środków jego realizacji, że wybór rozwiązania wymaga rozległej, pracochłonnej pracy nad połączeniem celu ze środkami jego realizacji poprzez dekompozycję celów. Ta ważna i pracochłonna praca jest, co do zasady, centralnym elementem analizy systemowej. Zrodziła ona metodę drzewa celów, która jest głównym — jeśli nie jedynym — instrumentalnym osiągnięciem analizy systemowej.</p>
+<p>Etap 6. <strong>Identyfikacja zasobów i procesów; synteza celów w kierunku wstępującym</strong></p>
+<ul>
+  <li>Ocena istniejącej technologii i mocy produkcyjnych.</li>
+  <li>Ocena aktualnego stanu zasobów.</li>
+  <li>Ocena projektów realizowanych i planowanych.</li>
+  <li>Ocena możliwości interakcji z innymi systemami.</li>
+  <li>Ocena czynników społecznych.</li>
+  <li>Synteza celów w kierunku wstępującym.</li>
+</ul>
+<p>W wielu przypadkach, zwłaszcza gdy mamy do czynienia z systemami nieprodukcyjnymi, a szczególnie nieekonomicznymi (ochrona zdrowia, edukacja i cały szereg innych), nie jest możliwe wyrażenie celu i kryterium skuteczności rozwoju w sposób jednoznaczny poprzez rozumowanie logiczne. Droga analizy wychodząca od „naturalnych potrzeb ludzkich” jest niedopuszczalna dla badacza z powodu ich nieustannego rozwoju i zmiany. W takich przypadkach należy w pewnej mierze postępować drogą tradycyjną: od analizy aktualnej sytuacji i osiągniętego poziomu, poprzez sekwencyjne prognozowanie.</p>
+<p>Etap 7. <strong>Prognozowanie i analiza przyszłych warunków</strong></p>
+<ul>
+  <li>Analiza stabilnych tendencji rozwoju systemu.</li>
+  <li>Prognozowanie rozwoju i zmian otoczenia.</li>
+  <li>Przewidywanie pojawienia się nowych czynników silnie wpływających na rozwój systemu.</li>
+  <li>Analiza przyszłych zasobów.</li>
+  <li>Kompleksowa analiza interakcji przyszłych czynników rozwojowych.</li>
+  <li>Analiza możliwych przesunięć celów i kryteriów.</li>
+</ul>
+<p>Analiza systemowa zajmuje się, co do zasady, perspektywami rozwoju, niekiedy dość odległymi. Dlatego największe zainteresowanie budzi wszelka informacja o przyszłości — o przyszłych sytuacjach, zasobach, odkryciach i wynalazkach naukowo-technicznych, które zasadniczo przekształcą systemy gospodarcze i zachodzące w nich procesy, a także przyszłe systemy wartości społecznych, które istotnie wpłyną na zmiany równowagi, a w wielu przypadkach na przekształcenie celów i kryteriów. Z tego powodu prognozowanie — uzyskiwanie informacji o przyszłości za pomocą metod naukowych — jest najważniejszą i niewątpliwie najbardziej złożoną częścią analizy systemowej.</p>
+<p>Etap 8. <strong>Ocena celów i środków</strong></p>
+<ul>
+  <li>Obliczanie ocen opartych na kryteriach.</li>
+  <li>Ocena wzajemnych zależności celów.</li>
+  <li>Ocena względnej ważności celów.</li>
+  <li>Ocena rzadkości i kosztu zasobów.</li>
+  <li>Ocena wpływu czynników zewnętrznych.</li>
+  <li>Obliczanie kompleksowych ocen kalkulacyjnych.</li>
+</ul>
+<p>Cały szereg czynników społecznych, politycznych, moralnych, etycznych i innych, których nie można pominąć w analizie systemowej — ponieważ czasami wywierają decydujący wpływ na formułowanie celów i wybór środków ich realizacji, a także na ocenę zasobów — nie może być w zasadzie zmierzony kwantytatywnie. Jedynym sposobem ich uwzględnienia jest uzyskanie subiektywnych ocen ekspertów i specjalistów, dotyczących zarówno danego problemu, jak i szerokiego zakresu wzajemnie powiązanych problemów. Ponieważ analiza systemowa zajmuje się, co do zasady, problemami nieustrukturyzowanymi lub słabo ustrukturyzowanymi — czyli problemami niemającymi ocen kwantytatywnych — uzyskiwanie ocen eksperckich i ich przetwarzanie wydaje się niezbędnym etapem analizy systemowej w większości problemów.</p>
+<p>Etap 9. <strong>Wybór alternatyw</strong></p>
+<ul>
+  <li>Analiza celów pod względem zgodności.</li>
+  <li>Weryfikacja celów pod względem kompletności.</li>
+  <li>Eliminacja celów zbędnych.</li>
+  <li>Planowanie alternatyw dla realizacji poszczególnych celów.</li>
+  <li>Ocena i porównanie alternatyw.</li>
+  <li>Łączenie zbioru wzajemnie powiązanych alternatyw.</li>
+</ul>
+<p>Rozbieżność między potrzebami a środkami ich zaspokojenia stanowi prawo i najważniejszy stymulator rozwoju gospodarczego. Ponieważ pojęcie celu jest nierozłączne z pojęciem środków jego realizacji, centralnym punktem podejmowania decyzji w analizie systemowej jest przycinanie drzewa celów — eliminacja celów uznanych za nieistotne lub takich, dla których nie ma środków realizacji — oraz wybór konkretnych alternatyw dla realizacji wzajemnie powiązanego zbioru najważniejszych celów.</p>
+<p>W badaniach systemowych typu „inżynierskiego” i o względnie małej skali, „wybór alternatyw” jest uważany za najważniejsze, jeśli nie jedyne, zadanie analizy systemowej. W problemach zarządzania gospodarczego przycinanie drzewa celów i wybór wzajemnie powiązanego zbioru alternatyw stanowi ważne zadanie, tym bardziej że postęp naukowo-techniczny wraz ze zmieniającymi się warunkami otoczenia generuje ogromną liczbę alternatywnych działań dla realizacji zbioru celów gospodarczych. Działania te muszą wpisywać się w ograniczenia zasobowe, ponieważ prawo planowanego rozwoju gospodarki narodowej dyktuje ścisłe limity rozdziału zasobów na wsparcie poszczególnych podsystemów gospodarki narodowej.</p>
+<p>Etap 10. <strong>Diagnoza istniejącego systemu</strong></p>
+<ul>
+  <li>Modelowanie procesu technologicznego i ekonomicznego.</li>
+  <li>Obliczenie mocy potencjalnej i rzeczywistej.</li>
+  <li>Analiza strat mocy.</li>
+  <li>Identyfikacja niedociągnięć w organizacji produkcji i zarządzania.</li>
+  <li>Identyfikacja i analiza działań usprawniających organizację.</li>
+</ul>
+<p>Problemy zarządzania gospodarką narodową, rozwiązywane metodami analizy systemowej, nie powstają w próżni, lecz w ramach faktycznie istniejących organów zarządzania, zazwyczaj w ich wzajemnie powiązanych kompleksach. Zadaniem analizy systemowej jest w większości przypadków nie stworzenie nowego organu zarządzania, lecz usprawnienie istniejących, ukierunkowanie ich na rozwiązanie problemu. W takich przypadkach potrzebna jest diagnostyczna analiza organów zarządzania w celu identyfikacji ich możliwości, niedociągnięć i newralgicznych punktów w zbieraniu i przetwarzaniu informacji oraz w podejmowaniu decyzji, mająca na celu eliminację tych niedociągnięć i lepsze ukierunkowanie systemu.</p>
+<p>Nowy system zostanie skutecznie wdrożony, jeśli ułatwi pracę organu zarządzania, pomoże rozwiązać pilne problemy i przyczyni się do osiągnięcia bezpośrednich celów. Dlatego identyfikacja aktualnych problemów zarządzania i bezpośrednich celów jest również przedmiotem diagnostycznego badania i analizy organów zarządzania. Badanie to obejmuje masowe ankietowanie personelu danego organu zarządzania, jego partnerów, organizacji nadrzędnych i podległych, dzięki czemu identyfikowana jest potrzebna informacja, która następnie jest analizowana. Stanowi to podstawę do budowy dobrze umotywowanego planu organizacyjnego wdrożenia nowo zaprojektowanego systemu.</p>
+<p>Etap 11. <strong>Budowa kompleksowego programu rozwoju</strong></p>
+<ul>
+  <li>Formułowanie działań, projektów i programów.</li>
+  <li>Określenie priorytetu celów i działań dla ich realizacji.</li>
+  <li>Rozdział obszarów działalności.</li>
+  <li>Rozdział obszarów kompetencji.</li>
+  <li>Opracowanie kompleksowego planu działań w ramach ograniczeń zasobowych i czasowych.</li>
+  <li>Przypisanie odpowiedzialnym organizacjom, kierownikom i realizatorom.</li>
+</ul>
+<p>Jak wspomniano wcześniej, wyniki analizy systemowej uzyskiwane są w ramach koncepcji systemowych i, aby przejść do praktycznego planowania działań, muszą zostać przetłumaczone na język kategorii ekonomicznych. W wyniku rozwiązywania problemów analizy systemowej dla głównych zagadnień gospodarki narodowej — w tym planów badań naukowych, rozwoju, inwestycji kapitałowych i budowy oraz rozwoju branż i terytoriów — tworzone są kompleksowe programy rozwoju. Programy te są rozłożone w czasie, przypisane różnym realizatorom; ustanawiana jest struktura zarządzania i koordynacji oraz tworzony jest system rozliczalności.</p>
+<p>Etap 12. <strong>Projektowanie organizacji dla realizacji celu</strong></p>
+<ul>
+  <li>Określenie celów organizacyjnych.</li>
+  <li>Formułowanie funkcji organizacyjnych.</li>
+  <li>Projektowanie struktury organizacyjnej.</li>
+  <li>Projektowanie mechanizmów informacyjnych.</li>
+  <li>Projektowanie sposobów działania.</li>
+  <li>Projektowanie mechanizmów zachęt materialnych i moralnych.</li>
+</ul>
+<p>W niektórych przypadkach wdrożenie takich kompleksowych programów wymaga stworzenia stałego lub tymczasowego organu zarządzania; w innych celem analizy systemowej jest przeprojektowanie danego organu zarządzania. Analiza systemowa posiada szereg specyficznych metod i technik projektowania efektywnych organów zarządzania, które są ukierunkowane na cel — czyli skoncentrowane na tworzeniu i wykorzystaniu konkretnego systemu w ramach gospodarki narodowej.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Metodologie analizy systemowej</h2>
+    <ul>
+      <li><a href="/pl/methodology_sa.html">Metodologia analizy systemowej</a></li>
+      <li><a href="/pl/quade_method.html">Metodologia analizy systemowej Quade’a</a></li>
+      <li><a href="/pl/optner_method.html">Metodologia analizy systemowej Optnera</a></li>
+      <li><a href="/pl/young_method.html">Metodologia analizy systemowej Younga</a></li>
+      <li><a href="/pl/golubkov_method.html">Metodologia analizy systemowej Gołubkowa</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Literatura</h2>
+    <ul>
+      <li><a href="/assets/systems_analysis_chernyak.pdf">Pobierz książkę: Analiza systemowa w zarządzaniu gospodarczym. Czerniak</a></li>
+      <li><a href="/pl/systems_analysis_book.html">Pobierz literaturę o analizie systemowej</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Powiązane artykuły</h2>
+    <ul>
+      <li><a href="/pl/systems_analysis.html">Analiza systemowa</a></li>
+      <li><a href="/pl/decision_theory.html">Teoria decyzji</a></li>
+      <li><a href="/pl/decision_making.html">Podejmowanie decyzji</a></li>
+      <li><a href="/pl/choice.html">Decyzja i wybór</a></li>
+      <li><a href="/pl/management.html">Zarządzanie</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Ścieżka nawigacji">
+    <a href="/pl/">Strona główna</a> <span aria-hidden="true">/</span>
+    <a href="/pl/systems_analysis.html">Analiza systemowa</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Metodologia Czerniaka</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Zmień motyw"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/chernyak_method.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/pl/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Zmień motyw"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710b548b77a5ce',t:'MTc4ODczNTE0OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

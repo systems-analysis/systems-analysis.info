@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Phân tích hệ thống: Golubkov</title>
+<meta name="description" content="Các phương pháp phân tích hệ thống theo E.P. Golubkov: các phương pháp toán học, các phương pháp biểu diễn hệ thống hình thức hóa và phạm vi ứng dụng của chúng trong các bài toán quản lý và thiết kế tổ chức.">
+<meta name="keywords" content="phân tích hệ thống,lập kế hoạch dài hạn,Golubkov,hệ thống,phương pháp giải,vấn đề,tiêu chí,nghiên cứu">
+<link rel="canonical" href="https://systems-analysis.info/vi/systems_analysis_golubkov.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/systems_analysis_golubkov.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/systems_analysis_golubkov.html">
+<link rel="alternate" hreflang="vi" href="https://systems-analysis.info/vi/systems_analysis_golubkov.html">
+<meta property="og:title" content="Phân tích hệ thống: Golubkov">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/vi/systems_analysis_golubkov.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Các phương pháp phân tích hệ thống theo E.P. Golubkov: các phương pháp toán học, các phương pháp biểu diễn hệ thống hình thức hóa và phạm vi ứng dụng của chúng trong các bài toán quản lý và thiết kế tổ chức.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="vi_VN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/vi/systems_analysis_golubkov.html#article",
+    "headline": "Phân tích hệ thống: Golubkov",
+    "description": "Các phương pháp phân tích hệ thống theo E.P. Golubkov: các phương pháp toán học, các phương pháp biểu diễn hệ thống hình thức hóa và phạm vi ứng dụng của chúng trong các bài toán quản lý và thiết kế tổ chức.",
+    "url": "https://systems-analysis.info/vi/systems_analysis_golubkov.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "vi",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/vi/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/vi/systems_analysis_golubkov.html"
+    },
+    "keywords": [
+        "phân tích hệ thống",
+        "lập kế hoạch dài hạn",
+        "Golubkov",
+        "hệ thống",
+        "phương pháp giải",
+        "vấn đề",
+        "tiêu chí",
+        "nghiên cứu"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "The Use of Systems Analysis in Sectoral Planning",
+        "author": {
+            "@type": "Person",
+            "name": "Golubkov E.P."
+        },
+        "datePublished": "1977",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Ekonomika"
+        },
+        "inLanguage": "vi"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "The Systems Approach in Long-Range Planning",
+        "author": [
+            {
+                "@type": "Person",
+                "name": "Golubkov E.P."
+            },
+            {
+                "@type": "Person",
+                "name": "Raizenberg B.A."
+            },
+            {
+                "@type": "Person",
+                "name": "Pekarsky L.S."
+            }
+        ],
+        "datePublished": "1975",
+        "inLanguage": "vi"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Trang chủ",
+            "item": "https://systems-analysis.info/vi/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Phân tích hệ thống",
+            "item": "https://systems-analysis.info/vi/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Phân tích hệ thống: Golubkov"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Điều hướng chính">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/vi/">Trang chủ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/sections.html">Chuyên mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/books.html">Sách</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/catalog.html">Danh mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/systems_analysis_golubkov.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Đổi giao diện"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Đổi phông chữ"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Phân tích hệ thống: Golubkov</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>“Tiếp cận hệ thống trong lập kế hoạch dài hạn” của Golubkov, Raizenberg và Pekarsky, 1975 (bằng tiếng Nga).</p>
+<p>Phân tích hệ thống bao gồm một tập hợp các phương pháp khoa học và kỹ thuật thực tiễn để giải quyết các <a href="/vi/problem.html" class="text-link">vấn đề</a> phức tạp (kỹ thuật, khoa học tự nhiên, kinh tế, chính trị – xã hội và các lĩnh vực khác).</p>
+<p>Trước hết, nó sử dụng khái niệm <a href="/vi/system.html" class="text-link">hệ thống</a> như một thể thống nhất của các phần tử có liên hệ với nhau, cùng hành động để đạt được một <a href="/vi/goal.html" class="text-link">mục tiêu</a> chung. Các thuộc tính mà hệ thống có được với tư cách một chỉnh thể khác với các thuộc tính của từng phần tử cấu thành nó. Bất kỳ hệ thống nào cũng được đặc trưng bởi các quy luật riêng đặc thù, không thể suy ra trực tiếp từ cách thức hoạt động của các phần tử của nó.</p>
+<p>Các bộ phận chính của một hệ thống là đầu vào, quá trình (cấu trúc) và đầu ra. Đầu vào của một hệ thống là một khái niệm phức tạp. Một mặt, đó là chất liệu đi vào hệ thống và chịu những biến đổi nhất định bên trong hệ thống. Mặt khác, đó là môi trường bên ngoài (môi trường xung quanh), tức là tổng thể các nhân tố và hiện tượng tác động đến hệ thống (điều kiện tự nhiên, tình hình chính sách đối ngoại, điều kiện thị trường). Đầu vào cũng bao hàm các phương thức vận hành đã được thiết lập cho các phần tử của hệ thống, chẳng hạn như các chỉ thị, quy định và mệnh lệnh xác định trình tự, quy tắc, ràng buộc và mục tiêu vận hành của hệ thống.</p>
+<p>Bộ phận thứ hai của một hệ thống là cấu trúc bên trong của nó, tức là các kênh mà qua đó vật chất, năng lượng và thông tin đi vào hệ thống qua các đầu vào của nó, cùng các quá trình hoặc tác nghiệp biến đổi chúng (đối với các hệ thống kinh tế, đó là các quá trình tái sản xuất các nguồn lực vật chất, lao động và tài chính).</p>
+<p>Bộ phận thứ ba của một hệ thống là đầu ra của nó, sản phẩm hoặc kết quả của hoạt động của hệ thống.</p>
+<p>Theo mức độ tương tác với môi trường bên ngoài, các hệ thống được chia thành hệ thống mở và hệ thống đóng. Các hệ thống mở trao đổi mạnh mẽ vật chất, năng lượng hoặc thông tin với môi trường xung quanh, trong khi các hệ thống đóng, biệt lập hoạt động với sự trao đổi tương đối ít (ví dụ, một chu trình khép kín xử lý thông tin kế hoạch và kinh tế, hoặc một chu trình công nghệ khép kín). Cần lưu ý rằng một hệ thống có thể là đóng hoặc mở đối với vật chất, năng lượng hoặc thông tin một cách riêng biệt. Một hệ thống có ranh giới tự nhiên hoặc ranh giới được thiết lập dựa trên mục tiêu nghiên cứu; trong trường hợp sau, ranh giới hệ thống được xác định bởi người nghiên cứu.</p>
+<p>Cùng một đối tượng có thể được biểu diễn dưới dạng nhiều hệ thống khác nhau. Nếu một doanh nghiệp sản xuất được xem như một tập hợp các máy móc, quy trình công nghệ, nguyên vật liệu và sản phẩm được gia công trên các máy đó, thì doanh nghiệp xuất hiện dưới dạng một hệ thống công nghệ. Doanh nghiệp cũng có thể được xem xét từ một góc độ khác: xem xét mối quan hệ của người lao động đối với tư liệu sản xuất, sự tham gia của họ vào quá trình lao động và phân phối kết quả của quá trình đó, vị trí của doanh nghiệp trong hệ thống kinh tế rộng lớn hơn, v.v. Trong trường hợp này, doanh nghiệp là một hệ thống kinh tế.</p>
+<p>Trong quá trình phát triển xã hội và cuộc cách mạng khoa học – kỹ thuật, một đối tượng nghiên cứu mới trong lĩnh vực quản lý đã xuất hiện, được gọi là hệ thống quy mô lớn. Khái quát hóa quan điểm của nhiều tác giả khác nhau, có thể xác định các đặc trưng quan trọng nhất sau đây của các hệ thống quy mô lớn:</p>
+<ul>
+  <li>sự hiện diện của các hệ thống con có các thuộc tính cục bộ thể hiện rõ ràng, cùng nhau tạo thành hệ thống quy mô lớn;</li>
+  <li>tính hướng đích và khả năng điều khiển của hệ thống, tức là sự tồn tại của một mục tiêu chung và mục đích chung, được đặt ra và điều chỉnh trong các hệ thống cấp cao hơn;</li>
+  <li>cấu trúc tổ chức phân cấp (nhiều tầng) phức tạp của hệ thống, cho phép kết hợp giữa điều khiển tập trung với tính tự chủ của các bộ phận (hệ thống con), sự hiện diện của các liên hệ theo chiều dọc giữa các phần tử ở các cấp khác nhau và các liên hệ theo chiều ngang giữa các phần tử cùng cấp;</li>
+  <li>quy mô lớn của hệ thống, tức là số lượng lớn các phần tử, đầu vào và đầu ra, và sự đa dạng của các chức năng;</li>
+  <li>tính toàn vẹn và sự phức tạp của hành vi, sự đan xen phức tạp giữa các biến số, và các vòng phản hồi khiến sự thay đổi của một biến số kéo theo sự thay đổi của nhiều biến số khác.</li>
+</ul>
+<p>Phân tích hệ thống cung cấp các kỹ thuật đặc biệt, nhờ đó một hệ thống quy mô lớn, vốn khó xem xét như một chỉnh thể, có thể được chia thành một số hệ thống nhỏ hơn tương tác với nhau, hay các hệ thống con.</p>
+<p>Trong số các khái niệm quan trọng của phân tích hệ thống có khái niệm cơ bản của điều khiển học về phản hồi. Chính khái niệm này đã giúp thiết lập sự tương đồng giữa cách tổ chức điều khiển trong các hệ thống có bản chất khác nhau về chất. Phản hồi nghĩa là sự tồn tại của một kênh liên lạc giữa đầu ra và đầu vào của một hệ thống, hoặc trực tiếp hoặc thông qua các phần tử khác của hệ thống (ví dụ, thông qua một khối điều khiển). Nhờ phản hồi, các dữ liệu về sự vận hành của hệ thống được điều khiển sẽ được truyền từ đầu ra của nó đến hệ thống điều khiển. Tại đó, các dữ liệu này được so sánh với các dữ liệu quy định nội dung và phạm vi công việc (ví dụ, với kế hoạch). Trong trường hợp có sự sai lệch giữa trạng thái thực tế và trạng thái quy định của hệ thống, các biện pháp được xây dựng để loại bỏ sự sai lệch này.</p>
+<p>Một khái niệm quan trọng được sử dụng trong phân tích hệ thống là khái niệm tính bất định. Nhân tố bất định hiện diện trong việc giải quyết nhiều bài toán phức tạp trong lĩnh vực lập kế hoạch và quản lý kinh tế quốc dân.</p>
+<p>Tính bất định gặp phải trong quá trình phân tích hệ thống có thể là kết quả của sự hiểu biết chưa đầy đủ về hiện tượng được nghiên cứu, hoặc có thể do hậu quả của các quyết định được đưa ra chỉ bộc lộ sau một khoảng thời gian đủ dài và không thể dự đoán được với độ chính xác đủ tin cậy.</p>
+<p>Các nguyên nhân khác của tính bất định bao gồm việc không thể đánh giá định lượng nhiều hiện tượng, đặc biệt là khó khăn trong việc diễn giải định lượng các khái niệm “tốt hơn – kém hơn”, “nhiều hơn – ít hơn” trong ra quyết định, việc phát biểu vấn đề không chính xác, và các đặc điểm cá nhân của người ra quyết định.</p>
+<p>Phân tích hệ thống được đặc trưng chủ yếu không phải bởi một hình thức luận khoa học cụ thể, mà bởi một cách tiếp cận có trật tự, có cơ sở logic đối với việc nghiên cứu các vấn đề. Với sự trợ giúp của các phương pháp phân tích hệ thống, các hệ thống và tình huống phức tạp được nghiên cứu, chủ yếu là những vấn đề liên quan đến nhu cầu xác định mục tiêu, nhiệm vụ và hướng hành động.</p>
+<p>Phân tích hệ thống đại diện cho một tập hợp các phương pháp được áp dụng trong việc nghiên cứu các cách tiếp cận khả dĩ để giải quyết các vấn đề phức tạp, đồng thời phục vụ như một phương tiện để sắp xếp trật tự và sử dụng hiệu quả hơn kiến thức, phán đoán và trực giác của các chuyên gia trong quá trình ra quyết định về các vấn đề này. Nói cách khác, phân tích hệ thống là một công cụ khoa học dành cho các nhà nghiên cứu và người ra quyết định.</p>
+<p>Nhiệm vụ của phân tích hệ thống là làm rõ các vấn đề mà người ra quyết định phải đối mặt, sao cho người thực thi nhận thức được tất cả các hậu quả chính của các quyết định và có thể tính đến chúng trong hành động của mình. Phân tích định lượng giúp người chịu trách nhiệm về quyết định tiếp cận việc đánh giá các hướng hành động khả dĩ một cách chặt chẽ hơn và lựa chọn phương án tốt nhất, có tính đến các nhân tố và cân nhắc bổ sung, không thể hình thức hóa được, mà có thể không được các chuyên gia soạn thảo quyết định (các nhà phân tích hệ thống) biết đến. Phân tích hệ thống phục vụ việc xác định những cách thức thực tế nhất để giải quyết các vấn đề đã nảy sinh, bảo đảm sự thỏa mãn tối đa các yêu cầu đặt ra.</p>
+<p>Kinh nghiệm áp dụng phân tích hệ thống trong lĩnh vực quân sự đã có ảnh hưởng lớn đến sự phát triển của nó với tư cách một phương pháp luận, để lại một dấu ấn nhất định trong thuật ngữ của bộ môn này và các bộ môn khoa học có liên quan chặt chẽ (vận trù học, kỹ thuật hệ thống).</p>
+<p>Giữa các hướng riêng lẻ của phân tích hệ thống mang những tên gọi khác nhau, thường không có sự khác biệt căn bản hay ranh giới phân định rõ ràng; đồng thời, mỗi hướng trong số đó lại được đặc trưng bởi những nét đặc thù và sắc thái riêng. Như vậy, vận trù học thường được hiểu là khoa học liên quan đến việc xây dựng các khuyến nghị định lượng cần thiết cho việc lập kế hoạch và tổ chức các tác nghiệp. Ở đây, một tác nghiệp được hiểu là bất kỳ hành động hướng đích nào của một người, một nhóm người, hoặc một hệ thống người – máy. Kỹ thuật hệ thống tạo ra các phương pháp tổng hợp các hệ thống quy mô lớn dựa trên việc nghiên cứu sự vận hành của từng phần tử riêng lẻ của chúng. Mặc dù nhiều phương pháp và kết quả của kỹ thuật hệ thống đã đạt được khi áp dụng cho các hệ thống kỹ thuật, chúng vẫn có thể, ở mức độ đáng kể, được chuyển giao sang các đối tượng có bản chất khác, kể cả các đối tượng kinh tế.</p>
+<p>Sự xuất hiện của phân tích hệ thống trong phương pháp luận luận chứng các quyết định quản lý đánh dấu sự chuyển đổi từ việc giải quyết các bài toán có cấu trúc tốt, có thể hình thức hóa (nơi các mục tiêu, con đường và tiêu chí được xác định rõ ràng, có thể đạt được thông qua các phương pháp vận trù học) sang việc giải quyết các bài toán có cấu trúc kém phát sinh trong điều kiện bất định và chứa các yếu tố không thể hình thức hóa, không thể chuyển dịch sang ngôn ngữ toán học.</p>
+<p>Chuyên gia vận trù học sử dụng các phương pháp phân tích toán học hoặc logic trong điều kiện đã có sự hiểu biết rõ ràng về việc thế nào là hoạt động “hiệu quả hơn”. Người này hiếm khi đi sâu vào việc xác định mục tiêu của công việc hay các phương pháp đánh giá thành công của nó; đây là một trong những nhiệm vụ chính của nhà phân tích hệ thống.</p>
+<p>Một chuyên gia lập kế hoạch hầu như luôn hành động với tư cách một nhà phân tích hệ thống, bởi vì người này nhìn nhận vấn đề đang được giải quyết như một chỉnh thể. Kết quả của phân tích hệ thống phụ thuộc vào hệ thống tiêu chí được lựa chọn. Việc lựa chọn tiêu chí là một bộ phận không thể tách rời của phân tích. Vai trò của phân tích là xác lập xem những tiêu chí nào nên được sử dụng để đưa ra những quyết định nhất định trong lĩnh vực quản lý.</p>
+<p>Một dạng phân tích tác nghiệp, được gọi là phân tích chi phí – hiệu quả, bao gồm việc so sánh toàn diện hiệu quả của việc thực hiện một hướng hành động này hay khác với các nguồn lực cần thiết cho việc thực hiện nó.</p>
+<p>Sự khác biệt giữa phân tích hệ thống và phân tích chi phí – hiệu quả nằm ở chỗ trong trường hợp sau, phân tích hướng đến việc tìm kiếm những cách sử dụng nguồn lực hợp lý trong điều kiện một mục tiêu đã được xác định, thường là đã cho trước. Phân tích hệ thống đặt vấn đề rộng hơn, coi bản thân mục tiêu là một đối tượng của sự lựa chọn được thực hiện theo những nguyên tắc nhất định.</p>
+<p>Phương pháp luận của phân tích hệ thống có thể được định nghĩa là một tập hợp các nguyên tắc của nó, tức là các quy luật tổng quát nhất, cơ bản nhất chi phối việc tiến hành các phân tích cụ thể đối với các hệ thống khác nhau và các quá trình diễn ra bên trong chúng.</p>
+<p>Nguyên tắc xác định của phân tích hệ thống là tính hướng đích. Mọi hệ thống tồn tại và phát triển theo các mục tiêu được đặt ra từ bên ngoài hoặc được chính hệ thống chủ động hình thành. Từ góc độ phân tích hệ thống, chính tổng thể các mục tiêu là yếu tố xác định và phân định hệ thống, thống nhất hệ thống và các hoạt động của nó thành một chỉnh thể.</p>
+<p>Nguyên tắc tiếp theo của phân tích hệ thống xuất phát từ sự cần thiết phải áp dụng tiếp cận hệ thống và bao gồm việc xác định và nghiên cứu tất cả các mối liên hệ cơ bản, cả bên trong hệ thống lẫn giữa hệ thống với môi trường bên ngoài của nó, cũng như trong việc lựa chọn các giải pháp cụ thể, có tính đến ảnh hưởng của chúng đối với hệ thống như một chỉnh thể.</p>
+<p>Trong phân tích hệ thống, cần phải ghi nhớ rằng cùng một mục tiêu có thể đạt được thông qua việc sử dụng nhiều phương tiện và phương pháp khác nhau. Từ đó rút ra một nguyên tắc của phân tích hệ thống là tìm kiếm nhiều phương án giải quyết thay thế cho các vấn đề đã nảy sinh. Việc xem xét các phương án khả dĩ về cấu trúc của một hệ thống, tổ chức của nó, và các quá trình diễn ra bên trong nó (công nghệ, lập kế hoạch, quản lý và các quá trình khác), nhằm mục đích lựa chọn phương án tốt nhất trong số đó, là một đặc điểm then chốt của phân tích hệ thống.</p>
+<p>Thông thường, nhiệm vụ chính của phân tích hệ thống là tìm ra các phương án tối ưu. Các phương án tối ưu là những phương án, dựa trên một tiêu chí này hay khác, được ưu tiên hơn so với các phương án khác. Thông thường, khi lựa chọn một phương án tối ưu dựa trên một tiêu chí nào đó, hiệu quả thu được từ việc thực hiện một chiến lược hành vi cụ thể được so sánh với chi phí nguồn lực cần thiết cho việc thực hiện nó.</p>
+<p>Chiều sâu và tính đầy đủ của việc phân tích các quá trình diễn ra trong các hệ thống khác nhau phần lớn được quyết định bởi mức độ nghiên cứu bản chất động của sự vận hành và phát triển của chúng. Phân tích hệ thống xuất phát từ sự cần thiết phải hiểu không chỉ các mối liên hệ tĩnh trong một hệ thống mà còn cả các tương tác động, phải nghiên cứu không chỉ trạng thái của hệ thống tại một thời điểm nhất định mà còn cả sự biến đổi của nó theo thời gian. Việc xem xét các hiện tượng trong sự vận động và phát triển của chúng cũng là một nguyên tắc quan trọng của phân tích hệ thống.</p>
+<p>Nguyên tắc phân định trách nhiệm đối với các khuyến nghị được rút ra từ phân tích hệ thống và các quyết định được đưa ra trên cơ sở các khuyến nghị đó đòi hỏi phải thiết lập một tập hợp quyền hạn và trách nhiệm được phân định rõ ràng cho các nhà phân tích hệ thống và những người ra quyết định hành động dựa trên kết quả phân tích. Khi cuối cùng phê duyệt một quyết định, những người chịu trách nhiệm về quyết định đó có thể tính đến, bên cạnh các khuyến nghị được rút ra từ phân tích hệ thống, một số cân nhắc định lượng và định tính bổ sung mà các nhà phân tích chưa tính đến.</p>
+<p>Trong những trường hợp một hệ thống phức tạp đang được nghiên cứu, khi việc phân tích nó chỉ có thể được thực hiện bằng cách khái quát hóa kết quả phân tích các bộ phận cấu thành của nó (các hệ thống con, các phần tử), trước tiên cấu trúc của hệ thống (vấn đề) được phân tích và khả năng phân chia nó thành các phần tử sẽ được nghiên cứu. Sau đó, việc phân rã (cấu trúc hóa) tuần tự hệ thống thành các bộ phận cấu thành của nó được thực hiện theo cấu trúc, chức năng và các quá trình nội tại của nó, có tính đến tất cả các mối liên hệ quan trọng nhất. Nguyên tắc cấu trúc hóa có định hướng mục tiêu của hệ thống đang nghiên cứu tìm thấy sự thể hiện thực tiễn cụ thể trong một số phương pháp phân tích hệ thống, chẳng hạn như trong phương pháp cây mục tiêu.</p>
+<p>Phạm vi ứng dụng của phân tích hệ thống, tùy thuộc vào mức độ phức tạp của các vấn đề đang được giải quyết và khả năng sử dụng các phương pháp toán học, có thể được chia thành năm cấp độ một cách tương đối:</p>
+<ul>
+  <li>tối ưu hóa việc lập kế hoạch và quản lý các tác nghiệp riêng lẻ;</li>
+  <li>lựa chọn loại hình hệ thống hoặc những con đường hiệu quả nhất để đạt được các mục tiêu đã đề ra;</li>
+  <li>xây dựng các hệ thống mới;</li>
+  <li>xác định vị trí và vai trò của một hệ thống trong các bài toán ở cấp cao hơn;</li>
+  <li>lập kế hoạch và quản lý một hệ thống kinh tế ở cấp độ kinh tế quốc dân.</li>
+</ul>
+<p>Trật tự này tương ứng với mức độ phức tạp ngày càng tăng của vấn đề, mức độ bất định, và độ khó trong việc xây dựng các khuyến nghị mà dựa trên đó có thể tiến hành các hành động cụ thể. Ở cấp độ thứ nhất, phân tích mang hình thức toán học nhiều nhất và có thể dựa trên việc sử dụng các công cụ và phương pháp logic hình thức. Về bản chất, đây chính là vận trù học nhằm nâng cao hiệu quả của hệ thống trong điều kiện khái niệm “hiệu quả hơn” được xác định rõ ràng. Đặc điểm chính của các vấn đề trong lĩnh vực này là chúng có cấu trúc được phân định rõ ràng, dễ dàng mô tả một cách hình thức hóa. Ở các cấp độ còn lại, việc áp dụng phân tích hệ thống nhất thiết gắn liền với nhu cầu nghiên cứu các nhân tố và điều kiện định tính, thường mang bản chất xã hội.</p>
+<p>Trong một số trường hợp nhất định, phân tích hệ thống tất yếu gắn liền với nhu cầu nghiên cứu các mâu thuẫn. Các ví dụ về mâu thuẫn và sự không nhất quán bao gồm các kế hoạch mất cân đối, sự gián đoạn trong việc cung ứng một số loại vật tư và thiết bị nhất định, sự khác biệt giữa mức tăng trưởng khối lượng sản xuất và tiêu thụ đối với một số loại sản phẩm nhất định, và các mâu thuẫn liên quan đến việc chậm áp dụng công nghệ mới.</p>
+<p>Phân tích các vấn đề ở cấp độ thứ hai và thứ ba bao gồm việc thiết kế các hệ thống mới nhằm thực hiện tốt hơn các tác nghiệp đã biết hoặc các tác nghiệp chưa từng được thực hiện trước đây. Khi xem xét các vấn đề ở cấp độ này và các cấp độ tiếp theo, việc cân nhắc các nhân tố xã hội và chính trị ngày càng trở nên quan trọng hơn.</p>
+<p>“Việc sử dụng phân tích hệ thống trong lập kế hoạch ngành” của E.P. Golubkov, 1977 (bằng tiếng Nga).</p>
+<p>Phương pháp chung để giải quyết các bài toán cụ thể của phân tích hệ thống được phân hóa và thể hiện trong một sự đa dạng lớn các phương pháp, mà tùy theo nguyên tắc phân loại được áp dụng, có thể được chia thành các nhóm khác nhau — ví dụ, thành các phương pháp phân tích và tổng hợp, các phương pháp mô tả và thực nghiệm. Tùy theo mức độ sử dụng các yếu tố hình thức trong phân tích hệ thống, có thể phân biệt ba nhóm phương pháp: toán học (hình thức), heuristic (phi hình thức), và các phương pháp kết hợp toán học – heuristic.</p>
+<p>Các phương pháp phân tích hệ thống có thể được xem xét theo cả nghĩa rộng lẫn nghĩa hẹp, cụ thể. Theo nghĩa rộng, các phương pháp phân tích hệ thống bao gồm bất kỳ phương pháp nào trong ba nhóm nêu trên được áp dụng để giải quyết vấn đề đang đặt ra trên cơ sở tiếp cận hệ thống. Theo cách hiểu rộng này, các phương pháp phân tích hệ thống đồng nhất với các phương pháp giải quyết vấn đề và có thể được phân loại theo từng giai đoạn riêng biệt của quá trình ra quyết định.</p>
+<p>Theo nghĩa hẹp, các phương pháp phân tích hệ thống là các phương pháp cụ thể được thiết kế để xác định tổng thể các mục tiêu hoạt động của một hệ thống và những con đường tốt nhất để đạt được chúng, để lựa chọn <a href="/vi/model.html" class="text-link">mô hình</a> và tiêu chí, để phân rã tuần tự, có định hướng một hệ thống (vấn đề) thành các phần tử cấu thành của nó, để xác định các mối liên hệ và sự phụ thuộc lẫn nhau giữa các phần tử này, và để xác định tầm quan trọng tương đối (mức độ ưu tiên) của từng mục tiêu, biện pháp, tiêu chí và mô hình riêng lẻ. Như vậy, đây chủ yếu là các phương pháp nhằm giải quyết các bài toán có cấu trúc kém trong những trường hợp mà việc áp dụng các phương pháp toán học, hình thức bị hạn chế.</p>
+<p>Bộ phận chính của các phương pháp toán học trong phân tích hệ thống bao gồm các phương pháp vận trù học (các loại quy hoạch khác nhau, lý thuyết trò chơi, lý thuyết hàng đợi và các phương pháp khác). Các phương pháp này được áp dụng rộng rãi trong phân tích hệ thống, nhưng chủ yếu là để nghiên cứu các khía cạnh riêng lẻ của vấn đề đang được giải quyết hơn là để nghiên cứu bản chất của nó.</p>
+<p><strong>Các phương pháp toán học trong phân tích hệ thống thường được sử dụng nhiều nhất:</strong></p>
+<ul>
+  <li>để xác định các giá trị số của các chỉ tiêu đặc trưng cho kết quả vận hành của một hệ thống;</li>
+  <li>để tìm ra những hướng hành động tốt nhất dẫn đến việc đạt được các kết quả cụ thể (tối ưu hóa);</li>
+  <li>để xử lý và phân tích các dữ liệu có tính chất heuristic, sáng tạo.</li>
+</ul>
+<p>Mặc dù vai trò của các phương pháp toán học trong việc giải quyết các vấn đề kinh tế ngày càng tăng, chúng không thể được xem là một phương tiện giải quyết vạn năng. Các phương pháp dựa trên kinh nghiệm tích lũy và trực giác, tức là các phương pháp heuristic (phi hình thức), vẫn giữ vai trò thiết yếu.</p>
+<p>Mong muốn có được các câu trả lời chính xác cho những câu hỏi được đặt ra bằng cách sử dụng các phương pháp toán học có thể khiến kỹ sư và nhà kinh tế học bị cuốn hút quá sâu vào công việc của mình và phương pháp luận xác định nhu cầu nghiên cứu, đến mức kết quả cuối cùng của những nỗ lực của họ trở thành một kết luận về sự cần thiết phải tiến hành thêm các nghiên cứu bổ sung.</p>
+<p>Trong khi đó, trong điều kiện thiếu vắng những dữ liệu nhất định về một quá trình, hiện tượng hoặc kết quả kinh tế nào đó, tốt hơn là nên có được những câu trả lời gần đúng cho những câu hỏi quan trọng nhất, thay vì cố gắng đưa ra những câu trả lời chính xác cho những câu hỏi chưa được làm rõ và hiểu thấu đáo hoàn toàn. Các thủ tục xây dựng mục tiêu hệ thống, các phương án thực hiện chúng, các mô hình và tiêu chí không thể được hình thức hóa hoàn toàn.</p>
+<p>Việc tổ chức các buổi thẩm định và hội nghị chuyên gia như vậy rất thường được điều chỉnh bởi truyền thống, tức là cuối cùng là bởi kinh nghiệm, và ở nhiều khía cạnh mang tính chất một nghệ thuật. Tuy nhiên, dần dần, nhiều phương pháp toán học khác nhau để xử lý tài liệu nguồn có nguồn gốc heuristic cũng bắt đầu thâm nhập vào lĩnh vực này.</p>
+<p>Một đặc điểm nổi bật của các phương pháp heuristic là chuyên gia, khi đánh giá một sự kiện, dựa vào một mức độ đáng kể vào thông tin dựa trên kinh nghiệm và trực giác của mình. Thông tin này phụ thuộc rất nhiều vào phẩm chất cá nhân của chuyên gia. Khi sử dụng phương pháp trực giác trong ra quyết định, chuyên gia không thể diễn đạt bằng lời trình tự thực hiện của nó.</p>
+<p>Trực giác giả định một sự đạt được giải pháp trực tiếp, có tính chất nhảy vọt, thay vì một chuỗi các bước cẩn trọng, được suy tính và cân nhắc kỹ lưỡng. Một người có tư duy trực giác thường không thể báo cáo được những khía cạnh nào của tình huống đã được nhận diện trong quá trình nhận thức, phần thông tin nào lưu trữ trong trí nhớ của mình đã được sử dụng, hoặc “lập luận” nào đã dẫn dắt mình từ dữ liệu ban đầu đến quyết định.</p>
+<p>Các phương pháp heuristic dựa trên kinh nghiệm trong ra quyết định xuất phát từ việc phân tích trong quá khứ một vấn đề đồng nhất với vấn đề đã nảy sinh ở thời điểm hiện tại (một quyết định dựa trên sự tương tự với quá khứ). Các phương pháp phi hình thức cũng bao gồm việc ra quyết định dựa trên việc viện dẫn đến uy quyền (tìm kiếm lời khuyên và chỉ dẫn từ lãnh đạo, chuyên gia, hoặc các nguồn tài liệu tham khảo, chẳng hạn như tài liệu khoa học và giáo dục).</p>
+<p><strong>Các lĩnh vực ứng dụng của các phương pháp phân tích hệ thống:</strong></p>
+<ol>
+  <li>Xác định tập hợp các mục tiêu và những con đường để đạt được chúng (ví dụ, xác định các mục tiêu của một kế hoạch ngành và xây dựng nhiều phương án thay thế cho việc thực hiện nó).</li>
+  <li>Xác định mức độ ưu tiên (xếp hạng) của từng mục tiêu, con đường, biện pháp, kết quả, v.v. (ví dụ, xác định thứ tự ưu tiên và thời hạn thực hiện các biện pháp riêng lẻ trong một kế hoạch ngành về công nghệ mới).</li>
+  <li>Phân rã các mục tiêu, chương trình, kế hoạch, v.v. thành các phần tử của chúng (ví dụ, biên soạn các kế hoạch cho từng liên hiệp hoặc doanh nghiệp dựa trên các nhiệm vụ được đặt ra cho toàn ngành).</li>
+  <li>Lựa chọn những con đường tốt nhất để đạt được các mục tiêu đã đề ra (ví dụ, phân tích và so sánh các biện pháp tổ chức và kỹ thuật khác nhau được đề xuất đưa vào kế hoạch).</li>
+  <li>Lựa chọn các tiêu chí để so sánh các mục tiêu và những con đường đạt được chúng (ví dụ, lựa chọn các tiêu chí để đánh giá hiệu quả của các phương án kế hoạch ngành khác nhau).</li>
+  <li>Xây dựng các mô hình để lựa chọn mục tiêu và những con đường đạt được chúng (ví dụ, một mô hình phân bổ nhiệm vụ kế hoạch giữa các doanh nghiệp trong một ngành theo tiêu chí giảm thiểu chi phí quy đổi).</li>
+  <li>Khái quát hóa các dữ liệu phân tích sự vận hành của từng hệ thống con riêng lẻ để rút ra kết luận về tính tối ưu của sự vận hành của hệ thống như một chỉnh thể (ví dụ, biên soạn một sơ đồ tối ưu để xây dựng các kế hoạch ngành dựa trên việc phân tích các thủ tục lập kế hoạch được áp dụng tại từng liên hiệp hoặc doanh nghiệp trong ngành).</li>
+</ol>
+<p>Cần lưu ý rằng ranh giới giữa các phương pháp heuristic và các phương pháp kết hợp ở một mức độ nào đó mang tính quy ước, vì không có sự phân định chặt chẽ giữa chúng. Hiện nay, các kỹ thuật toán học để xử lý dữ liệu nguồn có tính chất heuristic được sử dụng trong việc áp dụng hầu như tất cả các phương pháp heuristic.</p>
+<p>Trong phân tích hệ thống, tùy theo mức độ chắc chắn trong việc phát biểu vấn đề và các điều kiện giải quyết chúng, có thể có nhiều loại vấn đề khác nhau, quyết định việc sử dụng một phương pháp giải quyết cụ thể này hay khác. Những vấn đề này, sử dụng cách phân loại được áp dụng trong vận trù học, có thể được chia thành ba nhóm, mặc dù ở đây cũng cần có một số điều chỉnh nhất định.</p>
+<ol>
+  <li>Các bài toán tất định. Đây là các bài toán lựa chọn phương án giải pháp tốt nhất trong các tình huống mà mỗi chiến lược dẫn đến một kết quả duy nhất (ví dụ, một phương án kế hoạch cho trước dẫn đến việc đạt được kết quả yêu cầu với xác suất 100 phần trăm).</li>
+  <li>Các bài toán xác suất. Đây là các bài toán lựa chọn phương án giải pháp tốt nhất trong các tình huống mà mỗi hành động có thể mang lại các kết quả khác nhau với xác suất đã biết hoặc có thể ước lượng được (ví dụ, mỗi phương án kế hoạch dẫn đến việc đạt được các kết quả đã biết với một xác suất nhất định).</li>
+  <li>Các bài toán trong điều kiện bất định. Đây là các bài toán lựa chọn phương án giải pháp tốt nhất trong các tình huống mà xác suất đạt được các kết quả khác nhau không được biết, hoặc hoàn toàn không biết những kết quả nào có thể đạt được khi lựa chọn một chiến lược này hay khác trong số các chiến lược đang được xem xét.</li>
+</ol>
+<p>Việc đưa ra thuật ngữ như vậy cho các bài toán phân tích hệ thống ở một mức độ nào đó mang tính quy ước, vì chẳng hạn, nhân tố bất định vẫn hiện diện ngay cả trong việc giải quyết các bài toán xác suất.</p>
+<p>Cần lưu ý rằng lớp các bài toán xác suất và các bài toán trong điều kiện bất định cũng bao gồm cả những bài toán mà đối với chúng, một tập hợp đầy đủ các chiến lược khả dĩ chưa được xác định, và chỉ những chiến lược đã biết mới được xem xét. Tình huống như vậy đặc trưng cho thực tiễn ra quyết định, khi không phải tất cả các phương án khả dĩ để giải quyết vấn đề đã nảy sinh đều được xem xét, mà chỉ một số lượng hạn chế các phương án như vậy.</p>
+<p>Các bài toán tất định và các bài toán bất định có thể được xem như những trường hợp giới hạn (ví dụ, hiểu biết đầy đủ và hoàn toàn không biết về kết quả) của các bài toán xác suất. Vì lý do này, trước tiên chúng ta sẽ xem xét các bài toán xác suất, sau đó chúng ta sẽ chuyển sang xem xét các bài toán tất định và bất định.</p>
+<p>Trong việc giải quyết các bài toán xác suất, việc lựa chọn phương án giải pháp tốt nhất được thực hiện bằng cách tối đa hóa giá trị kỳ vọng của mức độ ưu tiên. Tiêu chí này được áp dụng trong việc giải quyết phần lớn các bài toán thuộc loại này.</p>
+<p>Trong những trường hợp mà một số tính toán nhất định, chẳng hạn tính toán kỹ thuật – kinh tế, cho phép xác định hiệu quả của một chiến lược này hay khác trong các điều kiện khác nhau của môi trường bên ngoài, các giá trị cụ thể đặc trưng cho hiệu quả của việc thực hiện một phương án giải pháp này hay khác phải được sử dụng thay cho các giá trị của mức độ ưu tiên. Các khuyến nghị cuối cùng về việc lựa chọn giải pháp cần được xây dựng có tính đến xác suất đạt được các kết quả khác nhau đối với các phương án giải pháp đang được xem xét.</p>
+<p>Một bài toán tất định có thể được xem như một trường hợp giới hạn của một bài toán xác suất, giả định rằng xác suất đạt được mỗi kết quả khả dĩ bằng một hoặc bằng không.</p>
+<p>Ví dụ về các bài toán tất định bao gồm, chẳng hạn, các bài toán quy hoạch tuyến tính.</p>
+<p>Các tiêu chí được áp dụng trong việc giải quyết các bài toán như vậy có thể đại diện cho một trường hợp giới hạn của việc tối đa hóa giá trị kỳ vọng của mức độ ưu tiên, trong đó xác suất thực hiện các kết quả khả dĩ bằng một hoặc bằng không. Các chỉ tiêu khác nhau có ý nghĩa kinh tế cụ thể (chi phí quy đổi, mức lợi nhuận, năng suất lao động và các chỉ tiêu khác) thường được sử dụng làm tiêu chí trong việc giải quyết các bài toán tất định.</p>
+<p>Loại bài toán phân tích hệ thống đặc trưng nhất là các bài toán trong điều kiện bất định. Trong các trường hợp thực tế, khi ban đầu có vẻ như không có bất kỳ ước lượng xác suất nào cho việc đạt được các kết quả khác nhau, nhà phân tích hệ thống thường nỗ lực tối đa để thu được thông tin về các xác suất này bằng cách tiến hành một nghiên cứu đặc biệt và, như một quy luật, thành công. Tuy nhiên, cũng có thể xảy ra trường hợp các ước lượng xác suất hoàn toàn không được biết.</p>
+<p>Trong việc giải quyết các bài toán trong điều kiện bất định, các tiêu chí nổi tiếng như minimax, maximin, maximin tổng quát hóa (tiêu chí Hurwicz), tiêu chí hối tiếc cực tiểu – cực đại (tiêu chí Savage), tiêu chí Laplace, và các tiêu chí khác được áp dụng.</p>
+<p>Việc sử dụng các tiêu chí khác nhau trong việc giải quyết cùng một bài toán, như một quy luật, dẫn đến việc thu được các kết quả không giống nhau. Có hai cách tiếp cận đối với việc lựa chọn tiêu chí để giải quyết các bài toán trong điều kiện bất định. Cách thứ nhất là xây dựng các tiêu chí mới hoặc các yêu cầu đối với việc lựa chọn tiêu chí quyết định. Cách tiếp cận thứ hai bao gồm việc sử dụng bất kỳ thông tin nào, dù ít ỏi đến đâu, về xác suất của các điều kiện môi trường khác nhau được hiện thực hóa (các kết quả khác nhau thu được từ việc thực hiện một chiến lược này hay khác) hoặc tiến hành các thí nghiệm để thu được các ước lượng về những xác suất này. Nhờ đó, bài toán bất định trở thành một bài toán xác suất.</p>
+<p>Cả hai cách tiếp cận đều tốn nhiều công sức và, như một quy luật, khó thực hiện trong thực tế; tuy nhiên, cách tiếp cận thứ hai được ưu tiên hơn. Cách tiếp cận thứ nhất dẫn đến việc tìm kiếm các tiêu chí mới để lựa chọn phương án tốt nhất trong số các phương án đã biết, sau đó dẫn đến việc tìm kiếm các tiêu chí để lựa chọn tiêu chí trong số các tiêu chí đang được xem xét, và cứ tiếp tục như vậy. Nói cách khác, không tồn tại một tiêu chí quyết định nào không dựa trên các ước lượng xác suất mà lại thỏa mãn được những yêu cầu hợp lý nhất định đối với một tiêu chí “tốt”.</p>
+<p>Những nỗ lực xây dựng một tiêu chí để đánh giá các quyết định khả dĩ trong điều kiện bất định phản ánh khát vọng làm cho các ưu điểm và nhược điểm của mỗi hướng hành động trong các điều kiện khác nhau trở nên minh bạch hơn. Không có tiêu chí hiện có nào để lựa chọn quyết định trong điều kiện bất định là vạn năng, có khả năng làm thỏa mãn bất kỳ người ra quyết định nào.</p>
+<p>Các phương pháp phân tích hệ thống không nên được đặt đối lập với nhau. Mỗi phương pháp đều có ưu điểm và nhược điểm, nhưng không có phương pháp nào phù hợp để giải quyết tất cả các vấn đề. Do đó, kết quả tốt nhất có thể đạt được bằng cách kết hợp nhiều phương pháp, tùy thuộc vào bản chất của vấn đề đang được giải quyết và cấp độ mà nó được xem xét. Khi giải quyết các bài toán lập kế hoạch ở cấp độ thấp nhất của quản lý kinh tế, người ta thường gặp phải các vấn đề có cấu trúc đủ tốt, cho phép áp dụng rộng rãi các phương pháp phân tích toán học. Ở các cấp độ cao hơn, các mục tiêu và các yếu tố khác của phân tích hệ thống mang tính chất định tính ngày càng nhiều, và do đó tầm quan trọng của các phương pháp phi hình thức ngày càng tăng.</p>
+<p>Sự phức tạp của việc mô hình hóa các quá trình xã hội trong các hệ thống kinh tế càng làm phức tạp thêm việc áp dụng các phương pháp toán học. Đồng thời, vai trò của nhân tố bất định tăng lên, và việc bỏ qua nó thông qua các phương pháp hình thức có thể dẫn đến những kết luận sai lầm.</p>
+</div>
+      </article>
+    </div>
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Về phân tích hệ thống</h2>
+    <ul>
+      <li><a href="/vi/systems_analysis.html">Phân tích hệ thống</a></li>
+      <li><a href="/vi/systems_analysis_optner.html">Phân tích hệ thống để giải quyết các vấn đề kinh doanh và công nghiệp: Optner</a></li>
+      <li><a href="/vi/systems_analysis_pospelov.html">Phân tích hệ thống và lập kế hoạch dài hạn: Pospelov</a></li>
+      <li><a href="/vi/systems_analysis_clelandking.html">Phân tích hệ thống và quản lý dự án: Cleland, King</a></li>
+      <li><a href="/vi/systems_analysis_nikanorov.html">Phân tích hệ thống và tiếp cận hệ thống: Nikanorov</a></li>
+      <li><a href="/vi/systems_analysis_pt.html">Phân tích hệ thống: Peregudov, Tarasenko</a></li>
+      <li><a href="/vi/systems_analysis_q.html">Phân tích hệ thống: Quade</a></li>
+      <li><a href="/vi/systems_analysis_book.html">Tải tài liệu về phân tích hệ thống</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Chuyển đến bài viết</h2>
+    <ul>
+      <li><a href="/vi/system.html">Hệ thống</a></li>
+      <li><a href="/vi/system_terminus.html">Khái niệm hệ thống</a></li>
+      <li><a href="/vi/system_def.html">Các định nghĩa về hệ thống</a></li>
+      <li><a href="/vi/methodology_sa.html">Phương pháp luận phân tích hệ thống</a></li>
+      <li><a href="/vi/economics.html">Phân tích hệ thống trong kinh tế học</a></li>
+      <li><a href="/vi/systems_thinking.html">Tiếp cận hệ thống</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Đường dẫn điều hướng">
+    <a href="/vi/">Trang chủ</a> <span aria-hidden="true">/</span>
+    <a href="/vi/systems_analysis.html">Phân tích hệ thống</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Phân tích hệ thống: Golubkov</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Đổi giao diện"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/systems_analysis_golubkov.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/vi/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Đổi giao diện"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710ef34f2c1e13',t:'MTc4ODczNTI5Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

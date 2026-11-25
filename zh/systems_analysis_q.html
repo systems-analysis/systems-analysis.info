@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>系统分析：奎德</title>
+<meta name="description" content="奎德所论述的系统分析——一种看待问题的方式，其中数学形式化只起辅助作用。本文介绍分析的结构、顺序与关键环节。">
+<meta name="keywords" content="系统分析,系统,决策,问题,课题,目标,模型">
+<link rel="canonical" href="https://systems-analysis.info/zh/systems_analysis_q.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/systems_analysis_q.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/systems_analysis_q.html">
+<link rel="alternate" hreflang="zh" href="https://systems-analysis.info/zh/systems_analysis_q.html">
+<meta property="og:title" content="系统分析：奎德">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/zh/systems_analysis_q.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="奎德所论述的系统分析——一种看待问题的方式，其中数学形式化只起辅助作用。本文介绍分析的结构、顺序与关键环节。">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="zh_CN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/zh/systems_analysis_q.html#article",
+    "headline": "系统分析：奎德",
+    "description": "奎德所论述的系统分析——一种看待问题的方式，其中数学形式化只起辅助作用。本文介绍分析的结构、顺序与关键环节。",
+    "url": "https://systems-analysis.info/zh/systems_analysis_q.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "zh",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/zh/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/zh/systems_analysis_q.html"
+    },
+    "keywords": [
+        "系统分析",
+        "系统",
+        "决策",
+        "问题",
+        "课题",
+        "目标",
+        "模型"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Analysis for Military Decisions",
+        "author": {
+            "@type": "Person",
+            "name": "Quade E.S."
+        },
+        "datePublished": "1964",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Rand McNally"
+        },
+        "inLanguage": "en"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-08-22",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Analysis for Military Decisions",
+        "author": {
+            "@type": "Person",
+            "name": "Quade E.S."
+        },
+        "datePublished": "1964",
+        "inLanguage": "en"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://systems-analysis.info/zh/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "系统分析",
+            "item": "https://systems-analysis.info/zh/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "系统分析：奎德"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/zh/">首页</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/sections.html">栏目</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">维基</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/books.html">书籍</a>
+        <span aria-hidden="true">·</span>
+        <a href="/zh/catalog.html">目录</a>
+        <span aria-hidden="true">·</span>
+        <a href="/systems_analysis_q.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Toggle theme"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Toggle font"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">系统分析：奎德</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+<p><strong>《复杂系统分析》。奎德</strong></p>
+<p>在一个人可以被视为行家的领域里，我们信任他的直觉。但在解决有关兵力结构或作战技术装备研制的复杂<a href="problem.html" class="text-link">问题</a>时，我们面对的是这样一个广阔的领域，其中并没有真正的行家。系统分析通常要求把技术、军事行动、后方保障等各个极不相同的领域中的多种因素都计入其中——不仅是我方的，还有敌方的——并计入经济的、政治的和战略的因素以及它们之间的复杂联系。没有人能在这个领域一两个分支之外还称得上专家，没有人能成为整个领域及其内在联系的专家。因此，不能信赖任何一个人毫无支撑的直觉。</p>
+<p>不应把系统分析看作与判断相对立的东西，而应看作一个框架，它使人能够运用该领域众多分支的专家判断，从而得到超出任何单个判断范围的结果。这正是系统分析的<a href="goal.html" class="text-link">目标</a>和它的可能性所在。</p>
+<p>系统分析是审视问题的一种方式。其中数学工具和计算机的运用可能是必需的、甚至是有益的，但也可能并非如此。有时对问题作认真的思索就已足够。但在任何与不确定条件下决策准备相关的分析中，无论其复杂程度如何，都存在一些确定的要素。这些要素是：目标或若干目标；备选方案，即达成这些目标的手段；耗费，即为实现每一备选方案所必须付出的一切；<a href="model.html" class="text-link">模型</a>，即对各备选方案与它们所完成的事情及其代价之间依赖关系的描述；以及据以选出优先备选方案的准则——凡是以影响行动方针选择为目标的分析，都包含这些要素。这些要素往往难以选定或难以明确界定。</p>
+<p>系统分析是这样一种尝试：找出在选择行动方针时重要的那些问题，并给出回答。获得这些问题答案最有用的手段，往往是数学模型。有时采用两三个数学模型会更有用。然而，建立这些模型并使用它们，绝不等于分析的全部。实际上，提出有用的问题、构造出可供比较的备选<a href="system.html" class="text-link">系统</a>、善于解释比较所得的结果、并把这些结果同引发研究的那些问题联系起来，比起使用模型来，更是这一过程中具有决定意义的环节。人们往往容易忘记这一点，因为使用模型要花去大部分时间，而其做法又容易说明、容易从一项研究搬到另一项研究。</p>
+</div>
+      </article>
+    </div>
+
+    <div class="links">
+  <div class="links-section">
+    <h2>关于系统分析</h2>
+    <ul>
+      <li><a href="systems_analysis.html">系统分析</a></li>
+      <li><a href="systems_analysis_golubkov.html">系统分析：戈卢布科夫</a></li>
+      <li><a href="systems_analysis_optner.html">系统分析：奥普特纳</a></li>
+      <li><a href="systems_analysis_pospelov.html">系统分析：波斯佩洛夫</a></li>
+      <li><a href="systems_analysis_clelandking.html">系统分析：克利兰、金</a></li>
+      <li><a href="systems_analysis_nikanorov.html">系统分析：尼卡诺罗夫</a></li>
+      <li><a href="systems_analysis_pt.html">系统分析：佩列古多夫、塔拉先科</a></li>
+      <li><a href="systems_analysis_ch.html">系统分析：切尔尼亚克</a></li>
+      <li><a href="systems_analysis_book.html">系统分析文献</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>转到文章</h2>
+    <ul>
+      <li><a href="system.html">系统理论</a></li>
+      <li><a href="system_terminus.html">系统的概念</a></li>
+      <li><a href="system_def.html">系统的定义</a></li>
+      <li><a href="methodology_sa.html">系统分析方法</a></li>
+      <li><a href="economics.html">经济学中的系统分析</a></li>
+      <li><a href="systems_thinking.html">系统方法</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/zh/">首页</a> <span aria-hidden="true">/</span>
+    <a href="/zh/systems_analysis.html">系统分析</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">系统分析：奎德</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Toggle theme"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/systems_analysis_q.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">语言</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/zh/map.html">网站地图</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710f5cfeeb1e13',t:'MTc4ODczNTMxMw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

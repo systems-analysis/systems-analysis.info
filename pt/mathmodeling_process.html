@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Processo de Modelagem Matemática</title>
+<meta name="description" content="O processo de modelagem matemática: construção do modelo, desenvolvimento de software, validação e análise dos resultados. São descritas as etapas e as características dos modelos computacionais modernos.">
+<meta name="keywords" content="modelagem matemática,modelo,métodos computacionais,algoritmo,validação,software,análise de sistemas,métodos numéricos">
+<link rel="canonical" href="https://systems-analysis.info/pt/mathmodeling_process.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/mathmodeling_process.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/mathmodeling_process.html">
+<link rel="alternate" hreflang="pt" href="https://systems-analysis.info/pt/mathmodeling_process.html">
+<meta property="og:title" content="Processo de Modelagem Matemática">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/pt/mathmodeling_process.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="O processo de modelagem matemática: construção do modelo, desenvolvimento de software, validação e análise dos resultados. São descritas as etapas e as características dos modelos computacionais modernos.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="pt_BR">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/pt/mathmodeling_process.html#article",
+    "headline": "Processo de Modelagem Matemática",
+    "description": "O processo de modelagem matemática: construção do modelo, desenvolvimento de software, validação e análise dos resultados. São descritas as etapas e as características dos modelos computacionais modernos.",
+    "url": "https://systems-analysis.info/pt/mathmodeling_process.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "pt",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/pt/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/pt/mathmodeling_process.html"
+    },
+    "keywords": [
+        "modelagem matemática",
+        "modelo",
+        "métodos computacionais",
+        "algoritmo",
+        "validação",
+        "software",
+        "análise de sistemas",
+        "métodos numéricos"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "https://systems-analysis.info/pt/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Modelagem",
+            "item": "https://systems-analysis.info/pt/modelling.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Processo de Modelagem Matemática"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Navegação principal">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/pt/">Início</a>
+        <span aria-hidden="true">·</span>
+        <a href="/pt/sections.html">Seções</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/pt/books.html">Livros</a>
+        <span aria-hidden="true">·</span>
+        <a href="/pt/catalog.html">Catálogo</a>
+        <span aria-hidden="true">·</span>
+        <a href="/mathmodeling_process.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Alternar tema"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Alternar fonte"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Processo de Modelagem Matemática</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Uma característica distintiva dos modelos matemáticos criados hoje é sua complexidade, decorrente da complexidade dos objetos modelados. Isso leva a <a href="/pt/model.html" class="text-link">modelos</a> cada vez mais elaborados e à necessidade de recorrer simultaneamente a diversas teorias de diferentes campos do conhecimento, bem como de empregar métodos computacionais modernos e tecnologia de computação para obter e analisar os resultados da simulação. No caso de objetos complexos, geralmente é impossível satisfazer todos os requisitos dentro de um único modelo. Em vez disso, deve-se criar todo um espectro de modelos do mesmo objeto (em alguns casos, um conjunto hierárquico de modelos "aninhados"), cada um dos quais é o mais adequado para resolver as tarefas específicas que lhe são atribuídas.</p>
+<p>A necessidade de construção de modelos em larga escala exige o desenvolvimento de um conjunto de regras e abordagens que reduzam o custo de desenvolvimento do modelo e diminuam a probabilidade de erros difíceis de eliminar posteriormente. Esse conjunto de regras pode ser chamado de tecnologia para a criação de modelos matemáticos.</p>
+<p><strong>O processo de construção de qualquer modelo matemático pode ser representado como uma sequência de etapas:</strong></p>
+<ol>
+  <li>Levantamento do objeto a ser modelado e preparação do termo de referência para o desenvolvimento do modelo (formulação substantiva do problema);</li>
+  <li>Formulação conceitual e matemática do problema;</li>
+  <li>Análise qualitativa e verificação da correção do modelo;</li>
+  <li>Seleção e justificativa dos métodos de solução;</li>
+  <li>Obtenção da solução;</li>
+  <li>Desenvolvimento do algoritmo de solução e investigação de suas propriedades; implementação do algoritmo como software;</li>
+  <li>Validação do modelo;</li>
+  <li>Aplicação prática do modelo construído.</li>
+</ol>
+<p>Os modelos matemáticos — especialmente aqueles que empregam métodos numéricos e tecnologia de computação — exigem recursos intelectuais, financeiros e de tempo significativos para sua construção. Por isso, a decisão de desenvolver um novo modelo só é tomada quando não há maneiras mais simples de resolver os <a href="/pt/problem.html" class="text-link">problemas</a> em questão (por exemplo, modificando um modelo já existente).</p>
+<p>A necessidade de um novo modelo pode surgir em conexão com pesquisas científicas, particularmente na interseção de diferentes campos do conhecimento. Uma vez tomada a decisão de construir um novo modelo matemático, a parte contratante busca uma equipe para realizar o trabalho. Em regra, a equipe do projeto inclui especialistas de diversas formações: matemáticos aplicados, especialistas de domínio profundamente familiarizados com o objeto sendo modelado e desenvolvedores de software. Uma vez confirmada a decisão de criar o modelo e formada a equipe do projeto, tem início a fase de levantamento. O objetivo principal dessa fase é preparar uma formulação substantiva do problema de modelagem. A formulação substantiva do problema é uma lista das principais questões sobre o objeto de modelagem, expressas em linguagem simples, que a parte contratante deseja responder.</p>
+<p>Preparar a lista de questões que o novo modelo deve responder é, frequentemente, um problema em si mesmo, exigindo especialistas com conhecimentos e habilidades específicos. Eles devem não apenas ter um entendimento completo do domínio temático do esforço de modelagem e estar cientes das capacidades da matemática computacional e da tecnologia de computação modernas, mas também ser capazes de se comunicar com pessoas — de extrair informações dos especialistas práticos que têm uma sensibilidade intuitiva para o objeto de modelagem e as nuances de seu comportamento. Tais especialistas incluem, por exemplo, analistas de sistemas, engenheiros de sistemas e pesquisadores operacionais.</p>
+<p>Com base na análise de todas as informações coletadas, o formulador do problema deve definir os requisitos para o futuro modelo de tal forma que, por um lado, satisfaçam a parte contratante e, por outro, permitam que o modelo seja implementado dentro do prazo e do orçamento estabelecidos. Analistas de sistemas (ou pesquisadores operacionais) devem possuir a capacidade de, a partir de um grande volume de informações pouco estruturadas e variadas sobre o objeto de modelagem e dos diversos desejos e requisitos vagamente expressos pela parte contratante, extrair os elementos essenciais que possam de fato ser implementados.</p>
+<p>Com base nas informações coletadas sobre o objeto de modelagem, o analista de sistemas (engenheiro, pesquisador operacional), juntamente com a parte contratante, formula a declaração substantiva do problema, que, em regra, não é definitiva e pode ser refinada e elaborada ao longo do desenvolvimento do modelo. No entanto, todos os ajustes e alterações subsequentes na declaração substantiva devem ter caráter menor e não fundamental.</p>
+<p>Todo o material reunido durante o levantamento — o conhecimento acumulado sobre o objeto, a formulação substantiva do problema, os requisitos adicionais para a implementação do modelo e a apresentação dos resultados — é documentado na forma de um termo de referência para o projeto e desenvolvimento do modelo. O termo de referência constitui o documento conclusivo da fase de levantamento. Quanto mais completas forem as informações reunidas sobre o objeto durante o levantamento, mais claramente o problema substantivo poderá ser declarado, mais plenamente a experiência e o conhecimento acumulados poderão ser considerados, e mais dificuldades nas etapas subsequentes do desenvolvimento do modelo poderão ser evitadas.</p>
+<p>Diferentemente da formulação substantiva, a formulação conceitual do problema de modelagem é tipicamente preparada por membros da equipe do projeto sem o envolvimento de representantes da parte contratante, com base no termo de referência desenvolvido na fase anterior e utilizando o conhecimento disponível sobre o objeto de modelagem e os requisitos para o futuro modelo. A análise e a discussão conjunta de todas as informações disponíveis sobre o objeto de modelagem pelos membros da equipe permitem formar um modelo conceitual do objeto — uma síntese dos modelos cognitivos desenvolvidos por cada membro da equipe.</p>
+<p>A formulação conceitual do problema de modelagem é uma lista das principais questões de interesse da parte contratante, expressas nos termos de disciplinas específicas, juntamente com um conjunto de hipóteses sobre as propriedades e o comportamento do objeto de modelagem.</p>
+<p>As maiores dificuldades na formulação da declaração conceitual surgem em modelos situados na interseção de diferentes disciplinas. Diferenças de tradições, conceitos e linguagens utilizadas para descrever os mesmos objetos representam obstáculos muito sérios na criação de modelos interdisciplinares.</p>
+<p>Uma formulação conceitual concluída permite produzir a formulação matemática do problema de modelagem, que inclui um conjunto de relações matemáticas descrevendo o comportamento e as propriedades do objeto de modelagem.</p>
+<p>A formulação matemática do problema de modelagem é o conjunto de relações matemáticas que descrevem o comportamento e as propriedades do objeto de modelagem.</p>
+<p>Um modelo matemático é considerado correto se todas as verificações de checagem tiverem sido realizadas com resultados positivos: análise dimensional, verificação de ordem de grandeza, verificação da natureza das dependências, análise de casos extremos, condições de contorno, significado físico e fechamento matemático. A formulação matemática é ainda mais abstrata do que a conceitual, uma vez que reduz o problema original a um problema puramente matemático para o qual existem métodos de solução bem desenvolvidos.</p>
+<p>Todos os métodos para resolver os problemas que constituem o "núcleo" dos modelos matemáticos podem ser divididos em analíticos e algorítmicos (numéricos).</p>
+<p>Deve-se notar que, quando soluções analíticas são utilizadas para obter resultados numéricos, também é frequentemente necessário desenvolver algoritmos correspondentes implementados em computadores.</p>
+<p>No entanto, a solução inicial nesse caso assume a forma de uma expressão analítica (ou um conjunto de expressões). Soluções baseadas em métodos algorítmicos, por outro lado, são fundamentalmente irredutíveis a soluções analíticas exatas do problema em questão.</p>
+<p>A escolha de um método de pesquisa específico depende, em grande medida, da qualificação e da experiência dos membros da equipe do projeto. Os métodos analíticos são mais convenientes para a análise subsequente dos resultados, mas são aplicáveis apenas a modelos relativamente simples. Se o problema matemático (mesmo em uma formulação simplificada) admitir uma solução analítica, essa solução é, sem dúvida, preferível a uma solução numérica.</p>
+<p>Os métodos algorítmicos reduzem o problema a um algoritmo que realiza um experimento computacional utilizando tecnologia de computação. A precisão da modelagem nesse experimento depende criticamente do método escolhido e de seus parâmetros. Os métodos algorítmicos geralmente exigem mais trabalho para serem implementados e requerem que os membros da equipe do projeto tenham sólidos conhecimentos de matemática computacional, uma extensa biblioteca de software especializado e recursos computacionais robustos.</p>
+<p>Os métodos numéricos são aplicáveis apenas a problemas matemáticos bem-postos, o que limita significativamente seu uso na modelagem matemática. Comum a todos os métodos numéricos é a redução do problema matemático a um problema de dimensão finita. Isso é obtido, na maioria das vezes, discretizando-se o problema original — ou seja, substituindo-se funções de um argumento contínuo por funções de um argumento discreto. A aplicação de qualquer método numérico introduz inevitavelmente erro nos resultados. Podem-se distinguir três componentes principais do erro que surge na solução numérica do problema original: o erro inerente, associado à especificação imprecisa dos dados de entrada (condições iniciais e de contorno, coeficientes das equações e termos independentes); o erro de discretização, associado à transição para um análogo discreto do problema original; e o erro de arredondamento, associado à precisão finita dos números representados em um computador.</p>
+<p>Um requisito natural para qualquer algoritmo computacional específico é a consistência nas ordens de grandeza desses três tipos de erro.</p>
+<p>Um método numérico, ou aproximado, é sempre implementado como um algoritmo computacional. Portanto, todos os requisitos aplicáveis aos algoritmos em geral também se aplicam aos algoritmos computacionais. Antes de tudo, um algoritmo deve ser viável — deve resolver o problema dentro de um tempo de computação aceitável. Uma característica importante de um algoritmo é sua precisão — a capacidade de obter uma solução do problema original com uma dada precisão em um número finito de operações.</p>
+<p>O tempo de execução de um algoritmo depende do número de operações necessárias para alcançar a precisão especificada. Para qualquer problema matemático, em regra, podem ser propostos vários algoritmos que produzem uma solução com a precisão desejada, mas em diferentes números de operações. Algoritmos que requerem menos operações para alcançar a mesma precisão são chamados de mais econômicos, ou mais eficientes.</p>
+<p>Durante a execução de um algoritmo computacional, surge um determinado erro a cada etapa computacional. De etapa em etapa, esse erro pode crescer ou não crescer (e, em alguns casos, pode até diminuir). Se o erro cresce sem limite durante o cálculo, diz-se que o algoritmo é instável, ou divergente. Caso contrário, diz-se que o algoritmo é estável, ou convergente.</p>
+<p>A enorme variedade de métodos numéricos torna a seleção de um método específico em cada caso consideravelmente difícil. Como vários métodos algorítmicos alternativos podem ser usados para implementar um determinado modelo, a escolha de um método específico é feita considerando qual deles é mais adequado ao modelo em termos de eficiência, estabilidade e precisão dos resultados, bem como qual é mais familiar aos membros da equipe do projeto.</p>
+<p>Na criação de diversos sistemas de software utilizados para resolver uma ampla gama de tarefas de pesquisa, projeto de engenharia e gestão, os modelos matemáticos geralmente servem hoje como fundamento. Isso gera a necessidade de implementar um modelo como um programa de computador. O processo de desenvolvimento de software confiável e eficiente não é menos complexo do que todas as etapas anteriores da criação do modelo matemático. Resolver com sucesso essa tarefa só é possível com domínio seguro das linguagens e tecnologias de programação modernas, conhecimento das capacidades computacionais, do software disponível e das especificidades da implementação dos métodos da matemática computacional.</p>
+<p><strong>O processo de desenvolvimento de software pode ser dividido em várias etapas:</strong></p>
+<ul>
+  <li>preparação do termo de referência para o desenvolvimento do software;</li>
+  <li>projeto da estrutura do sistema de software;</li>
+  <li>codificação do algoritmo;</li>
+  <li>testes e depuração;</li>
+  <li>manutenção e operação.</li>
+</ul>
+<p>O termo de referência para o desenvolvimento do software é documentado na forma de uma especificação. Na etapa de projeto, forma-se a estrutura geral do sistema de software. Todo o programa é dividido em módulos de software. Para cada módulo, são formulados requisitos funcionais e é desenvolvido um algoritmo que implementa essas funções. É definido o esquema de interação entre os módulos — conhecido como o diagrama de fluxo de dados do sistema de software. Desenvolve-se um plano de testes, e são especificados os dados de entrada para testar os módulos individuais e o sistema como um todo.</p>
+<p><strong>A maioria dos programas que implementam modelos matemáticos consiste em três partes principais:</strong></p>
+<ul>
+  <li>um pré-processador (preparação e verificação dos dados de entrada do modelo);</li>
+  <li>um solucionador (solução do problema, realização do experimento computacional);</li>
+  <li>um pós-processador (visualização e apresentação dos resultados).</li>
+</ul>
+<p>Deve-se dar considerável importância à adoção de tecnologias modernas de programação. O objetivo de qualquer tecnologia desse tipo é, antes de tudo, melhorar a confiabilidade do software e aumentar a produtividade do desenvolvedor. Quanto mais sério e de grande porte for o projeto de software, mais significativas se tornam as questões relativas à aplicação de tecnologias modernas de programação. Negligenciar essas questões pode levar a atrasos significativos no cronograma e à redução da confiabilidade do sistema de software.</p>
+<p>Um fator crítico para garantir a confiabilidade e o curto tempo de desenvolvimento de um sistema de software destinado a resolver uma classe específica de problemas é a disponibilidade de uma biblioteca bem desenvolvida de módulos de software mutuamente compatíveis. Um programa é mais confiável e pode ser desenvolvido mais rapidamente quando componentes de software padronizados são utilizados na maior medida possível.</p>
+<p>A adequação de um modelo matemático é o grau em que os resultados obtidos a partir do modelo desenvolvido correspondem aos dados experimentais ou aos resultados de um problema de referência.</p>
+<p><strong>A validação do modelo serve a dois objetivos:</strong></p>
+<ul>
+  <li>verificar a validade do conjunto de hipóteses formuladas nas etapas de formulação conceitual e matemática. Deve-se proceder à verificação das hipóteses somente depois que os métodos de solução tiverem sido verificados e o software tiver passado por uma depuração abrangente e pela eliminação de todos os erros e conflitos;</li>
+  <li>estabelecer que a precisão dos resultados esteja em conformidade com a precisão especificada no termo de referência.</li>
+</ul>
+<p>A validação do modelo matemático desenvolvido é realizada comparando-o com dados experimentais disponíveis sobre o objeto real ou com os resultados de outros modelos previamente criados e comprovados. No primeiro caso, fala-se em validação por comparação com o experimento; no segundo, em comparação com os resultados de um problema de referência.</p>
+<p>A questão da precisão da modelagem depende dos requisitos impostos ao modelo e de sua finalidade pretendida. A precisão dos resultados experimentais ou as especificidades das formulações do problema de referência também devem ser levadas em consideração. Para modelos destinados a cálculos aproximados e de ordem de grandeza, uma precisão de 10–15% é considerada satisfatória. Para modelos utilizados em <a href="/pt/system.html" class="text-link">sistemas</a> de controle e monitoramento, a precisão exigida pode ser de 1–2% ou até maior.</p>
+<p>Quando surgem problemas de adequação do modelo, a correção deve começar com uma análise sistemática de todas as causas possíveis da discrepância entre os resultados da modelagem e os resultados experimentais. Primeiramente, o modelo deve ser investigado e seu grau de adequação avaliado para diferentes valores dos parâmetros variáveis (condições iniciais e de contorno, parâmetros que caracterizam as propriedades dos objetos de modelagem). Se o modelo for inadequado na faixa de parâmetros de interesse do pesquisador, pode-se tentar refinar os valores das constantes e parâmetros iniciais do modelo. Se isso ainda não produzir resultados positivos, a única forma restante de melhorar o modelo é revisar o sistema de hipóteses adotado. Essa decisão significa, na prática, retornar à segunda etapa do processo de desenvolvimento do modelo e pode implicar não apenas uma grande mudança na formulação matemática, mas também nos métodos de solução (por exemplo, uma transição de métodos analíticos para numéricos), uma reformulação completa do software e um novo ciclo de validação do modelo. Portanto, a decisão de revisar o sistema de hipóteses adotado deve ser cuidadosamente ponderada e tomada apenas quando todas as demais alternativas para melhorar a adequação do modelo tiverem sido esgotadas.</p>
+<p>Os modelos descritivos são projetados para caracterizar os parâmetros estudados em um determinado fenômeno ou processo, bem como para investigar os padrões que regem as mudanças nesses parâmetros. Esses modelos podem ser usados para estudar as propriedades e o comportamento do objeto investigado sob várias combinações de dados de entrada e condições operacionais; na construção de modelos de otimização; e na construção de modelos de simulação de sistemas complexos.</p>
+<p>Os modelos desenvolvidos para fins de pesquisa geralmente não são levados ao nível de sistemas de software destinados à distribuição para usuários externos. Sua vida útil costuma se limitar à duração do programa de pesquisa na área correspondente. Esses modelos são caracterizados por uma natureza exploratória, pelo uso de novos procedimentos e algoritmos computacionais e por uma interface de usuário pouco desenvolvida.</p>
+<p>Modelos e os sistemas de software neles baseados, destinados à distribuição subsequente para usuários externos ou ao lançamento comercial, apresentam uma interface bem desenvolvida e amigável ao usuário, além de pré-processadores e pós-processadores poderosos. Esses modelos geralmente se baseiam em formulações e procedimentos computacionais comprovados e bem estabelecidos. No entanto, deve-se lembrar que tais modelos são projetados apenas para resolver uma classe claramente definida de problemas.</p>
+<p>Independentemente da aplicação pretendida do modelo, a equipe de desenvolvimento é obrigada a realizar tanto uma análise qualitativa quanto quantitativa dos resultados da modelagem.</p>
+<p>Ao trabalhar com o modelo, os desenvolvedores se tornam especialistas no domínio associado ao objeto de modelagem. Eles desenvolvem uma compreensão suficientemente aprofundada das propriedades do objeto e são capazes de prever e explicar seu comportamento.</p>
+<p><strong>Uma análise abrangente dos resultados da modelagem, portanto, torna possível:</strong></p>
+<ul>
+  <li>modificar o objeto em consideração, encontrar suas características ótimas ou, ao menos, levar em conta seu comportamento e suas propriedades da melhor forma possível;</li>
+  <li>delinear o domínio de aplicabilidade do modelo;</li>
+  <li>verificar a validade das hipóteses adotadas na etapa de formulação matemática e avaliar a possibilidade de simplificar o modelo para melhorar sua eficiência, preservando a precisão exigida;</li>
+  <li>indicar a direção em que o modelo deve ser desenvolvido posteriormente.</li>
+</ul>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Artigos relacionados</h2>
+    <ul>
+      <li><a href="/pt/model.html">Modelo</a></li>
+      <li><a href="/pt/modelling.html">Modelagem</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/pt/">Início</a> <span aria-hidden="true">/</span>
+    <a href="/pt/modelling.html">Modelagem</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Processo de Modelagem Matemática</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Alternar tema"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/mathmodeling_process.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/pt/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Alternar tema"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710be388b8a5ce',t:'MTc4ODczNTE3MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

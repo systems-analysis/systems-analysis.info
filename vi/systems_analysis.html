@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Phân tích hệ thống</title>
+<meta name="description" content="Phân tích hệ thống là một phương pháp nghiên cứu khoa học bao gồm một chuỗi các hành động nhằm xác lập các mối liên hệ cấu trúc giữa các biến số hoặc các phần tử của hệ thống đang được nghiên cứu.">
+<meta name="keywords" content="phân tích hệ thống,hệ thống,vấn đề,ra quyết định,nghiên cứu,phương pháp,tiếp cận">
+<link rel="canonical" href="https://systems-analysis.info/vi/systems_analysis.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/systems_analysis.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/systems_analysis.html">
+<link rel="alternate" hreflang="vi" href="https://systems-analysis.info/vi/systems_analysis.html">
+<meta property="og:title" content="Phân tích hệ thống">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/vi/systems_analysis.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Phân tích hệ thống là một phương pháp nghiên cứu khoa học bao gồm một chuỗi các hành động nhằm xác lập các mối liên hệ cấu trúc giữa các biến số hoặc các phần tử của hệ thống đang được nghiên cứu.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="vi_VN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/vi/systems_analysis.html#article",
+    "headline": "Phân tích hệ thống",
+    "description": "Phân tích hệ thống là một phương pháp nghiên cứu khoa học bao gồm một chuỗi các hành động nhằm xác lập các mối liên hệ cấu trúc giữa các biến số hoặc các phần tử của hệ thống đang được nghiên cứu.",
+    "url": "https://systems-analysis.info/vi/systems_analysis.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "vi",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/vi/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/vi/systems_analysis.html"
+    },
+    "keywords": [
+        "phân tích hệ thống",
+        "hệ thống",
+        "vấn đề",
+        "ra quyết định",
+        "nghiên cứu",
+        "phương pháp",
+        "tiếp cận"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "Phân tích hệ thống",
+        "description": "A scientific method of inquiry that consists of a sequence of actions aimed at establishing structural connections between elements of a complex system, and an interdisciplinary approach to solving complex problems.",
+        "sameAs": [
+            "https://www.wikidata.org/entity/Q30277529",
+            "https://en.wikipedia.org/wiki/Systems_analysis",
+            "https://systems-analysis.info/wiki/Системный_анализ",
+            "https://systems-analysis.info/eng/Systems_analysis"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Trang chủ",
+            "item": "https://systems-analysis.info/vi/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Phân tích hệ thống"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Điều hướng chính">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/vi/">Trang chủ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/sections.html">Chuyên mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/books.html">Sách</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/catalog.html">Danh mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/systems_analysis.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Đổi giao diện"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Đổi phông chữ"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Phân tích hệ thống</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>Phân tích hệ thống</strong> là một phương pháp khoa học nổi bật bởi tính tiếp cận liên ngành trong việc giải quyết các vấn đề phức tạp. Đối tượng của phân tích hệ thống là các vấn đề thực tiễn liên quan đến việc tạo mới và hiện đại hóa các hệ thống hiện có — tổ chức, kinh tế, kỹ thuật, thông tin, quân sự và nhiều lĩnh vực khác.</p>
+<p>Phân tích hệ thống được sử dụng để xác định nguyên nhân của những khó khăn hiện có, để đặt ra mục tiêu và xây dựng các phương pháp cũng như phương án nhằm loại bỏ vấn đề. Nó đóng vai trò như một người tổ chức và điều phối, dựa trên tiếp cận liên ngành để kết hợp và tập trung một cách hiệu quả nỗ lực của một nhóm chuyên gia vào việc giải quyết một <a href="/vi/problem.html" class="text-link">vấn đề</a> cụ thể. Việc tích hợp một cách hệ thống các thành tựu từ nhiều lĩnh vực tri thức khác nhau giúp giải quyết được những vấn đề không thể giải quyết trong khuôn khổ của từng ngành riêng lẻ hay các cách tiếp cận chuyên biệt.</p>
+<p>Phân tích hệ thống được tạo ra như một phương pháp hỗ trợ ra quyết định chiến lược. Nó cho phép lựa chọn một cách có căn cứ các chiến lược tối ưu trong những tình huống phức tạp. Ngày nay, phân tích hệ thống đã phát triển từ một phương pháp khuyến nghị cho các nhà quản lý lựa chọn phương án hành động tối ưu, trở thành một cách tiếp cận khoa học ứng dụng, hiện thực hóa tiếp cận hệ thống trong nghiên cứu.</p>
+<p><strong>Phân tích hệ thống hiện đại:</strong></p>
+<ul>
+  <li>xác lập các mối quan hệ nhân quả đã góp phần làm phát sinh vấn đề;</li>
+  <li>phân tích các phương án giải quyết vấn đề hệ thống, có tính đến các ràng buộc, rủi ro và điều kiện môi trường bất định;</li>
+  <li>tổ chức các nghiên cứu khoa học và ứng dụng liên ngành;</li>
+  <li>đưa ra các khuyến nghị có căn cứ về lựa chọn tối ưu hoặc phương án hành động hợp lý trong các tình huống quản lý phức tạp;</li>
+  <li>sử dụng các phương pháp mô hình hóa để nghiên cứu vấn đề;</li>
+</ul>
+<p><strong>Đối tượng nghiên cứu của phân tích hệ thống:</strong></p>
+<ul>
+  <li>các phương pháp chẩn đoán và giải quyết vấn đề phức tạp bằng tiếp cận hệ thống;</li>
+  <li>các cách thức tổ chức nghiên cứu liên ngành nhằm giải quyết vấn đề;</li>
+  <li>các phương pháp và mô hình để nghiên cứu và thiết kế toàn diện các hệ thống phức tạp.</li>
+</ul>
+<p><strong>Những đặc điểm nổi bật của phân tích hệ thống:</strong></p>
+<ul>
+  <li>sử dụng các khái niệm của lý thuyết hệ thống để mô tả các đối tượng nghiên cứu;</li>
+  <li>nghiên cứu các quá trình đặt mục tiêu;</li>
+  <li>xây dựng các công cụ để làm việc với các chỉ tiêu mục tiêu;</li>
+  <li>được áp dụng để giải quyết các vấn đề cụ thể;</li>
+  <li>tính đến đặc thù của các tình huống có vấn đề;</li>
+  <li>được sử dụng khi một vấn đề không thể được giải quyết ngay bằng các phương pháp hình thức;</li>
+  <li>dành sự chú ý cho việc mô tả vấn đề và xây dựng bài toán;</li>
+  <li>kết hợp các phương pháp phân tích định lượng và định tính;</li>
+  <li>sử dụng tri thức của các chuyên gia trong nhiều lĩnh vực khác nhau;</li>
+  <li>tổ chức việc ra quyết định tập thể;</li>
+  <li>sử dụng các phương pháp luận xác định trình tự và nội dung các giai đoạn phân tích;</li>
+  <li>sử dụng các phương pháp hệ thống để phân rã các vấn đề lớn thành các bài toán riêng lẻ;</li>
+</ul>
+<p><strong>Phân tích hệ thống có mối liên hệ chặt chẽ với các ngành và lĩnh vực khoa học sau:</strong></p>
+<ul>
+  <li>lý thuyết hệ thống tổng quát và tiếp cận hệ thống;</li>
+  <li>vận trù học và tối ưu hóa;</li>
+  <li>lý thuyết ra quyết định;</li>
+  <li>lý thuyết điều khiển và quản lý;</li>
+  <li>kỹ thuật hệ thống;</li>
+  <li>mô hình hóa toán học;</li>
+  <li>phân tích dữ liệu và thống kê;</li>
+  <li>khoa học máy tính và trí tuệ nhân tạo;</li>
+  <li>triết học và phương pháp luận khoa học.</li>
+</ul>
+        </div>
+      </article>
+    </div>
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Bài viết</h2>
+    <ul>
+      <li><a href="/vi/system.html">Hệ thống</a></li>
+      <li><a href="/vi/system_terminus.html">Khái niệm hệ thống</a></li>
+      <li><a href="/vi/system_def.html">Các định nghĩa về hệ thống</a></li>
+      <li><a href="/vi/methodology_sa.html">Phương pháp luận phân tích hệ thống</a></li>
+      <li><a href="/vi/economics.html">Phân tích hệ thống trong kinh tế học</a></li>
+      <li><a href="/vi/systems_thinking.html">Tiếp cận hệ thống</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Về phân tích hệ thống</h2>
+    <ul>
+      <li><a href="/vi/systems_analysis_optner.html">Phân tích hệ thống trong giải quyết các vấn đề kinh doanh và công nghiệp: Optner</a></li>
+      <li><a href="/vi/systems_analysis_golubkov.html">Tiếp cận hệ thống trong lập kế hoạch dài hạn: Golubkov</a></li>
+      <li><a href="/vi/systems_analysis_clelandking.html">Phân tích hệ thống và quản lý dự án: Cleland, King</a></li>
+      <li><a href="/vi/systems_analysis_nikanorov.html">Phân tích hệ thống và tiếp cận hệ thống: Nikanorov</a></li>
+      <li><a href="/vi/systems_analysis_pt.html">Phân tích hệ thống: Peregudov, Tarasenko</a></li>
+      <li><a href="/vi/systems_analysis_ch.html">Phân tích hệ thống trong kinh tế học: Chernyak</a></li>
+      <li><a href="/vi/systems_analysis_pospelov.html">Phân tích hệ thống: Pospelov</a></li>
+      <li><a href="/vi/systems_analysis_q.html">Phân tích hệ thống: Quade</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Tải xuống</h2>
+    <ul>
+      <li>Tải xuống bài thuyết trình “Phân tích hệ thống”. PDF, 55 trang</li>
+      <li><a href="/vi/systems_analysis_book.html">Tải xuống tài liệu về phân tích hệ thống</a></li>
+      <li><a href="/vi/systems_research.html">Tải xuống niên giám Systems Research 1969–1988</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Systems_analysis">Bài viết “Systems analysis” trên Wikipedia</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Đường dẫn điều hướng">
+    <a href="/vi/">Trang chủ</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Phân tích hệ thống</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Đổi giao diện"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/systems_analysis.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/vi/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Đổi giao diện"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710ee5f8111e13',t:'MTc4ODczNTI5NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

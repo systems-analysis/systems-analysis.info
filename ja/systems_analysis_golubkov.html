@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>システム分析：ゴルブコフ</title>
+<meta name="description" content="Е・П・ゴルブコフによるシステム分析の方法：数学的方法、システムの形式化された表現の方法と、マネジメントおよび組織設計の課題におけるその適用領域。">
+<meta name="keywords" content="システム分析,長期計画,ゴルブコフ,システム,解法,問題,基準,研究">
+<link rel="canonical" href="https://systems-analysis.info/ja/systems_analysis_golubkov.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/systems_analysis_golubkov.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/systems_analysis_golubkov.html">
+<link rel="alternate" hreflang="ja" href="https://systems-analysis.info/ja/systems_analysis_golubkov.html">
+<meta property="og:title" content="システム分析：ゴルブコフ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/ja/systems_analysis_golubkov.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Е・П・ゴルブコフによるシステム分析の方法：数学的方法、システムの形式化された表現の方法と、マネジメントおよび組織設計の課題におけるその適用領域。">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="ja_JP">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/ja/systems_analysis_golubkov.html#article",
+    "headline": "システム分析：ゴルブコフ",
+    "description": "Е・П・ゴルブコフによるシステム分析の方法：数学的方法、システムの形式化された表現の方法と、マネジメントおよび組織設計の課題におけるその適用領域。",
+    "url": "https://systems-analysis.info/ja/systems_analysis_golubkov.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "ja",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/ja/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/ja/systems_analysis_golubkov.html"
+    },
+    "keywords": [
+        "システム分析",
+        "長期計画",
+        "ゴルブコフ",
+        "システム",
+        "解法",
+        "問題",
+        "基準",
+        "研究"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "部門計画におけるシステム分析の活用",
+        "author": {
+            "@type": "Person",
+            "name": "Golubkov E.P."
+        },
+        "datePublished": "1977",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Ekonomika"
+        },
+        "inLanguage": "ru"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-08-22",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "長期計画におけるシステムアプローチ",
+        "author": [
+            {
+                "@type": "Person",
+                "name": "Golubkov E.P."
+            },
+            {
+                "@type": "Person",
+                "name": "Raizenberg B.A."
+            },
+            {
+                "@type": "Person",
+                "name": "Pekarsky L.S."
+            }
+        ],
+        "datePublished": "1975",
+        "inLanguage": "ru"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ホーム",
+            "item": "https://systems-analysis.info/ja/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "システム分析",
+            "item": "https://systems-analysis.info/ja/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "システム分析：ゴルブコフ"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/ja/">ホーム</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/sections.html">セクション</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/Systems_Analysis_Wiki_Catalog_%28%E6%97%A5%E6%9C%AC%E8%AA%9E%29">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/books.html">書籍</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/catalog.html">カタログ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/systems_analysis_golubkov.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Toggle theme"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Toggle font"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">システム分析：ゴルブコフ</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>ゴルブコフ、ライゼンベルク、ペカルスキー『長期計画におけるシステムアプローチ』1975年（ロシア語）。</p>
+<p>システム分析は、複雑な<a href="/ja/problem.html" class="text-link">問題</a>（技術的、自然科学的、経済的、社会政治的なものなど）を解決するための科学的方法と実践的技法の総体である。</p>
+<p>なによりもまず、共通の<a href="/ja/goal.html" class="text-link">目標</a>を達成するために協働する、相互に関連した要素の統一体としての<a href="/ja/system.html" class="text-link">システム</a>という概念を用いる。システムが全体として備える性質は、それを構成する要素の性質とは異なる。いかなるシステムも、その要素の作用の仕方から直接には導かれない固有の法則性によって特徴づけられる。</p>
+<p>システムの主要な部分は、入力、プロセス（構造）、出力である。システムの入力は複合的な概念である。一方では、システムに入り、その内部で一定の変換を受ける実体である。他方では、外部（周囲）環境、すなわちシステムに影響を及ぼす要因と現象の総体（自然条件、対外政策の情勢、市場の状況）である。入力にはまた、システムの要素に定められた作動の様式、たとえばシステムの作動の手順、規則、制約、目標を定める指示、規程、命令も含まれる。</p>
+<p>システムの第二の部分はその内部構造である。すなわち、入力を通じてシステムに入る物質、エネルギー、情報が通過する経路と、それらを変換するプロセスあるいは操作である（経済システムの場合、これは物的資源、労働資源、財務資源の再生産のプロセスである）。</p>
+<p>システムの第三の部分は出力、すなわちその活動の産物あるいは結果である。</p>
+<p>外部環境との相互作用の度合いにもとづいて、システムは開放系と閉鎖系に分けられる。開放系は環境と物質、エネルギー、情報を活発に交換するのに対し、閉鎖系すなわち孤立系は、交換が比較的少ない状態で機能する（たとえば計画・経済情報の処理の閉じたサイクル、あるいは閉じた技術サイクル）。システムは物質について、エネルギーについて、情報についてそれぞれ別々に閉鎖的でも開放的でもありうることに注意すべきである。システムは自然の境界をもつか、研究目的にもとづいて設定された境界をもつ。後者の場合、システムの境界は研究者が定める。</p>
+<p>同一の対象を、いくつかの異なるシステムとして表現することができる。製造企業を、機械、技術プロセス、材料、およびそれらの機械で加工される製品の集合とみなすならば、企業は技術システムとして現れる。企業を別の観点から見ることもできる。すなわち、労働者の生産手段に対する関係、労働過程への参加とその成果の分配、より広い経済システムのなかでの企業の位置などを検討する場合である。この場合、企業は経済システムである。</p>
+<p>社会の発展と科学技術革命の過程で、マネジメントの領域に大規模システムと呼ばれる新しい研究対象が現れた。さまざまな論者の見解を一般化すると、大規模システムの最も重要な特徴として次のものを挙げることができる。</p>
+<ul>
+  <li>明確に表れた局所的性質をもつサブシステムが存在し、それらが合わさって大規模システムを構成すること。</li>
+  <li>システムの目的志向性と可制御性、すなわち、より高次のシステムのなかで設定され調整される共通の目標と全般的な目的が存在すること。</li>
+  <li>システムの複雑な階層的（多層的）組織構造。集権的な管理と部分（サブシステム）の自律性との結合、異なる階層の要素間の垂直的連関、同一階層の要素間の水平的連関を備えていること。</li>
+  <li>システムの規模の大きさ、すなわち要素、入力、出力の数が多く、機能が多様であること。</li>
+  <li>挙動の一体性と複雑さ。変数間の関係が複雑に絡み合い、フィードバックの環によって一つの変数の変化が多くの変数の変化をもたらすこと。</li>
+</ul>
+<p>システム分析は、全体としては検討しにくい大規模システムを、相互に作用する複数のより小さなシステム、すなわちサブシステムに分割するための特別な技法を与える。</p>
+<p>システム分析の重要な概念のなかには、サイバネティクスの基本概念であるフィードバックがある。質的に異なるシステムにおける管理の組織のあいだの類似性を明らかにしたのは、まさにこの概念であった。フィードバックとは、システムの出力と入力のあいだに、直接に、あるいはシステムのほかの要素を経由して（たとえば制御装置を経由して）連絡の経路が存在することを意味する。フィードバックによって、被制御システムの機能に関するデータがその出力から制御システムへ伝えられる。そこでこのデータは、作業の内容と規模を定めるデータ（たとえば計画）と比較される。システムの実際の状態と定められた状態とのあいだにずれがある場合、そのずれを解消するための方策が練られる。</p>
+<p>システム分析で用いられる重要な概念に不確実性の概念がある。不確実性という要因は、国民経済の計画とマネジメントの領域における多くの複雑な問題の解決に存在する。</p>
+<p>システム分析の過程で出会う不確実性は、研究している現象についての知識が不十分であることに起因することもあれば、下された決定の帰結が十分に長い期間にわたって現れ、十分な精度で予測できないことに起因することもある。</p>
+<p>不確実性のほかの原因としては、多くの現象を量的に評価できないこと、とりわけ意思決定における「より良い／より悪い」「より多い／より少ない」という概念を量的に解釈することの難しさ、問題の定式化が不正確であること、そして意思決定者の個人的特性が挙げられる。</p>
+<p>システム分析を特徴づけるのは、特定の科学的形式化ではなく、なによりも問題の研究に対する秩序立った、論理的に根拠づけられたアプローチである。システム分析の方法によって、複雑なシステムと状況、とりわけ目標、課題、行動方針を定める必要と結びついたものが研究される。</p>
+<p>システム分析は、複雑な問題を解決する可能なアプローチを研究する際に適用される方法の総体であると同時に、それらの問題について意思決定を行う過程で、専門家の知識、判断、直観を秩序づけ、より効果的に活用する手段でもある。言い換えれば、システム分析は研究者と意思決定者のための科学的な道具である。</p>
+<p>システム分析の課題は、意思決定者が直面している問題を、責任者が決定の主要な帰結をすべて自覚し、それを自らの行動において考慮できるような仕方で明らかにすることにある。量的な分析は、決定に責任を負う人が、可能な行動方針の評価により厳密に取り組み、決定を準備する専門家（システム分析者）には知られていないかもしれない付加的で形式化できない要因と考慮事項を踏まえて最良のものを選び出すのを助ける。システム分析は、生じた問題を解決する最も現実的な道筋を定め、提起された要求が最大限に充たされることを保証するのに役立つ。</p>
+<p>軍事におけるシステム分析の適用経験は、方法論としてのその発展に大きな影響を与え、それがこの分野および密接に関連する科学分野（オペレーションズ・リサーチ、システムエンジニアリング）の用語に一定の刻印を残した。</p>
+<p>異なる名称をもつシステム分析の個別の方向のあいだには、原理的な違いも明確に画された境界も存在しないことが多い。同時に、それぞれの方向は一定の特徴とニュアンスによって特徴づけられる。たとえばオペレーションズ・リサーチは通常、オペレーションの計画と組織に必要な量的な勧告を練り上げることにかかわる科学と理解される。ここでオペレーションとは、人、人の集団、あるいは人間・機械システムの、目的をもったあらゆる行動を指す。システムエンジニアリングは、大規模システムの個々の要素の機能の研究にもとづいて、それらを総合する方法をつくり出す。システムエンジニアリングの多くの方法と成果は技術システムへの適用において得られたものだが、それらはかなりの程度、経済的なものを含むほかの性質の対象へ移すことができる。</p>
+<p>マネジメントの決定を根拠づける方法論にシステム分析が登場したことは、良構造で形式化可能な問題（目標、道筋、基準が明確に定められ、オペレーションズ・リサーチの方法によって達成しうる問題）の解決から、不確実性の条件のもとで生じ、数学の言語に翻訳できない形式化不能な要素を含む悪構造の問題の解決への移行を画するものである。</p>
+<p>オペレーションズ・リサーチの専門家は、何が「より効果的な」遂行にあたるかについて明確な理解がある条件のもとで、数学的あるいは論理的な分析の方法を用いる。彼が仕事の目標やその成功を評価する方法を定めることに立ち入ることはまれである。それはシステム分析者の主要な課題の一つである。</p>
+<p>計画の専門家は、解決すべき問題を全体として見ているのだから、事実上つねにシステム分析者として行動している。システム分析の結果は、採用された基準の体系に左右される。基準の選択は分析の不可欠な一部である。分析の役割は、マネジメントの領域で一定の決定を下すためにどの基準を用いるのが適切かを確定することにある。</p>
+<p>オペレーショナル・アナリシスの一種である費用対効果分析は、ある行動方針を実施することによる効果と、その実施に必要な資源とを総合的に比較することからなる。</p>
+<p>システム分析と費用対効果分析の違いは、後者の場合、分析が、定式化された——多くの場合あらかじめ与えられた——目標のもとで資源を合理的に用いる方法を見いだすことに向けられている点にある。システム分析は問題をより広く立て、目標そのものを、一定の原則にしたがって行われる選択の対象として扱う。</p>
+<p>システム分析の方法論は、その諸原則の総体として、すなわち、さまざまなシステムとそのなかで生じるプロセスの具体的な分析を行う際に従うべき最も一般的で根本的な法則性として定義できる。</p>
+<p>システム分析を規定する原則は目的志向性である。いかなるシステムも、外部から設定された、あるいはシステム自身が能動的に形成した目標にしたがって存在し発展する。システム分析の立場からすれば、システムを定義し画するのは目標の総体であり、それがシステムとその活動を一つの全体へと統合する。</p>
+<p>システム分析の次の原則はシステムアプローチを適用する必要から導かれ、システム内部およびシステムと外部環境とのあいだの本質的な相互関係をすべて明らかにし研究すること、また個々の解を選ぶにあたってそれがシステム全体に及ぼす影響を考慮することからなる。</p>
+<p>システム分析では、同一の目標がいくつかの異なる手段と方法によって達成されうることを念頭に置かなければならない。ここから、生じた問題に対して複数の代替的な解を探索するというシステム分析の原則が導かれる。システムの構造、その組織、そしてそのなかで生じるプロセス（技術的、計画的、管理的なものなど）のありうる変種を、そのなかから最良のものを選ぶ目的で検討することは、システム分析の決定的な特徴である。</p>
+<p>システム分析の主要な課題が最適解を見いだすことである場合も多い。最適解とは、なんらかの基準にもとづいてほかより望ましいとされる解である。通常、なんらかの基準にもとづいて最適解を選ぶ際には、特定の行動戦略を実施することで得られる効果と、その実施に必要な資源の支出とが比較される。</p>
+<p>さまざまなシステムのなかで生じるプロセスの分析の深さと完全性は、その機能と発展の動的な性質がどの程度研究されているかによって大きく規定される。システム分析は、システムにおける静的な相互関係だけでなく動的な相互作用も理解し、ある時点でのシステムの状態だけでなく時間にともなうその変化も研究する必要から出発する。現象をその動態と発展において検討することも、システム分析の重要な原則である。</p>
+<p>システム分析の結果として得られる勧告に対する責任と、それにもとづいて下される決定に対する責任を分離するという原則は、システム分析者と、分析の結果にもとづいて行動する意思決定者との権利と責任の範囲を明確に画することを前提とする。決定を最終的に承認するにあたって、それに責任を負う者は、システム分析から得られた勧告とともに、分析者が考慮に入れなかった量的・質的な付加的考慮事項をいくつも踏まえることができる。</p>
+<p>複雑なシステムが研究され、その分析が構成部分（サブシステム、要素）の分析結果を一般化することによってのみ行いうる場合には、まず分析対象のシステム（問題）の構造と、それを要素に分割する可能性が研究される。次いで、最も重要な相互関係をすべて考慮に入れながら、その構造、機能、内部プロセスにしたがって、システムを構成部分へと順次分解（構造化）していく。研究対象のシステムを目的志向的に構造化するという原則は、いくつものシステム分析の方法、たとえば目標ツリー法において具体的な実践的表現を得ている。</p>
+<p>システム分析の適用領域は、解決される問題の複雑さと数学的方法を用いる可能性に応じて、おおまかに五つの水準に分けられる。</p>
+<ul>
+  <li>個々のオペレーションの計画とマネジメントの最適化。</li>
+  <li>システムの類型の選択、あるいは掲げられた目標を達成する最も効果的な道筋の選択。</li>
+  <li>新しいシステムの開発。</li>
+  <li>より高次の問題におけるシステムの位置と役割の決定。</li>
+  <li>国民経済の水準における経済システムの計画とマネジメント。</li>
+</ul>
+<p>この順序は、問題の複雑さ、不確実性の水準、そして具体的な行動を起こしうる勧告を練り上げることの難しさが増していくことに対応している。第一の水準では、分析は最大限に数学的な形をとり、形式論理的な道具と方法の利用にもとづくことができる。本質的にこれは、「より効果的」という概念が明確に定められている条件のもとでシステムの有効性を高めることに向けられたオペレーションズ・リサーチである。この領域の問題の主な特徴は、形式化された記述になじむ明確に画された構造をもつことである。残りの水準では、システム分析の適用は、多くの場合社会的な性格をもつ質的な要因と条件を研究する必要と必然的に結びつく。</p>
+<p>場合によっては、システム分析は矛盾を研究する必要と不可避的に結びつく。矛盾や不整合の例としては、不均衡な計画、ある種の資材や設備の供給の途絶、ある種の製品の生産量と消費量の伸びの不一致、新技術の導入の遅れにともなう矛盾などが挙げられる。</p>
+<p>第二および第三の水準における問題の分析には、既知のオペレーション、あるいはこれまで一度も行われたことのないオペレーションをよりよく遂行するための新しいシステムの設計が含まれる。この水準およびそれ以降の水準の問題を検討する際には、社会的・政治的要因を考慮することがますます重要になる。</p>
+<p>Е・П・ゴルブコフ『部門計画におけるシステム分析の活用』1977年（ロシア語）。</p>
+<p>システム分析の具体的な課題を解決する一般的な方法は分化し、きわめて多様な方法として具体化される。それらは採用する分類原理に応じてさまざまな群に分けられる。たとえば分析の方法と総合の方法、記述的方法と実験的方法などである。システム分析において形式的な要素がどの程度用いられるかに応じて、三つの方法群を区別できる。数学的（形式的）方法、ヒューリスティック（非形式的）方法、そして数学的・ヒューリスティックを組み合わせた方法である。</p>
+<p>システム分析の方法は、広い意味でも、狭く特定的な意味でも捉えることができる。広い意味では、システム分析の方法には、システムアプローチにもとづいて当面の問題を解くために適用される、上に挙げた三つの群のあらゆる方法が含まれる。この広い理解においては、システム分析の方法は問題解決の方法と同一であり、意思決定プロセスの個々の段階にしたがって分類できる。</p>
+<p>狭い意味では、システム分析の方法とは、システムの活動の目標の総体とその達成の最良の道筋を定めるため、<a href="/ja/model.html" class="text-link">モデル</a>と基準を選ぶため、システム（問題）を構成要素へ順次かつ方向づけられた仕方で分解するため、それらの要素間の相互関係と相互依存を定めるため、そして個々の目標、方策、基準、モデルの相対的な重要度（選好）を定めるために作られた特定の方法である。したがってこれらは、形式的・数学的方法の適用が限られている場合に悪構造の問題を解くことを主眼とする方法である。</p>
+<p>システム分析における数学的方法の主要な部分は、オペレーションズ・リサーチの方法（各種の計画法、ゲーム理論、待ち行列理論など）からなる。これらの方法はシステム分析で広く適用されるが、解決すべき問題の本質を研究するためというより、その個々の側面を研究するために用いられる。</p>
+<p><strong>システム分析において数学的方法が最もよく用いられるのは、次の場合である。</strong></p>
+<ul>
+  <li>システムの機能の結果を特徴づける指標の数値を定めるため。</li>
+  <li>特定の結果の達成に至る最良の行動方針を見いだすため（最適化）。</li>
+  <li>ヒューリスティックで創造的な性質のデータを処理し分析するため。</li>
+</ul>
+<p>経済問題の解決において数学的方法の役割が高まっているとはいえ、それを万能の解決手段とみなすことはできない。蓄積された経験と直観にもとづく方法、すなわちヒューリスティック（非形式的）な方法は依然として不可欠である。</p>
+<p>数学的方法を用いて提起された問いに正確な答えを得たいという願望は、技術者や経済学者を自らの仕事と研究上の必要を特定する方法論に没頭させ、その努力の最終的な結果が、追加の研究が必要であるという結論にとどまってしまうことにもなりかねない。</p>
+<p>一方、ある経済的プロセス、現象、結果についての一定のデータが欠けている条件のもとでは、十分に明確でも理解されてもいない問いに正確な答えを与えようとするよりも、最も重要な問いに近似的な答えを得るほうがよい。システムの目標、その実現の代替案、モデル、基準を定式化する手続きを完全に形式化することはできない。</p>
+<p>そうした専門家による検討や会議の進め方は、しばしば伝統によって、つまるところ経験によって規定されており、多くの点で一つの技芸をなしている。しかし次第に、ヒューリスティックな由来をもつ素材を処理するさまざまな数学的方法が、この領域にも浸透しはじめている。</p>
+<p>ヒューリスティックな方法の特徴は、専門家が出来事を評価するにあたって、自らの経験と直観にもとづく情報に大きく依拠する点にある。この情報は専門家の個人的資質にきわめて大きく左右される。直観的な意思決定の方法を用いる場合、専門家はその遂行の手順を言葉で言い表すことができない。</p>
+<p>直観は、注意深く考え抜かれ吟味された一連の段階の代わりに、解に直接かつ飛躍的に到達することを前提とする。直観的に思考する人はしばしば、知覚の過程で状況のどの側面を捉えたのか、記憶に蓄えられた情報のどの部分を用いたのか、初期のデータからどのような「推論」によって決定に至ったのかを報告することができない。</p>
+<p>経験にもとづくヒューリスティックな意思決定の方法は、現在生じているものと同一の問題を過去に分析した経験から出発する（過去との類推にもとづく決定）。非形式的な方法には、権威に訴えることにもとづく意思決定（経営陣、専門家、あるいは科学書や教科書といった参照資料に助言と指針を求めること）も含まれる。</p>
+<p><strong>システム分析の方法の適用領域</strong></p>
+<ol>
+  <li>目標の集合とその達成の道筋を定めること（たとえば、部門計画の目標を定め、その実施の複数の代替案を練り上げること）。</li>
+  <li>個々の目標、道筋、方策、結果などの選好（順位づけ）を定めること（たとえば、新技術に関する部門計画において個々の方策を実施する優先順位と時期を定めること）。</li>
+  <li>目標、プログラム、計画などを要素へ分解すること（たとえば、産業全体に課された課題にもとづいて個々の合同企業体や企業の計画を作成すること）。</li>
+  <li>掲げられた目標を達成する最良の道筋を選ぶこと（たとえば、計画に盛り込むことが提案されたさまざまな組織的・技術的方策を分析し比較すること）。</li>
+  <li>目標とその達成の道筋を比較するための基準を選ぶこと（たとえば、部門計画のさまざまな代替案の有効性を評価する基準を選ぶこと）。</li>
+  <li>目標とその達成の道筋を選ぶためのモデルを構築すること（たとえば、換算費用の最小化を基準として産業の各企業に計画課題を配分するモデル）。</li>
+  <li>個々のサブシステムの機能の分析データを一般化して、システム全体の機能の最適性について結論を導くこと（たとえば、産業の個々の合同企業体や企業で採用されている計画手続きの分析にもとづいて、部門計画を策定する最適な枠組みを作成すること）。</li>
+</ol>
+<p>ヒューリスティックな方法と組み合わせ方法とのあいだの境界が、ある程度まで便宜的なものであることは指摘しておくべきである。両者のあいだに厳密な線引きは存在しない。現在では、ほとんどすべてのヒューリスティックな方法の適用において、ヒューリスティックな性質の元データを処理する数学的な技法が用いられている。</p>
+<p>システム分析では、問題の定式化とその解決条件の確定の度合いに応じて、特定の解法の使用をあらかじめ定めるさまざまな種類の課題がありうる。これらの課題は、オペレーションズ・リサーチで用いられる分類にしたがって三つの群に分けられる。ただしここでも一定の補足が必要である。</p>
+<ol>
+  <li>確定的問題。各戦略が一意の帰結をもたらす状況において、最良の解の代替案を選ぶ課題である（たとえば、ある計画案が百パーセントの確率で所要の結果をもたらす場合）。</li>
+  <li>確率的問題。各行動が異なる帰結をもたらしうるが、その確率が既知であるか推定可能である状況において、最良の解の代替案を選ぶ課題である（たとえば、各計画案が一定の確率で既知の結果をもたらす場合）。</li>
+  <li>不確実性下の問題。異なる帰結が得られる確率が未知であるか、検討中の戦略のいずれかを選んだときにどのような結果が得られうるかがまったく未知である状況において、最良の解の代替案を選ぶ課題である。</li>
+</ol>
+<p>システム分析の課題にこうした用語を導入することは、ある程度まで便宜的である。たとえば不確実性という要因は、確率的問題の解決にも存在するからである。</p>
+<p>確率的問題と不確実性下の問題の類には、ありうる戦略の完全な集合が定められておらず、既知の戦略だけが検討されるような課題も含まれることを念頭に置くべきである。そうした状況は意思決定の実務に特徴的であり、そこでは生じた問題を解決するありうる代替案のすべてではなく、限られた数の代替案だけが検討される。</p>
+<p>確定的問題と不確実性下の問題は、確率的問題の極限の場合（たとえば帰結についての完全な知識と完全な無知）とみなすことができる。そのため、まず確率的問題を検討し、そののち確定的問題と不確実性下の問題の検討へ進むことにする。</p>
+<p>確率的問題を解く際には、選好度の期待値を最大化することによって最良の解の代替案が選ばれる。この基準はこの種の課題の大半を解く際に適用される。</p>
+<p>たとえば技術経済的な計算によって、外部環境のさまざまな条件のもとである戦略の有効性を定めることができる場合には、選好度の値の代わりに、ある解の代替案を実施することによる効果を特徴づける具体的な値を用いなければならない。解の選択についての最終的な勧告は、検討されている解の代替案について異なる帰結が得られる確率を考慮して練り上げるべきである。</p>
+<p>確定的問題は、ありうる帰結のそれぞれが得られる確率が一かゼロのいずれかに等しいと仮定した、確率的問題の極限の場合とみなすことができる。</p>
+<p>確定的問題の例としては、たとえば線形計画法の問題が挙げられる。</p>
+<p>そうした課題を解く際に適用される基準は、ありうる帰結が実現する確率が一かゼロのいずれかに等しい、選好度の期待値の最大化の極限の場合を表しうる。確定的問題を解く際の基準としては、具体的な経済的意味をもつさまざまな指標（換算費用、収益性の水準、労働生産性など）がしばしば用いられる。</p>
+<p>システム分析の課題として最も特徴的なのは不確実性下の問題である。現実の場合、さまざまな帰結が得られる確率の推定がまったく存在しないように当初は見えるとき、システム分析者は通常、特別な調査を行ってこれらの確率についての情報を得るよう最大限の努力を払い、たいていは成功する。しかし、確率の推定がまったく未知である場合もありうる。</p>
+<p>不確実性下の問題を解く際には、ミニマックス基準、マキシミン基準、一般化マキシミン基準（フルビッツの基準）、ミニマックス・リグレット基準（サベージの基準）、ラプラスの基準など、よく知られた基準が適用される。</p>
+<p>一つの課題を解く際に異なる基準を用いれば、通常は異なる結果が得られる。不確実性下の問題を解くための基準の選び方には二つのアプローチがある。第一は、新しい基準、あるいは決定基準を選ぶための要件を練り上げることである。第二のアプローチは、環境のさまざまな条件が実現する確率（ある戦略を実施することで得られる異なる帰結）についての、どれほど乏しいものであれ何らかの情報を用いるか、あるいはそれらの確率の推定を得るために実験を行うことからなる。それによって不確実性下の問題は確率的問題になる。</p>
+<p>どちらのアプローチも手間がかかり、通常は実務での実現が難しいが、第二のアプローチのほうが望ましい。第一のアプローチは、既知の基準のなかから最良のものを選ぶための新しい基準の探索へ、次いで検討中の基準のなかから基準を選ぶための基準の探索へと、際限なく続いてしまう。言い換えれば、「良い」基準に対する一定の根拠ある要件を満たすような、確率の推定にもとづかない決定基準は存在しない。</p>
+<p>不確実性下でありうる決定を評価する基準を定式化しようとする試みは、さまざまな条件のもとでの各行動方針の長所と短所をより見通しやすくしたいという志向を反映している。不確実性下で決定を選ぶ既存の基準のうち、あらゆる意思決定者を満足させうる普遍的なものは一つもない。</p>
+<p>システム分析の方法を互いに対立させるべきではない。それぞれに長所と短所があるが、すべての課題の解決に適した方法は一つもない。したがって最良の結果は、解決される問題の性質とそれが検討される水準に応じて、いくつかの方法を組み合わせることによって得られる。経済管理の最も低い水準で計画の課題を解く場合には、通常、十分に良構造の問題に出会い、それが数学的な分析方法の広い適用を可能にする。より高い水準では、目標をはじめとするシステム分析の要素はますます質的な性格を帯びるようになり、そのため非形式的な方法の重要性が高まる。</p>
+<p>経済システムにおける社会的プロセスのモデリングが困難であることは、数学的方法の適用をいっそう難しくする。同時に不確実性という要因の役割が増大し、形式的な方法によってそれを無視すれば誤った結論に至りかねない。</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="links">
+  <div class="links-section">
+    <h2>システム分析について</h2>
+    <ul>
+      <li><a href="/ja/systems_analysis.html">システム分析</a></li>
+      <li><a href="/ja/systems_analysis_optner.html">経営・産業問題解決のためのシステム分析：オプトナー</a></li>
+      <li><a href="/ja/systems_analysis_pospelov.html">システム分析と長期計画：ポスペロフ</a></li>
+      <li><a href="/ja/systems_analysis_clelandking.html">システム分析とプロジェクトマネジメント：クリーランド、キング</a></li>
+      <li><a href="/ja/systems_analysis_nikanorov.html">システム分析とシステムアプローチ：ニカノロフ</a></li>
+      <li><a href="/ja/systems_analysis_pt.html">システム分析：ペレグドフ、タラセンコ</a></li>
+      <li><a href="/ja/systems_analysis_q.html">システム分析：クエイド</a></li>
+      <li><a href="/ja/systems_analysis_book.html">システム分析に関する文献のダウンロード</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>関連記事</h2>
+    <ul>
+      <li><a href="/ja/system.html">システム</a></li>
+      <li><a href="/ja/system_terminus.html">システムの概念</a></li>
+      <li><a href="/ja/system_def.html">システムの定義</a></li>
+      <li><a href="/ja/methodology_sa.html">システム分析の方法論</a></li>
+      <li><a href="/ja/economics.html">経済学におけるシステム分析</a></li>
+      <li><a href="/ja/systems_thinking.html">システムアプローチ</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/ja/">ホーム</a> <span aria-hidden="true">/</span>
+    <a href="/ja/systems_analysis.html">システム分析</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">システム分析：ゴルブコフ</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Toggle theme"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/systems_analysis_golubkov.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">言語</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/ja/map.html">サイトマップ</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710a8589eba5ce',t:'MTc4ODczNTExNQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

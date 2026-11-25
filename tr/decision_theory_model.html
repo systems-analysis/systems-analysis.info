@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Karar Problemi</title>
+<meta name="description" content="Karar problemi, mevcut kısıtlar altında bir problem durumunu çözen olası seçeneklerden oluşan bir kümenin oluşturulmasından ve bu seçenekler arasından, gereksinimleri karşılayan tek bir en iyi seçeneğin veya birden fazla tercih edilen seçeneğin seçilmesinden ibarettir.">
+<meta name="keywords" content="seçenek,karar,sistem analizi,kısıtlar,problem,amaçlar,seçim,ölçüt,tercihler">
+<link rel="canonical" href="https://systems-analysis.info/tr/decision_theory_model.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/decision_theory_model.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/decision_theory_model.html">
+<link rel="alternate" hreflang="tr" href="https://systems-analysis.info/tr/decision_theory_model.html">
+<meta property="og:title" content="Karar Problemi">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/tr/decision_theory_model.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Karar problemi, mevcut kısıtlar altında bir problem durumunu çözen olası seçeneklerden oluşan bir kümenin oluşturulmasından ve bu seçenekler arasından, gereksinimleri karşılayan tek bir en iyi seçeneğin veya birden fazla tercih edilen seçeneğin seçilmesinden ibarettir.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="tr_TR">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/tr/decision_theory_model.html#article",
+    "headline": "Karar Problemi",
+    "description": "Karar problemi, mevcut kısıtlar altında bir problem durumunu çözen olası seçeneklerden oluşan bir kümenin oluşturulmasından ve bu seçenekler arasından, gereksinimleri karşılayan tek bir en iyi seçeneğin veya birden fazla tercih edilen seçeneğin seçilmesinden ibarettir.",
+    "url": "https://systems-analysis.info/tr/decision_theory_model.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "tr",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/tr/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/tr/decision_theory_model.html"
+    },
+    "keywords": [
+        "seçenek",
+        "karar",
+        "sistem analizi",
+        "kısıtlar",
+        "problem",
+        "amaçlar",
+        "seçim",
+        "ölçüt",
+        "tercihler"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "Karar Problemi",
+        "description": "Forming a set of possible alternatives that resolve a problem situation under existing constraints, and selecting the best among them.",
+        "sameAs": [
+            "https://systems-analysis.info/wiki/Задача_принятия_решения",
+            "https://systems-analysis.info/eng/Decision_problem"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Ana Sayfa",
+            "item": "https://systems-analysis.info/tr/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Karar Teorisi",
+            "item": "https://systems-analysis.info/tr/decision_theory.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Karar Problemi"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Ana gezinme">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menü</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/tr/">Ana Sayfa</a>
+        <span aria-hidden="true">·</span>
+        <a href="/tr/sections.html">Bölümler</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/tr/books.html">Kitaplar</a>
+        <span aria-hidden="true">·</span>
+        <a href="/tr/catalog.html">Katalog</a>
+        <span aria-hidden="true">·</span>
+        <a href="/decision_theory_model.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Temayı değiştir"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Yazı tipini değiştir"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Karar Problemi</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>Karar probleminin</strong> formülasyonu</p>
+<p>Karar problemi, mevcut kısıtlar altında bir problem durumunu çözen olası seçeneklerden oluşan bir kümenin oluşturulmasından ve bu seçenekler arasından, kendilerine dayatılan gereksinimleri karşılayan tek bir en iyi seçeneğin veya birden fazla tercih edilen seçeneğin seçilmesinden ibarettir. Biçimsel olarak, karar problemi D aşağıdaki genelleştirilmiş biçimde yazılabilir:</p>
+<p>D = ⟨F, A, X, G, P⟩</p>
+<p>Burada:</p>
+<p>F, ele alınan <a href="/tr/problem.html" class="text-link">problemin</a> içerik açısından tanımını ve gerekirse model temsilini, ulaşılacak amaç veya amaçların tanımını ve nihai sonucun biçimine ilişkin gereksinimleri içeren karar probleminin formülasyonudur;</p>
+<p>A, seçimin yapıldığı olası seçenekler kümesidir. Bunlar, problemin bağlamına bağlı olarak nesneler, adaylar, amaca ulaşma yolları, eylemler, kararlar ve benzeri biçimler alan gerçekten var olan seçenekler olabileceği gibi, sonsuz olabilecek, teorik olarak mümkün tüm seçeneklerin varsayımsal bir kümesi de olabilir. Bir seçim, problemi çözmek için en az iki olası seçenek bulunduğunda ortaya çıkar;</p>
+<p>X, seçenekleri ve onların ayırt edici özelliklerini tanımlayan öznitelikler (özellikler, parametreler) kümesidir. Öznitelikler, birincisi, seçeneklerde bulunan ve genellikle ölçülebilen belirli özellikleri karakterize eden nesnel göstergeleri; ikincisi ise, seçimde yer alan katılımcılar için önemli olan seçenek özelliklerini yansıtan, özel olarak seçilmiş veya oluşturulmuş ölçütlere göre verilen öznel değerlendirmeleri içerir;</p>
+<p>G, problemi çözmek için kabul edilebilir seçenekler alanını sınırlayan koşullar kümesidir. Kısıtlar, içerik açısından tanımlanabileceği gibi, seçenekler ve/veya öznitelikleri için belirli biçimsel gereksinimler şeklinde de belirtilebilir. Örneğin bunlar, belirli bir özniteliğin değerlerine ilişkin kısıtlar, farklı seçenekler için özniteliğin geçerliliğinin (ifade gücünün) değişen derecesi ya da gerçekte var olan seçenekler için belirli öznitelik değerlerinin aynı anda birleştirilmesinin mümkün olmaması gibi olabilir;</p>
+<p>P, bir veya birden fazla karar vericinin (KV) tercihlerini temsil eder; bu tercihler, problemi çözmek için olası seçenekleri değerlendirmenin ve karşılaştırmanın, kabul edilebilir seçenekleri belirlemenin ve en iyi veya kabul edilebilir seçeneği bulmanın temelini oluşturur. Karar problemi formülasyonunu basitleştirmek için, KV’nin tercihlerini tanımlayan bilgilerin bir kısmı sıklıkla kısıtlara dönüştürülür.</p>
+<p>Bir problem durumunu karakterize eden faktörler geleneksel olarak iki gruba ayrılır: kontrol edilebilir ve kontrol edilemeyen.</p>
+<ul>
+  <li>Kontrol edilebilir faktörler, seçimi KV’ye bağlı olan faktörlerdir ve esasen belirlenen amaçlar, bunlara ulaşmak için seçenekler, seçeneklerin öznel değerlendirmeleri ve amaca ulaşma derecesidir.</li>
+</ul>
+<ul>
+  <li>Kontrol edilemeyen faktörler KV’ye bağlı değildir. Bunlar seçeneklerin nesnel özniteliklerini belirler ve olası seçeneklerin seçimine ilişkin kısıtların bir kısmını oluşturur.</li>
+</ul>
+<p><strong>Faktörler ayrıca şu şekilde de sınıflandırılır:</strong></p>
+<ul>
+  <li>belirlenimci (deterministik), bilinen ve/veya önceden belirlenmiş kesin özelliklere sahip olanlar;</li>
+  <li>olasılıksal veya stokastik, bilinen ve/veya önceden belirlenmiş rastgele özelliklere sahip olanlar;</li>
+  <li>belirsiz veya bilinmeyen, belirsiz şekilde tanımlanmış ve/veya bilinmeyen özelliklere sahip, ancak bazen değerlerinin bilinen bir değişim aralığına sahip olanlar.</li>
+</ul>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>İlgili makaleler</h2>
+    <ul>
+      <li><a href="/tr/decision_theory.html">Karar Teorisi</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Gezinme yolu">
+    <a href="/tr/">Ana Sayfa</a> <span aria-hidden="true">/</span>
+    <a href="/tr/decision_theory.html">Karar Teorisi</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Karar Problemi</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Temayı değiştir"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/decision_theory_model.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/tr/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Temayı değiştir"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710ebc0d8f1e13',t:'MTc4ODczNTI4Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

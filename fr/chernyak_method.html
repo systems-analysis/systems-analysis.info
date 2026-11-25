@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Méthodologie de Tcherniak</title>
+<meta name="description" content="La méthode d’analyse des systèmes de Yu.I. Tcherniak comprend 12 étapes successives — de l’analyse du problème et la définition du système jusqu’à l’élaboration d’un programme de développement global. Chaque étape est décrite en détail.">
+<meta name="keywords" content="analyse des systèmes,méthode de Tcherniak,objectif,système,problème,gestion,décision">
+<link rel="canonical" href="https://systems-analysis.info/fr/chernyak_method.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/chernyak_method.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/chernyak_method.html">
+<link rel="alternate" hreflang="fr" href="https://systems-analysis.info/fr/chernyak_method.html">
+<meta property="og:title" content="Méthodologie de Tcherniak">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/fr/chernyak_method.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="La méthode d’analyse des systèmes de Yu.I. Tcherniak comprend 12 étapes successives — de l’analyse du problème et la définition du système jusqu’à l’élaboration d’un programme de développement global. Chaque étape est décrite en détail.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="fr_FR">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/fr/chernyak_method.html#article",
+    "headline": "Méthodologie de Tcherniak",
+    "description": "La méthode d’analyse des systèmes de Yu.I. Tcherniak comprend 12 étapes successives — de l’analyse du problème et la définition du système jusqu’à l’élaboration d’un programme de développement global. Chaque étape est décrite en détail.",
+    "url": "https://systems-analysis.info/fr/chernyak_method.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "fr",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/fr/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/fr/chernyak_method.html"
+    },
+    "keywords": [
+        "analyse des systèmes",
+        "méthode de Tcherniak",
+        "objectif",
+        "système",
+        "problème",
+        "gestion",
+        "décision"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Systems Analysis in Economic Management",
+        "author": {
+            "@type": "Person",
+            "name": "Chernyak Yu.I."
+        },
+        "datePublished": "1975",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Ekonomika"
+        },
+        "inLanguage": "fr"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Systems Analysis in Economic Management",
+        "author": {
+            "@type": "Person",
+            "name": "Chernyak Yu.I."
+        },
+        "datePublished": "1975",
+        "inLanguage": "fr"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://systems-analysis.info/fr/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Analyse des systèmes",
+            "item": "https://systems-analysis.info/fr/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Méthodologie de Tcherniak"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Navigation principale">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/fr/">Accueil</a>
+        <span aria-hidden="true">·</span>
+        <a href="/fr/sections.html">Sections</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/fr/books.html">Livres</a>
+        <span aria-hidden="true">·</span>
+        <a href="/fr/catalog.html">Catalogue</a>
+        <span aria-hidden="true">·</span>
+        <a href="/chernyak_method.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Changer de thème"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Changer de police"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Méthodologie de Tcherniak</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Compte tenu de l’énorme et pour ainsi dire illimitée diversité des problèmes résolus par les méthodes de l’analyse des systèmes, il serait difficile d’espérer élaborer un ensemble unique d’outils adapté à tous les cas. Aux différentes étapes de la recherche — qui progresse d’un énoncé intuitif et plutôt vaguement formulé du problème vers le choix de solutions optimales au moyen de méthodes mathématiques rigoureuses — un arsenal scientifique très diversifié est naturellement mis en œuvre. Il paraît donc opportun d’établir d’abord la séquence fondamentale des étapes de l’analyse des systèmes.</p>
+<p>L’analyse des méthodes proposées par différents auteurs conduit à la conclusion qu’il existe une unité fondamentale dans la séquence de conduite de l’analyse des systèmes, indépendamment de l'<a href="/fr/goal.html" class="text-link">objectif</a> ou de l’objet étudié. Néanmoins, nous ne considérons pas une approche éclectique comme suffisamment acceptable dans ce cas et proposons une nouvelle classification des étapes de l’analyse des systèmes. Elle prend en compte toutes les principales étapes des différentes classifications, en suivant le principe de la séquence logique et en se rattachant aux propositions fondamentales de la théorie des systèmes qui sous-tendent l’analyse des systèmes. Le bien-fondé et la commodité de la classification proposée ont été vérifiés lors d’une série d’études systémiques à tous les grands niveaux de gestion.</p>
+<p>La séquence fondamentale des étapes et des tâches de l’analyse des systèmes</p>
+<ol>
+  <li>Analyse du problème.</li>
+  <li>Définition du système.</li>
+  <li>Analyse de la structure du système.</li>
+  <li>Formulation de l’objectif général et du critère du système.</li>
+  <li>Décomposition de l’objectif, identification des besoins en ressources et en processus.</li>
+  <li>Identification des ressources et des processus ; synthèse de l’objectif de bas en haut.</li>
+  <li>Prévision et analyse des conditions futures.</li>
+  <li>Évaluation des objectifs et des moyens.</li>
+  <li>Choix des alternatives.</li>
+  <li>Diagnostic du système existant.</li>
+  <li>Élaboration d’un programme global de développement.</li>
+  <li>Conception d’une organisation pour la réalisation des objectifs.</li>
+</ol>
+<p>Description des étapes</p>
+<p>Étape 1. <strong>Analyse du problème</strong></p>
+<ul>
+  <li>Le problème existe-t-il ?</li>
+  <li>Formulation précise du problème.</li>
+  <li>Analyse de la structure logique du problème.</li>
+  <li>Évolution du problème dans le passé et dans le futur.</li>
+  <li>Liens externes du problème avec d’autres problèmes.</li>
+  <li>Résolubilité fondamentale du problème.</li>
+</ul>
+<p>La question de savoir si un <a href="/fr/problem.html" class="text-link">problème</a> existe réellement revêt une importance primordiale, car consacrer des efforts considérables à la résolution de problèmes inexistants n’est en aucun cas une exception, mais plutôt un cas assez fréquent. La formulation correcte et précise du problème constitue la première étape nécessaire de toute étude systémique. Comme on le sait, une formulation réussie du problème peut équivaloir à la moitié de sa solution.</p>
+<p>Étape 2. <strong>Définition du système</strong></p>
+<ul>
+  <li>Précision de la tâche.</li>
+  <li>Détermination de la position de l’observateur.</li>
+  <li>Définition de l’objet.</li>
+  <li>Identification des éléments (détermination des limites de la décomposition du système).</li>
+  <li>Identification des sous-systèmes.</li>
+  <li>Définition de l’environnement.</li>
+</ul>
+<p>Pour construire un <a href="/fr/system.html" class="text-link">système</a>, le problème doit être décomposé en un ensemble de tâches clairement formulées. Dans le cas d’un système de grande dimension, ces tâches forment une hiérarchie ; dans un système complexe, elles forment un spectre — c’est-à-dire que des tâches tout à fait différentes, dans des langages différents, seront résolues à propos d’un même objet. La position de l’observateur détermine fondamentalement le critère de résolution du problème. La définition de l’objet n’est facile qu’en apparence ; dans certains cas, elle constitue la plus grande difficulté de l’étude.</p>
+<p>Étape 3. <strong>Analyse de la structure du système</strong></p>
+<ul>
+  <li>Détermination des niveaux hiérarchiques (dans les grands systèmes).</li>
+  <li>Détermination des aspects et des langages (dans les systèmes complexes).</li>
+  <li>Détermination des processus et des fonctions (dans les systèmes dynamiques).</li>
+  <li>Identification et précision des processus de gestion et des canaux d’information.</li>
+  <li>Précision des sous-systèmes.</li>
+  <li>Précision des processus courants (opérations en cours) et des processus de développement (orientés vers les objectifs).</li>
+</ul>
+<p>L’identification arbitraire des sous-systèmes et des processus qui leur sont associés voue inévitablement une étude systémique à l’échec. Alors que dans les systèmes techniques — du moins dans leur partie matérielle — la structure des sous-systèmes est clairement discernable, dans les systèmes de gestion économique, toutes les relations structurelles sont non seulement non évidentes, mais aussi fortement dissimulées derrière des relations de subordination administrative. Lors de la résolution des problèmes courants de gestion économique, tant objectivement — du point de vue de la répartition quantitative des efforts — que subjectivement — dans l’esprit du personnel des organisations —, les procédures routinières masquent les objectifs et les processus de développement. Identifier et distinguer ces objectifs et processus des opérations courantes exige non seulement une analyse logique rigoureuse, mais aussi une communication efficace avec le personnel de direction.</p>
+<p>Étape 4. <strong>Formulation de l’objectif général et du critère du système</strong></p>
+<ul>
+  <li>Identification des objectifs imposés par le supersystème.</li>
+  <li>Identification des objectifs et des contraintes de l’environnement.</li>
+  <li>Formulation de l’objectif général.</li>
+  <li>Détermination du critère.</li>
+  <li>Décomposition des objectifs et des critères entre les sous-systèmes.</li>
+  <li>Synthèse du critère général à partir des critères des sous-systèmes.</li>
+</ul>
+<p>La formulation de l’objectif général d’une organisation, et surtout l’élaboration d’un critère d’efficacité du système, n’est nullement possible par un sondage de l’opinion publique ; il s’agit d’une procédure logique complexe s’inscrivant dans le cadre des concepts de la théorie des systèmes, qui exige néanmoins une connaissance approfondie de l’économie et de la technologie propres à l’objet étudié.</p>
+<p>Étape 5. <strong>Décomposition de l’objectif, identification des besoins en ressources et en processus</strong></p>
+<ul>
+  <li>Formulation des objectifs de rang supérieur.</li>
+  <li>Formulation des objectifs des processus courants.</li>
+  <li>Formulation des objectifs d’efficience.</li>
+  <li>Formulation des objectifs de développement.</li>
+  <li>Formulation des objectifs et des contraintes externes.</li>
+  <li>Identification des besoins en ressources et en processus.</li>
+</ul>
+<p>Dans les grandes et complexes entités économiques (et c’est précisément avec de telles entités que traite l’analyse des systèmes), l’objectif général du système est si éloigné des moyens concrets de sa réalisation que le choix d’une solution exige un travail considérable et laborieux pour relier l’objectif aux moyens de sa mise en œuvre par la décomposition de l’objectif. Ce travail important et laborieux est, en règle générale, au cœur de l’analyse des systèmes. Il a donné naissance à la méthode de l’arbre des objectifs, qui constitue la principale — sinon la seule — réalisation instrumentale de l’analyse des systèmes.</p>
+<p>Étape 6. <strong>Identification des ressources et des processus ; synthèse de l’objectif de bas en haut</strong></p>
+<ul>
+  <li>Évaluation de la technologie et des capacités existantes.</li>
+  <li>Évaluation de l’état actuel des ressources.</li>
+  <li>Évaluation des projets en cours de réalisation et prévus.</li>
+  <li>Évaluation des possibilités d’interaction avec d’autres systèmes.</li>
+  <li>Évaluation des facteurs sociaux.</li>
+  <li>Synthèse de l’objectif de bas en haut.</li>
+</ul>
+<p>Dans un nombre considérable de cas, en particulier lorsqu’il s’agit de systèmes non productifs et surtout non économiques (santé, éducation et toute une série d’autres), il n’est pas possible d’exprimer explicitement l’objectif et le critère d’efficacité du développement par un raisonnement logique. La voie de l’analyse à partir des « besoins naturels de l’homme » est inacceptable pour le chercheur en raison de leur développement et de leur évolution continus. Dans de tels cas, il faut procéder dans une certaine mesure selon la voie traditionnelle : à partir d’une analyse de la situation actuelle et du niveau atteint, par une prévision successive.</p>
+<p>Étape 7. <strong>Prévision et analyse des conditions futures</strong></p>
+<ul>
+  <li>Analyse des tendances stables du développement du système.</li>
+  <li>Prévision du développement et de l’évolution de l’environnement.</li>
+  <li>Prédiction de l’apparition de nouveaux facteurs influençant fortement le développement du système.</li>
+  <li>Analyse des ressources futures.</li>
+  <li>Analyse globale de l’interaction des futurs facteurs de développement.</li>
+  <li>Analyse des évolutions possibles des objectifs et des critères.</li>
+</ul>
+<p>L’analyse des systèmes traite, en règle générale, des perspectives de développement, parfois assez lointaines. C’est pourquoi le plus grand intérêt s’attache à toute information sur l’avenir — sur les situations futures, les ressources, les découvertes et inventions scientifiques et techniques qui transformeront fondamentalement les systèmes économiques et les processus qui s’y déroulent, ainsi que sur les futurs systèmes de valeurs sociales qui influenceront significativement l’évolution de l’équilibre et, dans un certain nombre de cas, la transformation des objectifs et des critères. C’est pourquoi la prévision — l’obtention d’informations sur l’avenir par des méthodes scientifiques — constitue la partie la plus importante et sans doute la plus complexe de l’analyse des systèmes.</p>
+<p>Étape 8. <strong>Évaluation des objectifs et des moyens</strong></p>
+<ul>
+  <li>Calcul des évaluations fondées sur les critères.</li>
+  <li>Évaluation de l’interdépendance des objectifs.</li>
+  <li>Évaluation de l’importance relative des objectifs.</li>
+  <li>Évaluation de la rareté et du coût des ressources.</li>
+  <li>Évaluation de l’influence des facteurs externes.</li>
+  <li>Calcul des évaluations globales.</li>
+</ul>
+<p>Toute une série de facteurs sociaux, politiques, moraux, éthiques et autres, dont on ne peut faire abstraction dans l’analyse des systèmes — car ils exercent parfois une influence décisive sur la formulation des objectifs et le choix des moyens de leur réalisation, ainsi que sur l’évaluation des ressources — ne peuvent, en principe, être mesurés quantitativement. Le seul moyen d’en tenir compte est d’obtenir les évaluations subjectives d’experts et de spécialistes, tant sur le problème en question que sur un large éventail de problèmes connexes. Étant donné que l’analyse des systèmes traite, en règle générale, de problèmes non structurés ou faiblement structurés — c’est-à-dire dépourvus d’évaluations quantitatives —, l’obtention d’évaluations d’experts et leur traitement apparaissent comme une étape nécessaire de l’analyse des systèmes pour la plupart des problèmes.</p>
+<p>Étape 9. <strong>Choix des alternatives</strong></p>
+<ul>
+  <li>Analyse de la compatibilité des objectifs.</li>
+  <li>Vérification de l’exhaustivité des objectifs.</li>
+  <li>Élimination des objectifs redondants.</li>
+  <li>Planification des alternatives pour atteindre les objectifs individuels.</li>
+  <li>Évaluation et comparaison des alternatives.</li>
+  <li>Combinaison d’un ensemble d’alternatives interdépendantes.</li>
+</ul>
+<p>L’écart entre les besoins et les moyens de les satisfaire constitue une loi et le stimulant le plus important du développement économique. Étant donné que la notion d’objectif est indissociable de celle des moyens permettant de l’atteindre, le point central de la prise de décision dans l’analyse des systèmes réside dans l’élagage des objectifs — l’élimination de ceux jugés insignifiants ou dépourvus de moyens de réalisation — et dans le choix d’alternatives concrètes pour atteindre un ensemble interconnecté des objectifs les plus importants.</p>
+<p>Dans les études systémiques de type « ingénierie » et de portée relativement restreinte, le « choix des alternatives » est considéré comme la tâche la plus importante, sinon la seule, de l’analyse des systèmes. Dans les problèmes de gestion économique, l’élagage de l’arbre des objectifs et le choix d’un ensemble interconnecté d’alternatives constituent une tâche importante, d’autant plus que le progrès scientifique et technique, associé à l’évolution des conditions environnementales, engendre un nombre considérable de mesures alternatives permettant d’atteindre un ensemble d’objectifs économiques. Ces mesures doivent s’inscrire dans les limites des ressources disponibles, car la loi du développement planifié de l’économie nationale impose des limites strictes à la répartition des ressources destinées à soutenir les différents sous-systèmes de l’économie nationale.</p>
+<p>Étape 10. <strong>Diagnostic du système existant</strong></p>
+<ul>
+  <li>Modélisation du processus technologique et économique.</li>
+  <li>Calcul de la capacité potentielle et réelle.</li>
+  <li>Analyse des pertes de capacité.</li>
+  <li>Identification des lacunes dans l’organisation de la production et de la gestion.</li>
+  <li>Identification et analyse des mesures d’amélioration de l’organisation.</li>
+</ul>
+<p>Les problèmes de gestion de l’économie nationale résolus par les méthodes de l’analyse des systèmes ne surgissent pas dans le vide, mais au sein d’organes de gestion réellement existants, habituellement au sein de leurs ensembles interconnectés. La tâche de l’analyse des systèmes ne consiste, le plus souvent, pas à créer un nouvel organe de gestion, mais à améliorer ceux qui existent déjà, en les orientant vers la résolution du problème. Dans de tels cas, une analyse diagnostique des organes de gestion est nécessaire pour identifier leurs capacités, leurs lacunes et leurs goulets d’étranglement dans la collecte et le traitement de l’information ainsi que dans la prise de décision, dans le but d’éliminer ces lacunes et de mieux orienter le système.</p>
+<p>Un nouveau système sera mis en œuvre efficacement s’il facilite le travail de l’organe de gestion, aide à résoudre les problèmes urgents et favorise la réalisation des objectifs immédiats. Par conséquent, l’identification des problèmes de gestion actuels et des objectifs immédiats fait également l’objet de l’enquête diagnostique et de l’analyse des organes de gestion. Cette enquête implique un sondage massif du personnel de l’organe de gestion concerné, de ses homologues, des organisations supérieures et des organisations subordonnées, ce qui permet d’identifier puis d’analyser les informations nécessaires. Cela fournit la base pour l’élaboration d’un plan organisationnel solidement fondé en vue de la mise en œuvre du système nouvellement conçu.</p>
+<p>Étape 11. <strong>Élaboration d’un programme global de développement</strong></p>
+<ul>
+  <li>Formulation des mesures, des projets et des programmes.</li>
+  <li>Détermination de la priorité des objectifs et des mesures permettant de les atteindre.</li>
+  <li>Répartition des domaines d’activité.</li>
+  <li>Répartition des domaines de compétence.</li>
+  <li>Élaboration d’un plan global de mesures dans les limites des ressources et des délais.</li>
+  <li>Attribution aux organisations, dirigeants et exécutants responsables.</li>
+</ul>
+<p>Comme indiqué précédemment, les résultats de l’analyse des systèmes s’obtiennent dans le cadre des concepts systémiques et, pour passer à la planification pratique des mesures, ils doivent être traduits dans le langage des catégories économiques. À la suite de la résolution des problèmes d’analyse des systèmes relatifs aux grandes questions de l’économie nationale — notamment les plans de recherche scientifique, de développement, d’investissement en capital et de construction, ainsi que de développement des branches d’activité et des territoires —, des programmes de développement globaux sont créés. Ces programmes sont répartis dans le temps, attribués à différents exécutants ; une structure de gestion et de coordination est mise en place, et un système de reddition de comptes est créé.</p>
+<p>Étape 12. <strong>Conception d’une organisation pour la réalisation des objectifs</strong></p>
+<ul>
+  <li>Définition des objectifs de l’organisation.</li>
+  <li>Formulation des fonctions de l’organisation.</li>
+  <li>Conception de la structure organisationnelle.</li>
+  <li>Conception des mécanismes d’information.</li>
+  <li>Conception des modes de fonctionnement.</li>
+  <li>Conception des mécanismes d’incitation matérielle et morale.</li>
+</ul>
+<p>Dans certains cas, la mise en œuvre de tels programmes globaux exige la création d’un organe de gestion permanent ou temporaire ; dans d’autres, l’objectif de l’analyse des systèmes est de reconcevoir un organe de gestion donné. L’analyse des systèmes dispose d’un ensemble de méthodes et de techniques spécifiques pour concevoir des organes de gestion efficaces orientés vers l’objectif — c’est-à-dire axés sur la création et l’utilisation d’un système particulier au sein de l’économie nationale.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Méthodologies d’analyse des systèmes</h2>
+    <ul>
+      <li><a href="/fr/methodology_sa.html">Méthodologie de l’analyse des systèmes</a></li>
+      <li><a href="/fr/quade_method.html">Méthodologie d’analyse des systèmes de Quade</a></li>
+      <li><a href="/fr/optner_method.html">Méthodologie d’analyse des systèmes d’Optner</a></li>
+      <li><a href="/fr/young_method.html">Méthodologie d’analyse des systèmes de Young</a></li>
+      <li><a href="/fr/golubkov_method.html">Méthodologie d’analyse des systèmes de Goloubkov</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Littérature</h2>
+    <ul>
+      <li><a href="/assets/systems_analysis_chernyak.pdf">Télécharger le livre : Analyse des systèmes dans la gestion économique. Tcherniak</a></li>
+      <li><a href="/fr/systems_analysis_book.html">Télécharger de la littérature sur l’analyse des systèmes</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Articles connexes</h2>
+    <ul>
+      <li><a href="/fr/systems_analysis.html">Analyse des systèmes</a></li>
+      <li><a href="/fr/decision_theory.html">Théorie de la décision</a></li>
+      <li><a href="/fr/decision_making.html">Prise de décision</a></li>
+      <li><a href="/fr/choice.html">Décision et choix</a></li>
+      <li><a href="/fr/management.html">Gestion</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/fr/">Accueil</a> <span aria-hidden="true">/</span>
+    <a href="/fr/systems_analysis.html">Analyse des systèmes</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Méthodologie de Tcherniak</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Changer de thème"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/chernyak_method.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/fr/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Changer de thème"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a37108a76bb0a5ce',t:'MTc4ODczNTAzOA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

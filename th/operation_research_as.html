@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>หลักพื้นฐานของการวิจัยดำเนินการ: แอกคอฟฟ์ และซาซีเอนี</title>
+<meta name="description" content="การวิจัยดำเนินการคือการประยุกต์ใช้วิธีการทางวิทยาศาสตร์โดยทีมวิจัยสหวิทยาการ กับปัญหาที่เกี่ยวข้องกับการควบคุมระบบที่จัดตั้งขึ้น (มนุษย์–เครื่องจักร) เพื่อให้ได้ผลเฉลยที่ตอบสนองวัตถุประสงค์ขององค์การโดยรวมได้ดีที่สุด">
+<meta name="keywords" content="การวิจัยดำเนินการ,แอกคอฟฟ์,ซาซีเอนี,แบบจำลอง,ปัญหา,ผลเฉลย,วิทยาศาสตร์,วิธีการ,การวิเคราะห์ระบบ">
+<link rel="canonical" href="https://systems-analysis.info/th/operation_research_as.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_as.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_as.html">
+<link rel="alternate" hreflang="th" href="https://systems-analysis.info/th/operation_research_as.html">
+<meta property="og:title" content="หลักพื้นฐานของการวิจัยดำเนินการ: แอกคอฟฟ์ และซาซีเอนี">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/th/operation_research_as.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="การวิจัยดำเนินการคือการประยุกต์ใช้วิธีการทางวิทยาศาสตร์โดยทีมวิจัยสหวิทยาการ กับปัญหาที่เกี่ยวข้องกับการควบคุมระบบที่จัดตั้งขึ้น (มนุษย์–เครื่องจักร) เพื่อให้ได้ผลเฉลยที่ตอบสนองวัตถุประสงค์ขององค์การโดยรวมได้ดีที่สุด">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="th_TH">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/th/operation_research_as.html#article",
+    "headline": "หลักพื้นฐานของการวิจัยดำเนินการ: แอกคอฟฟ์ และซาซีเอนี",
+    "description": "การวิจัยดำเนินการคือการประยุกต์ใช้วิธีการทางวิทยาศาสตร์โดยทีมวิจัยสหวิทยาการ กับปัญหาที่เกี่ยวข้องกับการควบคุมระบบที่จัดตั้งขึ้น (มนุษย์–เครื่องจักร) เพื่อให้ได้ผลเฉลยที่ตอบสนองวัตถุประสงค์ขององค์การโดยรวมได้ดีที่สุด",
+    "url": "https://systems-analysis.info/th/operation_research_as.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "th",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/th/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/th/operation_research_as.html"
+    },
+    "keywords": [
+        "การวิจัยดำเนินการ",
+        "แอกคอฟฟ์",
+        "ซาซีเอนี",
+        "แบบจำลอง",
+        "ปัญหา",
+        "ผลเฉลย",
+        "วิทยาศาสตร์",
+        "วิธีการ",
+        "การวิเคราะห์ระบบ"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Fundamentals of Operations Research",
+        "author": [
+            {
+                "@type": "Person",
+                "name": "Ackoff R. L."
+            },
+            {
+                "@type": "Person",
+                "name": "Sasieni M. W."
+            }
+        ],
+        "datePublished": "1968",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Wiley"
+        },
+        "inLanguage": "th"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Fundamentals of Operations Research",
+        "author": [
+            {
+                "@type": "Person",
+                "name": "Ackoff R. L."
+            },
+            {
+                "@type": "Person",
+                "name": "Sasieni M. W."
+            }
+        ],
+        "datePublished": "1968",
+        "inLanguage": "th"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "หน้าแรก",
+            "item": "https://systems-analysis.info/th/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "การวิจัยดำเนินการ",
+            "item": "https://systems-analysis.info/th/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "หลักพื้นฐานของการวิจัยดำเนินการ: แอกคอฟฟ์ และซาซีเอนี"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="การนำทางหลัก">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">เมนู</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/th/">หน้าแรก</a>
+        <span aria-hidden="true">·</span>
+        <a href="/th/sections.html">หมวดหมู่</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/th/books.html">หนังสือ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/th/catalog.html">สารบัญ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_as.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="สลับธีม"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="สลับแบบอักษร"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">หลักพื้นฐานของการวิจัยดำเนินการ: แอกคอฟฟ์ และซาซีเอนี</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>หลักพื้นฐานของการวิจัยดำเนินการ อาร์.แอล. แอกคอฟฟ์ และ เอ็ม.ดับเบิลยู. ซาซีเอนี, ค.ศ. 1968</p>
+<p>มีการเสนอนิยามของการวิจัยดำเนินการไว้มากมาย และมีการโต้แย้งมากมายว่าเหตุใดสาขาวิชานี้จึงไม่อาจนิยามได้เลย เมื่อพิจารณานิยามต่าง ๆ ที่มีผู้เสนอไว้ ควรระลึกไว้ว่าไม่มีศาสตร์เก่าแก่ใด ๆ ที่สถาปนามานาน — หรือแม้แต่วิทยาศาสตร์โดยรวม — เคยได้รับการนิยามจนเป็นที่พอใจของผู้ปฏิบัติงานทุกคน กระนั้นก็ตาม นิยามด้านล่างนี้สามารถใช้เป็นพื้นฐานที่เป็นประโยชน์สำหรับความเข้าใจโดยทั่วไปเกี่ยวกับธรรมชาติของการวิจัยดำเนินการ โดยเฉพาะอย่างยิ่งเมื่อพิจารณาประกอบกับประวัติศาสตร์ของสาขาวิชานี้ที่ได้ทบทวนมาแล้ว</p>
+<p>การวิจัยดำเนินการคือ: (1) การประยุกต์ใช้วิธีการทางวิทยาศาสตร์ (2) โดยทีมวิจัยสหวิทยาการ (3) กับปัญหาที่เกี่ยวข้องกับการควบคุมระบบที่จัดตั้งขึ้น (มนุษย์–เครื่องจักร) เพื่อให้ได้ผลเฉลยที่ตอบสนอง<a href="/th/goal.html" class="text-link">วัตถุประสงค์</a>ขององค์การโดยรวมได้ดีที่สุด</p>
+<p>ลักษณะเด่นของการวิจัยดำเนินการที่ระบุไว้ในนิยามนี้ ได้แก่ (ก) แนวคิดเชิงระบบ (ข) การใช้ทีมวิจัยสหวิทยาการ และ (ค) การประยุกต์ใช้วิธีการทางวิทยาศาสตร์กับปัญหาการควบคุม ต่อไปนี้จะพิจารณาแต่ละลักษณะโดยละเอียดยิ่งขึ้น</p>
+<p>แนวคิดนี้ตั้งอยู่บนสมมติฐานที่ว่า ในองค์การซึ่งเป็น<a href="/th/system.html" class="text-link">ระบบ</a> พฤติกรรมของส่วนใดส่วนหนึ่งย่อมส่งผลกระทบต่อทุกส่วนอื่นในที่สุด ผลกระทบดังกล่าวมิใช่ว่าจะมีนัยสำคัญเสมอไป และบางกรณีอาจตรวจพบไม่ได้เลย ดังนั้นแก่นแท้ของแนวคิดนี้จึงอยู่ที่การค้นหาปฏิสัมพันธ์ที่มีนัยสำคัญอย่างเป็นระบบ เมื่อประเมินผลการดำเนินงานหรือกลยุทธ์ของส่วนใดส่วนหนึ่งขององค์การ</p>
+<p>แนวทางเช่นนี้ในการมองปัญหาขององค์การแตกต่างโดยสิ้นเชิงจากการลดทอนปัญหาให้อยู่ในขนาดที่จัดการได้ นักวิจัยดำเนินการแทบจะขยายขอบเขตของการกำหนดปัญหาเบื้องต้นที่ได้รับมอบหมายอยู่เสมอ โดยนำปฏิสัมพันธ์ที่ไม่ได้รวมอยู่ในการกำหนดปัญหาของฝ่ายบริหารเข้ามาพิจารณาด้วย การรับมือกับปัญหาที่กว้างขึ้นและซับซ้อนขึ้นเช่นนี้จำเป็นต้องมีการพัฒนาวิธีวิจัยใหม่ ๆ</p>
+<p>เราคุ้นเคยกับการจำแนกความรู้ทางวิทยาศาสตร์ตามโครงสร้างภาควิชาของมหาวิทยาลัยจนบางครั้งเชื่อว่าการจัดระเบียบเช่นนี้สะท้อนโครงสร้างของธรรมชาติเอง แต่ความจริงไม่ได้เป็นเช่นนั้นเลย ไม่มีสิ่งที่เรียกว่าปัญหาทางฟิสิกส์ ชีววิทยา จิตวิทยา หรือเศรษฐศาสตร์โดยตัวมันเองอยู่จริง มีแต่ปัญหาเท่านั้น สาขาวิชาทางวิทยาศาสตร์เป็นเพียงวิธีการที่แตกต่างกันในการศึกษาปัญหาเหล่านั้น ปัญหาใด ๆ สามารถพิจารณาได้จากมุมมองของสาขาวิชาใดก็ได้ — แม้ว่าแน่นอนว่าไม่ใช่ว่าการทำเช่นนั้นจะเหมาะสมเสมอไป โดยแก่นแท้แล้ว นี่คือแนวคิดเดียวกันกับที่ได้กล่าวมาก่อนหน้านี้ในรูปแบบอื่น กล่าวคือ องค์การไม่ได้มีปัญหาด้านการผลิต การตลาด หรือการเงินแยกจากกัน การแบ่งแยกเช่นนี้เป็นเพียงการสะท้อนแนวทางที่แตกต่างกันในการพิจารณาปัญหาขององค์การเดียวกัน</p>
+<p>ผู้เชี่ยวชาญแต่ละคนอาจสร้างการปรับปรุงบางอย่างได้ แต่การปรับปรุงใดในบรรดานี้ — หรือการผสมผสานใด — ที่ดีที่สุด สำหรับปัญหาที่ซับซ้อน เราแทบไม่มีทางทราบคำตอบล่วงหน้าได้เลย ดังนั้นจึงควรพิจารณาและประเมินแนวทางที่หลากหลายที่สุดเท่าที่จะเป็นไปได้ในการแก้ปัญหา นี่คือเหตุผลเบื้องหลังการใช้ทีมวิจัยสหวิทยาการ</p>
+<p>เนื่องจากปัจจุบันมีสาขาวิชาทางวิทยาศาสตร์บริสุทธิ์และประยุกต์มากกว่าร้อยสาขา จึงเป็นไปไม่ได้อย่างชัดเจนที่จะรวมตัวแทนจากทุกสาขาไว้ในโครงการวิจัยแต่ละโครงการ อย่างไรก็ตาม เป็นที่พึงประสงค์ที่จะให้มีตัวแทนจากสาขาวิชาต่าง ๆ ให้มากที่สุดเท่าที่จะเป็นไปได้ในทีม และให้ผลงานของทีมได้รับการทบทวนอย่างวิพากษ์จากสาขาวิชาที่หลากหลายที่สุดเท่าที่จะเป็นไปได้ที่ไม่มีตัวแทนอยู่ในทีมนั้น</p>
+<p>คำอธิบายส่วนใหญ่เกี่ยวกับวิธีการทางวิทยาศาสตร์ระบุว่าลักษณะเด่นของวิธีการนี้คือการทดลอง อย่างไรก็ตาม เมื่อต้องรับมือกับองค์การภาครัฐ การทหาร หรืออุตสาหกรรม การทดลองในความหมายแคบ กล่าวคือ การเปลี่ยนแปลงค่าตัวแปรทางกายภาพ มักเป็นไปไม่ได้หรือไม่สามารถปฏิบัติได้จริง ตัวอย่างเช่น บริษัทอุตสาหกรรมไม่อาจเสี่ยงต่อการดำรงอยู่ของตนเองเพื่อประโยชน์ของการทดลองได้ แน่นอนว่าการทดลองบางครั้งก็เป็นไปได้ โดยเฉพาะในระดับระบบย่อย และมีบทบาทสำคัญในการวิจัยดำเนินการ กระนั้นก็ตาม ตามปกติแล้วระบบที่ศึกษาโดยรวมไม่อาจถูกนำมาทดลองได้ ดังนั้นในกรณีส่วนใหญ่ การศึกษาระบบโดยรวมจึงจำเป็นต้องใช้แนวทางที่ไม่เกี่ยวข้องกับการทดลอง (ในความหมายแคบของการเปลี่ยนแปลงวัตถุที่ศึกษาทางกายภาพ)</p>
+<p>แบบจำลองเชิงปฏิบัติการมีรูปแบบเป็นสมการซึ่งแม้จะมีความซับซ้อนทางคณิตศาสตร์ แต่ก็มีโครงสร้างที่เรียบง่ายมาก กล่าวคือ อรรถประโยชน์หรือค่าของเกณฑ์การดำเนินงานที่แสดงลักษณะการทำงานของระบบจะถูกแสดงเป็นฟังก์ชันของตัวแปรที่ควบคุมได้และตัวแปรที่ควบคุมไม่ได้ (รวมทั้งค่าคงที่) ซึ่งยังคงส่งผลต่อฟังก์ชันนั้น</p>
+<p>นอกจากนี้ มักจำเป็นต้องมีสมการหรืออสมการอย่างน้อยหนึ่งข้อเพื่อแสดงข้อเท็จจริงที่ว่าตัวแปรควบคุมบางตัวสามารถเปลี่ยนแปลงได้เฉพาะภายในขอบเขตที่กำหนดไว้เท่านั้น</p>
+<p>เมื่อสร้าง<a href="/th/model.html" class="text-link">แบบจำลอง</a>ขึ้นแล้ว ก็สามารถนำไปใช้หาค่าที่เหมาะที่สุดของตัวแปรควบคุมได้อย่างแม่นยำหรือโดยประมาณ กล่าวคือ ค่าที่ให้เกณฑ์การดำเนินงานของระบบที่ดีที่สุด เมื่อกำหนดค่าของตัวแปรที่ควบคุมไม่ได้แล้ว กล่าวอีกนัยหนึ่งคือ สามารถหาผลเฉลยของปัญหาในแบบจำลองได้ ส่วนวิธีการที่แท้จริงในการได้มาซึ่งผลเฉลยนี้ขึ้นอยู่กับแบบจำลองที่ใช้</p>
+<p>ผลเฉลยอาจได้มาจากการทดลองกับแบบจำลอง (โดยการเปลี่ยนแปลงพารามิเตอร์ของแบบจำลอง) หรือผ่านการวิเคราะห์ทางคณิตศาสตร์ ในบางกรณี การวิเคราะห์ทางคณิตศาสตร์สามารถทำได้โดยไม่จำเป็นต้องทราบค่าที่แน่นอนของตัวแปร ในขณะที่บางกรณีจำเป็นต้องระบุค่าเป็นตัวเลข</p>
+<p>ไม่ว่าจะใช้วิธีใด เป้าหมายคือการหาผลเฉลยที่เหมาะที่สุดหรือใกล้เคียงที่สุดเสมอ ผลเฉลยที่เหมาะที่สุดคือผลเฉลยที่ทำให้เกณฑ์การดำเนินงานบนแบบจำลองมีค่าต่ำสุดหรือสูงสุด (ขึ้นอยู่กับลักษณะของปัญหา) ภายใต้เงื่อนไขและข้อจำกัดที่แสดงอยู่ในแบบจำลองนั้น <a href="/th/optimization.html" class="text-link">การหาค่าเหมาะที่สุด</a>จึงให้ผลเฉลยที่ดีที่สุดของปัญหาตามที่แบบจำลองได้อธิบายไว้ อย่างไรก็ตาม เนื่องจากแบบจำลองไม่เคยเป็นคำอธิบายที่แม่นยำของปัญหาอย่างสมบูรณ์ ผลเฉลยที่เหมาะที่สุดที่ได้มาด้วยวิธีนี้จึงไม่ใช่ผลเฉลยที่ดีที่สุดเพียงหนึ่งเดียวของปัญหาจริงเช่นกัน หากสมมติว่าแบบจำลองสามารถแสดงปัญหาได้ “ดี” ผลเฉลยที่เหมาะที่สุดหรือใกล้เคียงที่สุดที่ได้จากแบบจำลองก็จะเป็นค่าประมาณที่ “ดี” ของผลเฉลยที่เหมาะที่สุดของปัญหาจริง ไม่ว่าในกรณีใด ผลเฉลยนี้ย่อมดีกว่ากลยุทธ์หรือกระบวนการที่มันมีไว้ทดแทนอย่างมาก</p>
+<p>เนื่องจากค่าที่เหมาะที่สุดของตัวแปรที่ได้จากผลเฉลยจะช่วยปรับปรุงประสิทธิภาพของระบบได้ก็ต่อเมื่อแบบจำลองสามารถอธิบายระบบได้อย่างถูกต้องเท่านั้น จึงจำเป็นต้องตรวจสอบความสอดคล้องของแบบจำลองกับความเป็นจริง และประเมินผลเฉลยอย่างมีสติ กล่าวอีกนัยหนึ่งคือ ผลลัพธ์ที่คาดการณ์ไว้จากการนำผลเฉลยไปปฏิบัติจะต้องถูกนำมาเปรียบเทียบกับกลยุทธ์หรือกระบวนการที่มันมีไว้ทดแทน</p>
+<p>ท้ายที่สุด เนื่องจากจุดมุ่งหมายของการวิจัยดำเนินการไม่ใช่การผลิตรายงานทางวิทยาศาสตร์ แต่คือการปรับปรุงประสิทธิภาพของระบบ ผลของการวิจัยจึงต้องถูกนำไปปฏิบัติจริง (โดยมีเงื่อนไขว่าเป็นที่ยอมรับของผู้ตัดสินใจ) ขั้นตอนนี้เองที่เป็นการทดสอบและประเมินผลขั้นสุดท้ายของผลการวิจัย ดังนั้นนี่จึงเป็นขั้นตอนที่นักวิจัยดำเนินการมีโอกาสได้รับประสบการณ์มากที่สุด</p>
+<p>หากการตัดสินใจที่การวิจัยนี้จัดทำขึ้นเพื่อรองรับนั้นจัดอยู่ในประเภทการตัดสินใจที่เกิดซ้ำ ก็มีความเป็นไปได้สูง — เมื่อพิจารณาจากธรรมชาติของระบบที่ศึกษาในการวิจัยดำเนินการ — ว่าระหว่างการตัดสินใจแต่ละครั้งที่ต่อเนื่องกันนั้น ค่าของตัวแปรที่ควบคุมไม่ได้บางตัว หรือแม้แต่โครงสร้างของระบบเองจะเปลี่ยนแปลงไป ดังนั้นจึงจำเป็นต้องตรวจจับการเปลี่ยนแปลงที่มีนัยสำคัญในระบบและในสภาพแวดล้อมภายนอกของระบบ และปรับการตัดสินใจให้สอดคล้องกัน กล่าวอีกนัยหนึ่งคือ ผลลัพธ์ที่อยู่ในรูปของกฎเกณฑ์สำหรับการตัดสินใจที่เกิดซ้ำ หรือการตัดสินใจที่ใช้เป็นระยะเวลานาน จะต้องได้รับการปรับปรุงให้ทันสมัยอยู่เสมอ และต้องมีการติดตามตรวจสอบการนำไปใช้อย่างถูกต้อง</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>สรุปเนื้อหาหนังสือ</h2>
+    <ul>
+      <li><a href="/th/operation_research_caa.html">บทนำสู่การวิจัยดำเนินการ: เชิร์ชแมน, แอกคอฟฟ์ และอาร์นอฟฟ์</a></li>
+      <li><a href="/th/operation_research_me.html">การวิจัยดำเนินการ: โมเดอร์ และเอลมักราบี</a></li>
+      <li><a href="/th/operation_research_gv.html">องค์การและการจัดการ: กวิชิอานี</a></li>
+      <li><a href="/th/operation_research_ve.html">การวิจัยดำเนินการ: เวนต์เซล</a></li>
+      <li><a href="/th/operation_research_vg.html">หลักการของการวิจัยดำเนินการ: แวกเนอร์</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>บทความที่เกี่ยวข้อง</h2>
+    <ul>
+      <li><a href="/th/operation_research.html">การวิจัยดำเนินการ</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="เส้นทางนำทาง">
+    <a href="/th/">หน้าแรก</a> <span aria-hidden="true">/</span>
+    <a href="/th/operation_research.html">การวิจัยดำเนินการ</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">หลักพื้นฐานของการวิจัยดำเนินการ: แอกคอฟฟ์ และซาซีเอนี</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="สลับธีม"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_as.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/th/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="สลับธีม"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710df189191e13',t:'MTc4ODczNTI1NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

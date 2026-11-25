@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Phương pháp Young</title>
+<meta name="description" content="Quá trình ra quyết định trong một tổ chức có thể được xem là một chuỗi các giai đoạn mà việc hoàn thành chúng dẫn đến giải pháp hiệu quả cho các vấn đề của tổ chức. Có thể coi, với một mức độ quy ước nào đó, rằng chuỗi này gồm mười giai đoạn.">
+<meta name="keywords" content="phân tích hệ thống,phương pháp Young,quyết định,vấn đề,tổ chức,bộ phận,quản lý,quy trình,nghiên cứu">
+<link rel="canonical" href="https://systems-analysis.info/vi/young_method.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/young_method.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/young_method.html">
+<link rel="alternate" hreflang="vi" href="https://systems-analysis.info/vi/young_method.html">
+<meta property="og:title" content="Phương pháp Young">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/vi/young_method.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Quá trình ra quyết định trong một tổ chức có thể được xem là một chuỗi các giai đoạn mà việc hoàn thành chúng dẫn đến giải pháp hiệu quả cho các vấn đề của tổ chức. Có thể coi, với một mức độ quy ước nào đó, rằng chuỗi này gồm mười giai đoạn.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="vi_VN">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/vi/young_method.html#article",
+    "headline": "Phương pháp Young",
+    "description": "Quá trình ra quyết định trong một tổ chức có thể được xem là một chuỗi các giai đoạn mà việc hoàn thành chúng dẫn đến giải pháp hiệu quả cho các vấn đề của tổ chức. Có thể coi, với một mức độ quy ước nào đó, rằng chuỗi này gồm mười giai đoạn.",
+    "url": "https://systems-analysis.info/vi/young_method.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "vi",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/vi/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/vi/young_method.html"
+    },
+    "keywords": [
+        "phân tích hệ thống",
+        "phương pháp Young",
+        "quyết định",
+        "vấn đề",
+        "tổ chức",
+        "bộ phận",
+        "quản lý",
+        "quy trình",
+        "nghiên cứu"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Management: A Systems Analysis",
+        "author": {
+            "@type": "Person",
+            "name": "Stanley Young"
+        },
+        "datePublished": "1966",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Scott, Foresman and Company"
+        },
+        "inLanguage": "vi"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Management: A Systems Analysis",
+        "author": {
+            "@type": "Person",
+            "name": "Stanley Young"
+        },
+        "datePublished": "1966",
+        "inLanguage": "vi"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Trang chủ",
+            "item": "https://systems-analysis.info/vi/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Phân tích hệ thống",
+            "item": "https://systems-analysis.info/vi/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Phương pháp Young"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Điều hướng chính">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/vi/">Trang chủ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/sections.html">Chuyên mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/books.html">Sách</a>
+        <span aria-hidden="true">·</span>
+        <a href="/vi/catalog.html">Danh mục</a>
+        <span aria-hidden="true">·</span>
+        <a href="/young_method.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Đổi giao diện"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Đổi phông chữ"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Phương pháp Young</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Quá trình ra quyết định trong một tổ chức có thể được xem là một chuỗi các giai đoạn mà việc hoàn thành chúng dẫn đến giải pháp hiệu quả cho các <a href="/vi/problem.html" class="text-link">vấn đề</a> của tổ chức. Có thể coi, với một mức độ quy ước nào đó, rằng chuỗi này gồm mười giai đoạn:</p>
+<ol>
+  <li>Xác định mục tiêu của tổ chức.</li>
+  <li>Xác định các vấn đề trong quá trình đạt được các mục tiêu đó.</li>
+  <li>Điều tra các vấn đề và xác lập chẩn đoán.</li>
+  <li>Tìm kiếm giải pháp cho vấn đề.</li>
+  <li>Đánh giá tất cả các phương án và lựa chọn phương án tốt nhất.</li>
+  <li>Đạt được sự đồng thuận về quyết định trong tổ chức.</li>
+  <li>Phê duyệt quyết định.</li>
+  <li>Chuẩn bị triển khai quyết định.</li>
+  <li>Quản lý việc áp dụng quyết định.</li>
+  <li>Kiểm tra hiệu quả của quyết định.</li>
+</ol>
+<p>Cho đến nay vẫn chưa có sự đồng thuận về số lượng và thành phần của các giai đoạn thực sự tạo nên quá trình ra quyết định. Một trong những nguyên nhân của điều này nằm ở những hoàn cảnh khác nhau mà các quá trình cụ thể diễn ra, điều này gán các mức độ quan trọng khác nhau cho các giai đoạn khác nhau của quá trình ra quyết định trong từng trường hợp cụ thể.</p>
+<p>Chúng ta sẽ coi các thuật ngữ “ra quyết định” và “giải quyết vấn đề” là đồng nghĩa, và xem quyết định bản thân nó như một phản ứng hiệu quả nhằm đảm bảo kết quả mong muốn trong điều kiện trạng thái hiện tại hoặc có thể có của tổ chức.</p>
+<p>Do trách nhiệm chính của cấp quản lý cao nhất là tạo ra một <a href="/vi/system.html" class="text-link">hệ thống</a> quản lý, rõ ràng điều quan trọng là phải xác định ngay từ đầu bản chất và đặc điểm của hệ thống đó. Hệ thống quản lý có thể được định nghĩa là một hệ thống con của tổ chức, mà các thành phần của nó là các nhóm người tương tác với nhau: chức năng của nó bao gồm việc nhận biết một số vấn đề của tổ chức (đầu vào) và sau đó thực hiện một loạt hành động (các quá trình) tạo ra các quyết định (đầu ra) làm tăng lợi ích thu được từ hoạt động của toàn bộ tổ chức (sự thỏa mãn), hoặc tối ưu hóa một hàm nào đó của tất cả đầu vào và đầu ra của tổ chức.</p>
+<p>Hệ thống quản lý là một hệ thống chuẩn tắc kiểu “con người – con người”, mà <a href="/vi/goal.html" class="text-link">mục tiêu</a> chính của nó là giải quyết hiệu quả các vấn đề của tổ chức. Để thiết kế một hệ thống ra quyết định, cấp quản lý cao nhất phải: xác định các thành phần chính của hệ thống, xây dựng <a href="/vi/model.html" class="text-link">mô hình</a>, và thu thập, sử dụng dữ liệu về hiệu quả của hệ thống. Phân tích hệ thống là quá trình phân rã và xác định các phần ngày càng nhỏ hơn của một hệ thống; tổng hợp hệ thống là quá trình tập hợp lại các phần này.</p>
+<p>Các tổ chức có thể được xem như những hệ thống hướng đến mục tiêu của các cá nhân hợp tác với nhau nhằm nâng cao lợi ích cá nhân của họ. Một tổ chức cần có chức năng giải quyết vấn đề vì các câu hỏi nảy sinh liên quan đến việc sử dụng nguồn lực của tổ chức và việc phân chia tổng quỹ lợi ích giữa các thành viên của nó, và tổ chức phải thích nghi với môi trường của mình cũng như phát triển các chương trình hành động mới. Hệ thống quản lý cung cấp cho tổ chức một tập hợp các quyết định được những người thực hiện áp dụng khi các tình huống tương ứng xảy ra. Khác với việc ra quyết định của cá nhân, việc ra quyết định của tổ chức là một quá trình nhóm, đòi hỏi sự đồng thuận và thích nghi giữa các thành viên trong nhóm.</p>
+<p>Hệ thống được thống nhất thành một thể toàn vẹn thông qua một mạng lưới các luồng thông tin; nếu một quyết định tỏ ra không thỏa đáng, vấn đề sẽ được gửi trở lại qua vòng phản hồi đến bộ phận quản lý, bộ phận này sẽ lặp lại toàn bộ quá trình. Hệ thống này là khép kín một phần. Hệ thống quản lý có thể được biểu diễn như một quá trình làm việc xây dựng các giải pháp cho các vấn đề của tổ chức, và sơ đồ của quá trình làm việc này không khác gì sơ đồ của các hệ thống con khác trong tổ chức. Tất cả các vấn đề của tổ chức sẽ đi theo một lộ trình đã được định trước, và các nhà quản lý chỉ thực hiện những nhiệm vụ nằm trong quá trình giải quyết vấn đề. Tuy nhiên, điều này không có nghĩa là trong mọi trường hợp các vấn đề sẽ nhất thiết được giải quyết đúng theo cách này; có thể cần những cách tiếp cận khác nhau để giải quyết vấn đề. Cũng không nhất thiết chỉ cần một quá trình duy nhất; một tổ chức có thể quy định nhiều quá trình khác nhau để giải quyết các vấn đề của tổ chức. Tuy nhiên, điều quan trọng là các quá trình này phải được thiết kế trước; và khi một quá trình cụ thể đã được chọn để giải quyết một vấn đề nhất định, thì nó cần được áp dụng.</p>
+<p>Các vấn đề của tổ chức có thể được xác định trực tiếp bởi cấp quản lý cao nhất, các nhà quản lý, nhân viên cấp dưới và các cổ đông. Các câu hỏi nên được các nhà quản lý ở mọi cấp đặt ra; tuy nhiên, sẽ là lý tưởng nếu sử dụng càng nhiều nguồn càng tốt, bao gồm cả cổ đông và nhân viên cấp dưới, vì khi số lượng người tham gia xác định vấn đề tăng lên, số người có lợi ích gắn liền với hoạt động của tổ chức cũng tăng lên.</p>
+<p>Ngoài ra, tổ chức nên thành lập một bộ phận thông tin, đóng vai trò là cơ quan chính chịu trách nhiệm xác định vấn đề. Bộ phận này thu thập, phân loại và sắp xếp thông tin về môi trường bên ngoài và bên trong, sau đó so sánh với các tiêu chuẩn hoạt động đã được thiết lập trước của tổ chức. Nếu các tiêu chuẩn được đáp ứng, thì không có vấn đề gì; nhưng nếu phát hiện sai lệch so với tiêu chuẩn, nguyên nhân của sai lệch đó sẽ được xác định là một vấn đề cần giải quyết. Bộ phận thông tin thu thập thông tin về các lĩnh vực cụ thể của môi trường mà tổ chức hoạt động trong đó — ví dụ, kinh tế và chính sách của nhà nước. Sau đó, các yếu tố quan trọng của môi trường được xác định, và những yếu tố quan trọng nhất trong số đó, chẳng hạn như khách hàng và nhà cung cấp, sẽ được khảo sát. Hoạt động của bộ phận thông tin có thể được tập trung hóa, trong trường hợp đó nó chịu trách nhiệm xem xét và đánh giá cả môi trường bên ngoài và bên trong của tổ chức, hoặc việc thực hiện chức năng này có thể được phân cấp để mỗi bộ phận tự thu thập thông tin mà mình cần. Để hỗ trợ việc ra quyết định, cần thiết lập một luồng công việc với văn bản và xây dựng các mẫu văn bản. Việc sử dụng mẫu văn bản cho giai đoạn xác định vấn đề có thể rất hữu ích, vì nó giúp việc chuyển giao thông tin liên quan đến vấn đề trong nội bộ tổ chức được thuận lợi hơn.</p>
+<p>Sau khi nhận được một vấn đề, nhà quản lý có thể tiến hành phân tích nguyên nhân xuất hiện của nó, điều này sẽ giúp đưa ra các hành động đúng đắn. Trước tiên, nhà quản lý xem xét vấn đề sẽ tìm hiểu các hướng dẫn hiện có để hiểu bản chất của quyết định đã được áp dụng (nếu có tồn tại một quyết định như vậy). Ngoài ra, họ có thể yêu cầu thêm thông tin từ người đã xác định vấn đề. Các vấn đề do bộ phận thông tin xác định hoặc được phát hiện nhờ kết quả giám sát quyết định thường đi kèm với thông tin tương ứng, và nhà quản lý cần thu thập thông tin đó. Nếu đã có một quyết định sẵn có, nhà quản lý có thể xem xét việc thực hiện thực tế của tác nghiệp và phát hiện ra rằng quyết định đó không được áp dụng, hoặc được thực hiện không đúng, hoặc không hiệu quả, hoặc là sai.</p>
+<p>Nhà quản lý phải có sự tự do tương đối để tiến hành điều tra trên nhiều lĩnh vực khác nhau của công việc của tổ chức, để lấy dữ liệu từ bộ phận thông tin, và để thu thập bất kỳ dữ liệu mới nào mà theo ý kiến của họ là cần thiết để xác định nguyên nhân của vấn đề đang được giải quyết. Trong hệ thống quản lý cần có một quy tắc rằng tất cả các bộ phận đều hỗ trợ đầy đủ cho các nhà quản lý, và các nhà quản lý có thể tự do thu thập thông tin — trừ thông tin mật — tại tất cả các phòng ban của tổ chức. Bộ phận thông tin chắc chắn là nguồn thông tin chính về cả các sự kiện bên ngoài và bên trong, và bộ phận này nên xây dựng một tập hợp các quy trình để tìm kiếm và yêu cầu thông tin mà các nhà quản lý cần.</p>
+<p>Sau khi nhà quản lý đã nghiên cứu các nguyên nhân của những khó khăn, họ sẽ thông báo kết quả tìm hiểu của mình cho bộ phận quản lý. Nếu họ tin rằng một quyết định hiện có không được thực hiện, bộ phận quản lý sẽ thông báo cho nhà quản lý chịu trách nhiệm về lĩnh vực đó, người này phải khắc phục tình trạng đó. Nếu cần phải lặp lại giai đoạn chuẩn bị triển khai quyết định, các bộ phận liên quan sẽ được thông báo, và bộ phận quản lý sẽ lập một lộ trình và thời gian biểu mới cho việc giải quyết vấn đề và phân công trách nhiệm giải quyết vấn đề; quy trình này có thể được lặp lại cho đến khi đạt được một quyết định hiệu quả.</p>
+<p>Nếu quyết định là không đúng, việc phân tích trước đó cần được xem xét lại để xác định liệu có sai sót nào trong việc lựa chọn phương án hay các yếu tố nguyên nhân đã thay đổi hay không. Nếu không tìm được một quyết định thỏa đáng, các yếu tố nguyên nhân phải được xác định lại; khi xuất hiện một khả năng mới, cũng có thể cần phải xem xét lại các nguyên nhân của vấn đề. Nếu trong quá trình điều tra nhà quản lý phát hiện ra một vấn đề khác, họ cũng sẽ báo cáo vấn đề đó cho bộ phận quản lý, và vấn đề mới này sẽ được xử lý như bất kỳ vấn đề nào khác. Trong những trường hợp các vấn đề có liên quan lẫn nhau, có thể xảy ra một tình huống khó xử: người điều tra không thể giải quyết vấn đề của mình cho đến khi một vấn đề liên quan khác được giải quyết. Trong trường hợp đó, việc giải quyết vấn đề thứ nhất sẽ bị tạm hoãn cho đến khi vấn đề thứ hai được giải quyết.</p>
+<p>Giai đoạn tiếp theo của việc ra quyết định là tìm kiếm các phương án giải quyết. Đây có lẽ là giai đoạn ít được hình thức hóa nhất trong số mười giai đoạn; ở giai đoạn này người ta phải dựa vào khả năng sáng tạo của các nhà quản lý. Tuy nhiên, nhà quản lý được giao vấn đề thường chịu trách nhiệm giải quyết nó và cần có đủ năng lực kỹ thuật và kinh nghiệm, cũng như nắm bắt tốt các tiến bộ trong tài liệu kỹ thuật. Các nhà quản lý không chỉ cần quen thuộc với các giải pháp đã được chứng minh trong thực tế mà còn phải tạo ra những giải pháp mới. Do đó, cần khuyến khích khuynh hướng thử nghiệm và phát triển của họ theo hướng này. Ví dụ, hoạt động nghiên cứu và phát triển nên được tiến hành không chỉ ở bộ phận thiết kế mà ở mọi bộ phận của tổ chức.</p>
+<p>Ở giai đoạn này, người chịu trách nhiệm giải quyết vấn đề sẽ đánh giá các phương án giải quyết và lựa chọn phương án tốt nhất trong số đó. Để tiêu chuẩn hóa các tính toán như vậy trong tổ chức, có thể sử dụng, ví dụ, một mẫu so sánh giải pháp. Nếu nhà quản lý không thể đánh giá chi phí và kết quả đầu ra của một giải pháp cụ thể, bộ phận thiết kế hoặc bộ phận kế toán có thể hỗ trợ. Sau khi người điều tra đã chọn được giải pháp tốt nhất trong số các giải pháp có sẵn, họ cần lập kế hoạch về cách thức, thời điểm và người sẽ triển khai nó, ai sẽ quản lý việc áp dụng nó, và ai sẽ kiểm tra kết quả. Họ cũng cần điều chỉnh ngân sách cho phù hợp.</p>
+<p>Giai đoạn tiếp theo trong quá trình ra quyết định là xác định những đề xuất có ảnh hưởng trực tiếp hoặc gián tiếp đến nhiều hơn một bộ phận; điều này giúp xác định phạm vi ảnh hưởng của những đề xuất đó đối với tất cả các bộ phận bị ảnh hưởng. Chức năng này do bộ phận quản lý thực hiện. Sau khi bộ phận quản lý đã xác định các bộ phận nào sẽ bị ảnh hưởng, nó sẽ lựa chọn các nhà quản lý cần phối hợp về đề xuất, lập thời gian biểu cho công việc của họ, và đặt ra một hạn cuối để họ phải thông báo phản ứng của mình đối với đề xuất. Mỗi bộ phận, khi nhận được đề xuất, sẽ tính toán lợi ích thuần hoặc hiệu quả dự kiến của việc áp dụng đề xuất vào tác nghiệp cụ thể của mình. Các bộ phận cũng xem xét các khía cạnh khác của đề xuất, chẳng hạn như việc triển khai và kiểm tra nó; họ có thể phản đối bất kỳ giai đoạn nào mà họ cho là không thực tế. Bất kỳ đề xuất nào cũng được xem xét bởi các nhân viên của phòng ban mà tiền lương và công việc của họ bị ảnh hưởng bởi đề xuất, và phản ứng của họ được người điều tra tổng hợp trong một báo cáo về cuộc họp của các nhà quản lý cấp dưới.</p>
+<p>Sau khi mỗi bộ phận đã hoàn thành việc tính toán lợi ích thu được từ việc triển khai đề xuất, kết quả được chuyển đến bộ phận quản lý, bộ phận này sẽ tổng hợp một bảng lợi ích và xác định lợi ích thuần cho toàn bộ tổ chức. Một số bộ phận có thể muốn có thêm thông tin hoặc có thể kết luận rằng những bất đồng nghiêm trọng đến mức cần phải thảo luận tại một cuộc họp của các bên liên quan. Do đó, mỗi bộ phận cần được tạo điều kiện để đề xuất các cuộc họp mà tại đó tất cả các bộ phận liên quan sẽ có đại diện tham dự. Nếu một cuộc họp như vậy dẫn đến những thay đổi trong đề xuất ban đầu, lợi ích mà tổ chức thu được từ đề xuất sẽ được tính toán lại.</p>
+<p>Nhà quản lý không đồng ý với một quyết định cụ thể hoặc tin rằng một quyết định nào đó sẽ ảnh hưởng tiêu cực đến hoạt động của họ phải chuẩn bị một luận cứ định lượng thuyết phục cho sự phản đối của mình. Sau khi đã xác định rằng lợi ích thuần có thể thu được từ việc triển khai đề xuất và đề xuất được các nhà quản lý và nhân viên cấp dưới của tổ chức chấp nhận, bộ phận quản lý sẽ gửi đề xuất để phê duyệt.</p>
+<p>Việc tập trung hóa quyền lực trong một tổ chức đặc biệt hiệu quả ở giai đoạn phê duyệt quyết định, vì trong trường hợp này những người được giao quyền có thể dành nhiều thời gian hơn cho việc xem xét và thông qua các quyết định. Trên thực tế, không có nhiệm vụ nào khác có thể được giao thêm cho họ. Và bộ phận quản lý, tất nhiên, biết trước những cán bộ nào sẽ phê duyệt các quyết định cụ thể. Người phê duyệt đề xuất có thể thực hiện một trong bốn lựa chọn: họ có thể phê duyệt quyết định, bác bỏ nó, yêu cầu thêm thông tin, hoặc đề nghị tiếp tục phân tích vấn đề. Nếu nhà quản lý không phê duyệt quyết định, điều đó có nghĩa là mặc dù đã tiến hành phân tích đúng cách, vẫn cần thêm thông tin hoặc cần xem xét các phương án khác. Có thể có những quyết định với mức độ bất định lớn về lợi ích có thể đạt được, và nhà quản lý cấp cao sẽ phải chọn một quyết định trong số bốn hoặc năm phương án. Trong trường hợp này, họ cũng có thể trả lại quyết định để làm rõ thêm trước khi phê duyệt cuối cùng. Nếu quá trình ra quyết định được thực hiện đúng cách, việc phê duyệt quyết định thường chỉ là một thủ tục hình thức. Việc hoàn toàn từ chối phê duyệt một quyết định là một sự việc tương đối hiếm gặp, vì nó cho thấy những thiếu sót nghiêm trọng trong chính quá trình ra quyết định.</p>
+<p>Quá trình chuẩn bị triển khai quyết định được quy định trong chính quyết định đó. Do đó, chúng ta sẽ chỉ mô tả những nhiệm vụ cụ thể cần thực hiện khi thay đổi nguồn lực của tổ chức. Khi nhận được quyết định đã được phê duyệt, bộ phận quản lý sẽ thông báo cho các nhà quản lý rằng việc chuẩn bị triển khai có thể bắt đầu. Bộ phận này lại lập một lộ trình và thời gian biểu cho việc chuẩn bị triển khai quyết định qua các giai đoạn khác nhau và phân công các nhà quản lý chịu trách nhiệm. Một số phần của quyết định có thể được thực hiện đồng thời, trong khi những phần khác phải được thực hiện tuần tự. Trong quá trình thực hiện thời gian biểu công việc, bộ phận quản lý gửi các hướng dẫn chuẩn bị triển khai quyết định cho các nhà quản lý khác nhau; những hướng dẫn này, trong số những nội dung khác, chỉ rõ ngày dự kiến hoàn thành. Tại các bộ phận tham gia, một bản sao của quyết định này được lưu cùng với các hướng dẫn hiện hành, và đến ngày đã định, quyết định sẽ có hiệu lực.</p>
+<p>Để đảm bảo rằng tổ chức sẵn sàng đối phó với một số sự kiện nhất định, một số quyết định được lập trình sẵn từ trước, và bộ phận quản lý sẽ kích hoạt các chương trình này như đã mô tả. Cơ chế lập trình quyết định trước này không chỉ cho phép lập kế hoạch cho các hoạt động tương lai của tổ chức mà còn giúp phối hợp các hành động của bộ phận thông tin và các bộ phận tác nghiệp của tổ chức. Nếu tổ chức đã lập kế hoạch cho một số thay đổi trong trường hợp xảy ra các tình huống đặc biệt trong môi trường bên ngoài, bộ phận thông tin có thể thông báo cho tất cả các phòng ban liên quan về sự cần thiết phải triển khai quyết định đã được lập trình trước.</p>
+<p>Nhiệm vụ chính của một nhà quản lý cấp trung đứng đầu một bộ phận là duy trì khả năng của bộ phận đó trong việc thực hiện các quyết định được giao cho nó. Các quyết định chứa các hướng dẫn về cách giải quyết những vấn đề này, nhưng cần phải điền vào các mẫu yêu cầu và chuyển chúng đến các bộ phận thích hợp. Nếu nhà quản lý nắm rõ tất cả các quyết định hiện hành, họ sẽ liên tục đảm bảo rằng nhân viên thực hiện chúng và, khi cần, thực hiện những điều chỉnh nhỏ. Khi các vấn đề nghiêm trọng phát sinh, nhà quản lý sẽ tìm kiếm một quyết định phù hợp trong sổ tay quyết định. Nếu không có quyết định phù hợp nào, họ sẽ điền vào mẫu ghi nhận vấn đề đã xác định và gửi nó đến bộ phận quản lý. Chính ở giai đoạn quản lý việc áp dụng quyết định, quyết định được chuyển hóa từ một văn bản thành hành động; và nhiệm vụ của các nhà quản lý là đóng vai trò là mối liên kết giữa hướng dẫn và nhân viên.</p>
+<p>Có ba phương pháp để kiểm tra hiệu quả của một quyết định. Phương pháp thứ nhất xác định liệu kết quả dự kiến và kết quả thực tế có bằng nhau hay không, và liệu sự khác biệt giữa chúng có nằm trong giới hạn cho phép hay không. Việc so sánh này có thể được thực hiện hàng tháng, hàng tuần, hoặc theo bất kỳ khoảng thời gian nào khác. Sự sai lệch đáng kể sẽ được ghi nhận, và thông tin về nó sẽ được gửi đến bộ phận quản lý dưới dạng một vấn đề đã được xác định.</p>
+<p>Phương pháp thứ hai thực hiện một kiểm tra hành vi, tương tự như phương pháp được sử dụng trong các chương trình bảo trì phòng ngừa thiết bị. Vào những thời điểm và địa điểm được lựa chọn ngẫu nhiên, một cuộc kiểm tra được thực hiện để trực tiếp quan sát xem quyết định tương ứng có đang được thực hiện hay không và liệu nó có đang tỏ ra hiệu quả hay không. Ở đây, một lần nữa, các sai lệch trở thành các vấn đề được chuyển đến bộ phận quản lý. Hơn nữa, vì cả nhân viên và nhà quản lý đều có thể nêu ra các vấn đề, nên có một phương pháp thứ ba để kiểm tra việc thực hiện quyết định, bao gồm: một bộ phận báo cáo rằng một bộ phận khác không thực hiện đúng một quyết định. Điều này cũng trở thành một vấn đề cần được điều tra.</p>
+<p>Giai đoạn kiểm tra hiệu quả của quyết định tạo thành phản hồi, hay tác nghiệp khép kín vòng lặp.</p>
+<p>Mặc dù giai đoạn này không phải là quá trình duy nhất trong tổ chức bảo đảm việc phát hiện các vấn đề, nó là bộ phận của tổ chức đánh giá các chương trình hiện có theo góc độ liệu chúng có được thực hiện đúng cách hay không. Đối với cơ chế kiểm tra hiệu quả quyết định sử dụng phương pháp thứ nhất, cần có một hệ thống xử lý dữ liệu tập trung. Theo phương pháp thứ hai, nhà quản lý giải quyết vấn đề được giao nhiệm vụ kiểm tra định kỳ tất cả các quyết định đã được đưa vào áp dụng. Để làm điều này, một thời gian biểu để xem xét tất cả các quyết định như vậy được lập ra. Phương pháp thứ ba, ở mức độ nào đó, mang tính chất là một thủ tục tùy theo từng trường hợp cụ thể.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Các phương pháp phân tích hệ thống</h2>
+    <ul>
+      <li><a href="/vi/methodology_sa.html">Phương pháp luận phân tích hệ thống</a></li>
+      <li><a href="/vi/quade_method.html">Phương pháp phân tích hệ thống của Quade</a></li>
+      <li><a href="/vi/optner_method.html">Phương pháp phân tích hệ thống của Optner</a></li>
+      <li><a href="/vi/chernyak_method.html">Phương pháp phân tích hệ thống của Chernyak</a></li>
+      <li><a href="/vi/golubkov_method.html">Phương pháp phân tích hệ thống của Golubkov</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Tài liệu</h2>
+    <ul>
+      <li><a href="/assets/systems_analysis_young.pdf">Tải sách Quản lý: Một phân tích hệ thống của Young</a></li>
+      <li><a href="/vi/systems_analysis_book.html">Tải tài liệu về phân tích hệ thống</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Chuyển đến bài viết</h2>
+    <ul>
+      <li><a href="/vi/systems_analysis.html">Phân tích hệ thống</a></li>
+      <li><a href="/vi/decision_theory.html">Lý thuyết ra quyết định</a></li>
+      <li><a href="/vi/decision_making.html">Ra quyết định</a></li>
+      <li><a href="/vi/choice.html">Quyết định và lựa chọn</a></li>
+      <li><a href="/vi/management.html">Quản lý</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Đường dẫn điều hướng">
+    <a href="/vi/">Trang chủ</a> <span aria-hidden="true">/</span>
+    <a href="/vi/systems_analysis.html">Phân tích hệ thống</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Phương pháp Young</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Đổi giao diện"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/young_method.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/vi/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Đổi giao diện"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710f03ea931e13',t:'MTc4ODczNTI5OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

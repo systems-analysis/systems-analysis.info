@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Probléma</title>
+<meta name="description" content="A probléma és a problémahelyzet a rendszerelemzés központi fogalmai közé tartozik. A szöveg bemutatja a definíciókat, a problémahelyzetek jellemzőit és szerepüket a döntéselméletben.">
+<meta name="keywords" content="probléma,szisztematikus probléma,rendszerelemzés,bizonytalanság,rendszer,kutatás">
+<link rel="canonical" href="https://systems-analysis.info/hu/problem.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/problem.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/problem.html">
+<link rel="alternate" hreflang="hu" href="https://systems-analysis.info/hu/problem.html">
+<meta property="og:title" content="Probléma">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/hu/problem.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="A probléma és a problémahelyzet a rendszerelemzés központi fogalmai közé tartozik. A szöveg bemutatja a definíciókat, a problémahelyzetek jellemzőit és szerepüket a döntéselméletben.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="hu_HU">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/hu/problem.html#article",
+    "headline": "Probléma",
+    "description": "A probléma és a problémahelyzet a rendszerelemzés központi fogalmai közé tartozik. A szöveg bemutatja a definíciókat, a problémahelyzetek jellemzőit és szerepüket a döntéselméletben.",
+    "url": "https://systems-analysis.info/hu/problem.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "hu",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/hu/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/hu/problem.html"
+    },
+    "keywords": [
+        "probléma",
+        "szisztematikus probléma",
+        "rendszerelemzés",
+        "bizonytalanság",
+        "rendszer",
+        "kutatás"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "Probléma",
+        "description": "A complex theoretical or practical question requiring study and resolution; a contradictory situation that calls for an adequate theory to resolve it.",
+        "sameAs": [
+            "https://www.wikidata.org/entity/Q621184",
+            "https://en.wikipedia.org/wiki/Problem",
+            "https://systems-analysis.info/wiki/Проблема",
+            "https://systems-analysis.info/eng/Problem"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Főoldal",
+            "item": "https://systems-analysis.info/hu/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Rendszerelemzés",
+            "item": "https://systems-analysis.info/hu/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Probléma"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Fő navigáció">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menü</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/hu/">Főoldal</a>
+        <span aria-hidden="true">·</span>
+        <a href="/hu/sections.html">Témakörök</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/hu/books.html">Könyvek</a>
+        <span aria-hidden="true">·</span>
+        <a href="/hu/catalog.html">Katalógus</a>
+        <span aria-hidden="true">·</span>
+        <a href="/problem.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Téma váltása"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Betűtípus váltása"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Probléma</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>Probléma</strong>:</p>
+<ul>
+  <li>összetett elméleti vagy gyakorlati kérdés, amely vizsgálatot és megoldást igényel; ellentmondásos helyzet, amely bizonyos jelenségek, tárgyak vagy folyamatok magyarázatában megjelenő szembenálló álláspontokban nyilvánul meg, és amelynek feloldásához megfelelő elmélet szükséges;</li>
+  <li>akadály a kitűzött cél elérésének útjában. Problematikusnak nevezzük azt a helyzetet, amikor a tevékenység a korábban alkalmazott módszerekkel nem valósítható meg, és a kívánt eredmény elérése a megváltozott körülmények között nehézségbe ütközik vagy lehetetlenné válik;</li>
+  <li>eltérés a rendszer meglévő állapota és a megkívánt (cél-) állapota között adott környezeti feltételek mellett, egy adott időpontban.</li>
+</ul>
+<p><strong>Problémahelyzet:</strong></p>
+<ul>
+  <li>olyan valós körülmények összessége, amelyeket valaki elégtelennek talál, és amelyeken változtatni kíván.</li>
+  <li>a gyakorlati vagy elméleti munka során felmerülő felismerés, hogy a korábban megszerzett ismeretek nem elegendők, és az ebből fakadó igény új tudásra, amelyet célirányos kutatás útján keresünk.</li>
+</ul>
+<p>A modern rendszerelemzés egyik központi fogalma a szisztematikus probléma, amely olyan problémákat jelöl, amelyek bizonyos közös, azonosítható jellemzőkkel rendelkeznek. Bár ezt a fogalmat lehetetlen egyetlen, kimerítő megfogalmazásban pontosan meghatározni, a tudományos kutatás tapasztalatai alapján általánosítva megállapíthatók az ilyen problémák megkülönböztető jegyei. Ezek a következők:</p>
+<ul>
+  <li>Strukturálatlanság vagy gyenge strukturáltság.</li>
+  <li>Formalizálatlanság vagy gyenge formalizálhatóság.</li>
+  <li>Ellentmondásosság.</li>
+  <li>Bizonytalanság.</li>
+  <li>Kétértelműség.</li>
+  <li>Informalitás.</li>
+  <li>Komplexitás.</li>
+</ul>
+<p><strong>A problémahelyzet mint célelérési akadály jellemzői:</strong></p>
+<ul>
+  <li>a bizonytalanság magas foka (az információ hiánya vagy elégtelensége)</li>
+  <li>nyilvánvaló vagy jelentős ellentmondások jelenléte a helyzet leírásában vagy értékelésében</li>
+  <li>gyenge strukturáltság vagy a struktúra teljes hiánya</li>
+  <li>a problémahelyzet formalizálhatatlansága vagy gyenge formalizálhatósága</li>
+</ul>
+<p>A problémastrukturáltság fogalmát, amelyet H. Simon és A. Newell vezetett be (1958), az adott problémát leíró mennyiségi és minőségi, objektív és szubjektív információ egyensúlya határozza meg.</p>
+<p>A jól strukturált, illetve jól formalizálható problémák mennyiségi megfogalmazást tesznek lehetővé; legfontosabb összefüggéseiket objektív modellek fejezik ki, és szimbolikus formában jelennek meg, ahol a szimbólumok numerikus értékeket vesznek fel. A strukturálatlan, illetve nem formalizálható problémák csak minőségi, szöveges leírással rendelkeznek, amelyek egyének szubjektív ítéletein alapulnak, és a probléma legfontosabb jellemzői közötti mennyiségi összefüggések vagy hiányoznak, vagy ismeretlenek. A félig strukturált, illetve gyengén formalizálható problémák köztes helyet foglalnak el: mennyiségi és minőségi elemeket egyaránt tartalmaznak, de bennük a rosszul meghatározott és nem kellően megértett szempontok dominálnak.</p>
+<p>A szisztematikus problémák tartalmi dinamikája csak lehetséges forgatókönyvek vagy az események alakulásának változatai révén írható le. Ennek oka, hogy jellemzően nem áll rendelkezésre kimerítő adat három kulcsfontosságú összefüggésről: (1) a problémát körülvevő körülményekről; (2) más problémákkal való kapcsolatairól; és (3) a megoldásához szükséges erőforrásokról. Lehetetlen előre látni mindazokat a helyzeteket, amelyekkel a szisztematikus probléma megoldása során találkozunk. A szisztematikus probléma kezdetben látható része a megoldásához szükséges összes információnak csak kis töredékét adja, a többi rejtve marad, és csak a vizsgálat során bukkan felszínre. Ezenfelül a szisztematikus problémák megoldására számos nem nyilvánvaló módszer és megközelítés kínálkozik, ám a lehetséges opciók teljes köre előre nem határozható meg.</p>
+<p>A szisztematikus problémák sok tudományágat érintenek, ugyanakkor egyetlen tudományág sem képes hatékony módszereket kínálni a teljes körű megoldásukra. A hagyományos tudományágak szándékosan szűkítik hatókörüket – abból a megfontolásból, hogy csak így érhetők el gyakorlatilag jelentős eredmények. Ezzel szemben a rendszerelemzés megköveteli a tudományos és gyakorlati érdekek integrálását bármely egyetlen elmélet keretein túl, függetlenül annak előrejelző erejétől. Egy szisztematikus probléma csak úgy oldható meg eredményesen, ha összeállítjuk a tudományos módszerek és ismeretek olyan komplexumát, amelynek összetettsége megfelel a probléma összetettségének, és amely lefedi a vizsgált objektum szempontjainak és megnyilvánulásainak teljes körét.</p>
+<p>A különböző tudományok ismeretei és módszerei önmagukban nem alkothatnak ilyen komplexumot, mivel hiányzik közöttük az összehangolás és a célirányos irányultság. Ezért szükség van egy rendszerformáló mechanizmusra, amely képes irányítani az egyes összetevőket, összehangolni a kutatási eredményeket, és az erőfeszítéseket a legfontosabb irányokra összpontosítani. A rendszerelemzés ezt az összehangoló és integráló funkciót látja el.</p>
+<p>A szisztematikus problémák annak a szubsztanciának számos heterogén szempontját érintik, amelyben megjelennek, és ezek a szempontok kölcsönös hatással vannak egymásra. Ha a probléma egyszerűsítése érdekében az úgynevezett „lényegtelen” szempontokat kizárjuk, ez hibákhoz vezethet. Ugyanakkor az a törekvés, hogy minden szempontot figyelembe vegyünk, kezelhetetlenné és gyakorlatilag megoldhatatlanná teszi a problémát. Bármely szisztematikus probléma paramétertérében létezik egy kompromisszumos tartomány. E tartomány megkeresése a rendszerelemzés egyik legfontosabb gyakorlati feladata.</p>
+</div>
+      </article>
+    </div>
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Módszertanok</h2>
+    <ul>
+      <li><a href="/hu/methodology_sa.html">A rendszerelemzés módszertana</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Kapcsolódó cikkek</h2>
+    <ul>
+      <li><a href="/hu/system.html">Rendszer</a></li>
+      <li><a href="/hu/system_terminus.html">A rendszer fogalma</a></li>
+      <li><a href="/hu/system_def.html">A rendszer meghatározása</a></li>
+      <li><a href="/hu/economics.html">Rendszerelemzés a közgazdaságtanban</a></li>
+      <li><a href="/hu/systems_analysis.html">Rendszerelemzés</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Navigációs útvonal">
+    <a href="/hu/">Főoldal</a> <span aria-hidden="true">/</span>
+    <a href="/hu/systems_analysis.html">Rendszerelemzés</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Probléma</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Téma váltása"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/problem.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/hu/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Téma váltása"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a37109750863a5ce',t:'MTc4ODczNTA3MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

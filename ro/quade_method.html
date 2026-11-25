@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Metodologia analizei sistemelor a lui Quade</title>
+<meta name="description" content="Analiza sistemelor. Metodologia lui Quade. Formularea problemei este cel mai important element al analizei sistemelor și include stabilirea esenței problemei, definirea sferei de cuprindere a studiului, stabilirea datelor inițiale și identificarea scopurilor.">
+<meta name="keywords" content="Analiza sistemelor,metodologia lui Quade">
+<link rel="canonical" href="https://systems-analysis.info/ro/quade_method.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/quade_method.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/quade_method.html">
+<link rel="alternate" hreflang="ro" href="https://systems-analysis.info/ro/quade_method.html">
+<meta property="og:title" content="Metodologia analizei sistemelor a lui Quade">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/ro/quade_method.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Analiza sistemelor. Metodologia lui Quade. Formularea problemei este cel mai important element al analizei sistemelor și include stabilirea esenței problemei, definirea sferei de cuprindere a studiului, stabilirea datelor inițiale și identificarea scopurilor.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="ro_RO">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/ro/quade_method.html#article",
+    "headline": "Metodologia analizei sistemelor a lui Quade",
+    "description": "Analiza sistemelor. Metodologia lui Quade. Formularea problemei este cel mai important element al analizei sistemelor și include stabilirea esenței problemei, definirea sferei de cuprindere a studiului, stabilirea datelor inițiale și identificarea scopurilor.",
+    "url": "https://systems-analysis.info/ro/quade_method.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "ro",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/ro/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/ro/quade_method.html"
+    },
+    "keywords": [
+        "Analiza sistemelor",
+        "metodologia lui Quade"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Analysis for Military Decisions",
+        "author": {
+            "@type": "Person",
+            "name": "Quade E.S."
+        },
+        "datePublished": "1964",
+        "publisher": {
+            "@type": "Organization",
+            "name": "RAND Corporation"
+        },
+        "inLanguage": "ro"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Analysis for Military Decisions",
+        "author": {
+            "@type": "Person",
+            "name": "Quade E.S."
+        },
+        "datePublished": "1964",
+        "inLanguage": "ro"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Pagina principală",
+            "item": "https://systems-analysis.info/ro/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Analiza sistemelor",
+            "item": "https://systems-analysis.info/ro/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Metodologia lui Quade"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Navigare principală">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Meniu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/ro/">Pagina principală</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ro/sections.html">Secțiuni</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ro/books.html">Cărți</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ro/catalog.html">Catalog</a>
+        <span aria-hidden="true">·</span>
+        <a href="/quade_method.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Schimbă tema"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Schimbă fontul"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Metodologia analizei sistemelor a lui Quade</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>Analiza sistemelor se desfășoară de regulă în următoarea succesiune:</strong></p>
+<ol>
+  <li>Formularea problemei;</li>
+  <li>Selectarea alternativelor de abordare pentru rezolvarea problemei;</li>
+  <li>Investigarea resurselor cheltuite pentru rezolvarea problemei;</li>
+  <li>Construirea unui model;</li>
+  <li>Selectarea criteriilor de evaluare;</li>
+  <li>Compararea alternativelor și luarea deciziei.</li>
+</ol>
+<p>Formularea problemei este cel mai important element al analizei sistemelor și include stabilirea esenței <a href="/ro/problem.html" class="text-link">problemei</a>, definirea sferei de cuprindere a studiului, stabilirea datelor inițiale și identificarea scopurilor.</p>
+<p>Selectarea alternativelor de abordare pentru rezolvarea problemelor constă în enumerarea acelor alternative (mijloace) care, potrivit considerentelor preliminare, pot fi utilizate pentru rezolvarea problemei formulate. Pe parcursul studiului, unele alternative sunt eliminate, iar altele noi sunt introduse.</p>
+<p>Investigarea resurselor cheltuite pentru rezolvarea problemei reprezintă o etapă esențială a analizei economice, în cadrul căreia se determină necesarul material și financiar. De regulă, <a href="/ro/system.html" class="text-link">sistemele</a> de armament sunt selectate pe baza costului minim pentru un nivel dat de eficacitate.</p>
+<p>Construirea unui <a href="/ro/model.html" class="text-link">model</a> este etapa studiului în care se elaborează un analog al procesului real, reprezentând factorii cei mai esențiali prin relații matematice (modele analitice), cu ajutorul unui calculator (modele computerizate) sau printr-un „joc” special (modele de simulare tip joc).</p>
+<p>Modelarea în analiza sistemelor va ocupa un loc din ce în ce mai important, în special în legătură cu dezvoltarea metodelor de modelare matematică și a calculatoarelor.</p>
+<p>Selectarea criteriilor de evaluare este o etapă deosebit de critică a analizei sistemelor și constă în specificarea unei mărimi (sau a unui sistem de mărimi) a cărei valoare numerică poate fi folosită pentru a aprecia succesul soluției. Pentru funcționarea satisfăcătoare a metodelor de analiză a sistemelor, se consideră important ca criteriile adoptate la fiecare nivel de conducere să fie legate într-un sistem logic unic. Cel mai important criteriu la nivelul cel mai înalt (conducerea ministerului apărării) este raportul cost-eficacitate al sistemului.</p>
+<p>Compararea alternativelor și luarea deciziei reprezintă etapa finală a analizei, în care mijloacele de rezolvare a problemei formulate sunt evaluate în raport cu criteriul ales. Pe lângă evaluarea cantitativă a diferitelor alternative, pot fi prezentate și judecăți logice care indică preferabilitatea unei alternative față de celelalte.</p>
+</div>
+      </article>
+    </div>
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Metodologii de analiză a sistemelor</h2>
+    <ul>
+      <li><a href="/ro/methodology_sa.html">Metodologia analizei sistemelor</a></li>
+      <li><a href="/ro/optner_method.html">Metodologia analizei sistemelor a lui Optner</a></li>
+      <li><a href="/ro/chernyak_method.html">Metodologia analizei sistemelor a lui Chernyak</a></li>
+      <li><a href="/ro/young_method.html">Metodologia analizei sistemelor a lui Young</a></li>
+      <li><a href="/ro/golubkov_method.html">Metodologia analizei sistemelor a lui Golubkov</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Literatură</h2>
+    <ul>
+      <li><a href="/assets/systems_analysis_quaid.pdf">Descarcă cartea: Analiza pentru decizii militare. Quade</a></li>
+      <li><a href="/ro/systems_analysis_book.html">Descarcă literatură despre analiza sistemelor</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Articole conexe</h2>
+    <ul>
+      <li><a href="/ro/systems_analysis.html">Analiza sistemelor</a></li>
+      <li><a href="/ro/decision_theory.html">Teoria deciziei</a></li>
+      <li><a href="/ro/decision_making.html">Luarea deciziilor</a></li>
+      <li><a href="/ro/choice.html">Decizie și alegere</a></li>
+      <li><a href="/ro/management.html">Management</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Cale de navigare">
+    <a href="/ro/">Pagina principală</a> <span aria-hidden="true">/</span>
+    <a href="/ro/systems_analysis.html">Analiza sistemelor</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Metodologia lui Quade</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Schimbă tema"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/quade_method.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/ro/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Schimbă tema"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710d585e661e13',t:'MTc4ODczNTIzMA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

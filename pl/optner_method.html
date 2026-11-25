@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Metodologia analizy systemowej Optnera</title>
+<meta name="description" content="Dobrze sformułowany problem to często połowa sukcesu w jego rozwiązaniu. Z tego powodu analityk systemowy przywiązuje szczególną uwagę do możliwie wczesnej oceny parametrów, właściwości i relacji problemu.">
+<meta name="keywords" content="Analiza systemowa,metodologia Optnera,problem,system,rozwiązanie,alternatywa,wymaganie">
+<link rel="canonical" href="https://systems-analysis.info/pl/optner_method.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/optner_method.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/optner_method.html">
+<link rel="alternate" hreflang="pl" href="https://systems-analysis.info/pl/optner_method.html">
+<meta property="og:title" content="Metodologia analizy systemowej Optnera">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/pl/optner_method.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Dobrze sformułowany problem to często połowa sukcesu w jego rozwiązaniu. Z tego powodu analityk systemowy przywiązuje szczególną uwagę do możliwie wczesnej oceny parametrów, właściwości i relacji problemu.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="pl_PL">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/pl/optner_method.html#article",
+    "headline": "Metodologia analizy systemowej Optnera",
+    "description": "Dobrze sformułowany problem to często połowa sukcesu w jego rozwiązaniu. Z tego powodu analityk systemowy przywiązuje szczególną uwagę do możliwie wczesnej oceny parametrów, właściwości i relacji problemu.",
+    "url": "https://systems-analysis.info/pl/optner_method.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "pl",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/pl/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/pl/optner_method.html"
+    },
+    "keywords": [
+        "Analiza systemowa",
+        "metodologia Optnera",
+        "problem",
+        "system",
+        "rozwiązanie",
+        "alternatywa",
+        "wymaganie"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Systems Analysis for Business and Industrial Problem Solving",
+        "author": {
+            "@type": "Person",
+            "name": "Optner S.L."
+        },
+        "datePublished": "1965",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Prentice-Hall"
+        },
+        "inLanguage": "pl"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Systems Analysis for Business and Industrial Problem Solving",
+        "author": {
+            "@type": "Person",
+            "name": "Optner S.L."
+        },
+        "datePublished": "1965",
+        "inLanguage": "pl"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Strona główna",
+            "item": "https://systems-analysis.info/pl/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Analiza systemowa",
+            "item": "https://systems-analysis.info/pl/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Metodologia Optnera"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Nawigacja główna">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/pl/">Strona główna</a>
+        <span aria-hidden="true">·</span>
+        <a href="/pl/sections.html">Działy</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/pl/books.html">Książki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/pl/catalog.html">Katalog</a>
+        <span aria-hidden="true">·</span>
+        <a href="/optner_method.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Zmień motyw"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Zmień krój pisma"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Metodologia analizy systemowej Optnera</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Stanford L. Optner. Systems Analysis for Business and Industrial <a href="/pl/problem.html" class="text-link">Problem</a> Solving</p>
+<p><strong>Etapy metodologii analizy systemowej Optnera</strong>:</p>
+<ol>
+  <li>Zidentyfikować symptomy.</li>
+  <li>Określić, czy problem jest istotny.</li>
+  <li>Zdefiniować cel.</li>
+  <li>Ujawnić strukturę systemu i jego wadliwe elementy.</li>
+  <li>Określić strukturę możliwości.</li>
+  <li>Zidentyfikować alternatywy.</li>
+  <li>Ocenić alternatywy.</li>
+  <li>Wybrać alternatywę.</li>
+  <li>Sformułować rozwiązanie.</li>
+  <li>Uzyskać akceptację rozwiązania od wykonawców i kierownictwa.</li>
+  <li>Zainicjować proces wdrożenia.</li>
+  <li>Zarządzać procesem wdrożenia.</li>
+  <li>Ocenić wyniki i konsekwencje wdrożenia.</li>
+</ol>
+<p>Problem definiuje się jako sytuację obejmującą dwa stany: jeden nazywany stanem istniejącym, drugi — stanem proponowanym. Stan istniejący reprezentowany jest przez system bieżący; stan proponowany reprezentowany jest przez system hipotetyczny lub pożądany. Każdy stan zawiera zbiór obiektów, właściwości i relacji połączonych w ramach procesu, przy czym każdy z nich można opisać jako <a href="/pl/system.html" class="text-link">system</a>. Aby przejść ze stanu istniejącego do proponowanego, należy zmienić obecny zbiór obiektów, właściwości i relacji. Zmiana obiektów może oznaczać zastąpienie elementu wyposażenia, a nie reorganizację personelu; zmiana właściwości może przybrać formę zwiększenia liczebności personelu; zmiana relacji może wprowadzić nowy podział odpowiedzialności.</p>
+<p>Problem charakteryzują zawarte w nim niewiadome oraz jego warunki. Obszarów niewiadomej może być jeden lub wiele. Niewiadoma może być definiowalna w sposób jakościowy, lecz niekoniecznie kwantytatywny. Charakterystyka kwantytatywna może przybrać formę zakresu oszacowań reprezentujących przypuszczalny stan niewiadomej. W sensie klasycznym niewiadome to wielkości, które należy określić. Definiowanie jednej niewiadomej za pomocą innej może więc być sprzeczne lub nadmiarowe. Niewiadome można wyrażać jedynie za pomocą tego, co jest znane — czyli za pomocą rzeczy, których obiekty, właściwości i relacje zostały ustalone. To, co znane, definiuje się jako wielkość, której wartość została określona.</p>
+<p>Stan istniejący (system bieżący) może zawierać zarówno wielkości znane, jak i niewiadome; oznacza to, że obecność niewiadomych nie musi uniemożliwiać funkcjonowania systemu. System istniejący jest, z definicji, logicznie skonstruowany, może jednak nie spełniać jakiegoś ograniczenia. Samo funkcjonowanie systemu nie jest więc ostateczną miarą jego adekwatności, ponieważ niektóre systemy mogą funkcjonować całkiem dobrze, a jednak nie osiągać swoich celów. Cele można definiować jedynie za pomocą wymagań systemowych. Wymagania systemowe ustala się poprzez warunek, który określa obiekty i właściwości w ich właściwych relacjach.</p>
+<p>Wymagania systemowe służą jako sposób rejestrowania jednoznacznych stwierdzeń definiujących <a href="/pl/goal.html" class="text-link">cel</a>. Choć wymagania systemowe wyraża się za pomocą obiektów, właściwości i relacji, cele mogą być wyrażone za pomocą stanu pożądanego. Dla danego zbioru wymagań systemowych cele i stan pożądany mogą się w pełni pokrywać. Jeśli się różnią, mówi się, że wymagania reprezentują system pożądany. Ogólnie cele identyfikuje się z systemem pożądanym.</p>
+<p>Rozbieżność między systemem istniejącym a pożądanym stanowi problem. Celem działania jest minimalizacja tej rozbieżności. Utrzymanie lub poprawę działania systemu rozumie się właśnie w kontekście tej rozbieżności między stanem istniejącym a pożądanym. Utrzymanie stanu istniejącego oznacza zachowanie wyników systemu w ustalonych granicach. Poprawa stanu systemu oznacza uzyskanie wyników lepszych niż te wytwarzane w stanie istniejącym lub przewyższających je.</p>
+<p>Rozwiązanie określa, jak należy zniwelować rozbieżność między stanem istniejącym a pożądanym. Rozwiązanie jest więc środkiem, za pomocą którego jeden stan przekształca się w drugi. Opisuje różnice między dwoma stanami w kategoriach obiektów, właściwości i relacji oraz określa, w jaki sposób należy wprowadzić tę strukturę łączącą, aby uzyskać stan proponowany. Rozwiązanie wdraża się poprzez sterowanie ze sprzężeniem zwrotnym, obejmujące <a href="/pl/model.html" class="text-link">model</a> wyjścia, kontrolę zgodności oraz model działania.</p>
+<p>Rozwiązywanie problemów odbywa się w drodze procesu uczenia się. Uczenie się definiuje się jako akt poznawczy wynikający z pobudzeń. Poznanie obejmuje szeroki zakres działań intelektualnych, w tym rozpoznawanie wzorców obecnych lub przyszłych. Rozpoznanie uzyskuje się poprzez zastosowanie kryterium do wyniku. Poznanie jest jedną z podstawowych funkcji niezbędnych do zniwelowania rozbieżności między systemem istniejącym a pożądanym. Inne funkcje związane z uczeniem się obejmują sformułowanie sposobu, w jaki jeden stan systemu przekształca się w inny, a także idea wskazująca a priori, jak można osiągnąć stan pożądany poprzez zmiany istniejących obiektów, właściwości i relacji.</p>
+<p>Udane sformułowanie problemu może stanowić połowę jego rozwiązania. Z tego powodu analityk systemowy zwraca szczególną uwagę na możliwie najwcześniejszą ocenę parametrów, właściwości i relacji problemu. Nie zawsze można wprowadzić do problemu „gotowe” cele; cele zaproponowane przez kogoś innego mogą okazać się niewystarczające. Ponadto analityk systemowy może przyjąć zaproponowany cel tylko wtedy, gdy w drodze sformułowania problemu ustali, że jest on wolny od nadmiarowości i sprzeczności. Problem „rozwiązany w połowie” poprzez samo sformułowanie nie jest w ścisłym sensie problemem rozwiązanym, lecz jego sformułowanie oznacza, że główne elementy problemu zostały prawidłowo zidentyfikowane i powiązane. Z tego powodu sformułowanie problemu można również nazwać jego definicją.</p>
+<p>Początkowe etapy formułowania problemu mają na celu: 1) sporządzenie wstępnego stwierdzenia problemu; 2) interpretację tego stwierdzenia w odniesieniu do różnych części problemu; 3) interpretację faktów dotyczących problemu; oraz 4) doprecyzowanie wstępnego stwierdzenia problemu. W toku wstępnego badania analityk oddziela to, co znane, od tego, co nieznane, aby stwierdzenie wstępne miało sens.</p>
+<p>Odpowiednikiem sformułowania problemu jest opracowanie definicji celu. Termin „cel” opisuje wynik, który należy osiągnąć. Cel może przybrać formę maksimum (lub minimum), którego wielkość nie została jeszcze ustalona, albo może określać zakres wartości, w którym musi się znaleźć rozwiązanie. We wszystkich przypadkach cel jest pożądanym wynikiem działania.</p>
+<p>Połączenie celów wyznaczających kierunek działania oraz relacji ograniczających, które je limitują, tworzy ramy ograniczeń, w obrębie których zaczyna się badanie problemu. Ograniczenie to suma reguł, przepisów i zasad przewodnich — narzuconych sobie samemu lub przez czynniki zewnętrzne — które określają granice problemu. Każdy problem musi mieć definiowalny zbiór ograniczeń. Niezbędna jest zgodność między celami a relacjami ograniczającymi. Bez porozumienia w sprawie ograniczeń porozumienie w sprawie rozwiązań jest wysoce nieprawdopodobne. Mówienie o „rozwiązaniu” nie ma sensu, jeśli zainteresowane strony nie mogą dojść do zgody w sprawie problemu lub ograniczeń, które go definiują.</p>
+<p>Kiedy analityk systemowy ustala warunek problemu, wyznacza granice badania, a tym samym granice ram ograniczeń. W ujęciu matematycznym warunki mogą być wystarczające, nadmiarowe lub sprzeczne; innych form przyjmować nie mogą.</p>
+<p>Warunek jest nadmiarowy, jeśli zawiera niepotrzebne elementy — elementy, które mają tendencję do powodowania strat. Warunek może również zawierać sprzeczność. Element sprzeczny to taki, który jest tak ściśle powiązany z innym, że jeśli jeden jest prawdziwy, drugi musi być fałszywy. Skutkiem warunku sprzecznego jest to, że części problemu są ze sobą niezgodne, a więc wzajemnie się wykluczają.</p>
+<p>Warunek wystarczający jest spełniony, gdy ograniczenia są zgodne z proponowanym celem, a cel jest zdefiniowany adekwatnie względem wymagań systemowych. Wystarczalność implikuje precyzję: zawiera wszystko niezbędne do zaspokojenia wymagania, bez niedostatku i bez nadmiaru.</p>
+<p>Problemy o słabo zdefiniowanej strukturze są zwykle „rozwiązywane” poprzez przyjęcie ocen względnych, a nie absolutnych, bez dowodu. Problemy o bardzo szerokim zakresie, problemy, których rozwiązania zależą od rzeczy jeszcze nieopracowanych, oraz problemy zawierające hipotezy dotyczące kombinacji systemów, które nie mogą być jeszcze zdefiniowane w istniejących okolicznościach — wszystkie te problemy mają słabo zdefiniowaną strukturę.</p>
+<p>Formułując (lub opisując) problem, analityk systemowy musi wykonać następujące zadania: po pierwsze, opisać, jak problem został odkryty; po drugie, ustalić, czemu jest on uważany za problem; po trzecie, odróżnić go od zwykłego „symptomu” problemów powiązanych; po czwarte, podać operacyjne definicje niepożądanych konsekwencji problemu. Analityk popełni poważny błąd, jeśli w toku formułowania problemu zaproponuje rozwiązania lub przypisze przyczyny. Sporządzenie stwierdzenia problemu ma na celu przede wszystkim wyraźne sprecyzowanie problemu. Na etapie formułowania nie stawia się żadnych wymagań wobec hipotez. Aby zachować kontrolę nad problemem, wskazane jest posiadanie logicznie powiązanych, wyraźnie zidentyfikowanych faktów.</p>
+<p>Badanie historycznych aspektów problemu ma swoje zalety. Moment, w którym problem stał się widoczny po raz pierwszy, może służyć jako cenny dowód, umożliwiając powiązanie go z wcześniejszymi, identyfikowalnymi działaniami. Czasami istotne jest ustalenie okoliczności, które doprowadziły do powstania problemu.</p>
+<p>Nie każdy postrzega to samo zjawisko jako problem. Konieczne jest więc ustalenie racjonalnych podstaw traktowania danego zjawiska jako problemu. Zjawiska w przedsiębiorstwach, instytucjach rządowych i wojskowych można klasyfikować jako problemy, jeśli mają tendencję do zakłócania oczekiwań co do zysku lub obniżania skuteczności działania. Jednak pewne nieoczywiste problemy można przewidzieć jedynie metodami analitycznymi. W przypadkach, gdy problemy nie są widoczne, zakłócenie działania systemu nie następuje natychmiast, lecz staje się możliwością.</p>
+<p>W rozwiązywaniu problemu pierwszym zadaniem jest określenie zbioru obiektów, które mają zostać poddane analizie. Ten zbiór obiektów, traktowany jako całość, stanowi alternatywę. Ocena alternatyw jest sposobem wyboru rozwiązań lub celów. Dany problem można rozwiązać za pomocą wielu różnych alternatywnych procedur. Alternatywy mogą mieć aspekty kwantyfikowalne lub nie. Na przykład liczba osób lub jednostek wyposażenia w danej alternatywie jest kwantyfikowalna, natomiast typ rynku, stopień wpływu rynkowego czy lokalizacja rynku mogą być kwantyfikowalne tylko częściowo. Istnienie alternatyw implikuje możliwość wyboru między dwoma lub więcej akceptowalnymi rozwiązaniami. Treść alternatyw definiuje warunki, w jakich można dokonać wyboru.</p>
+<p>Założenia to stwierdzenia dotyczące przypuszczalnego stanu obiektu, właściwości lub relacji. Propozycje to hipotezy lub postulaty. Jeśli propozycje są fałszywe, wówczas założenia są fałszywe, a warunek problemu jest sprzeczny. Założenia stosuje się do radzenia sobie z trudnymi realiami, które mają tendencję do zakłócania procedury rozwiązywania problemu. Jeśli założenia nie zmieniają poziomu ryzyka lub relacji kosztów do skuteczności danej alternatywy, są użyteczną i niezbędną częścią problemu. Założenia obarczają analityka systemowego obowiązkiem zapewnienia spójności.</p>
+<p>Założenie pozwala wywnioskować fakt niepewny na podstawie istnienia innych faktów znanych.</p>
+<p>Kryterium jest środkiem, za pomocą którego mierzy się lub wybiera alternatywy. Kryterium zobowiązuje analityka systemowego do zademonstrowania logicznego rozumowania przy wyborze preferencji. Kryterium wskazuje względną wydajność alternatywy w odniesieniu do innych miar, takich jak czas, koszt czy skuteczność. Jest to standard, na podstawie którego można wydać osąd o względnej wartości wyboru.</p>
+<p>Ryzyko jest miarą potencjalnej podatności na niedociągnięcia. Wysokie ryzyko może być również charakteryzowane przez niskie prawdopodobieństwo statystyczne, choć precyzyjna miara ryzyka nie zawsze jest kwantyfikowalna. Do opisu ryzyka w złożonych problemach o wymiarze zarówno kwantytatywnym, jak i jakościowym, stosuje się termin „niepewność”.</p>
+<p>W tym znaczeniu „niepewność” odnosi się do względnej wiarygodności zdarzenia, które faktycznie miało miejsce. Ryzyko lub niepewność mogą się przejawiać na całej długości procesu rozwiązywania problemu. Ryzyko wzrasta na przykład, jeśli kryteria są z natury nieodpowiednie do zmierzenia tego, co mają mierzyć. Ryzyko wzrasta również, jeśli założenia przyjęte za prawdziwe okazują się fałszywe. Ryzyko może wystąpić jako dominująca cecha alternatywy wybranej z powodu niewykrytych błędów sprzężenia zwrotnego od wyjścia do wejścia.</p>
+<p>Alternatywa jest jedną z dwóch lub więcej możliwości, spośród których dokonuje się wyboru. Aby alternatywa mogła zostać uwzględniona, musi stanowić akceptowalne potencjalne rozwiązanie stwierdzonego problemu. Gdy alternatywy są porównywalne, ustala się różnicę między nimi. Gdy nie są porównywalne, identyfikuje się aspekty, w których się różnią. Zgodnie z tą definicją alternatywy mogą różnić się stopniem lub rodzajem.</p>
+<p>Istnieją dwie ogólne formy alternatyw: funkcjonalnie różne i operacyjnie różne. Formę funkcjonalną można zilustrować za pomocą łódki żaglowej i jednosilnikowego samolotu, które obie mogą być uznane za alternatywne rozwiązania tego samego problemu. Formę operacyjną można zilustrować za pomocą trzech wariantów tego samego samochodu, każdy zaprojektowany do rozwiązania tego samego problemu. Alternatywy funkcjonalne różnią się sposobem rozwiązywania problemów. Alternatywy operacyjne różnią się sposobem, w jaki obiekty, właściwości i relacje są łączone w system. Alternatywy ocenia się na podstawie całkowitego zapotrzebowania na zasoby i kosztu oraz oczekiwanego zwrotu. Celem definiowania alternatyw może być maksymalizacja, minimalizacja lub optymalizacja skuteczności systemu.</p>
+<p>W matematyce i statystyce istnieje reguła, że w danym momencie logicznie można maksymalizować lub minimalizować tylko jedną miarę. Reguła ta odnosi się z równą siłą do problemów o charakterze mieszanym, kwantytatywno-jakościowym. Jest na przykład mało prawdopodobne, że można zarówno zminimalizować czas, jak i koszt rozwiązania problemu bez pogorszenia skuteczności systemu. Jedną zmienną można maksymalizować, podczas gdy inne są optymalizowane — to znaczy będą się blisko, choć nie w pełni, przybliżać do swoich stanów idealnych przy maksimum tej jednej zmiennej. Optimum oznacza to, co najlepsze w sensie „biorąc wszystko pod uwagę”. Nie oznacza „najlepszego w ogóle”. Może oznaczać najbardziej korzystne warunki do osiągnięcia danego celu. Optima mogą być postrzegane jako tak „korzystne”, że specjalista opisałby je jako „idealne”, „doskonałe” lub „najlepsze możliwe”. Jednak taka charakterystyka jest a posteriori i nie stanowi części logicznej konstrukcji alternatyw.</p>
+<p>W większości przypadków maksimum i minimum rozwiązania problemu mogą być nieznane; w konsekwencji nieznane będzie również optimum. Te rozważania pokazują, że możliwe jest skonstruowanie alternatywy, której maksimum lub minimum ma niewielkie praktyczne zastosowanie. Nawet gdy analityk systemowy nie rozumie wartości absolutnej każdej alternatywy, wciąż możliwe jest ustalenie zbioru oszacowań, który pozwala opisać rozwiązanie problemu.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Metodologie analizy systemowej</h2>
+    <ul>
+      <li><a href="/pl/methodology_sa.html">Metodologia analizy systemowej</a></li>
+      <li><a href="/pl/quade_method.html">Metodologia analizy systemowej Quade’a</a></li>
+      <li><a href="/pl/chernyak_method.html">Metodologia analizy systemowej Czerniaka</a></li>
+      <li><a href="/pl/young_method.html">Metodologia analizy systemowej Younga</a></li>
+      <li><a href="/pl/golubkov_method.html">Metodologia analizy systemowej Gołubkowa</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Literatura</h2>
+    <ul>
+      <li><a href="/assets/systems_analysis_optner.pdf">Pobierz książkę: Systems Analysis for Business and Industrial Problem Solving. Optner</a></li>
+      <li><a href="/pl/systems_analysis_book.html">Pobierz literaturę z zakresu analizy systemowej</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Powiązane artykuły</h2>
+    <ul>
+      <li><a href="/pl/systems_analysis.html">Analiza systemowa</a></li>
+      <li><a href="/pl/decision_theory.html">Teoria decyzji</a></li>
+      <li><a href="/pl/decision_making.html">Podejmowanie decyzji</a></li>
+      <li><a href="/pl/choice.html">Decyzja i wybór</a></li>
+      <li><a href="/pl/management.html">Zarządzanie</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Ścieżka nawigacji">
+    <a href="/pl/">Strona główna</a> <span aria-hidden="true">/</span>
+    <a href="/pl/systems_analysis.html">Analiza systemowa</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Metodologia Optnera</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Zmień motyw"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/optner_method.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/pl/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Zmień motyw"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710b577903a5ce',t:'MTc4ODczNTE0OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

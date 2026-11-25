@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>বিমূর্ত ও বাস্তব মডেল</title>
+<meta name="description" content="মডেলিং হলো অনুসন্ধানের একটি সাধারণ বৈজ্ঞানিক পদ্ধতি। গবেষণার অভিজ্ঞতামূলক ও তাত্ত্বিক—দুই স্তরেই মডেলিংয়ের প্রয়োগ মডেলগুলোকে বাস্তব (বস্তুগত) ও বিমূর্ত (আদর্শ)—এই প্রথাগত বিভাজনে নিয়ে যায়।">
+<meta name="keywords" content="বিমূর্ত মডেল,বাস্তব মডেল,বস্তুগত মডেল,মডেলিং,সিস্টেম,বস্তু,সাদৃশ্য তত্ত্ব">
+<link rel="canonical" href="https://systems-analysis.info/bn/model_am.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/model_am.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/model_am.html">
+<link rel="alternate" hreflang="bn" href="https://systems-analysis.info/bn/model_am.html">
+<meta property="og:title" content="বিমূর্ত ও বাস্তব মডেল">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/bn/model_am.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="মডেলিং হলো অনুসন্ধানের একটি সাধারণ বৈজ্ঞানিক পদ্ধতি। গবেষণার অভিজ্ঞতামূলক ও তাত্ত্বিক—দুই স্তরেই মডেলিংয়ের প্রয়োগ মডেলগুলোকে বাস্তব (বস্তুগত) ও বিমূর্ত (আদর্শ)—এই প্রথাগত বিভাজনে নিয়ে যায়।">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="bn_BD">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/bn/model_am.html#article",
+    "headline": "বিমূর্ত ও বাস্তব মডেল",
+    "description": "মডেলিং হলো অনুসন্ধানের একটি সাধারণ বৈজ্ঞানিক পদ্ধতি। গবেষণার অভিজ্ঞতামূলক ও তাত্ত্বিক—দুই স্তরেই মডেলিংয়ের প্রয়োগ মডেলগুলোকে বাস্তব (বস্তুগত) ও বিমূর্ত (আদর্শ)—এই প্রথাগত বিভাজনে নিয়ে যায়।",
+    "url": "https://systems-analysis.info/bn/model_am.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "bn",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/bn/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/bn/model_am.html"
+    },
+    "keywords": [
+        "বিমূর্ত মডেল",
+        "বাস্তব মডেল",
+        "বস্তুগত মডেল",
+        "মডেলিং",
+        "সিস্টেম",
+        "বস্তু",
+        "সাদৃশ্য তত্ত্ব"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "প্রধান পাতা",
+            "item": "https://systems-analysis.info/bn/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "মডেলিং",
+            "item": "https://systems-analysis.info/bn/modelling.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "বিমূর্ত ও বাস্তব মডেল"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="প্রধান নেভিগেশন">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">মেনু</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/bn/">প্রধান পাতা</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bn/sections.html">বিভাগসমূহ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bn/books.html">বইসমূহ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bn/catalog.html">তালিকা</a>
+        <span aria-hidden="true">·</span>
+        <a href="/model_am.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="থিম পরিবর্তন"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="ফন্ট পরিবর্তন"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">বিমূর্ত ও বাস্তব মডেল</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>“মডেল” শব্দটির অস্পষ্টতা, মডেলিংয়ের বিশাল সংখ্যক প্রকারভেদ এবং তাদের দ্রুত বিকাশ বর্তমানে এমন একটি যুক্তিসঙ্গতভাবে সম্পূর্ণ মডেল-শ্রেণিবিভাগ তৈরি করা কঠিন করে তোলে, যা সবাইকে সন্তুষ্ট করবে। এমন কোনো শ্রেণিবিভাগই প্রথাগত, কারণ তা একদিকে এর রচয়িতাদের ব্যক্তিগত দৃষ্টিভঙ্গি এবং অন্যদিকে বৈজ্ঞানিক অনুসন্ধানের সীমিতসংখ্যক ক্ষেত্র সম্পর্কে তাঁদের জ্ঞানের সীমা প্রতিফলিত করে।</p>
+<p>এখানে উপস্থাপিত শ্রেণিবিভাগকে মডেলিং প্রক্রিয়ার নিজস্ব ধর্ম ও বৈশিষ্ট্য অনুসন্ধানের জন্য একটি হাতিয়ার—বা একটি মডেল—তৈরি করার প্রয়াস হিসেবে দেখা উচিত। মডেলিং হলো অনুসন্ধানের একটি সাধারণ বৈজ্ঞানিক পদ্ধতি। গবেষণার অভিজ্ঞতামূলক ও তাত্ত্বিক—দুই স্তরেই মডেলিংয়ের প্রয়োগ বাস্তব (বস্তুগত) ও বিমূর্ত (আদর্শ) মডেলের মধ্যে একটি প্রথাগত পার্থক্যের দিকে নিয়ে যায়।</p>
+<p>বাস্তব মডেলিং হলো এমন একটি বস্তুগত সদৃশ ব্যবহার করে কোনো বস্তুর অনুসন্ধান, যা এর মূল প্রাকৃতিক, জ্যামিতিক, গতিবিধিগত ও কার্যিক বৈশিষ্ট্যগুলো পুনরুৎপাদন করে। বাস্তব মডেলিংয়ের মূল প্রকারভেদ হলো প্রকৃত-মাপনী (প্রোটোটাইপ) মডেলিং এবং অনুরূপ (অ্যানালগ) মডেলিং। এই দুই প্রকারই জ্যামিতিক বা প্রাকৃতিক সাদৃশ্যের ধর্মের ওপর ভিত্তি করে গড়ে ওঠে।</p>
+<p>বিমূর্ত মডেলিং বাস্তব মডেলিং থেকে এই দিক থেকে ভিন্ন যে, এটি বস্তু ও মডেলের মধ্যে কোনো বস্তুগত সাদৃশ্যের ওপর নির্ভর করে না, বরং একটি আদর্শ, ধারণাগত সাদৃশ্যের ওপর নির্ভর করে এবং সর্বদা তাত্ত্বিক প্রকৃতির হয়। বিমূর্ত মডেলিং বাস্তব মডেলিংয়ের তুলনায় প্রাথমিক: প্রথমে মানুষের মনে একটি আদর্শ মডেল গঠিত হয়, এবং তার ভিত্তিতেই পরে একটি বাস্তব মডেল নির্মিত হয়।</p>
+<p>বাস্তব মডেলিংয়ের মূল প্রকারভেদ হলো প্রকৃত-মাপনী ও অনুরূপ (অ্যানালগ)। দুটিই জ্যামিতিক বা প্রাকৃতিক সাদৃশ্যের ধর্মের ওপর ভিত্তি করে গড়ে ওঠে। দুটি জ্যামিতিক আকৃতি সদৃশ হয়, যদি তাদের সমস্ত সংশ্লিষ্ট দৈর্ঘ্য ও কোণের অনুপাত একই থাকে। সাদৃশ্য গুণাংক—অর্থাৎ স্কেল—জানা থাকলে, একটি আকৃতির মাত্রাগুলোকে স্কেল গুণাংক দ্বারা গুণ করে জ্যামিতিকভাবে সদৃশ অন্য আকৃতির মাত্রা নির্ধারণ করা যায়। দুটি প্রাকৃতিক ঘটনা সদৃশ হয়, যদি একটির জানা বৈশিষ্ট্য থেকে অপরটির বৈশিষ্ট্য একটি সাধারণ রূপান্তরের মাধ্যমে পাওয়া যায়, যা এক পরিমাপ একক <a href="/bn/system.html" class="text-link">সিস্টেম</a> থেকে অন্যটিতে স্থানান্তরের সাথে তুলনীয়। ঘটনাসমূহের মধ্যে সাদৃশ্যের শর্তসমূহের অধ্যয়ন সাদৃশ্য তত্ত্বের ক্ষেত্র।</p>
+<p>প্রকৃত-মাপনী মডেলিং হলো এমন এক মডেলিং, যেখানে একটি বাস্তব বস্তুকে একটি বর্ধিত বা সংকুচিত বস্তুগত সদৃশের মাধ্যমে উপস্থাপন করা হয়, যা অনুসন্ধানের উপযোগী (সাধারণত পরীক্ষাগারের শর্তে), এবং পরবর্তীতে সাদৃশ্য তত্ত্বের ভিত্তিতে গবেষিত প্রক্রিয়া ও ঘটনাসমূহের বৈশিষ্ট্য মডেল থেকে বস্তুতে স্থানান্তরিত করা হয়।</p>
+<p>অনুরূপ (অ্যানালগ) মডেলিং হলো এমন মডেলিং যা ভিন্ন প্রাকৃতিক ধর্মের কিন্তু একই ধরনের আনুষ্ঠানিক বিবরণ (একই গাণিতিক সম্পর্ক, যুক্তিগত রেখাচিত্র এবং গাঠনিক নকশা) দ্বারা বর্ণিত প্রক্রিয়া ও ঘটনার মধ্যে সাদৃশ্যের ওপর ভিত্তি করে গড়ে ওঠে। অনুরূপ মডেলিং বিভিন্ন বস্তুর গাণিতিক বিবরণের সমরূপতার ওপর নির্ভর করে।</p>
+<p>বাস্তব ও অনুরূপ মডেলসমূহ কোনো বাস্তব বস্তুর বস্তুগত প্রতিফলন এবং তাদের জ্যামিতিক, প্রাকৃতিক ও অন্যান্য বৈশিষ্ট্যের মাধ্যমে বস্তুটির সাথে ঘনিষ্ঠভাবে সম্পর্কিত। প্রয়োগে, এই ধরনের মডেলের অনুসন্ধান করা মানে হলো এমন একাধিক প্রাকৃতিক পরীক্ষা পরিচালনা করা, যেখানে বাস্তব বস্তুকে তার বাস্তব বা অনুরূপ মডেল দ্বারা প্রতিস্থাপিত করা হয়।</p>
+<p>বিমূর্ত মডেলিং দুটি মূল প্রকারে বিভক্ত: স্বজ্ঞাত ও বৈজ্ঞানিক।</p>
+<p>স্বজ্ঞাত মডেলিং হলো এমন মডেলিং যা অধ্যয়নাধীন বস্তু সম্পর্কে একটি স্বজ্ঞাত (আনুষ্ঠানিক যুক্তির দৃষ্টিকোণ থেকে ন্যায্যতাপ্রাপ্ত নয়) ধারণার ওপর ভিত্তি করে গঠিত—যা আনুষ্ঠানিকীকরণের উপযোগী নয় বা তার প্রয়োজনই হয় না। চারপাশের জগতের একটি স্বজ্ঞাত মডেলের সবচেয়ে স্পষ্ট উদাহরণ হলো একজন ব্যক্তির জীবনের অভিজ্ঞতা। পর্যবেক্ষিত ঘটনার কারণ ও কার্যপ্রক্রিয়ার ব্যাখ্যা যে অভিজ্ঞতামূলক জ্ঞানে অনুপস্থিত থাকে, তাকেও স্বজ্ঞাত বলে গণ্য করা উচিত।</p>
+<p>বৈজ্ঞানিক মডেলিং সর্বদা যুক্তিসঙ্গতভাবে প্রতিষ্ঠিত, এবং এটি অধ্যয়নাধীন বস্তু সম্পর্কে পর্যবেক্ষণের ভিত্তিতে অনুমান হিসেবে গৃহীত ন্যূনতম সংখ্যক প্রকল্প ব্যবহার করে।</p>
+<p>বৈজ্ঞানিক ও স্বজ্ঞাত মডেলিংয়ের মধ্যে মূল পার্থক্য কেবল মডেলিংয়ের সাথে সংশ্লিষ্ট প্রয়োজনীয় কার্যক্রম ও কাজ সম্পাদনের ক্ষমতার মধ্যেই সীমাবদ্ধ নয়, বরং তার সাথে যুক্ত “অন্তর্নিহিত” কার্যপ্রক্রিয়াসমূহ বোঝার ক্ষেত্রেও নিহিত। বলা যায় যে, বৈজ্ঞানিক মডেলিং কেবল <em>কীভাবে</em> মডেল করতে হয় তা-ই জানে না, বরং <em>কেন</em> এটি একটি নির্দিষ্ট পদ্ধতিতে করা উচিত তা-ও জানে। এটি জোর দিয়ে বলা প্রয়োজন যে, বিজ্ঞানে স্বজ্ঞা ও স্বজ্ঞাত মডেলসমূহ অসাধারণ গুরুত্বপূর্ণ ভূমিকা রাখে—এগুলো ছাড়া প্রকৃত নতুন জ্ঞান অর্জন করা সম্ভব নয়। এমন জ্ঞান কেবল আনুষ্ঠানিক যুক্তির পদ্ধতির মাধ্যমে অর্জন করা যায় না।</p>
+<p>স্বজ্ঞাত ও বৈজ্ঞানিক (তাত্ত্বিক) মডেলিংকে একে অপরের বিরোধী হিসেবে দেখা কোনোভাবেই উচিত নয়। তারা একে অপরকে ভালোভাবে পরিপূরক করে, প্রত্যেকেই তার নিজস্ব প্রয়োগক্ষেত্র দখল করে থাকে।</p>
+<p>প্রতীকী মডেলিং হলো এমন মডেলিং যা চিহ্নভিত্তিক উপস্থাপনা—যেমন রেখাচিত্র, লেখচিত্র, অঙ্কন এবং প্রতীকের সমাহার—তাদের পরিচালনার নিয়ম ও বিধির সাথে ব্যবহার করে। এমন মডেলের উদাহরণ হলো কোনো ভাষা—যেমন মানুষের কথ্য ও লিখিত যোগাযোগের ভাষা, অ্যালগরিদমিক ভাষা, ইত্যাদি। বৈজ্ঞানিক ও স্বজ্ঞাত—দুই ধরনের জ্ঞানই প্রকাশের জন্য প্রতীকী রূপ ব্যবহৃত হয়। গাণিতিক সম্পর্কের মাধ্যমে মডেলিংও প্রতীকী মডেলিংয়ের একটি উদাহরণ।</p>
+<p>স্বজ্ঞাত জ্ঞান নতুন জ্ঞানের একটি উৎস। তবে সমস্ত অনুমান ও ভাবনা পরবর্তী পরীক্ষা এবং বৈজ্ঞানিক দৃষ্টিভঙ্গির বৈশিষ্ট্যযুক্ত আনুষ্ঠানিক যুক্তির পদ্ধতির যাচাই সহ্য করতে পারে না, যা সবচেয়ে মূল্যবান জ্ঞান চিহ্নিত করার জন্য একরকম ফিল্টার হিসেবে কাজ করে।</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>সম্পর্কিত নিবন্ধ</h2>
+    <ul>
+      <li><a href="/bn/model.html">মডেল</a></li>
+      <li><a href="/bn/modelling.html">মডেলিং</a></li>
+      <li><a href="/bn/modeling_process.html">মডেলিং প্রক্রিয়া</a></li>
+      <li><a href="/bn/mathmodeling_process.html">গাণিতিক মডেলিং প্রক্রিয়া</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="নেভিগেশন পথ">
+    <a href="/bn/">প্রধান পাতা</a> <span aria-hidden="true">/</span>
+    <a href="/bn/modelling.html">মডেলিং</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">বিমূর্ত ও বাস্তব মডেল</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="থিম পরিবর্তন"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/model_am.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/bn/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="থিম পরিবর্তন"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a37107213af8a5ce',t:'MTc4ODczNDk3Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

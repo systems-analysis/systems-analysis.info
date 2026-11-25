@@ -1,0 +1,9 @@
+# OpenAI system cards download manifest
+# format: <url> | <path relative to site root> | <sha256>
+https://cdn.openai.com/papers/GPTV_System_Card.pdf | files/openai/02 - 2023-09 - GPT-4V(ision) - System Card.pdf | f5a5a731482b3029e6a998377f7fc693f309c211a0672617c44bec5a076dcf5d
+https://cdn.openai.com/o1-system-card-20241205.pdf | files/openai/04 - 2024-12 - OpenAI o1 - System Card.pdf | 3ba7bdbe69e022f6be0527edbfe18ac1becdea48d5be9891ab764ff336c8a033
+https://cdn.openai.com/o3-mini-system-card-feb10.pdf | files/openai/05 - 2025-01 - OpenAI o3-mini - System Card.pdf | 420c260d935429e38a31044b287378802218b6edcc5de72b66cca9346b0197fa
+https://cdn.openai.com/deep-research-system-card.pdf | files/openai/06 - 2025-02 - Deep Research - System Card.pdf | 6662a84c7fdffc19ddecf969a7f00ba6216d7542b2dd9becd5354d6273da8f5a
+https://cdn.openai.com/pdf/2221c875-02dc-4789-800b-e7758f3722c1/o3-and-o4-mini-system-card.pdf | files/openai/08 - 2025-04 - OpenAI o3 and o4-mini - System Card.pdf | 32d7ca19fff2ed0dc2d06f84e3143900bbd7898bb6f443c094477fb4ce0fc4ab
+https://cdn.openai.com/gpt-5-system-card.pdf | files/openai/09 - 2025-08 - GPT-5 - System Card.pdf | f9f9c72d08cba81dcbb189129119357c8c32eca4e0b16c813aca386aed6b0459
+https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf | files/openai/13 - 2026-04 - GPT-5.5 - System Card.pdf | 31133a3f53b520713b87ff9b92ddf90d3e699ac8b47f87c3e739b4365e8bfecf

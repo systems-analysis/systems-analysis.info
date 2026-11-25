@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>옵트너의 시스템 분석 방법론</title>
+<meta name="description" content="잘 정식화된 문제는 그것을 해결하는 데 있어 절반의 성공이라 할 수 있다. 이러한 이유로 시스템 분석가는 문제의 파라미터, 속성, 관계를 가능한 한 초기에 평가하는 데 특별한 주의를 기울인다.">
+<meta name="keywords" content="시스템 분석,옵트너의 방법론,문제,시스템,해,대안,요구사항">
+<link rel="canonical" href="https://systems-analysis.info/ko/optner_method.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/optner_method.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/optner_method.html">
+<link rel="alternate" hreflang="ko" href="https://systems-analysis.info/ko/optner_method.html">
+<meta property="og:title" content="옵트너의 시스템 분석 방법론">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/ko/optner_method.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="잘 정식화된 문제는 그것을 해결하는 데 있어 절반의 성공이라 할 수 있다. 이러한 이유로 시스템 분석가는 문제의 파라미터, 속성, 관계를 가능한 한 초기에 평가하는 데 특별한 주의를 기울인다.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="ko_KR">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/ko/optner_method.html#article",
+    "headline": "옵트너의 시스템 분석 방법론",
+    "description": "잘 정식화된 문제는 그것을 해결하는 데 있어 절반의 성공이라 할 수 있다. 이러한 이유로 시스템 분석가는 문제의 파라미터, 속성, 관계를 가능한 한 초기에 평가하는 데 특별한 주의를 기울인다.",
+    "url": "https://systems-analysis.info/ko/optner_method.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "ko",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/ko/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/ko/optner_method.html"
+    },
+    "keywords": [
+        "시스템 분석",
+        "옵트너의 방법론",
+        "문제",
+        "시스템",
+        "해",
+        "대안",
+        "요구사항"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Systems Analysis for Business and Industrial Problem Solving",
+        "author": {
+            "@type": "Person",
+            "name": "Optner S.L."
+        },
+        "datePublished": "1965",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Prentice-Hall"
+        },
+        "inLanguage": "ko"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Systems Analysis for Business and Industrial Problem Solving",
+        "author": {
+            "@type": "Person",
+            "name": "Optner S.L."
+        },
+        "datePublished": "1965",
+        "inLanguage": "ko"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "홈",
+            "item": "https://systems-analysis.info/ko/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "시스템 분석",
+            "item": "https://systems-analysis.info/ko/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "옵트너의 방법론"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="주 메뉴">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">메뉴</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/ko/">홈</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ko/sections.html">섹션</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ko/books.html">도서</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ko/catalog.html">카탈로그</a>
+        <span aria-hidden="true">·</span>
+        <a href="/optner_method.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="테마 전환"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="글꼴 전환"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">옵트너의 시스템 분석 방법론</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>스탠퍼드 L. 옵트너, 「비즈니스 및 산업 <a href="/ko/problem.html" class="text-link">문제</a> 해결을 위한 시스템 분석」</p>
+<p><strong>옵트너의 시스템 분석 방법론 단계</strong>:</p>
+<ol>
+  <li>징후를 파악한다.</li>
+  <li>문제가 실제로 관련성이 있는지 판단한다.</li>
+  <li>목표를 정의한다.</li>
+  <li>시스템의 구조와 결함이 있는 요소를 밝혀낸다.</li>
+  <li>가능성의 구조를 결정한다.</li>
+  <li>대안을 파악한다.</li>
+  <li>대안을 평가한다.</li>
+  <li>대안을 선택한다.</li>
+  <li>해를 정식화한다.</li>
+  <li>실행자와 관리자로부터 해에 대한 수용을 얻는다.</li>
+  <li>실행 과정을 개시한다.</li>
+  <li>실행 과정을 관리한다.</li>
+  <li>실행의 결과와 파급 효과를 평가한다.</li>
+</ol>
+<p>문제란 두 가지 상태, 즉 기존 상태라 불리는 것과 제안된 상태라 불리는 것을 포함하는 상황으로 정의된다. 기존 상태는 현재의 시스템으로 표현되고, 제안된 상태는 가설적이거나 바람직한 시스템으로 표현된다. 각 상태는 하나의 프로세스 안에서 통합된 객체, 속성, 관계의 집합을 포함하며, 각각은 하나의 <a href="/ko/system.html" class="text-link">시스템</a>으로 기술될 수 있다. 기존 상태에서 제안된 상태로 이동하기 위해서는 현재의 객체, 속성, 관계의 집합이 변화해야 한다. 객체의 변화는 인력 재편이 아니라 장비 교체를 의미할 수 있고, 속성의 변화는 인원 증가의 형태를 취할 수 있으며, 관계의 변화는 책임의 새로운 분배를 도입할 수 있다.</p>
+<p>문제는 그것이 포함하는 미지수와 그 조건에 의해 특징지어진다. 미지의 영역은 하나일 수도 있고 여럿일 수도 있다. 미지수는 질적으로는 정의될 수 있어도 양적으로는 정의될 수 없는 경우가 있다. 양적 특성화는 미지수의 가정된 상태를 나타내는 추정치의 범위 형태를 취할 수 있다. 고전적인 의미에서 미지수란 결정되어야 할 양이다. 따라서 하나의 미지수를 다른 미지수로 정의하는 것은 모순되거나 중복될 수 있다. 미지수는 오직 알려진 것, 즉 객체, 속성, 관계가 이미 확정된 것들의 관점에서만 표현될 수 있다. 알려진 것은 그 값이 이미 결정된 양으로 정의된다.</p>
+<p>기존 상태(현재의 시스템)에는 알려진 것과 미지의 것이 모두 존재할 수 있다. 이는 미지수의 존재가 시스템의 작동을 반드시 막지는 않는다는 것을 의미한다. 기존 시스템은 정의상 논리적으로 구성되어 있지만, 제약조건을 충족하지 못할 수도 있다. 따라서 시스템이 단지 작동한다는 사실 자체는 그 적합성을 판단하는 최종적인 척도가 될 수 없다. 어떤 시스템은 완벽하게 작동하면서도 목표를 달성하지 못할 수 있기 때문이다. 목표는 오직 시스템 요구사항의 관점에서만 정의될 수 있다. 시스템 요구사항은 객체와 속성을 적절한 관계 속에서 명시하는 조건을 통해 확립된다.</p>
+<p>시스템 요구사항은 <a href="/ko/goal.html" class="text-link">목표</a>를 정의하는 명확한 진술을 기록하는 수단으로 작용한다. 시스템 요구사항은 객체, 속성, 관계의 관점에서 진술되지만, 목표는 바람직한 상태의 관점에서 표현될 수 있다. 주어진 시스템 요구사항의 집합에 대해 목표와 바람직한 상태는 완전히 일치할 수 있다. 만약 그것들이 다르다면, 요구사항은 바람직한 시스템을 나타낸다고 말할 수 있다. 일반적으로 목표는 바람직한 시스템과 동일시된다.</p>
+<p>기존 시스템과 바람직한 시스템 사이의 간극이 바로 문제를 구성한다. 행동의 목적은 이 간극을 최소화하는 것이다. 시스템 운용의 유지 또는 개선은 기존 상태와 바람직한 상태 사이의 이러한 간극의 관점에서 이해된다. 기존 상태를 유지한다는 것은 시스템의 출력을 정해진 한계 내로 유지하는 것을 의미한다. 시스템 상태의 개선이란 기존 상태에서 산출되는 것보다 더 우수하거나 그것을 초과하는 출력을 얻는 것을 의미한다.</p>
+<p>해는 기존 상태와 바람직한 상태 사이의 간극을 어떻게 메울 것인지를 결정한다. 따라서 해는 한 상태를 다른 상태로 변환하는 수단이다. 해는 두 상태 사이의 차이를 객체, 속성, 관계의 관점에서 기술하며, 제안된 상태를 얻기 위해 이러한 가교 구조가 어떻게 도입되어야 하는지를 명시한다. 해는 출력 <a href="/ko/model.html" class="text-link">모델</a>, 적합성 점검, 행동 모델로 구성되는 피드백 제어를 통해 실행된다.</p>
+<p>문제 해결은 학습 과정을 통해 이루어진다. 학습은 자극으로부터 발생하는 인지적 행위로 정의된다. 인지는 현재 또는 미래의 패턴 인식을 포함한 광범위한 지적 활동을 포괄한다. 인식은 출력에 기준을 적용함으로써 이루어진다. 인지는 기존 시스템과 바람직한 시스템 사이의 간극을 메우는 데 필요한 근본적인 기능들 중 하나이다. 학습에 관여하는 그 밖의 기능으로는, 한 시스템 상태를 다른 상태로 변환하는 수단을 정식화하는 것과, 기존의 객체, 속성, 관계에 대한 변화를 통해 바람직한 상태에 어떻게 도달할 수 있는지를 사전에 제시하는 아이디어가 있다.</p>
+<p>문제를 성공적으로 정식화하는 것은 그 해결의 절반에 해당할 수 있다. 이러한 이유로 시스템 분석가는 문제의 파라미터, 속성, 관계를 가능한 한 초기에 평가하는 데 특별한 주의를 기울인다. 문제에 "완성된" 목표를 그대로 도입하는 것이 항상 가능한 것은 아니며, 다른 사람이 제시한 목표는 불충분한 것으로 판명될 수 있다. 더욱이 시스템 분석가는 문제 정식화를 통해 그 목표가 중복이나 모순에서 자유롭다는 것을 확인한 뒤에야 그것을 받아들일 수 있다. 정식화를 통해 "절반 해결된" 문제는 엄밀한 의미에서 해결된 문제가 아니지만, 그 정식화는 문제의 주요 요소들이 적절히 식별되고 서로 관련지어졌음을 의미한다. 이러한 이유로 문제 정식화는 문제 정의라고도 불릴 수 있다.</p>
+<p>문제 정식화의 초기 단계는 다음을 목표로 한다. 1) 초기 문제 진술을 작성한다. 2) 이 진술을 문제의 여러 부분과 관련지어 해석한다. 3) 문제와 관련된 사실들을 해석한다. 4) 초기 문제 진술을 정교화한다. 초기 조사 과정에서 분석가는 초기 진술이 의미를 갖도록 알려진 것과 알려지지 않은 것을 구분한다.</p>
+<p>문제 정식화의 대응 개념은 목표 정의의 개발이다. "목표"라는 용어는 달성해야 할 결과를 기술한다. 목표는 그 크기가 아직 결정되지 않은 최댓값(또는 최솟값)의 형태를 취할 수도 있고, 해가 반드시 속해야 할 값의 범위를 명시하는 형태를 취할 수도 있다. 어떤 경우든 목표는 활동의 바람직한 결과이다.</p>
+<p>행동의 방향을 설정하는 목표들과 그것을 제한하는 관계들의 결합은, 문제 연구가 시작되는 제약 체계를 형성한다. 제약조건은 문제의 경계를 정의하는 규칙, 규정, 지침 원칙의 총합이며, 이는 스스로 부과된 것이든 외부에서 부과된 것이든 상관없다. 모든 문제는 정의 가능한 제약조건의 집합을 가져야 한다. 목표와 제약 관계 사이의 양립 가능성은 필수적이다. 제약조건에 대한 합의가 없다면 해에 대한 합의도 거의 불가능하다. 이해관계자들이 문제나 그것을 정의하는 제약조건에 합의할 수 없다면 "해"를 논하는 것은 무의미하다.</p>
+<p>시스템 분석가가 문제의 조건을 확립할 때, 그는 조사의 한계를, 그리고 그로부터 확장하여 제약 체계의 경계를 설정하게 된다. 수학적으로 말하면, 조건은 충분하거나, 중복되거나, 모순될 수 있으며, 그 외의 형태를 취할 수는 없다.</p>
+<p>조건에 불필요한 요소, 즉 낭비를 유발하는 경향이 있는 요소가 포함되어 있다면 그 조건은 중복이다. 조건에는 모순이 포함될 수도 있다. 모순되는 요소란 다른 요소와 매우 밀접하게 관련되어 있어서, 하나가 참이면 다른 하나는 반드시 거짓이 되는 요소를 말한다. 모순된 조건의 결과는 문제의 여러 부분이 서로 일관되지 않아 상호 대립하게 된다는 것이다.</p>
+<p>충분조건은 제약조건이 제안된 목표와 양립 가능하고, 그 목표가 시스템 요구사항에 관하여 적절히 정의되어 있을 때 충족된다. 충분성은 정확성을 함축한다. 즉, 부족함도 없고 과잉도 없이 요구사항을 충족하는 데 필요한 모든 것을 포함한다는 것이다.</p>
+<p>구조가 제대로 정의되지 않은 문제는 일반적으로 절대적 평가가 아닌 상대적 평가를 증명 없이 받아들임으로써 "해결"된다. 범위가 매우 광범위한 문제, 아직 개발되지 않은 것에 그 해가 의존하는 문제, 그리고 현재 상황에서는 아직 정의될 수 없는 시스템 결합에 관한 가설을 포함하는 문제는 모두 구조가 제대로 정의되지 않은 문제이다.</p>
+<p>문제를 정식화(또는 진술)함에 있어 시스템 분석가는 다음의 과업을 완수해야 한다. 첫째, 문제가 어떻게 발견되었는지를 기술한다. 둘째, 그것이 왜 문제로 간주되는지를 확립한다. 셋째, 그것을 관련된 문제들의 단순한 "징후"와 구별한다. 넷째, 문제의 바람직하지 않은 결과에 대한 운용적 정의를 제시한다. 분석가가 문제 정식화 과정에서 해결책을 제시하거나 원인을 단정한다면 그는 심각한 오류를 범하는 것이다. 문제 진술을 작성하는 것은 무엇보다도 문제를 명확히 초점에 맞추는 것을 목적으로 한다. 정식화 단계에서는 가설에 대해 아무런 요구도 부과되지 않는다. 문제에 대한 통제를 유지하기 위해서는 논리적으로 연결되고 명확하게 식별 가능한 사실들을 확보해 두는 것이 바람직하다.</p>
+<p>문제의 역사적 측면을 조사하는 데에는 나름의 장점이 있다. 문제가 처음으로 명백해진 시점은 귀중한 증거로 작용할 수 있으며, 이를 통해 그 문제를 앞선 식별 가능한 행동들과 연결시킬 수 있다. 때로는 문제를 야기한 상황을 규명하는 것이 중요하다.</p>
+<p>동일한 현상이 모든 사람에게 문제로 인식되는 것은 아니다. 따라서 어떤 현상을 문제로 취급하는 근거를 확립할 필요가 있다. 비즈니스, 정부, 군사 기관의 현상은 이익 기대치를 저해하거나 운용 효과성을 저하시키는 경향이 있을 경우 문제로 분류될 수 있다. 그러나 일부 명확하지 않은 문제는 분석적 방법을 통해서만 예측될 수 있다. 문제가 명백하지 않은 경우, 시스템 운용의 저해는 즉시 일어나지 않고 하나의 가능성으로 존재하게 된다.</p>
+<p>문제를 해결함에 있어 첫 번째 과업은 분석 대상이 될 객체의 집합을 결정하는 것이다. 이 객체들의 집합은 전체로서 하나의 대안을 구성한다. 대안 평가는 해 또는 목표를 선택하는 수단이다. 주어진 문제는 여러 서로 다른 대안적 절차를 통해 해결될 수 있다. 대안은 정량화 가능한 측면을 가질 수도, 갖지 않을 수도 있다. 예를 들어 대안에 포함된 인원이나 장비의 수는 정량화가 가능하지만, 시장의 유형, 시장 영향력의 정도, 시장의 위치는 부분적으로만 정량화될 수 있다. 대안의 존재는 두 개 이상의 허용 가능한 해 사이에서 선택할 수 있는 능력을 함축한다. 대안의 실체는 선택이 이루어질 수 있는 조건을 정의한다.</p>
+<p>가정이란 어떤 객체, 속성, 관계의 믿어지는 상태에 관한 진술이다. 명제는 가설 또는 공준이다. 명제가 거짓이면 가정도 거짓이 되고 문제의 조건은 모순되게 된다. 가정은 문제 해결 절차를 저해하는 경향이 있는 어려운 현실에 대처하기 위해 사용된다. 가정이 특정 대안의 위험 수준이나 비용 대비 효과성의 비율을 변화시키지 않는다면, 그것은 문제의 유용하고 필수적인 일부가 된다. 가정은 시스템 분석가에게 일관성을 보장해야 하는 부담을 지운다.</p>
+<p>가정은 확실하게 알려지지 않은 사실을 다른 알려진 사실의 존재로부터 추론할 수 있게 해 준다.</p>
+<p>기준이란 대안을 측정하거나 선택하는 수단이다. 기준은 시스템 분석가로 하여금 선호를 선택하는 데 있어 논리적 추론을 입증하도록 강제한다. 기준은 시간, 비용, 효과성과 같은 다른 척도의 관점에서 어떤 대안의 상대적 성과를 나타낸다. 이는 선택의 상대적 장점에 대해 판단을 내릴 수 있게 하는 표준이다.</p>
+<p>위험이란 결함에 노출될 가능성을 나타내는 척도이다. 높은 위험은 낮은 통계적 확률로 특징지어질 수도 있지만, 위험의 정확한 척도가 항상 정량화 가능한 것은 아니다. 정량적 측면과 질적 측면을 모두 포함하는 복잡한 문제에서 위험을 기술하기 위해 "불확실성"이라는 용어가 사용된다.</p>
+<p>이러한 용법에서 "불확실성"은 실제로 발생한 사건의 상대적 개연성을 가리킨다. 위험 또는 불확실성은 문제 해결 과정 전체에서 나타날 수 있다. 예를 들어 기준이 본래 측정하고자 하는 것을 측정하는 데 적합하지 않다면 위험은 증가한다. 참으로 받아들여진 가정이 거짓으로 판명될 경우에도 위험은 증가한다. 위험은 출력에서 입력으로의 피드백 오류가 발견되지 않은 채 선택된 대안의 지배적 특성으로 나타날 수도 있다.</p>
+<p>대안이란 선택 가능한 두 개 이상의 가능성 중 하나이다. 대안이 고려되기 위해서는 진술된 문제에 대해 허용 가능한 잠재적 해를 나타내야 한다. 대안들이 비교 가능할 때는 그것들 사이의 구별이 확립된다. 비교 가능하지 않을 때는 그것들이 어떤 측면에서 다른지가 식별된다. 이러한 정의에 따르면 대안은 정도에서 다를 수도 있고 종류에서 다를 수도 있다.</p>
+<p>대안에는 두 가지 일반적인 형태가 있다. 즉 기능적으로 다른 형태와 운용적으로 다른 형태이다. 기능적 형태는 범선과 단발 엔진 항공기의 예로 설명할 수 있는데, 이 둘은 동일한 문제에 대한 대안적 해로 간주될 수 있다. 운용적 형태는 동일한 자동차의 세 가지 변형으로 설명할 수 있는데, 각각 동일한 문제를 해결하도록 설계된 것이다. 기능적 대안은 문제를 해결하는 방식에서 서로 다르다. 운용적 대안은 객체, 속성, 관계가 하나의 시스템으로 조합되는 방식에서 서로 다르다. 대안은 총자원 요구량과 비용, 그리고 예상되는 수익에 의해 평가된다. 대안을 정의하는 목적은 시스템 효과성을 극대화하거나, 극소화하거나, 최적화하는 데 있을 수 있다.</p>
+<p>수학과 통계학에는 어느 한 시점에서 논리적으로 극대화 또는 극소화될 수 있는 척도는 오직 하나뿐이라는 규칙이 있다. 이 규칙은 정량적·질적 요소가 혼합된 문제에도 동일하게 적용된다. 예를 들어 문제 해결의 시간과 비용을 시스템 효과성의 저하 없이 동시에 극소화하는 것은 있을 수 없다. 어떤 하나의 변수는 극대화될 수 있는 반면, 다른 변수들은 최적화된다. 즉 그 하나의 변수의 극댓값이 주어졌을 때 다른 변수들은 이상적인 상태에 근접하지만 완전히는 도달하지 못한다. 최적이란 "모든 것을 고려했을 때" 가장 좋은 것을 의미한다. 이는 "최고 중의 최고"를 의미하지 않는다. 이는 주어진 목표를 달성하기 위한 가장 유리한 조건을 의미할 수 있다. 최적은 매우 "유리한" 것으로 인식되어 전문가가 이를 "이상적", "훌륭한", 혹은 "최고 중의 최고"라고 표현할 수도 있다. 그러나 이러한 표현은 사후적인 것이며, 대안의 논리적 구성의 일부는 아니다.</p>
+<p>대부분의 경우 문제 해의 최댓값과 최솟값은 알려지지 않을 수 있으며, 그 결과 최적값 또한 알려지지 않게 된다. 이러한 고려사항들은 그 최댓값이나 최솟값이 실질적으로 거의 쓸모없는 대안을 구성할 수도 있음을 보여준다. 시스템 분석가가 각 대안의 절대적 가치에 대한 이해를 갖추지 못한 경우에도, 문제의 해를 기술할 수 있게 해 주는 일련의 추정치를 확립하는 것은 여전히 가능하다.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>시스템 분석 방법론</h2>
+    <ul>
+      <li><a href="/ko/methodology_sa.html">시스템 분석 방법론</a></li>
+      <li><a href="/ko/quade_method.html">퀘이드의 시스템 분석 방법론</a></li>
+      <li><a href="/ko/chernyak_method.html">체르냐크의 시스템 분석 방법론</a></li>
+      <li><a href="/ko/young_method.html">영의 시스템 분석 방법론</a></li>
+      <li><a href="/ko/golubkov_method.html">골루브코프의 시스템 분석 방법론</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>문헌</h2>
+    <ul>
+      <li><a href="/assets/systems_analysis_optner.pdf">도서 다운로드: 비즈니스 및 산업 문제 해결을 위한 시스템 분석. 옵트너</a></li>
+      <li><a href="/ko/systems_analysis_book.html">시스템 분석 관련 문헌 다운로드</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>관련 문서</h2>
+    <ul>
+      <li><a href="/ko/systems_analysis.html">시스템 분석</a></li>
+      <li><a href="/ko/decision_theory.html">의사결정이론</a></li>
+      <li><a href="/ko/decision_making.html">의사결정</a></li>
+      <li><a href="/ko/choice.html">결정과 선택</a></li>
+      <li><a href="/ko/management.html">관리</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/ko/">홈</a> <span aria-hidden="true">/</span>
+    <a href="/ko/systems_analysis.html">시스템 분석</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">옵트너의 방법론</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="테마 전환"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/optner_method.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/ko/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="테마 전환"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710af4ffcba5ce',t:'MTc4ODczNTEzMg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

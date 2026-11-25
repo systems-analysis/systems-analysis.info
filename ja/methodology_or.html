@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>オペレーションズ・リサーチの方法論</title>
+<meta name="description" content="オペレーションズ・リサーチの課題は、依頼者と分析者の共同作業によって解かれる。方法論の主要な段階——問題の定式化、モデルの構築、解の取得、検証——を解説する。">
+<meta name="keywords" content="オペレーションズ・リサーチの方法論,システム分析,システム,解,問題,モデル,モデリング,研究,目的関数">
+<link rel="canonical" href="https://systems-analysis.info/ja/methodology_or.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/methodology_or.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/methodology_or.html">
+<link rel="alternate" hreflang="ja" href="https://systems-analysis.info/ja/methodology_or.html">
+<meta property="og:title" content="オペレーションズ・リサーチの方法論">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/ja/methodology_or.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="オペレーションズ・リサーチの課題は、依頼者と分析者の共同作業によって解かれる。方法論の主要な段階——問題の定式化、モデルの構築、解の取得、検証——を解説する。">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="ja_JP">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/ja/methodology_or.html#article",
+    "headline": "オペレーションズ・リサーチの方法論",
+    "description": "オペレーションズ・リサーチの課題は、依頼者と分析者の共同作業によって解かれる。方法論の主要な段階——問題の定式化、モデルの構築、解の取得、検証——を解説する。",
+    "url": "https://systems-analysis.info/ja/methodology_or.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "ja",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/ja/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/ja/methodology_or.html"
+    },
+    "keywords": [
+        "オペレーションズ・リサーチの方法論",
+        "システム分析",
+        "システム",
+        "解",
+        "問題",
+        "モデル",
+        "モデリング",
+        "研究"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-08-22",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "オペレーションズ・リサーチの方法論",
+        "description": "モデリングについての分析者の知識と、依頼者の実務経験とを結び合わせて、オペレーションズ・リサーチの課題を解決する共同のアプローチ。",
+        "sameAs": [
+            "https://systems-analysis.info/wiki/Методология_исследования_операций",
+            "https://systems-analysis.info/eng/Operations_research_methodology"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ホーム",
+            "item": "https://systems-analysis.info/ja/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "オペレーションズ・リサーチ",
+            "item": "https://systems-analysis.info/ja/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "オペレーションズ・リサーチの方法論"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/ja/">ホーム</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/sections.html">セクション</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/Systems_Analysis_Wiki_Catalog_%28%E6%97%A5%E6%9C%AC%E8%AA%9E%29">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/books.html">書籍</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/catalog.html">カタログ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/methodology_or.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Toggle theme"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Toggle font"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">オペレーションズ・リサーチの方法論</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>オペレーションズ・リサーチ</strong>の課題を解くことは、研究を依頼する側と分析者が肩を並べて取り組む共同の営みである。モデリングの可能性について知識をもつオペレーションズ・リサーチの分析者には、依頼者がもたらす実務経験と状況についての理解が必要になる。数理モデルの最適解を導き出す前の段階での成否は、チームの創造性と経験に大きく左右される。</p>
+<p>「つかみどころのない」人的要因があるため、オペレーションズ・リサーチの理論を実践へ移すための正確な処方を与えることは難しい。個々の場合において、方法論は固有のものとなる。</p>
+<p><strong>大まかに言えば、実践への移し方の方向は、次のような大きな段階として描くことができる。</strong></p>
+<ol>
+  <li>当初の問題の形式化。</li>
+  <li>数理モデルの構築。</li>
+  <li>モデルを解くこと。</li>
+  <li>モデルの検証。</li>
+  <li>解の実施。</li>
+</ol>
+<p>問題を形式化するには、その問題が生じた領域、あるいは最適化の課題を解く必要がある領域を調べなければならない。これはどの研究チームにとっても最初の作業段階である。少なくとも、解こうとしている問題の三つの根本的な要素を特定しなければならない。</p>
+<ul>
+  <li>実行可能な代替的な解の記述。</li>
+  <li>目的関数（あるいは複数の目的関数）の特定。</li>
+  <li>実行可能な解に課される制約の体系の特定。</li>
+</ul>
+<p>チャーチマン、アコフ、アーノフの古典的著作『オペレーションズ・リサーチ入門』では、六つの段階が述べられている。問題の定式化の段階が別に取り出されている。問題の定式化の質が結果を左右する。この段階で犯された誤りは、<a href="/ja/model.html" class="text-link">モデル</a>を構築し解くその後のあらゆる努力を無意味にしてしまう。問題の定式化にあたっては、システム、その目標、そしてありうる行動方針の総合的な分析が行われる。</p>
+<p>大まかに言えば、オペレーションズ・リサーチの研究の目的は、どの行動方針が最も効果的かを定めることにある。したがって、有効性の基準（あるいは基準の<a href="/ja/system.html" class="text-link">システム</a>）を立てなければならない。意思決定者を含む研究の参加者には、次のことを理解していることが求められる。</p>
+<ul>
+  <li>どのような状況がモデリングになじむか。</li>
+  <li>モデルを構築するのに必要なデータをどのように得るか。</li>
+  <li>どのようなときにモデルを用いるのが適切か、そして時間と費用の合理的な範囲内でそれを行うにはどうするか。</li>
+  <li>モデルの解釈と解の実践的な実施から便益を得るには何をしなければならないか。</li>
+  <li>モデルの限界は何か、そしてモデルが実際の状況にどの程度対応しているか。</li>
+</ul>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>関連記事</h2>
+    <ul>
+      <li><a href="/ja/optimization.html">最適化</a></li>
+      <li><a href="/ja/modelling.html">モデリング</a></li>
+      <li><a href="/ja/operation_research.html">オペレーションズ・リサーチ</a></li>
+      <li><a href="/ja/modeling_process.html">モデリングのプロセス</a></li>
+      <li><a href="/ja/mathmodeling_process.html">数理モデリングのプロセス</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/ja/">ホーム</a> <span aria-hidden="true">/</span>
+    <a href="/ja/operation_research.html">オペレーションズ・リサーチ</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">オペレーションズ・リサーチの方法論</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Toggle theme"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/methodology_or.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">言語</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/ja/map.html">サイトマップ</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710a9c5bb7a5ce',t:'MTc4ODczNTExOA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

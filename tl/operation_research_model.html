@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mga Modelo ng Operations Research</title>
+<meta name="description" content="Ang paggawa ng modelo ng operasyon ay ang mahalagang yugto ng operations research. Pinapasimple at nirerehistro ang operasyon, at natutukoy ang mga mahalagang salik. Inilalarawan ang pangkaraniwang modelo at ang pag-uuri ng mga suliranin.">
+<meta name="keywords" content="Pagmomodelo,modelo,operations research,objective function,programming,mga suliranin,bisa,optimal,matematikal,sistema,pagsusuri,solusyon">
+<link rel="canonical" href="https://systems-analysis.info/tl/operation_research_model.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_model.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_model.html">
+<link rel="alternate" hreflang="tl" href="https://systems-analysis.info/tl/operation_research_model.html">
+<meta property="og:title" content="Mga Modelo ng Operations Research">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/tl/operation_research_model.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Ang paggawa ng modelo ng operasyon ay ang mahalagang yugto ng operations research. Pinapasimple at nirerehistro ang operasyon, at natutukoy ang mga mahalagang salik. Inilalarawan ang pangkaraniwang modelo at ang pag-uuri ng mga suliranin.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="tl_PH">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/tl/operation_research_model.html#article",
+    "headline": "Mga Modelo ng Operations Research",
+    "description": "Ang paggawa ng modelo ng operasyon ay ang mahalagang yugto ng operations research. Pinapasimple at nirerehistro ang operasyon, at natutukoy ang mga mahalagang salik. Inilalarawan ang pangkaraniwang modelo at ang pag-uuri ng mga suliranin.",
+    "url": "https://systems-analysis.info/tl/operation_research_model.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "tl",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/tl/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/tl/operation_research_model.html"
+    },
+    "keywords": [
+        "Pagmomodelo",
+        "modelo",
+        "operations research",
+        "objective function",
+        "programming",
+        "mga suliranin",
+        "bisa",
+        "optimal",
+        "matematikal",
+        "sistema",
+        "pagsusuri",
+        "solusyon"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "Mga Modelo ng Operations Research",
+        "description": "A sufficiently precise mathematical description of an operation expressed through functions, equations, systems of equations, and inequalities.",
+        "sameAs": [
+            "https://systems-analysis.info/wiki/Модели_исследования_операций",
+            "https://systems-analysis.info/eng/Operations_research_models"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Pangunahing Pahina",
+            "item": "https://systems-analysis.info/tl/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Operations Research",
+            "item": "https://systems-analysis.info/tl/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Mga Modelo ng Operations Research"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Pangunahing nabigasyon">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/tl/">Pangunahing Pahina</a>
+        <span aria-hidden="true">·</span>
+        <a href="/tl/sections.html">Mga Seksyon</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/tl/books.html">Mga Aklat</a>
+        <span aria-hidden="true">·</span>
+        <a href="/tl/catalog.html">Katalogo</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_model.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Palitan ang tema"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Palitan ang typeface"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Mga Modelo ng Operations Research</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Upang mailapat ang mga kuwantitatibong pamamaraan ng pananaliksik, kinakailangang bumuo ng matematikal na modelo ng operasyon. Sa paggawa ng modelo, karaniwang pinapasimple at nirerehistro ang operasyon, at ang naging balangkas ay inilalarawan gamit ang mga kasangkapang matematikal. Ang modelo ng isang operasyon ay isang sapat na tumpak na paglalarawang matematikal ng operasyon na ipinahahayag sa pamamagitan ng mga function, ekwasyon, mga sistema ng ekwasyon, at hindi-pagkakapantay-pantay. Ang bisa ng isang operasyon ay ang antas ng pagkamit nito sa kaukulang layunin.</p>
+
+<h2>Pangkalahatang pagbabalangkas ng suliranin sa operations research</h2>
+
+<p>Sa operations research, ang isang sitwasyon ng pamamahala ay bumabalot ng mga layunin at mga pagpapasya. Ginagawa ang mga pagpapasya upang makamit ang isang layunin. Inilalarawan ang sitwasyon ng pamamahala sa pamamagitan ng isang modelo. Naglalaman ang modelo ng isang panukat ng bisa, na sa pamamagitan nito natutukoy kung gaano malapit ang isang pagpapasya sa layunin. Ang panukat ng bisa ay nakasalalay sa mga salik na nakaaapekto sa operasyon. Ang lahat ng mga salik na kasama sa paglalarawan ng isang operasyon ay maaaring hatiin sa dalawang grupo: mga di-nababagong salik na hindi maaapektuhan, at mga makokontrol na salik.</p>
+
+<p>Ang mga konseptwal na elemento ng modelo ay inilalarawan bilang isang “black box,” kung saan ang pangunahing pokus ay ang pagtukoy ng mga input at output. Ang mga input ay ang pinoproseso ng modelo; ang mga output ay ang inilalabas ng modelo. Ang mga makokontrol at hindi-makokontrol na variable ay ibinibigay bilang input. Ang output ay ang pamantayan ng bisa. Naglalaman ang modelo ng isang tahasang panukat ng bisa, na sa pamamagitan nito natutukoy kung gaano malapit ang isang pagpapasya sa layunin. Sa paggawa ng modelo, mahalagang tukuyin kung paano makaaapekto ang mga parametrong input sa nasabing panukat.</p>
+
+<p>Ang pamantayan ng bisa, na ipinahahayag sa pamamagitan ng isang tanging function na tinatawag na objective function, ay nakasalalay sa mga salik ng dalawang grupo. Ang matematikal na pagpapahayag ng pamantayan ng bisa ay tinatawag na objective function. Ang objective function ay isang matematikal na binuo (pormal) na panukat ng bisa na kailangang i-maximize o i-minimize.</p>
+
+<p>Ang mga makokontrol na variable ay ang mga parametrong pinamamahalaan ng gumagawa ng pagpapasya.</p>
+
+<p>Ang mga hindi-makokontrol na variable ay mga panlabas na salik na hindi kontrolado ng tagapamahala, ngunit mahalaga sa pagkamit ng mga layunin.</p>
+
+<p>Ang pamantayan ng bisa, o objective function, ay isang function ng mga variable ng pagpapasya na nagpapahayag ng antas ng paglapit sa layunin.</p>
+
+<p>Kahulugan ng matematikal na modelo: ang matematikal na modelo ay nauunawaan bilang anumang operator na, sa ibinigay na mga halaga ng mga parametrong input, nagtatakda ng mga halaga ng output ng mga parametro ng bagay na ginagawang modelo, sa loob ng kumpol ng mga pinahihintulutang halaga ng mga parametrong input at output para sa bagay na ginagawang modelo.</p>
+
+<h2>Mga modelo ng operations research at ang pagpapasya</h2>
+
+<p>Ang operations research ay nakatuon sa kuwantitatibong pagbibigay-katwiran ng makatwirang pagpapasya. Ang gayong mga modelo ay malapit na nagtutugma sa isang malawak na uri ng mga suliranin sa teorya ng pagpapasya at mga suliranin sa optimizasyon.</p>
+
+<p>Sa paggawa ng modelo ng operations research, kinakailangang sagutin ang mga sumusunod na tanong:</p>
+<ul>
+<li>ano, sa partikular na kaso, ang dapat ituring na mga alternatibong solusyon?</li>
+<li>anong pamantayan ang gagamitin sa pagpili ng mga alternatibong solusyon?</li>
+<li>anong mga hadlang ang dapat matugunan ng mga posibleng solusyon?</li>
+</ul>
+
+<p>Ang pangkaraniwang matematikal na modelo ng operations research ay inihahayag sa sumusunod na pagbabalangkas: pag-maximize o pag-minimize ng objective function, alinsunod sa pagtugon sa mga hadlang.</p>
+
+<p>Sa pagpili ng solusyon, mas ipinagpipilian ang isa na nag-maximize o nag-minimize ng objective function. Kabilang sa mga halimbawa ng pag-maximize ng objective function ang tubo at produktibidad. Ang pag-minimize ng objective function ay maaaring may kaugnayan sa mga gastos, paggasta, panahon, at iba pa. Ang pagpili ng pamantayan ng bisa ay ang sentral at pinakamahalagang sandali ng pag-aaral. Mas mainam na makahanap ng di-optimal na solusyon sa isang tamang napiling pamantayan kaysa sa isang optimal na solusyon sa isang maling napiling pamantayan.</p>
+
+<p>Ang isang posibleng solusyon ay isa na tumutugon sa lahat ng mga hadlang ng modelo. Maaaring may walang-katapusang bilang ng mga posibleng solusyon.</p>
+
+<p>Ang isang optimal na solusyon ay isa na, bukod sa pagiging posible, nagdudulot ng pagkamit ng objective function sa pinakamataas o pinakamababang halaga nito.</p>
+
+<p>Tinatawag na optimal ang mga solusyon kung, sa isa o ibang katangian, mas mainam sila kaysa sa iba. Bawat pagpili ng pinakamahusay na alternatibo ay tiyak, dahil ito ay nakabatay sa pagsunod sa mga itinakdang pamantayan. Kapag pinag-uusapan ang isang optimal na alternatibo, tinutukoy ang mga pamantayang ito (“optimal kaugnay ng…”). Ang optimal sa ilalim ng isang pamantayan ay hindi kinakailangang optimal sa ilalim ng iba.</p>
+
+<p>Ang hadlang ay isang matematikal na pagpapahayag sa anyo ng hindi-pagkakapantay-pantay o pagkakapantay-pantay na dapat matugunan ng mga variable ng modelo.</p>
+
+<p>Pinapaliit ng mga hadlang ang kumpol ng mga posibleng solusyon. Sa ilang kaso, maaaring walang optimal na solusyon sa ilalim ng nasabing mga hadlang. Nangangahulugan ito na ang kalidad ng huling pagpapasya, batay sa solusyon ng suliranin, ay nakasalalay sa kung gaano ito angkop na kumakatawan sa aktwal na sitwasyon na pormal na inilalarawan nito sa pamamagitan ng mga hadlang. Kabilang sa mga hadlang ang mga kota, kapasidad ng dala ng sasakyan, dami ng nakabalangkas na gawain, katangiang timbang ng kagamitan, limitasyon sa mga rekurso, at iba pa.</p>
+
+<p>Kapag nagbago ang konfigurasyon ng mga hadlang, maaaring maging pinakamahusay ang isang naiibang solusyon. Sa totoong daigdig, ang mga hadlang ay maaaring may katangiang pisikal, ekonomiko, o pampulitika at hindi kinakailangang madaling maformal. Ang isang tiyak na solusyon ay magiging pinakamahusay lamang para sa ibinigay na modelo, alinsunod sa itinakdang sistema ng mga hadlang. Kung mas tumpak na sumasalamin ang modelo sa sitwasyon, mas malapit sa optimal ang solusyon ng suliranin.</p>
+
+<h2>Pag-uuri ng mga modelo ng operations research</h2>
+
+<p>Ang lahat ng mga modelo ng operations research ay maaaring uriin depende sa katangian at ari-arian ng operasyon, sa katangian ng mga suliraning nilulutas, at sa mga matematikal na pamamaraang gagamitin:</p>
+<ul>
+<li>Kung ang pamantayan ng bisa ay isang linear function at ang mga function sa sistema ng mga hadlang ay linear din, kung gayon ang suliranin ay isang suliranin sa linear programming.</li>
+<li>Kung, batay sa kahulugan nito, ang mga solusyon nito ay dapat mga integer, kung gayon ito ay isang suliranin sa integer linear programming.</li>
+<li>Kung ang pamantayan ng bisa at/o ang sistema ng mga hadlang ay itinakda ng mga nonlinear function, kung gayon ito ay isang suliranin sa nonlinear programming. Sa partikular, kung ang nasabing mga function ay may katangiang convexity, ang naging suliranin ay isang suliranin sa convex programming.</li>
+<li>Kung ang isang suliranin sa mathematical programming ay naglalaman ng isang variable ng panahon at ang pamantayan ng bisa ay ipinahahayag hindi nang tahasan bilang function ng mga variable, kundi hindi-tahasan — sa pamamagitan ng mga ekwasyon na naglalarawan sa pag-unlad ng mga operasyon sa paglipas ng panahon — kung gayon ang suliranin ay isang suliranin sa dynamic programming.</li>
+<li>Kung imposibleng hanapin ang tumpak na optimum gamit ang algoritmo dahil sa napakaraming bilang ng mga variant ng solusyon, ginagamit ang mga pamamaraang heuristic programming, na nagpapahintulot na makabuluhang mabawasan ang bilang ng mga variant na sinusuri at makahanap, kung hindi ng optimal, ng isang sapat na mabuting solusyon na katanggap-tanggap mula sa praktikal na pananaw.</li>
+</ul>
+
+<p>Sa kanilang kahulugang pagbabalangkas, maraming iba pang tipikal na suliranin sa operations research ang maaaring hatiin sa ilang mga uri:</p>
+<ul>
+<li>Ang mga suliranin sa pag-iskedyul ng proyekto (PERT/CPM) ay sumusuri sa mga ugnayan sa pagitan ng mga petsa ng pagkatapos ng isang malaking kumplikadong hanay ng mga operasyon (gawain) at ng mga oras ng pagsimula ng lahat ng operasyon sa kumplikadong hanay. Ang mga suliraning ito ay binubuo ng paghahanap ng minimum na tagal ng kumplikadong hanay ng mga operasyon at ng optimal na ugnayan sa pagitan ng mga gastos at ng mga oras ng pagkatapos.</li>
+<li>Ang mga suliranin sa pila ay inilalaan sa pag-aaral at pagsusuri ng mga sistema ng serbisyo na may mga pila ng mga kahilingan o mga hinihingi, at binubuo ng pagtukoy ng mga panukat ng gawi ng mga sistema at ng kanilang mga optimal na katangian — halimbawa, ang pagtukoy ng bilang ng mga kanal ng serbisyo, panahon ng serbisyo, at iba pa.</li>
+<li>Ang mga suliranin sa pamamahala ng imbentaryo ay binubuo ng paghahanap ng mga optimal na halaga ng antas ng imbentaryo (punto ng muling pag-order) at laki ng order. Ang natatanging katangian ng gayong mga suliranin ay habang tumataas ang antas ng imbentaryo, sa isang bahagi, tumataas ang mga gastos sa imbakan, ngunit sa kabilang bahagi, bumababa ang mga pagkalugi dahil sa posibleng kakulangan sa nakaimbak na produkto.</li>
+<li>Ang mga suliranin sa paglalaan ng rekurso ay lumitaw kapag may isang tiyak na hanay ng mga operasyon (gawain) na dapat isagawa sa may limitadong magagamit na mga rekurso, at kinakailangang hanapin ang optimal na paglalaan ng mga rekurso sa mga operasyon o ang optimal na komposisyon ng mga operasyon.</li>
+<li>Ang mga suliranin sa pagpapanatili at pagpapalit ay may kaugnayan sa pagkasira at pagtanda ng kagamitan at sa pangangailangang mapalitan ito.</li>
+<li>Sa mga modelo ng operations research, ang mga modelo para sa paggawa ng mga optimal na pagpapasya sa mga sitwasyon ng tunggalian, na pinag-aaralan ng teorya ng laro, ay itinatampok nang partikular. Ang mga sitwasyon ng tunggalian, kung saan nagbabanggaan ang mga interes ng dalawa (o higit pa) na partido na may naiibang mga layunin, ay may kinalaman sa ilang mga sitwasyon sa larangan ng ekonomiya, batas, militar, at iba pa. Sa mga suliranin sa teorya ng laro, kinakailangang bumuo ng mga rekomendasyon para sa makatwirang pag-uugali ng mga kalahok sa tunggalian at tukuyin ang kanilang mga optimal na estratehiya.</li>
+</ul>
+
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div class="links">
+    <div class="links-section">
+      <h2>Operations Research</h2>
+      <ul>
+        <li><a href="/tl/operation_research_caa.html">Operations Research: Churchman, Ackoff, at Arnoff</a></li>
+        <li><a href="/tl/operation_research_as.html">Mga Batayan ng Operations Research: Ackoff at Sasieni</a></li>
+        <li><a href="/tl/operation_research_me.html">Operations Research: Moder at Elmaghraby</a></li>
+        <li><a href="/tl/operation_research_vg.html">Operations Research: Wagner</a></li>
+        <li><a href="/tl/operation_research_gv.html">Operations Research: Gvishiani</a></li>
+        <li><a href="/tl/operation_research_ve.html">Operations Research: Wentzel</a></li>
+        <li><a href="/tl/methodology_or.html">Metodolohiya ng Operations Research</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="breadcrumbs" aria-label="Landas ng nabigasyon">
+    <a href="/tl/">Pangunahing Pahina</a> <span aria-hidden="true">/</span>
+    <a href="/tl/operation_research.html">Operations Research</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Mga Modelo ng Operations Research</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Palitan ang tema"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_model.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/tl/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Palitan ang tema"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710e4d6ad61e13',t:'MTc4ODczNTI2OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Вземане на решения</title>
+<meta name="description" content="Вземането на решения е процес на избор на една алтернатива измежду няколко. Формалните методи за вземане на решения са полезни при анализа на многокритериални проблеми, колективен избор и необходимостта от обосноваване на решение.">
+<meta name="keywords" content="решение,вземане на решения,проблем,системен анализ,алтернатива,критерий">
+<link rel="canonical" href="https://systems-analysis.info/bg/decision_making.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/decision_making.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/decision_making.html">
+<link rel="alternate" hreflang="bg" href="https://systems-analysis.info/bg/decision_making.html">
+<meta property="og:title" content="Вземане на решения">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/bg/decision_making.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Вземането на решения е процес на избор на една алтернатива измежду няколко. Формалните методи за вземане на решения са полезни при анализа на многокритериални проблеми, колективен избор и необходимостта от обосноваване на решение.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="bg_BG">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/bg/decision_making.html#article",
+    "headline": "Вземане на решения",
+    "description": "Вземането на решения е процес на избор на една алтернатива измежду няколко. Формалните методи за вземане на решения са полезни при анализа на многокритериални проблеми, колективен избор и необходимостта от обосноваване на решение.",
+    "url": "https://systems-analysis.info/bg/decision_making.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "bg",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/bg/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/bg/decision_making.html"
+    },
+    "keywords": [
+        "решение",
+        "вземане на решения",
+        "проблем",
+        "системен анализ",
+        "алтернатива",
+        "критерий"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "Вземане на решения",
+        "description": "The process of selecting the most preferred course of action from a set of possible alternatives based on formal methods and analysis of the problem situation.",
+        "sameAs": [
+            "https://www.wikidata.org/entity/Q1331926",
+            "https://en.wikipedia.org/wiki/Decision-making",
+            "https://ru.wikipedia.org/wiki/Принятие_решений",
+            "https://systems-analysis.info/wiki/Принятие_решений",
+            "https://systems-analysis.info/eng/Decision-making"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Начална страница",
+            "item": "https://systems-analysis.info/bg/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Теория на решенията",
+            "item": "https://systems-analysis.info/bg/decision_theory.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Вземане на решения"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Основна навигация">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Меню</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/bg/">Начална страница</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bg/sections.html">Раздели</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bg/books.html">Книги</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bg/catalog.html">Каталог</a>
+        <span aria-hidden="true">·</span>
+        <a href="/decision_making.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Смяна на темата"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Смяна на шрифта"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Вземане на решения</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>Вземането на решения</strong> се прилага към обекти от различен вид и при различни условия на тяхното съществуване. Формалните методи, разработени в рамките на теорията на решенията, показват, че процесите на вземане на решения в различни сфери на човешката дейност имат много общо.</p>
+<p><strong>Формалните методи за вземане на решения могат да се окажат полезни в следните случаи:</strong></p>
+<ul>
+  <li>съществува проблем или проблемна ситуация, която изисква разрешаване. Често желаният резултат се отъждествява с една или няколко цели, които трябва да бъдат постигнати при разрешаването на проблемната ситуация;</li>
+  <li>съществуват няколко варианта за решаване на проблема, начини за постигане на целта, действия или обекти, между които се прави избор. В теорията на решенията тези варианти обикновено се наричат алтернативи. Ако съществува само една възможност и няма избор, то не съществува задача за вземане на решение;</li>
+  <li>съществуват фактори, които налагат определени ограничения върху възможните начини за решаване на проблема и постигане на целта. Тези фактори се определят от контекста на проблема и могат да бъдат от различен характер: физически, технически, икономически, социални, лични и други;</li>
+  <li>съществува лице или група лица, които са заинтересовани от разрешаването на проблема, имат правомощието да изберат едно или друго решение и носят отговорност за изпълнението на взетото решение.</li>
+</ul>
+<p>Жизненият цикъл на <a href="/bg/choice.html" class="text-link">решението</a> на <a href="/bg/problem.html" class="text-link">проблем</a> се състои от няколко етапа и представлява многостъпкова итеративна процедура.</p>
+<p>Необходимостта от решение възниква при появата на проблемна ситуация. В този случай проблемът се идентифицира — тоест дава се съдържателно описание на проблема, определя се желаният резултат от неговото разрешаване и се оценяват съществуващите ограничения.</p>
+<p>На следващия етап се формулира задачата за вземане на решение. За целта е необходимо да се определи множеството от възможни решения (алтернативи). В зависимост от разглеждания проблем броят на възможните решения може да варира от няколко до десетки, стотици или дори хиляди. Теоретично броят на разглежданите алтернативи може да бъде безкраен.</p>
+<p>За да се опишат пълно всички възможни решения, обикновено е необходимо да се събере и анализира различна информация, свързана с проблема и алтернативните начини за неговото решаване. Липсата или невъзможността за получаване на необходимата информация може да направи проблема неразрешим. В такива случаи трябва да се върнем към първоначалната постановка на проблема и да променим неговото описание. Такава необходимост може да възникне и на всички предходни етапи на процеса на решаване. При сложни ситуации на избор може също да се наложи разработването на специализиран <a href="/bg/model.html" class="text-link">модел</a> на проблема (обикновено математически) за получаване на опростено решение.</p>
+<p>Вторият етап завършва с формулирането на задачата за вземане на решение. Трябва да се отбележи, че подробното съдържателно описание на разрешавания проблем още на първия етап до голяма степен определя възможните подходи за неговото решаване и може веднага да доведе до формулирането на задачата за вземане на решение, заобикаляйки всички или много от следващите етапи.</p>
+<p>След като задачата за вземане на решение бъде формулирана, започва търсенето на решение. Този етап включва, първо, избора на подходящ метод за решаване на проблема измежду вече известните или разработването на нов метод; и второ, самия процес на решаване, който се състои в оценяване и анализиране на различните варианти на решение и избиране на най-предпочитания измежду тях. При някои проблеми получаването на крайния резултат не е трудно. По-често обаче това са доста сложни и трудоемки процедури, изискващи знанията и опита на много хора и възможностите на съвременната изчислителна техника.</p>
+<p>Същевременно, дори след завършването на всички етапи от процеса на решаване на проблема, не винаги е възможно да се направи окончателен избор. Възникват ситуации, при които не може да се намери най-доброто решение. Необходимият вариант може просто да липсва. В такъв случай може да се промени формулировката на първоначалния проблем или да се върнем към предходните етапи и да съберем необходимата допълнителна информация, да направим промени във формалната постановка на проблема или в модела на проблемната ситуация, да разширим или стесним броя на разглежданите алтернативи, или да конструираме нови варианти.</p>
+<p>Във всеки случай търсенето на най-доброто решение, дори и да не е довело до положителен резултат, няма да е било напразно. То може да подтикне към ново разбиране на разглеждания проблем, да открои нови аспекти, които трябва да се вземат предвид, и да подскаже други начини за неговото решаване.</p>
+<p>Ако бъде намерен приемлив вариант, започва етапът на изпълнение на решението, при който взетото решение се реализира, процесът на изпълнение се проследява и се оценява резултатът от разрешаването на проблемната ситуация. Строго погледнато, този етап не принадлежи към процедурата за вземане на решение. Включването на изпълнението на решението в общата схема обаче е важно както от методологическа, така и от практическа гледна точка, тъй като този етап затваря жизнения цикъл на възникването, разрешаването и изчезването на проблемната ситуация. Освен това изпълнението на взетото решение може да породи нов проблем, който изисква собствено решение.</p>
+<p>Проблемът за вземането на решение възниква в случаите, когато проблемът (задачата) става толкова сложен, че към неговото формулиране (постановка) не може веднага да се приложи подходящ апарат за формализация, а процесът на формулиране на проблема изисква участието на специалисти от различни области на знанието.</p>
+<p>Това води до ситуация, при която самото формулиране на проблема става проблематично и изисква разработването на специализирани подходи, техники и методи. В такива случаи става необходимо да се определи областта на задачата за вземане на решение (проблемната ситуация), да се идентифицират факторите, влияещи на нейното разрешаване, и да се изберат техники и методи, които позволяват проблемът да бъде формулиран или поставен по начин, позволяващ вземането на решение.</p>
+<p>Така, за да се вземе решение, е необходимо да се получи израз, свързващ целта със средствата за нейното постигане, като се използват въведени <a href="/bg/criterion.html" class="text-link">критерии</a> за оценка на постижимостта на целта и оценяване на средствата. В различните приложни области, развивали се паралелно, такива изрази са получили различни наименования: критерий за резултатност; критерий за ефективност или показател за ефективност; целева функция или критериална функция; и така нататък. (В руската литература те се наричат също <em>tselevaya funktsiya</em> — буквално „функция на целта” — и <em>funktsiya tseli</em>, като и двете съответстват на английския термин „objective function”.)</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Свързани статии</h2>
+    <ul>
+      <li><a href="/bg/decision_theory.html">Теория на решенията</a></li>
+      <li><a href="/bg/decision_theory_model.html">Задача за вземане на решение</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Път за навигация">
+    <a href="/bg/">Начална страница</a> <span aria-hidden="true">/</span>
+    <a href="/bg/decision_theory.html">Теория на решенията</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Вземане на решения</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Смяна на темата"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/decision_making.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/bg/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Смяна на темата"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a37106b5e95fa5ce',t:'MTc4ODczNDk1OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

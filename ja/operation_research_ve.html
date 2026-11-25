@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>オペレーションズ・リサーチ：ヴェンツェリ</title>
+<meta name="description" content="オペレーションとは、単一の計画によって統べられ、目標の達成に向けられた営みである。Е・С・ヴェンツェリによるオペレーションズ・リサーチの基本概念——決定、有効性、最適性の基準——を解説する。">
+<meta name="keywords" content="オペレーションズ・リサーチ,ヴェンツェリ,モデルの解,最適化,統計,数学的,問題,選択,システム分析">
+<link rel="canonical" href="https://systems-analysis.info/ja/operation_research_ve.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_ve.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_ve.html">
+<link rel="alternate" hreflang="ja" href="https://systems-analysis.info/ja/operation_research_ve.html">
+<meta property="og:title" content="オペレーションズ・リサーチ：ヴェンツェリ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/ja/operation_research_ve.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="オペレーションとは、単一の計画によって統べられ、目標の達成に向けられた営みである。Е・С・ヴェンツェリによるオペレーションズ・リサーチの基本概念——決定、有効性、最適性の基準——を解説する。">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="ja_JP">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/ja/operation_research_ve.html#article",
+    "headline": "オペレーションズ・リサーチ：ヴェンツェリ",
+    "description": "オペレーションとは、単一の計画によって統べられ、目標の達成に向けられた営みである。Е・С・ヴェンツェリによるオペレーションズ・リサーチの基本概念——決定、有効性、最適性の基準——を解説する。",
+    "url": "https://systems-analysis.info/ja/operation_research_ve.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "ja",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/ja/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/ja/operation_research_ve.html"
+    },
+    "keywords": [
+        "オペレーションズ・リサーチ",
+        "ヴェンツェリ",
+        "モデルの解",
+        "最適化",
+        "統計",
+        "数学的",
+        "問題",
+        "選択",
+        "システム分析"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "オペレーションズ・リサーチ",
+        "author": {
+            "@type": "Person",
+            "name": "Wentzel E.S."
+        },
+        "datePublished": "1972",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Sovetskoye Radio"
+        },
+        "inLanguage": "ru"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-08-22",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "オペレーションズ・リサーチ",
+        "author": {
+            "@type": "Person",
+            "name": "Wentzel E.S."
+        },
+        "datePublished": "1972",
+        "inLanguage": "ru"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ホーム",
+            "item": "https://systems-analysis.info/ja/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "オペレーションズ・リサーチ",
+            "item": "https://systems-analysis.info/ja/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "オペレーションズ・リサーチ：ヴェンツェリ"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/ja/">ホーム</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/sections.html">セクション</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/Systems_Analysis_Wiki_Catalog_%28%E6%97%A5%E6%9C%AC%E8%AA%9E%29">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/books.html">書籍</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/catalog.html">カタログ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_ve.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Toggle theme"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Toggle font"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">オペレーションズ・リサーチ：ヴェンツェリ</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>オペレーションズ・リサーチは近年、ますます広い応用領域を得ている。この科学は比較的若い、最近になって形をとった分野に属しており、その境界と内容は明確に定まっていない。</p>
+<p>オペレーションズ・リサーチは多くの大学で教えられているが、この語に込められる内容は決して一様ではない。「オペレーションズ・リサーチ」によって、主として線形計画法、非線形計画法、動的計画法といった数学的な最適化の方法を理解する論者もいる。逆に、これらの数学の部門をオペレーションズ・リサーチに含めず、主としてゲーム理論と統計的決定理論の立場からこれに接近する論者もいる。「オペレーションズ・リサーチ」が独立した科学分野として存在すること自体を否定し、これをサイバネティクス（これもまた十分に定義されておらず、人によって異なる理解をされている語である）に組み入れようとする者もいる。反対に「オペレーションズ・リサーチ」という概念にあまりに広い意味を与え、この分野をすべてを包含する「諸科学の科学」だと宣言する者もいる。</p>
+<p>この比較的若い科学がどのような形でさらに発展していくのか、どの部門を保ち、どの部門が独立した科学分野として「枝分かれ」していくのかは、時が示すだろう。とりわけ、近年多くが語られ書かれている「オペレーションズ・リサーチ」と「システム理論」（あるいは「複雑システムの理論」）との今後の関係は、いまだ明らかでない。いずれにせよ疑いえないのは、きわめて多様な実務の領域——生産と供給の組織、輸送のオペレーション、軍事作戦と兵器、要員の配置、消費者サービス、医療、通信、計算など——において、立て方が互いに似ており、いくつもの共通の特徴をもち、似た方法で解かれる問題がますます多く生じていることである。それらは「オペレーションズ・リサーチの問題」という総称のもとにまとめるのが便利である。</p>
+<p>典型的な状況は次のようなものである。目的をもったなんらかの行動がなんらかの仕方で組織される——すなわち、ありうるいくつかの選択肢からなんらかの「決定」を下しうる。どの選択肢にも長所と短所があり、状況が複雑であるために、どれがより良い（望ましい）のか、そしてなぜそうなのかがただちには明らかでない。状況を明らかにし、一組の基準に照らして決定の選択肢を比較するために、一連の数学的な計算が行われる。その課題は、決定の選択に責任を負う人々が状況を批判的に分析し、最終的にいずれかの選択肢に落ち着くのを助けることにある。</p>
+<p>科学技術革命の時代と正しく呼ばれる我々の時代において、科学は組織と管理の問題にますます大きな注意を払っている。それには多くの理由がある。技術の急速な発展と複雑化、事業の規模とそのありうる帰結の範囲のかつてない拡大、あらゆる実務領域への自動管理システムの導入——これらすべてが、複雑で目標に向けられたプロセスをその構造と組織の観点から分析することを必要にしている。科学には、そうしたプロセスの最適な（合理的な）管理についての勧告を与えることが求められている。正しく効果的な管理が、組織者によって「手探りで」、「試行錯誤」の方法で見いだされていた時代は過ぎた。今日そうした管理を練り上げるには科学的なアプローチが必要である——誤りにともなう損失があまりに大きいからである。</p>
+<p>実務の必要が、「オペレーションズ・リサーチ」という名でまとめるのが便利な特別な科学的方法を生んだ。この語によって我々は、目的をもった人間の活動のあらゆる領域において決定を根拠づけるために、数学的・量的な方法を適用することを理解する。</p>
+<p>「決定」によって何が意味されているかを説明しよう。特定の目標の達成に向けられたなんらかの営みが行われているとする。その営みを組織する人（あるいは人の集団）はつねになんらかの選択の自由をもつ。彼らはそれをこう組織することも、ああ組織することもできる——たとえば用いる設備の種類を選び、手元の資源をこう配分することも、ああ配分することもできる。「決定」とはまさに、組織者に開かれた可能性の範囲からのなんらかの選択である。決定は悪いことも良いこともあり、熟慮されていることも性急なこともあり、根拠のあることも恣意的なこともある。</p>
+<p>オペレーションズ・リサーチが始まるのは、決定を根拠づけるために数学的方法が適用されるときである。ある程度までは、どの実務領域でも決定は特別な数学的計算なしに、単に経験と常識にもとづいて下される。しかし、はるかに重大な決定もある。たとえば、企業の網と住宅地区などをもつ新しい都市で公共交通を組織するとしよう。いくつもの決定を下さなければならない。どの路線に、どの交通手段を向けるべきか。どの地点に停留所を置くべきか。時間帯に応じて運行頻度をどう調整すべきか。等々。</p>
+<p>これらの決定ははるかに複雑であり、しかも重要なことに、多くがそれに左右される。誤った選択は都市全体の生活と労働に影響しうる。もちろんこの場合も、決定を選ぶにあたって経験と常識に頼りながら直観的に行動することはできる（実際にしばしばそうされている）。しかし決定は、数学的な計算に支えられていればはるかに合理的なものになる。こうした予備的な計算は、正しい決定を「手探りで」長く高くつく探索によって求めることを避けるのに役立つ。</p>
+<p>計画された営みが複雑で、費用がかさみ、規模が大きいほど、恣意的な決定は許されなくなり、次のことを可能にする科学的方法がいっそう重要になる。すなわち、各決定の帰結をあらかじめ評価すること、受け入れがたい選択肢をあらかじめ退け、最も成功しそうなものを勧めること、決定を正しく選ぶうえで我々の手元にある情報が十分かどうかを定め、十分でなければどのような付加的情報を得る必要があるかを定めること。そうした場合に自らの直観に、「経験と常識」に頼るのはあまりに危険である。科学技術革命の我々の時代には、技術も方法もあまりに速く変わるので、「経験」は蓄積される暇すらない。しかも我々はしばしば、はじめて行われる一回かぎりの営みを相手にしている。そうした場合、「経験」は黙し、「常識」は計算に裏づけられていなければたやすく欺かれる。オペレーションズ・リサーチが扱うのは、まさに人が決定を下すのを助けるそうした計算である。</p>
+<p>オペレーションとは、単一の計画によって統べられ、なんらかの目標の達成に向けられたあらゆる営み（行為のシステム）である。オペレーションはつねに制御された営みである——すなわち、その組織を特徴づける一定のパラメータをどう選ぶかは我々に委ねられている。ここで「組織」は広い意味で理解され、オペレーションで用いられる技術的手段の集合も含まれる。</p>
+<p>我々に委ねられたパラメータの具体的な選択を、決定と呼ぶ。決定は成功することも失敗することもあり、合理的なことも非合理的なこともある。解は、なんらかの属性によってほかより望ましいとされる場合に最適と呼ばれる。オペレーションズ・リサーチの目標は、最適な決定の選択を量的に裏づけることにある。</p>
+<p>ときには（比較的まれに）研究が唯一の厳密な最適解をもたらすこともあるが、はるかに多くの場合、実務上等価な最適な（合理的な）決定の範囲が特定され、そのなかで最終的な選択が行われる。</p>
+<p>指摘しておくべきは、実際に決定を下すことはオペレーションズ・リサーチの範囲の外にあり、最終的な選択の権利を与えられ、その選択に責任を負う責任者、あるいはより多くの場合は人の集団の権限に属する、ということである。選択にあたって彼らは、数学的な計算から生じる勧告とともに、計算に含まれなかったいくつもの付加的な考慮事項（量的な性格のものも質的な性格のものも）を踏まえることができる。</p>
+<p>人間が（決定を下す最終的な権威として）不可欠であることは、一見すると人の関与なしに決定を下すような、完全に自動化された管理システムがあっても失われない。忘れてはならないのは、管理アルゴリズムを作ること自体、そのありうる変種の一つを選ぶこと自体が決定であり、しかもきわめて重大な決定である、ということである。</p>
+<p>その総体が決定をなすパラメータを、決定変数と呼ぶ。決定変数としては、さまざまな数、ベクトル、関数、物理的な属性などが役立ちうる。最も単純なオペレーションズ・リサーチの問題では、決定変数の数は比較的少ないこともある。しかし実務上意味のある問題の大半では、決定変数の数はきわめて多い。</p>
+<p>我々が一定の範囲内で自由にしうる決定変数のほかに、どのオペレーションズ・リサーチの問題にも、あらかじめ固定されていて破ることのできない、与えられた「規律づける」条件が含まれる（たとえば車両の積載能力、計画課題の大きさ、設備の重量特性など）。とりわけそうした条件には、我々が自由にしうる資源（物的、技術的、人的資源）と、決定に課されるほかの制約が含まれる。それらは合わさって、いわゆる「実行可能集合」をなす。</p>
+<p>異なる決定を有効性の点で互いに比べるには、なんらかの量的な基準、いわゆる有効性の尺度（しばしば「目的関数」と呼ばれる）が必要になる。この尺度は、オペレーションの目標志向性を反映するように選ばれる。「最良の」決定とみなされるのは、掲げられた目標の達成に最も大きく寄与するものである。有効性の尺度 W を選び、「名指す」ためには、まず自らに問わなければならない。我々は何を望んでいるのか、このオペレーションを行うことで何を目指しているのか。決定を選ぶ際、我々は当然、有効性の尺度 W を最大（あるいは最小）にするものを好む。たとえばオペレーションからの収入は最大にしたいし、有効性の尺度が費用であれば、それは最小にしたい。</p>
+<p>オペレーションの遂行には、偶然的な要因の作用がともなうことが非常に多い。そうした場合、有効性の尺度としては通常、最大化（最小化）したい量そのものではなく、その平均値（期待値）がとられる。</p>
+<p>場合によっては、偶然的な要因をともなうオペレーションが、完全に達成されるか、まったく達成されないかのいずれかでしかありえない、まったく明確な目標を追うことがある（「イエスかノーか」の図式）。そこでは中間的な結果は関心の対象とならない。そうした場合には、この目標が達成される確率が有効性の尺度として選ばれる。たとえば、必ず破壊するという条件のもとである目標に射撃が向けられるなら、目標を破壊する確率が有効性の尺度となる。</p>
+<p>有効性の尺度を誤って選ぶことはきわめて危険である。まずく選ばれた基準の立場から組織されたオペレーションは、不当な支出と損失を招きかねない。残念ながら実務上意味のある問題の大半では、有効性の尺度の選択は単純ではなく、一義的には解決されない。相応に複雑な問題ではどれも、オペレーションの有効性を一つの数によって余すところなく特徴づけることができず、それを補うためにほかの尺度を持ち込まなければならないのが常である。</p>
+<p>どの分野であれ量的な研究方法を適用するには、つねになんらかの数理モデルが必要になる。モデルを構築する際には、現実の現象（我々の場合はオペレーション）が不可避的に単純化され図式化され、この図式（現象の図式的な表現）が数学の道具によって記述される。数理モデルがうまく選ばれ、現象の特徴的な特質をよく反映しているほど、研究は成功し、得られる勧告は有用になる。</p>
+<p>数理モデルを構築する一般的な方法は存在しない。個々の場合において、モデルはオペレーションの型、その目標志向性、そして研究の課題（どのパラメータを定める必要があり、どの要因の影響を反映する必要があるか）を踏まえて選ばれる。また個々の場合において、モデルの精度と詳細さを、（a）我々が解をどれだけの精度で知る必要があるか、（b）我々が手にしている、あるいは入手しうる情報と釣り合わせなければならない。計算に必要な初期データが不正確にしかわかっていないなら、細部に立ち入り、きわめて詳細なモデルを構築し、解の精緻で正確な最適化に（自分の、そしてコンピュータの）時間を費やしても、明らかに意味がない。残念ながらこの原則はしばしば軽んじられ、現象を記述するために過度に詳細なモデルが選ばれる。</p>
+<p>数理モデルは、現象の最も重要な特質、オペレーションの成否が主として左右されるすべての本質的な要因を反映していなければならない。同時にモデルは、できるかぎり単純であり、多数の些細で副次的な要因で「散らかって」いてはならない。それらを考慮に入れれば数学的な分析が複雑になり、研究結果は見通しにくくなる。モデルを作る者には、つねに二つの危険が待ち構えている。第一は細部にはまり込むこと（「木を見て森を見ず」）、第二は現象を単純化しすぎること（「産湯とともに赤子を流す」）である。数理モデルを構築することはまさに一つの技芸であり、その経験は少しずつ身についていく。</p>
+<p>数理モデルは問題の記述から必然的に導かれるものではないので、どの単一のモデルも盲目的に信じることなく、異なるモデルから得られる結果を比べ、いわば「モデルの競演」を催すことがつねに有益である。その過程で同じ問題が一度ではなく何度も、異なる仮定の体系、異なる道具、異なるモデルによって解かれる。科学的な結論がモデルからモデルへとほとんど変わらないなら、それは研究の客観性を支持する強い論拠となる。大きく食い違うなら、さまざまなモデルの根底にある構想を見直し、どれが現実により適合しているかを定め、必要なら対照実験を行わなければならない。オペレーションズ・リサーチに特徴的なのは、（最初の計算がすでに行われたのちに）モデルに修正を加えるために、繰り返しモデルへ立ち戻ることでもある。</p>
+<p>数理モデルを作ることは研究の最も重要で責任の重い部分であり、数学そのものよりも、モデル化される現象の本質についての深い知識を必要とする。通常「純粋な」数学者は（当の問題が属する分野の専門家の助けなしには）モデルの構築をうまくこなせない。彼らの注意は、現実の実務的な問題よりも、数学の道具とその精妙さに向けられているからである。</p>
+<p>経験が示すところによれば、最も成功したモデルを作るのは、本来の専門教育に加えて深い数学的訓練を受けた当該実務分野の専門家か、実務の専門家と数学者を結び合わせたチームである。オペレーションズ・リサーチに通じた数学者が、決定の科学的な根拠づけの必要に仕事のなかで出会う実務家——技術者、生物学者、医療従事者など——に助言を与えることは、大きな益をもたらす。</p>
+<p>とりわけ強調しておかなければならないのは、確率論の知識が必要だということである。それは広く深いというより、形式ばらない実効的な知識であり、統計データと確率的な概念を扱う習慣をともなうものである。まさにこの数学的知識の領域に特別な要求が課されるのは、大半のオペレーションが不完全な確実性の条件のもとで行われ、その経過と帰結が偶然的な要因に左右されるからである。残念ながら幅広い専門家——技術者、生物学者、医療従事者、化学者——のあいだで、確率論をよく使いこなせる人にはめったに出会わない。その命題と規則は、意味と精神を本当に理解しないまま、形式的に適用されることが多い。確率論が、「無」から、完全な無知から情報を得ることを可能にする一種の「魔法の杖」とみなされることも少なくない。これは誤解である。確率論が可能にするのは情報を変換することだけである——すなわち、観察しうる一定の現象についてのデータから、観察しえないほかの現象について結論を導くことである。</p>
+<p>数理モデルを構築する際には、（オペレーションの型、研究の課題、初期データの精度に応じて）さまざまな複雑さの数学の道具が用いられうる。最も単純な場合、現象は単純な代数方程式によって記述される。より複雑な場合、現象をその動態において検討する必要があるときには、微分方程式（常微分方程式あるいは偏微分方程式）の方法が用いられる。最も複雑な場合、オペレーションの展開とその帰結が、複雑に絡み合った多数の偶然的要因に左右されるときには、解析的な方法はまったく歯が立たなくなり、統計的モデリング（モンテカルロ）の方法が用いられる。</p>
+<p>第一の粗い近似において、この方法の考えは次のように述べられる。オペレーションが展開していく過程が、それにともなうあらゆる偶然性とともに、事実上コンピュータ上で「写しとられ」、再現される。得られるのは、偶然的な経過と帰結をもつオペレーションの展開という確率過程の、一つの標本（「実現」）である。そうした実現が一つあるだけでは決定を選ぶ根拠にはならないが、そうした実現を多数得たうえで、それを通常の統計資料として処理し（ここから「統計的モデリング」という語が来る）、過程の平均的な特性を見いだし、問題の条件と決定変数がそれらに平均としてどう影響するかを理解する。</p>
+<p>オペレーションズ・リサーチでは、解析的モデルも統計的モデルも広く用いられる。この二つの型にはそれぞれ長所と短所がある。解析的モデルはより粗く、考慮する要因は少なく、つねに一定の仮定と単純化を必要とする。他方その計算結果は見通しやすく、現象に本来そなわる根本的な法則性をより明瞭に反映する。そしてなにより重要なことに、解析的モデルは最適解の探索により適している。</p>
+<p>統計的モデルは解析的モデルに比べてより正確で詳細であり、そこまで粗い仮定を必要とせず、多数の（理論上は無制限の）要因を考慮に入れることを可能にする。しかしそれにも短所がある。煩瑣であること、見通しが悪いこと、そしてなにより最適解の探索がきわめて難しく、「手探りで」、推測と試行によって求めなければならないことである。</p>
+<p>オペレーションズ・リサーチの領域における最良の仕事は、解析的モデルと統計的モデルを組み合わせて用いることにもとづいている。解析的モデルは現象の全体像をつかみ、いわば根本的な法則性の「輪郭」を素描することを可能にする。細部の精密化は統計的モデルの助けを借りて得られる。</p>
+<p>最後に、いわゆる「シミュレーション」モデリングについて一言述べておこう。それは、その経過に人間の意志が折にふれて介入しうるプロセスに適用される。オペレーションを指揮する人（あるいは人の集団）は、生じた状況に応じて、ちょうどチェスの指し手が盤を見て次の一手を選ぶように、なんらかの決定を下すことができる。すると数理モデルが動き出し、この決定に応じて状況にどのような変化が見込まれるか、それがしばらくのちにどのような帰結をもたらすかを示す。次の「当面の決定」は、新しい実際の状況をすでに踏まえたうえで下される。以下同様である。この手続きを繰り返し適用した結果として、管理者は事実上「経験を積み」、自分とほかの人の誤りから学び、次第に正しい決定を——最適ではないにせよ、ほぼ最適な決定を——下せるようになる。</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="links">
+    <div class="links-section">
+      <h2>オペレーションズ・リサーチ</h2>
+      <ul>
+        <li><a href="/ja/operation_research.html">オペレーションズ・リサーチ</a></li>
+        <li><a href="/ja/operation_research_caa.html">オペレーションズ・リサーチ入門：チャーチマン、アコフ、アーノフ</a></li>
+        <li><a href="/ja/operation_research_as.html">オペレーションズ・リサーチの基礎：アコフ、サシエニ</a></li>
+        <li><a href="/ja/operation_research_me.html">オペレーションズ・リサーチ：モーダー、エルマグラビー</a></li>
+        <li><a href="/ja/operation_research_gv.html">組織とマネジメント：グヴィシアーニ</a></li>
+        <li><a href="/ja/operation_research_vg.html">オペレーションズ・リサーチの原理：ワグナー</a></li>
+        <li><a href="/ja/operation_research_book.html">オペレーションズ・リサーチの文献のダウンロード</a></li>
+      </ul>
+    </div>
+  </div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/ja/">ホーム</a> <span aria-hidden="true">/</span>
+    <a href="/ja/operation_research.html">オペレーションズ・リサーチ</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">オペレーションズ・リサーチ：ヴェンツェリ</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Toggle theme"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_ve.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">言語</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/ja/map.html">サイトマップ</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710aa6ed05a5ce',t:'MTc4ODczNTEyMA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

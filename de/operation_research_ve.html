@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Operations Research: Wentzel</title>
+<meta name="description" content="Eine Operation ist ein Vorhaben, das durch einen einheitlichen Plan vereint und auf die Erreichung eines Ziels gerichtet ist. Es werden die grundlegenden Begriffe des Operations Research nach E. S. Wentzel beschrieben: Entscheidung, Effektivität, Optimalitätskriterium.">
+<meta name="keywords" content="Operations Research,Wentzel,Modelllösung,Optimierung,Statistik,mathematisch,Probleme,Auswahl,Systemanalyse">
+<link rel="canonical" href="https://systems-analysis.info/de/operation_research_ve.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_ve.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_ve.html">
+<link rel="alternate" hreflang="de" href="https://systems-analysis.info/de/operation_research_ve.html">
+<meta property="og:title" content="Operations Research: Wentzel">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/de/operation_research_ve.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Eine Operation ist ein Vorhaben, das durch einen einheitlichen Plan vereint und auf die Erreichung eines Ziels gerichtet ist. Es werden die grundlegenden Begriffe des Operations Research nach E. S. Wentzel beschrieben: Entscheidung, Effektivität, Optimalitätskriterium.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="de_DE">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/de/operation_research_ve.html#article",
+    "headline": "Operations Research: Wentzel",
+    "description": "Eine Operation ist ein Vorhaben, das durch einen einheitlichen Plan vereint und auf die Erreichung eines Ziels gerichtet ist. Es werden die grundlegenden Begriffe des Operations Research nach E. S. Wentzel beschrieben: Entscheidung, Effektivität, Optimalitätskriterium.",
+    "url": "https://systems-analysis.info/de/operation_research_ve.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "de",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/de/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/de/operation_research_ve.html"
+    },
+    "keywords": [
+        "Operations Research",
+        "Wentzel",
+        "Modelllösung",
+        "Optimierung",
+        "Statistik",
+        "mathematisch",
+        "Probleme",
+        "Auswahl",
+        "Systemanalyse"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Operations Research",
+        "author": {
+            "@type": "Person",
+            "name": "Wentzel E.S."
+        },
+        "datePublished": "1972",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Sovetskoye Radio"
+        },
+        "inLanguage": "de"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Operations Research",
+        "author": {
+            "@type": "Person",
+            "name": "Wentzel E.S."
+        },
+        "datePublished": "1972",
+        "inLanguage": "de"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Startseite",
+            "item": "https://systems-analysis.info/de/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Operations Research",
+            "item": "https://systems-analysis.info/de/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Operations Research: Wentzel"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Hauptnavigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menü</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/de/">Startseite</a>
+        <span aria-hidden="true">·</span>
+        <a href="/de/sections.html">Abschnitte</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/de/books.html">Bücher</a>
+        <span aria-hidden="true">·</span>
+        <a href="/de/catalog.html">Katalog</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_ve.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Design wechseln"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Schriftart wechseln"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Operations Research: Wentzel</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Das Operations Research gewinnt in den letzten Jahren ein immer breiteres Anwendungsfeld. Diese Wissenschaft gehört zu den vergleichsweise jungen, erst kürzlich entstandenen Disziplinen; ihre Grenzen und ihr Inhalt sind nicht klar definiert.</p>
+<p>Operations Research wird an vielen Universitäten gelehrt, doch der diesem Begriff zugeordnete Inhalt ist keineswegs einheitlich. Manche Autoren verstehen unter „Operations Research“ vor allem mathematische Optimierungsmethoden wie die lineare, nichtlineare und dynamische Programmierung. Andere hingegen zählen diese Zweige der Mathematik nicht zum Operations Research und betrachten es hauptsächlich aus der Perspektive der Spieltheorie und der statistischen Entscheidungstheorie. Manche neigen dazu, die Existenz des „Operations Research“ als eigenständiger wissenschaftlicher Disziplin überhaupt zu leugnen und es der Kybernetik zuzuordnen (ein Begriff, der ebenfalls unzureichend definiert ist und von verschiedenen Menschen unterschiedlich verstanden wird). Andere wiederum verleihen dem Begriff „Operations Research“ eine übermäßig weite Bedeutung und erklären diese Disziplin zu einer allumfassenden „Wissenschaft der Wissenschaften“.</p>
+<p>Die Zeit wird zeigen, in welchen Formen sich diese vergleichsweise junge Wissenschaft weiterentwickeln wird, welche Bereiche sie beibehalten wird und welche sich als eigenständige wissenschaftliche Disziplinen „abspalten“ werden. Insbesondere bleibt das zukünftige Verhältnis zwischen dem „Operations Research“ und der „Systemtheorie“ (oder der „Theorie komplexer Systeme“), über das in letzter Zeit viel gesagt und geschrieben wurde, unklar. In jedem Fall ist es unbestreitbar wahr, dass in den unterschiedlichsten Praxisbereichen — Organisation von Produktion und Versorgung, Transportwesen, militärische Operationen und Rüstung, Personaleinsatz, Verbraucherdienstleistungen, Gesundheitswesen, Kommunikation, Datenverarbeitung und so weiter — zunehmend Probleme auftreten, die sich in ihrer Formulierung ähneln, eine Reihe gemeinsamer Merkmale aufweisen und mit ähnlichen Methoden gelöst werden, die man zweckmäßigerweise unter der allgemeinen Bezeichnung „Probleme des Operations Research“ zusammenfasst.</p>
+<p>Die typische Situation stellt sich wie folgt dar: Ein zielgerichteter Handlungsablauf wird auf die eine oder andere Weise organisiert — das heißt, es kann eine „Entscheidung“ aus einer Reihe möglicher Alternativen getroffen werden. Jede Alternative hat Vor- und Nachteile, und aufgrund der Komplexität der Situation ist nicht sofort ersichtlich, welche besser (vorzuziehen) ist und warum. Um die Situation zu klären und die Entscheidungsalternativen anhand einer Reihe von Kriterien zu vergleichen, wird eine Reihe mathematischer Berechnungen durchgeführt. Ihre Aufgabe besteht darin, den für die Wahl der Entscheidung verantwortlichen Personen zu helfen, die Situation kritisch zu analysieren und sich schließlich für eine der Alternativen zu entscheiden.</p>
+<p>In unserer Zeit, die man zu Recht als Epoche der wissenschaftlich-technischen Revolution bezeichnet, widmet die Wissenschaft den Fragen der Organisation und des Managements immer größere Aufmerksamkeit. Dafür gibt es viele Gründe. Die rasche Entwicklung und die wachsende Komplexität der Technik, die beispiellose Ausweitung des Umfangs von Vorhaben und der Bandbreite ihrer möglichen Folgen, die Einführung automatisierter Steuerungssysteme in alle Praxisbereiche — all dies macht es notwendig, komplexe zielgerichtete Prozesse im Hinblick auf ihre Struktur und Organisation zu analysieren. Die Wissenschaft ist aufgerufen, Empfehlungen für ein optimales (rationales) Management solcher Prozesse zu geben. Vorbei sind die Zeiten, in denen richtiges, wirksames Management von Organisatoren „nach Gefühl“, nach der Methode von „Versuch und Irrtum“, gefunden wurde. Heute erfordert die Entwicklung eines solchen Managements einen wissenschaftlichen Ansatz — die mit Fehlern verbundenen Verluste sind zu groß.</p>
+<p>Die Bedürfnisse der Praxis haben besondere wissenschaftliche Methoden hervorgebracht, die zweckmäßigerweise unter der Bezeichnung „Operations Research“ zusammengefasst werden. Unter diesem Begriff verstehen wir die Anwendung mathematischer, quantitativer Methoden zur Begründung von Entscheidungen in allen Bereichen der zielgerichteten menschlichen Tätigkeit.</p>
+<p>Erläutern wir, was unter einer „Entscheidung“ zu verstehen ist. Angenommen, es wird ein Vorhaben durchgeführt, das auf die Erreichung eines bestimmten Ziels gerichtet ist. Die Person (oder Personengruppe), die das Vorhaben organisiert, hat stets eine gewisse Wahlfreiheit: Sie kann es auf diese oder jene Weise organisieren — beispielsweise die Art der einzusetzenden Ausrüstung wählen, die verfügbaren Ressourcen auf eine bestimmte Weise verteilen und so weiter. Eine „Entscheidung“ ist genau eine Wahl aus der Bandbreite der dem Organisator zur Verfügung stehenden Möglichkeiten. Entscheidungen können schlecht oder gut, wohlüberlegt oder überstürzt, wohlbegründet oder willkürlich sein.</p>
+<p>Operations Research beginnt dort, wo mathematische Methoden zur Begründung von Entscheidungen angewandt werden. Bis zu einem gewissen Punkt werden Entscheidungen in jedem Praxisbereich ohne besondere mathematische Berechnungen getroffen, einfach aufgrund von Erfahrung und gesundem Menschenverstand. Es gibt jedoch Entscheidungen, die weitaus folgenreicher sind. Angenommen zum Beispiel, in einer neuen Stadt mit einem Netz von Betrieben, Wohngebieten und so weiter wird der öffentliche Nahverkehr organisiert. Eine Reihe von Entscheidungen muss getroffen werden: Auf welchen Strecken und mit welchen Verkehrsmitteln sollen die Verkehrslinien geführt werden? An welchen Punkten sollen Haltestellen eingerichtet werden? Wie soll die Bedienungshäufigkeit je nach Tageszeit angepasst werden? Und so weiter.</p>
+<p>Diese Entscheidungen sind weitaus komplexer, und vor allem hängt sehr viel von ihnen ab. Eine falsche Wahl kann das Funktionieren einer ganzen Stadt beeinträchtigen. Natürlich kann man auch in diesem Fall bei der Wahl einer Entscheidung intuitiv vorgehen und sich auf Erfahrung und gesunden Menschenverstand verlassen (und das wird tatsächlich häufig getan). Doch die Entscheidungen werden weitaus rationaler sein, wenn sie durch mathematische Berechnungen gestützt werden. Diese vorausgehenden Berechnungen helfen, eine langwierige und kostspielige Suche nach der richtigen Entscheidung „nach Gefühl“ zu vermeiden.</p>
+<p>Je komplexer, kostspieliger und umfangreicher das geplante Vorhaben ist, desto weniger akzeptabel sind willkürliche Entscheidungen und desto wichtiger werden die wissenschaftlichen Methoden, die es ermöglichen, die Folgen jeder Entscheidung im Voraus zu bewerten, unzulässige Alternativen im Voraus zu verwerfen und die erfolgreichsten zu empfehlen; festzustellen, ob die uns zur Verfügung stehenden Informationen für eine richtige Entscheidungswahl ausreichen, und, falls nicht, welche zusätzlichen Informationen beschafft werden müssen. Es ist in solchen Fällen zu gefährlich, sich auf die eigene Intuition, auf „Erfahrung und gesunden Menschenverstand“ zu verlassen. In unserer Epoche der wissenschaftlich-technischen Revolution ändern sich Technik und Methoden so schnell, dass die „Erfahrung“ schlicht keine Zeit hat, sich anzusammeln. Zudem haben wir es oft mit einzigartigen Vorhaben zu tun, die zum ersten Mal durchgeführt werden. In solchen Fällen schweigt die „Erfahrung“, und der „gesunde Menschenverstand“ kann leicht getäuscht werden, wenn er nicht durch Berechnung fundiert ist. Genau mit solchen Berechnungen, die den Menschen bei der Entscheidungsfindung helfen, befasst sich das Operations Research.</p>
+<p>Eine Operation ist jedes Vorhaben (System von Handlungen), das durch einen einheitlichen Plan vereint und auf die Erreichung eines bestimmten Ziels gerichtet ist. Eine Operation ist stets ein gesteuertes Vorhaben — das heißt, es hängt von uns ab, wie wir bestimmte Parameter wählen, die ihre Organisation charakterisieren. „Organisation“ wird hier im weiten Sinne des Wortes verstanden, einschließlich der Gesamtheit der in der Operation eingesetzten technischen Mittel.</p>
+<p>Jede konkrete Wahl der von uns abhängigen Parameter wird als Entscheidung bezeichnet. Entscheidungen können erfolgreich oder erfolglos, rational oder irrational sein. Entscheidungen werden als optimal bezeichnet, wenn sie nach einem bestimmten Merkmal anderen vorzuziehen sind. Das Ziel des Operations Research besteht darin, die Wahl optimaler Entscheidungen quantitativ zu unterstützen.</p>
+<p>Manchmal (relativ selten) liefert eine Untersuchung eine einzige streng optimale Entscheidung; weitaus häufiger ergibt sie eine Reihe praktisch gleichwertiger optimaler (rationaler) Entscheidungen, innerhalb derer die endgültige Wahl getroffen werden kann.</p>
+<p>Es sei angemerkt, dass das eigentliche Treffen einer Entscheidung außerhalb des Anwendungsbereichs des Operations Research liegt und in die Zuständigkeit einer verantwortlichen Person oder häufiger einer Gruppe von Personen fällt, denen das Recht der endgültigen Wahl übertragen wird und die die Verantwortung für diese Wahl tragen. Bei ihrer Wahl können sie neben den aus den mathematischen Berechnungen resultierenden Empfehlungen eine Reihe zusätzlicher Überlegungen (sowohl quantitativer als auch qualitativer Natur) berücksichtigen, die in den Berechnungen nicht erfasst wurden.</p>
+<p>Die unverzichtbare Anwesenheit eines Menschen (als letzte Instanz, die die Entscheidung trifft) wird auch durch das Vorhandensein eines vollständig automatisierten Steuerungssystems, das Entscheidungen scheinbar ohne menschliche Beteiligung trifft, nicht aufgehoben. Man darf nicht vergessen, dass schon die Erstellung des Steuerungsalgorithmus, die Wahl einer seiner möglichen Varianten, selbst eine Entscheidung ist — und zwar eine sehr folgenreiche.</p>
+<p>Die Parameter, deren Gesamtheit eine Entscheidung bildet, werden als Entscheidungsvariablen bezeichnet. Als Entscheidungsvariablen können verschiedene Zahlen, Vektoren, Funktionen, physikalische Merkmale und so weiter dienen. In den einfachsten Problemen des Operations Research kann die Anzahl der Entscheidungsvariablen vergleichsweise klein sein. Bei den meisten praktisch bedeutsamen Problemen ist die Anzahl der Entscheidungsvariablen jedoch sehr groß.</p>
+<p>Neben den Entscheidungsvariablen, über die wir innerhalb bestimmter Grenzen verfügen können, enthält jedes Problem des Operations Research auch vorgegebene, „disziplinierende“ Bedingungen, die von vornherein feststehen und nicht verletzt werden dürfen (zum Beispiel die Tragfähigkeit eines Fahrzeugs, der Umfang einer geplanten Aufgabe, die Gewichtsmerkmale einer Ausrüstung und Ähnliches). Zu solchen Bedingungen gehören insbesondere die Ressourcen (materielle, technische, personelle), über die wir verfügen dürfen, sowie weitere der Entscheidung auferlegte Restriktionen. Zusammen bilden sie die sogenannte „zulässige Menge“.</p>
+<p>Um verschiedene Entscheidungen hinsichtlich ihrer Effektivität miteinander zu vergleichen, benötigt man ein quantitatives Kriterium, ein sogenanntes Effektivitätsmaß (häufig als „Zielfunktion“ bezeichnet). Dieses Maß wird so gewählt, dass es die Zielgerichtetheit der Operation widerspiegelt. Als „beste“ Entscheidung gilt jene, die am stärksten zur Erreichung des gesetzten Ziels beiträgt. Um das Effektivitätsmaß W zu wählen, es zu „benennen“, muss man sich zunächst fragen: Was wollen wir, worum bemühen wir uns, wenn wir die Operation durchführen? Bei der Wahl einer Entscheidung ziehen wir natürlich diejenige vor, die das Effektivitätsmaß W zu einem Maximum (oder einem Minimum) macht. So möchte man beispielsweise die Einnahmen aus einer Operation maximieren; ist das Effektivitätsmaß dagegen die Kosten, möchte man diese minimieren.</p>
+<p>Sehr häufig wird die Durchführung einer Operation von der Wirkung zufälliger Faktoren begleitet. In solchen Fällen wird als Effektivitätsmaß üblicherweise nicht die Größe selbst genommen, die man maximieren (minimieren) möchte, sondern ihr Mittelwert (Erwartungswert).</p>
+<p>In manchen Fällen verfolgt eine von zufälligen Faktoren begleitete Operation ein ganz bestimmtes Ziel, das entweder vollständig erreicht oder überhaupt nicht erreicht werden kann (das Schema „Ja–Nein“), wobei Zwischenergebnisse von keinem Interesse sind. In solchen Fällen wird als Effektivitätsmaß die Wahrscheinlichkeit der Zielerreichung gewählt. Wird beispielsweise auf ein Ziel geschossen mit der zwingenden Bedingung, es zu zerstören, so ist die Wahrscheinlichkeit der Zerstörung des Ziels das Effektivitätsmaß.</p>
+<p>Eine falsche Wahl des Effektivitätsmaßes ist sehr gefährlich. Operationen, die nach einem schlecht gewählten Kriterium organisiert sind, können zu unbegründeten Ausgaben und Verlusten führen. Leider ist die Wahl des Effektivitätsmaßes bei den meisten praktisch bedeutsamen Problemen nicht einfach und wird uneindeutig gelöst. Für jedes hinreichend komplexe Problem ist es typisch, dass die Effektivität einer Operation nicht erschöpfend durch eine einzige Zahl charakterisiert werden kann — es müssen ergänzend weitere Maße hinzugezogen werden.</p>
+<p>Um quantitative Forschungsmethoden in irgendeinem Bereich anzuwenden, ist stets ein mathematisches Modell erforderlich. Bei der Konstruktion eines Modells wird das reale Phänomen (in unserem Fall die Operation) unvermeidlich vereinfacht und schematisiert, und dieses Schema (eine schematische Darstellung des Phänomens) wird mit mathematischen Mitteln beschrieben. Je erfolgreicher das mathematische Modell gewählt wird, je besser es die charakteristischen Merkmale des Phänomens widerspiegelt, desto erfolgreicher wird die Untersuchung sein und desto nützlicher die daraus resultierenden Empfehlungen.</p>
+<p>Es gibt keine allgemeinen Methoden zur Konstruktion mathematischer Modelle. In jedem konkreten Fall wird das Modell auf Grundlage der Art der Operation, ihrer Zielgerichtetheit und unter Berücksichtigung der Forschungsaufgabe gewählt (welche Parameter bestimmt werden müssen und der Einfluss welcher Faktoren berücksichtigt werden muss). Ebenso ist es in jedem konkreten Fall notwendig, die Genauigkeit und Detailliertheit des Modells abzuwägen mit: a) der Genauigkeit, mit der wir die Lösung kennen müssen, und b) den Informationen, die uns vorliegen oder die wir beschaffen können. Sind die für die Berechnungen erforderlichen Ausgangsdaten nur ungenau bekannt, so ist es offensichtlich sinnlos, sich in Feinheiten zu vertiefen, ein sehr detailliertes Modell aufzubauen und Zeit (die eigene und die des Computers) auf eine feine und präzise Optimierung der Lösung zu verwenden. Leider wird dieser Grundsatz häufig missachtet, und es werden übermäßig detaillierte Modelle zur Beschreibung von Phänomenen gewählt.</p>
+<p>Ein mathematisches Modell muss die wichtigsten Merkmale des Phänomens widerspiegeln, alle wesentlichen Faktoren, von denen der Erfolg der Operation im Wesentlichen abhängt. Gleichzeitig sollte das Modell so einfach wie möglich sein und nicht mit einer Masse geringfügiger, sekundärer Faktoren „überladen“ werden: Deren Berücksichtigung erschwert die mathematische Analyse und macht die Forschungsergebnisse schwerer überschaubar. Zwei Gefahren lauern stets auf den Modellbauer: Die erste besteht darin, sich in Details zu verlieren („den Wald vor lauter Bäumen nicht sehen“), die zweite darin, das Phänomen zu stark zu vereinfachen („das Kind mit dem Bade auszuschütten“). Die Kunst, mathematische Modelle zu bauen, ist tatsächlich eine Kunst, und die Erfahrung darin wird nach und nach erworben.</p>
+<p>Da ein mathematisches Modell nicht mit Notwendigkeit aus der Problembeschreibung folgt, ist es stets nützlich, keinem einzelnen Modell blind zu vertrauen, sondern die mit verschiedenen Modellen erzielten Ergebnisse zu vergleichen und so eine Art „Wettstreit der Modelle“ zu veranstalten. Dabei wird dasselbe Problem nicht nur einmal, sondern mehrfach gelöst, unter Verwendung verschiedener Annahmesysteme, verschiedener Apparate und verschiedener Modelle. Ändern sich die wissenschaftlichen Schlussfolgerungen von Modell zu Modell nur wenig, so ist dies ein starkes Argument für die Objektivität der Untersuchung. Weichen sie erheblich voneinander ab, muss man die den verschiedenen Modellen zugrunde liegenden Konzepte überdenken, bestimmen, welches von ihnen der Realität angemessener ist, und gegebenenfalls ein Kontrollexperiment durchführen. Charakteristisch für das Operations Research ist auch die wiederholte Rückkehr zum Modell (nachdem bereits eine erste Runde von Berechnungen durchgeführt wurde), um Korrekturen daran vorzunehmen.</p>
+<p>Die Erstellung eines mathematischen Modells ist der wichtigste und verantwortungsvollste Teil der Untersuchung, der tiefe Kenntnisse erfordert — nicht so sehr der Mathematik als vielmehr des Wesens der zu modellierenden Phänomene. In der Regel kommen „reine“ Mathematiker (ohne die Hilfe von Fachleuten aus dem Bereich, dem das Problem zugehört) mit der Modellkonstruktion schlecht zurecht. Ihre Aufmerksamkeit richtet sich auf die mathematischen Mittel und deren Feinheiten, statt auf das reale praktische Problem.</p>
+<p>Die Erfahrung zeigt, dass die erfolgreichsten Modelle von Fachleuten aus dem jeweiligen Praxisbereich erstellt werden, die zusätzlich zu ihrer fachlichen Grundausbildung eine tiefe mathematische Vorbildung erhalten haben, oder von Teams, in denen praktische Fachleute und Mathematiker zusammenwirken. Großen Nutzen bringen Beratungen, die ein im Operations Research versierter Mathematiker Praktikern — Ingenieuren, Biologen, Medizinern und anderen — erteilt, die in ihrer Arbeit auf die Notwendigkeit einer wissenschaftlichen Begründung von Entscheidungen stoßen.</p>
+<p>Besonders hervorgehoben werden muss, dass Kenntnisse der Wahrscheinlichkeitstheorie notwendig sind — nicht so sehr umfassend und tief, sondern vielmehr informell und wirksam, zusammen mit der Gewohnheit, mit statistischen Daten und probabilistischen Begriffen zu arbeiten. Die besonderen Anforderungen in genau diesem Bereich des mathematischen Wissens erklären sich daraus, dass die meisten Operationen unter Bedingungen unvollständiger Gewissheit durchgeführt werden und ihr Verlauf und ihr Ausgang von zufälligen Faktoren abhängen. Leider ist unter den breiten Kreisen der Fachleute — Ingenieuren, Biologen, Medizinern, Chemikern — eine gute Beherrschung der Wahrscheinlichkeitstheorie selten anzutreffen. Ihre Sätze und Regeln werden oft formal angewandt, ohne ein echtes Verständnis ihres Sinns und ihres Geistes. Nicht selten wird die Wahrscheinlichkeitstheorie als eine Art „Zauberstab“ betrachtet, der es erlaubt, Informationen „aus dem Nichts“, aus völliger Unkenntnis, zu gewinnen. Das ist ein Irrtum: Die Wahrscheinlichkeitstheorie erlaubt es lediglich, Informationen umzuwandeln — das heißt, aus Daten über bestimmte, der Beobachtung zugängliche Phänomene Schlussfolgerungen über andere, unzugängliche zu ziehen.</p>
+<p>Bei der Konstruktion eines mathematischen Modells können mathematische Mittel unterschiedlicher Komplexität verwendet werden (je nach Art der Operation, den Forschungsaufgaben und der Genauigkeit der Ausgangsdaten). In den einfachsten Fällen wird das Phänomen durch einfache algebraische Gleichungen beschrieben. In komplexeren Fällen, wenn es notwendig ist, das Phänomen in seiner Dynamik zu untersuchen, werden die Methoden der Differentialgleichungen (gewöhnliche oder partielle) eingesetzt. In den komplexesten Fällen, wenn die Entwicklung einer Operation und ihr Ausgang von einer großen Zahl kompliziert miteinander verflochtener zufälliger Faktoren abhängen, versagen die analytischen Methoden völlig, und es wird die Methode der statistischen Modellierung (Monte-Carlo) angewandt.</p>
+<p>In einer ersten, grob angenäherten Darstellung lässt sich die Idee dieser Methode folgendermaßen beschreiben: Der Prozess der Entwicklung der Operation wird mit allen begleitenden Zufälligkeiten quasi „kopiert“, auf einem Computer nachgebildet. Das Ergebnis ist ein einzelnes Exemplar (eine „Realisierung“) des Zufallsprozesses der Entwicklung der Operation mit einem zufälligen Verlauf und Ausgang. Eine einzelne solche Realisierung allein bietet keine Grundlage für die Wahl einer Entscheidung, doch nachdem wir viele solcher Realisierungen erhalten haben, verarbeiten wir sie wie gewöhnliches statistisches Material (daher der Begriff „statistische Modellierung“), ermitteln die durchschnittlichen Kennwerte des Prozesses und gewinnen ein Verständnis dafür, wie die Bedingungen des Problems und die Entscheidungsvariablen sie im Durchschnitt beeinflussen.</p>
+<p>Im Operations Research werden sowohl analytische als auch statistische Modelle in großem Umfang eingesetzt. Jede dieser Arten hat ihre eigenen Vor- und Nachteile. Analytische Modelle sind gröber, berücksichtigen weniger Faktoren und erfordern stets bestimmte Annahmen und Vereinfachungen. Andererseits sind ihre Berechnungsergebnisse leichter zu überschauen und spiegeln die dem Phänomen innewohnenden grundlegenden Gesetzmäßigkeiten klarer wider. Und vor allem sind analytische Modelle besser für die Suche nach optimalen Lösungen geeignet.</p>
+<p>Statistische Modelle sind im Vergleich zu analytischen genauer und detaillierter, erfordern keine so groben Annahmen und erlauben es, eine große (theoretisch unbegrenzte) Zahl von Faktoren zu berücksichtigen. Aber auch sie haben ihre Nachteile: Umständlichkeit, schlechte Überschaubarkeit und vor allem die außerordentliche Schwierigkeit der Suche nach optimalen Lösungen, die „nach Gefühl“, durch Mutmaßungen und Versuche, gesucht werden müssen.</p>
+<p>Die besten Arbeiten im Bereich des Operations Research beruhen auf dem kombinierten Einsatz analytischer und statistischer Modelle. Ein analytisches Modell ermöglicht es, ein allgemeines Verständnis des Phänomens zu gewinnen, gewissermaßen die „Konturen“ der grundlegenden Gesetzmäßigkeiten zu skizzieren. Alle Verfeinerungen lassen sich mit Hilfe statistischer Modelle erzielen.</p>
+<p>Abschließend seien noch einige Worte zur sogenannten „Simulationsmodellierung“ gesagt. Sie wird auf Prozesse angewandt, in deren Verlauf von Zeit zu Zeit der menschliche Wille eingreifen kann. Die Person (oder Personengruppe), die die Operation leitet, kann je nach der entstandenen Situation diese oder jene Entscheidung treffen, ähnlich wie ein Schachspieler, der auf das Brett blickend seinen nächsten Zug wählt. Dann wird das mathematische Modell in Gang gesetzt, das zeigt, welche Veränderung der Situation als Reaktion auf diese Entscheidung zu erwarten ist und zu welchen Folgen sie nach einiger Zeit führen wird. Die nächste „aktuelle Entscheidung“ wird unter Berücksichtigung der neuen, tatsächlichen Situation getroffen, und so weiter. Durch die wiederholte Anwendung dieses Verfahrens „sammelt“ der Leiter praktisch „Erfahrung“, lernt aus eigenen und fremden Fehlern und lernt allmählich, richtige Entscheidungen zu treffen — wenn nicht optimale, so doch nahezu optimale.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div class="links">
+    <div class="links-section">
+      <h2>Operations Research</h2>
+      <ul>
+        <li><a href="/de/operation_research.html">Operations Research</a></li>
+        <li><a href="/de/operation_research_caa.html">Operations Research: Churchman, Ackoff und Arnoff</a></li>
+        <li><a href="/de/operation_research_as.html">Grundlagen des Operations Research. Ackoff, Sasieni</a></li>
+        <li><a href="/de/operation_research_me.html">Operations Research: Moder und Elmaghraby</a></li>
+        <li><a href="/de/operation_research_gv.html">Organisation und Management. Gwischiani</a></li>
+        <li><a href="/de/operation_research_vg.html">Operations Research: Wagner</a></li>
+        <li><a href="/de/operation_research_book.html">Literatur zum Operations Research herunterladen</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumb-Navigation">
+    <a href="/de/">Startseite</a> <span aria-hidden="true">/</span>
+    <a href="/de/operation_research.html">Operations Research</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Operations Research: Wentzel</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Design wechseln"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_ve.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/de/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Design wechseln"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a37107728e41a5ce',t:'MTc4ODczNDk4OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

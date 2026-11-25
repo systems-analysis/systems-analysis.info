@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Le processus de modélisation</title>
+<meta name="description" content="Le processus de modélisation peut être considéré comme une transition d’une classe de modèles à une autre. On distingue traditionnellement trois grandes classes de modèles : cognitifs, substantiels et formels. Elles constituent trois niveaux de modélisation interdépendants qui ne peuvent être examinés isolément les uns des autres.">
+<meta name="keywords" content="processus de modélisation,modèle,modèle cognitif,modèle conceptuel,modèle formel,modélisation mathématique,analyse des systèmes">
+<link rel="canonical" href="https://systems-analysis.info/fr/modeling_process.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/modeling_process.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/modeling_process.html">
+<link rel="alternate" hreflang="fr" href="https://systems-analysis.info/fr/modeling_process.html">
+<meta property="og:title" content="Le processus de modélisation">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/fr/modeling_process.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Le processus de modélisation peut être considéré comme une transition d’une classe de modèles à une autre. On distingue traditionnellement trois grandes classes de modèles : cognitifs, substantiels et formels. Elles constituent trois niveaux de modélisation interdépendants qui ne peuvent être examinés isolément les uns des autres.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="fr_FR">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/fr/modeling_process.html#article",
+    "headline": "Le processus de modélisation",
+    "description": "Le processus de modélisation peut être considéré comme une transition d’une classe de modèles à une autre. On distingue traditionnellement trois grandes classes de modèles : cognitifs, substantiels et formels. Elles constituent trois niveaux de modélisation interdépendants qui ne peuvent être examinés isolément les uns des autres.",
+    "url": "https://systems-analysis.info/fr/modeling_process.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "fr",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/fr/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/fr/modeling_process.html"
+    },
+    "keywords": [
+        "processus de modélisation",
+        "modèle",
+        "modèle cognitif",
+        "modèle conceptuel",
+        "modèle formel",
+        "modélisation mathématique",
+        "analyse des systèmes"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://systems-analysis.info/fr/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Modélisation",
+            "item": "https://systems-analysis.info/fr/modelling.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Le processus de modélisation"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Navigation principale">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/fr/">Accueil</a>
+        <span aria-hidden="true">·</span>
+        <a href="/fr/sections.html">Sections</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/fr/books.html">Livres</a>
+        <span aria-hidden="true">·</span>
+        <a href="/fr/catalog.html">Catalogue</a>
+        <span aria-hidden="true">·</span>
+        <a href="/modeling_process.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Changer de thème"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Changer de police"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Le processus de modélisation</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Le processus de modélisation peut être considéré comme une transition d’une classe de <a href="/fr/model.html" class="text-link">modèles</a> à une autre. On distingue traditionnellement trois grandes classes de modèles : cognitifs, substantiels et formels. Elles constituent trois niveaux de modélisation interdépendants qui ne peuvent être examinés isolément. L’influence mutuelle entre les niveaux de modélisation est liée à la propriété de potentialité inhérente aux modèles. La création de tout modèle entraîne l’apparition de connaissances nouvelles sur l’objet étudié, ce qui conduit à réévaluer et à affiner les concepts et les représentations de l’objet de modélisation à différents niveaux. Cette circonstance, à son tour, entraîne une révision des modèles substantiels et cognitifs correspondants, assurant un développement en spirale de tous les niveaux de modélisation de l’objet étudié.</p>
+<p>Lors de l’observation de l’objet initial, une image mentale de l’objet — son modèle idéal — se forme dans l’esprit du chercheur. Dans la littérature scientifique, on l’appelle communément modèle cognitif (mental). En formant un tel modèle, le chercheur cherche généralement à répondre à des questions précises ; c’est pourquoi tout ce qui est non essentiel est écarté de la structure infiniment complexe de l’objet afin d’obtenir une description plus compacte et concise. La représentation d’un modèle cognitif en langage naturel est appelée modèle substantiel.</p>
+<p>Les modèles cognitifs sont par nature subjectifs, car ils sont construits par les chercheurs à partir de connaissances et d’expériences antérieures. Ces modèles ne peuvent être compris qu’à travers une description symbolique. Les modèles cognitifs et substantiels ne sont pas équivalents, car les premiers peuvent contenir des éléments que le chercheur est incapable ou ne souhaite pas exprimer. En même temps, si un modèle substantiel a été formulé par une autre personne ou résulte d’un effort collectif, son interprétation, le niveau de compréhension et le degré de confiance peuvent varier considérablement d’un interprète à l’autre. Les modèles substantiels sont souvent désignés comme des énoncés techniques du problème.</p>
+<p><strong>Selon leur finalité fonctionnelle et leurs objectifs, les modèles substantiels se divisent en modèles descriptifs, explicatifs et prédictifs :</strong></p>
+<ul>
+  <li>Un <em>modèle descriptif</em> est toute description d’un objet.</li>
+  <li>Un <em>modèle explicatif</em> répond à la question de savoir pourquoi quelque chose se produit.</li>
+  <li>Un <em>modèle prédictif</em> décrit le comportement futur d’un objet. Il convient de noter qu’un modèle prédictif ne comporte pas nécessairement de composante explicative.</li>
+</ul>
+<p>Un <em>modèle conceptuel</em> est un modèle substantiel dont la formulation fait appel aux concepts et aux représentations des domaines disciplinaires concernés par l’étude de l’objet de modélisation.</p>
+<p>Dans un sens plus large, on entend par modèle conceptuel un modèle substantiel fondé sur un concept ou un point de vue spécifique. On distingue trois types de modèles conceptuels : logico-sémantique, structurel-fonctionnel et causal.</p>
+<ul>
+  <li>Un <em>modèle logico-sémantique</em> décrit un objet à l’aide des termes et des définitions des domaines disciplinaires concernés, en intégrant tous les énoncés et faits logiquement cohérents connus. L’analyse de ces modèles repose sur le raisonnement logique et les connaissances accumulées dans les domaines respectifs.</li>
+  <li>Un <em>modèle structurel-fonctionnel</em> traite l’objet comme un système intégré, décomposé en éléments ou sous-systèmes individuels. Les composants sont reliés par des relations structurelles qui définissent la subordination, l’enchaînement logique et l’ordre temporel d’exécution des tâches. Des schémas, des diagrammes et des cartes sont couramment utilisés pour représenter ces modèles.</li>
+  <li>Un <em>modèle causal</em> est souvent utilisé pour expliquer et prédire le comportement d’un objet. Ces modèles visent principalement à : (1) identifier les principales interrelations entre les éléments constitutifs de l’objet étudié ; (2) déterminer comment les changements de certains facteurs affectent l’état des composants du modèle ; (3) comprendre comment le modèle dans son ensemble fonctionnera et s’il décrira adéquatement la dynamique des paramètres qui intéressent le chercheur.</li>
+</ul>
+<p>Un <em>modèle formel</em> représente un modèle conceptuel à l’aide d’un ou plusieurs langages formels, tels que les théories mathématiques, les langages de modélisation spécialisés ou les langages de programmation. Dans les sciences humaines, la modélisation se limite souvent à l’élaboration d’un modèle conceptuel, tandis que dans les sciences naturelles, la construction d’un modèle formel est généralement réalisable.</p>
+<p>Bien que l’importance des modèles substantiels et formels dans la recherche soit largement reconnue, le rôle des modèles cognitifs est souvent sous-estimé en raison de leur subjectivité et du caractère implicite des processus de pensée. Néanmoins, les modèles cognitifs revêtent une importance particulière dans les contextes où les opérateurs ou les décideurs s’appuient sur leurs propres représentations mentales pour contrôler des objets ou des processus. Ce type de modèle joue également un rôle substantiel dans les sciences sociales.</p>
+<p>La modélisation mathématique est une forme de modélisation scientifique, symbolique et formelle dans laquelle les objets sont décrits à l’aide du langage mathématique et étudiés par des méthodes mathématiques.</p>
+<p>Un modèle mathématique conçu pour la recherche scientifique permet de déterminer les valeurs des paramètres de l’objet ou du phénomène modélisé à partir de données d’entrée spécifiées. Ainsi, le cœur d’un tel modèle est la mise en correspondance des valeurs des paramètres d’entrée avec les valeurs des paramètres de sortie. Cette perspective permet de considérer un modèle mathématique comme un opérateur mathématique, qui peut être défini de manière large comme une fonction, une correspondance représentée par des équations algébriques, différentielles, intégro-différentielles ou intégrales, un algorithme, un ensemble de règles ou des tables permettant de déterminer les paramètres de sortie à partir des valeurs d’entrée.</p>
+<p>Définir un modèle mathématique à travers la notion d’opérateur est plus constructif du point de vue de l’établissement d’une classification de ces modèles, car cela englobe toute la diversité des modèles mathématiques existant aujourd’hui.</p>
+<p><strong>Avantages de la modélisation mathématique par rapport à l’expérimentation physique :</strong></p>
+<ul>
+  <li>économie (notamment, préservation des ressources du système réel) ;</li>
+  <li>la possibilité de modéliser des objets hypothétiques — c’est-à-dire des objets non réalisés dans la nature ;</li>
+  <li>la possibilité de simuler des conditions de fonctionnement dangereuses ou difficiles à reproduire dans la réalité ;</li>
+  <li>la possibilité de modifier l’échelle temporelle ;</li>
+  <li>la facilité d’une analyse multidimensionnelle ;</li>
+  <li>une plus grande capacité prédictive, grâce à la possibilité de dégager des régularités générales ;</li>
+  <li>l’universalité du matériel et des logiciels utilisés (systèmes de programmation et progiciels d’application à usage général).</li>
+</ul>
+<p>Un <em>modèle informationnel</em> est un modèle d’un objet présenté sous forme d’informations décrivant les paramètres et les variables essentiels à l’analyse considérée, les relations entre eux, ainsi que les entrées et sorties de l’objet, ce qui permet de simuler les états possibles de l’objet en introduisant dans le modèle des informations sur les changements des valeurs d’entrée.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Articles connexes</h2>
+    <ul>
+      <li><a href="/fr/model.html">Modèle</a></li>
+      <li><a href="/fr/modelling.html">Modélisation</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/fr/">Accueil</a> <span aria-hidden="true">/</span>
+    <a href="/fr/modelling.html">Modélisation</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Le processus de modélisation</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Changer de thème"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/modeling_process.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/fr/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Changer de thème"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a37108d20c4fa5ce',t:'MTc4ODczNTA0NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

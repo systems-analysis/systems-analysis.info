@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Procesul de modelare</title>
+<meta name="description" content="Procesul de modelare poate fi privit ca o trecere de la o clasă de modele la alta. Se disting, în mod convențional, trei clase generale de modele: cognitive, substanțiale și formale. Ele constituie trei niveluri interdependente de modelare, care nu pot fi analizate izolat unele de altele.">
+<meta name="keywords" content="proces de modelare, model, model cognitiv, model conceptual, model formal, modelare matematică, analiza sistemelor">
+<link rel="canonical" href="https://systems-analysis.info/ro/modeling_process.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/modeling_process.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/modeling_process.html">
+<link rel="alternate" hreflang="ro" href="https://systems-analysis.info/ro/modeling_process.html">
+<meta property="og:title" content="Procesul de modelare">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/ro/modeling_process.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="Procesul de modelare poate fi privit ca o trecere de la o clasă de modele la alta. Se disting, în mod convențional, trei clase generale de modele: cognitive, substanțiale și formale. Ele constituie trei niveluri interdependente de modelare, care nu pot fi analizate izolat unele de altele.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="ro_RO">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/ro/modeling_process.html#article",
+    "headline": "Procesul de modelare",
+    "description": "Procesul de modelare poate fi privit ca o trecere de la o clasă de modele la alta. Se disting, în mod convențional, trei clase generale de modele: cognitive, substanțiale și formale. Ele constituie trei niveluri interdependente de modelare, care nu pot fi analizate izolat unele de altele.",
+    "url": "https://systems-analysis.info/ro/modeling_process.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "ro",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/ro/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/ro/modeling_process.html"
+    },
+    "keywords": [
+        "proces de modelare",
+        "model",
+        "model cognitiv",
+        "model conceptual",
+        "model formal",
+        "modelare matematică",
+        "analiza sistemelor"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01"
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Pagina principală",
+            "item": "https://systems-analysis.info/ro/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Modelare",
+            "item": "https://systems-analysis.info/ro/modelling.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Procesul de modelare"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Navigare principală">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Meniu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/ro/">Pagina principală</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ro/sections.html">Secțiuni</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ro/books.html">Cărți</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ro/catalog.html">Catalog</a>
+        <span aria-hidden="true">·</span>
+        <a href="/modeling_process.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Schimbă tema"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Schimbă fontul"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Procesul de modelare</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>Procesul de modelare poate fi privit ca o trecere de la o clasă de <a href="/ro/model.html" class="text-link">modele</a> la alta. Se disting, în mod convențional, trei clase generale de modele: cognitive, substanțiale și formale. Ele constituie trei niveluri interdependente de modelare, care nu pot fi analizate izolat unele de altele. Influența reciprocă dintre nivelurile de modelare este legată de proprietatea de potențialitate inerentă modelelor. Crearea oricărui model determină apariția unor cunoștințe noi despre obiectul studiat, ceea ce conduce la reevaluarea și rafinarea conceptelor și viziunilor asupra obiectului de modelare la diferite niveluri. Această circumstanță, la rândul ei, determină revizuirea modelelor substanțiale și cognitive corespunzătoare, asigurând o dezvoltare de tip spiralat a tuturor nivelurilor de modelare a obiectului studiat.</p>
+<p>La observarea obiectului original, în mintea cercetătorului se formează o imagine mentală a obiectului — modelul său ideal. În literatura științifică, acesta este denumit de regulă model cognitiv (mental). La formarea unui astfel de model, cercetătorul urmărește, de obicei, să răspundă unor întrebări specifice; de aceea, din structura infinit de complexă a obiectului este eliminat tot ce este neesențial, pentru a obține o descriere mai compactă și concisă. Reprezentarea unui model cognitiv în limbaj natural se numește model substanțial.</p>
+<p>Modelele cognitive sunt, prin natura lor, subiective, întrucât sunt construite de cercetători pe baza cunoștințelor și experienței anterioare. Aceste modele pot fi înțelese doar printr-o descriere simbolică. Modelele cognitive și cele substanțiale nu sunt echivalente, deoarece primele pot conține elemente pe care cercetătorul nu este în stare sau nu dorește să le articuleze. În același timp, dacă un model substanțial a fost formulat de o altă persoană sau este rezultatul unui efort colectiv, interpretarea sa, nivelul de înțelegere și gradul de încredere pot varia semnificativ de la un interpret la altul. Modelele substanțiale sunt denumite frecvent enunțuri tehnice ale problemei.</p>
+<p><strong>După destinația funcțională și obiective, modelele substanțiale se împart în descriptive, explicative și predictive:</strong></p>
+<ul>
+  <li>Un <em>model descriptiv</em> este orice descriere a unui obiect.</li>
+  <li>Un <em>model explicativ</em> răspunde la întrebarea de ce se produce un fenomen.</li>
+  <li>Un <em>model predictiv</em> descrie comportamentul viitor al unui obiect. Este de remarcat faptul că un model predictiv nu include neapărat o componentă explicativă.</li>
+</ul>
+<p>Un <em>model conceptual</em> este un model substanțial în formularea căruia se utilizează conceptele și reprezentările domeniilor de studiu care se ocupă de cercetarea obiectului de modelare.</p>
+<p>În sens larg, prin model conceptual se înțelege un model substanțial bazat pe un concept sau un punct de vedere specific. Se disting trei tipuri de modele conceptuale: logico-semantice, structural-funcționale și cauzale.</p>
+<ul>
+  <li>Un <em>model logico-semantic</em> descrie un obiect utilizând termenii și definițiile domeniilor de studiu relevante, incluzând toate enunțurile și faptele logic coerente cunoscute. Analiza acestor modele se bazează pe raționamentul logic și pe cunoștințele acumulate în domeniile respective.</li>
+  <li>Un <em>model structural-funcțional</em> tratează obiectul ca un sistem integrat, descompus în elemente sau subsisteme individuale. Componentele sunt legate prin relații structurale care definesc subordonarea, succesiunea logică și ordinea temporală de îndeplinire a sarcinilor. Pentru reprezentarea acestor modele se folosesc frecvent diagrame, scheme și hărți.</li>
+  <li>Un <em>model cauzal</em> este utilizat frecvent pentru a explica și a prezice comportamentul unui obiect. Aceste modele sunt orientate în principal spre: (1) identificarea legăturilor esențiale dintre elementele constitutive ale obiectului studiat; (2) determinarea modului în care modificarea anumitor factori influențează starea componentelor modelului; (3) înțelegerea modului în care modelul, ca întreg, va funcționa și dacă acesta va descrie adecvat dinamica parametrilor de interes pentru cercetător.</li>
+</ul>
+<p>Un <em>model formal</em> reprezintă un model conceptual cu ajutorul unuia sau mai multor limbaje formale, cum ar fi teoriile matematice, limbajele specializate de modelare sau limbajele de programare. În științele umaniste, modelarea se încheie frecvent cu elaborarea unui model conceptual, în timp ce în științele naturii construirea unui model formal este, în general, posibilă.</p>
+<p>Cu toate că importanța modelelor substanțiale și formale în cercetare este larg recunoscută, rolul modelelor cognitive este frecvent subestimat, din cauza caracterului subiectiv al acestora și a naturii implicite a proceselor de gândire. Cu toate acestea, modelele cognitive sunt deosebit de importante în contextele în care operatorii sau factorii de decizie se bazează pe propriile reprezentări mentale pentru a controla obiecte sau procese. Acest tip de model joacă, de asemenea, un rol substanțial în științele sociale.</p>
+<p>Modelarea matematică este o formă de modelare științifică, simbolică și formală, în care obiectele sunt descrise cu ajutorul limbajului matematic și sunt cercetate prin metode matematice.</p>
+<p>Un model matematic conceput pentru cercetarea științifică permite determinarea valorilor parametrilor obiectului sau fenomenului modelat pe baza unor date de intrare specificate. Astfel, esența unui astfel de model este corespondența dintre valorile parametrilor de intrare și valorile parametrilor de ieșire. Această perspectivă permite ca un model matematic să fie privit ca un operator matematic, care poate fi definit în sens larg ca o funcție, o corespondență reprezentată prin ecuații algebrice, diferențiale, integro-diferențiale sau integrale, un algoritm, un set de reguli sau tabele care permit determinarea parametrilor de ieșire pe baza valorilor de intrare.</p>
+<p>Definirea unui model matematic prin conceptul de operator este mai constructivă din punctul de vedere al construirii unei clasificări a acestor modele, întrucât ea cuprinde întreaga diversitate a modelelor matematice existente astăzi.</p>
+<p><strong>Avantajele modelării matematice în comparație cu experimentul fizic:</strong></p>
+<ul>
+  <li>economicitatea (în particular, conservarea resurselor sistemului real);</li>
+  <li>posibilitatea de a modela obiecte hipotetice — adică obiecte nerealizate în natură;</li>
+  <li>posibilitatea de a simula condiții de funcționare periculoase sau dificil de reprodus în realitate;</li>
+  <li>posibilitatea de a modifica scara timpului;</li>
+  <li>facilitatea unei analize multilaterale;</li>
+  <li>o capacitate predictivă mai mare, datorită posibilității de a identifica tipare generale;</li>
+  <li>universalitatea mijloacelor hardware și software utilizate (sisteme de programare și pachete de aplicații software de uz general).</li>
+</ul>
+<p>Un <em>model informațional</em> este un model al unui obiect prezentat sub forma unor informații care descriu parametrii și variabilele esențiale pentru analiza dată, relațiile dintre ele, precum și intrările și ieșirile obiectului, ceea ce permite simularea posibilelor stări ale obiectului prin introducerea în model a informațiilor privind modificarea valorilor de intrare.</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Articole conexe</h2>
+    <ul>
+      <li><a href="/ro/model.html">Model</a></li>
+      <li><a href="/ro/modelling.html">Modelare</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Cale de navigare">
+    <a href="/ro/">Pagina principală</a> <span aria-hidden="true">/</span>
+    <a href="/ro/modelling.html">Modelare</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Procesul de modelare</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Schimbă tema"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/modeling_process.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/ro/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Schimbă tema"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710d7c1bfb1e13',t:'MTc4ODczNTIzNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

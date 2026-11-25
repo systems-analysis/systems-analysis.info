@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Optimisation</title>
+<meta name="description" content="L’optimal signifie le meilleur dans des conditions données. La qualité est évaluée à l’aide d’un critère d’optimalité, et les conditions sont spécifiées sous forme de contraintes sur des critères supplémentaires.">
+<meta name="keywords" content="optimisation">
+<link rel="canonical" href="https://systems-analysis.info/fr/optimization.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/optimization.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/optimization.html">
+<link rel="alternate" hreflang="fr" href="https://systems-analysis.info/fr/optimization.html">
+<meta property="og:title" content="Optimisation">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/fr/optimization.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="L’optimal signifie le meilleur dans des conditions données. La qualité est évaluée à l’aide d’un critère d’optimalité, et les conditions sont spécifiées sous forme de contraintes sur des critères supplémentaires.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="fr_FR">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/fr/optimization.html#article",
+    "headline": "Optimisation",
+    "description": "L’optimal signifie le meilleur dans des conditions données. La qualité est évaluée à l’aide d’un critère d’optimalité, et les conditions sont spécifiées sous forme de contraintes sur des critères supplémentaires.",
+    "url": "https://systems-analysis.info/fr/optimization.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "fr",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/fr/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/fr/optimization.html"
+    },
+    "keywords": [
+        "optimisation"
+    ],
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "about": {
+        "@type": "DefinedTerm",
+        "name": "Optimisation",
+        "description": "Finding the best solution under given conditions, where quality is assessed using an optimality criterion and conditions are specified as constraints.",
+        "sameAs": [
+            "https://www.wikidata.org/entity/Q141495",
+            "https://en.wikipedia.org/wiki/Mathematical_optimization",
+            "https://ru.wikipedia.org/wiki/Оптимизация_(математика)",
+            "https://systems-analysis.info/wiki/Оптимизация",
+            "https://systems-analysis.info/eng/Optimization"
+        ]
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://systems-analysis.info/fr/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Théorie de la décision",
+            "item": "https://systems-analysis.info/fr/decision_theory.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Optimisation"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Navigation principale">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/fr/">Accueil</a>
+        <span aria-hidden="true">·</span>
+        <a href="/fr/sections.html">Sections</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/fr/books.html">Livres</a>
+        <span aria-hidden="true">·</span>
+        <a href="/fr/catalog.html">Catalogue</a>
+        <span aria-hidden="true">·</span>
+        <a href="/optimization.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Changer de thème"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Changer de police"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">Optimisation</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>L’optimal</strong> signifie le meilleur dans des conditions données. La qualité est évaluée à l’aide d’un critère d’optimalité, et les conditions sont spécifiées sous forme de contraintes sur des critères supplémentaires.</p>
+<p>La volonté d’améliorer l’efficacité dans le travail, la création et toute activité orientée vers un but s’exprime fondamentalement à travers la notion d’optimalité. La différence entre la compréhension scientifique et la compréhension courante de l’optimalité est minime. Bien que des expressions telles que « le plus optimal » ou « effet maximal au coût minimal » soient mathématiquement imprécises, elles rendent tout de même, de façon approximative, l’idée voulue. Lorsqu’une optimisation précise est requise, on reformule généralement ses propos avec exactitude.</p>
+<p>L’optimisation — en mathématiques, en informatique et en recherche opérationnelle — est le problème consistant à trouver un extremum (minimum ou maximum) d’une fonction objectif dans une certaine région d’un espace vectoriel de dimension finie, délimitée par un ensemble d’égalités et/ou d’inégalités linéaires et/ou non linéaires.</p>
+<p>Les <a href="/fr/model.html" class="text-link">modèles</a> d’optimisation sont conçus pour déterminer les paramètres optimaux (les meilleurs) d’un objet modélisé selon un certain critère, ou pour trouver le mode optimal (le meilleur) de pilotage d’un processus. Certains paramètres du modèle sont classés comme paramètres de commande ; en les faisant varier, on peut obtenir différents ensembles de valeurs des paramètres de sortie. En règle générale, de tels modèles sont construits à partir d’un ou plusieurs modèles descriptifs et comprennent un critère permettant de comparer différents ensembles de valeurs des paramètres de sortie afin de choisir le meilleur. Des contraintes sous forme d’égalités et d’inégalités, liées aux caractéristiques de l’objet ou du processus considéré, peuvent être imposées au domaine des valeurs des paramètres d’entrée. Le but des modèles d’optimisation est de trouver de tels paramètres de commande admissibles pour lesquels le critère de sélection atteint sa « meilleure valeur ».</p>
+<p>Le problème est formulé sous forme de modèle mathématique. Le modèle mathématique standard de la recherche opérationnelle se présente sous la formulation suivante :</p>
+<p>Maximisation ou minimisation de la fonction objectif, sous réserve du respect des contraintes.</p>
+<p>Les solutions sont dites optimales si, selon un attribut ou un autre, elles sont préférables aux autres. Tout choix de la meilleure alternative est spécifique, car il repose sur la conformité à des critères établis. Lorsqu’on parle d’une alternative optimale, on précise ces critères (« optimal par rapport à… »). Ce qui est optimal selon un critère ne l’est pas nécessairement selon un autre.</p>
+<p>Une solution réalisable est une solution qui satisfait toutes les contraintes du modèle. Dans certains cas, le nombre de solutions réalisables peut être infini.</p>
+<p>Une solution optimale est une solution qui, en plus d’être réalisable, maximise ou minimise la fonction objectif.</p>
+<p>L’optimisation est la maximisation ou la minimisation de la fonction objectif.</p>
+<p>Un modèle d’optimisation est un modèle de prise de décision qui contient une mesure d’efficacité (une fonction objectif) à optimiser, sous réserve de contraintes données.</p>
+<p>Une solution optimale est un ensemble admissible de valeurs des variables de décision qui optimise la fonction objectif du modèle d’optimisation.</p>
+<p>Un grand nombre de problèmes de choix pratiques se ramènent à la recherche des alternatives les meilleures ou les plus préférées, et souvent à la recherche de l’unique meilleure alternative. Dans ce processus, chaque décideur possède ses propres notions subjectives de ce qui est préférable pour lui dans une situation de choix donnée.</p>
+<p>De nombreux problèmes admettent un modèle mathématique de choix, où la meilleure alternative est définie par un ou plusieurs critères numériques d’efficacité (ou de qualité). Ces critères, déterminés par le problème, sont des fonctions objectif de variables représentant les propriétés des alternatives. L’alternative la plus préférée par le décideur est alors le choix optimal, procurant des valeurs extrémales des mesures d’efficacité dans les conditions données.</p>
+<p>Un aspect fondamental de la formulation du problème du choix optimal réside dans la capacité à décrire la situation problématique et les préférences du décideur sous forme quantitative. Cela signifie que, premièrement, les alternatives de solution possibles (alternatives, objets, lignes de conduite) sont déterminées par des attributs quantitatifs (variables, paramètres, caractéristiques) mesurés à l’aide d’échelles numériques. Deuxièmement, il faut spécifier des mesures quantitatives (critères d’optimalité, mesures d’efficacité, fonctions objectif, fonctions de valeur), par la grandeur desquelles est évaluée la qualité de l’alternative choisie. De telles situations sont caractéristiques des problèmes bien structurés et des situations de choix récurrentes propres à la recherche opérationnelle et au contrôle optimal.</p>
+<p>Pour analyser les alternatives possibles de résolution d’un problème (les moyens d’atteindre un objectif) et sélectionner parmi elles la ou les meilleures alternatives, on construit des modèles formels de choix optimal. Un modèle fournit une représentation simplifiée du problème réel et doit refléter les dépendances et relations les plus importantes, existant objectivement, entre les alternatives, leurs attributs descriptifs et les contraintes imposées par des facteurs contrôlables et incontrôlables. La construction d’un tel modèle est la tâche des consultants-analystes et des experts, avec la participation du décideur. Lors de la construction d’un modèle de choix, il faut trouver un équilibre entre l’adéquation et le degré de détail du modèle, d’une part, et la précision requise pour le problème de choix réel, d’autre part, ainsi qu’avec le volume d’information nécessaire pour trouver la solution — tant l’information déjà disponible que celle qui peut être obtenue en complément.</p>
+<p>Les problèmes d’optimisation sont des problèmes mathématiques strictement formels. La portée pratique des solutions de tels problèmes dépend directement de la qualité du modèle mathématique initial. Dans les systèmes complexes, la modélisation mathématique est difficile, approximative et imprécise. Plus le <a href="/fr/system.html" class="text-link">système</a> est complexe, plus il convient d’aborder son optimisation avec prudence.</p>
+<p>Du point de vue de l’analyse des systèmes, l’attitude à l’égard de l’optimisation peut être formulée ainsi : c’est un moyen puissant d’amélioration de l’efficacité, mais il convient de l’utiliser avec une prudence croissante à mesure que la complexité du problème augmente.</p>
+<p>Malgré toute l’utilité évidente de l’idée d’optimisation, la pratique exige qu’on la manie avec précaution. Il existe des raisons suffisamment convaincantes pour une telle conclusion.</p>
+<ol>
+  <li>Une solution optimale s’avère souvent instable : des changements apparemment insignifiants dans les conditions du problème peuvent conduire au choix d’alternatives sensiblement différentes.</li>
+  <li>Le système considéré fait partie d’un système plus vaste, et l’optimisation locale ne donne pas nécessairement le même résultat que celui qui serait requis pour le sous-système lors de l’optimisation du système dans son ensemble. Cela nécessite d’aligner les critères des sous-systèmes sur les critères du système, rendant souvent l’optimisation locale superflue.</li>
+  <li>Les critères ne caractérisent l’objectif que de manière indirecte — tantôt mieux, tantôt moins bien, mais toujours de façon approximative. La maximisation du critère d’optimalité est souvent assimilée à l’objectif, mais en réalité, ce sont des choses différentes. En effet, le critère et l’objectif se rapportent l’un à l’autre comme un modèle et l’original, avec toutes les implications que cela comporte. De nombreux objectifs sont difficiles, voire impossibles, à décrire quantitativement.</li>
+  <li>Sans spécifier toutes les contraintes nécessaires, nous risquons, en même temps que nous maximisons le critère principal, d’obtenir des effets secondaires imprévus et indésirables.</li>
+</ol>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>Méthodologies</h2>
+    <ul>
+      <li><a href="/fr/methodology_or.html">Méthodologie de la recherche opérationnelle</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>Articles connexes</h2>
+    <ul>
+      <li><a href="/fr/modelling.html">Modélisation</a></li>
+      <li><a href="/fr/systems_analysis.html">Analyse des systèmes</a></li>
+      <li><a href="/fr/operation_research.html">Recherche opérationnelle</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Fil d’Ariane">
+    <a href="/fr/">Accueil</a> <span aria-hidden="true">/</span>
+    <a href="/fr/decision_theory.html">Théorie de la décision</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">Optimisation</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Changer de thème"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/optimization.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/fr/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Changer de thème"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a37108cd39cea5ce',t:'MTc4ODczNTA0NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

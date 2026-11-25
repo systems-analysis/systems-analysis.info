@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>オペレーションズ・リサーチの基礎：アコフ、サシエニ</title>
+<meta name="description" content="オペレーションズ・リサーチとは、科学的方法を、学際的な研究チームによって、組織された（人間・機械）システムの制御にかかわる問題に適用し、組織全体の目的に最もよく資する解を与えることである。">
+<meta name="keywords" content="オペレーションズ・リサーチ,アコフ,サシエニ,モデル,問題,解,科学的,方法,システム分析">
+<link rel="canonical" href="https://systems-analysis.info/ja/operation_research_as.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_as.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_as.html">
+<link rel="alternate" hreflang="ja" href="https://systems-analysis.info/ja/operation_research_as.html">
+<meta property="og:title" content="オペレーションズ・リサーチの基礎：アコフ、サシエニ">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/ja/operation_research_as.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="オペレーションズ・リサーチとは、科学的方法を、学際的な研究チームによって、組織された（人間・機械）システムの制御にかかわる問題に適用し、組織全体の目的に最もよく資する解を与えることである。">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="ja_JP">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/ja/operation_research_as.html#article",
+    "headline": "オペレーションズ・リサーチの基礎：アコフ、サシエニ",
+    "description": "オペレーションズ・リサーチとは、科学的方法を、学際的な研究チームによって、組織された（人間・機械）システムの制御にかかわる問題に適用し、組織全体の目的に最もよく資する解を与えることである。",
+    "url": "https://systems-analysis.info/ja/operation_research_as.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "ja",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/ja/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/ja/operation_research_as.html"
+    },
+    "keywords": [
+        "オペレーションズ・リサーチ",
+        "アコフ",
+        "サシエニ",
+        "モデル",
+        "問題",
+        "解",
+        "科学的方法",
+        "システム分析"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Fundamentals of Operations Research",
+        "author": [
+            {
+                "@type": "Person",
+                "name": "Ackoff R. L."
+            },
+            {
+                "@type": "Person",
+                "name": "Sasieni M. W."
+            }
+        ],
+        "datePublished": "1968",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Wiley"
+        },
+        "inLanguage": "en"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-08-22",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Fundamentals of Operations Research",
+        "author": [
+            {
+                "@type": "Person",
+                "name": "Ackoff R. L."
+            },
+            {
+                "@type": "Person",
+                "name": "Sasieni M. W."
+            }
+        ],
+        "datePublished": "1968",
+        "inLanguage": "en"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ホーム",
+            "item": "https://systems-analysis.info/ja/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "オペレーションズ・リサーチ",
+            "item": "https://systems-analysis.info/ja/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "オペレーションズ・リサーチの基礎：アコフ、サシエニ"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">Menu</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/ja/">ホーム</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/sections.html">セクション</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/Systems_Analysis_Wiki_Catalog_%28%E6%97%A5%E6%9C%AC%E8%AA%9E%29">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/books.html">書籍</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ja/catalog.html">カタログ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_as.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="Toggle theme"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="Toggle font"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">オペレーションズ・リサーチの基礎：アコフ、サシエニ</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>『オペレーションズ・リサーチの基礎』アコフ R・L、サシエニ M・W、1968年。</p>
+<p>オペレーションズ・リサーチには多くの定義が提案されてきたし、そもそもこの主題は定義しえないという議論も数多く唱えられてきた。示されてきたさまざまな定義を検討するにあたっては、古くから確立されたどの科学も——そして科学全体も——その担い手すべてが満足するように定義されたことは一度もない、ということを思い起こすべきである。それでも以下の定義は、とりわけ先に振り返ったこの分野の歴史に照らせば、オペレーションズ・リサーチの本性を大まかに理解するための有用な足がかりとなりうる。</p>
+<p>オペレーションズ・リサーチとは、（1）科学的方法を、（2）学際的な研究チームによって、（3）組織された（人間・機械）システムの制御にかかわる問題に適用し、組織全体の<a href="/ja/goal.html" class="text-link">目的</a>に最もよく資する解を与えることである。</p>
+<p>この定義に述べられているオペレーションズ・リサーチの特徴は、（a）システムアプローチ、（b）学際的な研究チームの活用、（c）制御の問題への科学的方法の適用である。これらの特徴をそれぞれ、より詳しく見ていこう。</p>
+<p>このアプローチは、組織<a href="/ja/system.html" class="text-link">システム</a>においてはどの部分の振る舞いも、最終的にはほかのすべての部分に影響する、という前提にもとづいている。そうした影響がすべて重要なわけではなく、まったく検出できないものもある。したがってこのアプローチの本質は、組織のどの部分の成果や戦略を評価する際にも、重要な相互作用を体系的に探索することにある。</p>
+<p>組織の問題へのこうしたアプローチは、問題を扱いやすい大きさに切り縮めることとは根本的に異なる。オペレーションズ・リサーチの研究者はほぼ例外なく、示された問題の当初の定式化を広げ、経営陣の定式化に含まれていなかった相互作用を組み込む。こうしたより広い、したがってより複雑な問題に取り組むには、新しい研究方法を練り上げることが必要になる。</p>
+<p>我々は科学的知識を大学の学部構成にしたがって分類することにあまりに慣れてしまい、ときにこの区分けが自然そのものの構造を反映していると信じてしまう。これほど真実から遠いことはない。物理学的な問題、生物学的な問題、心理学的な問題、経済学的な問題といったものは、それ自体としては存在しない。あるのは問題だけである。科学の諸分野は、それらを研究するさまざまな方法を表しているにすぎない。どの問題も、どの科学分野の立場からも見ることができる——もちろん、そうすることがつねに適切だとはかぎらないが。本質的にこれは、先に別の形で述べた考えと同じである。組織には、生産の問題、マーケティングの問題、財務の問題が別々にあるのではない。そうした区分けは、同じ組織の問題を検討するさまざまなアプローチを反映しているにすぎない。</p>
+<p>専門家はそれぞれ一定の改善を達成しうるが、それらの改善のどれが——あるいはどの組み合わせが——最良なのか。複雑な問題では、それをあらかじめ知っていることはまれである。したがって、問題への可能なかぎり幅広いアプローチを検討し評価することが望ましい。これが学際的な研究チームの根拠である。</p>
+<p>現在、純粋科学と応用科学の分野は百を超えるので、そのすべての代表をあらゆる研究プロジェクトに加えることは明らかに不可能である。それでも、できるだけ多くの分野がチームに代表されていること、そしてチームの仕事を、そこに代表されていない可能なかぎり幅広い分野から批判的に検討にかけることが望ましい。</p>
+<p>科学的方法についての説明の大半は、その際立った特徴が実験にあるとする。しかし政府、軍、産業の組織を相手にする場合、狭い意味での実験——すなわち変数の値を物理的に変えること——は、しばしば不可能あるいは実行不可能である。たとえば産業企業は、実験のために自らの存立を賭けるわけにはいかない。もちろん実験が可能な場合もあり、とりわけサブシステムの水準ではそうであって、実験はオペレーションズ・リサーチにおいて重要な役割を果たす。それでも通常、研究対象のシステムを全体として実験にかけることはできない。したがってたいていの場合、システムを全体として研究するには、（研究対象を物理的に変えるという狭い意味での）実験によらないアプローチが必要になる。</p>
+<p>オペレーションのモデルは方程式の形をとる。それは数学的には複雑でも、構造はきわめて単純である。すなわち、システムの機能を特徴づける成果基準の効用あるいは価値が、制御しうる変数と、制御しえないがそれでも関数に影響する変数（および定数）との関数として表される。</p>
+<p>さらに、一定の制御しうる変数が定められた範囲内でしか変わりえないことを表すために、一つあるいは複数の方程式や不等式がしばしば必要になる。</p>
+<p><a href="/ja/model.html" class="text-link">モデル</a>がいったん構築されれば、それを用いて制御しうる変数の正確なあるいは近似的な最適値——すなわち、制御しえない変数の値が与えられたもとで、システムの成果基準を最良にする値——を見いだすことができる。言い換えれば、モデルにおける問題の解を得ることができる。この解を具体的にどう得るかは、用いられるモデルによる。</p>
+<p>解は、モデルのうえで実験することによって（そのパラメータを変えることによって）、あるいは数学的な分析によって得られる。場合によっては、変数の具体的な値を知らずに数学的な分析を行えることもあれば、値を数値で指定しなければならないこともある。</p>
+<p>用いられる方法のいかんを問わず、狙いはつねに最適な、あるいは最適に近い解を見いだすことにある。最適解とは、モデルに表された条件と制約のもとで、モデル上の成果基準を（問題の性質に応じて）最小化あるいは最大化する解である。したがって<a href="/ja/optimization.html" class="text-link">最適化</a>は、モデルによって記述されたとおりの問題に対する最良の解を与える。しかしモデルは問題を正確に記述したものでは決してないので、このようにして得られた最適解もまた、現実の問題に対する唯一無二の最良の解では決してない。モデルが問題を「よく」表現していると仮定するならば、モデル上で得られた最適なあるいは最適に近い解は、現実の問題の最適解への「よい」近似である。いずれにせよそれは、置き換えようとしている戦略や手続きよりは、はるかに優れている。</p>
+<p>解によって得られた変数の最適値がシステムの成果を改善するのは、モデルがシステムを正確に記述しているかぎりにおいてであるから、モデルが現実に対応しているかを検証し、解を冷静に評価する必要がある。言い換えれば、解を実施した場合に予測される結果を、置き換えようとしている戦略や手続きと比べなければならない。</p>
+<p>最後に、オペレーションズ・リサーチの目的は科学的な報告書を作ることではなく、システムの成果を改善することにあるのだから、研究の結果は（意思決定者に受け入れられるかぎり）実施されなければならない。研究結果の最終的な検証と評価が行われるのは、この段階である。したがってオペレーションズ・リサーチの研究者にとって、経験を積む最大の機会が開かれるのもこの段階である。</p>
+<p>研究が行われる対象の決定が繰り返し下される種類のものであるなら、オペレーションズ・リサーチで研究されるシステムの性質からして、決定と決定のあいだに、制御しえない変数のいくつかの値が、さらにはシステムそのものの構造が変わる可能性が高い。したがってシステムとその外部環境における重要な変化を検出し、それに応じて決定を調整する必要がある。言い換えれば、繰り返し下される決定の規則という形をとる結果、あるいは長期にわたって適用される決定は、更新され、その正しい適用が監視されなければならない。</p>
+</div>
+      </article>
+    </div>
+
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>著者による解説</h2>
+    <ul>
+      <li><a href="/ja/operation_research_caa.html">オペレーションズ・リサーチ入門：チャーチマン、アコフ、アーノフ</a></li>
+      <li><a href="/ja/operation_research_me.html">オペレーションズ・リサーチ：モーダー、エルマグラビー</a></li>
+      <li><a href="/ja/operation_research_gv.html">組織とマネジメント：グヴィシアーニ</a></li>
+      <li><a href="/ja/operation_research_ve.html">オペレーションズ・リサーチ：ヴェンツェリ</a></li>
+      <li><a href="/ja/operation_research_vg.html">オペレーションズ・リサーチの原理：ワグナー</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>関連記事</h2>
+    <ul>
+      <li><a href="/ja/operation_research.html">オペレーションズ・リサーチ</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/ja/">ホーム</a> <span aria-hidden="true">/</span>
+    <a href="/ja/operation_research.html">オペレーションズ・リサーチ</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">オペレーションズ・リサーチの基礎：アコフ、サシエニ</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="Toggle theme"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_as.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">言語</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/ja/map.html">サイトマップ</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710aa0de81a5ce',t:'MTc4ODczNTExOQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>경영과학: 벤첼</title>
+<meta name="description" content="운용이란 하나의 계획으로 통일되어 목표 달성을 지향하는 활동이다. E.S. 벤첼에 따른 경영과학의 기본 개념인 결정, 효과성, 최적성 기준을 설명한다.">
+<meta name="keywords" content="경영과학,벤첼,모델 해,최적화,통계,수학,문제,선택,시스템 분석">
+<link rel="canonical" href="https://systems-analysis.info/ko/operation_research_ve.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/operation_research_ve.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/operation_research_ve.html">
+<link rel="alternate" hreflang="ko" href="https://systems-analysis.info/ko/operation_research_ve.html">
+<meta property="og:title" content="경영과학: 벤첼">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/ko/operation_research_ve.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="운용이란 하나의 계획으로 통일되어 목표 달성을 지향하는 활동이다. E.S. 벤첼에 따른 경영과학의 기본 개념인 결정, 효과성, 최적성 기준을 설명한다.">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="ko_KR">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/ko/operation_research_ve.html#article",
+    "headline": "경영과학: 벤첼",
+    "description": "운용이란 하나의 계획으로 통일되어 목표 달성을 지향하는 활동이다. E.S. 벤첼에 따른 경영과학의 기본 개념인 결정, 효과성, 최적성 기준을 설명한다.",
+    "url": "https://systems-analysis.info/ko/operation_research_ve.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "ko",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/ko/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/ko/operation_research_ve.html"
+    },
+    "keywords": [
+        "경영과학",
+        "벤첼",
+        "모델 해",
+        "최적화",
+        "통계",
+        "수학",
+        "문제",
+        "선택",
+        "시스템 분석"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Operations Research",
+        "author": {
+            "@type": "Person",
+            "name": "Wentzel E.S."
+        },
+        "datePublished": "1972",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Sovetskoye Radio"
+        },
+        "inLanguage": "ko"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Operations Research",
+        "author": {
+            "@type": "Person",
+            "name": "Wentzel E.S."
+        },
+        "datePublished": "1972",
+        "inLanguage": "ko"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "홈",
+            "item": "https://systems-analysis.info/ko/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "경영과학",
+            "item": "https://systems-analysis.info/ko/operation_research.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "경영과학: 벤첼"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="주 메뉴">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">메뉴</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/ko/">홈</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ko/sections.html">섹션</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ko/books.html">도서</a>
+        <span aria-hidden="true">·</span>
+        <a href="/ko/catalog.html">카탈로그</a>
+        <span aria-hidden="true">·</span>
+        <a href="/operation_research_ve.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="테마 전환"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="글꼴 전환"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">경영과학: 벤첼</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p>경영과학은 최근 몇 년간 점점 더 넓은 응용 분야를 확보해 나가고 있다. 이 학문은 비교적 젊고 최근에 형성된 분야에 속하며, 그 경계와 내용은 아직 명확히 정의되지 않았다.</p>
+<p>경영과학은 많은 대학에서 가르쳐지고 있지만, 이 용어에 부여되는 내용은 결코 통일되어 있지 않다. 일부 저자들은 《경영과학》을 주로 선형계획법, 비선형계획법, 동적계획법과 같은 수학적 최적화 방법으로 이해한다. 반대로 다른 이들은 이러한 수학 분야를 경영과학에 포함시키지 않고, 주로 게임이론과 통계적 의사결정이론의 관점에서 이 학문에 접근한다. 또 일부는 《경영과학》을 독립된 학문 분야로 인정하는 것 자체를 부정하며, 이를 사이버네틱스(이 용어 역시 충분히 정의되지 않았고 사람마다 다르게 이해한다)에 포함시키려 한다. 반대로 다른 이들은 《경영과학》이라는 개념에 지나치게 넓은 의미를 부여하여, 이 학문을 만물을 포괄하는 《학문의 학문》으로 선포하기도 한다.</p>
+<p>이 비교적 젊은 학문이 앞으로 어떤 형태로 발전할 것인지, 어떤 부문을 그대로 유지할 것인지, 어떤 부문이 독립된 학문 분야로 《분화》될 것인지는 시간이 지나야 밝혀질 것이다. 특히 《경영과학》과 《시스템 이론》(또는 《복잡계 이론》) — 최근 많은 논의와 저술이 이루어진 주제 — 사이의 미래 관계는 아직 불분명하다. 어쨌든 확실한 것은, 생산 및 공급 조직, 운송 운용, 군사 작전과 무기 체계, 인력 배치, 소비자 서비스, 의료, 통신, 컴퓨팅 등 실로 다양한 실무 영역에서, 그 형식이 서로 유사하고 여러 공통된 특징을 지니며 유사한 방법으로 해결되는 문제들이 점점 더 많이 발생하고 있으며, 이러한 문제들은 《경영과학 문제》라는 일반적 명칭 아래 편리하게 묶을 수 있다는 점이다.</p>
+<p>전형적인 상황은 다음과 같다: 어떤 목적 지향적 행동 과정이 이런저런 방식으로 조직되는데 — 즉 가능한 여러 대안 중에서 어떤 《결정》을 내릴 수 있다. 각 대안은 장점과 단점을 지니며, 상황의 복잡성 때문에 어느 것이 더 좋은지(더 바람직한지), 그리고 그 이유는 무엇인지 즉시 명확하지 않다. 상황을 명확히 하고 결정 대안들을 일련의 기준에 따라 비교하기 위해 일련의 수학적 계산이 수행된다. 이 계산의 임무는 결정을 선택할 책임이 있는 사람들이 상황에 대한 비판적 분석을 수행하고, 최종적으로 어느 한 대안으로 결정을 내릴 수 있도록 돕는 것이다.</p>
+<p>과학기술혁명의 시대라고 정당하게 불리는 우리 시대에, 과학은 조직과 관리 문제에 점점 더 큰 관심을 기울이고 있다. 그 이유는 여러 가지이다. 기술의 급속한 발전과 복잡성의 증가, 사업의 규모와 그 결과가 미칠 수 있는 범위의 전례 없는 확대, 모든 실무 영역에 자동화 제어 시스템이 도입되는 것 — 이 모든 것이 목적 지향적 복잡한 과정을 그 구조와 조직의 관점에서 분석할 필요성을 낳고 있다. 과학은 그러한 과정의 최적(합리적) 관리를 위한 권고안을 제시해야 하는 임무를 지닌다. 조직자가 《감각적으로》, 즉 《시행착오》의 방법을 통해 올바르고 효과적인 관리를 찾아내던 시절은 이제 지나갔다. 오늘날 그러한 관리를 개발하려면 과학적 접근이 필요하다 — 오류에 따른 손실이 너무 크기 때문이다.</p>
+<p>실무의 필요성은 《경영과학》이라는 명칭 아래 편리하게 묶을 수 있는 특수한 과학적 방법들을 낳았다. 이 용어를 우리는 인간의 모든 목적 지향적 활동 영역에서 결정을 정당화하기 위한 수학적, 정량적 방법의 응용으로 이해할 것이다.</p>
+<p>《결정》이 무엇을 의미하는지 설명해 보자. 어떤 사업이 특정 목표 달성을 지향하며 수행되고 있다고 가정하자. 이 사업을 조직하는 사람(또는 사람들의 집단)은 항상 어느 정도의 선택의 자유를 가진다. 즉 이런저런 방식으로 사업을 조직할 수 있다 — 예를 들어 사용할 장비의 종류를 선택하거나, 가용 자원을 이런저런 방식으로 분배할 수 있다. 《결정》이란 바로 조직자에게 열려 있는 가능성의 범위 안에서 이루어지는 어떤 선택이다. 결정은 나쁠 수도 좋을 수도 있고, 신중히 고려된 것일 수도 성급한 것일 수도 있으며, 충분히 근거를 갖춘 것일 수도 임의적인 것일 수도 있다.</p>
+<p>경영과학은 결정을 정당화하기 위해 수학적 방법이 적용될 때 비로소 시작된다. 어느 정도까지는, 어떤 실무 영역에서든 특별한 수학적 계산 없이 단순히 경험과 상식에 근거해서 결정이 내려진다. 그러나 훨씬 더 중대한 결과를 낳는 결정들도 있다. 예를 들어, 새로운 도시에서 기업, 주거 지역 등의 네트워크와 함께 대중교통을 조직한다고 가정해 보자. 여러 결정이 내려져야 한다: 어떤 노선으로, 어떤 교통수단을 운행해야 하는가? 정류장은 어디에 배치해야 하는가? 시간대에 따라 운행 빈도를 어떻게 조정해야 하는가? 등.</p>
+<p>이러한 결정들은 훨씬 더 복잡하며, 무엇보다 그것에 좌우되는 것이 매우 크다. 잘못된 선택은 도시 전체의 생활에 영향을 미칠 수 있다. 물론 이 경우에도 경험과 상식에 의존하여 직관적으로 결정을 선택할 수 있으며(실제로 흔히 그렇게 한다). 그러나 수학적 계산으로 뒷받침된다면 결정은 훨씬 더 합리적일 것이다. 이러한 사전 계산은 올바른 결정을 《감각적으로》 찾아내기 위한 길고 값비싼 탐색을 피하는 데 도움이 될 것이다.</p>
+<p>계획된 사업이 더 복잡하고, 더 비용이 많이 들고, 더 대규모일수록 임의적인 결정은 더 용납되기 어려워지며, 각 결정의 결과를 사전에 평가하고, 허용되지 않는 대안을 사전에 배제하며 가장 성공적인 대안을 권고할 수 있게 해 주는 과학적 방법들이 더욱 중요해진다. 또한 올바른 결정을 선택하기 위해 우리가 가진 정보가 충분한지, 그렇지 않다면 어떤 추가 정보를 얻어야 하는지를 판단하는 것도 중요해진다. 이러한 경우에는 자신의 직관, 《경험과 상식》에 의존하는 것이 너무 위험하다. 과학기술혁명의 이 시대에는 기술과 방법이 너무 빠르게 변화하기 때문에 《경험》이 축적될 시간조차 없다. 게다가 우리는 흔히 처음으로 수행되는 독특한 사업을 다루고 있다. 이러한 경우 《경험》은 침묵하며, 《상식》도 계산에 근거하지 않는다면 쉽게 오도될 수 있다. 바로 이러한 계산, 즉 사람들이 결정을 내리는 데 도움을 주는 계산이야말로 경영과학이 다루는 것이다.</p>
+<p>운용이란 하나의 계획으로 통일되어 어떤 목표 달성을 지향하는 모든 사업(행동 체계)이다. 운용은 항상 관리 가능한 사업이다 — 즉 그 조직을 특징짓는 특정 매개변수를 어떻게 선택할지는 우리에게 달려 있다. 여기서 《조직》은 운용에 사용되는 기술적 수단의 집합을 포함하는 넓은 의미로 이해된다.</p>
+<p>우리에게 달려 있는 매개변수들의 구체적인 선택을 결정이라 부른다. 결정은 성공적일 수도 실패할 수도 있고, 합리적일 수도 비합리적일 수도 있다. 결정이 어떤 속성에서든 다른 것들보다 더 바람직하다면 그것을 최적 결정이라 부른다. 경영과학의 목표는 최적 결정을 선택하는 데 정량적 근거를 제공하는 것이다.</p>
+<p>연구를 통해 (비교적 드물게) 엄격히 최적인 단 하나의 결정이 도출되는 경우도 있지만, 훨씬 더 흔하게는 실질적으로 동등한 최적(합리적) 결정들의 범위가 확인되며, 그 안에서 최종 선택이 이루어질 수 있다.</p>
+<p>실제 결정을 내리는 것은 경영과학의 범위를 벗어나며, 최종 선택의 권한을 부여받고 그 선택에 대한 책임을 지는 책임자, 혹은 더 흔하게는 책임자 집단의 소관에 속한다는 점을 유의해야 한다. 그들은 선택을 할 때 수학적 계산에서 나온 권고안과 함께, 계산에 반영되지 않은 여러 추가적 고려사항(정량적 성격과 질적 성격 모두를 포함하여)을 고려할 수 있다.</p>
+<p>최종 결정 권한을 지닌 인간의 필수적인 존재는, 인간의 개입 없이 결정을 내리는 것처럼 보이는 완전 자동화된 제어 시스템이 있다 하더라도 사라지지 않는다. 제어 알고리즘 자체를 만들어내는 것, 그 가능한 변형들 중 하나를 선택하는 것 자체가 이미 하나의 결정이며 — 매우 중대한 결정이라는 점을 잊어서는 안 된다.</p>
+<p>그 전체가 하나의 결정을 이루는 매개변수들을 결정변수라 부른다. 다양한 수치, 벡터, 함수, 물리적 속성 등이 결정변수로 사용될 수 있다. 가장 단순한 경영과학 문제에서는 결정변수의 수가 비교적 적을 수 있다. 그러나 실무적으로 중요한 대다수 문제에서는 결정변수의 수가 매우 많다.</p>
+<p>우리가 어느 정도까지 처분할 수 있는 결정변수 외에도, 모든 경영과학 문제에는 처음부터 고정되어 있어 위반할 수 없는 주어진 《규율 조건》이 포함된다(예를 들어 차량의 적재 용량, 계획된 임무의 규모, 장비의 무게 특성 등). 특히 이러한 조건에는 우리가 처분할 권한을 가진 자원(물자, 기술, 인력)과 결정에 부과되는 기타 제약조건이 포함된다. 이들을 모두 합하면 이른바 《가능영역》을 이룬다.</p>
+<p>여러 결정을 효과성 측면에서 서로 비교하려면 어떤 정량적 기준, 이른바 효과성 척도(흔히 《목적함수》라 불림)가 필요하다. 이 척도는 운용의 목적 지향성을 반영하도록 선택된다. 《가장 좋은》 결정이란 명시된 목표 달성에 가장 크게 기여하는 결정으로 간주될 것이다. 효과성 척도 W를 선택하고 《명명》하려면, 먼저 다음과 같이 자문해야 한다: 우리는 무엇을 원하는가, 운용을 수행하면서 무엇을 추구하는가? 결정을 선택할 때 우리는 자연스럽게 효과성 척도 W를 최대(또는 최소)로 만드는 결정을 선호한다. 예를 들어 운용에서 얻는 수익은 최대화하고 싶어 하며, 효과성 척도가 비용이라면 그것을 최소화하고 싶어 한다.</p>
+<p>운용의 수행은 매우 흔히 확률적 요인의 작용을 수반한다. 이러한 경우 효과성 척도로는 보통 최대화(최소화)하려는 양 자체가 아니라 그 평균값(기대값)이 사용된다.</p>
+<p>일부 경우에는, 확률적 요인을 수반하는 운용이 완전히 달성되거나 전혀 달성되지 않을 수밖에 없는 매우 명확한 목표(《예–아니오》 방식)를 추구하며, 중간 결과에는 아무런 관심이 없다. 이러한 경우에는 이 목표를 달성할 확률이 효과성 척도로 선택된다. 예를 들어 어떤 목표물에 대해 반드시 파괴한다는 조건으로 사격이 이루어진다면, 목표물 파괴 확률이 효과성 척도가 될 것이다.</p>
+<p>효과성 척도의 잘못된 선택은 매우 위험하다. 잘못 선택된 기준의 관점에서 조직된 운용은 부당한 지출과 손실을 초래할 수 있다. 안타깝게도 실무적으로 중요한 대다수 문제에서는 효과성 척도의 선택이 단순하지 않으며 명확하게 해결되지 않는다. 어느 정도 복잡한 문제라면, 운용의 효과성을 단 하나의 수치로 완전히 특성화할 수 없다는 것이 일반적이며 — 이를 보완하기 위해 다른 척도들을 함께 도입해야 한다.</p>
+<p>어떤 분야에서든 정량적 연구 방법을 적용하려면 항상 일종의 수학적 모델이 필요하다. 모델을 구성할 때 실제 현상(우리의 경우에는 운용)은 필연적으로 단순화되고 도식화되며, 이 도식(현상의 도식적 표현)은 수학적 수단을 이용하여 기술된다. 수학적 모델이 더 성공적으로 선택되어 현상의 특징적 성질을 더 잘 반영할수록, 연구는 더 성공적일 것이며 도출된 권고안도 더 유용할 것이다.</p>
+<p>수학적 모델을 구성하는 일반적인 방법은 존재하지 않는다. 각각의 구체적인 경우에서 모델은 운용의 유형과 그 목적 지향성, 그리고 연구 과제(어떤 매개변수를 결정해야 하는지, 어떤 요인들의 영향을 반영해야 하는지)를 고려하여 선택된다. 또한 각각의 구체적인 경우에서 모델의 정밀도와 세밀함을, (a) 해를 어느 정도의 정밀도로 알아야 하는지, (b) 우리가 가지고 있거나 얻을 수 있는 정보와 균형을 맞출 필요가 있다. 계산에 필요한 초기 데이터가 부정확하게만 알려져 있다면, 세부사항에 지나치게 파고들어 매우 상세한 모델을 구축하고 해의 정밀하고 세밀한 최적화에 시간(자신의 시간과 컴퓨터 시간)을 쓰는 것은 분명 의미가 없다. 안타깝게도 이 원칙은 흔히 무시되며, 현상을 기술하기 위해 지나치게 상세한 모델이 선택되곤 한다.</p>
+<p>수학적 모델은 현상의 가장 중요한 특징, 즉 운용의 성공이 근본적으로 좌우되는 모든 본질적 요인을 반영해야 한다. 동시에 모델은 가능한 한 단순해야 하며, 다수의 부차적이고 경미한 요인들로 《어지럽혀져》서는 안 된다: 이러한 요인들을 고려하면 수학적 분석이 복잡해지고 연구 결과의 파악이 어려워진다. 모델 구축자에게는 항상 두 가지 위험이 도사리고 있다: 첫째는 세부사항에 파묻히는 것(《나무만 보고 숲을 보지 못하는 것》)이고, 둘째는 현상을 지나치게 단순화하는 것(《목욕물과 함께 아이를 버리는 것》)이다. 수학적 모델을 구축하는 기술은 실로 하나의 예술이며, 그에 대한 경험은 점진적으로 축적된다.</p>
+<p>수학적 모델은 문제 설명으로부터 필연적으로 도출되는 것이 아니므로, 어떤 단일 모델도 맹목적으로 신뢰하지 말고, 서로 다른 모델에서 얻은 결과를 비교하여 일종의 《모델 경연》을 벌이는 것이 항상 유용하다. 이 과정에서 동일한 문제가 한 번이 아니라 여러 번, 서로 다른 가정 체계, 서로 다른 방법론, 서로 다른 모델을 사용하여 풀린다. 모델에서 모델로 옮겨가도 과학적 결론이 거의 변하지 않는다면, 이는 연구의 객관성을 뒷받침하는 강력한 근거가 된다. 만약 결론들이 크게 갈린다면, 여러 모델의 근저에 있는 개념들을 다시 검토하고, 그중 어느 것이 실제에 더 부합하는지 판단하며, 필요하다면 대조 실험을 수행해야 한다. 또한 경영과학의 특징적인 점은, 첫 번째 계산 단계가 이미 수행된 후에도 모델로 반복해서 되돌아가 수정을 가한다는 것이다.</p>
+<p>수학적 모델을 만드는 것은 연구에서 가장 중요하고 책임이 큰 부분으로, 수학 지식뿐 아니라 모델링하려는 현상의 본질에 대한 깊은 이해가 필요하다. 원칙적으로 《순수》 수학자들은(문제가 속한 분야의 전문가의 도움 없이는) 모델 구축을 잘 해내지 못한다. 그들의 관심은 실제 실무 문제보다는 수학적 도구와 그 미묘함에 집중되어 있다.</p>
+<p>경험에 따르면, 가장 성공적인 모델은 기본 훈련 외에도 깊은 수학적 훈련을 받은 해당 실무 분야의 전문가들에 의해, 또는 실무 전문가와 수학자를 함께 결합한 팀에 의해 만들어진다. 경영과학에 능통한 수학자가 자신의 업무에서 결정에 대한 과학적 근거가 필요한 상황에 부딪힌 엔지니어, 생물학자, 의료 전문가 등의 실무자들에게 제공하는 자문은 큰 도움이 된다.</p>
+<p>확률론에 대한 지식이 필요하다는 점을 특히 강조해야 하는데, 그것은 방대하고 심오한 지식이라기보다는 비공식적이면서도 실효적인 지식과, 통계 자료 및 확률적 개념을 다루는 습관이다. 바로 이 수학 지식 영역에서 특별한 요구가 제기되는 이유는, 대부분의 운용이 불완전한 확실성의 조건하에서 수행되며 그 진행과 결과가 확률적 요인에 좌우되기 때문이다. 안타깝게도 엔지니어, 생물학자, 의료 전문가, 화학자 등 폭넓은 전문가 집단 사이에서 확률론에 대한 좋은 이해는 그다지 흔하지 않다. 그 명제와 규칙이 흔히 그 의미와 정신에 대한 진정한 이해 없이 형식적으로 적용된다. 확률론이 《무》에서, 즉 완전한 무지로부터 정보를 얻게 해 주는 일종의 《마법 지팡이》처럼 여겨지는 경우도 드물지 않다. 이것은 오해이다: 확률론은 오직 정보를 변환하는 것만을 허용한다 — 즉 관찰 가능한 어떤 현상에 대한 자료로부터, 접근할 수 없는 다른 현상에 대한 결론을 이끌어내는 것이다.</p>
+<p>수학적 모델을 구성할 때에는 (운용의 유형, 연구 과제, 초기 데이터의 정밀도에 따라) 다양한 복잡성의 수학적 수단이 사용될 수 있다. 가장 단순한 경우에는 현상이 단순한 대수 방정식으로 기술된다. 더 복잡한 경우, 즉 현상을 그 동역학 속에서 살펴볼 필요가 있을 때에는 미분방정식(상미분 또는 편미분)의 방법이 사용된다. 가장 복잡한 경우, 즉 운용의 전개와 결과가 복잡하게 뒤얽힌 다수의 확률적 요인에 좌우될 때에는 해석적 방법이 완전히 실패하며, 통계적 모델링(몬테카를로) 방법이 사용된다.</p>
+<p>대략적인 첫 근사로, 이 방법의 개념은 다음과 같이 설명할 수 있다: 운용 전개 과정이, 이에 수반되는 모든 확률성과 더불어 사실상 《복사》되어 컴퓨터상에서 재현된다. 그 결과 운용 전개의 확률적 과정의 단일 표본(《실현》)이 임의의 진행과 결과와 함께 얻어진다. 이러한 단일 실현 하나만으로는 결정을 선택할 근거가 되지 못하지만, 이러한 실현을 다수 얻어 이를 일반적인 통계 자료처럼 처리하면(그래서 《통계적 모델링》이라는 용어가 붙었다), 과정의 평균적 특성을 찾아내고, 문제의 조건과 결정변수가 평균적으로 이들에 어떻게 영향을 미치는지에 대한 이해를 얻게 된다.</p>
+<p>경영과학에서는 해석적 모델과 통계적 모델이 모두 널리 사용된다. 이 두 유형은 각각 나름의 장점과 단점을 지닌다. 해석적 모델은 더 조야하며 더 적은 요인을 고려하고, 항상 어떤 가정과 단순화를 필요로 한다. 반면 그 계산 결과는 파악하기 더 쉽고, 현상에 내재된 근본적인 패턴을 더 명확하게 반영한다. 그리고 무엇보다 해석적 모델은 최적해 탐색에 더 적합하다.</p>
+<p>통계적 모델은 해석적 모델과 비교할 때 더 정밀하고 세밀하며, 그러한 조야한 가정을 필요로 하지 않고, (이론적으로는 무제한의) 많은 요인을 고려할 수 있게 해 준다. 그러나 이 모델에도 나름의 단점이 있다: 방대함, 파악의 어려움, 그리고 무엇보다 최적해 탐색이 극도로 어려워서, 이를 《감각적으로》, 추측과 시행을 통해 찾아야 한다는 점이다.</p>
+<p>경영과학 분야의 최고의 연구는 해석적 모델과 통계적 모델을 결합하여 사용하는 데 기반을 둔다. 해석적 모델은 현상에 대한 전반적인 이해를 얻게 해 주며, 이른바 근본적인 패턴의 《윤곽》을 그려준다. 세부적인 정밀화는 통계적 모델의 도움으로 얻을 수 있다.</p>
+<p>마지막으로, 이른바 《시뮬레이션》 모델링에 대해 몇 마디 언급하고자 한다. 이는 그 진행 과정에 때때로 인간의 의지가 개입할 수 있는 과정에 적용된다. 운용을 지휘하는 사람(또는 사람들의 집단)은 전개된 상황에 따라, 마치 체스 선수가 판을 바라보며 다음 수를 선택하듯 이런저런 결정을 내릴 수 있다. 그런 다음 수학적 모델이 작동하여, 이 결정에 대응하여 상황에 어떤 변화가 예상되는지, 그리고 얼마 후 그것이 어떤 결과를 초래할지를 보여준다. 다음 《현재 결정》은 이미 새로운 실제 상황을 고려하여 내려지며, 이러한 과정이 계속된다. 이 절차를 반복적으로 적용한 결과, 관리자는 실질적으로 《경험을 쌓게》 되고, 자신과 타인의 실수로부터 배우며, 점진적으로 최적은 아니더라도 거의 최적에 가까운 올바른 결정을 내리는 법을 익히게 된다.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <div class="links">
+    <div class="links-section">
+      <h2>경영과학</h2>
+      <ul>
+        <li><a href="/ko/operation_research.html">경영과학</a></li>
+        <li><a href="/ko/operation_research_caa.html">경영과학: 처치먼, 애코프, 아노프</a></li>
+        <li><a href="/ko/operation_research_as.html">경영과학의 기초. 애코프, 사시에니</a></li>
+        <li><a href="/ko/operation_research_me.html">경영과학: 모더와 엘마그라비</a></li>
+        <li><a href="/ko/operation_research_gv.html">조직과 관리. 그비시아니</a></li>
+        <li><a href="/ko/operation_research_vg.html">경영과학: 와그너</a></li>
+        <li><a href="/ko/operation_research_book.html">경영과학 문헌 다운로드</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <a href="/ko/">홈</a> <span aria-hidden="true">/</span>
+    <a href="/ko/operation_research.html">경영과학</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">경영과학: 벤첼</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="테마 전환"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/operation_research_ve.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/ko/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="테마 전환"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3710b090897a5ce',t:'MTc4ODczNTEzNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

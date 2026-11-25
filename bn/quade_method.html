@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>কোয়েডের সিস্টেম বিশ্লেষণ পদ্ধতি</title>
+<meta name="description" content="সিস্টেম বিশ্লেষণ। কোয়েডের পদ্ধতি। সমস্যা প্রণয়ন সিস্টেম বিশ্লেষণের সবচেয়ে গুরুত্বপূর্ণ উপাদান, যার মধ্যে অন্তর্ভুক্ত থাকে সমস্যার মূল বিষয় বর্ণনা, গবেষণার পরিধি নির্ধারণ, প্রাথমিক তথ্য স্থাপন এবং লক্ষ্য চিহ্নিতকরণ।">
+<meta name="keywords" content="সিস্টেম বিশ্লেষণ,কোয়েডের পদ্ধতি">
+<link rel="canonical" href="https://systems-analysis.info/bn/quade_method.html">
+<link rel="alternate" hreflang="ru" href="https://systems-analysis.info/ru/quade_method.html">
+<link rel="alternate" hreflang="en" href="https://systems-analysis.info/quade_method.html">
+<link rel="alternate" hreflang="bn" href="https://systems-analysis.info/bn/quade_method.html">
+<meta property="og:title" content="কোয়েডের সিস্টেম বিশ্লেষণ পদ্ধতি">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://systems-analysis.info/bn/quade_method.html">
+<meta property="og:image" content="https://systems-analysis.info/assets/mesh_1440-illustration.jpg">
+<meta property="og:description" content="সিস্টেম বিশ্লেষণ। কোয়েডের পদ্ধতি। সমস্যা প্রণয়ন সিস্টেম বিশ্লেষণের সবচেয়ে গুরুত্বপূর্ণ উপাদান, যার মধ্যে অন্তর্ভুক্ত থাকে সমস্যার মূল বিষয় বর্ণনা, গবেষণার পরিধি নির্ধারণ, প্রাথমিক তথ্য স্থাপন এবং লক্ষ্য চিহ্নিতকরণ।">
+<meta property="og:site_name" content="systems-analysis.info">
+<meta property="og:locale" content="bn_BD">
+<meta name="theme-color" content="#fff" id="theme-color">
+<link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="System">
+<link rel="manifest" href="/images/site.webmanifest">
+<script src="../js/theme-init.js"></script>
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://systems-analysis.info/bn/quade_method.html#article",
+    "headline": "কোয়েডের সিস্টেম বিশ্লেষণ পদ্ধতি",
+    "description": "সিস্টেম বিশ্লেষণ। কোয়েডের পদ্ধতি। সমস্যা প্রণয়ন সিস্টেম বিশ্লেষণের সবচেয়ে গুরুত্বপূর্ণ উপাদান, যার মধ্যে অন্তর্ভুক্ত থাকে সমস্যার মূল বিষয় বর্ণনা, গবেষণার পরিধি নির্ধারণ, প্রাথমিক তথ্য স্থাপন এবং লক্ষ্য চিহ্নিতকরণ।",
+    "url": "https://systems-analysis.info/bn/quade_method.html",
+    "image": "https://systems-analysis.info/assets/mesh_1440-illustration.jpg",
+    "inLanguage": "bn",
+    "author": {
+        "@id": "https://dmitrishin.github.io/#yuriy-dmitrishin"
+    },
+    "publisher": {
+        "@id": "https://systems-analysis.info/#org"
+    },
+    "isPartOf": {
+        "@id": "https://systems-analysis.info/bn/#website"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://systems-analysis.info/bn/quade_method.html"
+    },
+    "keywords": [
+        "সিস্টেম বিশ্লেষণ",
+        "কোয়েডের পদ্ধতি"
+    ],
+    "editor": {
+        "@type": "Person",
+        "name": "Yuriy Dmitrishin",
+        "url": "https://dmitrishin.github.io/"
+    },
+    "citation": {
+        "@type": "Book",
+        "name": "Analysis for Military Decisions",
+        "author": {
+            "@type": "Person",
+            "name": "Quade E.S."
+        },
+        "datePublished": "1964",
+        "publisher": {
+            "@type": "Organization",
+            "name": "RAND Corporation"
+        },
+        "inLanguage": "bn"
+    },
+    "datePublished": "2018-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntity": {
+        "@type": "Book",
+        "name": "Analysis for Military Decisions",
+        "author": {
+            "@type": "Person",
+            "name": "Quade E.S."
+        },
+        "datePublished": "1964",
+        "inLanguage": "bn"
+    }
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "প্রধান পাতা",
+            "item": "https://systems-analysis.info/bn/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "সিস্টেম বিশ্লেষণ",
+            "item": "https://systems-analysis.info/bn/systems_analysis.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "কোয়েডের পদ্ধতি"
+        }
+    ]
+}
+</script>
+</head>
+<body>
+<div class="wrap" id="top" tabindex="-1">
+
+  <header class="header">
+    <nav class="nav" aria-label="প্রধান নেভিগেশন">
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false">মেনু</button>
+      <div class="nav-links" data-template-slot="nav-links">
+        <a href="/bn/">প্রধান পাতা</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bn/sections.html">বিভাগসমূহ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/int/">Wiki</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bn/books.html">বইসমূহ</a>
+        <span aria-hidden="true">·</span>
+        <a href="/bn/catalog.html">তালিকা</a>
+        <span aria-hidden="true">·</span>
+        <a href="/quade_method.html">English</a>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="theme-toggle nav-theme-toggle" id="theme-toggle-nav" aria-label="থিম পরিবর্তন"></button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="font-toggle nav-font-toggle" id="font-toggle-nav" aria-label="ফন্ট পরিবর্তন"></button>
+      </div>
+    </nav>
+    <h1 class="article-title" data-template-slot="page-heading">কোয়েডের সিস্টেম বিশ্লেষণ পদ্ধতি</h1>
+    <div class="article-desc" data-template-slot="page-intro"></div>
+  </header>
+
+  <main>
+    <div class="content">
+      <article class="note">
+<div class="note-text" data-template-slot="article-content">
+          <p><strong>সিস্টেম বিশ্লেষণ সাধারণত নিম্নলিখিত ক্রমে অগ্রসর হয়:</strong></p>
+<ol>
+  <li>সমস্যা প্রণয়ন;</li>
+  <li>সমস্যা সমাধানের বিকল্প পদ্ধতি নির্বাচন;</li>
+  <li>সমস্যা সমাধানে ব্যয়িত সম্পদের অনুসন্ধান;</li>
+  <li>একটি মডেল নির্মাণ;</li>
+  <li>মূল্যায়ন মানদণ্ড নির্বাচন;</li>
+  <li>বিকল্পসমূহের তুলনা এবং সিদ্ধান্ত গ্রহণ।</li>
+</ol>
+<p>সমস্যা প্রণয়ন সিস্টেম বিশ্লেষণের সবচেয়ে গুরুত্বপূর্ণ উপাদান এবং এর মধ্যে অন্তর্ভুক্ত থাকে <a href="/bn/problem.html" class="text-link">সমস্যার</a> মূল বিষয় বর্ণনা, গবেষণার পরিধি নির্ধারণ, প্রাথমিক তথ্য স্থাপন এবং লক্ষ্য চিহ্নিতকরণ।</p>
+<p>সমস্যা সমাধানের বিকল্প পদ্ধতি নির্বাচনের মধ্যে থাকে সেইসব বিকল্প (উপায়) তালিকাভুক্ত করা, যেগুলি প্রাথমিক বিবেচনার ভিত্তিতে বর্ণিত সমস্যা সমাধানে ব্যবহৃত হতে পারে। গবেষণার সময়, কিছু বিকল্প বাতিল করা হয় এবং নতুন বিকল্প যুক্ত করা হয়।</p>
+<p>সমস্যা সমাধানে ব্যয়িত সম্পদের অনুসন্ধান অর্থনৈতিক বিশ্লেষণের একটি মূল পর্যায়, যার সময় বস্তুগত ও আর্থিক প্রয়োজনীয়তা নির্ধারণ করা হয়। সাধারণত, অস্ত্র <a href="/bn/system.html" class="text-link">সিস্টেমগুলি</a> নির্দিষ্ট মাত্রার কার্যকারিতার জন্য ন্যূনতম ব্যয়ের ভিত্তিতে নির্বাচন করা হয়।</p>
+<p>একটি <a href="/bn/model.html" class="text-link">মডেল</a> নির্মাণ হলো গবেষণার সেই পর্যায়, যেখানে প্রকৃত প্রক্রিয়ার একটি সাদৃশ্যরূপ তৈরি করা হয়—সবচেয়ে গুরুত্বপূর্ণ উপাদানগুলিকে গাণিতিক সম্পর্কের মাধ্যমে (বিশ্লেষণাত্মক মডেল), কম্পিউটারের মাধ্যমে (কম্পিউটার মডেল), অথবা একটি বিশেষ “খেলা”-র মাধ্যমে (গেমিং মডেল) উপস্থাপন করে।</p>
+<p>সিস্টেম বিশ্লেষণে মডেলিং ক্রমশ বৃহত্তর স্থান দখল করবে, বিশেষত গাণিতিক মডেলিং পদ্ধতি ও কম্পিউটারের উন্নয়নের সাথে সংযুক্ত হয়ে।</p>
+<p>মূল্যায়ন মানদণ্ড নির্বাচন সিস্টেম বিশ্লেষণের একটি অত্যন্ত গুরুত্বপূর্ণ পর্যায়, যার মধ্যে থাকে এমন একটি রাশি (বা রাশিসমূহের একটি ব্যবস্থা) নির্দিষ্ট করা, যার সংখ্যাগত মান দিয়ে সমাধানের সাফল্য বিচার করা যায়। সিস্টেম বিশ্লেষণ পদ্ধতির সন্তোষজনক কার্যকারিতার জন্য এটি গুরুত্বপূর্ণ বলে বিবেচিত হয় যে, ব্যবস্থাপনার প্রতিটি স্তরে গৃহীত মানদণ্ডগুলি একটি একক যৌক্তিক ব্যবস্থায় সংযুক্ত থাকে। সর্বোচ্চ স্তরে (প্রতিরক্ষা মন্ত্রণালয়ের নেতৃত্ব) সবচেয়ে গুরুত্বপূর্ণ মানদণ্ড হলো সিস্টেমের ব্যয়-কার্যকারিতা অনুপাত।</p>
+<p>বিকল্পসমূহের তুলনা এবং সিদ্ধান্ত গ্রহণ হলো বিশ্লেষণের চূড়ান্ত পর্যায়, যেখানে বর্ণিত সমস্যা সমাধানের উপায়গুলি নির্বাচিত মানদণ্ডের ভিত্তিতে মূল্যায়ন করা হয়। বিভিন্ন বিকল্পের সংখ্যাগত মূল্যায়নের পাশাপাশি, যৌক্তিক বিচার-বিবেচনাও উপস্থাপন করা যেতে পারে, যা একটি বিকল্পের অন্যগুলির তুলনায় অগ্রাধিকার নির্দেশ করে।</p>
+</div>
+      </article>
+    </div>
+
+
+    <div class="links">
+  <div class="links-section">
+    <h2>সিস্টেম বিশ্লেষণ পদ্ধতিসমূহ</h2>
+    <ul>
+      <li><a href="/bn/methodology_sa.html">সিস্টেম বিশ্লেষণ পদ্ধতি</a></li>
+      <li><a href="/bn/optner_method.html">অপ্টনারের সিস্টেম বিশ্লেষণ পদ্ধতি</a></li>
+      <li><a href="/bn/chernyak_method.html">চেরনিয়াকের সিস্টেম বিশ্লেষণ পদ্ধতি</a></li>
+      <li><a href="/bn/young_method.html">ইয়ংয়ের সিস্টেম বিশ্লেষণ পদ্ধতি</a></li>
+      <li><a href="/bn/golubkov_method.html">গোলুবকভের সিস্টেম বিশ্লেষণ পদ্ধতি</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>সাহিত্য</h2>
+    <ul>
+      <li><a href="/assets/systems_analysis_quaid.pdf">বইটি ডাউনলোড করুন: Analysis for Military Decisions. কোয়েড</a></li>
+      <li><a href="/bn/systems_analysis_book.html">সিস্টেম বিশ্লেষণ বিষয়ক সাহিত্য ডাউনলোড করুন</a></li>
+    </ul>
+  </div>
+  <div class="links-section">
+    <h2>সম্পর্কিত নিবন্ধসমূহ</h2>
+    <ul>
+      <li><a href="/bn/systems_analysis.html">সিস্টেম বিশ্লেষণ</a></li>
+      <li><a href="/bn/decision_theory.html">সিদ্ধান্ত তত্ত্ব</a></li>
+      <li><a href="/bn/decision_making.html">সিদ্ধান্ত গ্রহণ</a></li>
+      <li><a href="/bn/choice.html">সিদ্ধান্ত ও নির্বাচন</a></li>
+      <li><a href="/bn/management.html">ব্যবস্থাপনা</a></li>
+    </ul>
+  </div>
+</div>
+  </main>
+
+  <nav class="breadcrumbs" aria-label="নেভিগেশন পথ">
+    <a href="/bn/">প্রধান পাতা</a> <span aria-hidden="true">/</span>
+    <a href="/bn/systems_analysis.html">সিস্টেম বিশ্লেষণ</a> <span aria-hidden="true">/</span>
+    <a href="#top" id="scroll-to-top" class="breadcrumb-current" aria-current="page">কোয়েডের পদ্ধতি</a>
+  </nav>
+
+  <footer class="footer">
+    <button type="button" class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" aria-label="থিম পরিবর্তন"></button>
+    <span class="footer-info">systems-analysis.info 2026</span> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://t.me/systems_analysis_en">Telegram</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="https://www.youtube.com/@systems_analysis">YouTube</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/quade_method.html">English</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/languages.html">Languages</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <a href="/bn/map.html">sitemap</a> <span class="footer-sep" aria-hidden="true">&middot;</span> <button type="button" class="theme-toggle" id="theme-toggle" aria-label="থিম পরিবর্তন"></button>
+  </footer>
+
+</div>
+
+<script src="../js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112335795', 'ym');
+
+    ym(112335795, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112335795" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HBP7T426JN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HBP7T426JN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ye96gtm77k");
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a37106ffcbb0a5ce',t:'MTc4ODczNDk3MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
