@@ -4,7 +4,7 @@
 
 This file is a detailed routing layer for language models and agents. Select the user's language first, then select the content layer and the subject. Use the static public site for authored overviews, classical methodologies, literature pages, publications, and stable thematic reading paths. Use the wiki branches for encyclopedic expansion, section catalogs, semantic networks, literature indexes, categories, terminology, and multilingual discovery.
 
-Russian content uses the public root and `/wiki/`; English content uses `/` and `/eng/`; Spanish combines `/es/` with the Spanish master catalog in `/int/`; Japanese combines `/ja/` with the Japanese master catalog in `/int/`; Arabic combines `/ar/` with the Arabic master catalog in `/int/`; Persian combines `/fa/` with the Persian master catalog in `/int/`; other languages primarily use `/int/`, language categories, and language-specific sitemap routes. Russian, English, Spanish, Arabic, and Persian have developed static article trees. The Japanese static branch is under construction: it already provides the full set of navigation pages and a growing number of articles, so prefer a `/ja/` page when it exists and fall back to `/int/` otherwise. Several other languages have compact public landing pages, but a language listed in the global sitemap must not be assumed to have a complete static article tree.
+Russian content uses the public root and `/wiki/`; English content uses `/` and `/eng/`; Spanish combines `/es/` with the Spanish master catalog in `/int/`; Japanese combines `/ja/` with the Japanese master catalog in `/int/`; Arabic combines `/ar/` with the Arabic master catalog in `/int/`; Persian combines `/fa/` with the Persian master catalog in `/int/`; other languages primarily use `/int/`, language categories, and language-specific sitemap routes. Russian, English, Spanish, Arabic, and Persian have developed static article trees. The Japanese static branch provides a complete static article tree with the same subject coverage as the other full static languages, so prefer the `/ja/` page for a topic when it exists and fall back to `/int/` otherwise. Several other languages have compact public landing pages, but a language listed in the global sitemap must not be assumed to have a complete static article tree.
 
 Choose the routing structure by task: use a section catalog for a curated subject overview; a semantic network for concept relationships; a literature page for sources and further reading; a category for broad discovery of all classified pages; a local static map for the authored article hierarchy; a language sitemap for language-specific routing; and XML sitemaps only for exhaustive crawling. To find every language version of one topic, open its hub page at `/wikidata/<English_title>` instead of searching each wiki separately. AI and LLM content is one peer subject branch within the wider systems-analysis architecture and must not be treated as the default route for unrelated requests. `/wikidata/` is not Wikidata.org.
 
@@ -44,16 +44,25 @@ To learn which files exist, read the XML sitemap of that branch below. Do not cr
 
 For machine-readable enumeration of the Markdown article files, use the dedicated XML sitemaps:
 
-- [Russian wiki Markdown sitemap](https://systems-analysis.info/md/wiki/sitemap.xml)
-- [English wiki Markdown sitemap](https://systems-analysis.info/md/eng/sitemap.xml)
-- [International wiki Markdown sitemap](https://systems-analysis.info/md/int/sitemap.xml)
-- [Language-hub Markdown sitemap](https://systems-analysis.info/md/wikidata/sitemap.xml)
+- [Russian wiki Markdown sitemap](https://systems-analysis.info/md/wiki/sitemap.xml): Machine-readable inventory of the Russian-wiki Markdown files.
+- [English wiki Markdown sitemap](https://systems-analysis.info/md/eng/sitemap.xml): Machine-readable inventory of the English-wiki Markdown files.
+- [International wiki Markdown sitemap](https://systems-analysis.info/md/int/sitemap.xml): Machine-readable inventory of the international-wiki Markdown files across all languages.
+- [Language-hub Markdown sitemap](https://systems-analysis.info/md/wikidata/sitemap.xml): Machine-readable inventory of the language-hub Markdown records.
 
 For machine reading of wiki articles, prefer the corresponding Markdown file. Use the XML sitemap for the relevant Markdown mirror when exhaustive discovery or availability checking is required. The `.md` sitemap files listed elsewhere in this document, including the global, language-specific, and deep-branch files under `/sitemap/`, are navigation maps and are distinct from these Markdown article files.
 
 General HTTP Markdown content negotiation is not enabled. Sending `Accept: text/markdown` to an arbitrary HTML or MediaWiki URL does not imply that a Markdown representation will be returned.
 
-Routing structure reviewed against the site's global, Russian-wiki, English-wiki, international-wiki, and local static maps on 2026-08-22. The `/wikidata/` hub section was added on 2026-11-22.
+Per-branch mirror inventory as of 2026-11-25; each branch's Markdown sitemap linked above is the authoritative current list.
+
+- `/md/wiki/` mirrors the Russian wiki: one `.md` file per Russian article, 133 files.
+- `/md/eng/` mirrors the English wiki: one `.md` file per English article, 234 files.
+- `/md/int/` mirrors the international wiki: one `.md` file per article of every language of `/int/`, 146 files. File names are the native-language article titles, for example `/md/int/Árbol_de_decisiones.md`; there is no language-code suffix convention. Determine an article's language from its `/wikidata/` hub record, its language category, or its master language catalog.
+- `/md/wikidata/` mirrors the language hub: one `.md` record per hub page, 227 files.
+
+Mirror inventories and wiki XML sitemaps are built differently: a wiki sitemap also enumerates non-article routes such as `Category:` pages, so an XML sitemap total is not a count of Markdown files. Use each branch's Markdown sitemap to know what is readable as Markdown.
+
+Routing structure reviewed against the site's global, Russian-wiki, English-wiki, international-wiki, and local static maps on 2026-08-22. The `/wikidata/` hub section was added on 2026-11-22. The static folder structure, the per-branch Markdown-mirror inventory, the hub inventory, the Japanese article sections, and the Chinese Data Science page were verified against the live site on 2026-11-25.
 
 ## Language hub (`/wikidata/`)
 
@@ -70,6 +79,8 @@ A listed URL is that language version only when the target page's MediaWiki page
 For the text of the topic, follow the URL and prefer that article's Markdown file under `/md/wiki/`, `/md/eng/`, or `/md/int/`. Enumerate hub pages with `/wikidata/sitemap.xml` and their Markdown files with `/md/wikidata/sitemap.xml`.
 
 Example: `https://systems-analysis.info/wikidata/Function` lists the English page `/eng/Function`, the Russian page `/wiki/Функция`, and the other language pages under `/int/`. The same record is at `https://systems-analysis.info/md/wikidata/Function.md`.
+
+Hub inventory as of 2026-11-25: 253 hub pages, one per topic, each named by the English title of the topic; `/wikidata/sitemap.xml` is the authoritative list and `/wikidata/Main_Page` the entry point.
 
 ## Global multilingual and content-layer routing
 - [Language hub](https://systems-analysis.info/wikidata/Main_Page): Entry point of `/wikidata/`. One hub page per topic lists the language versions; it is not itself the article in those languages.
@@ -326,12 +337,81 @@ Example: `https://systems-analysis.info/wikidata/Function` lists the English pag
 ## Static public site — Japanese entry points
 - [Japanese home](https://systems-analysis.info/ja/): Main entry point to the Japanese static public site.
 - [Japanese public catalog](https://systems-analysis.info/ja/catalog.html): Compact top-level router to the Japanese master catalog in `/int/`, the Japanese language category, and the project's channels.
-- [Japanese static sections](https://systems-analysis.info/ja/sections.html): Thematic taxonomy of the Japanese article collection; it lists the full planned tree, so some entries point to articles that are still being added.
+- [Japanese static sections](https://systems-analysis.info/ja/sections.html): Thematic taxonomy of the Japanese authored article collection.
 - [Japanese books](https://systems-analysis.info/ja/books.html): Japanese routing page to the systems-analysis and operations-research literature catalogs.
 - [Japanese static site map](https://systems-analysis.info/ja/map.html): Hierarchical index of the Japanese static branch, the international-wiki routes for Japanese, and the link up to the global sitemap.
+- [Data Science — Japanese](https://systems-analysis.info/ja/data_science.html): Japanese static introduction to data science and its relationship to analysis and decision-making.
 
 ## Static public site — Japanese: Systems analysis
 - [Systems analysis overview](https://systems-analysis.info/ja/systems_analysis.html): Core authored overview of systems analysis as a discipline and method of inquiry.
+- [Systems-analysis methodology](https://systems-analysis.info/ja/methodology_sa.html): General methodology and sequence of systems-analysis work.
+- [Chernyak's systems analysis](https://systems-analysis.info/ja/systems_analysis_ch.html): Presentation of A. Ya. Chernyak's treatment of systems analysis.
+- [Cleland and King's systems analysis](https://systems-analysis.info/ja/systems_analysis_clelandking.html): Presentation of the systems-analysis approach associated with David Cleland and William King.
+- [Golubkov's systems analysis](https://systems-analysis.info/ja/systems_analysis_golubkov.html): Presentation of E. P. Golubkov's approach to systems analysis.
+- [Nikanorov's systems analysis](https://systems-analysis.info/ja/systems_analysis_nikanorov.html): Presentation of S. P. Nikanorov's conceptual and methodological approach.
+- [Optner's systems analysis](https://systems-analysis.info/ja/systems_analysis_optner.html): Presentation of Stanford Optner's systems-analysis approach.
+- [Pospelov's systems analysis](https://systems-analysis.info/ja/systems_analysis_pospelov.html): Presentation of G. S. Pospelov's approach to systems analysis.
+- [Peregudov and Tarasenko's systems analysis](https://systems-analysis.info/ja/systems_analysis_pt.html): Presentation of the systems-analysis approach of F. I. Peregudov and F. P. Tarasenko.
+- [Quade's systems analysis](https://systems-analysis.info/ja/systems_analysis_q.html): Presentation of Edward Quade's systems-analysis approach.
+- [Systems-analysis literature](https://systems-analysis.info/ja/systems_analysis_book.html): Books and literature supporting the static systems-analysis branch.
+- [Chernyak methodology](https://systems-analysis.info/ja/chernyak_method.html): Detailed routing page for Chernyak's systems-analysis methodology.
+- [Golubkov methodology](https://systems-analysis.info/ja/golubkov_method.html): Detailed routing page for Golubkov's systems-analysis methodology.
+- [Optner methodology](https://systems-analysis.info/ja/optner_method.html): Detailed routing page for Optner's systems-analysis methodology.
+- [Quade methodology](https://systems-analysis.info/ja/quade_method.html): Detailed routing page for Quade's systems-analysis methodology.
+- [Young methodology](https://systems-analysis.info/ja/young_method.html): Detailed routing page for Young's systems-analysis methodology.
+- [Systems analysis in economics](https://systems-analysis.info/ja/economics.html): Application of systems analysis to economic problems and economic systems.
+- [Problem](https://systems-analysis.info/ja/problem.html): Concept of a problem as an initiating construct in systems analysis.
+- [Goal](https://systems-analysis.info/ja/goal.html): Concept of a goal and goal formulation in systems analysis.
+
+## Static public site — Japanese: Operations research
+- [Operations research overview](https://systems-analysis.info/ja/operation_research.html): Core authored overview of operations research, its purpose, and its problem classes.
+- [Operations-research methodology](https://systems-analysis.info/ja/methodology_or.html): Methodological structure and stages of operations-research studies.
+- [Operations-research models](https://systems-analysis.info/ja/operation_research_model.html): Model types and modeling principles used in operations research.
+- [Ackoff and Sasieni](https://systems-analysis.info/ja/operation_research_as.html): Operations-research concepts and methodology associated with Russell Ackoff and Maurice Sasieni.
+- [Churchman, Ackoff, and Arnoff](https://systems-analysis.info/ja/operation_research_caa.html): Classical operations-research treatment associated with Churchman, Ackoff, and Arnoff.
+- [Gvishiani](https://systems-analysis.info/ja/operation_research_gv.html): Presentation of D. M. Gvishiani's account of operations research and systems methods.
+- [Moder and Elmaghraby](https://systems-analysis.info/ja/operation_research_me.html): Project-network and operations-research treatment associated with Moder and Elmaghraby.
+- [Wentzel](https://systems-analysis.info/ja/operation_research_ve.html): Presentation of E. S. Wentzel's approach to operations research.
+- [Wagner](https://systems-analysis.info/ja/operation_research_vg.html): Presentation of Harvey Wagner's principles of operations research.
+- [Operations-research literature](https://systems-analysis.info/ja/operation_research_book.html): Books and literature supporting the static operations-research branch.
+- [Operation](https://systems-analysis.info/ja/operation.html): Definition of an operation as the central object of operations research.
+
+## Static public site — Japanese: Decision theory
+- [Decision theory overview](https://systems-analysis.info/ja/decision_theory.html): Core authored overview of decision theory and decision problems.
+- [Decision-making](https://systems-analysis.info/ja/decision_making.html): Decision-making as a process, activity, and subject of analysis.
+- [Decision-making problem](https://systems-analysis.info/ja/decision_theory_model.html): Formal structure and model of a decision-making problem.
+- [Decision and choice](https://systems-analysis.info/ja/choice.html): Concepts of decision, choice, alternatives, and selection.
+- [Criterion](https://systems-analysis.info/ja/criterion.html): Definition and role of a criterion in evaluation and choice.
+- [System evaluation criteria](https://systems-analysis.info/ja/criterion_system.html): Criteria systems and multi-criterion evaluation of alternatives or systems.
+- [Optimization](https://systems-analysis.info/ja/optimization.html): Optimization as a decision and operations-research procedure.
+
+## Static public site — Japanese: Modeling
+- [Modeling overview](https://systems-analysis.info/ja/modelling.html): Core authored overview of modeling and its role in systems research.
+- [Model](https://systems-analysis.info/ja/model.html): Definition, purpose, properties, and uses of a model.
+- [Ideal and material models](https://systems-analysis.info/ja/model_am.html): Classification and comparison of ideal and material models.
+- [Modeling process](https://systems-analysis.info/ja/modeling_process.html): Stages and logic of the general modeling process.
+- [Mathematical-modeling process](https://systems-analysis.info/ja/mathmodeling_process.html): Stages of constructing, studying, validating, and applying a mathematical model.
+
+## Static public site — Japanese: Systems theory and systems thinking
+- [System](https://systems-analysis.info/ja/system.html): Core authored overview of the system concept and systems theory.
+- [Concept of system](https://systems-analysis.info/ja/system_terminus.html): Origin, meaning, and use of the term and concept of a system.
+- [Definitions of a system](https://systems-analysis.info/ja/system_def.html): Comparison of definitions and interpretations of a system.
+- [Regularities of systems](https://systems-analysis.info/ja/system_ol.html): General regularities, properties, and patterns observed in systems.
+- [Systems research](https://systems-analysis.info/ja/systems_research.html): Systems research as an interdisciplinary mode of inquiry.
+- [Systems approach](https://systems-analysis.info/ja/systems_thinking.html): Systems approach and systems thinking as principles for studying complex objects.
+
+## Static public site — Japanese: Management and planning
+- [Management](https://systems-analysis.info/ja/management.html): Core authored overview of management, control, and organized activity.
+- [Planning](https://systems-analysis.info/ja/planning.html): Planning as a management function and decision process.
+- [Plan](https://systems-analysis.info/ja/plan.html): Definition, structure, and role of a plan.
+- [Activity](https://systems-analysis.info/ja/action.html): Activity as a purposeful system and object of management.
+
+## Static public site — Japanese: Systems engineering
+- [Systems engineering overview](https://systems-analysis.info/ja/systems_engineering.html): Core authored overview of systems engineering for complex technical and organizational systems.
+- [Systems-engineering management](https://systems-analysis.info/ja/management_se.html): Management processes and coordination within systems engineering.
+- [System concept](https://systems-analysis.info/ja/conception.html): Concept development and conceptual definition of a system.
+- [System life cycle](https://systems-analysis.info/ja/life_cycle.html): Life-cycle stages and their role in systems engineering.
+- [Requirements](https://systems-analysis.info/ja/requirements.html): Requirements definition, analysis, and management for systems.
 
 ## Static public site — Portuguese entry points
 - [Portuguese home](https://systems-analysis.info/pt/): Main entry point to the Portuguese static public site.
@@ -576,6 +656,7 @@ Example: `https://systems-analysis.info/wikidata/Function` lists the English pag
 - [Chinese static sections](https://systems-analysis.info/zh/sections.html): Thematic taxonomy of the Chinese authored article collection.
 - [Chinese static site map](https://systems-analysis.info/zh/map.html): Hierarchical index of the seven principal Chinese static branches and their individual articles.
 - [Chinese books](https://systems-analysis.info/zh/books.html): Chinese-language book and literature catalog for systems analysis and operations research.
+- [Data Science — Chinese](https://systems-analysis.info/zh/data_science.html): Chinese static introduction to data science and its relationship to analysis and decision-making.
 
 ## Static public site — Chinese: Systems analysis
 - [Systems analysis overview](https://systems-analysis.info/zh/systems_analysis.html): Core authored overview of systems analysis as a discipline and method of inquiry.
@@ -2299,7 +2380,10 @@ Example: `https://systems-analysis.info/wikidata/Function` lists the English pag
 - [English wiki XML sitemap](https://systems-analysis.info/eng/sitemap.xml): Exhaustive XML index of English-wiki pages.
 - [International wiki XML sitemap](https://systems-analysis.info/int/sitemap.xml): Exhaustive XML index of multilingual international-wiki pages, including pages not individually exposed in the deep HTML map.
 - [Publications XML sitemap](https://systems-analysis.info/publications/sitemap.xml): Exhaustive XML index of the Russian publications branch.
-- [English static-site XML sitemap](https://systems-analysis.info/sitemap.xml): Exhaustive XML index of the English public branch.
+- [Russian static-site XML sitemap](https://systems-analysis.info/ru/sitemap.xml): Exhaustive XML index of the Russian static public branch (`/ru/`).
+- [English static-site XML sitemap](https://systems-analysis.info/sitemap-general.xml): Exhaustive XML index of the root-level English public pages; the same file as the general public-site sitemap above.
+- [Assets XML sitemap](https://systems-analysis.info/assets/sitemap.xml): Exhaustive XML index of downloadable source files, PDF books, and DJVU materials.
+- [Video XML sitemap](https://systems-analysis.info/video/sitemap.xml): Exhaustive XML index of the video branch.
 - [Sitemap-directory XML index](https://systems-analysis.info/sitemap/sitemap.xml): XML index for resources within the sitemap directory itself.
 - [Spanish static-site XML sitemap](https://systems-analysis.info/es/sitemap.xml): Exhaustive XML index of the Spanish public branch.
 - [Portuguese static-site XML sitemap](https://systems-analysis.info/pt/sitemap.xml): Exhaustive XML index of the Portuguese public branch.
@@ -2343,6 +2427,19 @@ Example: `https://systems-analysis.info/wikidata/Function` lists the English pag
 - [Korean static site map](https://systems-analysis.info/ko/map.html): HTML sitemap page of the Korean public site.
 - [Arabic static site map](https://systems-analysis.info/ar/map.html): HTML sitemap page of the Arabic public site.
 - [Persian static site map](https://systems-analysis.info/fa/map.html): HTML sitemap page of the Persian public site.
+
+## Static-site folder structure
+The static public site is a folder tree at the site root, separate from the four MediaWiki branches (`/wiki/`, `/eng/`, `/int/`, `/wikidata/`). Layout verified on 2026-11-25:
+
+- Root level: the English public pages shared by all editions, together with the global files — `index.html`, `404.html`, `robots.txt`, `llms.txt`, `sitemap.html`, `sitemap.md`, `sitemap.txt`, `sitemap.xml`, `sitemap-general.xml`, `catalog.html`, `sections.html`, `books.html`, `map.html`, `languages.html`, `links.html`, `multilingual_map.html`, `x_en.html`, and `systems_analysis_video.html`.
+- Language folders, one per language: `ar`, `bg`, `bn`, `de`, `es`, `fa`, `fr`, `hi`, `hu`, `id`, `it`, `ja`, `ko`, `pl`, `pt`, `ro`, `ru`, `th`, `tl`, `tr`, `vi`, `zh`. Each carries one `index.html` home page, the four shared navigation pages (`catalog.html`, `sections.html`, `books.html`, `map.html`), its own `sitemap.xml`, and 58 article files: one Data Science introduction page plus 57 subject articles. The Spanish folder is the exception: without `data_science.html` it carries 57 article files and 61 pages besides its home page. The Russian folder additionally carries Russian-only channel indexes: `telegram_ru.html`, `medium_ru.html`, `teletype_ru.html`, `dzen_ru.html`, `systems_analysis_video_ru.html`, and `links.html`.
+- `assets`: downloadable source materials — PDF books and DJVU documents, 48 files, inventoried by their XML sitemap.
+- `files`: AI company model and system cards — 7 OpenAI system-card PDFs under `openai/` and 13 Anthropic model-card PDFs under `anthropic/`; the `google/` subfolder is currently empty.
+- `publications`: Russian publications branch, 23 publication pages, inventoried by its XML sitemap.
+- `video`: video branch, 15 pages.
+- `sitemap`: additional sitemap resources, 27 files: per-language `sitemap-<lang>.md` navigation routes, deep-branch `.md` maps, `index.html`, and the directory's `sitemap.xml`.
+- `md`: Markdown mirror trees of the wiki branches and the language hub, described in the Markdown section above.
+- Service folders `css`, `js`, `images`, `scripts`: styles, scripts, icons, manifests, and legacy page scripts; they carry no readable articles.
 
 ## Branch and resource directories
 - [Sitemap files directory](https://systems-analysis.info/sitemap/): Directory of the language-specific and deep branch sitemap files.
